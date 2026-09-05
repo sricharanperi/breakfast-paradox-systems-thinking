@@ -26,6 +26,13 @@ can actually observe the congestion effect on others; and a direct question abou
 deliberate reselling-as-strategy (vs. accidental no-shows) is added to Guide 1 §3
 as-is, per the user's explicit choice to ask it directly rather than soften it.
 
+**v4 — extended 2026-09-05 after a full stakeholder-universe discovery pass** (see
+`deliverables/phase-1/prathyusha_02b-stakeholder-universe-register.md`). Corrections
+folded in throughout: Guide 1 gets a cuisine-preference question; Guide 2's cook-vs-
+catering framing is replaced with the confirmed cuisine/per-mess-procurement structure,
+and priority shifts toward a North Indian-line staff member; a new **Guide 3
+(Governance)** is added — now the single highest-priority interview in the whole plan.
+
 ---
 
 ## Guide 1 — Student interviews (30 min each, today, 2-3 people, mixed attend/skip)
@@ -103,6 +110,12 @@ do today; this directly rewrites the hypothesis section in
   anything for you?** *(new — directly tests whether the mess-hours/class-overlap
   framing is even the real driver, since one synthetic respondent argued it's habit/
   willpower, not timing)*
+- **When you choose which mess to register at, what actually drives that choice?**
+  *(new, added 2026-09-05 — tests a sharper hypothesis than "Bakul is newer": every
+  North Indian mess line underperforms the one South Indian line, Kadamba, across the
+  board. Ask this neutrally, without naming "cuisine" first — let them say what drives
+  it themselves before probing on food type specifically. See
+  `prathyusha_02b-stakeholder-universe-register.md` §B for the numbers this is testing)*
 
 **6. Close** *(~2 min)* — **How much money do you think you've spent this semester on
 breakfasts you didn't eat?** *(new — tests whether concretizing the cost changes the
@@ -113,21 +126,28 @@ breakfast or the mess we haven't touched on?
 
 ## Guide 2 — Mess staff, tomorrow AM (~20-25 min each, 1-2 people)
 
-Priority target: settle whether the **cook-on-site vs. catering-supplied** split (new
-information, 2026-09-05) explains the Kadamba/Palash/Bakul differences better than the
-"Bakul is newer" hypothesis currently in `deliverables/phase-1/01-system-context-brief.md`
-§3. This is the single highest-value fact this interview can produce.
+**Updated 2026-09-05:** the cook-vs-catering question below is superseded — the real
+structure is confirmed as cuisine-specialized, per-mess procurement (South Indian at
+Kadamba, North Indian across Palash+Bakul, Jain at Yuktāhār; each vendor buys and cooks
+its own ingredients, per the user's direct confirmation). Priority target is now
+**testing the cuisine-preference hypothesis from the supply side** — per the
+stakeholder register's recruitment plan, a **North Indian-line (Palash or Bakul) staff
+member is now higher priority than a Kadamba one**, since they're the ones positioned
+to say whether low uptake reads as a demand problem from where they stand.
 
-1. Which mess do you work at/for, and is food here cooked on-site or brought in through
-   a catering service?
-2. Walk me through a typical breakfast service, from when prep starts to when you close.
-3. *(If catering)* How does the handoff work — what time does food arrive, who decides
-   the quantity?
-4. *(If on-site cook)* Who decides what's on the menu and how far ahead — and has the
-   cost of ingredients or gas ever changed what gets served?
+1. Which mess do you work at/for — Kadamba, Palash, Bakul, or Yuktāhār?
+2. Walk me through a typical breakfast service, from when you place/receive the food
+   order to when you close. *(rewritten — ordering lead time is confirmed at 4 days, so
+   ask them to place their own daily routine against that fixed constraint)*
+3. Who decides what's on the menu and how far ahead — and has the cost of ingredients
+   or gas ever changed what gets served?
+4. **How full does your mess typically run compared to what you'd expect — and if it's
+   often under capacity, do you have a sense of why?** *(new, added 2026-09-05 —
+   neutral phrasing of the cuisine-preference test for the supply side; don't lead with
+   "cuisine" or "North Indian" — let them offer their own explanation first)*
 5. On a typical day, roughly how many plates go unclaimed out of what's registered?
 6. When someone marks "Skip Meal," does that change what you prepare — and how far
-   ahead do you actually see it?
+   ahead do you actually see it, given the 4-day ordering window?
 7. What happens to food that isn't claimed?
 8. How would you describe how busy your mess gets compared to the others, on a typical
    morning?
@@ -139,6 +159,49 @@ information, 2026-09-05) explains the Kadamba/Palash/Bakul differences better th
    other people, not just their own wait — added 2026-09-05 per the user's choice)*
 10. If you could change one thing about how registration/serving works from where you
     sit, what would it be?
+
+---
+
+## Guide 3 — Governance (Mess Committee / Mess Office / Warden contact), if reachable
+
+**New, added 2026-09-05.** Per the stakeholder-universe register
+(`deliverables/phase-1/prathyusha_02b-stakeholder-universe-register.md` §N), this is now
+the **single highest-priority interview in the whole plan (P0)** — it's the only source
+that can resolve the feedback-efficacy question, the Mess Office/Warden relationship,
+and independently check the cuisine-preference hypothesis from the governance side. Even
+5-10 minutes with anyone on the Mess Committee, in the Mess Office, or the Warden is
+worth more right now than a fourth student interview. Semi-structured, same neutral
+probes as the other guides.
+
+1. Could you help me understand how mess governance is actually organized — is there a
+   difference between what the Mess Committee decides and what the Mess Office handles
+   day-to-day?
+   *Why: resolves whether these are genuinely separate bodies, and how they relate,
+   which is currently only known from public-source research, not confirmed locally.*
+2. Can you point to a specific mess policy or rule that changed because of student
+   feedback — through the app's meal ratings, email, or anything else?
+   *Why: directly tests whether the feedback channels that are known to exist have ever
+   produced a real output — currently the sharpest open question in the project.*
+3. When it comes to things like breakfast timing, or the overlap with the 8:30 AM class
+   start specifically, has that ever come up in a Mess Committee discussion?
+   *Why: tests whether the Academic Office lever has ever even been raised internally,
+   not just whether it's been acted on.*
+4. How does the mess decide how much food to prepare each morning, given the ordering
+   lead time? Has that lead time changed recently?
+   *Why: checks whether the 4-day figure you already gave me is still accurate and
+   stable, or itself recently changed (following the Kadamba renovation).*
+5. Do you have any sense of why registration numbers differ so much between the messes —
+   for example, why Kadamba tends to fill up more than Palash or Bakul?
+   *Why: independent, governance-side test of the cuisine-preference hypothesis,
+   without leading with "cuisine" — let them offer their own read first.*
+6. Has the Kadamba renovation changed how any of the messes currently operate, or is
+   everything back to how it was before?
+   *Why: calibrates how much weight to give the Dec 2024/Jan 2025 public-source
+   findings — are they current or historical.*
+7. Is there anything about how the mess system is actually run that students usually
+   get wrong or don't know about?
+   *Why: open-ended catch-all, most likely to surface something not already anticipated
+   by any lens in the stakeholder register.*
 
 ---
 

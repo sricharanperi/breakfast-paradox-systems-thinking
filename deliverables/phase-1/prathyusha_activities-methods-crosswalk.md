@@ -16,12 +16,20 @@ mean every method behind it actually happened. Legend: ✅ done · 🟡 partial/
 
 ## Activity 2 — Identify & Map Stakeholders
 
+**Status: ✅ COMPLETE as of 2026-09-05**, after a full first-principles stakeholder-
+universe discovery pass (17 lenses + public-source research + user confirmation) —
+see `prathyusha_02b-stakeholder-universe-register.md` for the full register, taxonomy,
+relationship matrix, dependency map, and conflict map, and `prathyusha_02-*` (v2) for
+the compact diagram-first deliverable. This superseded and corrected v1's mess
+structure, collapsed governance actor, and over-expanded Friends/Roommates nodes — see
+that register's §O ("Final Systems-Thinker Audit") for the explicit self-corrections.
+
 | Method | Status | Evidence |
 |---|---|---|
-| Identify primary, secondary and indirect stakeholders | ✅ | `prathyusha_02-*` tiered map |
-| Map stakeholder interests, needs and expectations | ✅ | per-actor interest notes in same file |
-| Identify relationships, dependencies and conflicts | ✅ | edges section + onion/concentric view |
-| Identify formal and informal roles | ✅ | throughout, incl. Mess Cell as an informal-only actor |
+| Identify primary, secondary and indirect stakeholders | ✅ | `prathyusha_02b-*` §A (17-stakeholder register, Direct/Indirect/Latent taxonomy in §C.1) |
+| Map stakeholder interests, needs and expectations | ✅ | `prathyusha_02-*` (v2)'s dedicated Interest/Need/Expectation table, plus full stakeholder cards in `prathyusha_02b-*` §E |
+| Identify relationships, dependencies and conflicts | ✅ | `prathyusha_02b-*` §F (relationship matrix), §J (conflict map), §K (dependency map), §L (missing relationships) |
+| Identify formal and informal roles | ✅ | `prathyusha_02b-*` §C.2 taxonomy, incl. Mess Cell/Ping/unofficial-tools as informal-only actors |
 
 ## Activity 3 — Analyse Power, Interests & Leverage
 
