@@ -108,6 +108,15 @@ analysis, 2026-09-03]`
   registered-to-capacity ratio (116/700) was far lower than Kadamba's (722/1200) — real numbers,
   cause unknown, and this is Lunch not Breakfast. `[Source: Screenshots analysis, 2026-09-03;
   NEEDS DATA — breakfast-specific capacity numbers, and an explanation for the Bakul gap]`
+- **No confirmed negotiation or escalation mechanism** — added 2026-09-05 while building the
+  Process Trace (`deliverables/phase-1/prathyusha_04-process-trace.md`). Beyond the Mess
+  Committee "taking student input" on the menu, neither the one real respondent nor two
+  synthetic pilot interviews could describe what actually happens after a student gives mess
+  feedback — no one could point to a real example of feedback leading to a change. This is a gap
+  in the system itself, not just in what's been asked so far, and it directly explains why the
+  Academic Office / class-timing lever (§7) has never been pursued: there's no visible channel
+  for anyone to even raise it formally. `[Source: Interview, 2026-09-03; Synthetic pilot,
+  2026-09-05 — flagged 🟡 pending a real Role D/governance confirmation]`
 
 ## 5. Constraints
 
