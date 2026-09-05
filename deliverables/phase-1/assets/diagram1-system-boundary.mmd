@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph SystemBoundary["Breakfast Mess System - IIIT Hyderabad"]
+        Platform["Digital Registration and Billing Platform<br/>dining.iiit.ac.in"]
+        Kadamba["Kadamba Mess"]
+        Palash["Palash Mess"]
+        Bakul["Bakul Mess"]
+        Yuktahar["Yuktahar Mess"]
+        Platform --- Kadamba
+        Platform --- Palash
+        Platform --- Bakul
+        Platform --- Yuktahar
+    end
+    Students["Students"] -->|register, pay, access via QR| SystemBoundary
+    SystemBoundary -->|breakfast meal| Students
+    Academic["Academic Class Schedule"] -.->|overlapping timing, no formal link| SystemBoundary
+    Alternatives["Vindhya Canteen / Juice Canteens / Delivery Platforms"] -.->|alternative source, outside boundary| Students
+    MessCell["Mess Cell Resale Market, informal"] -.->|outside formal system| Students
