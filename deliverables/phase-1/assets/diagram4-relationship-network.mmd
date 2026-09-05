@@ -1,0 +1,68 @@
+flowchart TB
+  subgraph Core["Core - daily, direct interaction"]
+    ST((Students))
+    VSI["Vendor: South Indian\nKadamba"]
+    VNI["Vendor: North Indian\nPalash + Bakul"]
+    VJ["Vendor: Jain\nYuktahar"]
+    SVC[Serving staff]
+    KIT[Kitchen staff]
+  end
+  subgraph Gov["Governance"]
+    MC["Mess Committee\nfaculty-chaired"]
+    MO["Mess Office\noperations"]
+    WD[Warden]
+    ACAD["Academic administration\nsleeping stakeholder"]
+    FAC[Facilities/Estate]
+    PIT["Portal/IT owner"]
+  end
+  subgraph Informal["Informal and competing"]
+    MCELL[Mess Cell market]
+    TOOLS["Unofficial tools"]
+    PING["Ping"]
+    VIN[Vindhya / juice canteens]
+    RID[Delivery riders]
+  end
+
+  ST -->|registers, pays| MO
+  ST -.->|rates meals; reads unconfirmed| MC
+  MC -->|sets menu, policy| MO
+  MC -.-x ACAD
+  MO -.-x ACAD
+  WD -.-x ACAD
+  MO -->|four-day order lead| VSI
+  MO -->|four-day order lead| VNI
+  MO -->|four-day order lead| VJ
+  WD -->|manages contracts| VSI
+  WD -->|manages contracts| VNI
+  WD -->|manages contracts| VJ
+  VSI --> KIT
+  VNI --> KIT
+  VJ --> KIT
+  KIT --> SVC
+  SVC -->|serves| ST
+  FAC -.->|renovation| VSI
+  PIT -->|interface for| ST
+  PIT -->|forecast to| MO
+  ST -.->|peer influence, internal| ST
+  ST -.->|resells, buys| MCELL
+  ST -.->|may use instead of portal| TOOLS
+  PING -.->|public pressure| MC
+  PING -.->|public pressure| MO
+  ST -->|substitute| VIN
+  ST -->|substitute, gate-limited| RID
+  MO ---|billing certainty vs attendance uncertainty| ST
+
+  classDef customerNode fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b1b1b
+  classDef internalNode fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#1b1b1b
+  classDef externalNode fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#1b1b1b
+  classDef publicNode fill:#e1bee7,stroke:#6a1b9a,stroke-width:2px,color:#1b1b1b
+
+  class ST customerNode
+  class MC,MO,WD,VSI,VNI,VJ,SVC,KIT internalNode
+  class ACAD,FAC,PIT,VIN,RID externalNode
+  class MCELL,TOOLS,PING publicNode
+
+  linkStyle 3 stroke:#9e9e9e,stroke-width:2px,stroke-dasharray:2 2
+  linkStyle 4 stroke:#9e9e9e,stroke-width:2px,stroke-dasharray:2 2
+  linkStyle 5 stroke:#9e9e9e,stroke-width:2px,stroke-dasharray:2 2
+  linkStyle 27 stroke:#e53935,stroke-width:3px
