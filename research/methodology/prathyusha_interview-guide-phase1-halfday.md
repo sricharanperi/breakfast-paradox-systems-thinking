@@ -17,6 +17,15 @@ which is the classic tell of a question anchoring its own answer — and they're
 below. See that file's "Critique" section for the full reasoning and additional
 follow-up probes not folded into the main flow.
 
+**v3 — extended 2026-09-05 after a systems-archetype pass on deliverable 5** (see
+`deliverables/phase-1/prathyusha_05-system-timeline-bot-map.md`, "Feedback loops &
+systems archetypes"). Three decisions made with the user: Mess Cell market scale is
+now confirmed directly by the user (not asked in interview — see note at Guide 1 §3);
+a peak-queue "tragedy of the commons" question is added to Guide 2 for mess staff, who
+can actually observe the congestion effect on others; and a direct question about
+deliberate reselling-as-strategy (vs. accidental no-shows) is added to Guide 1 §3
+as-is, per the user's explicit choice to ask it directly rather than soften it.
+
 ---
 
 ## Guide 1 — Student interviews (30 min each, today, 2-3 people, mixed attend/skip)
@@ -56,10 +65,18 @@ Pick whichever happened most recently:
 - Have you ever used "Skip Meal"? → if yes, **what do you think it actually does, if
   anything?** *(rewritten: "symbolic or not" was a binary that anchored the answer)*
 - Have you ever bought or sold a registration on the Mess Cell WhatsApp group? → if yes,
-  walk me through the last time — how was the price decided? Roughly how many times have
-  you bought, sold, or seen a transaction go by in the group in the last month?
+  walk me through the last time — how was the price decided? *(scale/frequency question
+  dropped here — the user already confirmed real-world knowledge of the market's
+  size/activity directly, 2026-09-05; see the updated note in `prathyusha_05-*`'s
+  archetypes section instead of asking this again)*
 - Have you ever eaten as a walk-in without being registered? → if yes, what made that
   happen that day?
+- **Have you ever registered somewhere on purpose, even without a strong plan to go,
+  partly because you could resell it later if you didn't need it?** *(new — tests
+  whether some "no-shows" are actually a deliberate strategy rather than accidental;
+  asked directly, unsoftened, per the user's explicit choice — this materially changes
+  the diagnosis if true: a design flaw producing accidental waste vs. a rational
+  response to a mispriced system)*
 
 **4. Retrospective pattern** *(~4 min — substitutes for the live observation we can't
 do today; this directly rewrites the hypothesis section in
@@ -114,8 +131,14 @@ information, 2026-09-05) explains the Kadamba/Palash/Bakul differences better th
 7. What happens to food that isn't claimed?
 8. How would you describe how busy your mess gets compared to the others, on a typical
    morning?
-9. If you could change one thing about how registration/serving works from where you
-   sit, what would it be?
+9. **Does the rush right before 8:30 actually slow things down for everyone in line, or
+   does it not really work like that from where you stand?** *(new — tests a "tragedy of
+   the commons" hypothesis: everyone timing their arrival right before class congests a
+   shared counter/kitchen throughput, with no one bearing the cost of their own
+   contribution to the slowdown. Staff are the only ones positioned to see the effect on
+   other people, not just their own wait — added 2026-09-05 per the user's choice)*
+10. If you could change one thing about how registration/serving works from where you
+    sit, what would it be?
 
 ---
 

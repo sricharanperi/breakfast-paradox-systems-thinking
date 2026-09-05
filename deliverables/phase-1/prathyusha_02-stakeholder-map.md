@@ -126,6 +126,56 @@ flowchart TB
 
 ---
 
+## Onion diagram (concentric view of the same stakeholders)
+
+The tiered map above clusters by *type* of relationship (institutional vs. informal).
+This view clusters by *distance from the student's daily lived experience* — the same
+actors, a different lens, per the braindump's "multiple maps, not one" instruction.
+Mermaid has no literal circle primitive, so nesting is rendered as boxes-within-boxes:
+read outer rings as "further from the student's morning," inner rings as "closer to it."
+
+```mermaid
+flowchart TB
+  subgraph Ring4["Ring 4 — Environmental / competing (furthest)"]
+    direction TB
+    VIN[Vindhya / juice canteens]
+    RID[Delivery riders]
+    subgraph Ring3["Ring 3 — Institutional / governance"]
+      direction TB
+      MC[Mess Committee]
+      WD[Warden]
+      VEND[Per-mess vendors]
+      CATCO["Catering service provider 🟡"]
+      ACAD["Academic Office 🟡 — sleeping stakeholder"]
+      subgraph Ring2["Ring 2 — Daily operational contact"]
+        direction TB
+        SVC[Mess serving/counter staff]
+        COOK["On-site cooks 🟡"]
+        CATER["Catering-supplied staff 🟡"]
+        subgraph Ring1["Ring 1 — Core: the student's own morning"]
+          ST((Student))
+          FR["Friends 🟡"]
+          RM["Roommates 🟡"]
+          MCELL[Mess Cell WhatsApp market]
+        end
+      end
+    end
+  end
+```
+
+**Why this view earns its place, not just duplicates the tiered map:** it makes one
+thing visually obvious that the tiered map doesn't — **Ring 4 (Academic Office) has to
+cross three full rings to reach the student**, with no direct edge at any layer. That's
+the same "sleeping stakeholder" finding from the Power-Interest map, but the onion view
+shows *why* it stays sleeping: there's no adjacent ring connecting it to daily student
+experience, only to Ring 3 governance peers who also don't engage it (§ "no formal edge"
+in the tiered map above). Meanwhile Ring 1's Mess Cell market sits at the *innermost*
+ring despite having zero formal standing anywhere in the tiered map's institutional
+column — an informal structure that's closer to the student's actual morning than the
+Mess Committee is.
+
+---
+
 ## Still open after today
 
 - [ ] Confirm/replace 🟡 friend/roommate influence edges — Guide 1, Q5
