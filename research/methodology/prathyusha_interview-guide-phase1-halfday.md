@@ -27,7 +27,7 @@ deliberate reselling-as-strategy (vs. accidental no-shows) is added to Guide 1 �
 as-is, per the user's explicit choice to ask it directly rather than soften it.
 
 **v4 — extended 2026-09-05 after a full stakeholder-universe discovery pass** (see
-`deliverables/phase-1/prathyusha_02b-stakeholder-universe-register.md`). Corrections
+`deliverables/phase-1/prathyusha_02-stakeholder-map.md`). Corrections
 folded in throughout: Guide 1 gets a cuisine-preference question; Guide 2's cook-vs-
 catering framing is replaced with the confirmed cuisine/per-mess-procurement structure,
 and priority shifts toward a North Indian-line staff member; a new **Guide 3
@@ -115,7 +115,8 @@ do today; this directly rewrites the hypothesis section in
   North Indian mess line underperforms the one South Indian line, Kadamba, across the
   board. Ask this neutrally, without naming "cuisine" first — let them say what drives
   it themselves before probing on food type specifically. See
-  `prathyusha_02b-stakeholder-universe-register.md` §B for the numbers this is testing)*
+  `prathyusha_02-stakeholder-map.md`'s Stakeholder Register for the numbers this is
+  testing)*
 
 **6. Close** *(~2 min)* — **How much money do you think you've spent this semester on
 breakfasts you didn't eat?** *(new — tests whether concretizing the cost changes the
@@ -164,8 +165,8 @@ to say whether low uptake reads as a demand problem from where they stand.
 
 ## Guide 3 — Governance (Mess Committee / Mess Office / Warden contact), if reachable
 
-**New, added 2026-09-05.** Per the stakeholder-universe register
-(`deliverables/phase-1/prathyusha_02b-stakeholder-universe-register.md` §N), this is now
+**New, added 2026-09-05.** Per the Stakeholder Map's "Open Items" section
+(`deliverables/phase-1/prathyusha_02-stakeholder-map.md`), this is now
 the **single highest-priority interview in the whole plan (P0)** — it's the only source
 that can resolve the feedback-efficacy question, the Mess Office/Warden relationship,
 and independently check the cuisine-preference hypothesis from the governance side. Even

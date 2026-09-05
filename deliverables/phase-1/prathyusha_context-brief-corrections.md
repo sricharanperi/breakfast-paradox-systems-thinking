@@ -4,7 +4,7 @@
 is the shared team document and isn't being edited directly. Everything below is a
 correction or addition that would otherwise have gone into it. Read this alongside that
 file, not as a replacement for it. Full reasoning and evidence for each item lives in
-`prathyusha_02b-stakeholder-universe-register.md`.
+`prathyusha_02-stakeholder-map.md`.
 
 ---
 

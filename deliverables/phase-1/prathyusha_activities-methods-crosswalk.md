@@ -17,19 +17,18 @@ mean every method behind it actually happened. Legend: ✅ done · 🟡 partial/
 ## Activity 2 — Identify & Map Stakeholders
 
 **Status: ✅ COMPLETE as of 2026-09-05**, after a full first-principles stakeholder-
-universe discovery pass (17 lenses + public-source research + user confirmation) —
-see `prathyusha_02b-stakeholder-universe-register.md` for the full register, taxonomy,
-relationship matrix, dependency map, and conflict map, and `prathyusha_02-*` (v2) for
-the compact diagram-first deliverable. This superseded and corrected v1's mess
-structure, collapsed governance actor, and over-expanded Friends/Roommates nodes — see
-that register's §O ("Final Systems-Thinker Audit") for the explicit self-corrections.
+universe discovery pass (17 lenses + public-source research + user confirmation),
+consolidated into a single deliverable at `prathyusha_02-stakeholder-map.md`. This
+corrected the earlier draft's mess structure, collapsed governance actor, and
+over-expanded Friends/Roommates nodes — see that file's stakeholder cards for the
+explicit corrections.
 
 | Method | Status | Evidence |
 |---|---|---|
-| Identify primary, secondary and indirect stakeholders | ✅ | `prathyusha_02b-*` §A (17-stakeholder register, Direct/Indirect/Latent taxonomy in §C.1) |
-| Map stakeholder interests, needs and expectations | ✅ | `prathyusha_02-*` (v2)'s dedicated Interest/Need/Expectation table, plus full stakeholder cards in `prathyusha_02b-*` §E |
-| Identify relationships, dependencies and conflicts | ✅ | `prathyusha_02b-*` §F (relationship matrix), §J (conflict map), §K (dependency map), §L (missing relationships) |
-| Identify formal and informal roles | ✅ | `prathyusha_02b-*` §C.2 taxonomy, incl. Mess Cell/Ping/unofficial-tools as informal-only actors |
+| Identify primary, secondary and indirect stakeholders | ✅ | "Stakeholder Register" (17-stakeholder summary table + Direct/Indirect/Latent lens) |
+| Map stakeholder interests, needs and expectations | ✅ | Interest/Need/Expectation stated in prose for every stakeholder card |
+| Identify relationships, dependencies and conflicts | ✅ | "Relationships, Dependencies, and Influence" (matrix, dependency notes, missing relationships) |
+| Identify formal and informal roles | ✅ | "Classification Lenses" (Formal/Informal), incl. Mess Cell/Ping/unofficial-tools as informal-only actors |
 
 ## Activity 3 — Analyse Power, Interests & Leverage
 
