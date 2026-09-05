@@ -1,16 +1,18 @@
 flowchart LR
     Mess["Breakfast Mess System"]
     Academic["Academic Administration<br/>class schedule"]
-    Hostel["Warden / Hostel Administration"]
-    Committee["Mess Committee"]
+    Warden["Warden<br/>vendor management, structural change"]
+    Committee["Mess Committee<br/>policy, menu"]
+    Office["Mess Office<br/>ordering, platform, operations"]
     Vendors["Mess Vendors<br/>Kadamba, Palash/Bakul, Yuktahar"]
     Students["Student Population"]
     MessCell["Informal Resale Market<br/>Mess Cell"]
     FoodEco["Campus Food Ecosystem<br/>Vindhya, Juice Canteens, Delivery"]
 
-    Committee -->|sets menu, mess policy| Mess
-    Hostel -->|vendor management, operational authority| Mess
-    Vendors -->|food production| Mess
+    Committee -->|sets menu, policy| Mess
+    Office -->|orders, administers platform| Mess
+    Warden -->|vendor management, structural change| Mess
+    Vendors -->|food production, per-mess procurement| Mess
     Mess -->|registration, billing, access| Students
     Students -.->|resale of registrations| MessCell
     Students -->|alternative source| FoodEco
