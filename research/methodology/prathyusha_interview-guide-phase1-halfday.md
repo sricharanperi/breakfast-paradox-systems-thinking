@@ -8,6 +8,15 @@ data + intuition — see `deliverables/phase-1/prathyusha_02-stakeholder-map.md`
 `prathyusha_03-...`, `prathyusha_05-...` for what's already assumption-built and flagged
 for correction from these interviews.
 
+**v2 — sharpened 2026-09-05 after a synthetic pilot run.** Two AI-simulated interviews
+(one attender persona, one skipper persona — SYNTHETIC, not real, logged in
+`prathyusha_synthetic-pilot-interviews.md`) were run through Guide 1 to stress-test the
+questions before using them on real people. A third review pass caught four leading/
+binary questions — both synthetic respondents gave near-identical answers to them,
+which is the classic tell of a question anchoring its own answer — and they're rewritten
+below. See that file's "Critique" section for the full reasoning and additional
+follow-up probes not folded into the main flow.
+
 ---
 
 ## Guide 1 — Student interviews (30 min each, today, 2-3 people, mixed attend/skip)
@@ -28,35 +37,60 @@ Pick whichever happened most recently:
 - Walk me through this morning (or the last morning you skipped), from when you woke up
   to whatever happened with breakfast — as close to minute-by-minute as you can recall.
 - Probes as needed: What made you decide to go / not go, at the moment you decided? Did
-  you check the app at any point? Was anyone else involved — did a roommate or friend
-  wake you, ask you to come, or go without you? What did the counter/queue look like
-  when you got there (or would have)? Did anything not go as expected (item ran out,
-  long queue, food quality)? What did you do about it?
+  you check the app at any point? **Was anyone else part of your morning at all — tell
+  me about that** *(rewritten: was a compound multiple-choice probe — let them describe
+  freely instead of picking from a list)*. What did the counter/queue look like when you
+  got there (or would have)? Did anything not go as expected (item ran out, long queue,
+  food quality)? What did you do about it?
+- If they mention a regular companion: **if they were away for a week, what do you think
+  would happen to your attendance? Has that actually happened — what happened?** *(new —
+  both synthetic personas leaned heavily on a companion's active prompt as the real
+  trigger; push past the mention to test how load-bearing it actually is)*
 
 **3. Workarounds and exceptions** *(~5 min, fact-first each)*
+- **How do you usually register — day by day, or all at once for the week?** *(new —
+  both synthetic personas batch-registered every Sunday, which would decouple the
+  registration decision from the morning-of attendance decision and could mechanically
+  explain a lot of the no-show pattern on its own; not previously asked anywhere)*
 - Have you ever cancelled a registration? → if yes, walk me through the last time.
-- Have you ever used "Skip Meal"? → if yes, does it actually change anything for you,
-  or just feel symbolic?
+- Have you ever used "Skip Meal"? → if yes, **what do you think it actually does, if
+  anything?** *(rewritten: "symbolic or not" was a binary that anchored the answer)*
 - Have you ever bought or sold a registration on the Mess Cell WhatsApp group? → if yes,
-  walk me through the last time — how was the price decided?
+  walk me through the last time — how was the price decided? Roughly how many times have
+  you bought, sold, or seen a transaction go by in the group in the last month?
 - Have you ever eaten as a walk-in without being registered? → if yes, what made that
   happen that day?
 
 **4. Retrospective pattern** *(~4 min — substitutes for the live observation we can't
 do today; this directly rewrites the hypothesis section in
 `prathyusha_05-system-timeline-bot-map.md` §A)*
-- Has how often you eat breakfast changed over this semester? What changed, if anything?
-- If you had to guess: which half-hour of the 7:30-9:30 window is most crowded, and
-  which is quietest? What's different about what's being served or left over at each?
+- Has how often you eat breakfast changed over this semester? **Can you point to a
+  specific week or event when it changed, or has it been pretty steady?** *(rewritten to
+  ask for a pinned date, not a vague impression)*
+- **Do you have a clear sense of when the mess is busiest, or not really?** — if they do:
+  which half-hour, and what's different about what's being served or left over at each?
+  **Have you personally seen an item run out — which one, roughly what time, how do you
+  know?** *(rewritten: license "I don't know" before asking for a guess, and push for
+  direct evidence over impression)*
 
 **5. Relationships and power** *(~5 min)*
 - Do you usually eat with others, and does that affect whether you go, on a given
   morning?
 - Have you or anyone you know ever tried to get a mess rule or timing changed? What
   happened?
-- Do you feel students have any real say in mess decisions, or is it one-directional?
+- **What's your sense of how much input students actually have in mess decisions? Can
+  you think of a specific example, either way?** *(rewritten: "one-directional or not"
+  was a false binary — both synthetic answers converged on near-identical phrasing,
+  which is the classic sign a question is leading rather than eliciting)*
+- **If breakfast started an hour later, do you think that would actually change
+  anything for you?** *(new — directly tests whether the mess-hours/class-overlap
+  framing is even the real driver, since one synthetic respondent argued it's habit/
+  willpower, not timing)*
 
-**6. Close** *(~2 min)* — Anything about breakfast or the mess we haven't touched on?
+**6. Close** *(~2 min)* — **How much money do you think you've spent this semester on
+breakfasts you didn't eat?** *(new — tests whether concretizing the cost changes the
+"doesn't feel like a big deal" framing that came up in the pilot)* Anything else about
+breakfast or the mess we haven't touched on?
 
 ---
 
