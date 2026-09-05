@@ -1,6 +1,13 @@
 # Corrections & Additions to the System Context Brief (prathyusha, 2026-09-05)
 
-**Status:** 🟡 Kept deliberately separate from `01-system-context-brief.md` — that file
+**Status: ✅ SUPERSEDED 2026-09-05.** Every correction below has since been integrated
+directly into `01-system-context-brief.md` itself (commit "Integrate prathyusha's
+corrections into System Context Brief; simplify problem framing"). Kept here only as
+the historical record of what changed and why — read the context brief itself for the
+current text.
+
+**Original framing below, retained as-is:** Kept deliberately separate from
+`01-system-context-brief.md` — that file
 is the shared team document and isn't being edited directly. Everything below is a
 correction or addition that would otherwise have gone into it. Read this alongside that
 file, not as a replacement for it. Full reasoning and evidence for each item lives in
