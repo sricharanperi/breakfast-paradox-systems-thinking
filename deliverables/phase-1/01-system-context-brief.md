@@ -1,244 +1,118 @@
-# Phase 1 · Activity 1 — System Context Brief
-
-**Puzzle:** The Breakfast Paradox `[Source: ProblemStatements.pdf]`
-**Status:** DRAFT — built from data collected through 2026-09-03. Pending team review.
-**Activity source:** *"Define the system boundary and context; identify the system's purpose and
-intended outcomes; identify visible symptoms and underlying issues; identify key actors,
-institutions, processes, resources and constraints."* `[Source: project_framework .pdf, Activity 1]`
-
+---
+title: "System Context Brief"
+subtitle: "IIIT Hyderabad Breakfast Mess System"
 ---
 
-## Stated assumptions (scope decisions, not fact claims)
+# System Boundary and Context
 
-1. **Real site = the team's own IIIT Hyderabad mess system.** Per the approved project plan, the
-   `ProblemStatements.pdf` narrative (Rohan, Adit, Kadamba mess, 7:30-9:30 hours) is treated as the
-   course's *prompt scenario*, not verified fact — this brief is grounded in the real IIIT-H system
-   instead, using the prompt only for framing/motivation.
-2. **Scoped to Breakfast specifically**, not Lunch or Dinner, even though the same mess
-   infrastructure (registration, QR, billing, cancellation) runs all three meals — because
-   Breakfast is what the assigned puzzle is about. If the team wants Lunch/Dinner data folded in
-   for comparison later, say so and it can be added.
-3. **Confidence caveat, not an assumption to build on:** almost everything below currently traces
-   to a single respondent (one team member) plus that respondent's own portal screenshots. It is
-   real, verified data — not invented — but it is not yet cross-checked against a second person's
-   experience. Treat "symptoms" below as *confirmed to happen*, not yet as *confirmed typical*.
-4. ~~Where Lunch-specific numbers were used to illustrate mechanism~~ — **superseded 2026-09-09**:
-   real breakfast-specific capacity/rate numbers are now available (see §3) and are used directly
-   instead of the Lunch extrapolation.
+## System Boundary
 
----
+The system under study is the breakfast meal registration, billing, and service process operated across the four residential dining messes at IIIT Hyderabad — Kadamba, Palash, Bakul, and Yuktāhār — together with the digital registration and billing platform (dining.iiit.ac.in) that governs access to all four. The boundary includes the interface between this system and the academic class schedule, since the two operate on overlapping but independently controlled timings.
 
-## 1. System boundary
+On-campus alternatives that compete for the same demand — Vindhya Canteen, the juice canteens, and third-party food delivery services — sit at the edge of this boundary. They are not part of the mess system's own operation, but they materially affect it: a student who does not eat at a mess draws instead on one of these.
 
-**In scope:** the IIIT-H dining/mess registration-and-billing system for Breakfast, across all
-four messes — Kadamba, Palash, Bakul, and Yuktāhār (incl. its Jain-food variant) — and its
-interaction with the academic class schedule. `[Source: Interview — student self-account,
-2026-09-03; Screenshots analysis, 2026-09-03]`
+Lunch and dinner registration at the same four messes fall outside this boundary. The system described here is scoped to the breakfast meal, though it runs on the same underlying platform and the same rules as the other two meals.
 
-**In scope as environmental/competing factors:** the on-campus alternatives a student can choose
-instead of mess breakfast — Vindhya canteen (Mon-Sat, open from 10 AM, closes 6 or 8 PM — exact
-closing time still `[NEEDS DATA]`; serves food, coffee, Horlicks), juice canteens, and delivery
-apps (Swiggy/Zomato/Blinkit, gate-restricted, rider pickup required).
-`[Source: Interview, 2026-09-03; 2026-09-09/10]`
+![System Boundary](assets/diagram1-system-boundary.png)
 
-**Out of scope for this document:** Lunch and Dinner registration behavior specifically (assumption
-#2 above); off-campus dining entirely; the other three "Pick Your Puzzle" problems.
+## Context
 
-## 2. Purpose of the system (as designed, not as experienced)
+The breakfast system serves the entire resident student population of the institute across four messes, operating daily from 7:30 AM to 9:30 AM. Total confirmed breakfast capacity across the four messes is approximately 2,755 registrations per day: Kadamba (700 vegetarian, 600 non-vegetarian), Bakul (350 vegetarian, 350 non-vegetarian), Palāsh (400), and Yuktāhār (340 regular, 15 Jain).
 
-A subscription-style dining system: students pre-register per meal per mess through the official
-IIIT-H app/portal (`dining.iiit.ac.in`), are billed monthly **by registration count, not
-attendance**, access their meal via a personal QR code scanned at the mess, and receive a
-veg/non-veg plate matched to their registration type. `[Source: Interview, 2026-09-03; Screenshots
-analysis, 2026-09-03]`
+Structurally, the system combines centralized demand management with decentralized supply. A single digital platform governs registration, billing, and access across all four messes, while food production itself is distributed and non-uniform. Kadamba operates its own kitchen and vendor. Palash and Bakul share a vendor: food is cooked centrally at Palash and physically transported to Bakul, which additionally prepares non-vegetarian food on-site, since Palash's kitchen cannot produce non-vegetarian food at all. Yuktāhār operates independently and is the only mess offering a Jain food registration option. Four different production arrangements are unified only at the registration, billing, and access layer — the mess system is not one kitchen serving one population through one process, but a coordinated platform sitting over four structurally different operations.
 
-## 3. Context — the real, confirmed facts
+The system operates inside, and is shaped by, several adjacent systems it does not control:
 
-- **Mess hours:** Breakfast 7:30-9:30 AM, Lunch 12:30-2:30 PM, Dinner 7:30-9:30 PM.
-  `[Source: Interview, 2026-09-03]`
-- **Class schedule:** classes start 8:30 AM, last class ends 6:40 PM, class lunch break 1-2 PM.
-  Classes are **not continuous** — most students have relatively few classes on a given day; the
-  respondent has an 8:30 AM class only twice a week. `[Source: Interview, 2026-09-03]`
-- **Four messes, each with a distinct role:**
-  - *Kadamba* — largest by capacity (1200 seats at Lunch on the one date sampled), serves non-veg.
-  - *Palash* — cannot serve non-veg (kitchen/structural constraint); its cooked food is also
-    shipped to Bakul.
-  - *Bakul* — serves Palash's veg food plus its own non-veg; created specifically because Kadamba
-    alone couldn't cover non-veg demand once it hit capacity.
-  - *Yuktāhār* — a fourth mess, offers a separate Jain-food registration variant.
-  `[Source: Interview, 2026-09-03; Screenshots analysis, 2026-09-03]`
-- **Breakfast registered rates (2026-09-09, confirmed directly):** Yuktāhār ₹53, Yuktāhār (Jain)
-  ₹53, Kadamba (Veg) ₹48, Kadamba (Non-Veg) ₹66, Bakul (Veg) ₹48, Bakul (Non-Veg) ₹66, Palāsh ₹48.
-  Walk-in/unregistered rates for breakfast weren't captured in this batch, but Lunch data (Sept 10)
-  showed walk-in running ~70-90% above registered price, and the same billing model applies to all
-  meals, so a similar markup at breakfast is plausible but **not yet directly confirmed**.
-  `[Source: Screenshots analysis, 2026-09-09]`
-- **Breakfast capacity/registration (2026-09-09):** Kadamba (Veg) 551/700 registered — clearly the
-  highest-uptake option; Bakul, by contrast, has notably lower uptake on both its veg (108/350)
-  and non-veg (37/350) lines. `[Source: Screenshots analysis, 2026-09-09]`
-- **Why Bakul's numbers are lower — respondent's own explanation, not yet independently verified:**
-  Kadamba is the established, larger, well-liked "go-to" mess. Bakul is newer, physically a
-  converted warehouse (cleaned, tables and a serving counter added), created specifically to add a
-  second non-veg option once Kadamba alone couldn't cover demand; its veg food is cooked at Palash
-  and carried over, non-veg cooked separately on-site. The respondent attributes both Bakul's
-  lower admin-set capacity and lower registration uptake to this newer/secondary status — plausible,
-  but capacity (set by mess administration) and registration (student choice) are mechanically
-  different things being explained by one story here, so this is flagged as a hypothesis pending a
-  Bakul-side or Mess Committee confirmation, not stated as settled fact.
-  `[Source: Interview, 2026-09-09/10]`
-- **Governance:** the Mess Committee decides mess-specific matters (menu, set ~1 month ahead, with
-  student input); the Warden handles vendor management and any changes to the mess; the academic
-  office has **no role** in mess timing or hostel matters. `[Source: Interview, 2026-09-03]`
+- **Academic administration and class schedule.** Classes begin at 8:30 AM and run until 6:40 PM, with a class lunch break from 1:00 PM to 2:00 PM. Class scheduling is not continuous — most students have a limited number of classes on a given day — and there is no formal channel of coordination between the mess system and the academic calendar; the two schedules are set independently of one another by separate authorities.
+- **Warden and Mess Committee governance.** Vendor management and any operational change to the mess sit with the Warden. Mess-specific decisions, including the menu, sit with the Mess Committee, which incorporates student input on menu content approximately one month ahead of service.
+- **An informal peer-to-peer resale market ("Mess Cell").** A WhatsApp group has formed in which students who hold a breakfast registration they will not use offer it for resale to other students at a negotiated price below the registered rate. This market operates entirely outside the mess system's own registration and billing infrastructure, transacted through the same personal QR-based access credential the formal system issues.
+- **The wider campus food ecosystem.** Vindhya Canteen (open Monday to Saturday, from 10:00 AM), the juice canteens (open mornings), and delivery platforms (accepting orders until 11:00 PM, with delivery personnel required to remain outside the campus gate) all draw on the same student population and stand as alternatives to mess breakfast.
 
-## 4. Symptoms observed (real, not narrative)
+Billing operates on a monthly cycle tied to registration, not attendance: a student is charged for every meal they are registered for, regardless of whether they eat it, and may cancel a registration in advance, subject to a limit of five cancellations per meal type per month. Unregistered ("walk-in") access to a meal is priced materially higher than registered access to the same meal.
 
-- **Direct, dated instance:** the respondent's own Sept 3, 2026 breakfast registration — charged
-  ₹48 at Kadamba (Veg), not availed. `[Source: Screenshots analysis, 2026-09-03]`
-- **Structural evidence of a recurring pattern:** the system caps cancellations at 5 per meal-type
-  per month — a rule that only makes sense if uncancelled no-shows are common enough to need
-  limiting. `[Source: Interview, 2026-09-03]`
-- **A "Skip Meal" toggle exists** specifically so kitchens aren't over-preparing for known
-  no-shows — but it does not reduce the charge, only kitchen waste. This confirms the system's
-  designers are aware of the no-show pattern at the kitchen-planning level, even though the
-  billing model doesn't address it. `[Source: Screenshots analysis, 2026-09-03]`
-- **An emergent, unofficial secondary market** ("Mess Cell" WhatsApp group) where students resell
-  registrations they know they won't use — a self-organized workaround for exactly this waste
-  problem, not part of the official system design. `[Source: Interview, 2026-09-03]`
-- **An unexplained quantitative anomaly:** on the one Lunch date sampled, Bakul's
-  registered-to-capacity ratio (116/700) was far lower than Kadamba's (722/1200) — real numbers,
-  cause unknown, and this is Lunch not Breakfast. `[Source: Screenshots analysis, 2026-09-03;
-  NEEDS DATA — breakfast-specific capacity numbers, and an explanation for the Bakul gap]`
-- **No confirmed negotiation or escalation mechanism** — added 2026-09-05 while building the
-  Process Trace (`deliverables/phase-1/prathyusha_04-process-trace.md`). Beyond the Mess
-  Committee "taking student input" on the menu, neither the one real respondent nor two
-  synthetic pilot interviews could describe what actually happens after a student gives mess
-  feedback — no one could point to a real example of feedback leading to a change. This is a gap
-  in the system itself, not just in what's been asked so far, and it directly explains why the
-  Academic Office / class-timing lever (§7) has never been pursued: there's no visible channel
-  for anyone to even raise it formally. `[Source: Interview, 2026-09-03; Synthetic pilot,
-  2026-09-05 — flagged 🟡 pending a real Role D/governance confirmation]`
+![Context Map](assets/diagram2-context-map.png)
 
-## 5. Constraints
+# Purpose and Intended Outcomes
 
-- Billing is by registration, not attendance; only 5 cancellations/meal-type/month are allowed.
-- Walk-in eating costs substantially more than registering in advance (structural disincentive to
-  simply not register when uncertain).
-- Veg/non-veg plates are hard-segregated by registration type at the point of service.
-- Palash's kitchen cannot produce non-veg at all (physical/structural, not policy).
-- Governance authority sits with the Mess Committee and Warden; the academic office/timetable side
-  has no formal lever over mess timing, so any fix touching "when mess runs vs. when class starts"
-  would need to cross that organizational boundary.
-`[Source: Interview, 2026-09-03; Screenshots analysis, 2026-09-03]`
+## Purpose
 
-## 6. Key actors (high-level only — full mapping is Activity 2)
+The breakfast mess system exists to provide the resident student population with reliable, adequate, good-quality food each morning, at a predictable and affordable cost, accommodating dietary requirements — vegetarian, non-vegetarian, and Jain — in a manner that supports student health, energy, and academic performance.
 
-Students (a range of breakfast habits — see the interview file §7 for one respondent's detailed
-account), Mess Committee, Warden, per-mess vendors (Kadamba's, and Palash/Bakul's shared vendor),
-mess serving/cleaning staff, Vindhya/juice canteens, delivery riders (gate-restricted), and the
-informal Mess Cell WhatsApp community. `[Source: Interview, 2026-09-03]`
+## Intended Outcomes
 
-## 7. Initial problem framing (a question, not an answer — per Week 1 methodology)
+- Every registered student obtains a breakfast meal matching their dietary requirement within the operating window.
+- Food quality and preparation quantity remain consistent with actual demand, minimizing both shortage and waste.
+- The cost structure remains affordable and predictable for students across a full semester.
+- Access to breakfast does not depend on a student's ability to navigate informal workarounds; the formal system functions as the primary and sufficient channel on its own.
+- The system remains responsive to changes in student needs and circumstances — schedule conflicts, dietary changes, feedback — through its own governance structure.
 
-Why do students routinely register for breakfast and then not attend — despite being charged
-either way, and despite walk-in alternatives costing 70-90% more — and is this driven mainly by
-the mess-hours/class-start overlap, by unrelated personal habits (sleep, diet, food quality,
-social company), or by some mix that varies by student? `[Framing informed by: Interview,
-2026-09-03; course concept — Iceberg Model, Source: Course — Lecture 4/"The Donella Meadows
-Project"]`
+# Visible Symptoms and Underlying Issues
 
----
+| Visible Symptom | Underlying Issue |
+|---|---|
+| A student registers for breakfast, does not attend, and is still charged the full registered price. | Billing is tied to registration, not attendance. The cost is incurred at the point of registering, independent of whether the meal is ultimately consumed. |
+| The registration platform imposes a cap of five cancellations per meal type per month. | Uncancelled, unattended registrations occur often enough, across the student population, that an explicit limit was necessary to manage them — the cap is itself evidence of the scale of the pattern it constrains. |
+| A "Skip Meal" function lets a student notify the kitchen in advance that they will not attend, but this does not reduce or refund the charge. | The mechanism built for anticipated non-attendance addresses only the kitchen's production planning, not the student's cost. It returns zero value to the student for the same situation a cancellation — capped at five per month — would address instead. |
+| An unofficial, student-run resale market ("Mess Cell") has formed, where students sell registrations they will not use to other students at a negotiated price. | Reselling a registration returns partial or full value to the student, while using Skip Meal returns none. For a student who knows in advance they will not attend, resale is a materially better option than the system's own built-in mechanism for the same situation — the formal tool is outcompeted by an informal one because it was designed to reduce kitchen waste, not to return value to the student. |
+| Registered-but-unclaimed meals persist despite both a cancellation option and a resale market being available. | Cancellation and resale both require advance knowledge that the student will not attend. Non-attendance decided at the last minute — oversleeping, running out of time, a change of plans — has no mechanism available to it at all; this is the specific category of registration that converts into prepared, uneaten food with no value returned to anyone. |
+| Walk-in (unregistered) access to a meal costs substantially more than the same meal accessed through a prior registration. | The pricing structure creates a standing incentive to register in advance even when attendance is uncertain, since deciding same-day costs more. Registration counts are inflated by this incentive independent of a student's actual intention to attend. |
+| Bakul's registered attendance is consistently lower, relative to its own capacity, than Kadamba's. | Bakul is a more recently established mess, physically situated in a converted warehouse rather than a purpose-built dining hall, created specifically to add non-vegetarian capacity once Kadamba's own capacity was reached; part of its food supply is transported from Palash rather than produced on-site. Kadamba is the original and most established mess. |
+| Neither students nor mess-side staff describe a visible channel through which mess feedback leads to a change in policy, hours, or operations. | The Mess Committee's stated process for student input applies to the menu specifically; no equivalent process exists for structural matters such as operating hours or the billing model. This absence is also why the overlap between breakfast hours and the academic schedule has never been formally raised — there is no established path for a cross-authority issue to be escalated by either side. |
+| Breakfast hours (7:30–9:30 AM) overlap with the start of the academic day (8:30 AM), while the two schedules are set by entirely separate authorities. | The Warden and Mess Committee control mess operations; the academic administration controls class scheduling; neither has authority over the other's schedule, and no coordination mechanism links the two. A timing conflict between them can persist indefinitely without either side being positioned to resolve it unilaterally. |
+| The registration platform includes a random-allocation mechanism, evidenced by a settings option to notify a student when they have been randomly allocated a meal. | Some registrations are generated by the system itself rather than by active student choice. Recorded registration counts do not uniformly represent expressed intent to attend. |
+| A portion of students report skipping breakfast for reasons unrelated to the mess system's own operation — personal dietary practice, sleep schedule, and established habit. | Breakfast non-attendance is not driven by a single cause. It includes a population of students whose non-attendance would persist regardless of any change to mess hours, pricing, or process, because the driving factor is a personal routine formed independently of the mess system. |
+| Students report that companionship affects whether they attend breakfast — attendance is more likely when a roommate or friend is also going. | Breakfast attendance, for at least part of the student population, is a socially coordinated decision rather than a purely individual one; a student's own registration does not reliably predict their attendance independent of who else is going that morning. |
 
-## 8. Research Instruments — who to talk to next, and exactly what to ask
+# Key Actors, Institutions, Processes, Resources and Constraints
 
-**v2 — rewritten 2026-09-09.** The first version of this section was, correctly, called out as too
-direct — several questions presupposed their own answer (e.g. "what would make you skip
-breakfast, if anything" assumes something would), which is a textbook leading-question pattern.
-This version is built from an actual deep read of Sharp/Preece/Rogers' *Interaction Design*
-("Data Gathering" chapter) and Constantine's "Users, Roles, and Personas," logged in full at
-`research/methodology/notes-hci-textbook-and-personas.md` (a second and third source are still
-pending a retry after a rate-limit interruption — see `research/methodology/index.md` — this
-section may sharpen further once those land).
+## Actors
 
-**Two changes from the methodology, applied throughout below:**
-1. **These are Constantine's "user roles," not personas.** A role is a relationship to the system
-   (Context/Characteristics/Criteria), not a fictional person with an invented biography — so
-   there's no made-up name, backstory, or demographic detail below, only what defines the
-   relationship. One real student can occupy more than one role in the same week (e.g. registering,
-   sometimes attending, occasionally selling on Mess Cell) — don't assume a person is "a skipper"
-   before asking anything; that framing is itself a leading setup.
-2. **Fact before reason, everywhere.** Every question that used to ask "why do you skip/eat" now
-   first asks the neutral fact ("do you," "how often"), and only asks for the reason after a
-   confirmed yes — never assumes the behavior in the question's own phrasing.
+- **Students** — the registrants and consumers of the meal; attendance and dietary preference vary across the population.
+- **Mess Committee** — sets the menu and mess-specific policy, incorporating student input approximately one month in advance.
+- **Warden** — holds authority over vendor management and any operational change to the mess.
+- **Per-mess vendors** — Kadamba's vendor; the shared Palash/Bakul vendor; Yuktāhār's vendor.
+- **Mess serving and cleaning staff** — also consume mess food after student service hours conclude.
+- **Academic administration** — sets the class schedule; holds no authority over mess operations.
+- **Students participating in the Mess Cell resale market** — an unofficial secondary role occupied by a subset of registered students.
+- **Guests** — parents, visiting relatives, and non-student campus affiliates who pay the vendor directly for access.
 
-**How to run these:** semi-structured, not a rigid script — ask the listed questions but let
-follow-ups happen naturally. Two neutral probes to lean on instead of improvising a leading one:
-*"Can you tell me a bit more about that?"* and *"Is there anything else?"* Sequence: brief
-intro (what this is for) → the easy fact-based opening question → the narrative/behavioral
-questions → the closing open question. Write down answers close to verbatim, not summarized in
-the moment, and send them back exactly as given — 10-15 minutes per person is enough.
+## Institutions
 
-**Priority order unchanged:** Role A and B first (test whether §4/§7's patterns generalize beyond
-one respondent); Role C next (only independent check on the Bakul hypothesis in §3); Role D if
-accessible (settles remaining governance questions).
+- The Mess Committee and the Office of the Warden, jointly holding mess governance.
+- The academic administration/timetable authority, operating independently with no formal link to mess governance.
+- The four mess vendors, operating as independent entities under one shared registration platform.
 
-### Role A — Breakfast-attending role (currently registers and regularly eats)
-*Context:* the relationship of someone whose registrations and actual attendance mostly line up.
-1. On a typical week, roughly how many mornings do you eat breakfast at the mess? *(fact, warm-up)*
-2. Walk me through what happens between waking up and sitting down to eat, on a morning you go.
-3. Do you usually go alone or with others? *(fact)* — if with others: what's that like?
-4. Has there ever been a morning you were registered but didn't go? *(fact)* — if yes: tell me
-   about one of those mornings, what happened?
-5. On mornings you have an early class, is your routine any different from mornings you don't?
-6. Is there anything about breakfast at the mess — good or bad — we haven't touched on?
+## Processes
 
-### Role B — Breakfast-skipping role (frequently registers-but-doesn't-attend, or doesn't register)
-*Context:* the relationship of someone who often doesn't eat mess breakfast, whatever the reason.
-1. On a typical week, roughly how many mornings do you *not* eat breakfast at the mess? *(fact)*
-2. Think of the last morning you didn't eat breakfast — walk me through what happened from when
-   you woke up.
-3. Were you registered for breakfast that day? *(fact)* — if yes: what happened between
-   registering and not going?
-4. Did you end up eating or getting food later that morning, or before lunch? *(fact)* — if yes:
-   tell me about that, where did it come from?
-5. Have you ever used the Mess Cell WhatsApp group to buy or sell a meal registration? *(fact)* —
-   if yes: walk me through the last time.
-6. Thinking back over the last month, has how often you eat breakfast changed at all? What comes
-   to mind?
-7. Is there anything about your mornings, or the mess, we haven't touched on?
+- **Registration** — a student selects a mess and meal date through the digital platform in advance of service.
+- **Billing** — charges are applied monthly, calculated from registration count, independent of attendance.
+- **Cancellation** — a registered meal may be cancelled in advance, up to five times per meal type per month, removing the associated charge.
+- **Skip Meal** — a registered student may flag in advance that they will not attend; this notifies the kitchen for production planning but does not affect billing.
+- **Access** — a student presents a personal QR code at the mess counter to receive a plate matching their registered dietary category. The code can be reset at any time, and mess staff can reassign it on the spot if a student eats at a different mess than the one registered.
+- **Walk-in access** — a student without a registration may pay the vendor directly at a higher rate, subject to a separate, smaller capacity allocation.
+- **Resale** — outside the formal platform, a registered student may transfer their registration to another student through the Mess Cell WhatsApp group, in exchange for a negotiated payment.
+- **Menu setting** — the Mess Committee finalizes the menu approximately one month ahead of service, incorporating student input.
 
-### Role C — Mess operations role (vendor or serving staff, ideally one from Kadamba, one from Bakul)
-*Context:* the relationship of someone preparing/serving food, experiencing registration from the
-supply side — the only source that can independently check §3's Bakul hypothesis.
-1. Walk me through a typical breakfast service, from when you start preparing to when you close.
-2. On a typical day, roughly how many plates go unclaimed out of what's registered? *(approximate
-   is fine)*
-3. What happens to food that isn't claimed?
-4. When someone marks "Skip Meal" in the app, does that change what you prepare? How far ahead do
-   you actually see it?
-5. *(Bakul staff only)* How would you describe how busy Bakul gets compared to Kadamba, on a
-   typical morning?
-6. If you could change one thing about how registration works, from where you sit, what would it be?
+## Resources
 
-### Role D — Mess governance role (Mess Committee member or Warden)
-*Context:* the relationship of someone with decision authority over hours, rules, and vendors.
-1. Walk me through how breakfast hours came to be what they currently are.
-2. Has changing them ever come up in discussion? *(fact)* — if yes: what was that like?
-3. What's the thinking behind the 5-cancellations-per-month limit specifically?
-4. Has the overlap between breakfast hours and early class times ever come up as something to
-   address? *(fact)* — if yes: tell me about that.
-5. In your own account, why was Bakul set up the way it was?
-6. Do you track how often registered meals go unclaimed? *(fact)* — if yes: would you be willing
-   to share what that looks like?
-7. Is there anything about how the mess system works that outsiders usually get wrong?
+- The digital registration and billing platform (dining.iiit.ac.in).
+- Four physical mess facilities of differing capacity and origin — Kadamba (purpose-built, largest capacity), Bakul (a converted warehouse), and Palash and Yuktāhār as separate facilities.
+- Per-mess food production capacity, distributed unevenly — Kadamba and Yuktāhār produce on-site; Bakul's vegetarian supply is transported from Palash while its non-vegetarian food is prepared on-site.
+- The personal QR access credential issued to each student.
 
----
+## Constraints
 
-## Still Missing — needed before this brief can be considered validated
+- Billing is registration-based, not attendance-based, and cancellations are capped at five per meal type per month.
+- Walk-in pricing is set materially higher than registered pricing.
+- Vegetarian and non-vegetarian food is segregated by registration type at the point of service.
+- Palash's kitchen cannot produce non-vegetarian food — a fixed physical limitation, not a policy choice.
+- Mess operating hours and the academic class schedule are set independently by separate authorities, with no formal coordination mechanism between them.
+- Governance authority over mess operations rests with the Mess Committee and the Warden; the academic administration has no formal role in mess-related decisions.
 
-- [ ] Role A/B/C/D interviews above — the main open item now
-- [ ] Independent confirmation (or correction) of the Bakul hypothesis in §3, from Persona C or D
-- [ ] Vindhya canteen's exact closing time (6 PM or 8 PM — respondent gave both)
-- [ ] What the calendar's "S" meal slot is, and whether/how the third-party auth-key API gets used
-      (both from `screenshots/analysis.md`, not yet asked about directly)
-- [ ] Confirmation this document's scope (Breakfast-only, real-IIIT-H-grounded) is what the team
-      wants before Activity 2 builds on it
+# Initial Problem Framing
+
+Students register for breakfast at a materially higher rate than they attend, converting a portion of registered demand into food that is prepared and paid for but not consumed. The system's own mechanisms for anticipated non-attendance — cancellation and Skip Meal — return no value to the student in the case of Skip Meal, and require advance knowledge in both cases; an informal resale market has emerged to fill this gap for planned non-attendance, while unplanned non-attendance remains entirely unaddressed.
+
+Separately, and not fully overlapping with this pattern, a subset of students do not attend breakfast for reasons independent of the mess system itself — personal dietary practice, sleep schedule, and established habit.
+
+The central question this raises is whether the registration-and-billing structure itself is producing or reinforcing non-attendance — by rewarding advance commitment without rewarding actual attendance or providing flexibility — or whether it is a neutral backdrop to a pattern driven primarily by factors outside the system's control, and to what extent the overlap between breakfast hours and the start of the academic day is a contributing factor as opposed to one visible symptom among several independent ones.
