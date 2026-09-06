@@ -7,10 +7,31 @@ halfday.md` Guide 1 — this appears to be the actual fieldwork that guide was w
 for. **Real data — treated as ground truth per this project's standing research
 discipline.** Transcribed from the PDF as close to verbatim as OCR/extraction allows;
 where a respondent's answer was recorded as a paraphrase/summary rather than a direct
-quote in the source document itself (this happens in "daily eater - 2," which several
-times says "the interview doesn't specify..." or "I haven't mentioned..."), that is
-preserved as-is rather than filled in — those are genuine gaps in that specific
-transcript, not gaps in transcription.
+quote in the source document itself (this happens in the second "daily eater"
+transcript below, which several times says "the interview doesn't specify..." or
+"I haven't mentioned..."), that is preserved as-is rather than filled in — those are
+genuine gaps in that specific transcript, not gaps in transcription.
+
+**⚠️ Source labeling correction, added 2026-09-06 after cross-checking against a
+teammate's independent transcription of the same source document** (`student_
+interview_transcpirt_neha.md`, transcribed from `Interview data.docx` — the same
+underlying interviews as this PDF, not additional respondents; see that file's own
+note). The original source document contains **both** a "daily eater - 2" label
+*and* a separate "daily eater - 3" label, appearing consecutively, with only **one**
+full question-and-answer transcript following the two of them combined. This PDF
+rendered that gap as a blank page between "daily eater - 2" and "daily eater - 3"
+(the label pages themselves were separate slides/pages with no Q&A on the "- 2" page
+specifically). **This means the second "daily eater" transcript below — labeled
+"Daily eater – 2" throughout this file and referenced as such in `prathyusha_04-
+process-trace.md` and `prathyusha_05-system-timeline-bot-map.md` — most likely
+belongs to the source's "daily eater - 3" slot, and a distinct "daily eater - 2"
+respondent's answers may simply be missing from the source entirely, not merely
+unlabeled.** This is a genuine data-provenance gap, not resolved here — flagged
+plainly rather than silently relabeled, since the actual person behind either label
+is unknown either way and relabeling would only swap one guess for another. Treat
+this project's count as **five transcripts, covering an unknown-but-likely-four
+distinct people** (2 daily eaters or possibly only 1, plus 3 skippers) until the
+source can be checked directly.
 
 No demographic detail, mess assignment confirmation beyond what's stated, or exact
 interview date is given in the source; respondents are referred to here only by their
@@ -115,7 +136,12 @@ people who do come.
 
 ---
 
-## Daily eater – 2 (Kadamba, most-days attender)
+## Daily eater – 2 (Kadamba, most-days attender) — ⚠️ likely mislabeled, see note above
+
+*This transcript most likely corresponds to the source document's "daily eater - 3"
+label, not "- 2" — see the file header's labeling-correction note. Kept under the
+"– 2" heading throughout this project's deliverables for consistency with existing
+cross-references, since renaming would only replace one guess with another.*
 
 **How many mornings a week do you eat breakfast at the mess, and how many do you skip?**
 I eat breakfast at the mess on most days. I do sometimes miss breakfast, especially
