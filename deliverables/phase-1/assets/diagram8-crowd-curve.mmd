@@ -1,0 +1,12 @@
+flowchart LR
+    A["7:30-8:00\nPeaceful - anything available\n(daily eater 1, 8:30-class mornings)"] --> B["8:00-9:00\nBuilding - skip-3 goes early\nspecifically to beat this rise"]
+    B --> C["9:00-9:30\nCrests - named as peak by\nboth daily eaters independently"]
+    C --> D["~9:15-9:20\nConfirmed run-outs: idli, puri,\nbhatura, fruit (daily eater 1)"]
+    D --> E["9:30 close\nStaff-promised restocks\nreported not to arrive"]
+
+    classDef calm fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b1b1b
+    classDef building fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#1b1b1b
+    classDef peak fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#1b1b1b
+    class A calm
+    class B building
+    class C,D,E peak

@@ -1,0 +1,7 @@
+flowchart LR
+    W1["Student opens dining app,\napproximately once a month"] --> W2["Registers for the entire month at once\n(confirmed by 3 of 6 real respondents,\nnone report day-by-day registration)"]
+    W2 --> W3["Roughly 30 breakfasts locked in\nat one sitting, before any single\nmorning's intent is known"]
+    W3 --> D1["Feeds into the Daily cycle -\nthe attendance decision is now\nfully decoupled from the registration decision"]
+
+    classDef internalNode fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#1b1b1b
+    class W1,W2,W3,D1 internalNode

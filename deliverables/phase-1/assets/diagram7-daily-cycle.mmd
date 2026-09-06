@@ -1,0 +1,22 @@
+flowchart TD
+    D1[Wakes - time and alertness vary widely] --> D2{Hungry, and wants\nwhat's likely on offer?}
+    D2 -->|No| D6[Skips - no further action]
+    D2 -->|Yes| D3{Has an 8:30 class\nand running late?}
+    D3 -->|Yes| D7["Prioritizes class over breakfast\n- attendance policy named directly\nas the reason by daily eater 2"]
+    D3 -->|No conflict, or time to spare| D4[Decides to go]
+    D4 -.->|Friends/roommate: motivation only,\nnever decisive - 6 of 6 respondents| D4
+    D4 --> D5[Walks to mess, joins counter queue]
+    D5 --> D8{Registered item\nstill available?}
+    D8 -->|Yes| D9[Served, eats]
+    D8 -->|Ran out, common near close| D10["Takes substitute, partial meal,\nor leaves - staff-promised\nrestocks often don't arrive"]
+    D6 --> EX[See Exception paths]
+    D7 --> EX
+    D9 --> BILL
+    D10 --> BILL
+    EX --> BILL
+    BILL[Billed by registration count,\nregardless of what happened above]
+
+    classDef internalNode fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#1b1b1b
+    classDef externalNode fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#1b1b1b
+    class D1,D2,D3,D4,D5,D8,D9,D10,BILL internalNode
+    class D6,D7,EX externalNode

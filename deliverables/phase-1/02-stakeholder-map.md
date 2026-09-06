@@ -31,6 +31,7 @@ Twenty-seven candidate actors were identified across seventeen analytical lenses
 | Mess Committee | Institution — policy |
 | Mess Office | Institution — operations |
 | Warden | Individual role — vendor management, structural change |
+| Student Parliament Mess Secretary, and a Mess Deputy Secretary per mess (Kadamba, Palash, Yuktāhār) | Elected individual roles — student representation on mess matters |
 
 **Indirect stakeholders** — affected by or connected to the system without direct engagement, including latent ("sleeping") actors currently inert but holding potential leverage:
 
@@ -57,6 +58,7 @@ Twenty-seven candidate actors were identified across seventeen analytical lenses
 | Mess Committee | Balancing student satisfaction against operational feasibility | A functioning process for gathering and interpreting student input | The existing student-input process for the menu constitutes sufficient engagement on mess matters generally, including matters — hours, billing — that process was never designed to cover |
 | Mess Office | Reduced operational workload — the confirmed, stated motive behind its one policy change on record | An accurate same-day picture of intent, currently unavailable at less than four days' notice | Registration counts are a workable proxy for actual attendance |
 | Warden | Stable vendor relationships, orderly mess infrastructure | Clear division of responsibility with the Mess Office | Vendor management and structural authority remain within the Warden's own lane |
+| Student Parliament Mess Secretary / per-mess Deputy Secretaries | Representing student interests on mess matters | A working channel into the Mess Committee and Mess Office | Not established — whether this elected seat carries a vote in the institute-level Mess Committee, or only in a separate Parliament-internal mess committee, is unconfirmed |
 | Academic administration | Its own domain — class scheduling — run without external interference | No stated need connects it to mess operations | No expectation of any relationship to mess governance; confirmed to hold no formal mess role |
 | Facilities/Estate team | Physical infrastructure upkeep | Authorization and budget for mess-facility work (the Kadamba renovation is confirmed to have occurred) | Not established — identity of this actor is itself unconfirmed |
 | Portal/IT system owner | System uptime and reliability of the registration interface | Not established | Not established — no source names this actor |
@@ -150,6 +152,8 @@ Three real feedback channels exist — an in-app per-meal rating, a public email
 
 Registered attendance is markedly lower, relative to capacity, at every mess serving North Indian food than at the South Indian mess, a pattern consistent across three independently operated messes rather than one, making cuisine preference a stronger candidate explanation for the uptake gap than any single mess's individual circumstances.
 
-The Mess Committee's faculty chair is a second, more subtle sleeping stakeholder: an individual with cross-institutional standing that no student-only channel possesses, and the most structurally plausible bridge to Academic administration available, with no evidence that bridge has ever been used.
+The Mess Committee's chair — reported in a secondhand, not directly verified source as a faculty member — is a second, more subtle candidate sleeping stakeholder if that report holds: an individual with cross-institutional standing that no student-only channel possesses, and a structurally plausible bridge to Academic administration, with no evidence that bridge has ever been used.
+
+A directly verified addition since this map was first drawn: the Student Parliament maintains an elected Mess Secretary and a Mess Deputy Secretary for each mess (Kadamba, Palash, Yuktāhār), confirmed directly from the Parliament's own published records — not a secondhand source. This is a real, structured channel of student representation that the three diagrams above do not yet depict; it belongs on the Internal ring alongside the Mess Committee, Mess Office, and Warden, and is carried forward into the Power–Interest/Leverage Map (Task 3) in full.
 
 Two structurally hidden actors carry outsized influence without being visible to any single respondent: the Portal/IT system owner, interacted with constantly and named by no one, and the four-day procurement lead time itself — not a person, but a fixed constraint that caps how responsive the entire system can be to any same-day signal, including Skip Meal, regardless of which stakeholder wants to act on it.
