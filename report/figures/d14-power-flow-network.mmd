@@ -1,0 +1,35 @@
+flowchart TB
+  subgraph Students_["Students"]
+    ST((Students))
+  end
+  subgraph Governance["Governance"]
+    MC[Mess Committee]
+    MO[Mess Office]
+    WD[Warden]
+    ACAD["Academic administration"]
+  end
+  subgraph Commercial["Commercial"]
+    VEN[Vendors]
+  end
+  subgraph Informal["Informal"]
+    MCELL[Mess Cell]
+    PING[Ping]
+    TOOLS["Unofficial tools"]
+  end
+
+  ST -->|money, registration intent| MO
+  ST -.->|feedback: rating, email| MO
+  ST -.->|feedback: rating| MC
+  MC -->|policy authority| MO
+  MO -->|four-day forecast, order| VEN
+  WD -->|contract authority| VEN
+  VEN -->|food, service| ST
+  MC -. NO FORMAL CHANNEL .-> ACAD
+  MO -. NO FORMAL CHANNEL .-> ACAD
+  WD -. NO FORMAL CHANNEL .-> ACAD
+  ACAD -->|class schedule constraint| ST
+  ST -.->|resells, buys| MCELL
+  ST -.->|may use instead of portal| TOOLS
+  PING -.->|public visibility| MC
+  PING -.->|public visibility| MO
+  VEN -. NO DIRECT CHANNEL .-> ST
