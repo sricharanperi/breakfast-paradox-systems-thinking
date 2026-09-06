@@ -46,6 +46,7 @@ included actor rather than treated as separate stakeholders (§"Roles, Not Stake
 | Academic administration / timetable authority | Governance | Institution | Formal | Latent |
 | Facilities/Estate team | Governance | Institution | Formal | Latent |
 | Portal/IT system owner | Governance | Institution or individual | Formal | Latent |
+| Student Parliament — Mess Secretary/Deputies | Governance | Elected student body | Formal | Indirect |
 | Mess Cell WhatsApp community | Informal | Informal group | Informal | Direct |
 | Unofficial mess-tool developers | Informal | Individual(s) | Informal | Latent |
 | Ping (student publication) | Informal | Institution | Informal | Latent |
@@ -155,6 +156,24 @@ source.
 Included because of its structural centrality rather than direct evidence: no
 interview, screenshot, or public source has identified who builds or maintains this
 system — institute IT, an external vendor, or otherwise.
+
+**Student Parliament — Mess Secretary and per-mess Mess Deputy Secretaries.** ✅
+Verified directly from the Parliament's own published roster (added 2026-09-06,
+during Activity 3's power analysis — this stakeholder should have surfaced in this
+Activity 2 map and is added here directly rather than left only in the Activity 3
+document). Role: elected student representation on mess matters, structured as one
+Mess Secretary plus a dedicated Deputy Secretary for each individual mess (confirmed
+for Yuktāhār, Kadamba, and Palash), elected through the institute's Student Parliament
+rather than appointed by the Mess Committee itself. A "North Mess Secretary" role
+existed historically, independently corroborating the North/South mess-naming
+research from an entirely separate source. Formal authority: elected representative
+standing; whether this extends to a vote inside the faculty-chaired institute Mess
+Committee, or operates only through a separate Parliament-internal mess committee, is
+unresolved — see `prathyusha_03-power-interest-leverage-map.md` for the full
+disambiguation. Interest: student-facing advocacy on mess matters. Need: a working
+channel to whichever body actually holds decision authority. Dependency: depends on
+the Mess Committee/Office to act on anything it raises, exactly like students
+generally, but with a formal standing individual students lack.
 
 ## Informal and competing tier
 
@@ -275,12 +294,13 @@ flowchart TB
     KIT[Kitchen staff]
   end
   subgraph Gov["Governance"]
-    MC["Mess Committee\n(faculty-chaired)"]
+    MC["Mess Committee\n(chair unconfirmed)"]
     MO["Mess Office\n(operations)"]
     WD[Warden]
     ACAD["Academic administration\n(sleeping stakeholder)"]
     FAC[Facilities/Estate]
     PIT["Portal/IT owner"]
+    PARL["Student Parliament\nMess Secretary/Deputies"]
   end
   subgraph Informal["Informal and competing"]
     MCELL[Mess Cell market]
@@ -313,6 +333,9 @@ flowchart TB
   PING -.->|public pressure| MO
   ST -.->|substitute| VIN
   ST -.->|substitute, gate-limited| RID
+  PARL -.->|elected by| ST
+  PARL -.->|negotiates with, per-mess reps| MO
+  PARL -.->|standing meeting format| WD
 ```
 
 ## Onion diagram — distance from the student's lived experience
@@ -338,6 +361,7 @@ flowchart TB
       MO[Mess Office]
       WD[Warden]
       FAC[Facilities]
+      PARL["Student Parliament\nMess Secretary/Deputies"]
       subgraph RingOps["Operational contact ring"]
         direction TB
         VSI[Vendor: South Indian]
@@ -414,3 +438,12 @@ correct rather than append to this document once answered:
   direction.
 - The identity of the Portal/IT owner and the Facilities/Estate team.
 - Real usage and scale of the unofficial registration tools and the Mess Cell market.
+- **Added 2026-09-06:** whether the faculty-chaired institute Mess Committee and the
+  Parliament-internal mess committee (staffed by the Mess Secretary/Deputies above)
+  are the same body or two distinct ones — see
+  `prathyusha_03-power-interest-leverage-map.md` for the full disambiguation, found via
+  independent research after this map's initial version was written.
+- **Added 2026-09-06:** whether "Mess Council," named by the user as the recipient of
+  the public complaint email, is a real distinct body or a naming mix-up with a
+  different institution's similarly-named council — evidence currently leans toward
+  the latter.

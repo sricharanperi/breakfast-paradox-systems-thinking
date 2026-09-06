@@ -24,7 +24,12 @@ at governance, not just at peer-to-peer transactions — and are reflected throu
 this document. What remains genuinely unresolved (vendor compensation, the exact
 relationship between the newly-surfaced "Mess Council" and the Mess Committee, and
 above all what that organized action was about and whether it worked) is flagged 🟡/❓
-and routed to specific follow-up interview questions rather than guessed at.
+and routed to specific follow-up interview questions rather than guessed at. Two of the
+five incentive chains later in this brief (the Skip-Meal-vs-Mess-Cell dominant-strategy
+argument, and the "register just in case" walk-in-markup effect) rest on a teammate's
+structural hypothesis rather than direct evidence from any respondent — genuinely
+plausible given confirmed pricing data, but not yet confirmed, and flagged as such
+where they appear.
 
 # What Power Means in This System
 
@@ -42,10 +47,14 @@ target rather than guessed at.
 Three separate institutional actors hold mess governance, a split not previously
 recognized in earlier project drafts:
 
-- **Mess Committee** — a policy body, chaired by a faculty member, that sets the menu
-  approximately one month ahead of service with student input. Its authority beyond
-  menu content — specifically, whether it must approve Mess Office operational changes
-  — is unconfirmed.
+- **Mess Committee** — a policy body that sets the menu approximately one month ahead
+  of service with student input. That this body is genuinely separate from the Mess
+  Office is ✅ user-confirmed. The specific detail that it is **chaired by a faculty
+  member** is 🟡, not ✅: it traces to a search-engine snippet summary of a student
+  publication article that returned HTTP 403 on every direct-fetch attempt and was
+  never actually read in full — this document does not treat that detail with the same
+  confidence as the split itself. Its authority beyond menu content — specifically,
+  whether it must approve Mess Office operational changes — is unconfirmed.
 - **Mess Office** — the operational and administrative arm: places food orders with
   each vendor on a four-day lead time, administers the registration platform, and
   issues operational policy changes. The one confirmed policy action on record (a
@@ -68,12 +77,42 @@ relationship reflects that the bridge has never been attempted, not that it was 
 and blocked. That distinction matters for what kind of intervention would actually be
 tested by attempting it.
 
-**A fourth term, "Mess Council," has surfaced** as the confirmed recipient of the
-public email complaint channel — described as reaching "people there to take care of"
-issues. Whether this is the same body as the Mess Committee under a different name, a
-sub-structure of it, or a genuinely separate entity is not yet resolved, and is now an
-open question directed at a governance contact (Guide 3, Q8) before this document
-treats "Mess Council" and "Mess Committee" as interchangeable or distinct.
+**A fifth actor, verified directly from source rather than inferred: the Student
+Parliament's elected mess-related roles.** IIIT-H's Student Parliament (elected via
+Single Transferable Vote, roughly one representative per 50 students) maintains a
+**Mess Secretary** and a dedicated **Mess Deputy Secretary for each individual mess**
+(confirmed for Yuktāhār, Kadamba, and Palash; a "North Mess Secretary" role existed
+historically, independently corroborating the earlier North/South naming research from
+a second, separately-fetched source) — fetched directly from the Parliament's own page
+(`clubs.iiit.ac.in`), not a search snippet, and the strongest single piece of formal-
+governance evidence in this document. This resolves last round's bare "yes, a student
+representative exists" into a real, structured finding: student representation on mess
+matters is not one undifferentiated seat, it is a dedicated elected role per mess, sitting
+within the Parliament rather than appointed by the Mess Committee itself. Parliament
+representatives also hold a standing meeting format with a **Mess Warden** (a title
+distinct from, and not yet confirmed identical to, the "Warden" already named above).
+This stakeholder was absent from the Activity 2 Stakeholder Map and has been added
+there directly, not just noted here.
+
+**"Mess Council," raised in the previous round as the recipient of the public
+complaint email, is very likely a naming artifact rather than a real, separate IIIT-H
+body.** A real "Mess Monitoring Council" does exist — at IIT Hyderabad, a completely
+different institution from IIIT Hyderabad (the two are frequently confused due to the
+near-identical name). A domain-restricted search of IIIT-H's own site found no
+dedicated "Mess Council" page or reference anywhere. This is not treated as a
+correction of the earlier answer so much as a naming clarification worth confirming
+directly — the balance of evidence favors "Mess Council" being either a mix-up with
+the other institution or an informal way of referring to what the evidence above shows
+is more precisely called the Mess Committee or the Parliament's mess-related roles.
+
+**A sharper, still-unresolved ambiguity replaces it: there may be two different things
+both called "Mess Committee."** Secondhand sources describe (1) a Parliament-internal
+committee, made up of elected MPs, that negotiates and pushes back toward the
+administration on behalf of students, and separately (2) the institute-level,
+faculty-chaired policy body discussed above. Whether these are the same body with
+mixed student/faculty membership, or two genuinely separate committees sharing a name,
+could not be resolved by this research and is now the sharpest open naming question in
+the governance structure — sharper than the Committee/Office split was last round.
 
 For the majority of specific decisions this system makes — breakfast timing itself,
 vendor contract terms, portal functionality, waste handling — no source has described
@@ -103,14 +142,28 @@ Four informal actors exercise real influence with no formal standing:
 
 # Decision Rights
 
-A full 26-domain decision-rights matrix is maintained in
-`prathyusha_03b-power-analysis-discovery.md` §3. The pattern that matters most: for
-menu decisions and the one operational policy change on record, a proposer and
-approver can be named. For nearly everything else — breakfast timing, vendor
-contracting, portal governance, waste handling — no source names who proposes,
-approves, or can block a change. Two domains have a clear governance chain (menu →
-Mess Committee; operations → Mess Office); the rest are decision domains this project
-has not yet been able to see inside.
+## Authority at a Glance
+
+| Domain | Proposes | Approves | Confirmed? |
+|---|---|---|---|
+| Breakfast timing | ❓ nobody has evidence of ever proposing a change | ❓ | No — precedent unknown |
+| Class timing | Academic administration | Academic administration | ✅ within its own domain, but disconnected from mess governance entirely |
+| Registration/cancellation rules | Mess Office | ❓ unclear if Committee sign-off is required | 🟡 one case (Dec 2024) only |
+| Menu | Mess Committee, with student input | Mess Committee | ✅ |
+| Vendor contracts | ❓ | Warden (per Activity 1) | 🟡 stated, never observed in action |
+| Portal/data governance | ❓ entirely unidentified owner | ❓ | No |
+| Mess Cell / informal resale | Students, self-organized | N/A — outside formal approval entirely | ✅ the market's existence itself is the only "approval" |
+| Waste handling | ❓ | ❓ Facilities placeholder only | No |
+
+A full 26-domain version of this matrix, with additional columns (vetoes,
+implements, bears risk, precedent), is maintained in
+`prathyusha_03b-power-analysis-discovery.md` §3 for anyone who wants the complete
+backing detail. The pattern that matters most, visible even in the compact version
+above: only two domains (menu, and the one operational policy change on record) have
+a nameable proposer and approver. For nearly everything else — breakfast timing,
+vendor contracting, portal governance, waste handling — no source names who proposes,
+approves, or can block a change. This is recorded as a finding about the limits of
+what's currently visible, not treated as though it were resolved.
 
 # Resource Control
 
@@ -179,7 +232,13 @@ problem without either side acknowledging the relationship.
 
 # Historical Precedent
 
-Two precedents exist in the evidence gathered; neither is fully resolved.
+**Most examples below are not fully traced — several are missing who raised the issue
+and who, if anyone, opposed it. This remains the weakest evidence base in this
+analysis and is treated as an open finding, not a settled one, even after new research
+below added detail.**
+
+Four precedents now exist in the evidence gathered, two from the previous round and
+two newly found via independent research.
 
 **Bakul's creation**, triggered by Kadamba's non-veg capacity reaching its ceiling,
 resulted in a new mess being established — a real, confirmed structural response to a
@@ -190,13 +249,37 @@ not.
 **The December 2024 cancellation-policy tightening**, triggered by Mess Office
 workload concerns compounded by a Kadamba renovation, was issued by the Mess Office
 with no evidenced Committee involvement, no evidenced student consultation beforehand,
-and no confirmed record of whether it remains in force as of this writing.
+and no confirmed record of whether it remains in force as of this writing. **New
+detail, 🟡 search-derived:** organized pushback did occur — Ping ran a student opinion
+form that returned majority disappointment, and Parliament's mess-related
+representatives reportedly held two meetings with the Mess Office before the policy
+took effect, then "assured" Ping they were pushing back. The policy was implemented
+regardless, meaning this pushback registered opposition without preventing the change
+— a real, partial answer to "was organized student action effective here," though this
+is not yet confirmed to be the same "organized email effort" referenced in the
+previous round's answers, only a strong candidate match pending direct confirmation.
+
+**"Let Them Eat Frogs" (November 2024)** — a frog was found in Kadamba's chicken
+biryani, and the Mess Office responded by **unilaterally cancelling non-veg meals at
+Kadamba without officially communicating the real reason**, prompting debate across
+multiple mail threads. 🟡 search-derived, not full-text-verified, but this is a
+cleaner, more specific example of unilateral, opaque Mess Office decision-making than
+the December episode, and it precedes it by about a month — two instances in quick
+succession suggest a pattern rather than an isolated event.
+
+**"Water Mess" (2023)** — a different domain (drinking-water quality, not food) but the
+same institution: complaints raised through WhatsApp and email went unaddressed for
+months despite Parliament requesting water testing, until 38+ confirmed typhoid cases
+forced a reactive response. 🟡 search-derived. Not a mess-governance precedent
+directly, but a comparative one: the same complaint→ignored→crisis→reactive-fix shape
+recurs across two different domains at this institution, which strengthens rather than
+merely adds to this document's "feedback exists, output unconfirmed" finding
+elsewhere.
 
 For every other domain this analysis examined — breakfast timing, class-timing
-coordination, whether a student complaint has ever produced a policy change — no
-precedent could be found. This is recorded as "precedent currently unknown" rather than
-assumed to be zero; an absence of an example in the sources gathered so far is not
-proof that no such example exists.
+coordination specifically — no precedent could be found. This is recorded as
+"precedent currently unknown" rather than assumed to be zero; an absence of an example
+in the sources gathered so far is not proof that no such example exists.
 
 # Power Asymmetries
 
@@ -282,7 +365,7 @@ underlying uncertainty, only shifts who bears its cost.
 | Question | Answer |
 |---|---|
 | Affected but not represented | Students, on any decision beyond menu content |
-| Consulted but cannot decide | Students, on the menu specifically — **revised**: an elected/appointed student representative on the Mess Committee is now confirmed to exist, which may mean this is better described as "represented but with unconfirmed decision weight" rather than pure external consultation. Whether the seat carries a vote, and how much it actually shapes outcomes, remains unconfirmed. |
+| Consulted but cannot decide | Students, on the menu specifically — **revised twice now**: first to "an elected representative exists," then sharpened by direct-source research to a named structure — a Mess Secretary and a per-mess Deputy Secretary, elected through the Student Parliament. This is real representation, not just external consultation. What's still unconfirmed is whether this seat carries a vote in the faculty-chaired institute Mess Committee specifically, or operates only through the separate Parliament-internal committee described above — the two-Mess-Committees ambiguity means "represented" and "can decide" may still not be the same thing here. |
 | Decides but does not experience consequences | Academic administration, on class timing |
 | Has data but not authority | The Mess Office, plausibly, if registration/attendance data does not reach the Mess Committee |
 | Has authority but not data | The Mess Committee, plausibly, over menu decisions made without visibility into which cuisine lines actually get eaten versus registered |
@@ -316,6 +399,10 @@ described as **exercised-but-unmeasured leverage** than purely sleeping leverage
 mechanism has been used; whether it worked is now the single most important open
 question this analysis has produced.
 
+**Coordinates below are ordinal placements for visual clarity only, not measured
+values — no decimal figure here was derived from any calculation, and none should be
+read as precise.**
+
 ```mermaid
 quadrantChart
     title Power vs Leverage over the Breakfast Paradox specifically
@@ -340,7 +427,8 @@ quadrantChart
 The chart below necessarily reduces each actor to a single point; the placements and
 their domain-specific caveats immediately beneath it are where the real analysis lives
 — several actors would sit in a different quadrant entirely depending on which decision
-is being examined.
+is being examined. **As with the leverage chart above, coordinates are ordinal
+placements only, not measured values.**
 
 ```mermaid
 quadrantChart
@@ -441,18 +529,23 @@ that exist but whose effectiveness has never been measured or followed up on.
 # Evidence Gaps and Interviews Needed
 
 Ten specific open questions were logged in `prathyusha_03b-power-analysis-discovery.md`
-§13 and have since been answered directly by the user; that file records each answer
-and its confidence. Three remain fully open (vendor compensation, vendor bargaining
-instances, who sees per-meal ratings) and have been added to Guide 2. Four more
-produced partial or tentative answers needing independent confirmation from a
-governance contact — added to Guide 3: the "Mess Council" term's relationship to the
-Mess Committee, whether Committee approval is actually required for Office operational
-changes, the Committee's real discussion scope beyond the menu, and — now the single
-highest-priority open question in the entire project — **what the confirmed organized
-email effort was actually about, and whether it produced any real outcome.** This last
-question determines whether "sleeping leverage" or "exercised leverage" is the more
-accurate description of students' collective position, which every quadrant placement
-for students in this document currently depends on.
+§13 and answered directly by the user; a follow-up independent research pass (logged in
+`prathyusha_03c-activity3-audit-and-completion-plan.md` Part D) then closed or sharpened
+several of them without needing any further interview. Three items remain fully open
+and need Guide 2 (vendor compensation, vendor bargaining instances, who sees per-meal
+ratings). The governance-side gaps have narrowed: "Mess Council" is now more likely a
+naming artifact than a real separate body (pending direct confirmation), and the
+student-representation question has a named, verified answer (Parliament's Mess
+Secretary and per-mess Deputy Secretaries) rather than a bare "yes." What remains is
+sharper than before: whether the faculty-chaired institute Mess Committee and the
+Parliament-internal mess committee are the same body or two distinct ones, and — still
+the single highest-priority open question in the entire project — **whether the
+December 2024 Ping-survey-and-Parliament-negotiation episode is the "organized email
+effort" referenced earlier, and if so, whether "opposition registered, policy
+implemented anyway" is the full answer to whether it worked.** This last question
+determines whether "sleeping leverage" or "exercised leverage" is the more accurate
+description of students' collective position, which every quadrant placement for
+students in this document currently depends on.
 
 # Key Findings
 
@@ -522,16 +615,22 @@ Mechanism: real self-organizing capacity exists (the Mess Cell market) and, per 
 confirmation, has also been aimed at governance directly at least once, through an
 organized email effort
 Evidence: ✅ the market's existence; ✅ the organized email effort's occurrence,
-confirmed directly by the user; ❓ its subject and outcome, both unknown
-System behaviour created: a real lever for change has been used at least once, but
-without a known result, meaning neither students nor this analysis currently knows
-whether collective action through this channel is effective
-Confidence: 🟡 — revised 2026-09-06 from an earlier "sleeping, never exercised" framing
-after the user confirmed the effort occurred; this is a stronger and more precise
-finding than the one this analysis started with, not merely a filled gap
-What still needs validation: the specific rule or issue the email effort targeted, and
-what actually happened as a result (Guide 3, Q10) — now the single highest-priority
-open question in the entire project
+confirmed directly by the user; 🟡 a strong but unconfirmed candidate match found via
+independent research — the December 2024 episode where Ping ran a student opinion
+form and Parliament's mess-related representatives held two meetings with the Mess
+Office before the cancellation policy took effect regardless
+System behaviour created: a real lever for change has been used at least once; if the
+December 2024 episode is indeed the effort referenced, the result is now partially
+known — opposition was registered but did not prevent the policy — a modest but real
+answer to "was it effective," rather than a total unknown
+Confidence: 🟡 — revised twice now: first from "sleeping, never exercised" to
+"exercised, outcome unknown" after the user confirmed the effort occurred, then
+sharpened again by independent research into a specific, if unconfirmed, candidate
+episode with a partially-known outcome
+What still needs validation: direct confirmation of whether the December 2024 episode
+is the effort the user meant — still the single highest-priority open question in the
+entire project, now answerable with one short confirmation rather than a full
+interview
 
 **Power structure 7 — A confirmed feedback input with an unconfirmed output**
 Actors: Students, Mess Committee, Mess Office
