@@ -51,13 +51,35 @@ rather than stated as settled.
 
 ## Activity 4 — Trace the Existing Process
 
+**Status: 🟡 4A COMPLETE, 4B a completion plan** as of 2026-09-06, after five real
+student interviews (`research/primary-research/interviews/2026-09-06_five-student-
+interviews-guide1.md`) — the first real, multi-respondent basis this activity has had.
+The student-facing half of the process (4A) is now solidly evidenced; the mess/kitchen
+side (4B) remains entirely unobserved and is documented as a completion plan, not
+guessed at.
+
 | Method | Status | Evidence |
 |---|---|---|
-| Conduct interviews and observations | ❌ | Guide 1 (today) and Guide 2 (tomorrow) haven't happened yet — this is the real blocker on the whole activity |
-| Trace decisions and interactions | 🟡 | `prathyusha_04-*` traces it at hypothesis level only |
-| Document formal and informal rules | ✅ | the formal-vs-informal table in that file, all rows there are ✅-sourced facts |
-| Identify negotiation and escalation mechanisms | 🟡 | the finding here *is* that one barely exists — see the new context brief note. Identifying an absence still counts as identifying it, but it needs a real governance-side (Role D) confirmation to move past 🟡 |
-| Track exceptions, workarounds and dependencies | ✅ | Skip Meal, cancellation, Mess Cell, walk-in — all ✅-sourced |
+| Conduct interviews and observations | 🟡 | 6 real student interviews now exist (interviews ✅); direct observation still ❌, not yet conducted |
+| Trace decisions and interactions | ✅ | `prathyusha_04-*` §4A.4, real decision points from 6 respondents, including a disconfirmed hypothesis (peer influence) |
+| Document formal and informal rules | ✅ | §4A.5-4A.6, distinguishes formal rules / informal norms / workarounds explicitly, all real-sourced |
+| Identify negotiation and escalation mechanisms | ✅ | §4A.7 — the absence is now corroborated by 5 more respondents, not just the governance-structure finding from Activity 3 |
+| Track exceptions, workarounds and dependencies | ✅ | §4A.6, §4A.8 — Mess Cell, scarcity-driven registration, random allocation, broken restock promises all real-sourced |
+
+## Activity 5 — Analyse System Behaviour Over Time
+
+**Status: 🟡 5A COMPLETE, 5B a validation plan** as of 2026-09-06, same source. Six
+real respondents give six different semester-long trend statements — the honest
+finding is that no single population-level direction exists, not that one activity or
+the other resolved it.
+
+| Method | Status | Evidence |
+|---|---|---|
+| Collect historical versions, records or observations | 🟡 | 6 real respondent temporal statements now exist (the strongest evidence yet); quantitative historical records still ❓ |
+| Develop timelines | 🟡 | `prathyusha_05-*` provisional system timeline (cross-referenced from Activity 3's precedent research) + temporal evidence register per respondent |
+| Identify significant changes and their triggers | 🟡 | Bakul's creation remains the one fully-real trigger; Dec 2024/Nov 2024 episodes remain secondhand |
+| Examine feedback loops and recurring patterns | ✅ | R1/B1/B2 loops upgraded with real evidence (Skip Meal's 0-for-6 real usage rate is a strong confirmation); one new candidate loop (under-provisioning for real attendees) surfaced by 2 independent respondents |
+| Identify unintended consequences | ✅ | table updated with real-evidence confidence upgrades throughout |
 
 ## Activity 5 — Analyse System Behaviour Over Time
 

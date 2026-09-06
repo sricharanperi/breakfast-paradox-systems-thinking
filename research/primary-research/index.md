@@ -10,6 +10,7 @@ for the full source-discipline protocol.
 | 2026-09-03 | Self-report interview + system overview | `interviews/2026-09-03_student-self-account-and-mess-system-overview.md` | 1 (System Context Brief), 2 (Stakeholder Map), 4 (Process Trace, partial) | Updated same day — mess count, Warden role, academic office role now resolved (§8-9) |
 | 2026-09-03 | 6 portal screenshots + analysis | `screenshots/analysis.md` (+ 6 .png files) | 1, 2, 4, and quantitative material for 5/8 later | Logged — real capacity/rate numbers, Skip-vs-Cancel distinction, random-allocation confirmation |
 | 2026-09-09/10 | Follow-up dictation (Bakul explanation, Vindhya hours) + 3 more breakfast-specific screenshots | `interviews/...` §10, `screenshots/analysis.md` §7-9 | 1 (System Context Brief) | Logged — breakfast-specific capacity/rate data now available |
+| 2026-09-06 | Five real student interviews (2 daily eaters, 3 skippers), following Guide 1 | `interviews/2026-09-06_five-student-interviews-guide1.md` | 4 (Process Trace), 5 (BOT Map) | Logged — first real, multi-respondent dataset for Activities 4/5; several findings converge, several disagree — see those deliverables for the analysis |
 
 **Standing instruction from the user (2026-09-09):** any screenshot, email, or other file the
 user shares from now on gets saved into `research/primary-research/` immediately, without asking
@@ -27,9 +28,15 @@ for permission first. Applies for the rest of this project.
       hypothesis (newness/warehouse venue), not yet independently confirmed
 - [ ] What the calendar's "S" meal slot is
 - [ ] Whether/how the third-party auth-key API is actually used by students
-- [ ] Direct observation of 2-3 real mess-hours mornings (headcount over time, discarded food)
+- [x] Additional respondents — 5 real student interviews logged 2026-09-06 (2 daily eaters, 3
+      skippers); direct observation of live mornings is still not done, but retrospective
+      recall now exists from 6 real respondents total
+- [ ] Direct observation of 2-3 real mess-hours mornings (headcount over time, discarded food) —
+      still not done; the 2026-09-06 interviews disagree on the exact peak window (8:00-9:00 vs.
+      9:00-9:30), which only live observation can resolve
 - [ ] Mess staff / vendor process walkthrough (their side of the daily routine)
-- [ ] Historical/trend data or retrospective interviews for the Behaviour-Over-Time Map
-- [ ] **Priority now: additional respondents** — see the Research Instruments section added to
-      `deliverables/phase-1/01-system-context-brief.md` for the exact personas and questionnaires
-      to use
+- [x] Historical/trend data — thin, but the 2026-09-06 interviews give 6 real respondents'
+      semester-long trend statements (mixed: some report attendance increasing, some declining)
+- [ ] Whether the confirmed broken-restock-promise pattern (staff say they'll bring back a
+      run-out item before close, then don't — `2026-09-06_five-student-interviews-guide1.md`,
+      daily eater 1) is a one-off or a recurring pattern — worth a direct staff question
