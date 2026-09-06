@@ -31,7 +31,7 @@ A separately-named "Mess Council," raised earlier as the recipient of a public c
 
 A sharper, still-unresolved ambiguity replaces it: secondhand sources describe what may be two different things both called "Mess Committee" — a Parliament-internal committee made up of elected representatives that negotiates toward the administration on students' behalf, and, separately, the institute-level, faculty-led policy body described above. Whether these are the same body with mixed membership, or two genuinely separate committees sharing a name, is unresolved and is the sharpest open naming question in the governance structure.
 
-For the majority of specific decisions this system makes — breakfast timing itself, vendor contract terms, portal functionality, waste handling — no source describes who proposes, approves, or can veto a change. This absence, across real interviews, a synthetic pilot exercise, and public-source research, is treated as a finding in itself: these processes may not be visible to anyone outside the governance actors themselves.
+For the majority of specific decisions this system makes — breakfast timing itself, vendor contract terms, portal functionality, waste handling — no source describes who proposes, approves, or can veto a change. This absence, across real interviews and public-source research, is treated as a finding in itself: these processes may not be visible to anyone outside the governance actors themselves.
 
 ## Authority at a glance
 
@@ -52,7 +52,7 @@ Only two domains — menu, and the one operational policy change on record — h
 
 Formal power sits with the three governance actors and Academic administration, described above. Four informal actors exercise real influence with no formal standing at all:
 
-- **Roommates and friends** — direct social prompting changes individual attendance decisions in a minor way; both a real respondent and independent synthetic-persona exercises converge on this, though it remains a secondary, not decisive, effect (see the Process Trace for the fuller evidence base — six real student respondents now support this reading).
+- **Roommates and friends** — direct social prompting changes individual attendance decisions in a minor way, though it remains a secondary, not decisive, effect (see the Process Trace for the fuller evidence base — six real student respondents support this reading).
 - **The Mess Cell WhatsApp community** — a self-organized resale market demonstrating real, working peer-to-peer coordination capacity. This capacity has, as far as any evidence shows, mostly been applied to individual transactions rather than a collective approach toward governance — with one significant exception, below.
 - **Ping**, the student publication — has published on mess issues at least four times found in this research (a November 2024 piece on a unilateral non-veg cancellation, a December 2024 opinion survey, a January 2025 follow-up, and a 2023 piece on an unrelated water-quality issue at the same institution), creating public visibility for problems that might otherwise stay private. No source identifies this visibility alone producing a policy response.
 - **Unofficial registration-management tools** — at least one public, open-source tool lets a student manage registration through an AI agent rather than the official portal, described in its own documentation as built "for students of IIIT Hyderabad." Its existence is confirmed; its adoption and effect on behavior are not.
