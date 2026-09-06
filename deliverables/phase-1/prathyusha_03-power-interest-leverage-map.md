@@ -15,10 +15,16 @@ breakfast. The central finding of this analysis is that the actor who bears the 
 cost of the registration-attendance gap (the student) controls the one input every
 other actor's planning depends on (registration intent), while bearing no cost for
 supplying that input inaccurately — a structurally unusual position that is neither
-straightforwardly powerful nor straightforwardly powerless. Several findings below
-remain open pending ten questions logged in `prathyusha_03b-power-analysis-discovery.md`
-and are flagged accordingly throughout; this brief does not convert hypothesis into
-fact to appear more finished than the evidence currently allows.
+straightforwardly powerful nor straightforwardly powerless. Ten open questions were
+put to the user directly and answered on 2026-09-06 (logged in
+`prathyusha_03b-power-analysis-discovery.md` §13); two of the answers revised findings
+rather than merely filling gaps — a confirmed student representative on the Mess
+Committee, and a confirmed prior instance of organized student action aimed directly
+at governance, not just at peer-to-peer transactions — and are reflected throughout
+this document. What remains genuinely unresolved (vendor compensation, the exact
+relationship between the newly-surfaced "Mess Council" and the Mess Committee, and
+above all what that organized action was about and whether it worked) is flagged 🟡/❓
+and routed to specific follow-up interview questions rather than guessed at.
 
 # What Power Means in This System
 
@@ -54,7 +60,20 @@ recognized in earlier project drafts:
 overlaps with the breakfast window, with total authority within that domain and zero
 formal relationship to any of the three mess-governance actors above — confirmed three
 separate ways (no edge to the Committee, the Office, or the Warden in any source
-consulted).
+consulted). This was tested directly rather than left as inference: asked whether
+anyone — student, Committee, or Office — has ever raised the overlap with Academic
+administration, the answer was that nobody has really tried. This resolves the
+question in favor of **inattention rather than refusal** — the absence of a
+relationship reflects that the bridge has never been attempted, not that it was tried
+and blocked. That distinction matters for what kind of intervention would actually be
+tested by attempting it.
+
+**A fourth term, "Mess Council," has surfaced** as the confirmed recipient of the
+public email complaint channel — described as reaching "people there to take care of"
+issues. Whether this is the same body as the Mess Committee under a different name, a
+sub-structure of it, or a genuinely separate entity is not yet resolved, and is now an
+open question directed at a governance contact (Guide 3, Q8) before this document
+treats "Mess Council" and "Mess Committee" as interchangeable or distinct.
 
 For the majority of specific decisions this system makes — breakfast timing itself,
 vendor contract terms, portal functionality, waste handling — no source has described
@@ -232,12 +251,14 @@ actors that no student-only channel possesses. No evidence shows this access eve
 being used to raise the mess/academic overlap; it remains a structurally available but
 entirely unused bridge.
 
-**Students, collectively**, occupy a genuinely ambiguous position: the Mess Cell
-market proves real organizing capacity already exists, but that capacity has, as far
-as any evidence shows, only ever been aimed at individual transactions rather than at
-influencing governance. Whether this represents unexercised leverage or a capacity
-that simply doesn't transfer to a different kind of goal is an open, high-value
-question rather than a settled finding.
+**Students, collectively**, occupy a genuinely ambiguous position, revised in light of
+new information: the Mess Cell market proves organizing capacity exists at the
+peer-to-peer level, and it is now confirmed that an organized email effort has also
+been directed at governance itself at least once. This means the capacity is not
+purely unexercised — but what that effort targeted and whether it produced any actual
+change are both unknown. The open question has narrowed from "has this capacity ever
+been aimed at governance" to "what happened the one time it was" — a sharper, more
+answerable question than the one this analysis started with.
 
 # Coalitions and Conflicts
 
@@ -261,7 +282,7 @@ underlying uncertainty, only shifts who bears its cost.
 | Question | Answer |
 |---|---|
 | Affected but not represented | Students, on any decision beyond menu content |
-| Consulted but cannot decide | Students, on the menu specifically — input is confirmed to exist, decision authority is not |
+| Consulted but cannot decide | Students, on the menu specifically — **revised**: an elected/appointed student representative on the Mess Committee is now confirmed to exist, which may mean this is better described as "represented but with unconfirmed decision weight" rather than pure external consultation. Whether the seat carries a vote, and how much it actually shapes outcomes, remains unconfirmed. |
 | Decides but does not experience consequences | Academic administration, on class timing |
 | Has data but not authority | The Mess Office, plausibly, if registration/attendance data does not reach the Mess Committee |
 | Has authority but not data | The Mess Committee, plausibly, over menu decisions made without visibility into which cuisine lines actually get eaten versus registered |
@@ -288,10 +309,12 @@ cancellation-rule adjustment) producing a system-wide behavioral effect. Academi
 administration holds power without leverage over this specific problem — its authority
 is real but structurally disconnected from the paradox itself. Students, individually,
 hold neither, but the Mess Cell market demonstrates that students collectively possess
-real, already-functioning organizational capacity that has never been aimed at the
-governance layer — described here as sleeping leverage rather than assumed active
-leverage, since no evidence shows it has ever been deliberately directed at a
-governance decision rather than a peer-to-peer transaction.
+real, functioning organizational capacity, and it is now confirmed that this capacity
+has also been directed at governance directly at least once, through an organized
+email effort whose specific subject and outcome remain unknown. This is better
+described as **exercised-but-unmeasured leverage** than purely sleeping leverage — the
+mechanism has been used; whether it worked is now the single most important open
+question this analysis has produced.
 
 ```mermaid
 quadrantChart
@@ -308,7 +331,7 @@ quadrantChart
     Vendors: [0.3, 0.55]
     Warden: [0.25, 0.5]
     Students, individually: [0.15, 0.15]
-    Students, collectively (sleeping): [0.75, 0.2]
+    Students, collectively (exercised, unmeasured): [0.75, 0.3]
     Mess Cell: [0.55, 0.15]
 ```
 
@@ -406,21 +429,30 @@ behavior most directly determines the outcome. The one confirmed governance acti
 record was taken to serve an internal operational goal, not the paradox itself, and
 may have tightened rather than loosened the underlying pattern. The actor best
 positioned to resolve the paradox's second major driver — the schedule overlap —
-remains entirely disconnected from every governance actor who might otherwise raise it.
-And the one channel that could plausibly generate collective pressure for change — the
-students themselves, whose organizing capacity is already proven through Mess Cell —
-has never, as far as any evidence shows, been aimed at the governance layer at all.
+remains entirely disconnected from every governance actor who might otherwise raise it,
+and this has now been confirmed to reflect inattention rather than a refusal: nobody
+has actually tried. And the one channel that could plausibly generate collective
+pressure for change — the students themselves, whose organizing capacity is proven
+through Mess Cell — has, per direct confirmation, been aimed at governance at least
+once, through an organized email effort whose subject and outcome are unknown. The
+paradox may therefore be sustained less by an absence of channels than by channels
+that exist but whose effectiveness has never been measured or followed up on.
 
 # Evidence Gaps and Interviews Needed
 
-Ten specific open questions, and which hypothesis each would confirm or reject, are
-logged in `prathyusha_03b-power-analysis-discovery.md` §13. In priority order, the
-single highest-value gap is whether the Mess Committee has any authority over Mess
-Office operational decisions — this determines whether "governance" in this system is
-genuinely three-way or whether power has quietly migrated to the Office in practice.
-The second is whether any student, formally or informally, has ever raised the
-class/mess overlap with Academic administration — this distinguishes a sleeping
-stakeholder from a refused one, which imply different kinds of intervention entirely.
+Ten specific open questions were logged in `prathyusha_03b-power-analysis-discovery.md`
+§13 and have since been answered directly by the user; that file records each answer
+and its confidence. Three remain fully open (vendor compensation, vendor bargaining
+instances, who sees per-meal ratings) and have been added to Guide 2. Four more
+produced partial or tentative answers needing independent confirmation from a
+governance contact — added to Guide 3: the "Mess Council" term's relationship to the
+Mess Committee, whether Committee approval is actually required for Office operational
+changes, the Committee's real discussion scope beyond the menu, and — now the single
+highest-priority open question in the entire project — **what the confirmed organized
+email effort was actually about, and whether it produced any real outcome.** This last
+question determines whether "sleeping leverage" or "exercised leverage" is the more
+accurate description of students' collective position, which every quadrant placement
+for students in this document currently depends on.
 
 # Key Findings
 
@@ -442,9 +474,10 @@ Evidence: ✅ public-source, dated
 System behaviour created: rules can tighten in the Office's interest without a
 confirmed check
 Confidence: 🟡 — the underlying event is confirmed, whether this generalizes to a
-standing pattern is not
-What still needs validation: whether Committee approval is required for future
-changes (Q2)
+standing pattern is not; the user's tentative belief is that Committee approval *is*
+required, but this is unconfirmed by a governance source
+What still needs validation: independent confirmation from a governance contact
+(Guide 3, Q9)
 
 **Power structure 3 — Total independence of Academic administration from mess
 governance**
@@ -453,9 +486,11 @@ Mechanism: no formal mandate connects the two systems in either direction
 Evidence: ✅ confirmed three separate ways
 System behaviour created: the schedule/mess overlap has no mechanism through which it
 could ever be resolved by either side acting alone
-Confidence: ✅
-What still needs validation: whether this has ever been tested by an actual attempt to
-raise it (Q1)
+Confidence: ✅ — and now confirmed to reflect inattention rather than an active
+refusal: asked directly, the user confirmed nobody has really tried to raise this with
+Academic administration
+What still needs validation: nothing further — this question is resolved for
+practical purposes
 
 **Power structure 4 — Asymmetric dependency on registration accuracy**
 Actors: Students, Mess Office, Vendors
@@ -481,16 +516,22 @@ Confidence: 🟡
 What still needs validation: direct confirmation from a student who has faced this
 choice explicitly
 
-**Power structure 6 — Sleeping collective leverage**
-Actors: Students (collectively), the Mess Cell market
-Mechanism: real self-organizing capacity exists and functions, but has only ever been
-observed applied to individual transactions
-Evidence: ✅ the market's existence; 🟡 whether the capacity could transfer to
-governance-directed action
-System behaviour created: a plausible lever for change exists and remains unused
-Confidence: 🟡
-What still needs validation: whether any organized student effort aimed at a rule
-change (not a complaint) has ever occurred (Q7)
+**Power structure 6 — Exercised-but-unmeasured collective leverage**
+Actors: Students (collectively), Mess Committee/Mess Council
+Mechanism: real self-organizing capacity exists (the Mess Cell market) and, per direct
+confirmation, has also been aimed at governance directly at least once, through an
+organized email effort
+Evidence: ✅ the market's existence; ✅ the organized email effort's occurrence,
+confirmed directly by the user; ❓ its subject and outcome, both unknown
+System behaviour created: a real lever for change has been used at least once, but
+without a known result, meaning neither students nor this analysis currently knows
+whether collective action through this channel is effective
+Confidence: 🟡 — revised 2026-09-06 from an earlier "sleeping, never exercised" framing
+after the user confirmed the effort occurred; this is a stronger and more precise
+finding than the one this analysis started with, not merely a filled gap
+What still needs validation: the specific rule or issue the email effort targeted, and
+what actually happened as a result (Guide 3, Q10) — now the single highest-priority
+open question in the entire project
 
 **Power structure 7 — A confirmed feedback input with an unconfirmed output**
 Actors: Students, Mess Committee, Mess Office

@@ -202,10 +202,17 @@ problem — already realized informally. No evidence that capacity has ever been
 *directed at* a governance decision rather than a peer-to-peer transaction. Ping shows
 a visibility channel exists; no confirmed instance of it producing a decision.
 
-**Conclusion, held as hypothesis:** students plausibly occupy a **low formal power /
-potentially high but currently unexercised leverage** position — "sleeping leverage,"
-not simply "low power, high leverage." The mechanism exists in miniature (Mess Cell)
-but has never been aimed at the governance layer. High-value, testable — see Q7.
+**Revised 2026-09-06, after the user's answer to Q7:** the "sleeping leverage"
+conclusion above does not hold as stated. The user confirmed an organized student
+effort **has** been directed at governance by email at least once — not merely
+peer-to-peer, as the Mess Cell mechanism is. This means the capacity has already been
+exercised at least once, not only in miniature. What remains genuinely unknown is
+*what it was about* and *whether it produced any actual change* — the user could not
+say. The finding is revised from "capacity exists, never aimed at governance" to
+"capacity exists and has been aimed at governance at least once; its effectiveness is
+unconfirmed." This is a materially different, more precise finding than the original
+hypothesis, and the single highest-priority remaining question in this analysis
+(Guide 3, Q10, added 2026-09-06).
 
 | Quadrant | Stakeholders | Basis |
 |---|---|---|
@@ -216,25 +223,32 @@ but has never been aimed at the governance layer. High-value, testable — see Q
 
 ---
 
-## Part 13 — Ten Open Questions (unanswered as of 2026-09-06)
+## Part 13 — Ten Open Questions: Answered 2026-09-06
 
-1. Has the breakfast/class-timing overlap ever been raised *with* the Academic
-   administration by anyone, even informally?
-2. Does the Mess Committee need to approve Mess Office operational changes, or can the
-   Office act unilaterally?
-3. How are vendors actually compensated — fixed contract, per-meal, per-registration,
-   or something else?
-4. Is there any known instance of a vendor renegotiating or pushing back on a term?
-5. Who actually sees per-meal ratings once submitted?
-6. Is there an elected/appointed student representative on the Mess Committee, or is
-   input gathered another way?
-7. Has there ever been an organized student effort (petition, mass message) aimed at
-   changing a mess rule, as opposed to individual complaints?
-8. Are the Kadamba renovation and its Dec 2024 policy changes still in effect, reverted,
-   or something in between?
-9. Is there a named person/office the public email channel reaches, or a general inbox?
-10. Does the Mess Committee ever discuss anything beyond the menu, or is menu
-    understood as its full remit by everyone involved?
+| # | Question | Answer | Confidence | Follow-up |
+|---|---|---|---|---|
+| 1 | Has the overlap ever been raised with Academic administration? | "No, nobody really tried to do it I guess" — **confirms sleeping through inattention, not refusal** | 🟡 user's own impression, hedged | None — this question is settled for practical purposes |
+| 2 | Does the Committee need to approve Office operational changes? | "I think so yes" — tentative, not certain | 🟡 | Added to Guide 3, Q9 |
+| 3 | How are vendors compensated? | Not known — deferred | ❓ | Added to Guide 2, Q11 |
+| 4 | Any known vendor renegotiation instance? | Not known — deferred | ❓ | Added to Guide 2, Q12 |
+| 5 | Who sees per-meal ratings? | Not known — deferred | ❓ | Added to Guide 2, Q13 |
+| 6 | Elected/appointed student rep on the Committee? | **"Yes"** — a representative exists | ✅ user-confirmed | Exact role/voting power still unconfirmed — see Missing Voices revision below |
+| 7 | Organized student effort aimed at a rule change? | **"Yes, through mail it happens"** — but specific rule and outcome unknown | ✅ occurrence confirmed, ❓ content/outcome | Added to Guide 3, Q10 — now the highest-priority open question in the project |
+| 8 | Is the Dec 2024 renovation/policy episode still live? | "Yes" (ambiguous which part this confirms) | 🟡, genuinely ambiguous | Not re-added to a guide — the renovation itself was already confirmed separately; current rule-status stays open |
+| 9 | Named recipient of the public email channel? | **"Goes to mess council where there will be people to take care of"** — introduces "Mess Council" as a new, previously-unused term | 🟡 new entity surfaced, relationship to "Mess Committee" unresolved | Added to Guide 3, Q8 |
+| 10 | Does the Committee discuss beyond the menu? | "I think so they discuss" — tentative | 🟡 | Added to Guide 3, Q11 |
 
-Everything in `prathyusha_03-power-interest-leverage-map.md` that depends on these
-remains flagged 🟡/❓ until answered.
+**Two answers meaningfully revise findings elsewhere in this analysis**, not just fill
+gaps:
+
+- **Q6 (student representative exists)** softens the "Missing Voices" claim that
+  students are "consulted but cannot decide" on anything beyond the menu — a
+  representative seat, if it carries a vote, would be a different kind of channel than
+  external consultation. Whether it carries a vote remains unconfirmed.
+- **Q7 (organized email effort confirmed)** revises Part 12's original "sleeping
+  leverage" conclusion — see the revision immediately above. Students' collective
+  capacity has been aimed at governance before, not only at each other.
+
+`prathyusha_03-power-interest-leverage-map.md` has been updated to reflect both
+revisions; everything still resting on Q3, Q4, Q5, Q8, or the exact nature of the
+"Mess Council" remains flagged 🟡/❓.

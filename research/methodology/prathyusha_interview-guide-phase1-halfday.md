@@ -33,6 +33,17 @@ catering framing is replaced with the confirmed cuisine/per-mess-procurement str
 and priority shifts toward a North Indian-line staff member; a new **Guide 3
 (Governance)** is added — now the single highest-priority interview in the whole plan.
 
+**v5 — extended 2026-09-06 after the Activity 3 power analysis and the user's answers
+to its ten open questions** (see `deliverables/phase-1/prathyusha_03-power-interest-
+leverage-map.md` and `prathyusha_03b-power-analysis-discovery.md`). Vendor compensation/
+bargaining and who sees meal ratings go to Guide 2 (Q11-13); the newly-surfaced "Mess
+Council" term, Committee/Office approval authority, the specific organized-email effort
+the user confirmed happened, and the Committee's actual discussion scope all go to
+Guide 3 (Q8-11). Guide 3 Q10 (the organized-email effort) is now the single
+highest-priority question in the whole project — it's the one confirmed instance of
+students directing collective action at governance, and its subject/outcome are both
+still unknown.
+
 ---
 
 ## Guide 1 — Student interviews (30 min each, today, 2-3 people, mixed attend/skip)
@@ -160,6 +171,19 @@ to say whether low uptake reads as a demand problem from where they stand.
    other people, not just their own wait — added 2026-09-05 per the user's choice)*
 10. If you could change one thing about how registration/serving works from where you
     sit, what would it be?
+11. **How is your mess actually paid for its food — a fixed amount, a rate per meal
+    served, a rate tied to how many students register, or something else?** *(new,
+    added 2026-09-06, from the Activity 3 power analysis — this single fact determines
+    whether the vendor bears any cost when registrations run higher than attendance,
+    or whether that cost is absorbed entirely elsewhere)*
+12. **Has there ever been a time your mess wanted to push back on an order quantity, a
+    contract term, or how the registration numbers were handed to you — what
+    happened?** *(new, added 2026-09-06 — tests vendor bargaining power directly rather
+    than assuming it from "vendors are commercial actors")*
+13. **When students rate a meal in the app, do you ever see those ratings, or hear
+    about them from anyone?** *(new, added 2026-09-06 — the most direct way to test
+    whether student feedback that's known to exist actually reaches anyone who could
+    act on it, or disappears into an unrouted data pipe)*
 
 ---
 
@@ -203,6 +227,27 @@ probes as the other guides.
    get wrong or don't know about?
    *Why: open-ended catch-all, most likely to surface something not already anticipated
    by any lens in the stakeholder register.*
+8. **When a mess-related email goes to the "Mess Council," who actually reads it and
+   handles it — is the Mess Council the same body as the Mess Committee, or something
+   separate with its own structure?** *(new, added 2026-09-06 — the user's own answer
+   introduced "Mess Council" as the recipient of complaint emails, a term not
+   previously used anywhere in this project's research; this needs reconciling with
+   "Mess Committee" before either term can be used with confidence)*
+9. **Does the Mess Committee/Council need to sign off before the Mess Office can make
+   an operational change — like the cancellation-rule tightening — or can the Office
+   act on its own?** *(new, added 2026-09-06 — the user's own guess was "yes,
+   approval is needed," but this needs independent confirmation, since it determines
+   whether authority has migrated from the Committee to the Office in practice)*
+10. **You mentioned an organized student effort by email has happened before — do you
+    know what specific rule or issue it was about, and what actually happened as a
+    result?** *(new, added 2026-09-06 — the user confirmed this occurred but not its
+    subject or outcome; this is now the single most important open question in the
+    whole power analysis, since it's the one confirmed instance of students directing
+    collective action at governance rather than at each other)*
+11. **Does the Committee/Council ever discuss things beyond the menu — hours, pricing,
+    the billing structure — or is menu genuinely the full extent of what it covers?**
+    *(new, added 2026-09-06 — the user believes it discusses more than menu, "I think
+    so," but this needs a direct confirmation with an example if possible)*
 
 ---
 
