@@ -1,0 +1,5 @@
+flowchart LR
+    W1[Student opens dining app, once a week] --> W2{Registers per-meal, or batch-registers the whole week?}
+    W2 -->|Batch, e.g. every Sunday| W3[All 7 breakfasts locked in at once]
+    W2 -->|Meal-by-meal, as needed| W3
+    W3 --> D1[Feeds into the Daily cycle]

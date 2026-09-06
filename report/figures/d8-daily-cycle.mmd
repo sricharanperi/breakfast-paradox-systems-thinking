@@ -1,0 +1,16 @@
+flowchart TD
+    D1[Alarm / wake-up] --> D2{Awake before approx 8:00-8:30?}
+    D2 -->|Yes| D3{Decide: walk to mess?}
+    D2 -->|No, groggy/late| D4{Roommate/friend actively prompts?}
+    D4 -->|Yes, prompted| D3
+    D4 -->|No prompt| D6[Stays in room - no action taken]
+    D3 -->|Goes| D5[Walks to mess, joins counter queue]
+    D3 -->|Doesn't go| D6
+    D5 --> D7{Registered item still available?}
+    D7 -->|Yes| D8[Served, eats]
+    D7 -->|Ran out| D9[Takes substitute item, or eats partial/leaves]
+    D6 --> EX[See Exception paths]
+    D8 --> BILL
+    D9 --> BILL
+    EX --> BILL
+    BILL[Billed by registration count, regardless of what happened above]
