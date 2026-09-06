@@ -7,6 +7,17 @@ subtitle: "Primary research — Guide 1 quick-questions reference"
 2026-09-06). A live copy is also available at:
 <https://docs.google.com/document/d/1VgI4UQj3ujQPOFNB57T75ZExPP8Px9JrPQGr8GtJ9pA/edit?usp=sharing>
 
+**⚠️ Same underlying interviews as `2026-09-06_five-student-interviews-guide1.md`**
+(transcribed independently from `Interview data.pdf`, provided separately to this
+project the same day) — **this is one set of five respondents, not ten.** The
+deliverables (`prathyusha_04-process-trace.md`, `prathyusha_05-system-timeline-bot-
+map.md`) cite that PDF-sourced file as the primary reference; this file's independent
+transcription served as a valuable cross-check (see `student_interview_summary_neha.md`
+for where the two independent analyses agreed and where this one's reading was
+adopted as the better-supported interpretation) and preserves a labeling detail — the
+source's own "daily eater - 2"/"daily eater - 3" gap — that the other transcription
+initially missed. Do not count both files' respondents as a combined sample of ten.
+
 **Note on fidelity:** This file transcribes the source document's content exactly —
 no answers have been edited, summarized, or reworded. Only pandoc's markdown-escaping
 artifacts (stray backslashes before apostrophes and asterisks) were cleaned up so the
