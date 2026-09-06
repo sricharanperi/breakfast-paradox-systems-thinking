@@ -1,0 +1,39 @@
+flowchart TB
+  subgraph RingOuter["Outer ring - environmental and boundary"]
+    direction TB
+    VIN[Vindhya / juice canteens]
+    RID[Delivery riders]
+    ACAD["Academic administration\nsleeping stakeholder"]
+    PIT["Portal/IT owner"]
+    subgraph RingGov["Governance ring"]
+      direction TB
+      MC[Mess Committee]
+      MO[Mess Office]
+      WD[Warden]
+      FAC[Facilities]
+      subgraph RingOps["Operational contact ring"]
+        direction TB
+        VSI[Vendor: South Indian]
+        VNI[Vendor: North Indian]
+        VJ[Vendor: Jain]
+        SVC[Serving staff]
+        KIT[Kitchen staff]
+        subgraph RingCore["Core - the student's own morning"]
+          ST((Students))
+          MCELL[Mess Cell market]
+          TOOLS[Unofficial tools]
+          PING[Ping]
+        end
+      end
+    end
+  end
+
+  classDef customerNode fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b1b1b
+  classDef internalNode fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#1b1b1b
+  classDef externalNode fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#1b1b1b
+  classDef publicNode fill:#e1bee7,stroke:#6a1b9a,stroke-width:2px,color:#1b1b1b
+
+  class ST customerNode
+  class MC,MO,WD,VSI,VNI,VJ,SVC,KIT,FAC internalNode
+  class ACAD,PIT,VIN,RID externalNode
+  class MCELL,TOOLS,PING publicNode
