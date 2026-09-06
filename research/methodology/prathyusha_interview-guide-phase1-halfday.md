@@ -44,6 +44,17 @@ highest-priority question in the whole project — it's the one confirmed instan
 students directing collective action at governance, and its subject/outcome are both
 still unknown.
 
+**v6 — extended 2026-09-06 after an independent research pass** (see
+`deliverables/phase-1/prathyusha_03c-activity3-audit-and-completion-plan.md` Part D).
+Found, verified directly from source: IIIT-H's Student Parliament maintains an elected
+**Mess Secretary and per-mess Deputy Secretaries** — students, not faculty/staff, and
+far more reachable than any other governance contact on this list; Guide 3 now flags
+which questions this specific role can answer and should be the first target. Also
+found a specific, dated candidate match for the organized-email-effort question
+(Guide 3 Q10, rewritten from open-ended to a yes/no confirmation), and reframed the
+"Mess Council" question (Q8) and the two-Mess-Committees ambiguity (new Q11) in light
+of that research.
+
 ---
 
 ## Guide 1 — Student interviews (30 min each, today, 2-3 people, mixed attend/skip)
@@ -198,6 +209,18 @@ and independently check the cuisine-preference hypothesis from the governance si
 worth more right now than a fourth student interview. Semi-structured, same neutral
 probes as the other guides.
 
+**Updated 2026-09-06 — a much more reachable target now exists.** Independent
+research found that IIIT-H's Student Parliament maintains an elected **Mess
+Secretary** and a per-mess **Mess Deputy Secretary** (Yuktāhār, Kadamba, Palash) —
+verified directly from the Parliament's own published roster
+(`clubs.iiit.ac.in/student-bodies/parliament`). These are **students, elected by
+students**, not faculty or staff — almost certainly far easier to reach than the
+Warden or a Mess Committee chair, and they sit exactly at the intersection this guide
+is trying to probe. **Prioritize finding and talking to the Mess Secretary or any
+Mess Deputy Secretary before trying to reach anyone else on this list.** Two
+questions below are now specifically answerable by this role and are marked
+accordingly.
+
 1. Could you help me understand how mess governance is actually organized — is there a
    difference between what the Mess Committee decides and what the Mess Office handles
    day-to-day?
@@ -227,27 +250,38 @@ probes as the other guides.
    get wrong or don't know about?
    *Why: open-ended catch-all, most likely to surface something not already anticipated
    by any lens in the stakeholder register.*
-8. **When a mess-related email goes to the "Mess Council," who actually reads it and
-   handles it — is the Mess Council the same body as the Mess Committee, or something
-   separate with its own structure?** *(new, added 2026-09-06 — the user's own answer
-   introduced "Mess Council" as the recipient of complaint emails, a term not
-   previously used anywhere in this project's research; this needs reconciling with
-   "Mess Committee" before either term can be used with confidence)*
-9. **Does the Mess Committee/Council need to sign off before the Mess Office can make
-   an operational change — like the cancellation-rule tightening — or can the Office
-   act on its own?** *(new, added 2026-09-06 — the user's own guess was "yes,
+8. **[BEST ASKED OF: Mess Secretary/Deputy] Is "Mess Council" a real, separate body
+   here, or is that most likely a mix-up with a different institution's similarly-named
+   group, or just another name people use for the Mess Committee?** *(rewritten
+   2026-09-06 — independent research found a real "Mess Monitoring Council" but at IIT
+   Hyderabad, a different institution from IIIT-H, and found no evidence of a
+   distinctly-named "Mess Council" anywhere on IIIT-H's own site; a Parliament
+   representative is the person most likely to know immediately whether this is a real
+   local term or not)*
+9. **Does the Mess Committee need to sign off before the Mess Office can make an
+   operational change — like the cancellation-rule tightening — or can the Office act
+   on its own?** *(new, added 2026-09-06 — the user's own guess was "yes,
    approval is needed," but this needs independent confirmation, since it determines
    whether authority has migrated from the Committee to the Office in practice)*
-10. **You mentioned an organized student effort by email has happened before — do you
-    know what specific rule or issue it was about, and what actually happened as a
-    result?** *(new, added 2026-09-06 — the user confirmed this occurred but not its
-    subject or outcome; this is now the single most important open question in the
-    whole power analysis, since it's the one confirmed instance of students directing
-    collective action at governance rather than at each other)*
-11. **Does the Committee/Council ever discuss things beyond the menu — hours, pricing,
-    the billing structure — or is menu genuinely the full extent of what it covers?**
-    *(new, added 2026-09-06 — the user believes it discusses more than menu, "I think
-    so," but this needs a direct confirmation with an example if possible)*
+10. **[BEST ASKED OF: Mess Secretary/Deputy] Was the December 2024 episode — where
+    Ping ran a student opinion form and Parliament's mess representatives held
+    meetings with the Mess Office before the cancellation-rule change — the
+    "organized effort by email" you meant? If so, is "opposition was raised but the
+    policy went ahead anyway" the accurate summary of how it ended?** *(sharpened
+    2026-09-06 — independent research surfaced a specific, dated candidate episode
+    matching what was described; this is now a yes/no confirmation rather than an
+    open-ended question, and is the single most important open question in the whole
+    power analysis)*
+11. **[BEST ASKED OF: Mess Secretary/Deputy] Is there one "Mess Committee," or two
+    different things people call by that name — one inside the Student Parliament made
+    of elected reps, and a separate faculty-chaired institute committee? How do those
+    two relate, if both exist?** *(rewritten 2026-09-06 — independent research found
+    references to both and could not resolve whether they're the same body or two
+    distinct ones; a Parliament representative would know this immediately)*
+12. Does the Committee ever discuss things beyond the menu — hours, pricing, the
+    billing structure — or is menu genuinely the full extent of what it covers?
+    *(the user believes it discusses more than menu, "I think so," but this needs a
+    direct confirmation with an example if possible)*
 
 ---
 
