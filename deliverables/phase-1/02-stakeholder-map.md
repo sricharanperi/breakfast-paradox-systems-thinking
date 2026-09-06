@@ -91,7 +91,7 @@ Twenty-seven candidate actors were identified across seventeen analytical lenses
 | Thick line | Institutional relationship |
 | Solid arrow, labeled | Directed flow of information |
 | Red line | Relationship with conflict potential |
-| Dotted line ending in ✕ | Interrupted relationship (no confirmed connection) |
+| Dotted line ending in an X | Interrupted relationship (no confirmed connection) |
 
 Placement follows the standard four-ring model. **Customer/user:** Students. **Internal stakeholders:** Mess Committee, Mess Office, Warden, the three vendors, and serving and kitchen staff — the mess system's own operating structure. **External stakeholders:** Academic administration, the Facilities/Estate team, the Portal/IT owner, Vindhya and the juice canteens, and delivery platforms — organizations that interact with the system's boundary from outside it. **Public stakeholders:** the Mess Cell WhatsApp community, unofficial tool developers, and Ping — informal, public-facing actors with no institutional standing in the system.
 
