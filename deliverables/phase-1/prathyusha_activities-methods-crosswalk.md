@@ -32,13 +32,22 @@ explicit corrections.
 
 ## Activity 3 — Analyse Power, Interests & Leverage
 
+**Status: ✅ COMPLETE as of 2026-09-06**, after a full first-principles power/leverage
+discovery pass (power taxonomy, 26-domain decision-rights matrix, formal/informal power
+tracing, incentive-chain analysis, bargaining/dependency analysis, precedent, resource
+control, leverage rights) — see `prathyusha_03b-power-analysis-discovery.md` for the
+full reasoning and evidence base, and `prathyusha_03-power-interest-leverage-map.md`
+for the polished Power-Interest/Leverage Map and Power Analysis Brief. Ten open
+questions remain logged and unanswered; every finding depending on them is flagged 🟡/❓
+rather than stated as settled.
+
 | Method | Status | Evidence |
 |---|---|---|
-| Assess decision-making authority | ✅ | `prathyusha_03-*` power column |
-| Identify formal and informal power | ✅ | Mess Cell = informal power with no formal standing |
-| Analyse stakeholder incentives and motivations | ✅ | interest column |
-| Identify who can influence decisions and who cannot | ✅ | quadrant chart |
-| Examine unequal access to resources or opportunities | 🟡 | Kadamba-vs-Bakul access disparity is noted but not yet explained by cause — still open |
+| Assess decision-making authority | ✅ | "Decision Rights" + "Formal Governance Structure" — the Mess Committee/Mess Office/Warden split, and the many domains where authority is confirmed unknown rather than assumed |
+| Identify formal and informal power | ✅ | "Formal Governance Structure" and "Informal Power Structure" sections, kept explicitly separate |
+| Analyse stakeholder incentives and motivations | ✅ | "Stakeholder Interests" table (stated interest vs. structural incentive vs. observed behaviour) + five incentive chains |
+| Identify who can influence decisions and who cannot | ✅ | Power-Interest Map + Power-Leverage Map, both with domain-specific caveats rather than one flattened score per actor |
+| Examine unequal access to resources or opportunities | ✅ | "Resource Control" table — money, food, data, complaint channels, legitimacy, and the one resource (procurement lead time) that is *not* unequally distributed, flagged as a deliberate exception |
 
 ## Activity 4 — Trace the Existing Process
 
