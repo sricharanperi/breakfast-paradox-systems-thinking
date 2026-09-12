@@ -38,6 +38,14 @@
 
 All six live in `deliverables/phase-1/`, alongside `assets/` (mermaid `.mmd` diagram sources + rendered `.png`s) and a set of `prathyusha_*.md` files (a teammate's raw/working documents, kept as historical record rather than deleted once consolidated).
 
+**Deliverable structure (Phase 2, in progress):**
+| # | Deliverable | Markdown source | Docx | PDF |
+|---|---|---|---|---|
+| 6 | System Map | `06-system-map.md` | *(not yet built)* | *(not yet built)* |
+| 7 | Systemic Problem Analysis | `07-systemic-problem-analysis.md` | *(not yet built)* | *(not yet built)* |
+
+Both live in `deliverables/phase-2/`, with their own `assets/` (some newly drawn, some reused/copied from `deliverables/phase-1/assets/` — see Session 2026-09-12 (Phase 2 kickoff) below). As of the last pull, Phase 2 exists only as markdown + diagram assets — no `.docx`/`.pdf` conversion pass has happened yet, unlike Phase 1's fully-built pipeline.
+
 There is also a `report/` directory with a separate LaTeX-based write-up (`report/main.tex` → `report/main.pdf`) and its own `report/figures/` — a parallel, more traditional academic-report rendering of the same diagrams, distinct from the `deliverables/phase-1/*.docx→pdf` submission pipeline.
 
 ---
@@ -48,7 +56,7 @@ There is also a `report/` directory with a separate LaTeX-based write-up (`repor
 |---|---|---|
 | `sricharanperi` <sricharanperi27@gmail.com> | (the user of this Claude Code session) | Repo owner; System Context Brief author; Phase 1 consolidation, docx→PDF conversion pipeline, final submission prep |
 | `Kalluri Lakshmi Prathyusha` | Prathyusha | Teammate; Stakeholder Map, Power-Interest/Leverage Map, Power Analysis Brief, governance research (Student Parliament, Mess Committee/Office), interview guides 1 & 3, most of the primary interview fieldwork |
-| `neha771` | Neha | Teammate; interview guide contributions, independent interview-transcript summary/cross-check, report figure assets |
+| `neha771` <nehasusan369@gmail.com> | Neha | Teammate; interview guide contributions, independent interview-transcript summary/cross-check, report figure assets; authored Phase 2 Tasks 6-7 (System Map, Systemic Problem Analysis) solo |
 
 All three commit to the same `main` branch directly (no PR workflow observed in this repo — merges are plain `git merge` after concurrent pushes).
 
@@ -67,6 +75,10 @@ Project/                                   (git repo root)
 │   ├── Invictus_Phase1.pdf                 Final bundle: straight concat of the 5 deliverable PDFs
 │   ├── prathyusha_*.md                     Prathyusha's raw working documents (superseded by the consolidated .md files above, kept for provenance)
 │   └── assets/                             Diagram sources (.mmd = Mermaid source) and rendered .png exports, used both in the docx files and report/
+├── deliverables/phase-2/                  Phase 2 outputs (IN PROGRESS — markdown + diagrams only, no docx/pdf yet)
+│   ├── 06-system-map.md                    Task 6: System Map (actors/process/resources/constraints synthesis of Phase 1)
+│   ├── 07-systemic-problem-analysis.md     Task 7: Systemic Problem Analysis (events→patterns→structures→mental models, feedback loops, root causes)
+│   └── assets/                             Some diagrams newly drawn (diagram1-system-map, diagram2-underprovisioning-loop); others are direct copies of Phase 1 loop diagrams (d10-loop-r1.png, d11-loop-b1.png, d14-power-flow-network.png) reused as-is
 ├── report/                                 A separate, parallel LaTeX academic write-up of the same project
 │   ├── main.tex / main.pdf
 │   └── figures/                            Its own .mmd + .png diagram set (numbered d1–d14, overlaps conceptually with deliverables/phase-1/assets but is a separate copy)
@@ -252,6 +264,37 @@ This gap is exactly what the 2026-09-12 session below was asked to resume and cl
 - Heavy use of direct visual verification via the `Read` tool's image support (rendering PDF pages to PNG with `pdftoppm`, then reading them as images) rather than trusting text-only signals like page counts or LaTeX warnings alone. This was the single most load-bearing technique in the whole session — every real bug found (the clipped diagram, the frozen TOC numbers, the drifted figure) was caught by looking at rendered pages, not by reading logs.
 - `AskUserQuestion` was used four times this session, each at a genuine decision point where guessing would have meant either fabricating certainty (TOC page numbers) or making an irreversible/visible choice on the user's behalf (whether to touch the merged submission PDF, whether/how to commit and push, where this very file should live). This matches the project's own long-standing internal discipline (D-8, D-9, D-11) of not inventing certainty — applied here to the *process* of working on the repo, not just to its research content.
 
+### Session: 2026-09-12 (Phase 2 kickoff, by teammate) + pull/review pass (by this session)
+**Commit:** `b7c69ac` "task 6,7 with pending interview" — **By:** neha771 <nehasusan369@gmail.com>, pushed directly to `origin/main` at 14:45 that day (after this session's own `882cc72` MASTER_CONTEXT.md commit, so it was never seen locally until fetched). No commit body, no Claude-Session trailer — can't tell from the commit alone whether this was done with AI assistance or not.
+
+**User's request this pass:** "Pull everything from the repo regarding the changes done by the other team members, understand what has been done, and update everything into the new thing and also into MASTER_CONTEXT.md."
+
+**What I (Claude) did:**
+1. `git fetch origin`, then compared `git log --oneline -1` (local) against `origin/main` — found one commit ahead (`b7c69ac`) not yet pulled.
+2. `git log 882cc72..origin/main` to read the commit message before pulling anything, then `git pull --ff-only` (fast-forward only, deliberately — no merge commit needed since local had no divergent work).
+3. `git show --stat b7c69ac` to see the full file list, then read both new markdown files in full and viewed the two newly-drawn diagram images (`diagram1-system-map.png`, `diagram2-underprovisioning-loop.png`) to actually understand the content, not just infer from filenames.
+4. Confirmed via `git branch -a` there's only ever been a single `main` branch in this repo's history — no stray unmerged branches to also account for.
+
+**What Phase 2 (Tasks 6-7) actually contains — understood from reading the files directly:**
+
+**Task 6 — System Map (`06-system-map.md`).** Explicitly framed as a *synthesis*, not new research: "Everything below is built from facts already confirmed in Tasks 1-5. No new claim is introduced here." Section headers again follow the assignment framework's own wording (continuing D-7): Map Actors/Processes/Information/Resources/Constraints; Identify Conflicts and Dependencies; Represent Formal and Informal Structures; Highlight Bottlenecks, Tensions and Feedback Loops; Key Findings; Outstanding Data Collection. It lays the full system out as one flow diagram (`assets/diagram1-system-map.png`, newly drawn — actors, registration→billing→vendor forecast→service window→outcome, with three explicit bottleneck callouts and the Academic-administration disconnect shown as a red dashed line) plus the reused Phase 1 "Power and Information Flow Network" diagram. Names three concrete bottlenecks (the 4-day procurement lead time; the 9:30 AM close; zero formal channel between Academic administration and any mess-governance actor) and states the core synthesis finding plainly: every no-show exit path (cancel, Skip Meal, resale, waste) is a workaround for the same missing mechanism — nothing lets a same-day intent change affect billing or cooking.
+
+**Task 7 — Systemic Problem Analysis (`07-systemic-problem-analysis.md`).** A classic events→patterns→structures→mental-models iceberg analysis, again headers matching the framework's wording: Distinguish Events, Patterns, Structures and Mental Models; Identify Reinforcing and Balancing Feedback Loops; Analyse Unintended Consequences; Identify Structural Causes and Systemic Tensions; Key Findings; Outstanding Data Collection.
+- Explicitly labels the **mental-models layer as inference**, not fact — "none directly stated by name in any interview but consistent with everything observed" — the same "don't invent certainty" discipline as D-8/D-9/D-11, now applied to a new kind of claim (inferred beliefs, not just missing data).
+- Names four loops: **R1 — Shifting the Burden via Mess Cell** (reinforcing; reuses Phase 1's `d10-loop-r1.png`), **B1 — Kitchen Waste Control via Skip Meal** (balancing but incomplete — flags that Skip Meal's zero real usage means it may not be closing the loop even on the kitchen's own terms, a sharper version of a Phase 1 finding; reuses `d11-loop-b1.png`), **B2 — Capacity Redistribution** (weak/broken — Kadamba doesn't organically redistribute to Bakul/Palash; capacity was instead added administratively by building Bakul), and a **candidate structure, not yet a confirmed loop** — under-provisioning for real attendees (new diagram, `diagram2-underprovisioning-loop.png`), explicitly split into an evidenced first half (inflated registration vs. low true attendance) and an unconfirmed second half (whether kitchen prep is actually calibrated to the low true-attendance figure rather than peak-hour demand).
+- An unintended-consequences table covering five rules/actions, including a sharp new claim: the December 2024 cancellation-cap tightening (originally a Mess Office workload-reduction move, per Phase 1) "plausibly increases, not decreases, the pattern of uncancelled no-shows it targeted" — a fix that may be working against its own goal.
+- Three structural root causes named directly: (1) billing decoupled from attendance — the single structure behind the largest share of symptoms; (2) the four-day procurement lead time as a fixed ceiling on system responsiveness, "not a policy choice any single actor is making badly"; (3) governance fragmented across four disconnected actors (Mess Committee, Mess Office, Warden, and functionally Academic administration), none of which holds both the authority and the incentive to fix the core mismatch end-to-end.
+- Two systemic tensions named: individual rationality vs. system-level cost (everyone's individually-sensible choices sum to the paradox — "no single actor is behaving irrationally"), and administrative simplicity vs. demand-matching.
+
+**Outstanding Data Collection (both Task 6 and Task 7):** both explicitly say the mess-committee/vendor interview is **pending institutional approval** — this is a firmer, more specific status than Phase 1's more general "will be collected and submitted later" language, and it's the same single pending interview referenced by both new documents (not two separate gaps). See Section 9.
+
+**Decisions/patterns confirmed as continuing into Phase 2 (not new decisions, but worth recording that they held):**
+- Phase 2 reuses D-7 (section headers match the assignment framework's own wording) and D-9/D-12 (explicit "Outstanding Data Collection" closing section) without any prompting from this session — evidence these are now settled team conventions, not just this-session choices.
+- Phase 2 explicitly re-applies D-11's inference-vs-fact discipline to a new domain: labeling the entire "mental models" layer of an iceberg analysis as inferred rather than confirmed, and explicitly splitting the under-provisioning loop into its evidenced half vs. its unconfirmed half rather than presenting it as one settled loop.
+- Diagram reuse pattern continues: three Phase 2 diagrams are literal copies of Phase 1 assets (`d10-loop-r1.png`, `d11-loop-b1.png`, `d14-power-flow-network.png`) rather than redrawn — same pattern already noted for `report/figures/` vs. `deliverables/phase-1/assets/` (Section 3's cross-reference notes, Section 9's open item about the two figure sets not being automatically linked). **This is now a three-way duplication** (Phase 1 assets / report figures / Phase 2 assets) worth watching if any of these diagrams ever need a correction.
+
+**What I did *not* do this pass:** no docx/PDF conversion, no edits to the Phase 2 markdown content itself, no changes to Phase 1 files. This was purely a pull-and-document pass — the user's request was to understand and record what teammates had done, not to build on it yet. If the next ask is "now build the docx/PDF for Tasks 6-7," the playbook in Section 5 applies directly (Phase 2 docs currently have no Word-TOC or embedded-infographic complications like Phase 1 did, so the simple direct route in 5.1 is the likely starting point — check for a Word-authored TOC field first per 5.2's checklist regardless).
+
 ---
 
 ## 5. TECHNICAL PLAYBOOK — the docx→PDF pipeline (reusable recipe)
@@ -325,6 +368,8 @@ then read the resulting PNGs. Check specifically: does every figure have its cap
 
 ## 6. RESEARCH INVENTORY
 
+**Phase 2 (Tasks 6-7) introduces no new research sources** — both documents draw exclusively on the primary research already listed below plus the confirmed findings already written into Phase 1's deliverables (D-16). The one still-pending source relevant to Phase 2 is the mess-committee/vendor interview, awaiting institutional approval (Section 9).
+
 **Primary research (the project's actual evidence base):**
 - `research/primary-research/interviews/2026-09-03_student-self-account-and-mess-system-overview.md` — the original respondent, a habitual skipper, general system informant (interviewed 2026-09-03).
 - `research/primary-research/interviews/2026-09-06_five-student-interviews-guide1.md` — five more real students (2 daily eaters, 3 skippers), interviewed 2026-09-06 using Guide 1. This is the project's core quantitative-ish evidence base for Activities 4 and 5.
@@ -368,6 +413,7 @@ then read the resulting PNGs. Check specifically: does every figure have its cap
 | D-13 | Standing AI-fingerprint-scrubbing policy: blank PDF tool metadata (keep Title), remove now-superseded synthetic-pilot language, scan final text for tool/AI residue — applies to every submitted PDF | 2026-09-06 |
 | D-14 | This repo's commits do not carry Claude attribution unless the user asks for it in that specific instance — consistent with D-13's scrubbing policy | 2026-09-12 |
 | D-15 | This file (`MASTER_CONTEXT.md`) is committed and pushed to the repo despite D-13/D-14, because it is a process/context document, not a submitted deliverable | 2026-09-12 |
+| D-16 | Phase 2 (Tasks 6-7) built as a pure synthesis of Phase 1 findings, explicitly re-confirmed as introducing no new claims — same "don't invent certainty" discipline as D-8/D-9/D-11, now also applied to labeling an entire analysis layer (iceberg-model mental models) as inference rather than fact | 2026-09-12 (Phase 2 kickoff, by neha771) |
 
 ---
 
@@ -395,9 +441,10 @@ then read the resulting PNGs. Check specifically: does every figure have its cap
 
 ---
 
-## 9. OPEN ITEMS (as of 2026-09-12 — check before assuming any of these are still open)
+## 9. OPEN ITEMS (as of 2026-09-12, updated after pulling Phase 2 kickoff — check before assuming any of these are still open)
 
-- **Mess-committee / vendor-side data has not been collected.** Every deliverable that touches governance or kitchen operations (Tasks 3, 4, 5) explicitly says so in its "Outstanding Data Collection" section. This is the single biggest acknowledged gap in Phase 1's evidence base.
+- **Mess-committee / vendor-side interview has not been conducted; is now specifically "pending institutional approval."** Every deliverable that touches governance or kitchen operations (Tasks 3, 4, 5, and now 6, 7) says so in its "Outstanding Data Collection" section — Phase 2's wording is more specific than Phase 1's ("will be collected and submitted later"), confirming it's the same single pending interview referenced everywhere, not several separate gaps. This is the single biggest acknowledged gap in the project's evidence base, and it now blocks two additional specific claims: (a) how a preparation quantity is actually decided and whether waste/shortfall data reaches a decision-maker (Task 6), and (b) whether kitchen prep is actually calibrated to low true-attendance rather than peak-hour demand — the unconfirmed half of the under-provisioning candidate loop (Task 7).
+- **Phase 2 has no `.docx`/`.pdf` yet** — only the two markdown files and their diagram assets exist so far (`06-system-map.md`, `07-systemic-problem-analysis.md`). Whoever builds the Word/PDF versions should follow the Section 5 playbook and specifically check early whether Word's own TOC-field bug (Mistake #10) recurs, since these docs don't have that history yet to know either way.
 - **Direct observation of a live breakfast service window has not been conducted**, despite a 30-minute-interval observation protocol (7:15/7:30 AM setup through post-close) being written and ready to run. Would resolve the unconfirmed exact shape/timing of the crowd-peak curve.
 - **The true respondent count behind "Daily eater - 2" is unresolved** (see Mistake/finding above) — either a mislabeling or a genuinely missing sixth transcript; unverifiable without the original interview source re-checked directly with whoever conducted it.
 - **The relationship between "Mess Council" and the Mess Committee remains unresolved**, compounded by the likelihood that "Mess Council" is a cross-institution naming mix-up rather than a real IIIT-H body — needs direct confirmation, not further inference.
@@ -405,4 +452,5 @@ then read the resulting PNGs. Check specifically: does every figure have its cap
 - **Whether the ~30% registration-to-attendance gap figure is accurate** is unverified — cited by two respondents but not confirmed against records.
 - **No single population-level attendance trend exists** across the six real respondents (some rising, some falling, one flat at zero) — any future claim that "the paradox is worsening/improving" needs to specify for whom, not assert it generally. This is a standing caution for anyone extending this research, not a to-do item to resolve.
 - **`report/` (the separate LaTeX write-up) has its own figure set** (`report/figures/`) that overlaps conceptually but is a distinct copy from `deliverables/phase-1/assets/` — if a diagram is corrected in one location, check whether the other copy needs the same correction; there is currently no automated link between them.
-- **This `MASTER_CONTEXT.md` file itself needs to be committed and pushed** as the final step of the 2026-09-12 session (per Section 0's own instruction) — check `git log` for a commit adding this file; if the working tree still shows it as untracked/uncommitted when you read this, that step didn't happen yet and should be done next.
+- **~~This `MASTER_CONTEXT.md` file itself needs to be committed and pushed~~ — done** (commit `882cc72`, 2026-09-12). Resolved.
+- **Before pulling/pushing in future sessions, always check `origin/main` for teammate commits first** (`git fetch` + compare `git log -1` local vs. `origin/main`) — this session found a full day-old teammate commit (`b7c69ac`, Phase 2 kickoff) sitting unpulled on the remote simply because nothing had triggered a fetch since it landed. There is no other signal that surfaces a teammate's push automatically in this workflow.
