@@ -344,7 +344,19 @@ project.
   sufficient account balance before dining; Food Cards may be used at all CDS dining
   halls.
 - **Need help?** Food Card issuance, portal access, balance recharge, meal registrations,
-  dining services — contact CDS (email/portal above).
+  dining services — contact CDS: **Campus Dining Services (CDS)**, Email
+  `cds@iiit.ac.in`, **CDS Portal: `https://mess.iiit.ac.in`**.
+
+**Discrepancy on this poster, verified directly against the photograph (not present in the
+original transcription above, which had glossed this line as "portal above" without
+checking it matched):** the CDS Portal is given as `dining.iiit.ac.in` at the top of this
+same poster and `mess.iiit.ac.in` at the bottom contact line — two different domains for
+what should be the same portal, on one physical sign. The main CDS overview poster (§11.4)
+does **not** have this problem — it says `dining.iiit.ac.in` in both its top and bottom
+sections, consistently. So this is specific to the Food Card User Guide poster, not a
+project-wide naming question like the CDS/Mess Office one — it looks like a plain
+proofreading error on CDS's own signage, physically displayed at Kadamba, not resolved by
+any other source here. Worth a one-line question to CDS/CFS: which domain is actually live.
 
 ### 11.4 — Main CDS overview poster (Monsoon 2026, effective August 1, 2026)
 
