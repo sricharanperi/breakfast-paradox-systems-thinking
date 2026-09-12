@@ -42,9 +42,9 @@ All six live in `deliverables/phase-1/`, alongside `assets/` (mermaid `.mmd` dia
 | # | Deliverable | Markdown source | Docx | PDF |
 |---|---|---|---|---|
 | 6 | System Map (+ Causal Loop/Feedback Analysis) | `06-system-map.md` | `System Map.docx` (21pp) | `System Map.pdf` (21pp) |
-| 7 | Systemic Problem Analysis | `07-systemic-problem-analysis.md` | *(not yet built)* | *(not yet built)* |
+| 7 | Systemic Problem Analysis | `07-systemic-problem-analysis.md` (Neha's original draft, kept as-is) **and** `prathyusha_task7.md` (new, full rebuild — see 2026-09-13 session below) | *(not yet built)* | *(not yet built)* |
 
-Both live in `deliverables/phase-2/`, with their own `assets/` (some newly drawn, some reused/copied from `deliverables/phase-1/assets/` — see the two 2026-09-12 Phase 2 session entries below). Task 6 is now fully built end-to-end (markdown, four new diagrams incl. proper polarity-labeled Causal Loop Diagrams, docx, PDF) as of the "Task 6 completion pass" session. Task 7 is still markdown + assets only, and still uses older, less rigorous loop diagrams that should be reconciled with Task 6's newer CLDs when it's next picked up (see Section 9).
+Both live in `deliverables/phase-2/`, with their own `assets/` (some newly drawn, some reused/copied from `deliverables/phase-1/assets/` — see the two 2026-09-12 Phase 2 session entries below). Task 6 is now fully built end-to-end (markdown, four new diagrams incl. proper polarity-labeled Causal Loop Diagrams, docx, PDF) as of the "Task 6 completion pass" session. Task 7 now has a second, much more rigorous markdown deliverable (`prathyusha_task7.md`, plus 11 files under `deliverables/phase-2/assets/task7/`) built directly from primary evidence with full evidence-discipline tagging; it reuses Task 6's CLDs rather than the old Mermaid ones. It does not yet have a docx/PDF (see Section 9).
 
 There is also a `report/` directory with a separate LaTeX-based write-up (`report/main.tex` → `report/main.pdf`) and its own `report/figures/` — a parallel, more traditional academic-report rendering of the same diagrams, distinct from the `deliverables/phase-1/*.docx→pdf` submission pipeline.
 
@@ -401,7 +401,51 @@ This gap is exactly what the 2026-09-12 session below was asked to resume and cl
 
 Both new mistakes (#18, #19) and the general lesson from #19 were added to the `systems-visual-design` skill and to Section 8 below, so the next diagram built with this toolkit doesn't rediscover them.
 
-### Session: 2026-09-13 — Merge Prathyusha's braindump #2; deepen Task 6 from a linear pipeline into a real feedback system
+### Session: 2026-09-13 — Full Task 7 rebuild: evidence-disciplined Systemic Problem Analysis (`prathyusha_task7.md`)
+
+User asked for a complete, standalone rebuild of Task 7 ("Identify Systemic Patterns & Root Causes"), separate
+from Neha's existing `07-systemic-problem-analysis.md`, following an extremely detailed ~4000-word spec: full
+Iceberg Model (events/patterns/structures/mental models, each individually sourced and confidence-tagged),
+feedback-loop re-verification, delays, unintended consequences, structural root-cause testing (not mechanical
+5-Whys), systemic tensions, structural power/consequence asymmetries, missing-feedback analysis, workarounds-
+as-signals, one system archetype (fit-tested, others explicitly rejected), a red-teamed systemic problem
+diagnosis, prioritized findings, and a full validation-gap backlog with exact non-leading follow-up questions.
+The user's explicit instruction: use real evidence only, never convert one respondent into a population claim,
+never treat the fictional Rohan/Adit brief as evidence about IIIT-H, and make the document read as human-authored
+(continuing D-5).
+
+**What was done:** re-read both primary interview transcripts in full (2026-09-03 self-account; 2026-09-06
+five-student set) and confirmed their content against what was already known from earlier in this session,
+rather than re-deriving from summaries. Built out a full evidence base of 17 sourced events, 6 patterns, 9
+structures, and 3 mental models (only the ones with real evidentiary support — no invented mental models),
+each tagged ✅/🟡/❓/⛔. Re-verified all six of Task 6's carried-forward loops (R1, B1, B2, R2, B3, R3) against
+closure and evidence rather than rebuilding them, and explicitly rejected the existing Task 7 draft's
+under-provisioning "loop" as a linear chain, not a closed loop (it lacks an evidenced closing link back to
+registration behavior). Ran the full ROOT-CAUSE TEST diagnostic on four candidate structural causes; two
+(billing/registration decoupling, and fragmented decision rights across menu/kitchen-execution/academic-
+timetable/billing) passed as genuine structural root causes, two (the T-4 procurement lock, information
+coarseness) were explicitly demoted to "intermediate mechanism" rather than inflated into root causes. Tested
+seven system archetypes; retained one (Shifting the Burden, via the registration/resale loop) and explicitly
+rejected the rest, including declining to promote a "Fixes That Fail" candidate (a Dec-2024 cancellation-cap
+tightening) because it rests on a single secondary source (Neha's parallel draft) with no primary corroboration
+in this evidence set.
+
+**Files produced:**
+- `deliverables/phase-2/prathyusha_task7.md` (568 lines) — the main, submission-ready file, following the
+  spec's exact 20-section skeleton, with the fictional brief used nowhere as evidence.
+- `deliverables/phase-2/assets/task7/01_iceberg_matrix.md` through `08_validation_gaps.md` (all 8 mandatory
+  assets), plus three conditional assets judged warranted by real evidence: `09_system_archetypes.md`
+  (Shifting the Burden has real support), `10_quantitative_analysis.md` (real numbers exist: turnout
+  percentages by category, the ₹48 price point, the T-4 lock, the 5/month cap), and
+  `11_mental_models_evidence.md` (three mental models have direct or near-direct evidentiary support).
+
+**Key decisions:** see D-26 through D-29 below. **Deliberately not done:** no new CLD image was rendered via
+the `systems-visual-design` skill this pass — the consolidated CLD's Mermaid source (mandatory per the user's
+spec) was written in `02_causal_loop_diagram.md`, but per D-20 the *visual* rendering for actual submission
+should go through the SVG toolkit, not Mermaid; this is flagged as an open item (Section 9) rather than
+skipped silently. No docx/PDF was built for `prathyusha_task7.md` this pass either — same open item.
+
+
 
 **User's request (verbatim intent):** pull the repo and see what changed; update `MASTER_CONTEXT.md` accordingly; understand how the changes impact Task 6 and implement all of it correctly; use "the braindump" to drive the changes; push everything as a full commit attributed to Prathyusha where relevant, and "for every commit, I hope you are doing it" (i.e. commit regularly, not hold everything in one uncommitted batch); review everything fully before calling it done. The user's core complaint: the System Map "is not thought through... doesn't have a lot of logical things... very shallow... needs to be very deep... the cycle looks very linear... there is not systems thinking." Also asked to "look at edge cases" and "all the different systems available at Triplett... how the systems interact." **"Triplett" could not be confidently resolved to any known term, person, or place in this project** (not a stakeholder, mess, department, or document name found anywhere in the repo) — treated as an unresolved dictation/transcription artifact rather than guessed at, and the substantive, actionable parts of the request (edge cases; multiple interacting sub-systems) were acted on directly without waiting to clarify it, consistent with this session's Auto Mode instruction to make a reasonable call and let the user redirect if needed. If "Triplett" resurfaces in a future session, flag it the same way rather than assuming a past guess was right.
 
@@ -591,6 +635,10 @@ As of 2026-09-12 (Task 6 visual redesign), **do not generate Mermaid diagrams fo
 | D-23 | When two sessions independently assign the same next-available decision ID during a `MASTER_CONTEXT.md` merge conflict, renumber by the *date the decision was actually made*, not by which commit reached `origin/main` first | 2026-09-13 |
 | D-24 | New primary research that introduces a different organization's vocabulary for a body already named in an earlier deliverable (e.g. "CDS Committee" vs. "Mess Committee") is never silently merged or treated as confirming the same identity — every such overlap is flagged visually and in text as an open, unconfirmed question, extending D-11 from within-source ambiguity to across-source terminology ambiguity | 2026-09-13 |
 | D-25 | New primary research that arrives as a raw braindump/scratchpad is reconciled into the relevant numbered deliverable(s) promptly, in the same session if practical, rather than left sitting as a scratchpad indefinitely — continuing D-6's "raw notes get consolidated" pattern, applied here across two different people's sessions rather than within one person's own drafts | 2026-09-13 |
+| D-26 | Task 7 was rebuilt as a *second*, separate file (`prathyusha_task7.md`) rather than editing Neha's existing `07-systemic-problem-analysis.md` in place, because the two were authored independently against different levels of rigor — both are kept, matching Phase 1's established `prathyusha_0N-*.md`-alongside-numbered-deliverable pattern, rather than one overwriting the other | 2026-09-13 (Task 7 rebuild) |
+| D-27 | A candidate causal chain/loop is only diagrammed as a loop if its closing link has direct evidence; the existing Task 7 draft's under-provisioning chain was tested and rejected as a loop (no evidenced link back to registration behavior) and used instead as a plain causal chain — extends D-19's "mark unconfirmed links as unconfirmed" into "don't call something a loop at all if it doesn't close" | 2026-09-13 (Task 7 rebuild) |
+| D-28 | A structural cause is only labeled a root cause if removing it would plausibly stop the pattern; two evidenced structures (the T-4 procurement lock, aggregate-only feedback) were deliberately demoted to "intermediate mechanism" rather than counted as root causes, because each is downstream of / compounds a more upstream structural cause rather than independently sufficient | 2026-09-13 (Task 7 rebuild) |
+| D-29 | A single secondary source (another team member's independent draft) is never promoted to a confirmed finding on its own — the existing Task 7 draft's "Fixes That Fail" candidate (a reported Dec-2024 cancellation-cap tightening) was flagged as UNKNOWN-REQUIRES VALIDATION rather than written up as a confirmed archetype, because no primary interview or institutional statement in this evidence set independently corroborates it | 2026-09-13 (Task 7 rebuild) |
 
 ---
 
@@ -632,8 +680,11 @@ As of 2026-09-12 (Task 6 visual redesign), **do not generate Mermaid diagrams fo
 ## 9. OPEN ITEMS (as of 2026-09-13, updated after Prathyusha's braindump #2 AND this session's Task 6 reconciliation of it — check before assuming any of these are still open)
 
 - **Mess-committee / vendor-side interview has not been conducted; is now specifically "pending institutional approval."** Every deliverable that touches governance or kitchen operations (Tasks 3, 4, 5, and now 6, 7) says so in its "Outstanding Data Collection" section — Phase 2's wording is more specific than Phase 1's ("will be collected and submitted later"), confirming it's the same single pending interview referenced everywhere, not several separate gaps. **Narrowed but not closed, 2026-09-13:** a CFS Chair interview (`prathyusha_braindump_2.md`, see the 2026-09-13 session entries below) answers a real slice of both blocked claims from an adjacent angle — (a) stock assessment is weekly and consumption-pattern-driven (high-turnout items like paneer/egg/chicken tracked at >90% turnout; general turnout ~70%; breakfast specifically 35-40%), and (b) a T-4-day registration→vendor-communication cadence is now confirmed directly, not just inferred from the student-facing portal. **Still open:** this was the CFS Chair, one level up from CDS; the CDS Chair (**Giri**) has not been interviewed directly, and the exact mechanism connecting weekly stock assessment to per-item preparation quantity (i.e. whether it's truly calibrated to the low breakfast-specific attendance figure, or to a peak-hour assumption) is still not confirmed — the original Task 7 candidate-loop question survives, just with better surrounding context.
-- **~~Phase 2 has no `.docx`/`.pdf` yet~~ — Task 6 resolved** (`System Map.docx`/`.pdf` built 2026-09-12, Task 6 completion pass, rebuilt again 2026-09-13 after the braindump #2 reconciliation). **Task 7 still has no docx/PDF** — when building it, follow Section 5's direct route (5.1) unless Word editing introduces a TOC field first, in which case check for Mistake #10's stale-page-number bug before shipping.
-- **Task 7 (`07-systemic-problem-analysis.md`) still uses the older, less rigorous, Mermaid-rendered R1/B1 loop diagrams** (reused Phase 1 `.png`s, `d10-loop-r1.png`/`d11-loop-b1.png`) and its own `diagram2-underprovisioning-loop.mmd` (also Mermaid — a linear chain, not a loop, so it doesn't need CLD-polarity treatment, but it's still styled inconsistently with Task 6 now). When Task 7 is next picked up: (a) reuse Task 6's newer, properly-closed, polarity-correct CLDs (`deliverables/phase-2/assets/diagram4`–`diagram7`) instead of the old ones, (b) rebuild any remaining Task-7-only diagrams using the `systems-visual-design` skill instead of Mermaid, per D-20, and (c) fold in braindump #2's governance/kitchen findings the same way Task 6 now has (see the 2026-09-13 session entries below) — Task 7 is currently behind Task 6 on this.
+- **~~Phase 2 has no `.docx`/`.pdf` yet~~ — Task 6 resolved** (`System Map.docx`/`.pdf` built 2026-09-12, Task 6 completion pass, rebuilt again 2026-09-13 after the braindump #2 reconciliation). **Task 7 (`prathyusha_task7.md`) still has no docx/PDF** — when building it, follow Section 5's direct route (5.1) unless Word editing introduces a TOC field first, in which case check for Mistake #10's stale-page-number bug before shipping. Note the file is long (568 lines, 11 supporting assets) — check page count/TOC rendering carefully once converted.
+- **`prathyusha_task7.md`'s consolidated CLD (`assets/task7/02_causal_loop_diagram.md`) has Mermaid source only** (mandatory per the user's Task 7 spec) — **it has not yet been rendered as an actual SVG image via the `systems-visual-design` skill**, which per D-20 is what should ship in the final visual/PDF version rather than a rendered Mermaid diagram. When next picked up: render R1/B3/R3/B1 (the loops actually kept in the consolidated CLD) using `svgkit.py`, reusing `gen_clds.py`'s `loop_diagram()` helper where possible, same as Task 6's diagrams.
+- **~~Task 7 still uses the older, less rigorous, Mermaid-rendered R1/B1 loop diagrams~~ — resolved for the new file.** `prathyusha_task7.md` re-verifies and reuses Task 6's newer CLDs (R1/B1/B2/R2/B3/R3) rather than the old Phase-1 pngs, and explicitly rejects the old draft's under-provisioning "loop" as a linear chain (D-27). **Note:** Neha's original `07-systemic-problem-analysis.md` was left untouched and still has the old diagrams — the two Task 7 files now coexist (D-26); if the team decides to submit only one, that decision hasn't been made yet.
+- **New, 2026-09-13 — Task 7's two highest-priority validation gaps (full list in `assets/task7/08_validation_gaps.md`):** (1) whether the CFS office's known 35-40% breakfast-turnout figure has ever reached a registration/billing-policy conversation — this single answer decides whether the report's "fragmented decision rights" root cause describes an unowned gap or a deliberately retained trade-off; (2) whether Skip Meal declarations ever reach kitchen forecasting distinctly from the T-4 aggregate, which decides whether that balancing loop functions at all. Both are answerable with one follow-up question each to the CFS Chair.
+- **New, 2026-09-13 — the exact scope of the CFS Chair's "35-40% breakfast turnout" figure is unconfirmed** (all four messes, or Kadamba only; over what time window) — flagged in `08_validation_gaps.md` P1-1, relevant to how confidently `prathyusha_task7.md` can generalize it.
 - **A likely CLD polarity error in `report/figures/d10-loop-r1.mmd`** (and possibly `d11-loop-b1.mmd` — not checked): the "financial pain of no-show" → "pressure to fix billing" link is signed `-`, which reads as more pain causing less pressure to fix. Flagged during the Task 6 completion pass but deliberately not fixed (out of scope, belongs to Task 7 / whoever owns that file). See Mistake #14.
 - **The R2 candidate loop (energy-crash/compensatory-purchase cycle, from the original puzzle brief) is unconfirmed beyond its first link.** A single added interview question — what a respondent does in the hours after skipping breakfast, and whether it changes their evening routine — would confirm or kill it. Does not require a new interview round or institutional approval; can be asked of the existing six respondents or added to any remaining Guide 1 interviews.
 - **Direct observation of a live breakfast service window has not been conducted**, despite a 30-minute-interval observation protocol (7:15/7:30 AM setup through post-close) being written and ready to run. Would resolve the unconfirmed exact shape/timing of the crowd-peak curve.
