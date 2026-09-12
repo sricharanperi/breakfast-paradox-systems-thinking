@@ -119,3 +119,46 @@ loop_diagram(
     out_path=BASE+"diagram7-cld-candidate-skip-crash.png",
     radius=380, w=1400, h=1150,
 )
+
+# B3 -- Menu Rotation Governance Response: the project's first FULLY CONFIRMED,
+# already-exercised closed loop (not a candidate, not broken -- this one actually fired)
+loop_diagram(
+    nodes=[
+        ("ic-warning", "Menu fatigue", "(fixed semester-long menu)", "#00838f"),
+        ("ic-chat", "Feedback intensity", "rises (posters, complaints)", "#00838f"),
+        ("ic-people", "Escalates via CDS", "Student Council", "#00838f"),
+        ("ic-briefcase", "CDS Committee", "approves biweekly rotation", "#00838f"),
+        ("ic-bowl", "Menu variety", "increases", "#00838f"),
+    ],
+    edges=[
+        (0,1,"+","solid","#00838f",""), (1,2,"+","solid","#00838f",""),
+        (2,3,"+","solid","#00838f",""), (3,4,"+","solid","#00838f",""),
+        (4,0,"-","solid","#00838f","confirmed: already happened"),
+    ],
+    title="B3 — Menu Rotation Governance Loop",
+    tag="Balancing — CONFIRMED and already exercised (not a candidate)",
+    tag_color="#00838f",
+    out_path=BASE+"diagram10-cld-b3-menu-rotation.png",
+)
+
+# R3 -- Menu Transparency Backfire: interviewee-self-identified second-order risk
+# of the B3 fix above -- a candidate loop, only the first link confirmed
+loop_diagram(
+    nodes=[
+        ("ic-calendar-x", "Menu rotation makes", "next menu predictable", "#2e7d32"),
+        ("ic-phone", "Students check the", "posted menu in advance", "#ad1457"),
+        ("ic-warning", "Selective no-show on", "disliked-menu days", "#ad1457"),
+        ("ic-people", "Habit of deciding by", "menu, not by default", "#ad1457"),
+    ],
+    edges=[
+        (0,1,"+","solid","#2e7d32",""),
+        (1,2,"+","broken","#ad1457","not yet measured"),
+        (2,3,"+","broken","#ad1457",""),
+        (3,1,"+","broken","#ad1457",""),
+    ],
+    title="R3 — Menu Transparency Backfire Loop",
+    tag="Reinforcing, candidate — self-identified risk; offsets some of B3's gain",
+    tag_color="#ad1457",
+    out_path=BASE+"diagram11-cld-r3-menu-backfire.png",
+    radius=300, w=1150, h=950,
+)
