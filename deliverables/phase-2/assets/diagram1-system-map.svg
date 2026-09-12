@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1080" viewBox="0 0 1900 1080" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+<defs>
+<marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#475569"/></marker>
+<marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#1D4ED8"/></marker>
+<marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#DC2626"/></marker>
+<marker id="ahp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#7C3AED"/></marker>
+<marker id="aht" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0.5 L10,5 L0,9.5 z" fill="#0F766E"/></marker>
+</defs>
+<rect width="1900" height="1080" fill="#FFFFFF"/>
+<text x="46" y="50" font-size="28" font-weight="700" fill="#0F172A">System Map</text>
+<text x="46" y="76" font-size="15" fill="#64748B">IIIT Hyderabad breakfast mess system — actors, process flow, resources, constraints</text>
+<line x1="46" y1="92" x2="1854" y2="92" stroke="#E2E8F0" stroke-width="1.4"/>
+<rect x="120" y="120" width="170" height="62" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+<rect x="120" y="120" width="5" height="62" rx="2.5" fill="#0F766E"/>
+<text x="205" y="144" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Mess Committee</text>
+<text x="205" y="163" font-size="11.5" fill="#64748B" text-anchor="middle">policy · menu</text>
+<rect x="320" y="120" width="170" height="62" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+<rect x="320" y="120" width="5" height="62" rx="2.5" fill="#0F766E"/>
+<text x="405" y="144" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Mess Office</text>
+<text x="405" y="163" font-size="11.5" fill="#64748B" text-anchor="middle">operations</text>
+<rect x="520" y="120" width="170" height="62" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+<rect x="520" y="120" width="5" height="62" rx="2.5" fill="#0F766E"/>
+<text x="605" y="144" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Warden</text>
+<text x="605" y="163" font-size="11.5" fill="#64748B" text-anchor="middle">vendors · structural</text>
+<path d="M290,151 L320,151" stroke="#0F172A" stroke-width="4" fill="none" marker-end="url(#ahg)"/>
+<path d="M490,151 L520,151" stroke="#0F172A" stroke-width="4" fill="none" marker-end="url(#ahg)"/>
+<rect x="1540" y="120" width="260" height="62" rx="10" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1540" y="120" width="5" height="62" rx="2.5" fill="#94A3B8"/>
+<text x="1670" y="144" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Academic administration</text>
+<text x="1670" y="163" font-size="11.5" fill="#64748B" text-anchor="middle">sets 8:30 AM class start</text>
+<path d="M720,100 L1540,100" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="6 5" fill="none" marker-end="url(#ahr)"/>
+<path d="M700,100 L720,100" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="6 5" fill="none"/>
+<rect x="720" y="68" width="418" height="24" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
+<text x="929" y="84" font-size="11" font-weight="700" fill="#DC2626" text-anchor="middle" letter-spacing="0.2">BOTTLENECK: no formal channel to any of the three governance actors</text>
+<rect x="60" y="300" width="175" height="72" rx="10" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+<rect x="60" y="300" width="5" height="72" rx="2.5" fill="#1D4ED8"/>
+<text x="148" y="329" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Registration</text>
+<text x="148" y="348" font-size="11.5" fill="#64748B" text-anchor="middle">monthly, in advance</text>
+<rect x="280" y="300" width="175" height="72" rx="10" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+<rect x="280" y="300" width="5" height="72" rx="2.5" fill="#1D4ED8"/>
+<text x="368" y="329" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Billing</text>
+<text x="368" y="348" font-size="11.5" fill="#64748B" text-anchor="middle">by registration,</text>
+<text x="368" y="363" font-size="11.5" fill="#64748B" text-anchor="middle">not attendance</text>
+<rect x="500" y="300" width="195" height="72" rx="10" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+<rect x="500" y="300" width="5" height="72" rx="2.5" fill="#1D4ED8"/>
+<text x="598" y="329" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Vendors / Kitchen</text>
+<text x="598" y="348" font-size="11.5" fill="#64748B" text-anchor="middle">cook to 4-day</text>
+<text x="598" y="363" font-size="11.5" fill="#64748B" text-anchor="middle">forecast</text>
+<rect x="740" y="300" width="220" height="72" rx="10" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+<rect x="740" y="300" width="5" height="72" rx="2.5" fill="#1D4ED8"/>
+<text x="850" y="329" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Service window</text>
+<text x="850" y="348" font-size="11.5" fill="#64748B" text-anchor="middle">7:30–9:30 AM,</text>
+<text x="850" y="363" font-size="11.5" fill="#64748B" text-anchor="middle">crowd builds to close</text>
+<rect x="1005" y="300" width="190" height="72" rx="10" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+<rect x="1005" y="300" width="5" height="72" rx="2.5" fill="#1D4ED8"/>
+<text x="1100" y="329" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Outcome</text>
+<text x="1100" y="348" font-size="11.5" fill="#64748B" text-anchor="middle">eaten / run-out /</text>
+<text x="1100" y="363" font-size="11.5" fill="#64748B" text-anchor="middle">no-show</text>
+<path d="M235,336 L280,336" stroke="#475569" stroke-width="2.4" fill="none" marker-end="url(#ahg)"/>
+<path d="M455,336 L500,336" stroke="#475569" stroke-width="2.4" fill="none" marker-end="url(#ahg)"/>
+<path d="M695,336 L740,336" stroke="#475569" stroke-width="2.4" fill="none" marker-end="url(#ahg)"/>
+<path d="M960,336 L1005,336" stroke="#475569" stroke-width="2.4" fill="none" marker-end="url(#ahg)"/>
+<path d="M360,182 L355,300" stroke="#0F766E" stroke-width="2" fill="none" marker-end="url(#aht)"/>
+<path d="M430,182 L560,300" stroke="#0F766E" stroke-width="2" fill="none" marker-end="url(#aht)"/>
+<text x="495.0" y="250" font-size="11.5" fill="#334155" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" paint-order="stroke">4-day order</text>
+<path d="M1540,155 L855,300" stroke="#DC2626" stroke-width="2.2" fill="none" marker-end="url(#ahr)"/>
+<text x="1210" y="225" font-size="11.5" fill="#334155" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" paint-order="stroke">8:30 class overlaps this window</text>
+<rect x="500" y="392" width="316" height="24" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
+<text x="658" y="408" font-size="11" font-weight="700" fill="#DC2626" text-anchor="middle" letter-spacing="0.2">BOTTLENECK: 4-day lead time — can't react same-day</text>
+<rect x="906" y="392" width="244" height="24" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
+<text x="1028" y="408" font-size="11" font-weight="700" fill="#DC2626" text-anchor="middle" letter-spacing="0.2">BOTTLENECK: 9:30 close — items run out</text>
+<rect x="1005" y="500" width="190" height="56" rx="10" fill="#FEF3E2" stroke="#B45309" stroke-width="2"/>
+<rect x="1005" y="500" width="5" height="56" rx="2.5" fill="#B45309"/>
+<text x="1100" y="521" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">No-show</text>
+<text x="1100" y="540" font-size="11.5" fill="#64748B" text-anchor="middle">decided not to attend</text>
+<path d="M1100,372 L1100,500" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#ahg)"/>
+<rect x="720" y="610" width="195" height="60" rx="10" fill="#FEF3E2" stroke="#B45309" stroke-width="2"/>
+<rect x="720" y="610" width="5" height="60" rx="2.5" fill="#B45309"/>
+<text x="818" y="633" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Cancel</text>
+<text x="818" y="652" font-size="11.5" fill="#64748B" text-anchor="middle">capped 5/mo</text>
+<path d="M1100,556 L817,610" stroke="#475569" stroke-width="1.7" fill="none" marker-end="url(#ahg)"/>
+<rect x="935" y="610" width="195" height="60" rx="10" fill="#FEF3E2" stroke="#B45309" stroke-width="2"/>
+<rect x="935" y="610" width="5" height="60" rx="2.5" fill="#B45309"/>
+<text x="1032" y="633" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Skip Meal</text>
+<text x="1032" y="652" font-size="11.5" fill="#64748B" text-anchor="middle">no refund — 0/6 used</text>
+<path d="M1100,556 L1032,610" stroke="#475569" stroke-width="1.7" fill="none" marker-end="url(#ahg)"/>
+<rect x="1150" y="610" width="195" height="60" rx="10" fill="#FEF3E2" stroke="#B45309" stroke-width="2"/>
+<rect x="1150" y="610" width="5" height="60" rx="2.5" fill="#B45309"/>
+<text x="1248" y="633" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Mess Cell resale</text>
+<text x="1248" y="652" font-size="11.5" fill="#64748B" text-anchor="middle">informal WhatsApp</text>
+<path d="M1100,556 L1247,610" stroke="#475569" stroke-width="1.7" fill="none" marker-end="url(#ahg)"/>
+<rect x="1365" y="610" width="195" height="60" rx="10" fill="#FEF3E2" stroke="#B45309" stroke-width="2"/>
+<rect x="1365" y="610" width="5" height="60" rx="2.5" fill="#B45309"/>
+<text x="1462" y="633" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Wasted</text>
+<text x="1462" y="652" font-size="11.5" fill="#64748B" text-anchor="middle">no recovery path</text>
+<path d="M1100,556 L1462,610" stroke="#475569" stroke-width="1.7" fill="none" marker-end="url(#ahg)"/>
+<rect x="929" y="682" width="286" height="24" rx="12" fill="#FFFFFF" stroke="#C2410C" stroke-width="1.6"/>
+<text x="1072" y="698" font-size="11" font-weight="700" fill="#C2410C" text-anchor="middle" letter-spacing="0.2">TENSION: resale outcompetes the built-in tool</text>
+<rect x="60" y="800" width="200" height="58" rx="10" fill="#FAF5FF" stroke="#7C3AED" stroke-width="2"/>
+<rect x="60" y="800" width="5" height="58" rx="2.5" fill="#7C3AED"/>
+<text x="160" y="834" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">In-app rating</text>
+<rect x="280" y="800" width="200" height="58" rx="10" fill="#FAF5FF" stroke="#7C3AED" stroke-width="2"/>
+<rect x="280" y="800" width="5" height="58" rx="2.5" fill="#7C3AED"/>
+<text x="380" y="834" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Public email</text>
+<rect x="500" y="800" width="220" height="58" rx="10" fill="#FAF5FF" stroke="#7C3AED" stroke-width="2"/>
+<rect x="500" y="800" width="5" height="58" rx="2.5" fill="#7C3AED"/>
+<text x="610" y="834" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Ping (student press)</text>
+<path d="M160,800 L160,182" stroke="#7C3AED" stroke-width="1.7" stroke-dasharray="6 4" fill="none" marker-end="url(#ahp)"/>
+<path d="M380,800 L380,182" stroke="#7C3AED" stroke-width="1.7" stroke-dasharray="6 4" fill="none" marker-end="url(#ahp)"/>
+<path d="M610,800 L610,182" stroke="#7C3AED" stroke-width="1.7" stroke-dasharray="6 4" fill="none" marker-end="url(#ahp)"/>
+<rect x="60" y="875" width="274" height="24" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="197" y="891" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle" letter-spacing="0.2">FEEDBACK: inputs exist, no confirmed output</text>
+<rect x="60" y="955" width="220" height="74" rx="14" fill="#FFF7ED" stroke="#B45309" stroke-width="2"/>
+<rect x="60" y="955" width="5" height="74" rx="2.5" fill="#B45309"/>
+<text x="170" y="985" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Students</text>
+<text x="170" y="1004" font-size="11.5" fill="#64748B" text-anchor="middle">registrant · billed ·</text>
+<text x="170" y="1019" font-size="11.5" fill="#64748B" text-anchor="middle">consumer</text>
+<path d="M170,955 L148,372" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ahg)"/>
+<path d="M240,955 L300,858" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="6 4" fill="none" marker-end="url(#ahp)"/>
+<text x="290" y="945" font-size="12" fill="#64748B">bears the full registration-attendance cost; recovers value only via informal resale</text>
+<rect x="1080" y="955" width="774" height="80" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2"/>
+<rect x="1100" y="973" width="16" height="16" rx="4" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="2.2"/>
+<text x="1122" y="986" font-size="12" fill="#0F172A">Process</text>
+<rect x="1188.2" y="973" width="16" height="16" rx="4" fill="#FFFFFF" stroke="#0F766E" stroke-width="2.2"/>
+<text x="1210.2" y="986" font-size="12" fill="#0F172A">Governance</text>
+<rect x="1296.2" y="973" width="16" height="16" rx="4" fill="#FFFFFF" stroke="#B45309" stroke-width="2.2"/>
+<text x="1318.2" y="986" font-size="12" fill="#0F172A">Student decision</text>
+<rect x="1443.8" y="973" width="16" height="16" rx="4" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.2"/>
+<text x="1465.8" y="986" font-size="12" fill="#0F172A">Feedback</text>
+<rect x="1538.6" y="973" width="16" height="16" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2.2"/>
+<text x="1560.6" y="986" font-size="12" fill="#0F172A">External</text>
+<text x="1100" y="1002" font-size="11.5" fill="#64748B">Kitchen/vendor detail pending mess-committee</text>
+<text x="1100" y="1018" font-size="11.5" fill="#64748B">and vendor interview approvals (see Outstanding Data Collection).</text>
+</svg>
