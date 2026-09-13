@@ -128,7 +128,37 @@ The four day ordering lock is the clearest bottleneck. Nothing about a specific 
 
 The clearest tensions are registering broadly against the system wide waste that produces, the resale market outcompeting the tool actually designed for this situation, menu predictability against the selective skipping it can enable, procurement certainty against matching food to real demand, and a single registration model against a genuinely diverse set of dietary and cultural needs.
 
-Fourteen different feedback mechanisms were checked across this project for whether they actually close into loops, not just whether they sound like one. Five genuinely do: the resale market feeding back into looser registration, the menu rotation process (the cleanest one, every link confirmed directly), the shortage and holiday exception described above, Kadamba's popularity feeding its own scarcity, and waste disposal quietly removing pressure to fix anything upstream. Several others look like loops but aren't once actually tested: Skip Meal works but nothing feeds back from it, a proposed link between menu predictability and selective skipping never closes on its own, an idea that falling attendance would pressure the vendor on quality turns out to be flatly untrue since vendor payment doesn't depend on attendance at all, and an earlier idea that scarcity at Kadamba would push people toward other messes turns out to be the opposite of what actually happens, people lock down Kadamba harder when it's scarce, not less.
+Fourteen different feedback mechanisms were checked across this project for whether they actually close into loops, not just whether they sound like one.
+
+Registering broadly feeds the resale market, and the resale market probably makes registering broadly feel safer, since there's a way to recover value from a slot you don't use.
+
+![Registration and Resale Loop](assets/diagram4-cld-r1-resale.png)
+
+Skip Meal was designed to stop the kitchen over preparing for a known no show. It's real and it functions, but almost nobody uses it, since it gives the student nothing back.
+
+![Skip Meal Loop](assets/diagram5-cld-b1-skipmeal.png)
+
+The idea that scarcity at Kadamba would push people toward Bakul or Palash instead turns out to be the opposite of what actually happens. People lock down Kadamba harder when it's scarce, not less.
+
+![Capacity Redistribution Loop](assets/diagram6-cld-b2-redistribution.png)
+
+A late night, low sleep pattern driving next day skipping is well supported by what students actually said. Whether that skip then causes a later energy crash and a second round of late night behavior is not something anyone's actually checked yet.
+
+![Late Night and Energy Crash Loop, Candidate](assets/diagram7-cld-candidate-skip-crash.png)
+
+The menu rotation process is the cleanest loop found anywhere in this project. Every link in it, from complaint to committee to an actual rotation, is confirmed directly by the person who ran it.
+
+![Menu Rotation Governance Loop](assets/diagram10-cld-b3-menu-rotation.png)
+
+The same fix created a side effect its own architect flagged unprompted: once the menu is known ahead of time, some students may plan around it and skip on days they already know they'll dislike.
+
+![Menu Transparency Loop, Candidate](assets/diagram11-cld-r3-menu-backfire.png)
+
+And the clearest proof the whole system can actually work differently: the shortage and holiday exception described earlier, where registration eased up, billing followed real attendance, and the vendor absorbed some uncertainty in exchange for it, before everything reverted once the trigger passed.
+
+![Shock-Adaptive Registration Relaxation Loop](assets/diagram14-cld-b4-shock-adaptive.png)
+
+Several other candidates were checked and don't hold up as loops once actually tested. The idea that falling attendance would pressure the vendor on quality turns out to be flatly untrue, since vendor payment doesn't depend on attendance at all. Waste disposal quietly removes any pressure to fix what's upstream of it, closing back into more waste next cycle, though how strong that particular link really is stays an assumption. And a known but ignored gap in who owns this problem looks less like a spiral getting worse over time and more like a stable, stuck situation.
 
 # Culture, Health, and What Isn't a Problem
 

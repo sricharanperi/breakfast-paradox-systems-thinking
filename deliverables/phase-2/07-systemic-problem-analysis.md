@@ -17,6 +17,8 @@ Six areas of this system were traced from event up to belief. Each one gets its 
 
 ## Chain 1: Students register and don't show up
 
+![Chain 1: Students register and don't show up](assets/diagram18-chain1-registration.png)
+
 **Events**
 
 - A student who was interviewed said they book Kadamba veg breakfast for forty eight rupees every day and skip it most days.
@@ -55,6 +57,8 @@ Six areas of this system were traced from event up to belief. Each one gets its 
 
 ## Chain 2: Food runs out before the mess closes
 
+![Chain 2: Food runs out before the mess closes](assets/diagram19-chain2-runouts.png)
+
 **Events**
 
 - One student said that most mornings around 9:20, idli, puri, and bhatura are already gone at Kadamba, fruit isn't restocked, and staff say more is coming before the 9:30 close but it usually doesn't arrive.
@@ -86,6 +90,8 @@ Six areas of this system were traced from event up to belief. Each one gets its 
 
 ## Chain 3: Complaints get ignored until something forces a response
 
+![Chain 3: Complaints get ignored until something forces a response](assets/diagram20-chain3-complaints.png)
+
 **Events**
 
 - In November 2024, a frog turned up in Kadamba's chicken biryani. Non vegetarian meals at Kadamba were pulled without an official explanation of why.
@@ -112,6 +118,8 @@ Six areas of this system were traced from event up to belief. Each one gets its 
 
 ## Chain 4: A working fix already exists and gets switched off anyway
 
+![Chain 4: A working fix already exists and gets switched off anyway](assets/diagram21-chain4-shelved-fix.png)
+
 **Events**
 
 - During a gas shortage, the mess cut down to serving one item at the same price, and the cancellation cap was doubled from five to ten a month.
@@ -137,6 +145,8 @@ Six areas of this system were traced from event up to belief. Each one gets its 
 
 ## Chain 5: A real fix, and a shadow it cast
 
+![Chain 5: A real fix, and the shadow it cast](assets/diagram22-chain5-menu-rotation.png)
+
 **Events**
 
 - CDS convinced the Student Council, and the Student Council convinced Student Parliament, to move off a single semester long menu and onto one that rotates every two weeks.
@@ -161,6 +171,8 @@ Six areas of this system were traced from event up to belief. Each one gets its 
 **Root cause.** This chain shows the opposite of chain three: proof that the system can respond when a problem is loud enough. The new risk it created (people skipping on menu days they already know they'll dislike) comes from the same structure that made the fix possible in the first place. Visibility that helps with fatigue also helps with avoidance.
 
 ## Chain 6: A meaningful slice of this isn't a problem at all
+
+![Chain 6: A meaningful slice of this isn't a problem at all](assets/diagram23-chain6-invisible-mess.png)
 
 **Events**
 
