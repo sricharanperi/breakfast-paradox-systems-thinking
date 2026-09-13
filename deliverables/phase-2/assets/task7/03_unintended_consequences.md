@@ -82,7 +82,7 @@ the structures, not yet observed).
 - **EVIDENCE:** E3, E4, E9.
 - **CONFIDENCE:** ✅ CONFIRMED (the structural mechanism); 🟡 PLAUSIBLE (that this specific rule, rather than
   something else, is the binding constraint on responsiveness — an alternative explanation is explored in
-  `../../../deliverables/phase-2/prathyusha_task7.md` Section 23).
+  `../../07-systemic-problem-analysis.md`, the consolidated Systemic Problem Analysis).
 
 ## UC5 — Splitting Waste into Production/Plate Streams with External Compost (HYPOTHESIZED benefit; OBSERVED mechanism)
 

@@ -1,6 +1,6 @@
 # Task 7 — Supporting Asset: Full Iceberg Matrix (Events → Patterns → Structures → Mental Models)
 
-This is the full-detail version. The main file (`prathyusha_task7.md`, Section 3) carries only the condensed
+This is the full-detail version. The main file (`../../07-systemic-problem-analysis.md` (the consolidated Systemic Problem Analysis)) carries only the condensed
 version. IDs here (E#, P#, ST#, MM#) are used across every other Task 7 asset for traceability — see
 `07_evidence_traceability.md`.
 

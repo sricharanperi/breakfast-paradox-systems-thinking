@@ -1,6 +1,6 @@
 # Task 7 — Supporting Asset: Evidence Traceability Register
 
-Every systemic finding in `prathyusha_task7.md`, traced back to its evidence sources. Source key as in
+Every systemic finding in `../../07-systemic-problem-analysis.md` (the consolidated Systemic Problem Analysis), traced back to its evidence sources. Source key as in
 `01_iceberg_matrix.md` (S1-S9). ID scheme: E# = event, P# = pattern, ST# = structure, MM# = mental model,
 RC# = root cause, T# = tension, F# = finding (main-file Section 15), UC# = unintended consequence.
 

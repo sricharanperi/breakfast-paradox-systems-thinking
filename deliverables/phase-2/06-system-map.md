@@ -210,7 +210,7 @@ VARIABLES: expected-attendance uncertainty spike (holiday/fest/shortage) → reg
 
 **R4 — Known-But-Unowned-Gap Reinforcement (reinforcing, now mostly evidenced rather than purely candidate).**
 
-VARIABLES: CFS Chair's awareness of the turnout gap → no assigned decision-right to act on it, because registration/billing policy ownership is fragmented (Task 7, RC3) → the gap never reaches any specific actor's agenda → it becomes normalized as "how the system has always worked" → reduced perceived urgency to raise it again next cycle (closing back to awareness, at progressively lower urgency). CONFIDENCE: the first two links are essentially confirmed (awareness exists; fragmentation confirmed; no-action confirmed this session — see Task 7 Section 19); the "normalization reduces future urgency" closing link is a reasonable systems-thinking inference, not directly evidenced.
+VARIABLES: CFS Chair's awareness of the turnout gap → no assigned decision-right to act on it, because registration/billing policy ownership is fragmented (Task 7, RC3) → the gap never reaches any specific actor's agenda → it becomes normalized as "how the system has always worked" → reduced perceived urgency to raise it again next cycle (closing back to awareness, at progressively lower urgency). CONFIDENCE: the first two links are essentially confirmed (awareness exists; fragmentation confirmed; no-action confirmed this session — see the Systemic Problem Analysis, "Outstanding Data Collection"); the "normalization reduces future urgency" closing link is a reasonable systems-thinking inference, not directly evidenced.
 
 **B5 — Silo Success Masking Systemic Gap (a local balancing success producing a system-level reinforcing effect — counter-intuitive, worth naming explicitly).**
 
@@ -273,7 +273,7 @@ VARIABLES: late-night academic workload → late-night eating or outside orderin
 
 # Outstanding Data Collection
 
-**Narrowed further this pass, direct from the user (2026-09-13):** the CFS Chair's awareness of the turnout gap (a further tentative ~45% figure, alongside 35-40%) has been confirmed to have never reached a registration or billing policy discussion — this was previously the single highest-priority open question and is now resolved (see Task 7, Section 19). Skip Meal's mechanism has also been confirmed functioning for same-week prep-quantity adjustment.
+**Narrowed further this pass, direct from the user (2026-09-13):** the CFS Chair's awareness of the turnout gap (a further tentative ~45% figure, alongside 35-40%) has been confirmed to have never reached a registration or billing policy discussion — this was previously the single highest-priority open question and is now resolved (see the Systemic Problem Analysis). Skip Meal's mechanism has also been confirmed functioning for same-week prep-quantity adjustment.
 
 **Still pending institutional approval:** a mess-committee/vendor-side interview and a direct interview with **Giri**, the CDS Chair.
 
