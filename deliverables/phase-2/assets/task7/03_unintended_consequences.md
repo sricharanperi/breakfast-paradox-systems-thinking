@@ -1,150 +1,88 @@
-# Task 7 — Supporting Asset: Unintended Consequences
+# The Breakfast Paradox — Unintended Consequences, Structural Root Causes, and Systemic Tensions
 
-Distinguishes OBSERVED (evidenced in the interview/braindump/poster data) from HYPOTHESIZED (plausible given
-the structures, not yet observed).
+**Purpose of this file.** A ground-up rebuild of three analytical sections for the IIIT Hyderabad Breakfast Paradox capstone, derived directly from primary evidence rather than copied from `deliverables/phase-2/07-systemic-problem-analysis.md` or `06-system-map.md`. Those two documents are treated as **one input among several** — every claim in them has been re-traced to its underlying source (interview transcript, braindump, or poster transcription) and re-tested, not restated. Where this rebuild agrees with the existing deliverables, that agreement is because independent re-derivation converged on the same answer, not because the answer was copied.
 
-## UC1 — Monthly Billing Decoupled from Attendance (OBSERVED)
+**Sources used, read in full:** `MASTER_CONTEXT.md` (session log + decision log + mistakes log); `research/primary-research/interviews/2026-09-03_student-self-account-and-mess-system-overview.md`; `research/primary-research/interviews/2026-09-06_five-student-interviews-guide1.md`; `prathyusha_braindump.md`; `prathyusha_braindump_2.md`; `deliverables/phase-2/06-system-map.md`; `deliverables/phase-2/07-systemic-problem-analysis.md`.
 
-- **ORIGINAL ACTION:** Bill students monthly based on registration, not per meal attended.
-- **INTENDED PURPOSE:** Administrative simplicity; predictable revenue for the mess/vendor.
-- **FIRST-ORDER EFFECT:** Students register without needing to reconfirm daily.
-- **BEHAVIOURAL RESPONSE:** Some students register out of habit/default regardless of actual intent to eat (E1).
-- **SECOND-ORDER EFFECT:** A visible gap opens between registration numbers and turnout, concentrated in
-  breakfast specifically (E4).
-- **UNINTENDED CONSEQUENCE:** Procurement planning (locked at T-4, ST3) is built on a demand signal that is
-  known, by the office that owns it, to overstate actual attendance by roughly 60-65% for breakfast (E4).
-- **WHO BENEFITS:** Administrative simplicity is preserved; vendor has a stable minimum-order guarantee.
-- **WHO BEARS THE COST:** Students who pay for uneaten meals; the kitchen absorbs the planning uncertainty
-  that the numbers can't resolve.
-- **EVIDENCE:** E1, E4, ST1, ST3.
-- **CONFIDENCE:** ✅ CONFIRMED as a structural fact (billing model, turnout gap); 🟡 PLAUSIBLE as a full causal
-  story connecting the billing model specifically to the size of the gap (other factors like food quality
-  and schedule also contribute, per P5).
+**Evidence tagging.** This project's established discipline (`MASTER_CONTEXT.md` §7, D-35) is a four-tier prose vocabulary: **confirmed** (directly stated by a named source, or independently corroborated), **single-sourced** (one respondent/account, not cross-checked), **candidate** (a plausible, named mechanism not yet independently verified), **assumed** (an explicitly-authorized systems-thinking inference, never carrying the weight of a confirmed claim). The task brief for this document asks additionally for an **OBSERVED / HYPOTHESIZED** split. Rather than run two incompatible tagging systems, this file maps them onto one axis and states both on every claim:
 
-## UC2 — Cancellation Cap Intended to Reduce Admin Load (OBSERVED, single-sourced)
+| This file's tag | Maps to project's tier | Meaning |
+|---|---|---|
+| **OBSERVED — confirmed** | confirmed | Directly stated by a named respondent/source, or independently corroborated by two sources |
+| **OBSERVED — single-sourced** | single-sourced | Directly stated, but by only one account, not cross-checked |
+| **HYPOTHESIZED — candidate** | candidate | A named, plausible mechanism, logically implied by confirmed facts, not yet directly verified |
+| **HYPOTHESIZED — assumed** | assumed | A systems-thinking inference used to widen the analysis honestly; weakest tier |
 
-- **ORIGINAL ACTION:** Cap cancellations at 5/month (E6).
-- **INTENDED PURPOSE:** Presumably to reduce administrative/vendor-notification overhead from frequent
-  cancellations, and to discourage casual last-minute flip-flopping.
-- **FIRST-ORDER EFFECT:** Students who exceed the cap can no longer formally signal non-attendance.
-- **BEHAVIOURAL RESPONSE:** Non-attendance beyond the cap is either absorbed silently (no signal reaches the
-  kitchen at all) or redirected into the informal resale channel (E7, ST9).
-- **SECOND-ORDER EFFECT:** The formal system's non-attendance signal becomes systematically incomplete —
-  understating true non-attendance by exactly the amount the cap excludes.
-- **UNINTENDED CONSEQUENCE:** A rule meant to reduce noise in the system instead pushes real information
-  (who isn't actually coming) into an informal, institutionally invisible channel (Mess Cell WhatsApp),
-  which is arguably worse for planning than if all non-attendance were visible even if administratively
-  noisier.
-- **WHO BENEFITS:** Whoever set the cap avoids the administrative cost of unlimited cancellations.
-- **WHO BEARS THE COST:** Kitchen/procurement, which loses visibility into the true scale of non-attendance;
-  students who exceed the cap and have no formal outlet.
-- **EVIDENCE:** E6, E7.
-- **CONFIDENCE:** 🟡 PLAUSIBLE — the cap's existence and the resale channel's existence are each individually
-  evidenced; the causal link between the two (that the cap specifically drives resale volume, rather than
-  resale existing for other reasons) is inferred, not directly stated by any respondent.
+Nothing below is asserted more strongly than its tag supports. The fictional Rohan/Adit puzzle brief (`ProblemStatements.pdf`) is not used as evidence anywhere in this file.
 
-## UC3 — Advance Menu Transparency Intended to Improve Trust/Satisfaction (HYPOTHESIZED, self-identified risk)
+---
 
-- **ORIGINAL ACTION:** Post the menu rotation in advance (part of the governance process behind loop B3).
-- **INTENDED PURPOSE:** Build trust, let students plan, respond to demand for variety (S5 §8).
-- **FIRST-ORDER EFFECT:** Students can see upcoming menus.
-- **BEHAVIOURAL RESPONSE (HYPOTHESIZED):** Selective attendance concentrated on days with preferred items
-  (E8 — this is the CFS Chair's own stated concern, not yet observed in student data).
-- **SECOND-ORDER EFFECT (HYPOTHESIZED):** Demand becomes less evenly distributed across the week than it
-  would be without visibility, making the T-4 aggregate registration number a worse predictor of any
-  single day's actual turnout.
-- **UNINTENDED CONSEQUENCE (HYPOTHESIZED):** A transparency measure meant to build trust could make
-  day-to-day demand harder to forecast, straining the same procurement pipeline (ST3) that transparency was
-  never meant to affect.
-- **WHO WOULD BENEFIT:** Students, on the days they most want to attend.
-- **WHO WOULD BEAR THE COST:** Kitchen planning, and potentially other-day attendees facing under-provisioning
-  on "less popular" days.
-- **EVIDENCE:** E8 only.
-- **CONFIDENCE:** ❓ UNKNOWN-REQUIRES VALIDATION — this entire entry is a hypothesis one institutional actor
-  has flagged about their own policy; it is not confirmed by any independent data source in this evidence set.
+## PART 1 — UNINTENDED CONSEQUENCES
 
-## UC4 — Locking Procurement at T-4 to Guarantee Vendor Lead Time (OBSERVED)
+For every deliberate rule, policy, or action with direct or strong indirect evidence, this table and the prose beneath it trace: intended function → observed response → second-order unintended effect.
 
-- **ORIGINAL ACTION:** Lock registration numbers 4 days before serving for vendor procurement (E3).
-- **INTENDED PURPOSE:** Give the vendor enough lead time to source ingredients reliably.
-- **FIRST-ORDER EFFECT:** Any registration change in the last 4 days (a student deciding not to attend, a
-  new student registering) cannot be reflected in that day's procurement.
-- **BEHAVIOURAL RESPONSE:** Kitchen must plan to the T-4 aggregate rather than to any more current signal.
-- **SECOND-ORDER EFFECT:** The 35-40% breakfast turnout figure (E4) becomes, structurally, the best the
-  system can do — not because no one measured better, but because the timing of the freeze makes finer-
-  grained response mechanically impossible regardless of what Skip Meal or resale data shows same-week.
-- **UNINTENDED CONSEQUENCE:** A lead-time rule meant to serve the vendor's operational needs incidentally
-  caps how responsive the entire registration-to-plate pipeline can ever be, regardless of what other
-  balancing mechanisms (Skip Meal, resale) are layered on top.
-- **WHO BENEFITS:** Vendor (predictable sourcing window).
-- **WHO BEARS THE COST:** Everyone downstream of the freeze — kitchen (stuck with stale numbers), students
-  (registration changes late in the week have no effect on that week's provisioning).
-- **EVIDENCE:** E3, E4, E9.
-- **CONFIDENCE:** ✅ CONFIRMED (the structural mechanism); 🟡 PLAUSIBLE (that this specific rule, rather than
-  something else, is the binding constraint on responsiveness — an alternative explanation is explored in
-  `../../07-systemic-problem-analysis.md`, the consolidated Systemic Problem Analysis).
+### 1.1 Registration tied to billing, not attendance (the core mechanism)
 
-## UC5 — Splitting Waste into Production/Plate Streams with External Compost (HYPOTHESIZED benefit; OBSERVED mechanism)
+| | |
+|---|---|
+| **Rule** | Monthly registration; billing calculated from registration count, not attendance. Cancellation requires **T-4 days'** notice, capped at 5 per meal-type/month. |
+| **Intended function** | Give CDS/the vendor a stable, forecastable demand number 4 days ahead of service, so procurement and staffing can be planned with certainty. Administrative simplicity: one billing rule, no attendance-reconciliation overhead. **OBSERVED — confirmed** (CDS Student Handbook poster, §11.2 of braindump #2: "advance registration lets CDS estimate demand accurately... Benefits: reduced food wastage, better menu planning, lower meal prices"). |
+| **Observed response** | Students register out of habit/precaution regardless of actual intent to attend, because an unused registration costs the same as an attended one either way. Direct first-person evidence: *"Kadamba veg breakfast costs around ₹48 and I book it every day and never avail it"* (2026-09-03 respondent). Breakfast-specific turnout confirmed at **35–45%** by the CFS Chair, against **~70%** general turnout and **>90%** for high-demand items (paneer/egg/chicken) — **OBSERVED — confirmed**, the strongest quantified evidence of the core paradox. |
+| **Unintended consequence(s)** | (a) A structural incentive to over-register that the billing rule itself cannot see or price — the "ghost registration" pattern. (b) Because the marginal cost of registering is the same whether or not you attend, and cancellation requires 4 days' lead time that same-day intent changes cannot meet, an entire informal secondary market (**Mess Cell** WhatsApp resale) emerged to recover value the formal cancellation window structurally cannot capture — **OBSERVED — confirmed** (multiple respondents report buying/selling routinely). (c) The formal cancellation mechanism is outcompeted by an emergent, unofficial one for the exact same underlying need (see §1.2). |
+| **A distinct, previously unstated mechanical source of the gap** | Any student who does **not** register is **automatically allocated a vegetarian meal** at an assigned dining hall (confirmed, CDS Student Handbook). This means a share of "ghost registrations" is not a behavioral choice at all — it is a **system default that manufactures a registration nobody actively made.** No interview has asked whether a given no-show was a self-registered choice or a silent auto-allocation; the two are mechanically different problems (one is an incentive-design fix, the other is a default-design fix) that the project's own data cannot currently distinguish. **HYPOTHESIZED — candidate.** |
+| **Amplifying mechanism** | The confirmed three-tier pricing (Student ₹48 < Card ₹55 < Spot/unregistered ₹81 for veg breakfast) means *not* registering and eating anyway costs ~69% more than registering and not eating costs in wasted money. This asymmetry rationally favors "always register, sometimes forfeit" over "register only when certain" — an amplifier of the core incentive, not an independent cause. **HYPOTHESIZED — candidate**, directly implied by confirmed pricing data. |
 
-- **ORIGINAL ACTION:** Track production waste and plate waste as separate streams, route to external compost
-  and food-safety sampling (E15, S5 §10).
-- **INTENDED PURPOSE:** Food safety compliance and (presumably) waste-reduction visibility.
-- **FIRST-ORDER EFFECT:** Waste is at least categorically tracked, unlike attendance-gap waste which is not
-  quantified in this evidence set.
-- **POSSIBLE UNINTENDED CONSEQUENCE (HYPOTHESIZED, not evidenced):** Categorical tracking (does waste exist,
-  is it safe to dispose of) may not translate into volume-level tracking usable for demand forecasting — i.e.,
-  a system can be fully compliant on food safety while still having no feedback loop from waste volume back
-  to registration policy (see `06_feedback_gaps.md`, gap on waste→registration).
-- **EVIDENCE:** E15 for the mechanism; the "unintended consequence" itself is not evidenced, only plausible
-  given the absence of any waste→policy feedback structure found in the evidence set.
-- **RESOLVED, 2026-09-13:** the user directly confirmed there is no formal waste-reduction policy connecting
-  waste back to procurement or registration decisions. UC5 is upgraded from HYPOTHESIZED to **OBSERVED**: the
-  categorical tracking exists (compost/lab-sampling), and the absence of a volume-level feedback link is now
-  a confirmed fact, not an inference. This is the supply-side twin of UC1/UC2 — see loop R6 in
-  `02_causal_loop_diagram.md`.
+### 1.2 The cancellation cap and its two historical changes
 
-## UC6 — Decoupled Billing May Also Insulate Vendor Revenue From Attendance (ASSUMED, new 2026-09-13)
+| | |
+|---|---|
+| **Rule (standing)** | Cancel up to 5 breakfasts/5 lunches/5 dinners per month, with T-4 days' notice. |
+| **Intended function** | Bound the Mess Office's administrative processing load and give the vendor a ceiling on how much a locked-in forecast can be revised — a workload-management and forecast-stability tool. **OBSERVED — confirmed** (Phase 1 governance research: a Mess Office workload-driven policy). |
+| **November 2024 — the "Let Them Eat Frogs" incident** | A unilateral non-veg menu cancellation/substitution at Kadamba, made without the consultative Student Council → Committee process later formalized for the biweekly rotation (§1.4). **OBSERVED — single-sourced** (named and dated only in the Task 7 evidence base; no independent institutional record in this project's evidence, and the exact substitute item/reason is not specified in any source read for this file — flagged, not filled in). **Intended function (inferred):** a supply-side or cost-driven decision to alter the non-veg offering quickly, without going through a process that would have taken longer than the immediate need allowed. **Observed response:** student anger sharp enough to produce a lasting, sarcastic nickname — evidence of a felt breach of expectation, not a minor grumble. **Unintended consequence:** became one of two named precedents (with an unrelated 2023 water-quality episode, "Water Mess") establishing a recognizable institutional pattern — *complaints are not pre-empted, only reactively addressed after a visible incident* — a pattern that arguably shaped why the later menu-rotation reform (§1.4) went through a formal consultative channel instead of another unilateral change. **This causal link between the Nov 2024 incident and the later consultative process is plausible but not stated by any source — HYPOTHESIZED — candidate, not asserted as fact.** |
+| **December 2024 — cancellation-cap tightening** | The cap was tightened (consistent with the now-standard 5/month + T-4-notice regime), explicitly to reduce Mess Office workload. **OBSERVED — single-sourced** (Task 7 evidence base; no independent institutional corroboration — this project's own discipline (D-29) explicitly declines to promote this beyond single-sourced). |
+| **Observed response** | Students who exhaust the tightened cap mid-month, or whose intent changes inside the T-4 window, have no formal mechanism left to correct a registration close to service. |
+| **Unintended consequence** | The tightening **plausibly increases, not decreases, the very pattern of uncancelled no-shows it targeted** — a fix working against its own stated goal (a "Fixes That Fail" archetype candidate). Traffic that the formal cancellation channel can no longer absorb is displaced into either (a) silent no-shows (billed, uneaten, composted) or (b) the informal Mess Cell resale market, which has no cap at all. **HYPOTHESIZED — candidate**, explicitly not promoted to confirmed per this project's own standing discipline (single account only). |
+| **The LPG-shortage exception raised the cap the other direction** | During an LPG/gas shortage, the cap was raised from 5→10/month as a workload/cost-relief measure alongside making registration itself non-compulsory (see §1.5). **OBSERVED — confirmed** (direct user/respondent statement, cross-referenced against the CDS Student Handbook's standing 5/month baseline). This is the same lever (the cap number) moved in the *opposite* direction from the December 2024 tightening, for the same stated purpose (workload/cost relief) — a genuine internal inconsistency worth naming: **tightening the cap and loosening the cap have both been justified by the identical rationale ("reduce burden"), under different conditions, without either being evaluated against the other's effect on no-show behavior.** No source addresses whether the temporary 10/month cap, once in place, produced any lasting behavioral change once reverted — an open question. |
 
-- **ORIGINAL ACTION:** Bill/pay based on registration (or a fixed contract volume), not attendance or
-  satisfaction.
-- **INTENDED PURPOSE:** Predictable vendor revenue, administrative simplicity (same as UC1).
-- **FIRST-ORDER EFFECT:** Vendor payment is plausibly unaffected by whether registered meals are actually
-  eaten or enjoyed.
-- **BEHAVIOURAL RESPONSE (ASSUMED):** Reduced vendor incentive to protect quality against falling attendance,
-  since revenue doesn't track it either — a symmetrical effect to the student-side incentive problem RC1
-  already names.
-- **SECOND-ORDER EFFECT (ASSUMED):** A vendor facing thin or fixed margins may substitute cheaper ingredients
-  or reduce variety without facing a revenue consequence, compounding the very quality issues that (per
-  Cluster D's health/social findings) independently depress breakfast attendance.
-- **UNINTENDED CONSEQUENCE:** A billing model designed to protect institutional administrative simplicity may
-  also be quietly protecting vendor revenue from a quality-attendance feedback loop that would otherwise
-  discipline it — see loop R5.
-- **WHO BENEFITS:** The vendor, via protected revenue regardless of attendance or quality choices.
-- **WHO BEARS THE COST:** Students (quality), and the institution (a compounding, currently invisible
-  contributor to the very attendance gap it is trying to explain).
-- **EVIDENCE:** 🔷 ASSUMED throughout — not directly evidenced by any interview, but tightly consistent with
-  confirmed billing mechanics and open-tender vendor contracting.
-- **CONFIDENCE:** 🔷 ASSUMED.
+### 1.3 Skip Meal
 
-## UC7 — A Working Fix Exists But Is Retired Once Its Trigger Passes (OBSERVED, new 2026-09-13)
+| | |
+|---|---|
+| **Intended function** | Let a student flag in advance that they won't attend a specific registered meal, so the kitchen can reduce preparation accordingly — a demand-signal tool distinct from cancellation (no refund, but better-matched production). **OBSERVED — confirmed.** |
+| **Observed response** | The mechanism **does work** — Skip Meal declarations reach the kitchen and are used for same-week prep-quantity forecasting, confirmed directly this project (2026-09-13 correction to an earlier, more pessimistic reading). But **real usage across every respondent who addressed it is at or near zero.** Direct quote, the single clearest causal statement in the entire evidence base: *"I never use Skip Meal because it doesn't return the money. It just lets them know that the meal can be skipped, whereas they are already preparing food for only some percentage of the registered students."* (Daily eater–1, 2026-09-06). |
+| **Unintended consequence** | A well-designed, functioning coordination tool sits almost entirely unused because it offers **no incentive** distinguishable from doing nothing — since billing is identical whether or not Skip Meal is used (§1.1's root mechanism), a rational student has no private reason to spend the two seconds tapping it. The tool was built to solve an information problem (the kitchen doesn't know who's really coming) but the actual blocking problem is a **motivation** problem, not an information problem — Skip Meal fixes the wrong layer. **OBSERVED — confirmed** for the "near-zero uptake despite working mechanism" finding; **HYPOTHESIZED — candidate** for the "no incentive is the reason" causal explanation (strongly implied by the one direct quote above, not independently confirmed by a second respondent addressing motivation specifically). |
 
-- **ORIGINAL ACTION:** Relax registration to a non-compulsory, walk-in, attendance-tracked model during
-  holidays and the LPG shortage (loop B4).
-- **INTENDED PURPOSE:** Cope with a short-term demand-uncertainty spike.
-- **FIRST-ORDER EFFECT:** The exact registration-attendance gap this project has spent most of its effort
-  explaining does not occur under this model — billing tracks actual consumption.
-- **BEHAVIOURAL RESPONSE:** The institution returns to the standing, decoupled-billing model once the
-  triggering condition passes.
-- **SECOND-ORDER EFFECT:** A demonstrably working alternative sits inside the institution's own operating
-  history without, so far as this evidence shows, ever being evaluated for partial or permanent adoption.
-- **UNINTENDED CONSEQUENCE:** The very success of the shock-adaptive model may be *why* it's never
-  reconsidered as a standing option — it was built and framed as an emergency measure, not a policy
-  alternative, so its success doesn't naturally prompt the question "should we just do this all the time?"
-- **WHO BENEFITS:** Vendor procurement certainty, under the standing model.
-- **WHO BEARS THE COST:** Everyone affected by the standing model's registration-attendance gap, every day
-  that isn't a holiday or a shortage.
-- **EVIDENCE:** ✅ CONFIRMED as historical fact (direct user statement, 2026-09-13); the "why it's never
-  reconsidered" framing is 🔷 ASSUMED.
-- **CONFIDENCE:** ✅ CONFIRMED mechanism; 🔷 ASSUMED interpretation. This is the single most consequential
-  unintended consequence in the report — see Task 7 Finding F1.
-- **CONFIDENCE:** ✅ CONFIRMED mechanism; ❓ UNKNOWN-REQUIRES VALIDATION for the consequence claim.
+### 1.4 Menu rotation / transparency policy
+
+| | |
+|---|---|
+| **Intended function** | Fix a named, felt pain point (one fixed menu for the entire semester → boredom/fatigue) by moving to a biweekly rotation, with monthly and seasonal variation. Went through the CDS Student Council → CDS Committee escalation pathway — the project's **first confirmed, closed governance feedback loop.** **OBSERVED — confirmed** (CFS Chair interview, braindump #2 §3). |
+| **Observed response** | The rotation was implemented and — per the same source — successfully reduced menu-fatigue complaints. A genuine, already-exercised leverage-point win: proof the governance structure *can* respond to a legible, sufficiently loud signal. |
+| **Unintended consequence — self-identified by the interviewee, unprompted** | Because the menu is now knowable in advance, students can **decide in advance not to attend** on days they dislike the posted menu — informed, selective non-attendance. The same policy that fixed one attendance problem (fatigue-driven skipping) plausibly *created* a new, opposite one (predictability-enabled skipping) layered on top of the pre-existing registration-billing gap. **OBSERVED — single-sourced** for the mechanism being named at all (the CFS Chair raised it unprompted); **HYPOTHESIZED — candidate** for whether it actually moves attendance, since no student-side data yet confirms the second link (only the first — rotation → predictability — is confirmed). This is a textbook second-order effect of an already-executed intervention, not a hypothetical risk. |
+
+### 1.5 The LPG-shortage / holiday non-compulsory-registration exception
+
+| | |
+|---|---|
+| **Intended function** | Cope with a short-term supply/demand-uncertainty spike (gas shortage; mass campus departure over holidays/fests) by making registration non-compulsory (walk-in QR, billing tracks actual consumption) and simultaneously raising the cancellation cap 5→10/month. **OBSERVED — confirmed**, direct user statement. |
+| **Observed response** | The exception worked as intended: billing/waste realigned with true demand during the exceptional period, and it was retired once the triggering condition passed. |
+| **Unintended consequence — the headline finding of this project** | The very existence and success of this exception is evidence that **the institution has already built, tested, and possesses a working alternative to the standing registration-billing model — and has chosen, each time, not to keep it.** This inverts the standing narrative from "nobody has solved this" to "a solution exists inside the institution's own operating history and is deliberately not generalized," most plausibly because a permanent walk-in model would remove the vendor's T-4 lead-time guarantee entirely (a real trade-off, not mere inattention — see Root Cause 1, Part 2). A second, quieter unintended effect: because the exception is framed and remembered as an emergency measure rather than a policy option, its existence has apparently never triggered a formal evaluation of partial or permanent adoption — **the fix's own success has not generated pressure to institutionalize it**, mirroring the same "silent success removes urgency" pattern seen elsewhere in this system (§ Part 2, RC3). **HYPOTHESIZED — candidate** for the "never evaluated for adoption" claim (a plausible inference from confirmed fragmented governance, not itself directly stated by a source). |
+
+### 1.6 Waste and composting practice
+
+| | |
+|---|---|
+| **Intended function** | Regulatory compliance and sanitary disposal: production waste and plate waste routed to an external compost facility; contamination-suspect samples sent to a lab, underpinning the FSSAI "Eat Right Campus" 5-star certification. **OBSERVED — confirmed** (braindump #2 §10-11, certificate transcription §11.1). |
+| **Observed response** | The disposal pipeline functions well — well enough to earn an externally-audited top rating. |
+| **Unintended consequence** | Waste is tracked **categorically** (compost vs. lab-sample) but **never by volume**, and no formal policy connects waste back to procurement or registration decisions — **OBSERVED — confirmed**, stated directly by the user this project. A well-functioning disposal channel removes the one visible, escalatable signal (a mounting pile of uneaten food) that might otherwise force a demand-planning conversation. This is a **Shifting the Burden** structure operating on the supply side, structurally identical to the Mess Cell resale market operating on the demand side: both symptomatically absorb the cost of the registration-billing mismatch competently enough that neither ever forces the underlying rule to be revisited. **A second, informal absorption channel exists alongside the formal one:** mess serving/cleaning staff eat the mess food themselves after student hours end, per direct respondent testimony, who further believes menus are planned with this in mind — **OBSERVED — single-sourced** for the eating-leftovers fact; **HYPOTHESIZED — assumed** for "menus are planned with this in mind" (the respondent's own belief, not independently verified). This is a third, previously unnamed leak in the same direction: **at least three separate mechanisms (resale, staff consumption, composting) absorb the consequences of over-registration before they can ever register as an institutional cost worth fixing.** A fourth, more speculative absorption channel — non-veg scraps informally reaching the campus Canine Council's dog population — is **HYPOTHESIZED — assumed**, grounded in a real campus body but not evidenced by any interview. |
+
+### 1.7 Vendor contracting (outsourced catering via open tender)
+
+| | |
+|---|---|
+| **Intended function** | Institute-owned kitchens were transitioned to outsourced catering procured via open tender — presumably for cost efficiency, hygiene modernization, and reduced institutional operating burden (equipment upgrades, commercial dishwasher, tilt-drain steaming machinery all postdate this shift). **OBSERVED — confirmed** for the outsourcing fact itself (braindump #2 §4); **HYPOTHESIZED — assumed** for the specific cost/hygiene rationale, which no source states explicitly as the reason. |
+| **Observed response** | Kadamba runs a vertically outsourced, automated, high-volume kitchen. Palash/Bakul, mid-construction, are temporarily served from a single shared external vendor — a transitional arrangement pending the Felicity Kitchen (expected ~December 2026). |
+| **Unintended consequence(s)** | (a) **A fixed per-student mess-fee structure likely caps what any vendor contract can pay for ingredients** — a narrower menu or lower-quality substitution on tight days is a rational vendor response to a hard budget ceiling, not negligence. **HYPOTHESIZED — assumed.** (b) **Registration-based billing conveniently guarantees the vendor predictable revenue regardless of true attendance** — meaning the vendor may have a real, previously unconsidered financial interest in the standing model staying exactly as it is, independent of and in addition to the institution's own governance inertia. This is a **newly surfaced, symmetrical stakeholder interest**: decoupled billing insulates *both* the student's incentive to register accurately *and* the vendor's revenue from the consequences of inaccurate registration. **HYPOTHESIZED — assumed**, not directly stated by any source, but a direct logical implication of confirmed billing mechanics plus confirmed outsourcing. (c) The construction-driven, shared-external-vendor arrangement at Bakul/Palash reduces on-site kitchen control precisely at the two dining halls already independently described as having the weakest physical/hygiene reputation (Bakul: "untidy, insects/spiders near food") — an unintended compounding of an existing quality perception problem by a supply-chain decision made for unrelated (construction-timeline) reasons. **OBSERVED — single-sourced** for the untidiness description; **HYPOTHESIZED — candidate** for the compounding claim.
+
+---
+

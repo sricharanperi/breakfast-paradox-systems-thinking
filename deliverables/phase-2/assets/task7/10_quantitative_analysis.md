@@ -1,5 +1,7 @@
 # Task 7 — Supporting Asset: Quantitative Validation
 
+> **Superseded framing note (2026-09-13):** the Iceberg Model (Events/Patterns/Structures/Mental Models) and the feedback-loop analysis were rebuilt from scratch after a correction — see `01_iceberg_matrix.md` and `02_causal_loop_diagram.md` for the current, authoritative versions. The specific facts, quotes, and numbers below remain valid evidence; only the older Events/Patterns/Structures/Mental-Models labels and old loop IDs (R1/B1/B2/R2/B3/R3/B4/R4/R5/R6/B5/B6) elsewhere in this project are superseded by the new L1-L10 loop numbering.
+
 Every number below is labelled DESCRIPTIVE RELATIONSHIP, ASSOCIATION, or CAUSAL HYPOTHESIS. No value is
 fabricated or interpolated beyond what a source states; where a number is missing, it is marked as missing
 rather than estimated.
