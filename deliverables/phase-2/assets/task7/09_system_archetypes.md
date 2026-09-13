@@ -1,7 +1,27 @@
 # Task 7 — Supporting Asset: System Archetype Fit-Testing
 
-Per spec: test candidates, reject weak fits explicitly, do not force a fit. Two archetypes are retained
+Per spec: test candidates, reject weak fits explicitly, do not force a fit. Three archetypes are retained
 below; the rest were tested and rejected or left as unresolved due to insufficient evidence.
+
+## Retained: Shifting the Burden, Instance 2 — Waste/Composting (R6) — added 2026-09-13
+
+- **SYMPTOMATIC SOLUTION:** Composting and lab-sampling waste (confirmed mechanism) — makes waste a solved
+  disposal/food-safety problem without ever measuring or reducing its volume.
+- **FUNDAMENTAL SOLUTION (not currently pursued):** Measure waste by volume, tag it by mess and meal
+  category, and feed it back into registration/procurement policy discussion.
+- **SIDE EFFECT OF THE SYMPTOMATIC SOLUTION:** A well-functioning, FSSAI-compliant disposal process removes
+  the one visible signal (an accumulating, uncomposted pile of food) that might otherwise force a
+  demand-planning conversation.
+- **EVIDENCE:** Confirmed compost/lab-sampling mechanism (S5 §10); confirmed absence of any waste-to-policy
+  link (direct user statement, 2026-09-13).
+- **CONFIDENCE:** 🔷 ASSUMED for the causal mechanism (that composting *specifically* suppresses pressure,
+  rather than the pressure simply not existing for other reasons); ✅ CONFIRMED for both structural facts
+  (the disposal mechanism exists; no policy link exists).
+- **WHY THIS MATTERS:** this is the **same archetype appearing twice in one system**, on the demand side
+  (R1, registration/resale) and the supply side (R6, waste/composting) — worth naming as a recurring meta-
+  pattern rather than treating each instance as an isolated finding. A system with this many well-functioning
+  absorption mechanisms may be structurally resistant to ever generating the pressure needed for a
+  fundamental fix, regardless of how many individually reasonable coping mechanisms it builds.
 
 ## Retained: Shifting the Burden — Registration/Resale (R1)
 

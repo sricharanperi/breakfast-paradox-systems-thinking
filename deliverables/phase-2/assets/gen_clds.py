@@ -162,3 +162,30 @@ loop_diagram(
     out_path=BASE+"diagram11-cld-r3-menu-backfire.png",
     radius=300, w=1150, h=950,
 )
+
+# B4 -- Shock-Adaptive Registration Relaxation: the headline finding of the 2026-09-13
+# systems-boundary expansion. Condition-triggered, CONFIRMED as historical fact -- the
+# institution has already run a working attendance-based billing model, it just retires
+# it once the triggering shock passes.
+loop_diagram(
+    nodes=[
+        ("ic-warning", "Uncertainty spike:", "holiday / fest / LPG shortage", "#1565c0"),
+        ("ic-qr", "Registration made", "non-compulsory (walk-in QR)", "#1565c0"),
+        ("ic-shield", "Consumption tracked", "at point of service", "#1565c0"),
+        ("ic-coin", "Billing / waste risk", "realigned with true demand", "#1565c0"),
+        ("ic-toggle", "Relaxed model retired", "once shock passes", "#e65100"),
+    ],
+    edges=[
+        (0,1,"+","solid","#1565c0",""),
+        (1,2,"+","solid","#1565c0",""),
+        (2,3,"-","solid","#1565c0",""),
+        (3,4,"-","broken","#e65100","assumed: reverts to standing model"),
+        (4,0,"-","broken","#e65100","assumed closure"),
+    ],
+    title="B4 — Shock-Adaptive Registration Relaxation",
+    tag="Balancing, condition-triggered — CONFIRMED as historical fact (LPG shortage + holidays)",
+    tag_color="#1565c0",
+    out_path=BASE+"diagram14-cld-b4-shock-adaptive.png",
+    radius=340, w=1300, h=1050,
+    extra_note=(650, 950, "The institution has already built and run a working fix for the\ncore registration-attendance gap. It is not the standing default —\nRC1 is a choice against procurement certainty, not an unsolved problem."),
+)

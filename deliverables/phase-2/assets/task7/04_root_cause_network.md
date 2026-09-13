@@ -28,24 +28,31 @@ structural, are demoted to "intermediate mechanism" rather than labelled root ca
 - **INTERACTIONS WITH OTHER ROOT CAUSES:** Directly enables RC2 (T-4 lock has to plan against inflated numbers
   because RC1 doesn't discipline registration accuracy in the first place).
 
-### RC2 — Temporal Rigidity of the T-4 Procurement Lock (ST3)
+### RC2 — Temporal Rigidity of the T-4 Procurement Lock (ST3) — refined 2026-09-13
 
-- **CANDIDATE:** Registration is frozen 4 days before serving for vendor procurement.
-- **SYMPTOMS EXPLAINED:** Persistence of the registration-attendance gap regardless of any same-week
-  correction mechanism (Skip Meal, resale).
-- **PATTERNS EXPLAINED:** P1 (structurally caps how correctable it can ever be).
+- **CANDIDATE:** Ingredient sourcing is frozen 4 days before serving for vendor procurement.
+- **UPDATE:** this is now understood as a **two-stage pipeline**, not one rigid freeze. T-4 governs how much
+  raw material the vendor is asked to bring — that stage is genuinely rigid. A second, later stage —
+  kitchen prep-quantity (how much of the sourced stock is actually cooked/portioned for a given service) —
+  is confirmed (E19) to incorporate same-week Skip Meal declarations. So RC2 caps correctability of
+  *ingredient volume*, not of *prep/waste at the point of cooking*.
+- **SYMPTOMS EXPLAINED:** Persistence of an ingredient-sourcing ceiling regardless of same-week correction
+  mechanisms; this is narrower than previously stated (it no longer explains prep-stage over-preparation,
+  which loop B1 now addresses).
+- **PATTERNS EXPLAINED:** P1, specifically the sourcing-volume component of it (structurally caps how
+  correctable ingredient sourcing can ever be within a 4-day window).
 - **MECHANISM:** Even a perfectly honest, fully-updated registration signal on day-of would not reach
-  procurement — the lock happens too early in the cycle.
+  *sourcing* — the lock happens too early in the cycle. It can, however, still reach *prep-quantity* via B1.
 - **STRUCTURE MAINTAINING IT:** Vendor contract terms requiring lead time (institutional/commercial
   constraint, not a student-behavior issue).
 - **ACTORS:** CDS/vendor contract, kitchen.
-- **EVIDENCE:** E3, E9.
+- **EVIDENCE:** E3, E9, E19 (refinement).
 - **COUNTEREVIDENCE:** None found; this is stated plainly by the CFS Chair as an operational necessity, not
   disputed anywhere in the evidence set.
-- **CONFIDENCE:** ✅ CONFIRMED.
-- **IF REMOVED, WOULD THE PROBLEM DISAPPEAR:** No — shortening the lock would improve responsiveness to
-  RC1's inflated numbers, but would not remove the underlying incentive (RC1) that inflates them in the
-  first place. Removing RC2 alone treats a symptom of RC1, not RC1 itself.
+- **CONFIDENCE:** ✅ CONFIRMED (as a sourcing-stage constraint, narrower than originally scoped).
+- **IF REMOVED, WOULD THE PROBLEM DISAPPEAR:** No — shortening the lock would improve sourcing-volume
+  responsiveness to RC1's inflated numbers, but would not remove the underlying incentive (RC1) that
+  inflates them in the first place. Removing RC2 alone treats a symptom of RC1, not RC1 itself.
 - **INTERACTIONS:** Downstream of / compounds RC1. Also interacts with RC3 (fragmented decision rights mean
   no single actor is positioned to renegotiate the lead time against the billing model).
 
@@ -70,9 +77,11 @@ structural, are demoted to "intermediate mechanism" rather than labelled root ca
   billing/procurement policy).
 - **COUNTEREVIDENCE:** B3's success (a fully confirmed, closed loop) shows fragmentation does not prevent
   *all* improvement — it prevents improvement specifically on cross-cutting issues like the registration gap.
-- **CONFIDENCE:** ✅ CONFIRMED (the fragmentation itself); 🟡 PLAUSIBLE (that fragmentation, rather than simple
-  inattention, is *why* RC1/RC2 haven't been addressed — an alternative explanation, e.g. "no one has
-  prioritized it yet," is considered in the main file's Section 23).
+- **CONFIDENCE:** ✅ CONFIRMED, upgraded 2026-09-13 — the user directly confirmed that the CFS Chair's known
+  turnout gap (a tentative ~45% figure, alongside the previously reported 35-40% range) has never reached a
+  registration or billing policy discussion. This resolves the alternative explanation this file previously
+  flagged ("a deliberate, considered trade-off" vs. "an unowned gap") in favor of the unowned-gap reading:
+  fragmentation is now confirmed, not merely plausible, as the reason RC1 has gone unaddressed.
 - **IF REMOVED, WOULD THE PROBLEM DISAPPEAR:** Unknown — unifying decision rights is necessary but not
   sufficient; it would create the *possibility* of addressing RC1/RC2 together, not guarantee it.
 - **INTERACTIONS:** Sits structurally "above" RC1 and RC2 — it is why no one actor has both the information

@@ -3,42 +3,49 @@
 **The Breakfast Paradox — Systemic Problem Analysis**
 
 Author: Prathyusha. Builds on the System Context Brief, Stakeholder Map, Power-Interest Map, Process Trace,
-and System Map (Tasks 1-6), and on primary research: a single-respondent self-account (2026-09-03), five
-student interviews (2026-09-06), and a CFS Chair interview plus Kadamba kitchen walkthrough and mess-poster
-review (2026-09-13).
+and the fully expanded System Map (Tasks 1-6), and on primary research: a single-respondent self-account
+(2026-09-03), five student interviews (2026-09-06), a CFS Chair interview plus Kadamba kitchen walkthrough
+and mess-poster review (2026-09-13), and a direct, wide-ranging systems-boundary expansion from the user
+(2026-09-13) covering supply chain and vendor economics, governance and academic-timetable rationale, waste/
+environment/Canine Council, and student health/social/cultural systems.
 
 The fictional Rohan/Adit scenario from the original problem brief is used nowhere in this document as
 evidence. It was the framing device that got us to ask the question; everything below is answered from real
-data about IIIT-H.
+data and disciplined systems-thinking inference about IIIT-H.
 
 ---
 
 ## 1. Purpose & Scope
 
-Task 6 mapped the system's actors, flows, and a first set of causal loops. This task moves one level down:
-from *what the system looks like* to *why it keeps producing the same outcome* — a persistent gap between
-students registering for breakfast and students eating it — even though no individual actor in the system is
-behaving irrationally. A student who registers out of habit, a kitchen that plans to the only number it has,
-a governance office that runs a well-functioning menu-feedback loop are all making locally sensible choices.
-The paradox is that these locally sensible choices add up to a stable, structural mismatch that nobody
-individually intends and nobody individually can fix.
+Task 6 mapped the system's actors, flows, and causal loops — and this pass widened that map considerably: the
+supply chain feeding each kitchen, three structurally different kitchen-and-supply systems (not one), waste
+and its missing link to policy, the Canine Council, institutional financial constraints, the academic
+timetable's own defensible logic, faculty/staff as an invisible demand stream, and student health/social/
+cultural dimensions. This task moves one level down from *what the system looks like* to *why it keeps
+producing the same outcome* — a persistent gap between students registering for breakfast and students
+eating it — even though almost every individual actor in the system, including the institution itself, is
+behaving in a locally coherent way.
 
-Scope: this document covers events, patterns, structures, and mental models (Iceberg); feedback loops and
-delays; unintended consequences; structural root causes and their interactions; systemic tensions;
-structural power asymmetries; missing feedback; workarounds; and one system archetype with real support. It
-stops at diagnosis — no interventions or recommendations are proposed here; that is Task 9-11's job.
+The single most important finding of this pass changes the shape of the diagnosis: **the institution has
+already built, and already run, a working fix for the core paradox.** During LPG/gas shortages and during
+holidays/fests, registration became non-compulsory and billing tracked actual walk-in attendance rather than
+pre-committed intent. This is not a hypothetical intervention — it is a real, previously deployed mechanism.
+The paradox is not that nobody knows how to fix this; it's that the fix is deliberately not the standing
+default, for a structurally coherent reason (vendor procurement-lead-time certainty) that this document takes
+seriously rather than dismisses as bureaucratic inertia alone.
 
-Every claim below carries one of four evidence tags:
-✅ **CONFIRMED** — directly stated by a source, or observed directly.
-🟡 **PLAUSIBLE-PROVISIONAL** — consistent with evidence, not independently verified.
-❓ **UNKNOWN-REQUIRES VALIDATION** — a real open question, named as such.
-⛔ **UNSUPPORTED** — flagged only when rejecting a claim someone might otherwise make.
+This document also widens the moral/evaluative frame: a meaningful share of "low breakfast turnout" is not
+dysfunction at all — it is legitimate cultural, religious, and individual variation that a one-size-fits-all
+registration model isn't designed to distinguish from "the paradox." That reframing does not shrink the real
+structural causes identified below; it sets an honest ceiling on how much of the gap should ever be treated
+as a problem to solve.
 
-A one-respondent account is never written up as a population fact. A category-level institutional number
-(like the CFS Chair's turnout figures) is treated as stronger than any individual's self-report, but its
-scope and methodology are still checked before being generalized. Full evidence tables, the complete
-Iceberg matrix, and the validation backlog live in `assets/task7/`; this file carries only what's needed to
-follow the argument.
+Every claim below carries one of four evidence tags: ✅ **CONFIRMED**, 🟡 **PLAUSIBLE-PROVISIONAL**, ❓
+**UNKNOWN-REQUIRES VALIDATION**, ⛔ **UNSUPPORTED** (used only to reject a claim). This pass adds a fifth,
+explicitly authorized this session: 🔷 **ASSUMED** — a confident systems-thinking inference the user asked
+this analysis to make freely, in place of requiring a new interview for every claim, used to widen the
+system's boundary honestly rather than leave large parts of it unmapped. Assumed claims are never presented
+with the same weight as confirmed ones, and are always distinguishable in the tables below.
 
 ---
 
@@ -47,522 +54,486 @@ follow the argument.
 **Symptoms** (what is directly observed):
 
 - Students register for breakfast and then do not attend — confirmed for one respondent as a repeated
-  personal pattern, and confirmed at the institutional category level: breakfast turnout runs 35-40%,
-  against 70% for general items and over 90% for high-demand items (CFS Chair). *What we don't know:* the
-  exact scope of the 35-40% figure — whether it covers all four messes or Kadamba specifically (see
-  `assets/task7/08_validation_gaps.md`, P1-1).
-- At least one interviewed student gives an internally contradictory account of their own attendance
-  ("haven't been to mess all semester" vs. "whenever I went, items ran out") — a real data-quality signal,
-  not a system fact, and treated as such throughout this report.
-- A public mess poster shows two different domains for what should be one registration portal
-  (dining.iiit.ac.in vs. mess.iiit.ac.in) — found and corrected narrowly during this project's own review of
-  the posters.
-- An informal resale channel (Mess Cell WhatsApp) exists for offloading registered-but-unwanted meal slots —
-  confirmed to exist, unmeasured in scale.
+  personal pattern, and confirmed at the institutional category level: breakfast turnout runs roughly
+  35-45% (the CFS Chair has referenced both a 35-40% figure and a further tentative ~45% figure — treated as
+  the same underlying phenomenon, not a contradiction), against 70% for general items and over 90% for
+  high-demand items.
+- The institution's awareness of this gap has **never reached a registration or billing policy conversation**
+  (✅ CONFIRMED directly by the user this session) — resolving what was previously this report's single
+  highest-priority open question.
+- Skip Meal declarations **do** reach the kitchen and are used to adjust same-week prep-quantity (✅
+  CONFIRMED this session) — the mechanism works; uptake among students is reported at near-zero.
+- During holidays and gas shortages, the institution has already run a **non-compulsory, walk-in,
+  attendance-tracked billing model** that solves this exact gap (✅ CONFIRMED, direct user statement).
+- Kadamba, Yuktahar, and Bakul/Palash run three structurally different kitchen-and-supply systems.
+- A public mess poster shows two different domains for the same registration portal.
+- An informal resale channel (Mess Cell WhatsApp) absorbs ghost-registered slots; waste is composted but
+  never measured by volume or fed back into policy.
 
-**Underlying causes are not explained here** — Sections 3, 9, and 10 build up to them through evidence, not
-by asserting them up front.
+**Underlying causes are not explained here** — Sections 3, 9, and 10 build up to them through evidence and
+disciplined inference, not by asserting them up front.
 
 ---
 
 ## 3. Iceberg Analysis
 
-Full detail (every event/pattern/structure/mental-model row, with sourcing and confidence) is in
-`assets/task7/01_iceberg_matrix.md`. This section carries the condensed version needed to follow the
-argument.
+Full detail in `assets/task7/01_iceberg_matrix.md`. Condensed version below, updated with this session's
+resolved corrections and widened scope.
 
-### 3.1 Events (selected)
+### 3.1 Events (selected, updated)
 
 | Event | Confidence |
 |-------|------------|
 | Respondent registers daily for Kadamba veg breakfast (~₹48), does not attend, describes it as ongoing | ✅ (n=1) |
-| CFS Chair: registration locks at T-4 (4 days before serving) and goes to the vendor for procurement | ✅ |
-| CFS Chair: turnout by category — high-demand >90%, general ~70%, breakfast 35-40% | ✅ |
-| CFS Chair self-identifies a risk that posting the menu rotation in advance could cause selective attendance on "good menu" days | ✅ (as a stated concern) |
-| Cancellation is capped at 5/month | 🟡 (single-sourced) |
+| CFS Chair: sourcing locks at T-4; same-week Skip Meal data adjusts prep-quantity separately (confirmed this session) | ✅ |
+| CFS Chair: turnout by category — high-demand >90%, general ~70%, breakfast 35-45% (tentative range) | ✅ |
+| CFS Chair's awareness of the gap has never reached registration/billing policy discussion | ✅ (confirmed this session) |
+| During LPG shortage and holidays, registration was made non-compulsory, billing tracked actual walk-ins, cancellation cap raised 5→10 | ✅ (confirmed this session) |
+| Kadamba automated/pre-plated; Yuktahar manual/live-cooked with Jain + pure-veg lines; Palash under construction, externally procured, shared with Bakul | ✅ |
+| No waste-volume figure exists anywhere; no policy link from waste to registration | ✅ (confirmed this session) |
 | Mess poster shows two different portal domains | ✅ |
 | Respondent's own 8:30 AM class occurs only twice a week | ✅ (n=1) |
-| One person manages both cold and dry storage inventory at Kadamba | ✅ |
 
-### 3.2 Patterns
+### 3.2 Patterns (updated)
 
-- **Ghost registration, concentrated in breakfast** — the gap between registering and attending is
-  consistently wider for breakfast than for any other meal category. 🟡 PLAUSIBLE at the mechanism level
-  (the *existence* of a wider breakfast gap is ✅ CONFIRMED via the CFS Chair's numbers; *why* it's wider is
-  provisional).
-- **Cancellation underuse relative to true non-attendance** — a 5/month cap cannot plausibly cover daily or
-  near-daily non-attendance implied by the turnout numbers. 🟡 PLAUSIBLE-PROVISIONAL.
-- **Informal resale exists as a release valve** outside the formal registration/cancellation system. 🟡
-  mechanism confirmed, scale unknown.
-- **Self-reported skip reasons are heterogeneous** — habit, food-quality history, environmental
-  visibility ("I don't usually see the mess"), and non-daily schedule conflict all appear for the one
-  respondent with a full account, rather than one dominant "can't make it to an 8:30 class" story. 🟡 for
-  that respondent; ❓ UNKNOWN whether this generalizes.
-- **Transparency/attendance interaction** — a candidate pattern, self-identified by the CFS Chair, not yet
-  corroborated on the student side. ❓ UNKNOWN-REQUIRES VALIDATION.
+- **Ghost registration, concentrated in breakfast** — 🟡 PLAUSIBLE at the mechanism level; ✅ CONFIRMED that
+  the gap exists and is category-specific.
+- **Cancellation underuse relative to true non-attendance** — 🟡 PLAUSIBLE-PROVISIONAL.
+- **Skip Meal mechanism functions; uptake does not** — a sharper finding than before: the mechanism reaches
+  the kitchen (✅ CONFIRMED); adoption is reported at near-zero (🟡 PLAUSIBLE, prior interview evidence).
+- **The institution has a working alternative model and deploys it only under exceptional conditions** — ✅
+  CONFIRMED as a historical fact; 🔷 ASSUMED as to exactly why it isn't the standing default (procurement
+  lead-time trade-off).
+- **A meaningful share of low turnout is legitimate cultural/individual variation, not dysfunction** — 🔷
+  ASSUMED, but structurally important for calibrating how much of the gap is even a "problem."
+- **Menu content itself (nutrient-first over taste-first) may independently depress breakfast attendance,
+  separate from the billing incentive** — 🔷 ASSUMED, a genuinely new causal candidate.
 
-### 3.3 Structures
+### 3.3 Structures (updated, new entries)
 
 | Structure | Category | Confidence |
 |-----------|----------|------------|
-| Monthly billing decoupled from per-meal attendance | Rules/Incentives | ✅ |
-| Cancellation capped at 5/month | Rules | 🟡 |
-| Vendor procurement locked at T-4 | Temporal | ✅ |
-| Turnout feedback exists only at aggregate/category level | Information flows | 🟡 |
-| Registration portal identity fragmented across two domains | Information/Technology | ✅ |
-| Decision rights split: menu (Mess Committee), execution (kitchen/vendor), academic timetable (explicitly excluded from mess governance) | Decision rights | ✅ |
-| Kadamba (on-site) vs. Bakul+Palash (shared off-site, transitional) are structurally different supply systems | Physical/Organizational | ✅ |
-| Single person manages both inventory streams at Kadamba | Resource | ✅ |
-| Mess Cell WhatsApp as informal secondary market | Social | ✅ |
+| Monthly billing decoupled from per-meal attendance (standing model) | Rules/Incentives | ✅ |
+| Two-stage pipeline: T-4 sourcing lock (rigid) + same-week prep-quantity forecast (flexes via Skip Meal) | Temporal | ✅ (refined this session) |
+| A proven, previously-deployed attendance-based billing model, reserved for shock/holiday conditions only | Rules, condition-triggered | ✅ |
+| Three structurally distinct kitchen-and-supply systems (Kadamba, Yuktahar, Bakul/Palash) | Physical/Organizational | ✅ |
+| Vendor contract economics may make decoupled billing convenient for vendor revenue predictability, not just an institutional oversight | Incentives | 🔷 ASSUMED |
+| Waste tracked categorically (compost, lab sampling) but never by volume, with no link back to registration policy | Information flows | ✅ |
+| Canine Council as an informal waste-absorption channel | Social/Environmental | 🔷 ASSUMED |
+| Academic timetable (8:30 AM) has its own defensible institutional logic (faculty scheduling, room contention) | Decision rights / boundary condition | 🔷 ASSUMED |
+| Faculty and early-shift staff as an unmapped, potentially uncounted demand stream | Resource / Information gap | 🔷 ASSUMED |
 
-### 3.4 Mental Models
+### 3.4 Mental Models (updated)
 
-Only three are evidenced well enough to name (full reasoning in `assets/task7/11_mental_models_evidence.md`):
-
-- **MM1 (students):** "Registering costs me nothing extra if I don't show up." 🟡 Potential — inferred from
-  repeated behavior, not a direct quote.
-- **MM2 (institution):** "Aggregate registration is close enough to actual demand for procurement." 🟡
-  Potential — inferred from a practice that continues despite the same office knowing the gap's size. This
-  is the single mental model whose validation would most change this report's conclusions (see Section 19).
-- **MM3 (CFS office):** "More menu transparency is straightforwardly good" — a belief the CFS Chair is
-  visibly revising in real time, evidenced by their own self-identified concern about it. 🟡 PLAUSIBLE,
-  closest of the three to direct confirmation.
+- **MM1 (students):** "Registering costs me nothing extra if I don't show up." 🟡 Potential.
+- **MM2 (institution):** "Aggregate registration is close enough to actual demand for procurement purposes,
+  as a standing policy." ✅ CONFIRMED, upgraded this session — the practice continues despite the same
+  office being able to name the gap's exact size, and despite the institution's own precedent (B4) proving
+  an alternative works. This is now the strongest-evidenced institutional mental model in the whole report.
+- **MM3 (CFS office):** "More menu transparency is straightforwardly good" — a belief being actively revised
+  by its own holder. 🟡 PLAUSIBLE.
+- **MM4 (vendor/institution, new, assumed):** "Procurement certainty is worth more than demand-matching
+  accuracy, as a permanent trade-off rather than a case-by-case judgment." 🔷 ASSUMED — inferred from the
+  fact that a working alternative (B4) is retired immediately once the triggering shock passes, rather than
+  evaluated for partial, permanent adoption.
 
 ---
 
 ## 4. Key Recurring System Patterns
 
-The single most important recurring pattern in this whole analysis is that **breakfast behaves differently
-from every other meal category on the same registration/billing/procurement infrastructure.** High-demand
-items clear above 90%, general items around 70%, and breakfast alone sits at 35-40%. The infrastructure is
-identical across categories; only the outcome differs. That single fact is what earns "billing/registration
-decoupling" and "menu-timetable-academic fragmentation" the status of structural explanation rather than
-"students are being irresponsible" — the same students, under the same rules, behave very differently for
-lunch and dinner.
-
-The second recurring pattern is that **every workaround in this system routes around the registration
-number rather than correcting it** — Skip Meal, cancellation, and informal resale all give a student a way
-to not eat a registered meal without changing what the registration number itself represents to procurement.
+The most important recurring pattern remains that breakfast behaves differently from every other meal
+category on identical infrastructure. Layered on top of that this pass: **every workaround and every
+disposal mechanism in this system quietly absorbs a cost that would otherwise create pressure for structural
+change** — informal resale absorbs the demand-side cost of ghost registration (R1), composting absorbs the
+supply-side cost of the resulting waste (R6), the VC canteen absorbs dissatisfaction during quality dips, and
+even the menu-governance loop's own success (B3) absorbs institutional attention that might otherwise turn
+toward the registration-billing gap (B5). The system does not lack absorption mechanisms; it has so many
+well-functioning ones that almost nothing about the core gap ever becomes visible enough to force a
+structural conversation — except, tellingly, during a shock, when the absorption mechanisms themselves are
+temporarily set aside in favor of a direct fix (B4).
 
 ---
 
 ## 5. Structural Mechanisms
 
-The mechanisms that turn the above patterns into a stable equilibrium:
-
-1. **Decoupled billing (ST1)** removes the per-meal cost signal that would otherwise make registration track
-   intent to attend.
-2. **The T-4 procurement lock (ST3)** freezes the (inflated) registration number 4 days before serving,
-   which structurally caps how responsive the pipeline can ever be to any later correction — even a perfect
-   same-week Skip Meal system could not fix procurement that has already committed.
-3. **Fragmented decision rights (ST6)** mean no actor owns the cross-cutting outcome. The Mess Committee owns
-   menu quality and runs it well (Section 6, loop B3). The kitchen owns execution. The academic office is
-   confirmed to have no say in mess timings at all. Billing/registration policy sits with yet another part of
-   CDS. None of these four is positioned, alone, to close the registration-attendance gap.
-4. **Aggregate-only feedback (ST4)** means the CFS Chair can state the exact size of the gap (35-40%) without
-   that knowledge being shown to translate into a registration-policy conversation anywhere in this evidence
-   set.
+1. **Decoupled billing (standing model)** removes the per-meal cost signal that would otherwise make
+   registration track intent — on both the student side and, newly identified this pass, the **vendor
+   side** (a vendor paid on registered volume has reduced incentive to protect quality against falling
+   attendance, since revenue doesn't track it either — see loop R5).
+2. **The T-4 sourcing lock**, now understood as one stage of a two-stage pipeline, caps ingredient-sourcing
+   responsiveness; **same-week prep-quantity forecasting**, confirmed this session to incorporate Skip Meal
+   data, is a real, separate, more flexible stage.
+3. **Fragmented decision rights** mean no actor owns the cross-cutting outcome — now confirmed, not merely
+   plausible, as the reason the known gap has never reached policy discussion.
+4. **The academic timetable operates on its own defensible logic** (assumed: faculty-scheduling economy,
+   room contention) and should not be treated as a lever this diagnosis recommends pulling.
+5. **New this pass: at least two invisible demand streams** (faculty access, early-shift staff consumption)
+   may be competing for the same prepared-quantity pool without appearing in either the T-4 sourcing number
+   or the same-week prep forecast.
+6. **New this pass: waste is tracked for compliance, not for demand-planning feedback** — a categorical
+   disposal mechanism with no volume measurement and no policy link, structurally parallel to the resale
+   channel's effect on the demand side.
 
 ---
 
 ## 6. Feedback Loops
 
-Full templates, closure checks, and the Mermaid source are in `assets/task7/02_causal_loop_diagram.md`. Six
-loops carry forward from Task 6; this section re-verifies them against the root-cause question rather than
-rebuilding them.
+Full templates in `assets/task7/02_causal_loop_diagram.md`. Fourteen loops/chains are now tracked (see the
+full table there); this section carries the most decision-relevant ones.
+
+### B4 — Shock-Adaptive Registration Relaxation (Balancing, condition-triggered, CONFIRMED) — the headline finding
+
+![B4 — Shock-Adaptive Registration Relaxation Loop](assets/diagram14-cld-b4-shock-adaptive.png)
+
+Expected-attendance uncertainty spike (holiday/fest/shortage) → registration made non-compulsory, walk-in
+QR, no billing penalty for non-use → consumption tracked at point of service → billing/waste realigned with
+true demand → reduced pressure to keep the relaxed model once the shock passes (closes back toward the
+standing state). ✅ CONFIRMED as a historical mechanism and outcome; 🔷 ASSUMED as to why it reverts
+(procurement lead-time trade-off, see Section 9). **This single loop is the strongest evidence in the whole
+project that the core paradox is solvable with a mechanism the institution has already built, tested, and
+retired — not an unsolved problem.**
 
 ### R1 — Registration/Resale (Reinforcing) — 🟡 PLAUSIBLE, two of three links confirmed
 
-Low registration friction → ghost registrations → resale-market viability (via Mess Cell WhatsApp) → back to
-tolerance for loose registration. The closing link (resale making loose registration feel lower-risk) is
-inferred, not directly quoted, but the loop's shape and its first two links are solid.
+Unchanged from the prior pass — see the asset file. Now understood as one of two parallel Shifting-the-Burden
+instances in the system (see R6).
 
-### B3 — Menu Rotation Governance (Balancing) — ✅ CONFIRMED, the only fully closed loop in the system
+### R6 — Waste Invisibility (Reinforcing, 🔷 ASSUMED) — the supply-side mirror of R1
 
-Menu complaints → feedback to Mess Committee → rotation adjustment (~1-month cycle, with student input) →
-improved satisfaction → reduced complaints. This loop matters for the diagnosis precisely *because* it works:
-it proves the institution is capable of running closed feedback loops in general, which means the
-registration-attendance gap is not persisting for lack of institutional capacity — it is persisting because
-*this specific* feedback path has no evidenced owner or channel.
+Ghost registration → waste generated → efficiently composted, disposed of without ever being measured by
+volume → no visible cost or regulatory pressure accrues → no forcing function to revisit registration policy
+→ ghost registration continues unchallenged. Structurally identical to R1, operating on the supply side.
 
-### R3 — Menu Transparency Backfire (Reinforcing, candidate) — ❓ UNKNOWN, self-identified by CFS Chair only
+### B1 — Skip Meal (Balancing) — ✅ CONFIRMED mechanism, 🟡 near-zero uptake
 
-Advance posting → students learn "good day" items → selective attendance → demand unpredictability on other
-days → pressure back on posting practice. Only the first link is confirmed; the rest is the CFS Chair's own
-named concern, not yet observed.
+Updated this session: the mechanism reaching kitchen forecasting is now confirmed. The precise open question
+shifts from "does this work" to "why does almost nobody use it."
 
-### B1 — Skip Meal, B2 — Capacity Redistribution (Balancing, designed) — ❓ UNKNOWN, not confirmed closed
+### R4 — Known-But-Unowned-Gap Reinforcement (Reinforcing) — 🟡 mostly evidenced
 
-Both mechanisms exist by design. Neither has evidence in this dataset that its closing links (declaration →
-forecast adjustment; overcrowding → cross-mess redistribution) actually operate. B2 is additionally weakened
-structurally by ST7 — Kadamba and Bakul/Palash are different kitchens with (presumably) separate registration
-pools, which makes cross-mess redistribution mechanically questionable even before checking for behavioral
-evidence.
+CFS Chair's awareness of the gap → no assigned decision-right to act (fragmentation confirmed) → the gap
+never reaches an agenda → normalized as "how things work" → reduced urgency to raise it again. The first two
+links are essentially confirmed this session.
 
-### R2 — Sleep/Energy (Reinforcing, candidate) — ❓ UNKNOWN, only first link confirmed
+### B5 — Silo Success Masking Systemic Gap — 🟡 PLAUSIBLE
 
-Carried forward from Task 6 as a named candidate only. Not promoted to a confirmed loop here.
+Menu governance's own well-earned success (B3) may be quietly reducing institutional appetite to audit the
+registration/billing gap, since the gap generates no comparable complaint volume — silence read as absence
+of a problem.
 
-### Rejected: Under-Provisioning "Loop"
+### B3 — Menu Rotation Governance (Balancing) — ✅ CONFIRMED, the only fully closed loop from the standing
+(non-shock) system
 
-The existing parallel Task 7 draft proposes a T-4-lock → shortage → students-turned-away chain that would,
-if it looped back to lower future registration, be a genuine balancing loop. No evidence in this dataset
-shows that closing link. It is a real, evidenced *chain* (used in Sections 8 and in the root-cause network)
-but not a loop, and is not diagrammed as one.
+Unchanged — still the proof the institution *can* run closed feedback loops; B4 now shows it can also run a
+full attendance-based billing model, under the right trigger conditions.
+
+### R5 — Vendor Margin/Quality Trade-off (Reinforcing) — 🔷 ASSUMED, new this pass
+
+Fixed/thin vendor margin → cheaper ingredients or reduced variety → perceived quality drops → attendance
+drops further for that category → registered-but-unused meals rise, but billing (and likely vendor revenue)
+is unaffected because it's registration-based → no market pressure on the vendor to fix quality. Decoupled
+billing protects the vendor's revenue from attendance too, not just the student's incentive to attend
+accurately — a genuinely new, symmetrical reading of RC1.
+
+### B2, R2, R3, B6, R7, canine chain
+
+Unchanged in substance from the system map; see the asset file for full write-ups.
 
 ---
 
 ## 7. Delays
 
-| Delay | From → To | Approx. duration | System effect | Evidence | Confidence |
-|-------|-----------|-------------------|-----------------|----------|------------|
-| Registration-to-procurement freeze | Registration change → procurement action | 4 days (T-4) | Caps responsiveness of the entire pipeline regardless of any other mechanism | E3 | ✅ |
-| Menu feedback cycle | Complaint → rotation adjustment | ~1 month | The one delay in the system matched to a functioning closed loop (B3) | S5 §3, §7 | ✅ |
-| Prep-start lead time | Kitchen prep start (~5:00 AM) → service | Same day, hours | Same-day registration signals arrive too late to be actionable even if they existed | S5 §12 | ✅ |
-| Resale-channel coordination | Ghost registration → informal resale | Unknown, presumably short (WhatsApp) | Removes the visible cost of ghost registration before it becomes a forcing function for policy change | E7 | 🟡 |
-| Institutional-knowledge-to-policy delay | CFS Chair's known turnout gap → any registration/billing policy response | Unknown — no evidence a response has started | If this delay is, in fact, indefinite rather than merely long, it reclassifies from a delay into a genuinely missing loop | E4, RC4 | ❓ UNKNOWN — this is the single most consequential open question in the report (see Section 19) |
+Unchanged in substance from the prior pass, with one resolved entry and one addition:
+
+| Delay | From → To | Approx. duration | Confidence |
+|-------|-----------|-------------------|------------|
+| Institutional-knowledge-to-policy delay | CFS Chair's known gap → registration/billing policy response | **Resolved this session: indefinite under the standing model** — this is now a confirmed missing loop, not merely a long delay | ✅ |
+| Shock-trigger-to-relaxation delay | Onset of a supply shock or holiday → activation of the non-compulsory model | Apparently short/responsive, since the mechanism has actually fired historically | ✅ (mechanism), ❓ (exact lag unmeasured) |
+| Ingredient-sourcing freeze | Registration change → sourcing action | 4 days (T-4), still rigid | ✅ |
+| Prep-quantity adjustment | Skip Meal declaration → kitchen forecast | Same week, now confirmed functioning | ✅ |
+| Menu feedback cycle | Complaint → rotation adjustment | ~1 month | ✅ |
 
 ---
 
 ## 8. Unintended Consequences
 
-Full table in `assets/task7/03_unintended_consequences.md`. The two OBSERVED consequences with the strongest
-evidence:
+Full table in `assets/task7/03_unintended_consequences.md`. New entries this pass:
 
-- **Decoupled billing**, intended for administrative simplicity, produces a procurement signal known by its
-  own owners to overstate breakfast attendance by roughly 60-65 percentage points. Students pay for uneaten
-  meals; the kitchen plans against numbers it knows are wrong. (✅ structure, 🟡 full causal weight.)
-- **The 5/month cancellation cap**, plausibly intended to reduce administrative noise, likely pushes real
-  non-attendance signal into the informationally invisible resale channel once a student exceeds it —
-  making the formal system's picture of "who isn't coming" less complete than if cancellation were unlimited
-  but noisier. (🟡 PLAUSIBLE — the cap and the resale channel are each confirmed; the causal link between
-  them is inferred.)
-
-One HYPOTHESIZED consequence, self-flagged by its own policy owner rather than by this research: advance
-menu transparency, meant to build trust, may make day-to-day demand harder to forecast if it concentrates
-attendance on posted "good" days (❓ UNKNOWN).
+- **Decoupled billing may protect vendor revenue predictability, insulating the vendor from a quality-
+  attendance feedback loop the same way it insulates students from an attendance-accuracy incentive** — a
+  symmetrical, previously unconsidered effect of RC1 (🔷 ASSUMED).
+- **Composting, by working well, may suppress the pressure that would otherwise force a demand-planning fix**
+  — the same Shifting-the-Burden shape as the resale market, one level downstream in the waste stream (🔷
+  ASSUMED, mirrors UC1/UC2).
+- **A well-functioning menu-governance loop (B3) may reduce institutional appetite to audit the registration/
+  billing gap**, since the gap generates no comparable complaint volume (🟡 PLAUSIBLE).
+- **Possible animal-welfare and foot-traffic side effects** from Canine-Council-fed dogs congregating near
+  mess entrances (🔷 ASSUMED, speculative, named honestly rather than omitted).
 
 ---
 
 ## 9. Systemic Tensions
 
-Full detail in `assets/task7/05_systemic_tensions.md`.
+Full detail in `assets/task7/05_systemic_tensions.md`. New headline tension this pass:
 
-- **T1 — Administrative simplicity vs. demand-matching accuracy.** Billing stays simple by not metering
-  attendance; the kitchen pays for that simplicity in planning uncertainty. ✅ CONFIRMED structure.
-- **T2 — Vendor lead-time certainty vs. registration responsiveness.** A 4-day lock protects the vendor's
-  sourcing window at the cost of the entire pipeline's ability to react to anything that changes inside that
-  window. ✅ CONFIRMED structure; the exact minimum feasible lead time is unconfirmed.
-- **T3 — Menu transparency (trust) vs. demand predictability.** The same office (CFS) holds both goals and
-  is visibly weighing them against each other in real time. ❓ UNKNOWN whether the tension is operating at
-  meaningful scale, though it is certainly real as a *stated* concern.
-- **T4 — Fragmented governance autonomy vs. cross-cutting problem ownership.** Each governance silo can run
-  its own feedback loop well (proven by B3) while the cross-cutting registration-attendance problem has no
-  natural owner under that same structure. ✅ CONFIRMED structural condition.
+- **T5 — Procurement certainty vs. demand-matching accuracy, at the institutional level.** The shock-adaptive
+  precedent (B4) proves both are individually achievable; the standing model shows the institution is not
+  currently willing to trade away vendor lead-time certainty to run demand-matched billing as a permanent
+  policy. ✅ CONFIRMED as a real, evidenced tension (not merely candidate) — this is the sharpest tension in
+  the whole report, because unlike the others, both sides of it have been directly demonstrated as working.
+- **T6 — A one-size-fits-all registration model vs. legitimate cultural/dietary variation.** 🔷 ASSUMED, but
+  structurally important: some of the "gap" this project has spent so much effort explaining is not a gap to
+  close at all.
+- T1-T4 (administrative simplicity vs. demand-matching; vendor lead-time vs. responsiveness; menu
+  transparency vs. predictability; fragmented governance autonomy) unchanged in substance — see the asset
+  file.
 
 ---
 
 ## 10. Root Cause Analysis
 
-Full ROOT-CAUSE TEST templates and the network diagram are in `assets/task7/04_root_cause_network.md`.
+Full ROOT-CAUSE TEST templates in `assets/task7/04_root_cause_network.md`.
 
 ### 10.1 Immediate (symptom-level, not root causes)
 
-- A student not showing up for a registered breakfast.
-- A specific day's shortage or over-preparation at Kadamba.
-- One respondent's self-contradictory account of their own attendance.
-
-These are individual instances, not structural causes — labelling any of them a "root cause" would be
-exactly the kind of blame-the-individual mislabelling this analysis is built to avoid.
+Unchanged: a single no-show, a specific day's shortage, one respondent's self-contradictory account.
 
 ### 10.2 Intermediate Mechanisms
 
-- **The T-4 procurement lock (RC2).** Structural and real, but tested against the root-cause criteria and
-  found to be an *intermediate mechanism*, not a primary root cause: removing it would improve
-  responsiveness to the registration-attendance gap but would not remove the incentive (RC1) that inflates
-  registration numbers in the first place.
-- **Information fragmentation (RC4).** Real, but folded in as a contributing factor under RC3 rather than
-  treated as independently sufficient — coarse feedback compounds fragmented ownership rather than being a
-  separate root cause in its own right.
+- **The T-4 sourcing lock (RC2)**, now understood as one stage of a two-stage pipeline — real, but narrower
+  in scope than previously modeled, since same-week prep-quantity forecasting (confirmed functioning) already
+  provides some correction the sourcing lock alone does not.
+- **Information fragmentation (RC4)** — folded into RC3.
+- **New this pass: vendor revenue-predictability interest (RC5, assumed)** — a plausible reason the standing
+  model persists that sits alongside, not instead of, RC3's unowned-gap framing. Not independently sufficient,
+  but real enough to name: even if RC3's "no owner" problem were solved, a vendor with a real financial stake
+  in decoupled billing would be a legitimate party to any redesign conversation, not a neutral bystander.
 
 ### 10.3 Structural Root Causes
 
-**RC1 — Billing/registration decoupled from attendance.** Upstream of both the ghost-registration pattern
-and the cancellation-underuse pattern; independently corroborated by a second, separately authored Task 7
-draft reaching the same structural conclusion. ✅ CONFIRMED as a structure. If removed, the problem would
-shrink but not disappear — self-reported skip reasons (habit, food-quality history, environmental
-visibility) are not billing-driven and would persist regardless.
+**RC1 — Billing/registration decoupled from attendance (standing model only).** Unchanged as a root cause,
+but now precisely scoped: this describes the *standing* model. The institution's own B4 precedent shows this
+is a choice, not a technical necessity — which sharpens RC1 from "the institution doesn't know how to fix
+this" to "the institution has chosen not to run the fix it already has, as a trade-off against procurement
+certainty."
 
-**RC3 — Fragmented decision rights across menu, kitchen execution, academic timetable, and billing policy.**
-This is the meta-level root cause: it explains *why* RC1 has not been revisited even though its size (the
-35-40% figure) is known and quantifiable by the very office that could, in principle, act on it. It also
-explains why a genuinely well-functioning governance mechanism elsewhere in the same institution (B3, menu
-rotation) has not transferred to this problem — good governance in one silo does not automatically reach a
-cross-cutting issue that silo doesn't own.
+**RC3 — Fragmented decision rights.** Upgraded this session from 🟡 PLAUSIBLE-as-cause-of-inaction to ✅
+CONFIRMED: the user directly confirmed the known gap has never reached policy discussion. RC3 now explains
+not just why RC1 hasn't been revisited in principle, but why even a *proven working alternative* (B4) hasn't
+been evaluated for partial, permanent adoption — the fragmentation is severe enough that a demonstrated
+success sitting inside the institution's own operating history hasn't been connected to the standing-model
+conversation either.
 
-Both pass the root-cause test: structural rather than a symptom label, explain multiple patterns, sit
-upstream of individual behavior, and are evidenced rather than assumed. Neither is asserted with false
-certainty — RC1's *full* explanatory weight and RC3's role as *cause* (as opposed to one of several
-plausible explanations for policy inertia — see Section 19) are both marked provisional.
+Both pass the root-cause test. Neither is asserted with false certainty — RC1's precise scoping (sourcing vs.
+prep-quantity) and RC3's interaction with the newly identified vendor-interest factor (RC5) are both marked
+appropriately.
 
 ---
 
 ## 11. Root Cause Network
 
 ```
-RC1 (billing decoupled from attendance)
+RC1 (Billing decoupled from attendance, standing model)
       │ produces
       ▼
-Ghost-registration incentive
+Ghost-registration incentive ── mirrored on the supply side by vendor revenue insulation (RC5, assumed)
       │ compounded by
       ▼
-RC2 (T-4 procurement lock) ── caps correctability of RC1's effect
+RC2 (T-4 sourcing lock — now scoped narrowly to sourcing, not prep-quantity)
       │ produces
       ▼
-Persistent registration-attendance gap (35-40% breakfast turnout)
+Persistent registration-attendance gap (35-45% breakfast turnout)
       │ visible only as
       ▼
-Category-level data known to CFS Chair — cannot reach registration-policy design because:
+Category-level data known to CFS Chair — CONFIRMED never reaching registration-policy design, because:
       ▲
       │ root-caused by
-RC3 (fragmented decision rights — no actor owns both the incentive lever and the outcome)
+RC3 (Fragmented decision rights) ── compounded by RC5 (vendor interest, assumed) and B5 (silo-success
+     masking, since the menu channel's visible success reduces audit appetite elsewhere)
+      │
+      ▼
+Despite the institution possessing a proven working alternative (B4), never evaluated for partial/permanent
+adoption — the sharpest evidence of RC3's severity in the whole report.
 ```
-
-RC1 and RC3 interact directly: RC3 is the best-supported explanation for why RC1 persists unaddressed despite
-being known and quantified. RC2 and information fragmentation (RC4) compound each other similarly — even
-finer-grained data would still hit the T-4 wall before it could be actioned same-cycle.
 
 ---
 
 ## 12. Missing/Weak Feedback
 
-Full table in `assets/task7/06_feedback_gaps.md`. The single highest-priority gap: **the CFS office's known
-turnout gap does not have a confirmed channel to registration/billing policy design.** The data exists; the
-office holding it can state it precisely; no evidence in this project shows it reaching a policy conversation.
-This is stated as an open question (see Section 19, P0-1), not as a confirmed institutional failure — it may
-simply be outside what this project's interviews were positioned to observe.
-
-By contrast, the menu-complaint-to-rotation feedback path (underlying loop B3) is the one channel in this
-entire system confirmed to be fully closed — proof the institution can run this kind of loop when the
-ownership question is settled.
+Full table in `assets/task7/06_feedback_gaps.md`. The top gap (CFS office's known gap never reaching policy)
+is now **confirmed absent**, not merely suspected — this is a materially stronger finding than before. New
+gap this pass: **waste volume is never measured**, so it cannot function as a feedback signal even in
+principle — the categorical waste-tracking that exists serves compliance, not demand-planning.
 
 ---
 
 ## 13. Structural Power & Consequence Asymmetries
 
-Drawing on Task 3's Power-Interest/Leverage analysis:
+Unchanged core findings from Task 3, plus two new entries:
 
-- **High-consequence / low-control:** Students bear the full financial and time cost of the registration-
-  billing mismatch (RC1) but have no control over billing policy, the T-4 lock, or how registration data is
-  used downstream.
-- **High-information / low-authority:** The CFS Chair's office holds the most precise diagnostic information
-  in the whole system (the exact turnout split by category) but Task 3's power analysis found the
-  inter-relationships between the Mess Committee, the CDS Office, and the Warden on registration/billing
-  *policy authority* specifically to be unconfirmed — meaning the office with the clearest picture of the
-  problem may not be the office empowered to redesign the rule causing it. This is the same structural gap
-  named as RC3/RC4 here, seen from the power-mapping side rather than the process side.
-- **Low-authority / high-actionable-input:** Students individually control the one input (registration
-  intent) that most directly determines the accuracy of the whole downstream pipeline, while bearing no cost
-  for inaccuracy beyond their own bill (RC1) — a textbook case of the actor with the best real-time
-  information having the weakest incentive to report it accurately.
-- **Unmeasured collective leverage:** Task 3 identified the Mess Cell WhatsApp channel as a form of
-  "sleeping" or exercised-but-unmeasured collective student leverage. This report's evidence confirms the
-  channel exists (ST9) but, consistent with Task 3's framing, its actual leverage — whether it could be
-  mobilized to pressure a policy change, versus merely absorbing individual inconvenience — remains
-  unmeasured. 🟡 PLAUSIBLE that it currently functions as a pressure release rather than organized leverage
-  (per the Shifting the Burden reading in Section 15), but this has not been tested directly.
+- **New — vendor revenue interest vs. institutional accountability (🔷 ASSUMED):** if decoupled billing
+  quietly protects vendor revenue predictability, the vendor has an unaccounted-for interest in a policy the
+  institution has framed (in this report's prior pass) purely as an internal governance gap. Any future
+  redesign conversation needs to reckon with the vendor as a stakeholder with something to lose, not treat
+  the fix as a purely internal decision.
+- **New — invisible demand streams, unequal visibility (🔷 ASSUMED):** faculty and early-shift staff, if
+  they consume mess food in any volume, are structurally the least visible actors in this entire system —
+  absent from every registration, sourcing, and forecasting number, while ground/security/housekeeping staff
+  specifically are also the actors most likely to need an early breakfast option given their shift timing.
 
 ---
 
-## 14. Workarounds as Signals
+## 14. Workarounds as System Signals
 
-| Workaround | Structural problem compensated | Why the formal system doesn't handle it | Reduces pressure for formal change? |
-|------------|-----------------------------------|--------------------------------------------|----------------------------------------|
-| Mess Cell WhatsApp resale | Ghost registration under decoupled billing (RC1) | No formal per-meal transfer mechanism exists | 🟡 Plausibly yes — a working release valve removes the pain that would otherwise force RC1 onto someone's agenda |
-| Skip Meal declaration | Same-week non-attendance beyond the cancellation cap | Not confirmed to reach kitchen forecasting distinctly from T-4 aggregate | ❓ Unknown — depends on whether it functions at all (Section 6) |
-| Students' own coping (intermittent fasting, habit, eating elsewhere) | Food-quality history, lack of environmental visibility, non-daily schedule conflicts | These are individual-level adaptations to conditions the mess system doesn't track or respond to per-student | Not evidenced either way — these are individual choices, not organized workarounds, so they don't obviously reduce institutional pressure the way a visible collective channel would |
-
-The clearest signal here is the resale channel: its existence is itself evidence that the formal
-registration/cancellation system is not adequate to actual student behavior, and per Section 15's Shifting
-the Burden reading, its effectiveness at the individual level plausibly reduces the systemic pressure that
-would otherwise push RC1 toward being fixed.
+Unchanged table, plus: **composting** is now understood as a workaround-equivalent (a well-functioning
+disposal mechanism that, like resale, absorbs a cost that could otherwise force structural change) — see
+`03_unintended_consequences.md` and loop R6.
 
 ---
 
-## 15. System Archetype
+## 15. System Archetype(s)
 
-Full fit-testing (including five rejected candidates) is in `assets/task7/09_system_archetypes.md`. One
-archetype is retained:
-
-**Shifting the Burden — Registration/Resale.** The symptomatic solution (informal resale via Mess Cell
-WhatsApp) relieves the immediate waste of an individual ghost-registered meal. The fundamental solution
-(redesigning billing so that registering only when intending to attend is the natural default) is not
-currently being pursued. The mechanism connecting them — that a well-functioning symptomatic fix quietly
-removes the pressure that would otherwise drive the fundamental fix — is plausible and consistent with every
-piece of evidence gathered, but not independently proven; policy inertia could equally be explained by RC3
-alone. Both explanations may be true simultaneously. 🟡 PLAUSIBLE.
-
-A second candidate, Fixes That Fail (a reported December 2024 cancellation-cap tightening allegedly
-worsening the no-show pattern it targeted), is **not promoted** here: it rests on a single secondary source
-(the parallel Task 7 draft), not on any primary interview or institutional statement independently
-gathered for this analysis. It is flagged, not asserted.
+Full fit-testing in `assets/task7/09_system_archetypes.md`. **This pass identifies a second, independent
+instance of Shifting the Burden** (waste/composting, R6), structurally identical in shape to the
+registration/resale instance (R1) already retained — the report now treats "well-functioning absorption
+mechanisms quietly suppressing structural pressure" as a recurring meta-pattern across this system, not a
+one-off. The previously-rejected "Fixes That Fail" candidate (Dec-2024 cancellation-cap tightening) remains
+un-promoted — still resting on a single secondary source.
 
 ---
 
 ## 16. Systemic Problem Diagnosis
 
-**Short:** Breakfast attendance is low not because students are careless or lazy, but because billing,
-procurement timing, and governance authority are each designed sensibly in isolation and none of them, alone
-or together, currently connects registration accuracy to any consequence or correction.
+**Short:** Breakfast attendance is low partly because billing, procurement timing, and governance authority
+don't connect registration accuracy to any consequence — and partly because a meaningful share of "low
+attendance" is legitimate variation, not a problem at all. The institution has already proven it can fix the
+first part; it has chosen not to run that fix as the default, because doing so would cost it something real
+(procurement certainty) that this report now takes seriously rather than dismissing.
 
-**Detailed:** The Breakfast Paradox is not "students skip breakfast." It is that a monthly, attendance-blind
-billing model (RC1) removes the one incentive that would otherwise make registration track real intent, a
-four-day procurement freeze (RC2) makes even a perfectly accurate late signal unusable, and decision rights
-over menu, kitchen execution, academic scheduling, and billing policy are split across four separate
-authorities (RC3) with no one of them positioned to see the whole chain and act on it — even though the
-office that could name the exact size of the resulting gap (35-40% breakfast turnout) sits inside this same
-institution. Individual coping mechanisms (informal resale, Skip Meal, personal habit adjustments) absorb
-enough of the resulting friction that the underlying structure has not been forced to change. The paradox
-persists not despite everyone behaving reasonably, but because of it.
+**Detailed:** The Breakfast Paradox is not "students skip breakfast," and it is not "nobody has figured out
+how to fix registration." Billing decoupled from attendance, a two-stage sourcing/prep pipeline, and decision
+rights split across menu, kitchen execution, academic timetabling, and billing policy together produce a
+persistent, quantifiable registration-attendance gap that the institution's own CFS office can name precisely
+— and that same institution has already built and run a working alternative (walk-in, attendance-tracked
+billing) during shocks and holidays. The paradox is that this proven fix stays exceptional rather than
+becoming standard, most plausibly because it trades away a procurement certainty the vendor relationship
+depends on, and because fragmented decision rights mean no actor has ever had to weigh that trade-off
+explicitly against the now-confirmed, quantified cost of leaving it as is. Layered on top: three different
+kitchens serving under one label, an invisible demand stream from faculty and early-shift staff, a
+composting system that quietly hides waste from ever becoming a forcing signal, and — not a defect at all —
+a genuine diversity of cultural and individual eating patterns the registration system was never built to
+distinguish from "the problem." This is a system reproducing its own outcome through several interacting,
+individually reasonable mechanisms, with a solution already sitting inside its own operating history.
 
 ---
 
 ## 17. Core Systemic Findings
 
-**F1 — The registration-attendance gap is real, structural, and breakfast-specific.**
-Pattern: turnout is 35-40% for breakfast vs. 70-90%+ for other categories on identical infrastructure.
-Underlying structure: RC1 (decoupled billing), RC2 (T-4 lock).
-Feedback mechanism: R1 (registration/resale), not yet self-correcting.
-System consequence: a stable, self-reinforcing low-turnout equilibrium specific to one meal.
-Evidence: E1, E2, E4. Confidence: ✅ gap confirmed; 🟡 mechanism weighting provisional.
+**F1 — The institution has already built and run a working fix for the core paradox.** Pattern: non-
+compulsory, attendance-tracked billing during holidays and the LPG shortage (B4). System consequence: reframes
+RC1 from an unsolved problem to a deliberate, if unexamined, trade-off against procurement certainty. Evidence:
+direct user statement, this session. Confidence: ✅ CONFIRMED as historical fact; 🔷 ASSUMED as to the exact
+reason it isn't the default.
 
-**F2 — The gap is known by the institution but not confirmed to reach the policy level that could act on it.**
-Pattern: aggregate turnout data exists at CFS level; no evidence of registration-policy discussion.
-Underlying structure: RC3 (fragmented decision rights), RC4 (information coarseness).
-Feedback mechanism: the missing link identified in Section 12.
-System consequence: known problems can persist indefinitely without any actor being at obvious fault.
-Evidence: E4, absence-of-evidence flagged explicitly. Confidence: ❓ UNKNOWN — the report's most important
-open question.
+**F2 — The registration-attendance gap is known but confirmed to have never reached policy discussion.**
+Upgraded this session from an open question to a confirmed finding — RC3 (fragmented decision rights) is now
+the confirmed, not merely plausible, explanation.
 
-**F3 — The institution is fully capable of closed feedback loops; this specific one just isn't closed.**
-Pattern: menu complaints reliably produce rotation adjustments (B3).
-Underlying structure: Mess Committee's menu authority, matched to a real feedback channel.
-Feedback mechanism: B3, fully confirmed and closed.
-System consequence: rules out "the institution can't do feedback" as an explanation — the problem is
-ownership-specific, not capacity-wide.
-Evidence: S5 §3, §7. Confidence: ✅ CONFIRMED.
+**F3 — Skip Meal's mechanism works; almost nobody uses it.** A sharper, more precise finding than "the loop
+is broken" — the open question is now adoption, not design.
 
-**F4 — Designed balancing mechanisms (Skip Meal, cross-mess redistribution) are not confirmed to function.**
-Pattern: mechanisms exist by design; no usage or effectiveness data found.
-Underlying structure: B1, B2.
-System consequence: the system may have less real self-correction capacity than its design suggests.
-Evidence: absence of data in S1/S2/S5 despite the mechanisms' documented existence. Confidence: ❓ UNKNOWN.
+**F4 — Three structurally different kitchen-and-supply systems exist under one "mess" label.** Kadamba
+(automated/outsourced), Yuktahar (manual/live), Bakul/Palash (temporarily external-vendor-sourced, shared).
 
-**F5 — Self-reported skip reasons are heterogeneous, not dominated by academic scheduling.**
-Pattern: habit, food-quality history, environmental visibility, and non-daily schedule conflicts all appear
-for the one respondent with a full account; that same respondent's own 8:30 class occurs only twice weekly.
-Underlying structure: none of the four decision-rights silos (Section 10.3, RC3) currently tracks these
-individual-level factors.
-System consequence: a purely schedule-based intervention would likely under-address the real driver mix.
-Evidence: E14, E17, S1. Confidence: 🟡 for this respondent; ❓ UNKNOWN for generalization.
+**F5 — Decoupled billing may protect vendor revenue predictability as much as it reflects institutional
+inattention.** A newly identified, symmetrical stakeholder interest in the standing model.
 
-**F6 — An informal resale market functions as an unmeasured release valve.**
-Pattern: Mess Cell WhatsApp absorbs ghost-registered slots outside the formal system.
-Underlying structure: ST9, interacting with R1's Shifting-the-Burden dynamic.
-System consequence: individually beneficial, but plausibly removes pressure for structural fixes and hides
-the true scale of ghost registration from institutional view.
-Evidence: E7. Confidence: 🟡 mechanism confirmed, systemic effect inferred.
+**F6 — Waste and resale are the same Shifting-the-Burden archetype, twice.** Both well-functioning absorption
+mechanisms quietly remove the visible cost that would otherwise force structural change.
 
-**F7 — A public information inconsistency (two portal domains) shows institutional communication is not
-fully coherent even on simple, correctable matters.**
-Pattern: found directly on physical mess signage.
-System consequence: small on its own, but a leading indicator consistent with RC3's broader diagnosis of
-fragmented ownership across the mess-governance apparatus.
-Evidence: E11. Confidence: ✅ CONFIRMED.
+**F7 — A meaningful share of low breakfast turnout is legitimate cultural, religious, or individual variation,
+not dysfunction.** Sets an honest ceiling on how much of the gap is a "problem" at all.
+
+**F8 — At least two invisible demand streams (faculty, early-shift staff) may sit uncounted on top of the
+already-documented student gap.**
 
 ---
 
 ## 18. What Is Root Cause vs. What Is Not
 
-**Root causes (structural, upstream, evidenced):** RC1 (billing/registration decoupling), RC3 (fragmented
-decision rights).
+**Root causes:** RC1 (billing/registration decoupling, standing model), RC3 (fragmented decision rights, now
+confirmed as the cause of inaction, not merely a structural condition).
 
-**Not root causes, even though structurally real:** RC2 (T-4 lock) and RC4 (information coarseness) are
-compounding *mechanisms* — real, evidenced, and worth fixing, but each is downstream of or secondary to RC1/
-RC3; removing either alone would not make the pattern disappear.
+**Not root causes:** RC2 (T-4 sourcing lock — narrower in scope than previously modeled, now an intermediate
+mechanism only for sourcing, not for prep-quantity, which already flexes); individual student choices; a
+single day's shortage. **Newly, explicitly not a root cause needing a fix:** the portion of the attendance
+gap attributable to legitimate cultural/individual variation (F7) — treating it as a defect to correct would
+be a category error this document deliberately avoids.
 
-**Explicitly not root causes:** individual student choices (habit, sleep, taste preference), one respondent's
-contradictory self-report, a single day's kitchen shortage. These are symptoms or noise, not structure —
-labelling them root causes would misattribute a systemic outcome to individual failure, which is exactly the
-mislabelling this analysis exists to avoid.
-
-**A live alternative explanation not yet ruled out:** it is possible that RC1 has, in fact, been considered
-and deliberately retained (e.g., because attendance-based billing is operationally harder to implement than
-it looks), in which case the correct diagnosis shifts from "an unowned gap" to "a considered trade-off no one
-has been able to improve on yet." This alternative is not rejected here — it is exactly the question posed
-in `assets/task7/08_validation_gaps.md` P0-1, and the honest answer is that this evidence set cannot
-currently distinguish the two.
+**The live alternative explanation from the prior pass is now resolved, not merely narrowed:** this session
+confirms the gap has never reached policy discussion, ruling out "a considered, deliberate trade-off already
+made and re-affirmed" in favor of "an unowned gap, compounded by a vendor-interest factor nobody has had to
+weigh explicitly." A new, still-open alternative this pass: it's possible the vendor contract terms make
+attendance-based billing *contractually*, not just administratively, difficult to adopt as a standing model
+— this is not evidenced either way and should not be assumed resolved in either direction.
 
 ---
 
 ## 19. Current Evidence Gaps
 
-The two gaps that would most change this report's conclusions if answered (full list, with exact
-non-leading questions, in `assets/task7/08_validation_gaps.md`):
+The corrections this session resolved the two previously most important gaps. The new top priorities:
 
-1. **Has the CFS office's known turnout gap ever reached a registration or billing policy conversation?**
-   This single answer decides whether RC3 describes an unowned gap or a deliberately retained trade-off —
-   two materially different diagnoses.
-2. **Does Skip Meal data ever reach kitchen forecasting distinctly from the T-4 aggregate?** This decides
-   whether loop B1 is a genuinely functioning (if weak) balancing mechanism or effectively decorative.
+1. **Why is Skip Meal uptake near-zero despite the mechanism now confirmed to work?** This decides whether
+   B1 can be strengthened through awareness/simplicity fixes or whether a deeper trust/incentive problem is
+   at play.
+2. **Do faculty or early-shift staff consume mess food in any volume, and is it counted anywhere?** Decides
+   whether F8 is a real, material factor or a minor curiosity.
+3. **Would the vendor's contract terms allow a partial, permanent version of the shock-adaptive model (B4)?**
+   The single most consequential open question for anyone considering an intervention based on this report —
+   though answering it is out of scope for this diagnosis-only document.
 
-Secondary gaps worth closing before any intervention design: the exact scope of the 35-40% figure (all
-messes or Kadamba only), independent confirmation of the 5/month cancellation cap, and whether the menu-
-transparency concern (R3/T3) shows up in any actual attendance data.
+Full prioritized list, including waste-volume measurement and the Canine Council mechanism, in
+`assets/task7/08_validation_gaps.md`.
 
 ---
 
 ## 20. Conclusion
 
-The Breakfast Paradox persists not because any actor in this system is behaving irrationally, but because
-the system currently has no path connecting an accurate demand signal to a policy that would create one.
-Students respond rationally to a billing structure that charges them the same whether they attend or not.
-The kitchen responds rationally to the only number it is given, four days before it needs it. The CFS office
-runs a genuinely well-functioning feedback loop for menu quality — proof the institution can do this — while
-the specific loop that would close the registration-attendance gap has no confirmed owner anywhere in the
-four-way split of menu, execution, academic scheduling, and billing authority. The paradox is not a
-breakdown; it is four locally coherent systems interacting to produce a jointly incoherent outcome, held
-stable by an informal resale channel that quietly absorbs the worst of the individual cost before it can
-accumulate into pressure for structural change. This is a system reproducing its own outcome, not a
-collection of individuals failing to show up for breakfast.
+The Breakfast Paradox persists not because the institution lacks a solution, but because the solution it
+already has, and has already used successfully, is treated as an emergency measure rather than a standing
+option — a choice this report can now name precisely, rather than a mystery. Students respond rationally to
+a billing structure that charges them the same whether they attend or not; a vendor plausibly benefits from
+that same structure in ways the institution has not had to reckon with explicitly; the kitchen runs three
+different operational models under one label; a well-functioning menu-governance loop and a well-functioning
+waste-disposal system both, by working so well, quietly remove the pressure that would otherwise force a
+harder conversation about registration and billing; and a real, meaningful share of what looks like "the
+problem" is simply how a diverse student population actually eats. None of this is a breakdown. It is a wide
+set of individually coherent systems — supply, kitchen, governance, waste, culture, and a proven-but-shelved
+fix — interacting to reproduce an outcome that no one part of the system, examined alone, would predict.
 
 ---
 
 ## Appendix — Evidence/Confidence Legend
 
-✅ **CONFIRMED** — directly stated by a named source or directly observed.
-🟡 **PLAUSIBLE-PROVISIONAL** — consistent with evidence, mechanism or scope not independently verified.
-❓ **UNKNOWN-REQUIRES VALIDATION** — a real, named open question; not decided either way.
-⛔ **UNSUPPORTED** — used only to explicitly reject a claim, never to assert one.
+✅ **CONFIRMED** · 🟡 **PLAUSIBLE-PROVISIONAL** · ❓ **UNKNOWN-REQUIRES VALIDATION** · ⛔ **UNSUPPORTED** ·
+🔷 **ASSUMED** — a confident systems-thinking inference explicitly authorized by the user this session, used
+to widen the system's boundary honestly; never presented with the weight of a confirmed claim.
 
-Source key: S1 = 2026-09-03 self-account interview · S2 = 2026-09-06 five-student interviews · S3 = Neha's
-independent cross-transcription of the same five interviews · S4 = braindump #1 · S5 = braindump #2 (CFS
-Chair interview + kitchen walkthrough) · S6 = Task 6 System Map · S7 = existing parallel Task 7 draft
-(cross-reference only) · S8 = Task 3 Power-Interest/Leverage Map · S9 = mess poster photographs.
+Source key unchanged from the prior pass (S1-S9), plus: direct user statements, 2026-09-13 (the shock-adaptive
+precedent, the two P0 corrections, and the full systems-boundary expansion brief).
 
 ## Supporting Assets
 
-- `assets/task7/01_iceberg_matrix.md` — full Events/Patterns/Structures/Mental Models tables and the
-  complete linkage matrix.
-- `assets/task7/02_causal_loop_diagram.md` — full loop templates for R1, B1, B2, R2, B3, R3, the rejected
-  under-provisioning chain, and the consolidated CLD Mermaid source.
-- `assets/task7/03_unintended_consequences.md` — full unintended-consequences table.
+- `assets/task7/01_iceberg_matrix.md` — full Events/Patterns/Structures/Mental Models tables.
+- `assets/task7/02_causal_loop_diagram.md` — full loop templates for all fourteen loops/chains, and the
+  consolidated CLD Mermaid source.
+- `assets/task7/03_unintended_consequences.md` — full table, including new entries this pass.
 - `assets/task7/04_root_cause_network.md` — full ROOT-CAUSE TEST templates and network diagram.
-- `assets/task7/05_systemic_tensions.md` — full tensions table.
+- `assets/task7/05_systemic_tensions.md` — full tensions table, including T5/T6.
 - `assets/task7/06_feedback_gaps.md` — full missing/weak feedback table.
 - `assets/task7/07_evidence_traceability.md` — every finding traced to its sources.
-- `assets/task7/08_validation_gaps.md` — prioritized P0/P1/P2 validation backlog with exact questions.
-- `assets/task7/09_system_archetypes.md` — full archetype fit-testing, including rejected candidates.
-- `assets/task7/10_quantitative_analysis.md` — every real number available, labelled by type, with an
-  explicit list of what cannot be computed from available data.
-- `assets/task7/11_mental_models_evidence.md` — full reasoning chain for each mental model.
+- `assets/task7/08_validation_gaps.md` — prioritized validation backlog, updated this session.
+- `assets/task7/09_system_archetypes.md` — full archetype fit-testing, including the second Shifting-the-
+  Burden instance.
+- `assets/task7/10_quantitative_analysis.md` — every real number available.
+- `assets/task7/11_mental_models_evidence.md` — full reasoning chain for each mental model, including MM4.

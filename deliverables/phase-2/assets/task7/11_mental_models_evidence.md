@@ -35,14 +35,12 @@ so the inference is auditable rather than asserted.
 - **WHAT WOULD STRENGTHEN THIS TO CONFIRMED:** A direct statement from CFS/Mess Committee explaining *why*
   the T-4/registration-based approach continues despite the known gap (e.g., "we've looked at this and it's
   still the best available signal because—").
-- **WHAT WOULD WEAKEN/REJECT IT:** Evidence that the gap has, in fact, been actively discussed and the
-  registration-based approach was deliberately retained for a specific reason (contract constraints, cost of
-  alternatives) — this would replace "unexamined mental model" with "considered trade-off," which is a
-  materially different (and less critical) finding. See `08_validation_gaps.md` P0-1 — this is the single
-  most important open question in the whole report, because it decides whether RC3/MM2 describes an
-  oversight or a deliberate, defensible choice.
-- **STATUS:** 🟡 Potential mental model — requires validation, explicitly and directly, before this claim is
-  strengthened in any future version of this report.
+- **RESOLVED, 2026-09-13:** the user directly confirmed the CFS Chair's awareness of the gap (a further
+  tentative ~45% figure, alongside the earlier 35-40% range) has never reached a registration or billing
+  policy discussion. This rules out "considered trade-off" and confirms "unexamined operating belief."
+- **STATUS:** ✅ CONFIRMED — the practice continues despite known contradicting data, with no evidence of it
+  ever having been reconsidered. This is now the strongest-evidenced institutional mental model in the set,
+  alongside MM3.
 
 ## MM3 — "More menu transparency is straightforwardly good" (a belief currently being revised by its own holder)
 
@@ -60,4 +58,26 @@ so the inference is auditable rather than asserted.
   hesitation about the policy — i.e., if transparency continues completely unchanged and unexamined despite
   the stated concern, the "currently being revised" framing would need to soften to "named but not yet
   acted on."
-- **STATUS:** 🟡 PLAUSIBLE, closest of the three to institutional confirmation.
+- **STATUS:** 🟡 PLAUSIBLE, closest of the original three to institutional confirmation.
+
+## MM4 — "Procurement certainty is worth more than demand-matching accuracy, as a permanent default rather than a case-by-case judgment" — added 2026-09-13
+
+- **ACTOR:** The institution/vendor relationship, collectively (not a named individual).
+- **DIRECT EVIDENCE:** The shock-adaptive precedent (loop B4) — the institution has already run a working
+  attendance-based billing model during holidays and the LPG shortage, and returns to the decoupled-billing
+  standing model as soon as the triggering condition passes, rather than evaluating whether any part of the
+  relaxed model could be retained permanently.
+- **WHY THIS SUPPORTS A MENTAL MODEL, NOT JUST A PRACTICE:** an institution that had already proven an
+  alternative works, and still treats it as an emergency-only measure rather than a standing option worth
+  weighing, is behaving as though the trade-off (procurement certainty over demand-matching accuracy) is
+  fixed and non-negotiable — not as though it has been actively, recently reconsidered and reaffirmed.
+- **WHAT WOULD STRENGTHEN THIS TO CONFIRMED:** A direct statement from CDS/CFS explaining that a permanent or
+  partial version of the shock-adaptive model was actually considered and rejected for a specific, named
+  reason (e.g., a concrete vendor-contract renegotiation cost).
+- **WHAT WOULD WEAKEN/REJECT IT:** Evidence that the vendor contract makes a standing attendance-based model
+  genuinely infeasible for a hard, non-negotiable reason (e.g., a binding minimum-order clause) — this would
+  replace "unexamined default belief" with "a real, external constraint," which is a different and less
+  critical finding.
+- **STATUS:** 🔷 ASSUMED — this is the newest and least directly evidenced mental model in the set, but it is
+  the one whose resolution would most change any future intervention design, since it decides whether B4
+  represents an untapped opportunity or a one-off exception with no generalizable lesson.

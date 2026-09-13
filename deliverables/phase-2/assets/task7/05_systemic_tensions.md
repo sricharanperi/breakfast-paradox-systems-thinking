@@ -72,4 +72,50 @@ prompt, not a checklist to fill mechanically.
 - **SYSTEM CONSEQUENCE:** A well-governed institution on every measurable sub-dimension can still have a
   persistent, unowned systemic problem.
 - **EVIDENCE:** RC3's full evidence base (S1, S5).
+
+## T5 — Procurement Certainty vs. Demand-Matching Accuracy (institutional level) — added 2026-09-13
+
+- **SIDE A NEED:** The vendor needs a stable lead-time guarantee to source ingredients reliably — the reason
+  the T-4 sourcing lock and, more broadly, the standing decoupled-billing model exist.
+- **SIDE B NEED:** Actual demand is genuinely variable day to day; a billing/registration model that tracks
+  real attendance would eliminate the registration-attendance gap this project has spent most of its effort
+  explaining.
+- **STAKEHOLDERS:** Vendor (Side A), students and the institution's own waste/cost exposure (Side B).
+- **STRUCTURE CREATING IT:** RC1/RC2, and the vendor contract terms behind them.
+- **CURRENT COPING MECHANISM:** Loop B4 — the shock-adaptive precedent. The institution has already proven
+  both sides are individually achievable; it has not, so far as this evidence shows, evaluated whether a
+  partial or permanent version of B4 could satisfy both sides simultaneously.
+- **WHO ABSORBS THE TRADE-OFF:** Currently, students and the institution's own unmeasured waste absorb the
+  cost of choosing procurement certainty as the standing default.
+- **SYSTEM CONSEQUENCE:** This is the sharpest tension in the whole report, because unlike T1-T4, both sides
+  have been directly, historically demonstrated as achievable — the tension is not "can we have both," it's
+  "the institution has chosen, without an evidenced explicit weighing, to have one most of the time."
+- **EVIDENCE:** Direct user statement, 2026-09-13 (the shock-adaptive precedent); RC1/RC2.
+- **CONFIDENCE:** ✅ CONFIRMED as a real, evidenced tension — the strongest-evidenced tension in this document,
+  since both poles have direct historical proof rather than one side being merely a stated concern.
+
+## T6 — One-Size-Fits-All Registration vs. Legitimate Cultural/Dietary Variation — added 2026-09-13
+
+- **SIDE A NEED:** A single registration/billing model, administratively simple to run across four messes.
+- **SIDE B NEED:** A genuinely diverse student population with different cultural norms around breakfast
+  (regional/family practice, brunch preference over a formal first meal), different dietary requirements
+  (Jain, vegetarian, non-vegetarian, Iftar-period observance), and different deliberate personal choices
+  (intermittent fasting).
+- **STAKEHOLDERS:** CDS/CFS (Side A), the full diversity of the student body (Side B).
+- **STRUCTURE CREATING IT:** A registration model built around a single notion of "attendance," rather than
+  distinguishing "chose not to eat breakfast today" from "does not eat a formal breakfast as a matter of
+  practice."
+- **CURRENT COPING MECHANISM:** Yuktahar's separate Jain/pure-veg lines are a partial accommodation; nothing
+  in the registration model itself distinguishes cultural/dietary non-attendance from the ghost-registration
+  pattern this report treats as the core problem.
+- **WHO ABSORBS THE TRADE-OFF:** Students whose legitimate eating pattern gets folded into "the paradox"
+  rather than recognized as normal variation; and, in a smaller way, any future analysis or intervention that
+  treats 100% attendance closure as the right target.
+- **SYSTEM CONSEQUENCE:** Sets an honest ceiling on how much of the registration-attendance gap should ever
+  be treated as a problem to solve.
+- **EVIDENCE:** 🔷 ASSUMED — a systems-thinking inference explicitly authorized this session, grounded in
+  IIIT-H's known regional/religious/dietary diversity and in Yuktahar's confirmed Jain/pure-veg
+  differentiation, not from a direct interview naming this tension.
+- **CONFIDENCE:** 🔷 ASSUMED, but treated as structurally important rather than a footnote — see Task 7 Finding
+  F7.
 - **CONFIDENCE:** ✅ CONFIRMED as a structural condition.

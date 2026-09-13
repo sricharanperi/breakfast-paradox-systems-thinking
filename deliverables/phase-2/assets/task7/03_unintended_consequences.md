@@ -97,4 +97,54 @@ the structures, not yet observed).
   to registration policy (see `06_feedback_gaps.md`, gap on waste→registration).
 - **EVIDENCE:** E15 for the mechanism; the "unintended consequence" itself is not evidenced, only plausible
   given the absence of any waste→policy feedback structure found in the evidence set.
+- **RESOLVED, 2026-09-13:** the user directly confirmed there is no formal waste-reduction policy connecting
+  waste back to procurement or registration decisions. UC5 is upgraded from HYPOTHESIZED to **OBSERVED**: the
+  categorical tracking exists (compost/lab-sampling), and the absence of a volume-level feedback link is now
+  a confirmed fact, not an inference. This is the supply-side twin of UC1/UC2 — see loop R6 in
+  `02_causal_loop_diagram.md`.
+
+## UC6 — Decoupled Billing May Also Insulate Vendor Revenue From Attendance (ASSUMED, new 2026-09-13)
+
+- **ORIGINAL ACTION:** Bill/pay based on registration (or a fixed contract volume), not attendance or
+  satisfaction.
+- **INTENDED PURPOSE:** Predictable vendor revenue, administrative simplicity (same as UC1).
+- **FIRST-ORDER EFFECT:** Vendor payment is plausibly unaffected by whether registered meals are actually
+  eaten or enjoyed.
+- **BEHAVIOURAL RESPONSE (ASSUMED):** Reduced vendor incentive to protect quality against falling attendance,
+  since revenue doesn't track it either — a symmetrical effect to the student-side incentive problem RC1
+  already names.
+- **SECOND-ORDER EFFECT (ASSUMED):** A vendor facing thin or fixed margins may substitute cheaper ingredients
+  or reduce variety without facing a revenue consequence, compounding the very quality issues that (per
+  Cluster D's health/social findings) independently depress breakfast attendance.
+- **UNINTENDED CONSEQUENCE:** A billing model designed to protect institutional administrative simplicity may
+  also be quietly protecting vendor revenue from a quality-attendance feedback loop that would otherwise
+  discipline it — see loop R5.
+- **WHO BENEFITS:** The vendor, via protected revenue regardless of attendance or quality choices.
+- **WHO BEARS THE COST:** Students (quality), and the institution (a compounding, currently invisible
+  contributor to the very attendance gap it is trying to explain).
+- **EVIDENCE:** 🔷 ASSUMED throughout — not directly evidenced by any interview, but tightly consistent with
+  confirmed billing mechanics and open-tender vendor contracting.
+- **CONFIDENCE:** 🔷 ASSUMED.
+
+## UC7 — A Working Fix Exists But Is Retired Once Its Trigger Passes (OBSERVED, new 2026-09-13)
+
+- **ORIGINAL ACTION:** Relax registration to a non-compulsory, walk-in, attendance-tracked model during
+  holidays and the LPG shortage (loop B4).
+- **INTENDED PURPOSE:** Cope with a short-term demand-uncertainty spike.
+- **FIRST-ORDER EFFECT:** The exact registration-attendance gap this project has spent most of its effort
+  explaining does not occur under this model — billing tracks actual consumption.
+- **BEHAVIOURAL RESPONSE:** The institution returns to the standing, decoupled-billing model once the
+  triggering condition passes.
+- **SECOND-ORDER EFFECT:** A demonstrably working alternative sits inside the institution's own operating
+  history without, so far as this evidence shows, ever being evaluated for partial or permanent adoption.
+- **UNINTENDED CONSEQUENCE:** The very success of the shock-adaptive model may be *why* it's never
+  reconsidered as a standing option — it was built and framed as an emergency measure, not a policy
+  alternative, so its success doesn't naturally prompt the question "should we just do this all the time?"
+- **WHO BENEFITS:** Vendor procurement certainty, under the standing model.
+- **WHO BEARS THE COST:** Everyone affected by the standing model's registration-attendance gap, every day
+  that isn't a holiday or a shortage.
+- **EVIDENCE:** ✅ CONFIRMED as historical fact (direct user statement, 2026-09-13); the "why it's never
+  reconsidered" framing is 🔷 ASSUMED.
+- **CONFIDENCE:** ✅ CONFIRMED mechanism; 🔷 ASSUMED interpretation. This is the single most consequential
+  unintended consequence in the report — see Task 7 Finding F1.
 - **CONFIDENCE:** ✅ CONFIRMED mechanism; ❓ UNKNOWN-REQUIRES VALIDATION for the consequence claim.
