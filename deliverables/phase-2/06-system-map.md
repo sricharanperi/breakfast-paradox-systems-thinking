@@ -136,11 +136,11 @@ Registering broadly feeds the resale market, and the resale market probably make
 
 Skip Meal was designed to stop the kitchen over preparing for a known no show. It's real and it functions, but almost nobody uses it, since it gives the student nothing back.
 
-![Skip Meal Loop](assets/diagram5-cld-b1-skipmeal.png)
+![Skip Meal Mechanism, a real chain that does not close into a loop](assets/diagram5-cld-b1-skipmeal.png)
 
 The idea that scarcity at Kadamba would push people toward Bakul or Palash instead turns out to be the opposite of what actually happens. People lock down Kadamba harder when it's scarce, not less.
 
-![Capacity Redistribution Loop](assets/diagram6-cld-b2-redistribution.png)
+![Capacity Redistribution, disconfirmed as a loop](assets/diagram6-cld-b2-redistribution.png)
 
 A late night, low sleep pattern driving next day skipping is well supported by what students actually said. Whether that skip then causes a later energy crash and a second round of late night behavior is not something anyone's actually checked yet.
 

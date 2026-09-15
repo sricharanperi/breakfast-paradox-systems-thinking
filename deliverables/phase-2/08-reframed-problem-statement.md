@@ -3,124 +3,124 @@ title: "Reframed Systemic Problem Statement"
 subtitle: "IIIT Hyderabad Breakfast Mess System"
 ---
 
-# Overview
+# The Problem, Reframed
 
-This project started with an operational question: many students register for breakfast, don't eat it, get charged anyway, and the food gets cooked regardless, why doesn't registration reflect who's actually going to eat? Two phases of evidence later, that question turns out to be aimed at the wrong layer of the system. It describes something visible on the surface, and the things producing it sit two layers underneath.
+> The Breakfast Paradox is a stable equilibrium. The system holds the gap between registration and attendance in place because every actor's behavior inside it is individually reasonable, and every consequence it produces gets absorbed before it can become a signal.
+>
+> Billing fires at registration rather than at consumption. That single rule removes the cost of inaccuracy from the student and the revenue risk from the vendor at the same time, so neither party closest to the daily decision has a reason to want the number to be accurate. What follows gets quietly absorbed: the resale market takes the student's financial loss, composting and staff meals take the physical surplus, outside venues take the dissatisfaction, and informal workarounds take the cultural mismatch. Each of these is genuinely useful, and none should be removed. Together, they keep the gap from ever generating a signal loud enough to reach a system that only responds to complaint intensity, and whose decision rights are split across four actors, none of whom holds both the knowledge and the authority to act.
+>
+> This is why the one office that can state the gap's exact size has never had reason to raise it, and why an attendance-tracked model that already worked twice was retired both times without review. No single actor feels this as their own problem. The student feels a charge. The kitchen feels a rush. The office holds a statistic. The vendor feels nothing. The paradox only exists in aggregate, and aggregate is the one thing this system has no way to see.
 
-This document does the reframing. It challenges the assumptions the original question carried, sets each stakeholder's own version of the problem side by side, names the tensions that make those versions irreconcilable, reads the whole thing through the Iceberg Model the course teaches, and only then states what the problem actually is. Claims carry the same tags used everywhere else in this project: confirmed, single sourced, candidate, assumed.
+The original question was operational: students register for breakfast, many don't show up, they get charged anyway, and the food gets cooked regardless, so why doesn't registration match who actually eats. That question is aimed at the wrong layer. The real problem is the one stated above: a stable equilibrium, held in place by a billing rule, a set of split decision rights, and an attention mechanism that only reacts to loud complaints, and protected from correction by absorption mechanisms that are each individually good.
 
-The design opportunity that follows from this reframe is the separate deliverable that accompanies this one. This document's job is diagnosis only, what the problem actually is, stated in systems terms. Getting that wrong would aim every intervention in Phase 3 at the wrong layer.
+The rest of this document is the case for that statement: the assumptions it overturns, the stakeholder evidence behind it, the tensions that make it hold, and the evidence that validates it. The Design Opportunity Statement is a separate document that builds on this one and turns the diagnosis into where to intervene.
 
-# 1. Challenging the Original Framing
+# 1. What the Original Question Got Wrong
 
-Five assumptions sat inside the original question. All five now have direct evidence against them.
+The original question rested on five assumptions. Evidence from six interviewed students and a CFS Chair interview tests each one directly.
 
-**"Students not showing up is the problem."** It's a symptom, and it isn't even uniformly a problem. One respondent practices intermittent fasting deliberately, stopped cooking breakfast years ago, and says they don't usually even see the mess despite living in the same hostel. Others come from families or regions where a formal breakfast was never the norm. A real share of what the headline turnout number counts as failure is just how a diverse group of people eats, and the system has no field anywhere that can tell that apart from an ordinary no-show. Both look identical in the ledger: a paid-for, unused slot.
+**Students not showing up is the problem.** This is a symptom, and part of what the turnout number counts as failure isn't even a problem. One respondent practices intermittent fasting on purpose, stopped cooking breakfast years ago, and says they don't usually even notice the mess despite living in the same hostel. Others come from families or regions where a formal breakfast was never the norm. A real share of the gap is just how a diverse group of people eats, and the system has no way to tell that apart from an ordinary no-show. Both look the same in the billing record: a paid slot nobody used.
 
-**"Students are behaving irrationally or carelessly."** They aren't. Registering for a whole month at Kadamba because it fills up fast is a sensible response to scarcity. Reselling on Mess Cell instead of using Skip Meal is a sensible response to one tool that pays you back and one that doesn't. Sleeping instead of walking to a mess where the food you want is probably already gone is a sensible response at 9:10 in the morning. Every individual decision in this system is defensible. That's precisely what makes it a systems problem rather than a behaviour problem.
+**Students are being careless or irrational.** They aren't. Registering for a whole month at Kadamba because it fills up fast is a sensible response to scarcity. Reselling on Mess Cell instead of using Skip Meal makes sense when one tool pays you back and the other doesn't. Sleeping in instead of walking to a mess where the popular items are probably already gone makes sense at 9:10 in the morning. Every individual decision here is defensible, which is what makes this a systems problem rather than a behavior problem.
 
-**"Nobody has solved this."** The institution has run attendance-tracked billing twice, during the gas shortage and during holidays like Felicity, where students walked in, scanned a QR code, and were only charged if they actually ate. It worked both times. It was switched off both times when the trigger passed, with no evidence anyone evaluated keeping any part of it. The problem was never that a solution was unknown.
+**Nobody has solved this.** The institution has already run attendance-tracked billing twice, during a gas shortage and during holidays like Felicity. Students walked in, scanned a QR code, and were only charged if they actually ate. It worked both times, and both times it was switched off once the trigger passed, with no sign anyone evaluated keeping any part of it. The problem was never that a solution didn't exist.
 
-**"The gap persists because nobody knows how big it is."** The CFS Chair can state it from memory: breakfast turnout runs thirty five to forty five percent, general items around seventy, high-demand items above ninety. That knowledge is confirmed never to have reached a registration or billing policy discussion. The gap isn't hidden. It's known, quantified, and structurally unable to travel upward.
+**The gap persists because nobody knows how big it is.** The CFS Chair can state it from memory. Breakfast turnout runs 35 to 45 percent, general items run around 70 percent, and high-demand items run above 90 percent. That knowledge has never reached a registration or billing policy discussion. The gap is known and measured. It just hasn't traveled upward.
 
-**"This is one problem."** It's at least three structural causes plus one thing that isn't a defect at all. Treating it as a single gap to close produces a single fix aimed at an average of four different things.
+**This is one problem.** It's at least three structural causes, plus one thing that isn't a problem at all. Treating it as a single gap produces a single fix aimed at an average of four different things.
 
-# 2. Each Stakeholder's Actual Problem
+# 2. What Each Stakeholder Actually Experiences
 
-This is where the reframe really turns. Ask any actor in this system what their problem is, and none of them describes the Breakfast Paradox.
+Ask anyone in this system what their problem is, and none of them will describe the Breakfast Paradox. Each person feels a different, smaller piece of it.
 
-| Stakeholder | What they actually experience as their problem | What they don't experience |
+| Stakeholder | What they experience | What they don't experience |
 |---|---|---|
-| **Students** | Being charged ₹48 for a meal they can't realistically use, with no way to recover the money except an informal WhatsApp market | The aggregate. One student's wasted ₹48 is annoying, not alarming, it never accumulates into something worth escalating |
-| **Kitchen and serving staff** | Cooking to a number they didn't set and can't question, then facing a crowd at 9:20 with the popular items already gone | Any channel to report what they see daily. Their observational knowledge of what runs out and when reaches nobody with authority |
-| **The vendor** | Nothing. Registration-based billing insulates revenue from attendance entirely | Any incentive to want this fixed. The actor best positioned to change production behaviour has the least reason to (assumed, pending contract terms) |
-| **CFS / CDS office** | Operational workload, the confirmed, stated motive behind the one policy change on record | The gap as a live problem. It's a number they hold, not a pressure they feel |
-| **CDS Committee** | Menu satisfaction, which they successfully fixed through the rotation | Visibility into what is actually eaten versus registered. They hold menu authority without consumption data |
-| **Academic administration** | Nothing relating to the mess at all. Their timetable solves their own legitimate problems | Any consequence of the 8:30 collision, any channel connecting them to mess governance, and, confirmed, any instance of ever being asked |
-| **Faculty and early-shift staff** | Undefined. No confirmed mess access, no registration allocation, no seat in any map | Existence, as far as the system's own numbers are concerned |
+| Students | Charged for a meal they can't use, with only an informal WhatsApp market to recover the money | The aggregate cost. One student's lost 48 rupees is annoying, not alarming |
+| Kitchen and serving staff | Cooking to a number they didn't set, then facing a crowd at 9:20 with the popular items gone | Any channel to report what they see every day |
+| The vendor | Nothing. Registration-based billing protects revenue regardless of attendance | Any reason to want this fixed (assumed, pending contract terms) |
+| CFS / CDS office | The workload behind the one policy change on record | The gap as something that presses on them daily. It's a number they hold, not a pain they feel |
+| CDS Committee | Menu satisfaction, which they already fixed | Visibility into what's actually eaten versus registered |
+| Academic administration | Nothing related to the mess. Their timetable solves their own problems | Any consequence of the 8:30 collision, or any channel to mess governance |
+| Faculty and early-shift staff | No confirmed mess access and no seat in any stakeholder map | Any presence in the system's own numbers |
 
-**The finding this table produces is the centre of the whole reframe: nobody experiences the Breakfast Paradox as their own problem.** The student experiences a charge. The kitchen experiences a rush. The Chair experiences a statistic. The vendor experiences nothing. The paradox exists only in aggregate, and aggregate is precisely the one thing this system has no mechanism to see, no owner to hold, and no channel to escalate.
+![What each stakeholder actually experiences](assets/diagram30-stakeholder-perspective-grid.png)
 
-# 3. The Tensions That Keep It in Place
+This is the center of the reframe. Nobody experiences the Breakfast Paradox as their own problem. The student feels a charge. The kitchen feels a rush. The office holds a statistic. The vendor feels nothing. The paradox only shows up in aggregate, and aggregate is exactly what this system has no way to see, own, or escalate.
 
-None of these resolves by asking one side to behave better, because each side is already behaving sensibly given the structure it sits inside.
+# 3. The Tensions Holding This in Place
 
-**Individual rationality against aggregate cost.** Registering broadly and reselling what goes unused is correct for one student and produces exactly the waste and crowding this project set out to explain when everyone does it. No individual is behaving badly.
+None of these get fixed by asking one side to behave better. Each side is already behaving sensibly given the structure around it.
 
-**Procurement certainty against demand-matching accuracy.** This is the sharpest tension in the system because *both sides have actually been operated by this same institution*. The standing model gives the vendor a number it can plan four days out. The shock-adaptive model gives real attendance matching and takes that certainty away. Both demonstrably work on their own terms. The institution picks certainty every time the exceptional trigger passes.
+**Individual sense against total cost.** Registering broadly and reselling what goes unused works for one student. When everyone does it, it produces the waste and crowding this project set out to explain. No individual is doing anything wrong.
 
-**Administrative simplicity against real variation.** One registration rule, one billing model, one average-based portioning method, applied across four dining halls that are genuinely three different kitchen systems with different cuisines, capacities and demand skew.
+**Planning certainty against matching real demand.** This is the sharpest tension, because the institution has actually run both sides of it. The standing model gives the vendor a number it can plan four days out. The shock-adaptive model matches real attendance and gives up that certainty. Both worked on their own terms. The institution picks certainty every time the exceptional trigger passes.
 
-**Transparency against gameability.** Publishing the menu two weeks ahead fixed menu fatigue and, by the same office's own unprompted admission, gave students a way to plan their skipping. One policy, both effects, at the same time.
+**One rule against real variation.** One registration rule, one billing model, and one average-based portion size get applied across four dining halls that are really three different kitchen systems with different cuisines, capacities, and demand.
 
-**Loud complaints against quiet costs.** The same escalation pathway that fixed menu fatigue in a single pass has never carried the registration-billing gap, which is larger, already measured, and known to the office that would have to raise it. Same process, two opposite outcomes, determined by how loud the problem feels rather than how much it costs.
+**Transparency against gaming.** Posting the menu two weeks ahead fixed menu fatigue. By the same office's own account, it also gave students a way to plan their skipping. One policy, both effects, at the same time.
 
-**A uniform model against legitimate difference.** Intermittent fasting, regional eating patterns, religious observance and dietary practice all get folded into the same headline turnout figure as ordinary no-shows, because nothing in the system distinguishes a considered choice from a failure.
+**Loud complaints against quiet costs.** The same escalation path that fixed menu fatigue in one pass has never carried the registration-billing gap, even though that gap is bigger and already measured by the office that would need to raise it. Same process, opposite outcomes, depending only on how loud the problem feels.
 
-**Two systems colliding with nobody between them.** The 8:30 class start and the 7:30–9:30 window each likely serve defensible internal logic. There is confirmed zero formal or informal relationship between the actor who sets one and the actors who set the other.
+**One model against real difference.** Intermittent fasting, regional eating habits, religious observance, and personal diet all get folded into the same turnout number as ordinary no-shows, because nothing in the system tells a considered choice apart from a failure.
+
+**Two systems colliding with nobody between them.** The 8:30 class start and the 7:30 to 9:30 breakfast window likely each serve a real purpose on their own side. There is no confirmed relationship, formal or informal, between whoever sets one and whoever sets the other.
 
 # 4. Reading It Through the Iceberg
 
-The original framing operated entirely at the top two layers. The causes sit at the bottom two.
+The original framing stayed at the top two layers of the Iceberg. The real causes sit at the bottom two.
 
-**Events**, the things that actually happened. A student charged ₹48 a day for a Kadamba breakfast they mostly don't attend. Idli, puri and bhatura gone by 9:20 with staff-promised restocks that don't arrive. A frog in the chicken biryani in November 2024 and non-veg service pulled without explanation. The December 2024 cancellation tightening pushed through despite a Ping survey and two Parliament meetings. The Felicity walk-in relaxation. The vote that ended the fixed-semester menu.
+![Reading the reframe through the Iceberg Model](assets/diagram31-reframe-iceberg.png)
 
-**Patterns**, what those events add up to. Registration exceeds attendance every month, worst at breakfast. Every one of six interviewed students registers monthly rather than daily. Zero of six have ever gotten value out of Skip Meal. Four of six use Mess Cell. Crowding builds continuously to a crest just before the 9:30 close. Complaints sit unaddressed until an incident forces a response. And the counter-pattern that proves the system *can* act: a loud problem escalated cleanly and got fixed.
+**Events.** A student charged 48 rupees a day for a Kadamba breakfast they mostly skip. Idli, puri, and bhatura gone by 9:20, with staff-promised restocks that don't show up. A frog in the chicken biryani in November 2024. The December 2024 cancellation tightening, pushed through despite a Ping survey and two Parliament meetings. The Felicity walk-in relaxation. The vote that ended the fixed-semester menu.
 
-**Structures**, the rules and designs producing those patterns. Billing fires at registration, not consumption. Sourcing locks four days ahead. Cancellation is capped at five a month. Walk-in pricing runs seventy to ninety percent above registered rates. Skip Meal notifies the kitchen and returns the student nothing. Decision rights split four ways across menu, kitchen, timetable and billing with no actor owning the outcome end to end. Feedback is triaged by intensity rather than by measured cost. And an informal resale market doing work the formal system doesn't.
+**Patterns.** Registration beats attendance every month, worst at breakfast. All six interviewed students register monthly, not day by day. None of the six ever got value from Skip Meal. Four of six use Mess Cell. Crowding builds through the morning to a peak right before the 9:30 close. Complaints sit until an incident forces a response, except once, when a loud complaint got fixed cleanly.
 
-**Mental models**, the beliefs holding those structures up. That an aggregate registration count is an adequate stand-in for real demand, held even by the office that can name the exact gap. That a registration already made costs nothing extra to leave unused, so there's no reason to register conservatively. That procurement certainty is permanently worth more than demand accuracy, rather than a judgment to be re-made case by case. That operational policy is the Mess Office's own to set, with consultation optional under time pressure. That breakfast is a meal everyone should default into, visible in the fact that a student who never registers is still automatically allocated a vegetarian meal somewhere.
+**Structures.** Billing fires at registration, not consumption. Sourcing locks four days ahead. Cancellation is capped at five a month. Walk-in pricing runs 70 to 90 percent above the registered rate. Skip Meal tells the kitchen but pays the student nothing. Menu, kitchen, timetable, and billing sit with four separate owners, and none of them owns the whole outcome. Feedback gets triaged by how loud it is, not by what it costs. An informal resale market fills the gap the formal system leaves.
 
-Phase 1 asked an events-and-patterns question. Everything that would actually move this system sits in the bottom two rows.
+**Mental models.** That a registration count is a good enough stand-in for real demand, a belief the office holding the real numbers still keeps. That a registration already made costs nothing extra to leave unused. That planning certainty is always worth more than demand accuracy, rather than a case-by-case call. That operational policy belongs to the Mess Office alone, with consultation optional under time pressure. That breakfast is a meal everyone should default into, which is why a student who never registers still gets automatically assigned one.
 
-# 5. Why This System Is Stable Rather Than Broken
+Phase 1 asked a question about events and patterns. Everything that would actually move this system sits in the bottom two rows.
 
-This is the part the original framing missed entirely, and it's the most important systems observation in the project.
+# 5. Why This System Holds Steady Instead of Breaking
 
-A problem normally persists because nobody has solved it, or because solving it is too expensive, or because someone benefits from it continuing. None of those are the main story here. This gap persists because **every consequence it generates is absorbed by a well-functioning mechanism before it can become a signal anyone has to answer for.**
+This is the part the original framing missed, and it's the most important finding in the project.
 
-The Mess Cell resale market absorbs the student's financial loss. Composting absorbs the physical surplus, competently enough to earn a five-star food-safety rating. Staff eating unclaimed food absorbs another share of that surplus before it's ever counted as waste at all. Alternative venues, the VC canteen, juice stalls, delivery apps, absorb the dissatisfaction that would otherwise arrive as a complaint about mess hours. Informal accommodation absorbs the cultural and dietary mismatch that never gets filed as a request because the exemption process was never built for it.
+A problem usually keeps going because nobody solved it, solving it costs too much, or somebody benefits from it staying broken. None of those is the real story here. This gap holds steady because every consequence it creates gets absorbed by something that works well, before it ever becomes a signal anyone has to answer for.
 
-Every one of these is locally good. Students genuinely recover money. Waste genuinely gets handled responsibly. Staff genuinely get fed. Students with mismatched schedules genuinely get food. Not one of them is a failure, and none should be removed.
+The Mess Cell resale market absorbs the student's financial loss. Composting absorbs the physical surplus, well enough to earn a five-star food safety rating. Staff eating unclaimed food absorbs another share of the surplus before it's even counted as waste. Outside venues like the VC canteen, juice stalls, and delivery apps absorb the frustration that would otherwise turn into a complaint about mess hours. Informal workarounds absorb the cultural and dietary mismatch that never gets filed as a request, because the exemption process was never built for it.
 
-Their combined effect is that no financial signal, no volumetric signal, and no cultural signal ever reaches an actor positioned to act on it. Waste is never measured by volume, so it can't be escalated even if the escalation design listened for data, and it doesn't; it listens for complaint intensity. A system with this many competent absorption layers is structurally resistant to ever generating the pressure a fundamental fix would require.
+Every one of these genuinely helps. Students really do recover money. Waste really does get handled responsibly. Staff really do get fed. None of them should be removed.
 
-That reframes the core question from *why hasn't this been fixed* to *what in this system would ever have made anyone fix it*, and the honest answer, on the evidence, is nothing.
+Together, they mean no financial signal, no volume signal, and no cultural signal ever reaches anyone positioned to act. Waste is never measured by volume, so it can't be escalated even if the system listened for that kind of data, and it doesn't. It listens for complaint intensity. A system with this many working absorption layers rarely builds enough pressure to force a fundamental fix.
 
-# 6. Alternative Framings Considered
+That changes the real question, from why hasn't this been fixed, to what in this system would ever make someone fix it. On the evidence, the honest answer is nothing.
 
-**Framing A, the original: "How do we get more registered students to actually attend?"** Rejected. It targets attendance as the goal, which collides directly with the confirmed finding that a real share of non-attendance is legitimate. It also aims the fix at the actor with the least power and the most defensible behaviour.
+# 6. Other Ways to Frame This, and Why They Fall Short
 
-**Framing B, compliance: "How do we make registration a more accurate signal of intent?"** Rejected. It assumes better student behaviour or stricter rules are the missing ingredient. The institution's own proven alternative required no change in student behaviour at all, it removed the need for registration to be an accurate signal in the first place.
+**"How do we get more registered students to actually attend?"** This was the original framing. It treats attendance as the goal, which runs straight into the finding that a real share of non-attendance is legitimate. It also points the fix at the people with the least power and the most defensible behavior.
 
-**Framing C, governance: "Who should own the registration-attendance gap?"** Closer, and true as far as it goes, but incomplete. Fragmented ownership explains why a known fix was never picked back up. It doesn't explain why the gap never became loud enough to demand an owner in the first place. That requires the attention mechanism and the absorption layers above.
+**"How do we make registration a more accurate signal of intent?"** This assumes better student behavior or stricter rules would fix it. The institution's own proven alternative required no change in student behavior at all. It removed the need for registration to be accurate in the first place.
 
-**Framing D, the systemic framing this evidence supports.** The gap is not an unsolved problem or an unowned one. It is a stable equilibrium maintained by three structures, a bill that fires at registration rather than consumption, decision rights split four ways, and an attention mechanism that triggers on how loudly a problem is felt rather than how much it costs, and insulated from correction by a set of locally beneficial absorption mechanisms that remove every signal before it can travel.
+**"Who should own the registration-attendance gap?"** Closer, but incomplete. Fragmented ownership explains why a known fix was never picked back up. It doesn't explain why the gap never got loud enough to demand an owner in the first place.
+
+**The framing stated at the top of this document** is the one the evidence actually supports: a stable equilibrium, held in place by three structures, and protected by absorption mechanisms that are each genuinely useful on their own.
 
 # 7. Validating the Reframe
 
-Framing D rests on evidence rather than argument at each of its three joints.
+Three pieces of evidence support this framing, and one open question limits it.
 
-The claim that the fix is possible is not a hypothesis: the shock-adaptive model already ran, twice, at this institution, and closed the exact gap in question. This is the strongest form a counterfactual can take, not "if this were removed, the pattern would probably stop," but "when this was removed, the pattern did stop."
+The claim that a fix is possible isn't a guess. The shock-adaptive model already ran twice at this institution and closed the exact gap in question. That's the strongest kind of evidence available: not "if this were removed, the pattern would probably stop," but "when this was removed, the pattern stopped."
 
-The claim that fragmentation is why it wasn't kept is confirmed rather than inferred: the CFS Chair holds the precise turnout figures, and that awareness is confirmed never to have reached a registration or billing policy conversation.
+The claim that fragmentation is why the fix wasn't kept is confirmed, not inferred. The CFS Chair holds the exact turnout figures, and that awareness has never reached a registration or billing policy conversation.
 
-The claim that attention is intensity-triggered rather than severity-triggered is evidenced by the system's own two opposite outcomes under one escalation design, menu fatigue, felt sharply and daily, travelled the full Student Council to Committee pathway and produced a real policy change; the registration-billing gap, larger and already quantified, has never entered it.
+The claim that attention responds to intensity rather than cost is shown by the system's own two different outcomes under one escalation design. Menu fatigue, felt daily and sharply, traveled the full path from Student Council to Committee and produced a real policy change. The registration-billing gap, bigger and already measured, has never entered that same process.
 
-And the whole shape matches the best-evidenced systems archetype in the project: the system optimises the thing it can easily measure and bill against (registration count) while its own stated goal, printed on its own poster, is minimising waste and matching food to real demand. The divergence between the two is confirmed, quantified, and known, and has produced no change, which is exactly what this archetype predicts.
+The whole shape matches the clearest systems pattern in the project. The system optimizes for what it can easily measure and bill against, which is registration count. Its own stated goal, printed on the main CDS dining poster, is to provide nutritious, hygienic, affordable meals while minimizing food wastage through advance meal planning. The CDS Student Handbook lists reduced food wastage and better meal planning as the direct benefits of registering ahead. The easy metric and the stated goal have clearly diverged. The institution already knows it. Nothing has changed.
 
-One joint remains unvalidated and is named honestly rather than assumed past: whether the vendor's actual contract terms could absorb any standing version of the attendance-tracked model. Nobody has asked. If the answer is no, Framing D still holds, but the intervention it points to shifts from adoption to renegotiation.
+One question stays open, named honestly rather than assumed away: whether the vendor's actual contract terms could support any standing version of the attendance-tracked model. Nobody has asked. If the answer is no, this framing still holds, but the fix shifts from adoption to renegotiation.
 
-# 8. Reframed Systemic Problem Statement
+# 8. What's Still Missing
 
-> **The Breakfast Paradox is not a gap between registration and attendance. It is a stable equilibrium the system maintains around that gap, because every actor's behaviour within it is individually rational and every consequence it produces is absorbed before it can become a signal.**
->
-> Billing fires at registration rather than at consumption. That single structure removes the cost of inaccuracy from the student and the revenue risk from the vendor at the same time, so neither party closest to the daily decision has any reason to want the number to be accurate. What follows is then quietly absorbed: the resale market takes the student's financial loss, composting and staff consumption take the physical surplus, outside venues take the dissatisfaction, and informal workarounds take the cultural mismatch. Each absorption is locally useful and none should be removed. Together they ensure the gap never generates a signal loud enough to reach a system whose attention is triggered by complaint intensity rather than measured cost, and whose decision rights over this outcome are split across four actors none of whom holds both the knowledge and the authority to act.
->
-> This is why the one office that can state the gap's exact size has never had reason to raise it, and why an attendance-tracked model that already worked twice was retired both times without evaluation. No single actor experiences this as their own problem, the student experiences a charge, the kitchen a rush, the office a statistic, the vendor nothing at all. The paradox exists only in aggregate, and aggregate is the one thing this system has no mechanism to see.
+The single biggest open question is whether the vendor's contract terms could support any standing or partial version of the attendance-tracked model, and if not, exactly which term rules it out. Nobody has asked this directly. It's the difference between calling the current default a considered trade-off and calling it an unexamined one.
 
-# 9. What's Still Missing
-
-The single load-bearing open question is whether the vendor's contract terms could absorb any standing or partial version of the attendance-tracked model, and if not, exactly which term makes it infeasible. This has never been asked directly, and it is the difference between describing the current default as a considered trade-off and describing it as an unexamined one.
-
-Two smaller items carry forward. Why Skip Meal's usage sits near zero even though its effect on kitchen forecasting is now confirmed to work, an awareness gap, a trust gap and a portal-friction problem each imply a different fix, and this project cannot currently tell them apart. And the CDS Chair, the actor with the most formal authority in the entire dining chain, has still never been interviewed; every account of CDS decision-making here comes from one level up.
+Two smaller items carry forward. Skip Meal's usage sits near zero even though it's now confirmed to work for kitchen forecasting. An awareness gap, a trust gap, and a portal-friction problem would each point to a different fix, and this project can't yet tell them apart. And the CDS Chair, who holds the most formal authority in the dining chain, has still never been interviewed. Every account of CDS decision-making here comes from one level up.
