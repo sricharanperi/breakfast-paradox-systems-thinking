@@ -1,0 +1,10 @@
+key,scenario,eaten_per_day,baseline_surplus_per_day,baseline_short_per_day,refined_cooked_per_day,refined_surplus_per_day,refined_short_per_day,refined_diners_waiting_per_day,refined_line_days_short_of_46
+normal,Normal day (backtest),397,362,0.0,485,91,2.6,3.4,7
+exam_unwarned,"Exam or fest week: 25% fewer eaters (assumed), plan not warned",297,462,0.0,421,123,0.0,0.0,0
+exam_warned,"Exam or fest week: 25% fewer eaters, calendar note scales the forecast by 0.75",297,462,0.0,363,67,2.1,2.5,9
+favourite,"Favourite-item day: 25% more eaters (assumed), plan not warned",496,264,0.6,575,89,9.1,14.2,13
+eaters_minus10,Rule change shifts eaters down 10% (assumed),357,402,0.0,456,100,1.4,0.7,4
+eaters_plus10,Rule change shifts eaters up 10% (assumed),436,323,0.0,519,89,5.6,6.5,12
+crest_plus10,Heavier crest: 10 points of diners move from before 9:00 to 9:15-9:30,397,362,0.0,436,52,12.6,0.3,15
+gas,"Gas shortage: every batch takes 30 minutes to land (assumed), plan not warned",397,362,0.0,485,91,2.6,25.3,7
+late_fail,Failed 9:00 late batch: only the reactive 15-minute top-up acts,397,362,0.0,386,33,43.6,32.5,26

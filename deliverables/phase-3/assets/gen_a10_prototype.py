@@ -26,13 +26,13 @@ def X(i):
     return 360 + i * 300
 
 
-LANES = {"stu": (270, "Students", STU, "#fff3e0"), "kit": (510, "Kitchen", PROC, "#e3f2fd"),
-         "rec": (750, "Records", SOC, "#f3e5f5"), "gov": (990, "Governance", GOV, "#e0f2f1")}
+LANES = {"stu": (270, "Students", STU, "#fff3e0"), "kit": (510, "Kitchen: the quick fix, named as such", PROC, "#e3f2fd"),
+         "rec": (750, "Records", SOC, "#f3e5f5"), "gov": (990, "Governance: the fundamental fix, on fixed dates", GOV, "#e0f2f1")}
 COLS = ["Evening before", "5:30 to 7:30", "7:30 to 9:00", "9:00", "9:15 to 9:30 and after", "After service",
         "Weekly and monthly"]
 
-b = [tx(40, 56, "Intervention Prototype: the recommended bundle over one breakfast", 30, "800", "#1a237e"),
-     tx(40, 88, "Where each piece acts, from the evening before to the monthly review. Kadamba first; the same card and sheet transfer from Yuktāhār.", 15, "400", "#555")]
+b = [tx(40, 56, "Intervention Prototype: the re-sequenced bundle over one breakfast", 30, "800", "#1a237e"),
+     tx(40, 88, "Where each piece acts, from the evening before to the monthly review. The kitchen lane is the quick fix that buys time; the student, records and governance lanes carry the fundamental fix on fixed dates.", 15, "400", "#555")]
 for k, (y, name, c, fill) in LANES.items():
     b.append(f'<rect x="20" y="{y - 105}" width="{W - 40}" height="210" rx="18" fill="{fill}" fill-opacity="0.55" stroke="{c}" stroke-opacity="0.35"/>')
     b.append(tx(40, y - 78, name, 16, "800", c))
@@ -50,7 +50,7 @@ def node(i, lane, icon, l1, l2, color, dashed=False):
 
 
 b += [
-    node(0, "stu", "ic-toggle", "Sunday skip", "by Saturday 8 pm; no charge, lower count", STU, True),
+    node(0, "stu", "ic-toggle", "Sunday skip (proposed wk 6)", "by Sat 8 pm; no charge, lower count", STU, True),
     node(2, "stu", "ic-people", "Diners arrive", "Sundays: 13.5% in by 8:00", STU),
     node(4, "stu", "ic-warning", "Closing crest", "Sundays: 46% after 9:15", STU),
     node(0, "kit", "ic-calendar-x", "Day-before plan card", "grams x expected eaters", PROC),
@@ -59,10 +59,10 @@ b += [
     node(4, "kit", "ic-pot", "Late batch lands 9:15", "counter top-up still on", PROC),
     node(5, "kit", "ic-bowl", "Named allowance", "outside diners and staff", PROC),
     node(5, "rec", "ic-briefcase", "One-page daily sheet", "batch, top-ups, run-out, left", SOC),
-    node(6, "rec", "ic-qr", "Breakfast Ledger", "booked, cooked, eaten, left", SOC),
+    node(6, "rec", "ic-qr", "Breakfast Ledger", "booked, cooked, eaten, charged", SOC),
     node(2, "gov", "ic-shield", "Tasting: quantity line", "first batch vs yesterday", GOV, True),
-    node(5, "gov", "ic-people", "Operator exchange", "Yuktāhār hosts Kadamba", GOV),
-    node(6, "gov", "ic-building", "Rule owner, threshold", "review, never a deduction", GOV, True),
+    node(5, "gov", "ic-people", "Joint reading (wk 4)", "operators, CDS, students, facility", GOV),
+    node(6, "gov", "ic-building", "Goal, beliefs, threshold", "review, never a deduction", GOV, True),
 ]
 
 sy, ky, ry, gy = (LANES[k][0] for k in ("stu", "kit", "rec", "gov"))

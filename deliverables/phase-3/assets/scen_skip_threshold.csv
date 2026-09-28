@@ -1,0 +1,7 @@
+ratio_pct,line,min_safe_uptake_sundays_pct,min_safe_uptake_all_days_pct,days_unsafe_at_50pct_uptake,days_unsafe_at_25pct_uptake,days
+60,veg,72.5,47.2,1,0,30
+60,nonveg,49.0,3.6,25,9,30
+70,veg,82.3,66.1,0,0,30
+70,nonveg,67.2,38.0,7,0,30
+80,veg,89.7,80.2,0,0,30
+80,nonveg,80.9,63.8,0,0,30

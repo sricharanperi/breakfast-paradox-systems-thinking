@@ -399,35 +399,37 @@ Questions that do **not** block the rebuild (draw as open and move on): Mess Cou
 
 ## 7. Phase 3 additions (appended 2026-09-27, Phase 3 start)
 
-Activities 9 and 10 were written in markdown on 2026-09-27 (MASTER_CONTEXT D-63 to D-69). Nothing in this section has been executed. Phase 3 renders come after Phase 1 and Phase 2 (D-53 order).
+Activities 9 and 10 were written in markdown on 2026-09-27 (MASTER_CONTEXT D-63 to D-69) and revised on 2026-09-28 against Lectures 11-15 (D-70 to D-78). No render in this section has been executed; the diagrams and charts in 7.2 are built. Phase 3 renders come after Phase 1 and Phase 2 (D-53 order).
 
 ### 7.1 Status rows (`deliverables/phase-3/`)
 
 | # | Deliverable | Markdown (source) | Docx | PDF | Embedded images (all in `assets/`) | Regenerate | Order |
 |---|---|---|---|---|---|---|---|
-| 1-2 | Leverage-Point / System Intervention Map and Design Principles (Activity 9) | `09-leverage-point-intervention-map-and-design-principles.md` (current, ~9,350 words, 0 em dashes) | none yet | none yet | diagram-a9-leverage-intervention-map | docx, PDF (diagram current) | P3-a |
-| 3-5 | Intervention Concepts, Scenario Model and Final System Design Recommendation (Activity 10) | `10-design-test-evaluate-interventions.md` (current, ~10,150 words, 0 em dashes; verifier applied fixes, no second verification run recorded) | none yet | none yet | diagram-a10-intervention-prototype, chart-a10-kitchen-scenarios, chart-a10-sunday-veg-batches, chart-a10-bot-projection | quick re-check, docx, PDF (images current) | P3-b |
+| 1-2 | Leverage-Point / System Intervention Map and Design Principles (Activity 9) | `09-leverage-point-intervention-map-and-design-principles.md` (revised 2026-09-28, ~14,760 words, 0 em dashes; LP1-LP12 with "Place n of 12" labels, P1-P7; verifier applied fixes, no second verification run recorded) | none yet | none yet | diagram-a9-leverage-intervention-map | quick re-check, docx, PDF (diagram current, re-rendered 2026-09-28) | P3-a |
+| 3-5 | Intervention Concepts, Scenario Model and Final System Design Recommendation (Activity 10) | `10-design-test-evaluate-interventions.md` (revised 2026-09-28, ~17,770 words, 0 em dashes; verified pass: true) | none yet | none yet | diagram-a10-intervention-prototype, chart-a10-kitchen-scenarios, chart-a10-sunday-veg-batches, chart-a10-stress-tests, chart-a10-bot-projection | docx, PDF (images current, re-rendered 2026-09-28) | P3-b |
 | - | Phase 3 input brief | `00-phase3-input-brief.md` (working input, never submitted; still LP-A..LP-O, mapping in D-64) | none | none | none | do not render | - |
 | - | Bundle | none | none | `Invictus_Phase3.pdf` (not yet created) | none | concatenate cover + 09 + 10 | P3-c |
 | - | LaTeX report | `report/phase3.tex` (not yet created) | none | `report/phase3.pdf` | via `\graphicspath{{../deliverables/phase-3/assets/}}` | write (7.4), compile, scrub | P3-d |
 
-Before P3-b: re-run `python3 deliverables/phase-3/assets/scenario_model.py` and check that every number in 10 still matches its `scen_*.csv` (15 files, including `scen_late_cap.csv`) and that the weighted scores recompute (bundle 80%, single concepts 51 to 74%).
+Before P3-b: re-run `python3 deliverables/phase-3/assets/scenario_model.py` and check that every number in 10 still matches its `scen_*.csv` (22 files, including `scen_late_cap.csv` and the 2026-09-28 sensitivity and stress files) and that the weighted scores recompute (weights 15/15/15/15/10/10/10/5/5 out of 400; both bundles 79%, single concepts 48 to 68%). The 2026-09-28 verification already did this for 10; repeat only if a source changes. Re-check 09 once (its verifier's fixes had no second run).
 
 ### 7.2 Diagrams: built vs still needed
 
-**Built (current, each viewed after rendering):**
+**Built (current, each viewed after rendering; all re-rendered 2026-09-28):**
 
 | File | Embedded in | Generator |
 |---|---|---|
-| `diagram-a9-leverage-intervention-map.png` (+ `.html`) | 09 (Deliverable 1) | `gen_leverage_map.py` (svgkit, headless Chrome; IP1-IP14 tags on the map) |
-| `diagram-a10-intervention-prototype.png` (+ `.html`) | 10 (Prototypes) | `gen_a10_prototype.py` |
-| `chart-a10-kitchen-scenarios.png` (+ `.html`) | 10 (Scenario 1) | `gen_a10_charts.py` |
-| `chart-a10-sunday-veg-batches.png` (+ `.html`) | 10 (Scenario 3) | `gen_a10_charts.py` |
-| `chart-a10-bot-projection.png` (+ `.html`) | 10 (Scenario 6) | `gen_a10_charts.py` (reads `scen_bot_projection.csv`) |
+| `diagram-a9-leverage-intervention-map.png` (+ `.html`) | 09 (Deliverable 1) | `gen_leverage_map.py` (svgkit, headless Chrome, 2400x1580; IP1-IP14 tags; "Place n of 12" depth palette for places 2, 3, 4, 5, 6, 8, 10; LP11 and LP12 markers; LP5 at 6 and 8, LP6 at 6 and 10; 12-item key; no overlaps, nothing off the canvas. LP3's place 8 target is not drawn separately, stated in caption and legend. Rendered before the verifier's text-only fixes to 09) |
+| `diagram-a10-intervention-prototype.png` (+ `.html`) | 10 (Prototypes) | `gen_a10_prototype.py` (lanes labelled quick fix / fundamental fix; "charged" ledger chip; joint-reading chip) |
+| `chart-a10-kitchen-scenarios.png` (+ `.html`) | 10 (Scenario 1) | `gen_a10_charts.py` (numbers unchanged) |
+| `chart-a10-sunday-veg-batches.png` (+ `.html`) | 10 (Scenario 3) | `gen_a10_charts.py` (numbers unchanged) |
+| `chart-a10-stress-tests.png` (+ `.html`) | 10 (Scenario 6, new 2026-09-28) | `gen_a10_charts.py` (reads `scen_stress.csv`) |
+| `chart-a10-bot-projection.png` (+ `.html`) | 10 (Scenario 7) | `gen_a10_charts.py` (reads `scen_bot_projection.csv`; rebuilt 2026-09-28 with range bands, stage markers for the joint reading, skip proposal, Sunday skip in force and decision point, and a conditional every-day band) |
 
 **Still needed (none blocks the render):**
 - DW-P3-01 (optional): annotated CLD overlay showing where the recommended bundle acts on L10, L11, L12, L13, L14 and L17 (loop IDs and verdicts from 07b; no chain promoted to a loop).
-- DW-P3-02 (optional): the Activity 10 scoring table as a heat table for the PDF (currently a markdown table).
+- DW-P3-02 (optional): the Activity 10 scoring table as a heat table for the PDF (currently a markdown table; now 9 criteria, 4 gates).
+- DW-P3-04 (optional): the Activity 9 archetype table or the Activity 10 scenario-by-indicator matrix (Scenario 8, 6 x 11) as a figure, if the markdown tables do not fit the page width.
 - DW-P3-03 (blocked on data): a Yuktāhār version of the Sunday arrival chart, once Yuktāhār breakfast scan times exist.
 - Style check: the Activity 10 charts draw a white background while svgkit's page is #fbfbfd (harmless in PDF); Activity 9's caption is italic text under the image, whereas Phase 2 used alt text only. Pick one convention at render time.
 
@@ -461,11 +463,11 @@ A Phase 3 LaTeX report, `report/phase3.tex`, should **mirror `report/phase2.tex`
 | phase3.tex section | Rewrite from | Figures |
 |---|---|---|
 | Introduction (incl. deliverable-to-section map) | 09 and 10 Overviews | none |
-| Activity 9: Identify leverage points; explore changes to rules, roles, incentives, information flows and processes | 09 "Identify Leverage Points" (LP1-LP10, ranking) and "Explore Changes..." (five subsections, natural comparison) | none |
+| Activity 9: Identify leverage points; explore changes to rules, roles, incentives, information flows and processes | 09 "Identify Leverage Points" (LP1-LP12, archetypes, ranking) and "Explore Changes..." (five subsections, natural comparison) | none |
 | Activity 9, Deliverable 1: Leverage-Point / System Intervention Map | 09 "Identify Potential Intervention Points" (IP1-IP14, Sunday breakfast) and "Deliverable 1" (map, table, absorber and stakeholder checks) | diagram-a9-leverage-intervention-map |
-| Activity 9, Deliverable 2: Design Principles | 09 "Develop Design Principles" (P1-P6) | none |
+| Activity 9, Deliverable 2: Design Principles | 09 "Develop Design Principles" (Design Objective, Case for the Status Quo, P1-P7) | none |
 | Activity 10, Deliverable 3: Intervention Concepts / Prototypes | 10 "Generate Alternative Interventions" and "Prototypes" | diagram-a10-intervention-prototype |
-| Activity 10, Deliverable 4: Scenario Model and Impact Evaluation | 10 Scenario Model (Scenarios 1-6), "Simulate Stakeholder Responses", "Test Interventions Against System Objectives", "Identify Unintended Consequences" | chart-a10-kitchen-scenarios, chart-a10-sunday-veg-batches, chart-a10-bot-projection |
+| Activity 10, Deliverable 4: Scenario Model and Impact Evaluation | 10 Scenario Model (Scenarios 1-8), "Simulate Stakeholder Responses", "Test Interventions Against System Objectives", "Identify Unintended Consequences" | chart-a10-kitchen-scenarios, chart-a10-sunday-veg-batches, chart-a10-stress-tests, chart-a10-bot-projection |
 | Activity 10, Deliverable 5: Final System Design Recommendation | 10 "Refine the Intervention" and "Deliverable 5" | none |
 | Key Findings and Outstanding Evidence | 09 and 10 closing sections, merged without duplicates | none |
 

@@ -1,0 +1,1313 @@
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                                            LECTURE 11
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                                 QUIZ 1 - 15 Minutes
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Design Thinking Vs System Thinking
+                    Design Thinking and Systems Thinking are
+                    complementary approaches. They can be used
+                    independently, but they are much more powerful
+                    when used together, especially for complex
+                    products, services, organisations, and social
+                    problems.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+iCPD   Product Design and Development                   2026
+
+
+
+
+       Design Thinking Vs System Thinking
+       Human Lens
+               Who?
+               What do they need?
+               What do they experience?
+               What matters to them?
+       System Lens
+               What is happening?
+               Why does it keep happening?
+               Who and what are connected?
+               What structures produce the behaviour?
+               What might happen next?
+iCPD    Product Design and Development                                                                          2026
+
+
+
+
+       Design Thinking Vs System Thinking
+                                         Design Thinking                        Systems Thinking
+
+        Primary focus                    People and their needs                 The whole system and relationships
+
+                                         Are we solving the right problem for   Why does this problem exist and keep
+        Main question
+                                         people?                                recurring?
+
+        Perspective                      Human-centred                          System-centred / holistic
+
+                                                                               Relationships, structures, feedback,
+        Looks at                         Users, experiences, needs, behaviours
+                                                                               delays
+                                                                                Understanding of system behaviour
+        Typical outcome                  A desirable solution
+                                                                                and leverage points
+                           May solve the user's immediate                       May understand the system well but
+        Risk if used alone problem but ignore wider                             struggle to create desirable human-
+                           consequences                                         centred solutions
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              When Should You Use Design Thinking?
+               Design Thinking is particularly useful when the problem
+               involves people, uncertainty, unmet needs, experiences, or
+               innovation.
+               Typical situations : Designing a new product
+               For example: Students struggle to manage their academic
+               workload.
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              When Should You Use Design Thinking?
+               Design Thinking helps ask:
+                  Who are the students?
+                  What are they struggling with?
+                  What do they currently do?
+                  What frustrates them?
+                  What do they actually need?
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              When Should You Use Design Thinking?
+               Good use cases
+                       Designing a mobile app
+                       Improving a website
+                       Designing a physical product
+                       Improving customer experience
+                       Improving hospital patient experience
+                       Designing educational experiences
+                       Improving student services
+                       Developing new services
+                       Innovation and product development
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              When Should You Use Systems Thinking?
+               Systems Thinking becomes particularly important when the
+               problem is:
+                       Complex
+                       Recurring
+                       Involving multiple stakeholders
+                       Producing unintended consequences
+                       Influenced by feedback loops
+                       Changing over time
+
+               Example: Traffic congestion
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              When Should You Use System Thinking?
+               A Design Thinking approach may ask:
+               How can we make commuting easier for citizens?
+               But Systems Thinking asks:
+                   Why does congestion keep returning?
+                   What happens when we build more roads?
+                   Does increased road capacity encourage more cars?
+                   What role does public transport play?
+                   What incentives influence people's choices?
+                   Are there delays?
+                   Are there reinforcing loops?
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+iCPD    Product Design and Development                                          2026
+
+
+
+
+       When Should You Use System Thinking?
+       Good use cases
+           University Student Attendance
+               Problem: Students are not attending classes regularly.
+           Food Delivery Ecosystem
+               Problem: How can delivery become faster?
+           Hostel Wi-Fi and Internet Bandwidth
+               Problem: The internet becomes slow every evening.
+           Product User Complaints       📱
+               Problem: Users keep complaining despite frequent software updates.
+           Hospital Emergency Department     🏥
+               Problem: Patients experience long waiting times.
+iCPD    Product Design and Development                                     2026
+
+
+
+
+       When Should You Use System Thinking?
+       Good use cases
+           Project Delays in Software Teams
+               Problem: Every project misses its deadline.
+           Campus Waste Management
+               Problem: The campus generates excessive waste.
+           Employee Burnout in an Organisation
+               Problem: Employees are increasingly stressed and leaving.
+           Water Shortage
+               Problem: A city experiences water shortages.
+           Education and Examination System
+               Problem: Students focus on marks rather than learning.
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              When Should You Use System Thinking?
+               A Good Rule of Thumb for Students
+               Use Systems Thinking when a problem involves multiple
+               interconnected elements, multiple stakeholders, feedback loops,
+               delays, recurring behaviour, or unintended consequences.
+
+               This makes Systems Thinking especially valuable for complex
+               problems where fixing one part can affect many other parts of the
+               system.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                                                2026
+
+
+
+
+              Design Thinking without Systems
+              Thinking can produce:
+              "A beautiful solution to the wrong systemic problem."
+              For example: Build a better flyover.
+
+              The flyover may be:                                                                    But it may still increase:
+                        Well designed                                                                    Car dependency
+                        User-friendly                                                                    Induced demand
+                        Efficient                                                                        Urban sprawl
+                        Aesthetically excellent
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              Systems Thinking without Design
+              Thinking can also fail:
+              Suppose you perfectly understand:
+                  Feedback loops
+                  System structures
+                  Incentives
+                  Delays
+                  Stakeholders
+              But then you design a solution without understanding users.
+              You may produce: A technically perfect system that nobody wants to use.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              Systems Thinking without Design
+              Thinking can also fail:
+              Suppose you perfectly understand:
+                  Feedback loops
+                  System structures
+                  Incentives
+                  Delays
+                  Stakeholders
+              But then you design a solution without understanding users.
+              You may produce: A technically perfect system that nobody wants to use.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+              Systems Thinking without Design
+              Thinking can also fail:
+              For example:
+              A university develops a highly efficient
+              "Automated academic advising system."
+              But students find it Confusing, Impersonal and Difficult to access
+              What we produuced? Systemically efficient but Humanly poor.
+
+              This is why Design Thinking matters.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Design Thinking + System Thinking
+                    Design Thinking helps us design the right solution for
+                    people.
+                    Systems Thinking helps us understand whether that
+                    solution addresses the deeper problem and how it will affect
+                    the larger system.
+
+                    They should ideally work together.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+Experiences
+   iCPD             Product Design and Development                                                                               2026
+
+
+
+
+              The Ideal Relationship
+                        PROBLEM
+
+
+
+
+                                                                 DESIGN                                             SYSTEMS
+                   SYSTEMS                                                                           CO-DESIGN      THINKING
+                                                               THINKING
+                  THINKING                                                                            Generate        Check
+                                                               Understand
+                Understand WHY                                                                        solutions   consequences
+                                                                  WHO                                              and system
+               the problem exists
+                                                              experiences it.                                        impact
+
+
+                                                                                                                    PROBLEM
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                                            LECTURE 12
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+  In India overall, air pollution is estimated to cause
+  over 2 million premature deaths each year, making
+  it a leading environmental risk factor nationwide.
+  Approximately 17,188 deaths in Delhi linked to Air
+  Pollution in 2023
+    Metric                                                    Typical Value
+    WHO annual PM2.5 guideline                                5 µg/m³
+    Delhi winter average PM2.5                                ~178 µg/m³
+    National PM2.5 standard (India)                           40 µg/m³
+    Annual average AQI (2025)                                 ~201
+    Annual average AQI (2026 est.)                            ~280
+    PM10 annual average                                       ~200 µg/m³
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    How do we resolve this?
+
+                    Who should take responsibility?
+                    Activity
+                            Form a group of 3 members
+                            and...
+
+
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Applying Systems Thinking to the Delhi Air Pollution Challenge
+                     STEP 1 Define the Problem
+                     STEP 2 Define System Boundary
+                     STEP 3 Identify Stakeholders
+                     STEP 4 Identify Events
+                     STEP 5 Identify Patterns Over Time
+                     STEP 6 Identify System Structures
+                     STEP 7 Identify Mental Models
+                     STEP 8 Identify Variables
+                     STEP 9 Map Causal Relationships
+                     STEP 10 Identify Feedback Loops
+                     STEP 11 Identify Delays
+                     STEP 12 Identify System Archetypes
+                     STEP 13 Find Leverage Points
+                     STEP 14 Develop Multi-Level Interventions
+                     STEP 15 Monitor System Behaviour Over Time
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                                 LECTURE 13 -7 Sep
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                              LECTURE 14 - 10 Sep
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    JEE coaching phenomenon
+                    Conventional Problem Statement
+                    The Indian JEE preparation ecosystem has become increasingly
+                    dependent on intensive coaching, creating high academic pressure, long
+                    preparation hours, significant financial and emotional costs, and an
+                    unequal educational environment, while encouraging students to
+                    optimise for examination performance rather than deep learning,
+                    creativity and holistic development.
+
+                    This is a primarily a problem statement about symptoms.
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    JEE coaching phenomenon
+                    Systems Problem Statement
+                    The JEE preparation system has evolved into a self-reinforcing ecosystem in
+                    which high-stakes selection, limited perceived pathways to prestigious
+                    engineering institutions, parental aspirations, competitive student
+                    behaviour, coaching-market incentives, school–coaching dynamics and
+                    social perceptions of success collectively increase dependence on coaching.
+                    Each actor's individual rational decisions unintentionally reinforce the
+                    overall system, creating escalating competition, academic pressure,
+                    inequality and an increasingly narrow definition of educational success.
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    JEE coaching phenomenon
+                    The key Systems Thinking move is to avoid asking:
+                    “How do we fix coaching?”
+
+                    and instead ask:
+                    “What is the system structure that makes intensive JEE coaching
+                    rational, self-reinforcing and difficult to escape?”
+
+
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                           2026
+
+
+
+
+                    First Principle: Don't Blame the Coaching Institutes
+                    This is critical, Instead ask:
+                    Why do students go to coaching?
+                    Because parents believe coaching improves their chances.
+                    Why do parents believe that?
+                    Because the examination is highly competitive.
+                    Why is the examination competitive?
+                    Because there are many aspirants competing for relatively limited seats in highly prestigious
+                    institutions.
+                    Why are those institutions so attractive?
+                    Because of perceived career opportunities, social status and economic mobility.
+                    Why does this matter so much?
+                    Because engineering education is seen by many families as a relatively secure pathway to upward
+                    mobility.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    JEE coaching phenomenon
+                    So we have a system:
+                    Social aspiration → JEE competition → Coaching → Higher
+                    preparation intensity → Higher competitive benchmark →
+                    Greater perceived need for coaching → More coaching
+                    That is a reinforcing feedback loop.
+
+
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                                                   2026
+
+
+
+
+                    Define the System Boundary
+                    What is inside our system? For example:
+                      JEE aspirants                                                                  Students' peer networks
+                      Parents                                                                        Test-preparation technology
+                      Schools                                                                        Educational media
+                      Coaching institutes                                                            Rankings and result publicity
+                      Online coaching platforms                                                      Scholarships
+                      Teachers                                                                       Career opportunities
+                      JEE examination system                                                         Social perceptions of success
+                      IITs/NITs and other engineering institutions
+
+
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Define the System Boundary
+                    What is outside but influences the system?
+                      Labour market
+                      Economic inequality
+                      Family income
+                      Social mobility
+                      Higher-education policy
+                      Government education policy
+                      Corporate recruitment
+                      Broader cultural attitudes toward success
+
+                    This immediately shows that:
+                    JEE coaching is not an isolated education problem. It is an ecosystem problem.
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                                                             2026
+
+
+
+
+                    Map the Actors
+                                                                                                                  LABOUR MARKET
+                                                                                                                              │
+                                                                                                                              ↓
+                                                                                                                Career Opportunities
+                                                                                                                              │
+                                                                                                                              ↓
+                                                                                                               Perceived Value of IITs
+                                                                                                                              │
+                                                                                                                              ↓
+                                                                                            Social Status ←──── JEE Aspiration ────→ Parents
+                                                                                                                        │          │
+                                                                                                                        ↓          ↓
+                                                                                                            Students ←────── Coaching
+                                                                                                                        │          │
+                                                                                                                        ↓          ↓
+                                                                                                            Study Intensity Competition
+                                                                                                                        │          │
+                                                                                                                     ┬
+                                                                                                             └────── ──────────┘
+                                                                                                                                ↓
+                                                                                                                     JEE Performance
+                                                                                                                                │
+                                                                                                                                ↓
+                                                                                                                       IIT Selection
+                                                                                                                                │
+                                                                                                                                ↓
+                                                                                                                    Coaching Success
+                                                                                                                                │
+                                                                                                                  └────→ More demand
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                      2026
+
+
+
+
+                    identify causal relationships and feedback loops
+                    The Competition Escalation Loop - R1
+                                                    More JEE Competition
+                                                                ↓
+                                                  Higher perceived difficulty
+                                                                ↓
+                                                 Greater need for preparation
+                                                                ↓
+                                                 More students join coaching
+                                                                ↓
+                                                 Higher preparation intensity
+                                                                ↓
+                                                Higher competitive benchmark
+                                                                ↓
+                                                  Other students feel behind
+                                                                ↓
+                                                    More JEE Competition
+
+                    This creates a classic: Reinforcing Loop — R1. The system continuously escalates.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    The Coaching Dependence Loop
+                    Consider a student who initially thinks:
+                    “I can prepare through school and self-study.”
+                    Then the student discovers that many peers are attending
+                    coaching.
+                    They begin thinking:
+                    “Maybe I am falling behind.”
+                    So:
+                    More peers in coaching → greater perceived disadvantage → higher
+                    coaching demand → more students in coaching
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Coaching Normalisation -R2
+
+                                                      More students join coaching
+                                                                    ↓
+                                                   Coaching becomes socially normal
+                                                                    ↓
+                                                 Non-coaching preparation appears risky
+                                                                    ↓
+                                                      More students join coaching
+                    Eventually, coaching becomes not merely an option, but the default
+                    expectation.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    The Results–Reputation Loop
+                    Coaching institutes advertise successful candidates.
+                    Suppose an institute produces many high-ranking students.
+                    Parents see:
+                    “Students from this institute get into IIT.”
+                    Demand increases.
+                    More students join.
+                    The institute gets more resources.
+                    It can hire better teachers, develop better material and run more tests.
+                    Performance improves further.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                     2026
+
+
+
+
+                    Coaching Success Loop - R3
+                                                                            Better Results
+                                                                                    ↓
+                                                                         Stronger Reputation
+                                                                                    ↓
+                                                                            More Students
+                                                                                    ↓
+                                                                      More Revenue/Resources
+                                                                                    ↓
+                                                                   Better Preparation Infrastructure
+                                                                                    ↓
+                                                                            Better Results
+
+                    Eventually, coaching becomes not merely an option, but the default
+                    expectation.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    The Selection Effect
+                    Suppose a coaching institute claims:
+                    “We produced 500 IIT selections.”
+                    But who joined the institute? Often, students who were already:
+                            academically strong,
+                            highly motivated,
+                            financially supported,
+                            selected through internal screening,
+                            willing to study intensively.
+                    therfore: Strong students → Coaching → Strong results
+                    may be interpreted as: Coaching → Strong students
+                    This is a potential selection-effect problem.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Distinguish: Correlation from causation.
+                    This is important when evaluating whether more
+                    coaching necessarily produces better outcomes.
+
+
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    The School–Coaching Tension
+                    Students have limited time.
+                    If coaching becomes increasingly demanding:
+                    Coaching hours ↑ → Time available for school ↓
+                    Schools then find students less engaged.
+                    Students perceive school as less relevant to JEE.
+                    Therefore:
+                    School perceived value ↓ → Greater dependence on coaching ↑
+                    Which further weakens the school–student relationship.
+                    This creates a balancing/declining loop around mainstream schooling.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    The Inequality Loop -Opportunity Accumulation-R4
+                    High-quality coaching often requires:
+                        money,
+                        time,
+                        access,
+                        technology,
+                        supportive parents,
+                        relocation or residential facilities.
+                    Students with greater resources can access more preparation.
+                    The important insight is:
+                    The system can amplify pre-existing advantages even when every individual actor is
+                    simply trying to maximise their own child's chances.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+iCPD   Product Design and Development                                                                  2026
+
+
+
+
+       The Psychological Competition Loop
+                                                Mock Test Score
+                                                         ↓
+                                               Rank/Comparison
+                                                         ↓
+                                           Perceived Relative Position
+                                                         ↓
+                                                    Anxiety
+                                                         ↓
+                                               More Study Hours
+                                                         ↓
+                                                    Fatigue
+                                                         ↓
+                                           Reduced Learning Quality
+                                                         ↓
+                                              Poorer Performance
+                                                         ↓
+                                                 More Anxiety
+       This can create a balancing loop that becomes dysfunctional.
+       The student works harder to improve performance, but excessive effort eventually reduces effectiveness.
+iCPD   Product Design and Development                                          2026
+
+
+
+
+       The Critical Systems Insight
+       At this point, we can see that the problem isn't:
+       “Students study too much.”
+       Nor:
+       “Parents put too much pressure.”
+       Nor:
+       “Coaching institutes exploit competition.”
+
+       All of these may be partially true, but the deeper insight is:
+       Each actor is responding rationally to the incentives and information available
+       to them, while their collective behaviour creates an undesirable system
+       outcome.
+iCPD   Product Design and Development       2026
+
+
+
+
+       Look Beneath the Events
+       Level 1 — Events
+       What do we observe?
+          Students attending coaching.
+          Long study hours.
+          Stress.
+          Multiple mock tests.
+          Parents spending large amounts.
+          School attendance declining.
+          Coaching advertisements.
+          Intense competition.
+iCPD   Product Design and Development                             2026
+
+
+
+
+       Look Beneath the Events
+       Level 2 — Patterns
+       What trends do we see?
+          Coaching participation increasing.
+          Competition intensifying.     Look Beneath the Events
+
+
+          Preparation beginning earlier.
+          More testing.
+          Increasing study hours.
+          Growing dependence on coaching.
+iCPD   Product Design and Development                              2026
+
+
+
+
+       Look Beneath the Events
+       Level 3 — System Structure - What creates these patterns?
+          High-stakes examination.
+          Limited prestigious seats.
+          Social value attached to IITs.Look Beneath the Events
+
+
+          Information asymmetry.
+          Competitive peer behaviour.
+          Coaching business incentives.
+          Parent risk aversion.
+          Ranking mechanisms.
+          Labour-market signalling.
+iCPD   Product Design and Development                                     2026
+
+
+
+
+       Look Beneath the Events
+       Level 4 — Mental Models - What beliefs sustain the system?
+       Perhaps:
+          “IIT is the best pathway to success.”
+          “Without coaching, I cannot compete.”
+          “More study hours mean better results.”
+          “A higher JEE rank means a better future.”
+          “If everyone else is doing coaching, I cannot afford not to.”
+          “Failure in JEE is failure in life.”
+
+       These mental models may be among the deepest leverage points.
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                              LECTURE 15 - 17 Sep
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+Leverage in Systems Thinking
+Leverage is the idea that a small, well-chosen change in a system can produce a
+disproportionately large and lasting impact.
+In simple terms:
+Leverage means finding the right place to intervene in a system—not simply applying more
+effort.
+
+A system may have hundreds of visible problems. We can spend enormous resources fixing
+symptoms, yet little changes. Systems Thinking asks:
+“Where can we make a change that fundamentally influences the behaviour of the whole system?”
+That place is called a leverage point.
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+Leverage in Systems Thinking
+
+The Basic Idea
+Imagine you are trying to improve a system. You have two choices:
+
+Option A: Apply more effort                                      Option B: Find leverage
+   Add more people                                                  Change an important relationship
+   Spend more money                                                 Improve the flow of information
+   Create more processes                                            Modify incentives
+   Fix problems repeatedly                                          Change a rule
+                                                                    Redefine the goal
+The second approach may require less effort but produce greater systemic change.
+A simple principle: Not all interventions are equally powerful. Some changes affect only a small
+part of the system.
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+Leverage in Systems Thinking
+A Simple Example: Traffic Congestion
+Suppose a city has severe traffic congestion.
+A common reaction might be:
+Low-leverage intervention
+Build more roads.
+This may temporarily reduce congestion.
+or their wider system-level effects.
+
+This may temporarily reduce congestion, but over time:
+
+Roads become easier to use.
+More people choose cars.
+More cars enter the roads.
+Congestion returns.
+The intervention addressed a symptom.
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+Leverage in Systems Thinking
+Higher-leverage intervention
+Instead, the city might examine:
+    Why do people prefer private cars?
+    Is public transport reliable?
+    Are workplaces concentrated in one area?
+    Are working hours synchronized?
+    Are parking policies encouraging car use?
+
+Potential interventions:
+   Improve public transport reliability.
+   Introduce flexible work hours.
+   Change parking incentives.
+   Improve walking and cycling infrastructure.
+These interventions affect the structure that generates congestion.
+That is leverage.
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+Leverage in Systems Thinking
+Different Levels of Leverage
+We can think of leverage as existing at several levels.
+
+Level 1: Parameters
+These are numerical adjustments.
+Examples:
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+       PDM              SYSTEM THINKING AND DESIGN                                                                             MONSOON 2026
+
+
+
+
+Leverage in Systems Thinking
+
+4. Different Levels of Leverage
+
+We can think of leverage as existing at several levels.
+
+Level 1: Parameters
+
+These are numerical adjustments.
+
+Examples:
+
+Increasing budget
+Adding staff
+Increasing capacity
+Reducing cost
+Changing deadlines
+Example
+
+A hospital has long waiting times.
+
+The hospital adds:
+
+10 more staff members.
+
+This may help.
+ RAMAN   SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+
+But the underlying problem may remain.
+     PDM           SYSTEM THINKING AND DESIGN                                                                               MONSOON 2026
+
+
+
+
+                                              LECTURE 15 - 17 Sep
+
+
+
+
+RAMAN SAXENA - PDM PROGRAM AND Software Engineering Research Centre (SERC) and Product Design & Management IIIT Hyderabad
+iCPD   Product Design and Development                                   2026
+
+
+
+
+       Find the Leverage Points
+       This is where Systems Thinking becomes useful for designing
+       solutions.
+
+       We shouldn't ask:
+       “How do we eliminate coaching?”
+
+       Instead:
+       “Where can we intervene so that the system no longer requires ever-
+       increasing coaching intensity?”
+iCPD   Product Design and Development                                2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 1: Change the Information Structure
+       Today students and parents often have limited information about:
+          Alternative career pathways
+          Engineering colleges beyond a small set of prestigious institutions
+          Actual relationship between coaching intensity and outcomes
+          Different learning approaches
+          Long-term career outcomes
+iCPD   Product Design and Development                                                 2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 1: Change the Information Structure - Intervention
+       Create a transparent engineering education and career information ecosystem.
+       Students could see:
+             Multiple engineering pathways
+             College outcomes
+             Branch-level career trajectories
+             Skills required
+             Alumni outcomes
+             Alternative entrance routes
+             Cost-benefit information
+
+       The objective is not to tell students: “Don't pursue IIT.”, It is to allow them to
+       make better-informed decisions.
+iCPD   Product Design and Development                                   2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 2: Change the Goal
+       The current system can implicitly optimise for:
+       Rank → Selection → Institution
+       We could broaden the educational goal to:
+       Learning → Capability → Problem-solving → Career readiness
+
+       This changes, what the system values. The question becomes:
+       Can we design an entrance system that selects for genuine capability
+       rather than rewarding increasingly specialised test preparation?
+       This is a much deeper intervention.
+iCPD   Product Design and Development                                             2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 3: Change Feedback
+       Currently, one powerful feedback signal is:
+       Mock-test score → Rank → Anxiety → More preparation           Concept mastery
+                                                                     Reasoning ability
+       What if we introduce richer feedback?
+                                                                     Problem-solving patterns
+       Instead of simply: Your score = 187/300 - students receive:   Misconception analysis
+                                                                     Learning progress
+                                                                     Transfer ability
+       Then the feedback loop changes from:
+                                                                     Areas of strength
+       Score → Competition                                           Areas requiring
+       to:                                                           improvement
+       Evidence → Understanding → Improvement → Capability
+       This could significantly change student behaviour.
+iCPD   Product Design and Development                                                    2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 4: Change Incentives
+       If the system rewards only final examination performance, students and institutions
+       naturally optimise for that metric.
+       What if the broader ecosystem rewarded:
+            Deep understanding
+            Research exposure
+            Problem-solving
+            Creativity
+            Projects
+            Olympiads
+            Innovation
+            Interdisciplinary capability
+       Then preparation behaviour would begin to change.
+       The principle is:
+       People optimise what the system measures and rewards.
+iCPD   Product Design and Development                               2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 5: Redesign the School–Preparation Relationship
+       Instead of School vs Coaching
+       we could create:
+       School + Open Learning Ecosystem
+       Schools provide:
+           Conceptual foundations
+           Mentorship
+           Collaborative learning
+           Projects
+           Well-being support
+iCPD   Product Design and Development                                          2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 5: Redesign the School–Preparation Relationship
+
+       An open national digital ecosystem provides:
+           High-quality lectures
+           Practice problems
+           Adaptive assessments
+           Doubt support
+           Simulations
+           Learning analytics
+       Students could then choose their preparation intensity according to their goals.
+       This could reduce the need for expensive proprietary coaching.
+iCPD   Product Design and Development                                      2026
+
+
+
+
+       Six Leverage Points
+       Leverage Point 6: Change the Mental Model
+       This may be the deepest intervention.
+
+       We need to challenge the equation:
+       JEE Rank = Intelligence = Future Success = Personal Worth
+       A healthier mental model is:
+       JEE is one selection mechanism for one set of educational pathways—not a
+       measure of human potential or future success.
+       This doesn't require reducing the aspiration for excellence.
+       It means decoupling excellence from a single examination outcome.
+iCPD   Product Design and Development                                 2026
+
+
+
+
+       But Every Intervention Can Create a New Problem
+       Suppose we reduce the importance of one examination. What might happen?
+       Coaching institutes may shift to:
+           Olympiads
+           Interviews
+           Portfolio preparation
+           School marks
+           New entrance examinations
+       In other words:
+       The coaching industry may adapt.
+       Therefore, simply changing the examination may not solve the system.
+       This is why we need to anticipate second-order effects.
+iCPD   Product Design and Development                          2026
+
+
+
+
+       Design the Future System Rather Than "Destroy
+       Coaching"
+
+       A better design objective would be:
+       Create a high-quality, equitable JEE preparation ecosystem
+       in which coaching is an option rather than a perceived
+       necessity.
+       That is a much more achievable systems goal.
+           We don't necessarily eliminate coaching.
+           We change the conditions that create excessive
+           dependence on it.
+iCPD   Product Design and Development         2026
+
+
+
+
+       A Proposed System-Level Intervention
+
+       Open JEE Learning Ecosystem
+       Instead of a fragmented:
+       Student → Coaching Institute → JEE
+iCPD   Product Design and Development                                                        2026
+
+
+
+
+       A Proposed System-Level Intervention
+                                                                 JEE
+                                                                  │
+                                                           ┴
+                                         ┌──────────── ────────────┐
+                                                       │               │
+                                        SCHOOL        OPEN LEARNING ECOSYSTEM
+                                                       │               │
+                                           Foundations        Content + Practice
+                                            Mentoring         Adaptive Learning
+                                              Projects          Assessments
+                                               Well-being         AI Tutoring
+                                                       │               │
+                                                           ┬
+                                         └──────────── ────────────┘
+                                                                  ↓
+                                                            STUDENT
+                                                                  ↓
+                                                        Capability Profile
+                                                                  ↓
+                                                       Multiple Pathways
+                                                                  ↓
+                                                  Engineering / Research /
+                                              Entrepreneurship / Other Careers
+        The key design principle is:
+        Don't compete with coaching at the coaching layer. Change the architecture of the ecosystem.
+iCPD   Product Design and Development                                         2026
+
+
+
+
+       Test the Intervention Using Systems Thinking
+       Before implementing nationally, we could create different scenarios.
+       Scenario A — Current System
+       High competition + private coaching.
+       Scenario B
+       High-quality free digital preparation.
+       Scenario C
+       Reduced dependence on single high-stakes testing.
+       Scenario D
+       Multiple assessment dimensions.
+       Scenario E
+       School + open digital ecosystem.
+iCPD   Product Design and Development                                       2026
+
+
+
+
+       Test the Intervention Using Systems Thinking
+       Examine:
+          Coaching participation
+          Student study hours
+          Family expenditure
+          Stress
+          Equity
+          Learning outcomes
+          JEE performance
+          School engagement
+          Unintended consequences
+       The objective isn't to predict the future perfectly. It is to ask:
+       How might the system respond to each intervention?
+iCPD   Product Design and Development                                       2026
+
+
+
+
+       Test the Intervention Using Systems Thinking
+       Examine:
+          Coaching participation
+          Student study hours
+          Family expenditure
+          Stress
+          Equity
+          Learning outcomes
+          JEE performance
+          School engagement
+          Unintended consequences
+       The objective isn't to predict the future perfectly. It is to ask:
+       How might the system respond to each intervention?
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Activity : “Causal Loop Challenge”
+                    Objective
+                    Understand feedback loops.
+
+                    Task Scenario
+                    “College introduces AI attendance monitoring.”
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Activity : “Causal Loop Challenge”
+                    Task - Draw:
+                        Reinforcing Loop (R)
+                        Balancing Loop (B)
+
+
+
+
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+     iCPD           Product Design and Development                                                   2026
+
+
+
+
+                    Activity 3: “Causal Loop Challenge”
+                    Example Questions
+                               Does attendance increase?
+                               Does student stress increase?
+                               Does creativity decrease?
+                               Does admin workload change?
+                    Outcome
+                    Students discover unintended consequences.
+Software Engineering Research Centre (SERC) and Product Design & Management (PDM) - IIIT Hyderabad
+

@@ -2,7 +2,8 @@
 
 Chart 1: kitchen scenarios compared (backtest, 8 to 30 April 2026).
 Chart 2: one Sunday veg line, arrivals against the baseline and refined batches.
-Chart 3: behaviour-over-time projection of the recommended bundle.
+Chart 3: behaviour-over-time projection of the re-sequenced bundle, with ranges.
+Chart 4: stress tests of the refined kitchen design.
 All values come from scenario_model.py; every value is projected.
 Palette: project palette; grey marks the baseline (neutral reference), and the
 three scenario hues were checked with the dataviz validator (light mode, pass).
@@ -127,13 +128,20 @@ render(svg(W, H, "".join(b)), os.path.join(HERE, "chart-a10-sunday-veg-batches.p
 
 # ------------------------------------------------------------------ chart 3
 bot = list(csv.DictReader(open(os.path.join(HERE, "scen_bot_projection.csv"))))
-W, H = 1400, 760
-b = [t(40, 48, "Projected behaviour over time: the recommended bundle against the baseline", 24, "700"),
-     t(40, 76, "Kadamba breakfast. Weeks from the start of Stage 1. Adoption pace is assumed; all values projected.", 15, "400", INK2)]
+W, H = 1400, 820
+b = [t(40, 48, "How the system might respond over time: the re-sequenced bundle against the baseline", 24, "700"),
+     t(40, 76, "Kadamba breakfast. Weeks from the start of Stage 1. Lines are central values, shaded bands the tested ranges. Adoption pace and rule-owner timing assumed; all values projected.", 15, "400", INK2)]
+COND = "#6a1b9a"
 
 
-def panel(y_top, h, key_b, key_n, vmax, step, title, fmt):
-    X0, X1 = 130, 1160
+def band(X, Y, lo_key, hi_key, color, op, rows):
+    up = [f"{X(int(r['week'])):.1f},{Y(float(r[hi_key])):.1f}" for r in rows]
+    dn = [f"{X(int(r['week'])):.1f},{Y(float(r[lo_key])):.1f}" for r in reversed(rows)]
+    return f'<polygon points="{" ".join(up + dn)}" fill="{color}" fill-opacity="{op}"/>'
+
+
+def panel(y_top, h, key_b, key_n, bands, vmax, step, title, fmt, marks, extra=None, mark_low=False):
+    X0, X1 = 130, 1130
     Yb, Yt = y_top + h, y_top
     X = lambda wk: X0 + (X1 - X0) * wk / 20
     Y = lambda v: Yb - (Yb - Yt) * v / vmax
@@ -146,12 +154,19 @@ def panel(y_top, h, key_b, key_n, vmax, step, title, fmt):
         out.append(t(X0 - 10, Y(v) + 5, fmt(v), 12, "400", MUTED, "end"))
     for wk in range(0, 21, 4):
         out.append(t(X(wk), Yb + 22, f"week {wk}", 12, "400", MUTED, "middle"))
+    for lo, hi, c in bands:
+        out.append(band(X, Y, lo, hi, c, 0.16, bot))
+    if extra:
+        out.append(extra(X, Y))
     pb = " ".join(f"{X(int(r['week'])):.1f},{Y(float(r[key_b])):.1f}" for r in bot)
     pn = " ".join(f"{X(int(r['week'])):.1f},{Y(float(r[key_n])):.1f}" for r in bot)
     out.append(f'<polyline fill="none" stroke="{BASE}" stroke-width="2.5" stroke-dasharray="10 6" points="{pb}"/>')
     out.append(f'<polyline fill="none" stroke="{REF}" stroke-width="3" points="{pn}"/>')
     for r in bot:
         out.append(f'<circle cx="{X(int(r["week"])):.1f}" cy="{Y(float(r[key_n])):.1f}" r="5" fill="{REF}" stroke="white" stroke-width="2"/>')
+    for wk, lab in marks:
+        out.append(f'<line x1="{X(wk):.1f}" y1="{Yt + 26}" x2="{X(wk):.1f}" y2="{Yb}" stroke="{INK2}" stroke-width="1.5" stroke-dasharray="3 4"/>')
+        out.append(t(X(wk) + 5, (Yb - 12) if mark_low else (Yt + 38), lab, 12, "700", INK2))
     last = bot[-1]
     yb_, yn_ = Y(float(last[key_b])), Y(float(last[key_n]))
     if abs(yn_ - yb_) < 20:
@@ -161,9 +176,78 @@ def panel(y_top, h, key_b, key_n, vmax, step, title, fmt):
     return "".join(out)
 
 
-b.append(panel(130, 230, "baseline_surplus_per_day", "bundle_surplus_per_day", 400, 100,
-               "First-batch surplus: portions cooked but not eaten by students, per day", lambda v: f"{v:.0f}"))
-b.append(panel(470, 200, "baseline_uneaten_charge_rs_per_week", "bundle_uneaten_charge_rs_per_week", 300000, 100000,
-               "Charges students pay for breakfasts they do not eat, per week (Rs)", lambda v: f"{v / 1000:.0f}k"))
-b.append(t(40, H - 22, "Stage 1: routes and paper record. Stage 2: Sunday veg-line pilot. Stage 3: roll-out to every day and line; from week 14 the Sunday evening-before skip, if the rule owner adopts it (25% uptake assumed).", 13, "400", MUTED))
+def cond(X, Y):
+    rows = [r for r in bot if int(r["week"]) >= 14]
+    o = band(X, Y, "conditional_everyday_charge_low", "conditional_everyday_charge_high", COND, 0.14, rows)
+    mid = " ".join(f"{X(int(r['week'])):.1f},{Y((float(r['conditional_everyday_charge_low']) + float(r['conditional_everyday_charge_high'])) / 2):.1f}" for r in rows)
+    o += f'<polyline fill="none" stroke="{COND}" stroke-width="2.5" stroke-dasharray="4 4" points="{mid}"/>'
+    r = rows[-1]
+    o += t(X(20) + 10, Y((float(r["conditional_everyday_charge_low"]) + float(r["conditional_everyday_charge_high"])) / 2) + 5,
+           "if every-day skip: 123k to 185k", 13, "700", INK)
+    return o
+
+
+b.append(panel(130, 240, "baseline_surplus_per_day", "bundle_surplus_per_day",
+               [("baseline_surplus_low", "baseline_surplus_high", BASE), ("bundle_surplus_low", "bundle_surplus_high", REF)],
+               500, 100, "First-batch surplus: portions cooked but not eaten by students, per day", lambda v: f"{v:.0f}",
+               [(4, "joint reading"), (6, "skip proposed")]))
+b.append(panel(500, 220, "baseline_uneaten_charge_rs_per_week", "bundle_uneaten_charge_rs_per_week",
+               [("bundle_charge_low", "bundle_charge_high", REF)], 300000, 100000,
+               "Charges students pay for breakfasts they do not eat, per week (Rs)", lambda v: f"{v / 1000:.0f}k",
+               [(10, "Sunday skip in force"), (14, "decision point")], cond, mark_low=True))
+b.append(t(40, H - 44, "Surplus bands: the operator's first-batch ratio at 60 to 80 percent, and the crest share 5 points lighter or heavier. Charge band: skip uptake 25 to 50 percent of no-shows.", 13, "400", MUTED))
+b.append(t(40, H - 22, "Purple dashed: the every-day skip from week 16, only if the decision rule at week 14 is met and the calibrated batch runs on every line.", 13, "400", MUTED))
 render(svg(W, H, "".join(b)), os.path.join(HERE, "chart-a10-bot-projection.png"), W, H)
+
+# ------------------------------------------------------------------ chart 4: stress and sensitivity
+st_rows = list(csv.DictReader(open(os.path.join(HERE, "scen_stress.csv"))))
+short_lab = {"normal": ("Normal day", "backtest, 23 days"),
+             "exam_unwarned": ("Exam or fest week", "25% fewer eaters, no warning"),
+             "exam_warned": ("Exam week, calendar note", "forecast scaled by 0.75"),
+             "favourite": ("Favourite-item day", "25% more eaters, no warning"),
+             "eaters_minus10": ("Eaters down 10%", "a rule change shifts eaters"),
+             "eaters_plus10": ("Eaters up 10%", "a rule change shifts eaters"),
+             "crest_plus10": ("Heavier crest", "10 points more after 9:15"),
+             "gas": ("Gas shortage", "batches take 30 minutes"),
+             "late_fail": ("Failed 9:00 late batch", "reactive top-up only")}
+WAIT = "#e65100"
+W, H = 1400, 60 + 130 + 9 * 62 + 90
+b = [t(40, 48, "Stress tests: where the calibrated batch with a 9:00 late batch holds, and where it breaks", 24, "700"),
+     t(40, 76, "Kadamba breakfast, both lines, 23 backtest days. The plan reads normal earlier weeks unless stated. Per day, projected.", 15, "400", INK2)]
+y0 = 150
+px1, pw1, v1 = 470, 330, 500
+px2, pw2, v2 = 900, 380, 50
+b.append(t(px1, y0 - 22, "Surplus: cooked, not eaten by students", 15, "700"))
+b.append(t(px2, y0 - 22, "Diners short after planned batches, and diners waiting", 15, "700"))
+for gx in range(0, v1 + 1, 100):
+    xx = px1 + pw1 * gx / v1
+    b.append(f'<line x1="{xx:.1f}" y1="{y0}" x2="{xx:.1f}" y2="{y0 + 9 * 62}" stroke="{GRID}"/>')
+    b.append(t(xx, y0 + 9 * 62 + 18, str(gx), 12, "400", MUTED, "middle"))
+for gx in range(0, v2 + 1, 10):
+    xx = px2 + pw2 * gx / v2
+    b.append(f'<line x1="{xx:.1f}" y1="{y0}" x2="{xx:.1f}" y2="{y0 + 9 * 62}" stroke="{GRID}"/>')
+    b.append(t(xx, y0 + 9 * 62 + 18, str(gx), 12, "400", MUTED, "middle"))
+for i, r in enumerate(st_rows):
+    yy = y0 + 8 + i * 62
+    n, sub = short_lab[r["key"]]
+    b.append(t(40, yy + 18, n, 15, "700"))
+    b.append(t(40, yy + 37, sub, 13, "400", INK2))
+    sv, bv = float(r["refined_surplus_per_day"]), float(r["baseline_surplus_per_day"])
+    b.append(bar(px1, yy + 6, max(pw1 * sv / v1, 2), 30, REF))
+    bx = px1 + pw1 * bv / v1
+    b.append(f'<line x1="{bx:.1f}" y1="{yy}" x2="{bx:.1f}" y2="{yy + 42}" stroke="{BASE}" stroke-width="3"/>')
+    b.append(t(px1 + pw1 * sv / v1 + 8, yy + 27, f"{sv:.0f}", 14, "700"))
+    shv, wv = float(r["refined_short_per_day"]), float(r["refined_diners_waiting_per_day"])
+    b.append(bar(px2, yy + 2, max(pw2 * shv / v2, 2), 18, REF))
+    b.append(bar(px2, yy + 22, max(pw2 * wv / v2, 2), 18, WAIT))
+    b.append(t(px2 + pw2 * shv / v2 + 8, yy + 16, f"{shv:.1f} short", 12, "700"))
+    b.append(t(px2 + pw2 * wv / v2 + 8, yy + 36, f"{wv:.1f} waiting", 12, "400", INK2))
+ly = y0 + 9 * 62 + 46
+b.append(f'<rect x="40" y="{ly - 12}" width="16" height="16" rx="3" fill="{REF}"/>')
+b.append(t(64, ly + 1, "calibrated first batch + 9:00 late batch", 13))
+b.append(f'<line x1="380" y1="{ly - 12}" x2="380" y2="{ly + 6}" stroke="{BASE}" stroke-width="3"/>')
+b.append(t(392, ly + 1, "baseline surplus (70% of registrations) on the same day", 13))
+b.append(f'<rect x="780" y="{ly - 12}" width="16" height="16" rx="3" fill="{WAIT}"/>')
+b.append(t(804, ly + 1, "diners who arrive after the first batch runs out, before the next batch lands", 13))
+b.append(t(40, ly + 30, "Stresses are assumed shocks applied to the recorded arrivals; they explore how the rule responds, not how often each shock occurs.", 13, "400", MUTED))
+render(svg(W, H, "".join(b)), os.path.join(HERE, "chart-a10-stress-tests.png"), W, H)

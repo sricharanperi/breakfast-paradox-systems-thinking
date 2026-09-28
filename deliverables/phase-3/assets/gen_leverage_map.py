@@ -3,8 +3,8 @@
 Hand-composed SVG (systems-visual-design skill, svgkit.py), rasterised through
 headless Chrome. The core booking-to-bin chain runs left to right in the middle,
 records and money sit above it, governance at the top, absorbers below. Each
-leverage point is a numbered marker coloured by its depth in the leverage
-hierarchy; held levers have a dashed ring. Dashed red lines are routes that do
+leverage point is a numbered marker coloured by its place on the twelve-place
+scale, counted from the deepest (1 transcends paradigms, 12 is parameters); held levers have a dashed ring. Dashed red lines are routes that do
 not exist today and that a leverage point would build.
 """
 import sys, math
@@ -13,7 +13,7 @@ from svgkit import chip, straight_arrow, curved_arrow, marker_defs, wrap_svg, re
 
 OUT = "/Users/Shared/Files From e.localized/PDM/Sem3/Systems Thinking/Project/deliverables/phase-3/assets/diagram-a9-leverage-intervention-map.png"
 
-W, H = 2400, 1500
+W, H = 2400, 1580
 FONT = 'font-family="Helvetica,Arial,sans-serif"'
 
 # node palette (project standard)
@@ -23,12 +23,13 @@ FLOW = "#455a64"
 
 # leverage depth colours (deeper = darker / cooler)
 DEPTH = {
-    3: ("#4a148c", "Level 3: goals of the system"),
-    4: ("#ad1457", "Level 4: self-organisation"),
-    5: ("#b71c1c", "Level 5: rules of the system"),
-    6: ("#0d47a1", "Level 6: information flows"),
-    8: ("#2e7d32", "Level 8: balancing feedback loops"),
-    9: ("#ef6c00", "Level 9: delays"),
+    2: ("#1a1a1a", "Place 2 of 12: mindset or paradigm"),
+    3: ("#4a148c", "Place 3 of 12: goals of the system"),
+    4: ("#ad1457", "Place 4 of 12: self-organisation"),
+    5: ("#b71c1c", "Place 5 of 12: rules of the system"),
+    6: ("#0d47a1", "Place 6 of 12: information flows"),
+    8: ("#2e7d32", "Place 8 of 12: balancing feedback loops"),
+    10: ("#ef6c00", "Place 10 of 12: stock-and-flow structure"),
 }
 
 body = []
@@ -53,7 +54,7 @@ def marker(cx, cy, n, level, held=False):
     else:
         out += f'<circle cx="{cx}" cy="{cy}" r="27" fill="white"/>'
         out += f'<circle cx="{cx}" cy="{cy}" r="24" fill="{c}"/>'
-    out += text(cx, cy+5, f"LP{n}", 14, "900", "white", "middle")
+    out += text(cx, cy+5, f"LP{n}", 14 if n < 10 else 12.5, "900", "white", "middle")
     return out
 
 def pill(cx, cy, s, color="#37474f"):
@@ -74,7 +75,7 @@ def callout(x, y, lines, color):
 
 # ---------------------------------------------------------------- title
 body.append(text(40, 52, "Leverage-Point / System Intervention Map", 30, "800", "#1a237e"))
-body.append(text(40, 82, "IIIT Hyderabad breakfast mess system: where each leverage point acts on the booking-to-bin chain, coloured by depth", 15, "400", "#555"))
+body.append(text(40, 82, "IIIT Hyderabad breakfast mess system: where each leverage point acts on the booking-to-bin chain, coloured by place on the twelve-place scale (1 deepest, 12 shallowest)", 15, "400", "#555"))
 
 # ---------------------------------------------------------------- bands
 GOV_Y, REC_Y, CH_Y, ABS_Y = 225, 455, 700, 955
@@ -174,11 +175,14 @@ put(2, 335, CH_Y-2, 5)                 # between default and exit
 put(10, 335, REC_Y-2, 5, held=True)    # between student bill and vendor payment
 put(9, 560, GOV_Y-52, 5, held=True)    # on rule owner
 put(1, 1180, 372, 6)                    # on the records -> rule owner route
+put(12, 640, GOV_Y, 3)                 # working goal, carried by CFS and CDS at the rule owner
+put(11, 1140, GOV_Y, 2)                # beliefs surfaced in joint sessions on the ledger
 put(1, 830, 580, 6)                    # on the calendar feed (same lever, downward route)
-put(7, 1042, 405, 5)                   # on the tasting -> forum route
-put(5, 1250, 598, 8)                   # on the learning link into the plan
-put(6, 1612, CH_Y-40, 9)               # on service and top-up
-put(8, 1560, 330, 5)                   # on item waste -> menu committee
+put(7, 1042, 405, 8)                   # on the tasting -> forum route
+put(5, 1250, 598, 6)                   # on the learning link into the plan (new link at Kadamba)
+put(6, 1326, CH_Y+40, 6)               # arrival card, start of service
+put(6, 1612, CH_Y-40, 10)              # staged late batch
+put(8, 1560, 330, 6)                   # on item waste -> menu committee
 put(4, 1975, 330, 4)                   # books as template
 put(3, 2045, GOV_Y, 3)                 # on operator management
 put(5, 963, CH_Y+28, 8)                # also sits on the plan itself
@@ -187,14 +191,17 @@ put(5, 963, CH_Y+28, 8)                # also sits on the plan itself
 body.append(callout(580, 318, ["Missing route", "records never reach a rule owner"], MISSING))
 body.append(callout(1070, 437, ["Quantity line", "at the per-meal tasting"], MISSING))
 body.append(callout(1268, 612, ["Learning loop", "runs at Yuktāhār only"], GREEN))
+body.append(text(1140, GOV_Y+50, "beliefs tested on the ledger", 11.5, "600", "#1a1a1a", "middle", italic=True))
+body.append(text(640, GOV_Y-36, "stated goal", 11.5, "600", "#4a148c", "middle", italic=True))
 
 # ---------------------------------------------------------------- legend: depth
 LY = 1070
-body.append(f'<rect x="20" y="{LY}" width="610" height="400" rx="18" fill="white" stroke="#bdbdbd"/>')
+LH = 480
+body.append(f'<rect x="20" y="{LY}" width="610" height="{LH}" rx="18" fill="white" stroke="#bdbdbd"/>')
 body.append(text(40, LY+32, "Depth of each leverage point", 16, "800", "#1a237e"))
-body.append(text(40, LY+52, "Lower level number = deeper lever; 12 is the shallowest", 12, "400", "#555"))
-yy = LY+88
-for lvl in [3, 4, 5, 6, 8, 9]:
+body.append(text(40, LY+52, "Place n of 12, counted from the deepest (1); 12 is parameters", 12, "400", "#555"))
+yy = LY+86
+for lvl in [2, 3, 4, 5, 6, 8, 10]:
     c, lab = DEPTH[lvl]
     body.append(f'<circle cx="62" cy="{yy}" r="15" fill="{c}"/>')
     body.append(text(92, yy+5, lab, 13.5, "600", "#222"))
@@ -202,36 +209,39 @@ for lvl in [3, 4, 5, 6, 8, 9]:
 body.append(f'<circle cx="62" cy="{yy}" r="17" fill="white" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><circle cx="62" cy="{yy}" r="12" fill="#b71c1c" fill-opacity="0.55"/>')
 body.append(text(92, yy+5, "Dashed ring: held until a gating fact is known", 13.5, "600", "#222"))
 yy += 34
-body.append(text(40, yy+5, "Level 12 (parameters, e.g. the 70% ratio) appears only as an output of LP5.", 12, "400", "#555", italic=True))
+body.append(text(40, yy+24, "LP5 and LP6 have one marker per part; LP3 shows its deeper part.", 12, "400", "#555", italic=True))
+body.append(text(40, yy+5, "Place 12 (parameters, e.g. the 70% ratio) appears only as an output of LP5.", 12, "400", "#555", italic=True))
 
 # ---------------------------------------------------------------- legend: key
 KX = 660
-body.append(f'<rect x="{KX}" y="{LY}" width="1150" height="400" rx="18" fill="white" stroke="#bdbdbd"/>')
+body.append(f'<rect x="{KX}" y="{LY}" width="1150" height="{LH}" rx="18" fill="white" stroke="#bdbdbd"/>')
 body.append(text(KX+20, LY+32, "Leverage points", 16, "800", "#1a237e"))
 key = [
-    (1, 6, "Build the missing routes: the gap upward, the calendar downward"),
-    (2, 5, "Change the breakfast default and its exit"),
-    (3, 3, "Operator goal: surplus is a cost"),
-    (4, 4, "Operator-to-operator practice exchange"),
-    (5, 8, "Record-calibrated first batch with a daily learning record"),
-    (6, 9, "Crest-aware top-up and a staged late batch"),
-    (7, 5, "A cost trigger for attention, on the oversight line"),
-    (8, 5, "Operator voice in the menu"),
+    (1, 6, "Build the missing routes: the gap upward, the calendar downward (6)"),
+    (2, 5, "Change the breakfast default and its exit (5)"),
+    (3, 3, "Operator purpose: surplus is a cost (3); waste target (8)"),
+    (4, 4, "A standing operator forum that runs its own trials (4)"),
+    (5, 6, "Record-calibrated first batch and daily record (6 new link, 8 strength)"),
+    (6, 6, "Arrival card (6) and a staged late batch (10)"),
+    (7, 8, "A cost trigger on the governance loop and oversight line (8)"),
+    (8, 6, "Operator voice in the menu: builds route L16 (6)"),
     (9, 5, "A named owner of booked, cooked and eaten (held)"),
     (10, 5, "What a booking costs: billing and payment basis (held)"),
+    (11, 2, "Surface and test the governing mental models (2)"),
+    (12, 3, "Change the goal the system actually seeks (3)"),
 ]
 for k, (n, lvl, lab) in enumerate(key):
-    col = 0 if k < 5 else 1
-    row = k % 5
+    col = 0 if k < 6 else 1
+    row = k % 6
     x = KX + 40 + col*560
-    y = LY + 80 + row*62
+    y = LY + 80 + row*66
     c = DEPTH[lvl][0]
     held = n in (9, 10)
     if held:
         body.append(f'<circle cx="{x}" cy="{y}" r="21" fill="white" stroke="{c}" stroke-width="2" stroke-dasharray="4 3"/><circle cx="{x}" cy="{y}" r="16" fill="{c}" fill-opacity="0.55"/>')
     else:
         body.append(f'<circle cx="{x}" cy="{y}" r="18" fill="{c}"/>')
-    body.append(text(x, y+4, f"LP{n}", 11, "900", "white", "middle"))
+    body.append(text(x, y+4, f"LP{n}", 11 if n < 10 else 9.5, "900", "white", "middle"))
     words = lab.split(" ")
     # wrap at ~44 chars
     lines, cur = [], ""
@@ -246,7 +256,7 @@ for k, (n, lvl, lab) in enumerate(key):
 
 # ---------------------------------------------------------------- legend: lines
 RX = 1840
-body.append(f'<rect x="{RX}" y="{LY}" width="540" height="400" rx="18" fill="white" stroke="#bdbdbd"/>')
+body.append(f'<rect x="{RX}" y="{LY}" width="540" height="{LH}" rx="18" fill="white" stroke="#bdbdbd"/>')
 body.append(text(RX+20, LY+32, "Lines", 16, "800", "#1a237e"))
 ly = LY+80
 body.append(f'<line x1="{RX+30}" y1="{ly}" x2="{RX+120}" y2="{ly}" stroke="{FLOW}" stroke-width="5" marker-end="url(#arrow-{FLOW[1:]})"/>')

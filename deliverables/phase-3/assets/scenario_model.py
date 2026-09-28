@@ -184,7 +184,7 @@ def hhmm(m):
     return f"{int(m // 60):02d}:{int(m % 60):02d}"
 
 
-def staged(d, l, F, trigger, bf, bl):
+def staged(d, l, F, trigger, bf, bl, sc=None, topup=None, late_ok=True):
     """Record-calibrated first batch plus a late batch started at `trigger`.
 
     The first batch covers the diners expected before the late batch lands
@@ -195,19 +195,28 @@ def staged(d, l, F, trigger, bf, bl):
     ordinary reactive top-up at the crest), late batch, diners who arrive after
     the first batch runs out and before the late batch lands, and the run-out time.
     """
-    land = trigger + A["topup_minutes"]
-    c_land = prior_share(d, land)
+    # Optional stress overrides (used only by the sensitivity and stress section):
+    # sc = a transformed list of scan times for the day (the plan still reads the
+    # unstressed earlier weeks); topup = actual minutes for a batch to land;
+    # late_ok = False when the 9:00 late batch fails and only the reactive top-up acts.
+    s_ = scans[(d, l)] if sc is None else sc
+    plan_land = trigger + A["topup_minutes"]          # the plan always assumes a normal top-up
+    real_top = A["topup_minutes"] if topup is None else topup
+    c_land = prior_share(d, plan_land)
     c_trig = prior_share(d, trigger)
-    e = E(d, l)
+    e = len(s_)
     b1 = F * c_land * (1 + bf)
-    n_trig = sum(1 for x in scans[(d, l)] if x < trigger)
+    n_trig = sum(1 for x in s_ if x < trigger)
     proj = n_trig / c_trig if c_trig else F
-    late = max(proj * (1 + bl) - b1, 0)
+    late = max(proj * (1 + bl) - b1, 0) if late_ok else 0
     total = b1 + late
-    ro1 = runout(d, l, b1)
+    n1 = int(b1)
+    ro1 = s_[n1] if n1 < len(s_) else None
     pre_gap = 0
-    if ro1 is not None and ro1 < land:
-        pre_gap = sum(1 for x in scans[(d, l)] if ro1 <= x < land)
+    if ro1 is not None:
+        land = trigger + real_top if late_ok else ro1 + real_top
+        if ro1 < land:
+            pre_gap = sum(1 for x in s_ if ro1 <= x < land)
     return total, max(total - e, 0), max(e - total, 0), late, pre_gap, ro1
 
 
@@ -432,45 +441,233 @@ write("scen_yuktahaar.csv", ["date", "weekday", "registered", "ate_registered", 
                              "plan_at_believed_50pct", "excess_over_eaten", "uneaten_registrations",
                              "uneaten_charge_rs"], yk)
 
-# ---------------------------------------------------------------- behaviour-over-time projection (recommended bundle)
-# Per-day average first-batch surplus for three policy mixes, from the backtest rows,
-# then a staged adoption path (assumed; P2 says kitchen change is judged over months).
-def mix_surplus(apply):
+# ---------------------------------------------------------------- stress transforms of one day's arrivals
+# Each returns a new sorted list of scan times for (d, l). The kitchen plan still reads
+# the unstressed earlier weeks, so these test how the rule responds to a day it did not expect.
+def crest_shift(sc, k):
+    """Move k (share of the day's diners) from before 9:00 into 9:15-9:30 (k < 0 moves them back)."""
+    sc = list(sc)
+    n = int(round(abs(k) * len(sc)))
+    if n == 0:
+        return sc
+    if k > 0:
+        pool = [i for i, x in enumerate(sc) if x < T0900]
+        new_lo, new_hi = T0915, T0930
+    else:
+        pool = [i for i, x in enumerate(sc) if T0915 <= x < T0930]
+        new_lo, new_hi = 7 * 60 + 30, T0900
+    n = min(n, len(pool))
+    step = len(pool) / n
+    pick = {pool[int(j * step)] for j in range(n)}
+    moved = [new_lo + (new_hi - new_lo) * (j + 0.5) / n for j in range(len(pick))]
+    return sorted([x for i, x in enumerate(sc) if i not in pick] + moved)
+
+
+def thin(sc, frac):
+    """Remove an evenly spread share frac of diners (exam or fest week, eaters lower)."""
+    n = int(round(frac * len(sc)))
+    if n == 0:
+        return list(sc)
+    step = len(sc) / n
+    drop = {int(j * step) for j in range(n)}
+    return [x for i, x in enumerate(sc) if i not in drop]
+
+
+def thicken(sc, frac):
+    """Add an evenly spread share frac of extra diners at the times of existing ones (favourite item)."""
+    n = int(round(frac * len(sc)))
+    if n == 0:
+        return list(sc)
+    step = len(sc) / n
+    extra = [sc[int(j * step)] + 0.01 for j in range(n)]
+    return sorted(list(sc) + extra)
+
+
+def run_design(transform=None, fscale=1.0, topup=None, late_ok=True, ratio=None, days_=None):
+    """Average per test day (both lines) for the baseline and the refined design under a stress."""
+    days_ = test_days if days_ is None else days_
+    ratio = A["ratio_kadamba"] if ratio is None else ratio
+    acc = defaultdict(float)
+    for d in days_:
+        for l in ["veg", "nonveg"]:
+            sc = scans[(d, l)] if transform is None else transform(scans[(d, l)])
+            e = len(sc)
+            b0 = ratio * R[(d, l)]
+            acc["b_sur"] += max(b0 - e, 0)
+            acc["b_sh"] += max(e - b0, 0)
+            F = st.mean(prior_same_weekday(d, l)) * fscale
+            total, sur, sh, late, gap, ro1 = staged(d, l, F, sc=sc, topup=topup, late_ok=late_ok, **REFINED)
+            acc["cooked"] += total
+            acc["sur"] += sur
+            acc["sh"] += sh
+            acc["wait"] += gap
+            acc["shdays"] += 1 if sh > 0 else 0
+            acc["eaten"] += e
+    n = len(days_)
+    return {k: v / n for k, v in acc.items() if k != "shdays"} | {"shdays": acc["shdays"]}
+
+
+# ---------------------------------------------------------------- sensitivity: the operator's first-batch ratio, 60 to 80 percent
+sens_ratio = []
+ref0 = run_design()
+for r_ in (0.60, 0.70, 0.80):
+    x = run_design(ratio=r_)
+    sun_veg = [d for d in test_days if wd(d) == "Sun"]
+    sv_b = st.mean(r_ * R[(d, "veg")] for d in sun_veg)
+    sv_e = st.mean(E(d, "veg") for d in sun_veg)
+    sens_ratio.append([int(r_ * 100), round(st.mean(r_ * (R[(d, "veg")] + R[(d, "nonveg")]) for d in test_days)),
+                       round(x["b_sur"]), round(x["b_sh"], 1), round(ref0["sur"]), round(x["b_sur"] - ref0["sur"]),
+                       round(sv_b), round(sv_e), round(sv_b / sv_e, 1)])
+write("scen_sens_ratio.csv", ["baseline_ratio_pct", "baseline_cooked_per_day", "baseline_surplus_per_day",
+                              "baseline_short_per_day", "refined_surplus_per_day", "surplus_reduction_per_day",
+                              "sunday_veg_baseline_batch", "sunday_veg_eaten", "sunday_veg_batch_to_eaten"], sens_ratio)
+
+# ---------------------------------------------------------------- sensitivity: crest share (shift of diners into 9:15-9:30)
+sens_crest = []
+for k in (-0.05, 0.0, 0.05, 0.10):
+    x = run_design(transform=lambda sc, k=k: crest_shift(sc, k))
+    sens_crest.append([int(round(k * 100)), round(x["sur"]), round(x["sh"], 1), round(x["wait"], 1), int(x["shdays"])])
+write("scen_sens_crest.csv", ["crest_shift_points", "refined_surplus_per_day", "refined_short_per_day",
+                              "diners_waiting_per_day", "line_days_short_of_46"], sens_crest)
+
+# ---------------------------------------------------------------- stress scenarios (the plan is not warned unless stated)
+STRESS = [
+    ("normal", "Normal day (backtest)", {}),
+    ("exam_unwarned", "Exam or fest week: 25% fewer eaters (assumed), plan not warned", {"transform": lambda sc: thin(sc, 0.25)}),
+    ("exam_warned", "Exam or fest week: 25% fewer eaters, calendar note scales the forecast by 0.75", {"transform": lambda sc: thin(sc, 0.25), "fscale": 0.75}),
+    ("favourite", "Favourite-item day: 25% more eaters (assumed), plan not warned", {"transform": lambda sc: thicken(sc, 0.25)}),
+    ("eaters_minus10", "Rule change shifts eaters down 10% (assumed)", {"transform": lambda sc: thin(sc, 0.10)}),
+    ("eaters_plus10", "Rule change shifts eaters up 10% (assumed)", {"transform": lambda sc: thicken(sc, 0.10)}),
+    ("crest_plus10", "Heavier crest: 10 points of diners move from before 9:00 to 9:15-9:30", {"transform": lambda sc: crest_shift(sc, 0.10)}),
+    ("gas", "Gas shortage: every batch takes 30 minutes to land (assumed), plan not warned", {"topup": 30}),
+    ("late_fail", "Failed 9:00 late batch: only the reactive 15-minute top-up acts", {"late_ok": False}),
+]
+stress = []
+for key, label, kw in STRESS:
+    x = run_design(**kw)
+    stress.append([key, label, round(x["eaten"]), round(x["b_sur"]), round(x["b_sh"], 1), round(x["cooked"]),
+                   round(x["sur"]), round(x["sh"], 1), round(x["wait"], 1), int(x["shdays"])])
+write("scen_stress.csv", ["key", "scenario", "eaten_per_day", "baseline_surplus_per_day", "baseline_short_per_day",
+                          "refined_cooked_per_day", "refined_surplus_per_day", "refined_short_per_day",
+                          "refined_diners_waiting_per_day", "refined_line_days_short_of_46"], stress)
+
+# ---------------------------------------------------------------- skip uptake: when does a fixed-ratio kitchen run short?
+# With the ratio kept, the kitchen cooks ratio x (registered - skips). If skippers are genuine
+# no-shows (share s of them skip), the batch falls below eaters once s exceeds
+# s* = (R - E/ratio) / (R - E). Reported per line over all 30 April days and over Sundays.
+thr = []
+for r_ in (0.60, 0.70, 0.80):
+    for l in ["veg", "nonveg"]:
+        vals_all, vals_sun = [], []
+        for d in days:
+            Rv, Ev = R[(d, l)], E(d, l)
+            sstar = (Rv - Ev / r_) / (Rv - Ev) if Ev < r_ * Rv else 0.0
+            vals_all.append(sstar)
+            if wd(d) == "Sun":
+                vals_sun.append(sstar)
+        thr.append([int(r_ * 100), l, round(100 * min(vals_sun), 1), round(100 * min(vals_all), 1),
+                    sum(1 for v in vals_all if v < 0.5), sum(1 for v in vals_all if v < 0.25), len(vals_all)])
+write("scen_skip_threshold.csv", ["ratio_pct", "line", "min_safe_uptake_sundays_pct", "min_safe_uptake_all_days_pct",
+                                  "days_unsafe_at_50pct_uptake", "days_unsafe_at_25pct_uptake", "days"], thr)
+
+# Skip-then-eat: a share g of skippers still eat (walk in, or on another student's scan).
+# Fixed 70% ratio, uptake s of genuine no-shows. Shortage per day on the kitchen's count.
+gam = []
+for scope in ("Sun", "all"):
+    ds = [d for d in days if scope == "all" or wd(d) == "Sun"]
+    for s_up in (0.25, 0.50):
+        for g in (0.0, 0.10, 0.25):
+            short = 0
+            for d in ds:
+                for l in ["veg", "nonveg"]:
+                    K = s_up * (R[(d, l)] - E(d, l)) / (1 - g)
+                    short += max(E(d, l) - A["ratio_kadamba"] * (R[(d, l)] - K), 0)
+            gam.append([scope, int(s_up * 100), int(g * 100), round(short / len(ds), 1)])
+write("scen_skip_gaming.csv", ["days", "uptake_pct", "skippers_who_still_eat_pct", "fixed_ratio_short_per_day"], gam)
+
+# ---------------------------------------------------------------- student cost and vendor plates across skip uptake
+upt = []
+sun_noshow = st.mean(sum(R[(d, l)] - E(d, l) for l in ["veg", "nonveg"]) for d in sun)
+day_noshow = st.mean(sum(R[(d, l)] - E(d, l) for l in ["veg", "nonveg"]) for d in days)
+weekly_charge = charge_base / 30 * 7
+sun_charge_week = st.mean(sum((R[(d, l)] - E(d, l)) * RATE[l] for l in ["veg", "nonveg"]) for d in sun)
+for s_up in (0.10, 0.25, 0.50, 0.75):
+    upt.append([int(s_up * 100), round(sun_charge_week * s_up), round(weekly_charge * s_up),
+                round(sun_noshow * s_up), round(day_noshow * s_up * 7)])
+write("scen_skip_uptake.csv", ["uptake_pct", "sunday_skip_rs_back_per_week", "everyday_skip_rs_back_per_week",
+                               "sunday_skip_fewer_registered_plates_per_week", "everyday_skip_fewer_registered_plates_per_week"], upt)
+
+# ---------------------------------------------------------------- monitoring anchors from the April records
+after930 = sum(1 for k in scans for x in scans[k] if x >= T0930) / sum(len(v) for v in scans.values())
+write("scen_monitor_anchors.csv", ["indicator", "april_value"],
+      [["share_of_scans_at_or_after_0930_pct", round(100 * after930, 1)],
+       ["baseline_cooked_to_registered_pct", int(100 * A["ratio_kadamba"])],
+       ["refined_cooked_to_registered_min_pct", min(round(100 * st.mean(v), 1) for v in eff.values())],
+       ["refined_cooked_to_registered_max_pct", max(round(100 * st.mean(v), 1) for v in eff.values())]])
+
+# ---------------------------------------------------------------- behaviour-over-time projection (re-sequenced bundle)
+# Kitchen quick fix: Sunday veg pilot weeks 5-8, roll-out weeks 9-16 (adoption pace assumed).
+# Fundamental fix on fixed dates: joint reading of the ledger at week 4; Sunday skip proposal
+# at week 6; Sunday skip in force from week 10 (rule owner's timing assumed); decision point at
+# week 14; every-day skip from week 16 only if the decision rule is met (conditional path).
+# Bands: surplus over baseline ratio 60-80% and crest shift -5 to +5 points; charges over
+# skip uptake 25-50%. Every value projected.
+def mix_surplus(apply, ratio=None, k=0.0):
+    ratio = A["ratio_kadamba"] if ratio is None else ratio
     tot_s = 0
     for d in test_days:
         for l in ["veg", "nonveg"]:
+            sc = crest_shift(scans[(d, l)], k) if k else scans[(d, l)]
             if apply(d, l):
                 F = st.mean(prior_same_weekday(d, l))
-                tot_s += staged(d, l, F, **REFINED)[1]
+                tot_s += staged(d, l, F, sc=sc, **REFINED)[1]
             else:
-                tot_s += max(A["ratio_kadamba"] * R[(d, l)] - E(d, l), 0)
+                tot_s += max(ratio * R[(d, l)] - len(sc), 0)
     return tot_s / len(test_days)
+
+
+def path(wk, ratio=None, k=0.0):
+    s_b = mix_surplus(lambda d, l: False, ratio, k)
+    s_p = mix_surplus(lambda d, l: wd(d) == "Sun" and l == "veg", ratio, k)
+    s_f = mix_surplus(lambda d, l: True, ratio, k)
+    if wk <= 4:
+        return s_b, s_b
+    if wk <= 8:
+        return s_b, s_b - (0.5 if wk == 6 else 1.0) * (s_b - s_p)
+    f = min(1.0, (wk - 8) / 8)
+    return s_b, s_p - f * (s_p - s_f)
 
 
 s_base = mix_surplus(lambda d, l: False)
 s_pilot = mix_surplus(lambda d, l: wd(d) == "Sun" and l == "veg")
 s_full = mix_surplus(lambda d, l: True)
-weekly_charge = charge_base / 30 * 7
-sun_charge_week = st.mean(sum((R[(d, l)] - E(d, l)) * RATE[l] for l in ["veg", "nonveg"]) for d in sun)
-mid_sun_charge = sun_charge_week * (1 - A["skip_share_refund_low"])  # Sunday skip pilot, low uptake
 bot = []
 for wk in range(0, 21, 2):
+    cb, cn = path(wk)
+    lo = [path(wk, r_, k) for r_ in (0.6, 0.8) for k in (-0.05, 0.05)] + [path(wk, 0.6), path(wk, 0.8)]
+    b_lo, b_hi = min(v[0] for v in lo), max(v[0] for v in lo)
+    n_lo, n_hi = min(v[1] for v in lo + [(cb, cn)]), max(v[1] for v in lo + [(cb, cn)])
     if wk <= 4:
-        surplus, stage = s_base, "Stage 1: routes and paper record"
+        stage = "Stage 1: routes, joint reading, co-design tests"
     elif wk <= 8:
-        surplus = s_base - (0.5 if wk == 6 else 1.0) * (s_base - s_pilot)
-        stage = "Stage 2: Sunday veg pilot"
+        stage = "Stage 2: Sunday veg kitchen pilot; Sunday skip proposed at week 6"
     else:
-        f = min(1.0, (wk - 8) / 8)
-        surplus = s_pilot - f * (s_pilot - s_full)
-        stage = "Stage 3: roll-out"
-    sunday_rule = wk >= 14
-    charge = weekly_charge - (sun_charge_week - mid_sun_charge if sunday_rule else 0)
-    bot.append([wk, round(s_base), round(surplus), round(weekly_charge), round(charge),
-                stage + (" + Sunday skip" if sunday_rule else "")])
-write("scen_bot_projection.csv", ["week", "baseline_surplus_per_day", "bundle_surplus_per_day",
-                                  "baseline_uneaten_charge_rs_per_week", "bundle_uneaten_charge_rs_per_week", "stage"],
-      bot)
+        stage = "Stage 3: kitchen roll-out"
+    sun_on = wk >= 10
+    every_on = wk >= 16
+    c_lo = weekly_charge - (sun_charge_week * 0.50 if sun_on else 0)
+    c_hi = weekly_charge - (sun_charge_week * 0.25 if sun_on else 0)
+    c_mid = weekly_charge - (sun_charge_week * A["skip_share_refund_low"] if sun_on else 0)
+    e_lo = weekly_charge * (1 - 0.50) if every_on else c_lo
+    e_hi = weekly_charge * (1 - 0.25) if every_on else c_hi
+    bot.append([wk, round(cb), round(b_lo), round(b_hi), round(cn), round(n_lo), round(n_hi), round(weekly_charge),
+                round(c_mid), round(c_lo), round(c_hi), round(e_lo), round(e_hi),
+                stage + (" + Sunday skip" if sun_on else "") + (" + every-day skip if the rule is met" if every_on else "")])
+write("scen_bot_projection.csv", ["week", "baseline_surplus_per_day", "baseline_surplus_low", "baseline_surplus_high",
+                                  "bundle_surplus_per_day", "bundle_surplus_low", "bundle_surplus_high",
+                                  "baseline_uneaten_charge_rs_per_week", "bundle_uneaten_charge_rs_per_week",
+                                  "bundle_charge_low", "bundle_charge_high", "conditional_everyday_charge_low",
+                                  "conditional_everyday_charge_high", "stage"], bot)
 
 # ---------------------------------------------------------------- refinement check: cap the cooked total at 1.5 x forecast
 cap_s = cap_sh = 0
@@ -505,5 +702,11 @@ for r in prof_rows:
     print(r)
 for r in bot:
     print(r)
+for name, rows_ in [("sens_ratio", sens_ratio), ("sens_crest", sens_crest), ("stress", stress), ("thr", thr),
+                    ("gaming", gam), ("uptake", upt)]:
+    print("--", name)
+    for r in rows_:
+        print(r)
+print("after 9:30 share", round(100 * after930, 1))
 print("yuk rows", len(yk), "mean excess", round(st.mean(x[7] for x in yk), 1), "mean charge/day",
       round(st.mean(x[9] for x in yk)))

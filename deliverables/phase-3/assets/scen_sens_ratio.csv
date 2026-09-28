@@ -1,0 +1,4 @@
+baseline_ratio_pct,baseline_cooked_per_day,baseline_surplus_per_day,baseline_short_per_day,refined_surplus_per_day,surplus_reduction_per_day,sunday_veg_baseline_batch,sunday_veg_eaten,sunday_veg_batch_to_eaten
+60,650,254,0.0,91,163,482,190,2.5
+70,759,362,0.0,91,271,563,190,3.0
+80,867,471,0.0,91,379,643,190,3.4

@@ -1,0 +1,13 @@
+days,uptake_pct,skippers_who_still_eat_pct,fixed_ratio_short_per_day
+Sun,25,0,0.0
+Sun,25,10,0.0
+Sun,25,25,0.0
+Sun,50,0,0.0
+Sun,50,10,0.0
+Sun,50,25,0.0
+all,25,0,0.0
+all,25,10,0.0
+all,25,25,0.0
+all,50,0,1.4
+all,50,10,3.0
+all,50,25,8.9
