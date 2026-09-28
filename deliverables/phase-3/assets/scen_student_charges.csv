@@ -1,0 +1,11 @@
+scenario,label,parameter,uneaten_charge_rs_april,change_vs_baseline_rs
+S0,Baseline,0,1058214,0
+S2-low,"Sunday opt-in, opted-in turnout 60%",0.6,934968,123246
+S2-mid,"Sunday opt-in, opted-in turnout 72%",0.72,918161,140053
+S2-high,"Sunday opt-in, opted-in turnout 85%",0.85,905309,152905
+S3-info,"Evening-before skip, 0% of no-shows skip",0.0,1058214,0
+S3-refund-low,"Evening-before skip, 25% of no-shows skip",0.25,793660,264554
+S3-refund-high,"Evening-before skip, 50% of no-shows skip",0.5,529107,529107
+S3s-refund-low,"Sunday-only evening-before skip, 25% of Sunday no-shows skip",0.25,1018114,40100
+S3s-refund-high,"Sunday-only evening-before skip, 50% of Sunday no-shows skip",0.5,978015,80199
+S6,Billing at consumption (held),1,0,1058214

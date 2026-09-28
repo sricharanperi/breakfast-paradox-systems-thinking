@@ -1,0 +1,5 @@
+scenario,label,test_days,cooked_per_day,surplus_per_day,shortfall_per_day,line_days_with_shortfall_of_46,shortfall_after_0915_per_day,late_batch_per_day,diners_waiting_before_late_batch_per_day
+S0,"Baseline: 70% of registrations, one batch",23,759,362,0.0,0,0.0,0,0.0
+S5,Parameter only: ratio lowered to 50%,23,542,150,4.5,7,4.5,0,0.0
+S1,Record-calibrated single batch (+10%),23,440,60,16.8,16,13.7,0,0.0
+S1b,Record-calibrated first batch + staged late batch,23,485,91,2.6,7,2.6,100,3.4

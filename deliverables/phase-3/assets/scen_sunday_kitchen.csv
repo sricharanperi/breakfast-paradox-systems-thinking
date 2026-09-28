@@ -1,0 +1,8 @@
+optin_case,optin_turnout,first_batch_rule,surplus_per_sunday,shortfall_per_sunday,shortfall_after_0915_per_sunday
+baseline,,70% of registrations,449,0,0
+low,0.6,70% of the new count,32,0.0,0.0
+low,0.6,"record-calibrated, staged",49,3.8,3.8
+mid,0.72,70% of the new count,0,22.7,22.7
+mid,0.72,"record-calibrated, staged",49,3.8,3.8
+high,0.85,70% of the new count,0,64.8,64.8
+high,0.85,"record-calibrated, staged",49,3.8,3.8

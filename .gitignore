@@ -26,3 +26,6 @@ thinking in systems audible companion pdf*.pdf
 
 # OS/editor cruft
 .DS_Store
+
+# Raw field data (large photos/audio + processed tables) kept out of git; summarised in research/primary-research/*evidence-brief.md
+Observation images/

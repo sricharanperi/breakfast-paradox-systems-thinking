@@ -1,0 +1,4 @@
+method,mean_error_pct,mean_abs_error_pct,min_error_pct,max_error_pct
+flat_0800,-26.9,34.8,-56.0,53.7
+profile_0800,15.6,28.6,-34.8,112.9
+profile_0900,2.6,13.4,-22.5,70.3

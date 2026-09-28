@@ -1,0 +1,15 @@
+weekday,line,cooked_to_registered_pct
+Mon,veg,42.9
+Mon,nonveg,55.9
+Tue,veg,45.9
+Tue,nonveg,58.0
+Wed,veg,41.9
+Wed,nonveg,46.2
+Thu,veg,42.1
+Thu,nonveg,54.6
+Fri,veg,52.2
+Fri,nonveg,67.2
+Sat,veg,35.8
+Sat,nonveg,43.5
+Sun,veg,29.1
+Sun,nonveg,41.8

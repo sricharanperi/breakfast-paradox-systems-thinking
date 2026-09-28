@@ -1,0 +1,18 @@
+key,value,basis
+ratio_kadamba,0.7,"single-sourced: Kadamba cooks 70% of registrations in the first batch, per line"
+rate_veg,48,"confirmed: posted registered rate, Kadamba veg breakfast (Rs); posted Sept 2026 rates applied to April counts (assumed unchanged)"
+rate_nonveg,66,"confirmed: posted registered rate, Kadamba non-veg breakfast (Rs); same caveat"
+rate_yuk,53,"confirmed: posted registered rate, Yuktahaar breakfast (Rs)"
+buffer,0.1,assumed: safety margin added to a record-based forecast
+allowance_outside,30,single-sourced: about 30 portions cooked for 30-50 outside diners
+allowance_staff_extra,30,assumed: a further allowance for about half of Kadamba staff (headcount unknown)
+topup_minutes,15,single-sourced: on-site top-up lands in 10-15 minutes (upper value used)
+flat_share_by_0800,0.25,assumed stand-in for a flat projection: 30 of 120 service minutes (7:30-9:30)
+optin_turnout_low,0.6,"candidate: Yuktahaar June Saturdays, registered students ate at about 60% (regime unconfirmed)"
+optin_turnout_mid,0.72,assumed midpoint
+optin_turnout_high,0.85,assumed: a confirmation close to intent
+walkin_share,0.05,assumed: share of Sunday eaters who do not opt in but still come
+skip_share_info_only,0.0,confirmed direction: Skip Meal that returns nothing is almost never used (L2)
+skip_share_refund_low,0.25,assumed: share of eventual no-shows who skip the evening before if skipping removes the charge
+skip_share_refund_high,0.5,assumed: upper value
+cancel_cap,5,confirmed: cancellations per meal type per month
