@@ -77,6 +77,8 @@ Columns: registered regular + Jain; ate as registered regular, registered Jain, 
 - **Menu dispute (student voice, same recording):** dinner sambar was dropped *"while they are taking more money from us"*. The operator says students or the committee decide the menu.
 
 ### 2.3 Vijayalakshmi Caterers mess (IIIT Road 54/55). Single-sourced (operator, noisy audio)
+> **Superseded in part (2026-09-28):** Evidence Brief #3 (`2026-09-28_bakul-niwas-evidence-brief.md`, §2 conflict table C1-C11) confirms this mess is **Bakul Niwas**, moves the kitchen to **Hafizpet (~8 km; ~20 min early, ~40 min normally)**, replaces "70% now 80%" with 70-80% by item adjusted weekly from historical attendance, moves the breakfast peak to 8:00-8:30, and reports payment on plates **served** (flagged, not resolved). Where the two conflict, Brief #3 wins.
+
 - Won a **tender**. Plate rate about **₹80 base, ₹60 bid** *(unclear)*. **Paid monthly as a lump sum on plates**, with deductions.
 - **Food is cooked off-site**, about 40 minutes away near the airport, and transported in insulated boxes. **Candidate:** this is the off-site kitchen that the CDS posters and the CFS Chair describe for **Bakul/Palash**. The mess name was not stated on tape, so this needs confirmation.
 - **Prepares for 70% of registrations (now 80%)**, checks every 30 minutes, and the extra arrives from the kitchen **within 30 minutes**. Reports turnout under 70%, weekends lower, non-veg days 85–90%. Claims Kadamba gets 90–95% *(contradicted by the April records for breakfast)*.

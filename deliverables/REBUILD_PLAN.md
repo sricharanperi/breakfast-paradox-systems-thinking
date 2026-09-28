@@ -476,3 +476,33 @@ Compile with `cd report && tectonic phase3.tex`, then scrub with the 5.4 `pypdf`
 ### 7.5 Open data questions added by Phase 3
 
 These extend Section 5 (Q1, Q2, Q3, Q4, Q5, Q6, Q11, Q12 and Q13 also bear on Phase 3 content): whether a late batch can be cooked at 9:00 at Kadamba without delaying crest service; the real first batch per line and weekday and whether the supervisor already cooks in stages; Sunday skip uptake (assumed 25 to 50%); which registration regime applied to Yuktāhār's June breakfasts. None blocks the Phase 3 render; each is stated as open in the Outstanding Evidence sections of 09 and 10.
+
+---
+
+## 8. Pass 3 additions (appended 2026-09-28, Bakul Niwas evidence, D-79 to D-84)
+
+Every Phase 1, 2 and 3 markdown file was revised a third time against Evidence Brief #3 (`research/primary-research/2026-09-28_bakul-niwas-evidence-brief.md`). Pass-3 audits: `deliverables/phase-*/revisions/2026-09-28-pass3_<id>-gap-audit.md`. Nothing was rendered (D-60 continues), so every PDF, docx, bundle and LaTeX report is now three passes stale (Phase 3: never rendered).
+
+**Evidence corrections every touched diagram must carry:** Bakul's operator is **Vijayalakshmi Caterers**, cooking at **the Hafizpet kitchen, ~8 km** (not "near the airport"); Palash's kitchen is candidate (dashed). **Three operator regimes**, not two: Kadamba fixed ratio; Bakul 70-80% by item, adjusted weekly, **~70% shortage floor** (L11 at Bakul: candidate, floor-bounded); Yuktāhār books. The **"70 → 80%" change is withdrawn**: remove it from any timeline or loop. Bakul's peak is **8:00-8:30** (manager); the closing crest is **Kadamba's records**, not every hall's. L12 carries the **transport delay** (lead time unknown) and the ~50 reserve at 9:20 (candidate). Payment basis: Bakul says **"plates served"** (flagged, unresolved). Bakul complaint route: CDS team → manager → kitchen → MD (do not write "Hafizpet" into it).
+
+| Diagram (embedding file) | Pass-3 change |
+|---|---|
+| Phase 1 `diagram1-system-boundary`, `diagram2-context-map` (01) | Name Bakul's operator and the Hafizpet kitchen; show hot holding at the hall; Palash dashed |
+| Phase 1 `diagram3-stakeholder-map`, `diagram4-relationship-network` (02) | Bakul operator named; Bakul information, food, complaint and money flows (text diagram now in 02) |
+| Phase 1 `d14-power-flow-network` (03) | Bakul manager as a node holding consumption and pairing knowledge with no route to the menu owner. The Phase 1 copy exists (checked 2026-09-28); the pull removed only the Phase 2 copy and `deliverables/phase-2/assets/diagram1-system-map.svg` |
+| Phase 1 `diagram8-crowd-curve` (05) | Caption/subtitle: Kadamba records only; Bakul's manager describes an 8:00-8:30 peak |
+| Phase 1 `diagram9-provisional-timeline` (05) | Remove the "70 → 80%" event; add the ~3 AM prep → ~7 AM arrival → 9:20 reserve morning if space allows |
+| Phase 1 `d11-loop-b1` (05) | Bakul's weekly channel, bounded by the floor, plus the upward-only phoned top-up |
+| Phase 2 `diagram1-system-map` (06) | Bakul + Hafizpet off site, ~8 km link, hot holding, three regimes |
+| Phase 2 `diagram13-kitchen-supply-subsystem` (06) | Add a Bakul panel or companion off-site supply diagram (from the text diagram in 06): temperature kept, texture lost |
+| Phase 2 `diagram8` service blueprint, `diagram9` power flow, `diagram12` governance (06) | Bakul lane (30-min check, phoned top-up, 9:20 reserve); Bakul manager node; Bakul complaint route |
+| Phase 2 `diagram24` loop dashboard (07b) | L11 row: Bakul candidate; L12: off-site delay, lead time unknown; L14: 70 → 80 evidence removed |
+| Phase 2 `diagram19`, `diagram20`, `diagram22`, `diagram39` (07) | Chain 2 per-hall crest + Bakul reserve; Chain 3 Bakul complaint route; Chain 5 menu-formation tension; Chain 7 three regimes, no 70 → 80 |
+| Phase 2 candidate new diagram | Menu-formation tension (text diagram in 06) |
+| Phase 3 `diagram-a9-leverage-intervention-map.png` (09) | Learning link "confirmed at Yuktāhār, candidate at Bakul (floor-bounded), absent at Kadamba"; IP5/IP8 off-site branch and 9:20 reserve; LP6 "per hall". Then delete 09's sentence saying the drawing does not yet show Bakul |
+| Phase 3 `diagram-a10-intervention-prototype.png` (10) | Bakul chip (check variant of B, per-hall C) and learning-link note |
+| Phase 3 `chart-a10-stress-tests.png` (10) | Subtitle "Kadamba only" |
+
+**No model re-run needed:** Activity 10's scenario model and every `scen_*.csv` are unchanged (checksum verified); scores recompute unchanged.
+
+**Open data questions added (Brief #3 §10):** Critical: plate basis per operator (Bakul "served" vs Kadamba "paid for" registrations); Bakul breakfast scan export; does Bakul write anything down; Hafizpet top-up lead time. Important: Bakul residents' reasons for skipping; item-level draw and waste at Bakul; basis of the 9:20 reserve; menu decision rights. Nice-to-have: protein target basis; regional preference in menu setting; Palash's operator and kitchen.

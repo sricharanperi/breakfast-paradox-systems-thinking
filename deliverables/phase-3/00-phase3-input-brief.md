@@ -5,6 +5,8 @@ date: 2026-09-27
 status: working draft, pass 2 (revised against Evidence Brief #2 and the pass-2 Phase 2 set); to be revised again as daily field observations come in
 ---
 
+> **Pass 3 note (2026-09-28, not re-edited in body).** This brief was superseded for authoring by Activities 9 and 10 (numbering map in MASTER_CONTEXT D-64). The Bakul Niwas evidence (`research/primary-research/2026-09-28_bakul-niwas-evidence-brief.md`, Brief #3) was propagated straight into Activities 1-10 rather than through this brief. Read the following body statements as revised: "the off-site kitchen" is **Bakul (Vijayalakshmi Caterers) at the Hafizpet kitchen, ~8 km** (Palash candidate). Bakul does **not** run a fixed uncalibrated ratio: it cooks 70-80% by item, adjusts weekly from historical attendance, and keeps a ~70% shortage floor ("no shortage, even if some wastage"). Any "70 → 80%" change is withdrawn. Bakul's described peak is 8:00-8:30. Bakul reports payment on plates **served** (flagged against Kadamba; LP-C/LP-D, now LP10, stay held). See the pass-3 audits in `deliverables/phase-*/revisions/2026-09-28-pass3_*`.
+
 # Changes since pass 1
 
 Pass 2 was driven by the team's first-hand field account of Kadamba and Yuktāhār (`research/primary-research/2026-09-27_team-field-account-evidence-brief.md`, "Brief #2") and by the pass-2 revision of Phase 2 built on it. The core structure is unchanged: the booking is the root, the gap is measured but unrouted, and the kitchen's conversion ratio is the intermediate mechanism. What moved:
