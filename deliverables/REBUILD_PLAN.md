@@ -564,7 +564,7 @@ Then run the Section 3.5 scrub and the Section 3.6 checks on it. Before treating
 
 Standing rule since 2026-09-29: every Word or PDF deliverable is rewritten to read as human-written before its final render, keeping every section, table, figure, number, ID and confidence label. In the order of work it sits **after the markdown is final and before Section 3.3**.
 
-- The tool is a user-level skill on Sricharan's machine (`ai-humanizer`); it is not in this repo. A teammate without it either hands the humanizing step to someone who has it, or does the pass by hand.
+- The method is in the repo at `.claude/skills/ai-humanizer/SKILL.md` (added 2026-10-06): the contract, the catalogue of tells to remove, and the order of work. Anyone can follow it by hand or with an assistant. `scripts/check_preservation.py` beside it compares the before and after text and must report PASS; `scripts/fix_ligatures.py` repairs text extracted from a PDF.
 - Whatever the method, the test is the same: no heading, ID or number lost or invented, zero em dashes, and the Section 3.6 checks still pass.
 - Humanize the markdown, not the PDF. The humanized markdown replaces the source file, so the docx and PDF are both built from it.
 - Expect documents dense with tables to shrink 5 to 10 percent. Do not cut facts to reach a target.

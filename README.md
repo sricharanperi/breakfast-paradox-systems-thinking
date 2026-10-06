@@ -31,7 +31,8 @@ You do not need to read everything. This order gets you ready in about an hour.
 | 2 | [`MASTER_CONTEXT.md`](MASTER_CONTEXT.md), Sections 1, 5 and 7 | Project overview, the render pipeline and its known bugs, and the decision log (D-1 to D-85). Section 4 is the full history; read it only when you need the reason behind something |
 | 3 | The three evidence briefs in [`research/primary-research/`](research/primary-research/) | The facts every diagram and document must agree with. Brief #3 (Bakul, 28 Sep) overrides Brief #2 (team field account, 27 Sep), which overrides Brief #1 (mess operations, 26 Sep) wherever they conflict. Brief #1 stays the authority for record-level numbers |
 | 4 | [`.claude/skills/systems-visual-design/SKILL.md`](.claude/skills/systems-visual-design/SKILL.md) | How diagrams are made here: hand-composed SVG through `svgkit.py`, rendered with headless Chrome. No Mermaid |
-| 5 | The gap audits in `deliverables/phase-*/revisions/` for the deliverable you are rebuilding | Each audit says exactly what its diagrams must now show. Three passes per deliverable: `2026-09-27_*`, `2026-09-27-pass2_*`, `2026-09-28-pass3_*` |
+| 5 | [`.claude/skills/ai-humanizer/SKILL.md`](.claude/skills/ai-humanizer/SKILL.md) | The humanizing pass every document goes through before rendering: what to rewrite, what must never change, and how to check nothing was lost |
+| 6 | The gap audits in `deliverables/phase-*/revisions/` for the deliverable you are rebuilding | Each audit says exactly what its diagrams must now show. Three passes per deliverable: `2026-09-27_*`, `2026-09-27-pass2_*`, `2026-09-28-pass3_*` |
 
 Reference only, when a question comes up: [`project_framework .pdf`](project_framework%20.pdf) (the assignment's activities and deliverables; section headings in every deliverable follow its wording) and `ProblemStatements.pdf`.
 
@@ -95,7 +96,7 @@ Run every command from the root of your clone. Section numbers refer to `deliver
 
 **Step 7. Markdown touch-ups.** Add the image line for every new diagram, update captions, and delete the sentences that say a diagram "does not yet show" something. Section 2 lists each one.
 
-**Step 8. Humanizing pass.** Section 9.4. Done on the markdown, before rendering.
+**Step 8. Humanizing pass.** Section 9.4. Done on the markdown, before rendering. The method is written out in [`.claude/skills/ai-humanizer/SKILL.md`](.claude/skills/ai-humanizer/SKILL.md), with a checker script beside it that confirms no heading, ID or number was lost.
 
 **Step 9. Render PDFs and Word files.** Section 3.3 for Phases 1 and 2, Section 9.3 for the Phase 3 report. Phase 1 before Phase 2.
 
@@ -145,7 +146,7 @@ research/
   book-notes-*.md, lecture-notes-*.md
 report/                    LaTeX reports and their figures
 tools/                     Vendored diagramming tools, for reference only
-.claude/skills/            The diagram toolkit (svgkit.py, icon-defs.svg)
+.claude/skills/            systems-visual-design (diagram toolkit) and ai-humanizer (humanizing pass)
 Observation images/        Raw field data. Not in git; ask for a copy
 ```
 

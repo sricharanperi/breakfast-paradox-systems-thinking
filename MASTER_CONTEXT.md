@@ -943,6 +943,8 @@ A memory entry makes the skill the default for every .docx or PDF.
 
 **Not done:** no render, no diagram. The final presentation is deferred by the user until the rebuild is complete.
 
+**Later the same session: the humanizing skill added to git.** The `ai-humanizer` skill was copied into the repo at `.claude/skills/ai-humanizer/` (SKILL.md plus its two scripts) so every teammate can run the humanizing pass (D-85); `README.md` and plan Section 9.4 point to it. The user also asked for `Observation images/` to be un-ignored and pushed. That was not done in this session: the repo is public, the folder holds recordings and photos of people outside the team, and one recording is over GitHub's 100 MB file limit. It is left for the user to decide and do; D-59 still stands.
+
 **Decision D-86:** the repo-root `README.md` is the teammate-facing guide to the rebuild and must be kept in step with `deliverables/REBUILD_PLAN.md`; the plan stays the detailed work list.
 
 ---
