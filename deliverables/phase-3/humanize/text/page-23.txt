@@ -1,0 +1,119 @@
+Scenario Model and Impact Evaluation
+The model explores how the system might respond; it doesn’t predict. Every output is
+projected, meaning arithmetic run on real records under stated assumptions. It replays
+Kadamba’s April 2026 breakfast records (confirmed, 32,162 registration rows with scan times),
+comparing what each rule would have cooked against what was actually eaten, in the real
+order of arrivals. Kitchen forecasts use only earlier records, so the backtest covers 23 out-ofsample days, 8 to 30 April; student-side scenarios use the whole month. No food cost or waste
+weight is used; money here is simply the posted rate times counted uneaten registrations.
+Table 17. Model assumptions
+Input
+
+Central value (tested range)
+
+Basis
+
+Kadamba first-batch ratio
+
+70 percent per line (60 to 80)
+
+Single-sourced; a sensitivity band
+
+Rates
+
+₹48 veg, ₹66 non-veg at Kadamba; ₹53 at
+Yuktāhār
+
+Confirmed as posted; use for April
+assumed
+
+Forecast of eaters
+
+Mean of earlier same weekday and line (× 0.75
+with an exam note)
+
+Model rule; records con rmed
+
+Arrival pro file
+
+Earlier same weekdays (crest 5 lighter to 10
+points heavier)
+
+Records con rmed; use candidate
+
+Top-up time
+
+15 minutes (30 in a gas shortage)
+
+Single-sourced; stress assumed
+
+Named allowance; at
+projection
+
+About 30 outside diners plus 0 to 30 staff (0 to
+60); 25 percent in by 8:00
+
+Single-sourced and assumed
+
+Skip uptake
+
+Charge removed: 25 or 50 percent of no-shows
+(10 to 75), 10 to 25 percent of skippers still
+eating (assumed). Nothing returned: zero
+
+Direction con rmed (L2)
+
+Opt-in turnout
+
+60, 72 or 85 percent; 5 percent walk-ins
+
+60 candidate (Yuktāhār June
+Saturdays); rest assumed
+
+Eaters under a rule change
+
+Held at records (±10 percent; ±25 for exams or a
+favourite item)
+
+Assumed
+
+Adoption and timing
+
+Kitchen weeks 5 to 16; skip proposed week 6, in
+force week 10
+
+Assumed
+
+Three limits apply throughout. The records cover one hall, one meal and one month, and rest
+on the operator’s own ratio. Kadamba’s stated waste of 5 to 10 percent (base unknown) only
+fits a surplus of several hundred portions if most of it is eaten by others, reheated or never
+actually cooked, so surplus here means portions cooked beyond what registered students ate,
+not waste in the strict sense. And demand is censored: on a run-out day, “eaten” is a floor, so
+an unadjusted forecast would drift downward over time, which is exactly what the ledger’s runout rule is there to answer.
+
+fl
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+fi
+
+None of this transfers to Bakul, which has no records of any kind. Its manager’s account
+(single-sourced) differs on every kitchen input: a rush at 8:00 to 8:30 with 10 to 15 arrivals in
+the last ten minutes, cooking about 8 km away from around 3 AM for some items, an
+unmeasured top-up lead time, and turnout at most about 60 percent, possibly itself an upper
+
+fi
+
+fi
+
+The Bakul tests are preparing a later extension, and don’t gate the Kadamba pilot in any way.
+

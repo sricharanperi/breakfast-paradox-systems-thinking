@@ -1,0 +1,63 @@
+actually run short. Nothing there is sized yet. B creates L11 at Kadamba (a candidate second
+instance at Bakul), shortens L13’s kitchen half, and reaches L8 through cost (P1 to P7).
+C: The Crest Plan. At 9:00 the supervisor projects the day from a weekday arrival card and
+starts a late batch that lands by about 9:15, before the crest, so the first batch only needs to
+cover the earlier diners. A grace period after 9:30 covers late-batch food only. All of this rests
+on Kadamba’s 10 to 15 minute on-site top-up. Bakul’s top-up needs a phone call, cooking at
+the Ha zpet kitchen and a 20 to 40 minute drive (single-sourced), so its hedge is about 50
+portions held at 9:20 (candidate), and its version of C is really about sizing that reserve and the
+latest call that can still land. C gives L12 sight of the crest, removes L14’s reason to hedge,
+and bounds L15 (P4, P5, P6).
+D: The Sunday Exit. Sunday, the lowest-turnout day at both recorded halls, is first drafted as
+opt-in: charged only if con rmed by 8 pm Saturday. A lighter variant keeps the default and adds
+a skip, open until the same hour, that removes the charge and lowers the kitchen’s count.
+Other days keep the four-day lead and the cap of five cancellations, and no skip may ever cost
+a hall place. D acts on L13’s booking end, on L2 (Skip Meal fails because a skip currently
+returns nothing) and on L1 (P3, P4, P5). Under opt-in, a student who forgets to con firm simply
+pays the walk-in rate.
+E: The Operator Menu Slot. At each two-week menu cycle, operators bring the items that
+wasted most (uttapam, set dosa and upma at Kadamba, single-sourced) and those that ran
+out. The Bakul manager’s view that pairings are the real problem (single-sourced) sets the
+guard here: operator input gets read alongside consumption data and residents’ actual wishes,
+as a voice, never as authority. E supplies L16’s missing link, which only becomes a loop once
+it’s actually used (P1, P6).
+F: Billed at Consumption (held). Breakfast gets charged on the scan, exactly as already
+done during an LPG shortage and some fest periods (confirmed), acting on L1, L2, L6 and L8
+(P3, P5, subject to a check on resale income). It stays held because the operator payment
+basis is unconfirmed: the Bakul manager reports plates served (single-sourced), while the
+Kadamba operator says it cooks on registrations and is paid for that. The hold lifts only once
+each operator’s basis is con rmed.
+G: Ratio Cut to 50 Percent (foil). Kadamba’s first batch drops from 70 to 50 percent by
+instruction, with no record, late batch or allowance attached. It changes no loop, and it breaks
+both P4 and P5.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+H: The Shared Reading. Joint sessions around the ledger ask each belief holder what leads
+to their gure, and what would change it: the Yuktāhār site head’s “about 50 percent” set
+against his own register at about 28, the Kadamba supervisor’s crest prediction, the
+registration side’s reasons for the automatic default. The Bakul manager’s beliefs wait on a
+Bakul record. CFS and CDS are asked to carry the goal already on the CDS poster, minimising
+food wastage through advance planning, as two indicators, booked-against-eaten and cookedagainst-eaten, read alongside P7’s quality measures. H acts on the mental models beneath
+every chain and on the working goal behind L10, L13 and L17 (P2, P3, P6, P7).
+

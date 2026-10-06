@@ -1,0 +1,93 @@
+Stakeholder
+
+Gains
+
+Bears
+
+Levers
+
+Outside diners and
+Kadamba staff
+
+Meals by allocation, not accident
+
+Being squeezed if the
+allowance lapses
+
+LP5
+
+Rule owner (CDS or
+Mess Office)
+
+The gap visible in its own terms
+
+A ledger, a threshold to
+answer, portal changes, an
+ownership role
+
+LP1, LP2, LP7, LP9,
+LP12
+
+CFS and facility team
+
+Evidence the goal is met; a remit
+reaching quantity
+
+A less predictable budget;
+being seen as auditors
+
+LP7, LP10, LP12
+
+Bakul operator
+
+A check on its judgement; a menu Requests for records it may
+voice; no revenue loss from LP2 if not keep; any rise in shortage
+paid on plates served (candidate) risk
+
+LP2, LP3, LP5, LP6,
+LP8, LP11
+
+Every actor here has a rational reason to prefer the present arrangement, so resistance is
+expected, not a fault to fix. The Kadamba operator stands to lose the most from LP2 and is the
+most needed for LP5, which is why LP3 and LP4 have to come before LP5 at Kadamba, and
+why the ledger has to reach CDS before any rule proposal does. At Bakul, the likeliest
+objection is to anything that raises shortage risk (candidate, held behind the uncon rmed plate
+basis).
+
+1.6 Deliverable 2: Design Principles
+Seven principles follow from the leverage points, the archetypes and the evidence. Each one is
+a test that any intervention concept in Activity 10 has to pass.
+P1: Route before you measure, and route on paper. Connect the records that already exist
+to the decisions that need them, before adding any new instrument. The gap is already
+measured, in the CDS export, in Yuktāhār’s books, in Kadamba’s own stated waste share, and
+Yuktāhār already dropped a commercial ERP system over cost and staff readiness (singlesourced), so routes should start from a book page and travel on channels that already exist:
+the daily meeting, the tasting, the menu cycle. This rules out new apps, sensors or forecasting
+software as a first step, surveys that just re-measure what records already hold, and any
+design that needs operators to go digital.
+P2: Make measurement blame-free, and judge it over months. No gure an intervention
+records should ever become grounds for a deduction against the staff who recorded it, and
+results should be judged over months, not days. Yuktāhār’s weighing only worked once it was
+made blame-free and discussed daily, and the fall in waste took from August to December
+(single-sourced); one run-out after a smaller batch, judged over just a week, would be enough
+to bring the hedge straight back. This rules out quantity checks framed as audits, linking waste
+to deductions, and one-week trials.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+P3: Change the default, the goal and the belief, not the people. Aim at the default on the
+student side, the goal on the operator and institution side, and the beliefs holding both in place,
+treating every actor as responding rationally to its own incentives and information. Students
+are registered by a default they never chose and hold the least power of anyone in the system;
+operators run the only balancing loops that actually work (L11, L12); the institution states one
+goal and pursues another. This rules out nudges and campaigns aimed at students, any logic
+of “students should just register more accurately,” blaming operators, or changing the
+cancellation count while leaving the default untouched.
+

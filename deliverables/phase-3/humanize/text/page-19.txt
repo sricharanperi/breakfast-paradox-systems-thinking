@@ -1,0 +1,101 @@
+2.2 Develop Scenarios and Prototypes (Deliverables 3 and 4:
+Prototypes and Scenario Model)
+
+Figure 3. The re-sequenced bundle across one breakfast
+Figure 3. The re-sequenced bundle across one breakfast: the kitchen lane is the quick fix,
+while the student, records and governance lanes carry the fundamental fix on fixed dates
+
+Prototypes
+Prototype A: the ledger sheet. One A4 page per hall per week, lled from the CDS export
+and the operator’s daily sheets. It can be written by hand and typed up later, just as Yuktāhār
+already does with its books (single-sourced).
+Table 12. Prototype A, the ledger sheet, lled for Kadamba on Sunday 19 April 2026
+Weekday
+
+Line
+
+Registered
+
+First batch and
+top-ups
+
+Eaten
+(scans)
+
+Left over, and where
+it went
+
+Run-out
+time
+
+Charged, not
+eaten
+
+Sunday
+
+Veg
+
+817
+
+From the sheet
+
+179
+
+From the sheet:
+outside diners, staff,
+reuse, bin
+
+From the
+sheet
+
+638 × ₹48 =
+₹30,624
+
+Sunday
+
+Non-veg
+
+252
+
+From the sheet
+
+94
+
+As above
+
+From the
+sheet
+
+158 × ₹66 =
+₹10,428
+
+Registered and eaten are the recorded gures (confirmed); the charge applies posted rates to
+April (projected, since using the rates this way is an assumption). Four rules sit at the foot of
+the page: “ate” means a scan against a registration plus any hand-logged scanner failures,
+shown separately; on a run-out day, eaten is a floor, not a count; the uneaten charge is printed
+right beside the surplus; and no gure on this page may ever ground a deduction.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+Prototype B: the plan card and daily sheet. The plan card is one line per dish per line, lled
+in at the evening planning step. Here it’s worked through for the Kadamba veg line on Sunday
+19 April 2026, using only the records that would have been available by Saturday evening:
+

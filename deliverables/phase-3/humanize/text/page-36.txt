@@ -1,0 +1,157 @@
+The path moves from a default that has to be escaped, to a booking that actually matches
+intent, one reversible step at a time.
+Table 34. Decision points and feedback rules
+Decision point
+
+When
+
+Step
+
+Rule
+
+If evidence goes the
+other way
+
+DP1: Sunday
+skip
+
+Week 6, fixed
+
+Proposal; in force
+about week 10
+
+None; goes on this date
+
+If declined, the Sunday
+charge line goes to the
+escalation forum
+
+DP2: Every-day
+skip
+
+Week 14
+
+From about week 16
+
+Sunday uptake at least 25
+percent; no Sunday over 10
+short; eaten per remaining
+registration rising only a few
+points; calibrated batch on
+both lines
+
+Uptake under 10
+percent: retest wording.
+Shortage: that line
+reads eaters first
+
+DP3: Default
+After a term of
+matched to intent DP2
+
+Opt-in on lowestturnout days; no
+automatic registration
+off campus
+
+Skip used by over half of
+no-shows; kitchen reads
+eaters everywhere; never
+costs a hall slot
+
+Low uptake, stable
+charge: keep skip and
+default
+
+DP4: Billing and
+payment
+
+Billing at consumption,
+or payment on served
+plates
+
+Basis known operator by
+operator; resale reliance
+checked
+
+If registered plates and
+no rate agreement:
+billing stays; the skip
+carries students
+
+Plate basis
+known
+
+Theory of Change
+Table 35. From root cause to expected response
+
+fi
+
+Root cause
+
+fi
+
+fi
+
+The Architecture Path
+
+Bundle change
+
+Expected response
+
+Gap measured but unrouted (L10; L4 Ledger, charge line, threshold
+fires on loudness)
+
+Cost becomes a trigger beside complaint
+(candidate)
+
+Registration count sought while
+minimising wastage is stated
+
+Goal carried with two indicators
+
+Indicators cited in a decision (untested)
+
+Beliefs holding count, ratio and
+default
+
+Shared readings
+
+Anchors move toward records (candidate)
+
+Fixed ratio, no learning record at
+Kadamba (L13, L11 absent)
+
+Plan card and sheet create L11
+
+Surplus 254 to 471 down to 69 to 120 a
+day (projected)
+
+Top-ups blind to the crest (L12, L14)
+
+9:00 late batch
+
+0.5 to 7.7 short; 9 to 13 on heavy days
+(projected)
+
+Count as a paid obligation (L8, L17)
+
+Forum and food-cost case
+
+Kadamba’s own reason to cut (candidate)
+
+Default with a narrow exit (L13, L2,
+L1)
+
+Sunday skip, then every-day on
+its own rule
+
+₹4,000 to ₹30,000 a week on Sundays;
+₹62,000 to ₹1.23 lakh a week every day
+(projected)
+
+Billing at the booking (L1, L6, L8)
+
+Held; ledger builds the case
+
+Decided once the basis is known
+

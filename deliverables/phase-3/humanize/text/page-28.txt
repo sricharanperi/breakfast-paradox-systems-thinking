@@ -1,0 +1,78 @@
+Figure 7. Refined kitchen design under assumed shocks
+Figure 7. Refined kitchen design under assumed shocks on the 23 backtest days, beside the
+baseline surplus (projected)
+Scenario 7. Behaviour over time for the recommended bundle. Adoption pace and timing
+are assumed; the baseline stays at 362 portions a day (254 to 471) and ₹2.47 lakh a week
+throughout.
+Table 24. The bundle over twenty weeks (projected)
+Surplus a day
+
+Uneaten charges a week
+
+0 to 4
+
+1: routes, tests, joint reading at
+week 4
+
+362 (254 to 471)
+
+₹2.47 lakh
+
+6
+
+2: Sunday veg pilot; skip
+proposed
+
+341 (236 to 446)
+
+₹2.47 lakh
+
+8
+
+2
+
+320 (219 to 421)
+
+₹2.47 lakh
+
+10
+
+3: roll-out; Sunday skip in force
+
+262 (182 to 346)
+
+₹2.37 lakh (2.27 to 2.37)
+
+12
+
+3
+
+205 (144 to 271)
+
+₹2.37 lakh (2.27 to 2.37)
+
+14
+
+3; every-day skip decision
+
+148 (107 to 195)
+
+₹2.37 lakh (2.27 to 2.37)
+
+16 to 20
+
+Full adoption
+
+91 (69 to 120)
+
+₹2.37 lakh (2.27 to 2.37); ₹1.23 to ₹1.85
+lakh with the every-day skip
+
+fi
+
+Stage
+
+fi
+
+Week
+

@@ -1,0 +1,81 @@
+bound (candidate). The arrival card, the 9:00 batch, the 1.5 cover and the Scenario 4
+thresholds all belong to Kadamba alone.
+Scenario 1. The kitchen rules, backtested. Four rules are replayed across the 23 backtest
+days.
+
+Figure 5. Kitchen rules backtested on 23 April days
+Figure 5. Kitchen rules backtested on 23 April days, portions a day, both lines (projected)
+Table 18. Kitchen rules on 23 backtest days (projected)
+Rule
+
+Cooked a day
+
+Surplus a day
+
+Short a day
+
+Line-days short (of 46)
+
+Baseline: 70 percent, one batch
+
+759
+
+362
+
+0
+
+0
+
+G: ratio cut to 50 percent
+
+542
+
+150
+
+4.5
+
+7
+
+B alone: forecast plus 10 percent,
+one batch
+
+440
+
+60
+
+16.8
+
+16
+
+B with C: calibrated batch plus
+9:00 late batch
+
+485
+
+91
+
+2.6
+
+7
+
+The baseline cooks far ahead of demand (veg runs about 525 a day for 237 eaten). The ratio
+cut fails on both counts: 150 surplus still remains (138 on veg), and non-veg still runs short on
+7 of 23 days, since its turnout reaches 59 percent on busy days. One at ratio simply can’t
+serve two lines 16 points apart. A calibrated single batch cuts surplus down to 60, but it just
+moves the cost into the crest instead, 16.8 short a day (13.7 after 9:15), and on 26 April the
+veg line would have run out at 9:24, 45 short: L14 running in reverse. With the late batch
+added, 274 fewer portions get cooked, leaving 91 surplus and only 2.6 short, which the
+ordinary top-up covers; the effective ratio becomes an output ranging from 29 percent (Sunday
+veg) to 67 percent (Friday non-veg). Across true ratios of 60 to 80 percent, the reduction runs
+165 to 382 portions a day: about 105 to 382 net of an allowance of up to 60, and about 214 to
+274 at 70 percent.
+Scenario 2. Projecting the day from the morning. Three ways of projecting the day’s diners
+from the morning count were tested against what the day actually brought.
+
+fi
+
+fl
+
+Table 19. Scenario 2, error in projecting the day from the morning (projected, on con rmed
+records)
+

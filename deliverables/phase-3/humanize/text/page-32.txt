@@ -1,0 +1,376 @@
+sourced). No score moved because of this, since everything scored here still rests on
+Kadamba’s records. Scores run from 0 (worse) through 1 (no effect) to 4 (large gain shown in
+the model); on O3, a 3 means a residue that one top-up can cover, and at Bakul any concept is
+judged against its held reserve. The total is out of 400, shown as a percentage.
+Table 28. Scoring against the criteria (0 to 4 per criterion; total out of 400 as a percentage)
+Concept
+
+Gates
+
+O1
+
+O2
+
+O3
+
+O4
+
+O5
+
+O6
+
+O9
+
+O7
+
+O8
+
+Score
+
+First draft
+
+A: Breakfast Ledger
+
+Pass
+
+2
+
+2
+
+4
+
+4
+
+2
+
+1
+
+2
+
+4
+
+4
+
+68%
+
+74%
+
+H: Shared Reading
+
+Pass
+
+2
+
+2
+
+4
+
+3
+
+3
+
+1
+
+2
+
+3
+
+4
+
+65%
+
+New
+
+F: Billing at consumption
+
+Fails G3
+(held)
+
+4
+
+2
+
+4
+
+2
+
+3
+
+1
+
+2
+
+0
+
+2
+
+63%
+
+61%
+
+C: Crest Plan, alone
+
+Fails G4
+alone
+
+1
+
+2
+
+4
+
+1
+
+3
+
+3
+
+3
+
+4
+
+4
+
+63%
+
+64%
+
+D: Sunday skip, ratio kept
+
+Pass
+
+2
+
+2
+
+4
+
+2
+
+3
+
+1
+
+3
+
+1
+
+3
+
+60%
+
+59%
+
+E: Operator Menu Slot
+
+Pass
+
+1
+
+2
+
+4
+
+2
+
+2
+
+2
+
+3
+
+3
+
+4
+
+60%
+
+61%
+
+B: Kitchen Kit, alone
+
+Fails G4
+alone
+
+1
+
+4
+
+1
+
+3
+
+2
+
+3
+
+1
+
+3
+
+4
+
+58%
+
+65%
+
+D: every-day skip
+
+Pass
+
+3
+
+2
+
+1
+
+2
+
+3
+
+1
+
+3
+
+0
+
+2
+
+50%
+
+New
+
+D: Sunday opt-in ( first draft)
+
+Pass
+
+3
+
+3
+
+0
+
+2
+
+2
+
+2
+
+2
+
+1
+
+3
+
+50%
+
+51%
+
+G: Ratio cut to 50 percent
+
+Fails G1, P4
+
+1
+
+3
+
+3
+
+1
+
+1
+
+1
+
+1
+
+4
+
+4
+
+48%
+
+58%
+
+First-draft bundle (skip waits
+for the kitchen)
+
+Fails G4
+
+2
+
+4
+
+3
+
+4
+
+3
+
+3
+
+3
+
+3
+
+3
+
+79%
+
+80%
+
+Re-sequenced bundle (A,
+H, Sunday skip on fixed
+dates; B with C as quick fix)
+
+Pass
+
+2
+
+4
+
+3
+
+4
+
+3
+
+3
+
+3
+
+3
+
+3
+
+79%
+
+New
+
+A leads because it builds the route every other lever needs, even though it moves no food or
+money on its own. H acts deepest of all, but the discomfort of being shown one’s own gure
+caps its O9. B alone has the largest physical effect (surplus down from 362 to 60) and the
+worst crest performance (16.8 short), which drags it from second place down to seventh. The
+every-day and opt-in forms of D move ₹2.65 to ₹5.29 lakh and ₹1.23 to ₹1.53 lakh a month
+respectively, but both fail the crest test (O3 at 1 and 0). G fails the gates outright and still
+leaves 150 surplus portions on the table. The two bundles hold identical parts and score
+identically, because a weighted score can’t see sequencing, but the gate can. The first-draft
+bundle made the Sunday skip wait for the kitchen to prove itself first, which is the shifting-theburden pattern playing out in miniature; Scenario 4 shows that wait is unnecessary, so the resequenced bundle passes G4 and is the one recommended.
+
+2.5 Identify Unintended Consequences
+Several second-order effects here are really just the loops themselves pushing back.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+Table 29. Unintended consequences and mitigations
+

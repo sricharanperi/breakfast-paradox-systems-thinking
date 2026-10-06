@@ -1,0 +1,176 @@
+Scenario 5. Yuktāhār’s belief against its register. Across nine legible September breakfasts,
+Yuktāhār registered 228 to 325 and served 41 to 105 (confirmed). Planning on the site head’s
+“about 50 percent” would cook about 63 portions a day beyond what was eaten, a gap the
+register itself removes (Sundays 18 to 24 percent, Tuesdays 31 to 40), with uneaten charges
+of about ₹10,500 a day at ₹53 (both projected). Yuktāhār’s real lever here is a change of belief,
+not a new routine.
+Scenario 6. Sensitivity and stress. Each condition is an assumed shock to Kadamba’s
+recorded arrivals, unwarned unless stated otherwise. Diners “waiting” are those who arrive
+after one batch runs out and before the next one lands.
+Table 23. Refined design under stress, per day (projected)
+Condition
+
+Eaten
+
+Baseline surplus
+
+Refined surplus
+
+Short
+
+Waiting
+
+Normal (backtest)
+
+397
+
+362
+
+91
+
+2.6
+
+3.4
+
+Crest 5 points lighter
+
+397
+
+362
+
+120
+
+0.5
+
+5.7
+
+Crest 5 points heavier
+
+397
+
+362
+
+69
+
+7.7
+
+1.1
+
+Crest 10 points heavier
+
+397
+
+362
+
+52
+
+12.6
+
+0.3
+
+Exam week, 25 percent fewer
+
+297
+
+462
+
+123
+
+0
+
+0
+
+The same, with calendar note
+
+297
+
+462
+
+67
+
+2.1
+
+2.5
+
+Favourite item, 25 percent
+more
+
+496
+
+264
+
+89
+
+9.1
+
+14.2
+
+Rule change, 10 percent
+fewer
+
+357
+
+402
+
+100
+
+1.4
+
+0.7
+
+Rule change, 10 percent more 436
+
+323
+
+89
+
+5.6
+
+6.5
+
+Gas shortage, 30-minute
+batches
+
+397
+
+362
+
+91
+
+2.6
+
+25.3
+
+Failed 9:00 late batch
+
+397
+
+362
+
+33
+
+43.6
+
+32.5
+
+fi
+
+fi
+
+fi
+
+Line-days short (of 46) run 2, 7, 13 and 15 from the lightest to the heaviest crest. The design
+fails safe toward fewer eaters and loud toward more. The late batch is load-bearing here: if it
+fails, about 44 diners are short and 33 wait, so the raw reserve is mandatory, and two failed
+Sundays running should stop the pilot outright. A gas shortage hurts mainly through waiting,
+and on such days the plan reverts to a larger first batch. A 10 percent shift in eaters keeps
+surplus between 89 and 100, so the no-adaptation assumption isn’t decisive either way, while
+the baseline’s surplus is almost pure ratio, running 254 to 471 across 60 to 80 percent.
+
+fi
+
+fi
+
+fixed date, while the every-day skip has to wait until the kitchen actually reads eaters on every
+line.
+

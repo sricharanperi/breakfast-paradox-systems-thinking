@@ -1,6 +1,6 @@
 # Rebuild Plan: Phase 1 and Phase 2 submissions from the revised markdown
 
-**Status:** working document, not a submission (D-35, D-42, D-52). Written 2026-09-27 after the two revision passes (pass 1 on Evidence Brief #1, the mess operations brief; pass 2 on Evidence Brief #2, the team field account). Paths are relative to the repo root unless stated otherwise.
+**Status:** working document, not a submission (D-35, D-42, D-52). **Checked on 2026-10-06: nothing in this plan has been executed yet.** Read Section 9 first; it lists what changed after Sections 1 to 8 were written and the decisions to take before starting. The repo-root `README.md` is the short step-by-step guide to running this plan. Written 2026-09-27 after the two revision passes (pass 1 on Evidence Brief #1, the mess operations brief; pass 2 on Evidence Brief #2, the team field account). Paths are relative to the repo root unless stated otherwise.
 
 **What this plan is for.** Every Phase 1 and Phase 2 markdown file has been revised twice. No docx, PDF, LaTeX report, bundle or diagram has been regenerated since. This plan lists everything that must be regenerated, what each diagram must now show, the exact commands, the checks to run on the rendered output, and the data questions worth settling first. The goal is that whoever runs the rebuild does not have to re-read the audits or re-derive any content.
 
@@ -506,3 +506,85 @@ Every Phase 1, 2 and 3 markdown file was revised a third time against Evidence B
 **No model re-run needed:** Activity 10's scenario model and every `scen_*.csv` are unchanged (checksum verified); scores recompute unchanged.
 
 **Open data questions added (Brief #3 §10):** Critical: plate basis per operator (Bakul "served" vs Kadamba "paid for" registrations); Bakul breakfast scan export; does Bakul write anything down; Hafizpet top-up lead time. Important: Bakul residents' reasons for skipping; item-level draw and waste at Bakul; basis of the 9:20 reserve; menu decision rights. Nice-to-have: protein target basis; regional preference in menu setting; Palash's operator and kitchen.
+
+---
+
+## 9. Status check and additions (appended 2026-10-06)
+
+### 9.1 Where things stand
+
+Checked against the files and the git history on 2026-10-06:
+
+- **Markdown: current.** Every Phase 1, 2 and 3 markdown file has been revised three times (pass 1 on Brief #1, pass 2 on Brief #2, pass 3 on Brief #3, the Bakul evidence). These are the source of truth.
+- **Phase 1 and Phase 2 PDFs, docx files, bundles and diagrams: stale.** All are dated 6 to 14 September and predate every revision pass. No commit on any branch re-renders them.
+- **LaTeX reports: stale.** `report/main.tex` and `report/phase2.tex` predate every revision pass; `report/phase3.tex` does not exist.
+- **Phase 3 diagrams and charts: current as of 2026-09-28**, but each still needs its pass-3 change from Section 8.
+- **Phase 3 has a submission-facing report that Section 7 does not know about.** See 9.3.
+
+So the work in Sections 2, 3, 4, 7 and 8 is all still to do. Count: 56 diagram items (Section 2) plus 17 pass-3 items (Section 8), 13 PDFs, 12 docx files, 3 bundles, 3 LaTeX reports.
+
+### 9.2 Decisions to take before starting
+
+These change how much work the rebuild is. Take them as a team and record the answers in `MASTER_CONTEXT.md` before anyone renders anything.
+
+| # | Decision | Suggested default |
+|---|---|---|
+| T1 | **Evidence freeze (Section 5, Q15).** Is any more field data coming before submission? | Freeze now. Draw every open question in Section 5 and Section 8 as "unresolved" (dashed grey) and do not wait for answers |
+| T2 | **Phase 3 submission form.** Render 09 and 10 as two PDFs plus `Invictus_Phase3.pdf` (Section 7), or keep the team's condensed report (9.3) as the submission | Keep the condensed report as the submission; treat 09 and 10 as working documents and skip P3-a to P3-c |
+| T3 | **LaTeX reports.** Are `report/main.pdf`, `report/phase2.pdf` and a new `report/phase3.pdf` actually submitted? | If not submitted, skip Section 4 and 7.4 entirely; they are the largest single item |
+| T4 | **Humanizing pass (9.4).** Run it on every Phase 1 and Phase 2 document before rendering? | Yes, per D-85, done by whoever has the skill installed |
+| T5 | **Chart data in git (Section 2.1).** Copy the aggregate CSVs (no student IDs) into `deliverables/phase-1/assets/data/` so charts rebuild from git | Yes; otherwise only a machine with `Observation images/` can rebuild diagram8, d18, d19, d20 |
+| T6 | **Field photos (9.5).** Which photos go into which deliverable | Decide per deliverable; none are embedded today outside the Phase 3 report |
+| T7 | **Evidence and Validation Register in the Phase 2 bundle, and a Phase 1 cover page** (Section 3.4) | Keep the 14 Sep composition unless the team wants otherwise |
+
+### 9.3 The Phase 3 report
+
+On 2026-09-29 the team's condensed Phase 3 report was rebuilt as markdown and re-rendered. It is the submission-facing Phase 3 text; `09-...md` and `10-...md` remain the full working documents.
+
+| File (`deliverables/phase-3/`) | What it is |
+|---|---|
+| `Invictus_Phase3_Activities_9_10.md` | Markdown source of the condensed report (about 15,900 words) |
+| `Invictus_Phase3_4..pdf` | Rendered report, 36 pages |
+| `Invictus_Phase3_Activities_9_10_humanized.docx` | Editable copy |
+| `Invictus_Phase3_Activities_9_10_temp.pdf` | The team's original 39-page PDF, kept untouched |
+| `assets/build_pdf.py`, `assets/phase3-style.css` | Its renderer and stylesheet (separate from the Phase 2 pair) |
+| `humanize/` | Working files: the faithful rebuild, section chunks, extracted figures |
+
+To re-render it after an edit:
+
+```sh
+python3 deliverables/phase-3/assets/build_pdf.py \
+  deliverables/phase-3/Invictus_Phase3_Activities_9_10.md \
+  "deliverables/phase-3/Invictus_Phase3_4..pdf"
+```
+
+Then run the Section 3.5 scrub and the Section 3.6 checks on it. Before treating it as final, read it once against the pass-3 audits `deliverables/phase-3/revisions/2026-09-28-pass3_09-gap-audit.md` and `..._10-gap-audit.md`: it already names Bakul as the Vijayalakshmi Caterers hall at the Hafizpet kitchen, but nobody has checked it line by line against pass 3. If its figures are re-exported, they must carry the Section 8 changes to the two Phase 3 diagrams and the stress chart.
+
+### 9.4 Humanizing pass (D-85)
+
+Standing rule since 2026-09-29: every Word or PDF deliverable is rewritten to read as human-written before its final render, keeping every section, table, figure, number, ID and confidence label. In the order of work it sits **after the markdown is final and before Section 3.3**.
+
+- The tool is a user-level skill on Sricharan's machine (`ai-humanizer`); it is not in this repo. A teammate without it either hands the humanizing step to someone who has it, or does the pass by hand.
+- Whatever the method, the test is the same: no heading, ID or number lost or invented, zero em dashes, and the Section 3.6 checks still pass.
+- Humanize the markdown, not the PDF. The humanized markdown replaces the source file, so the docx and PDF are both built from it.
+- Expect documents dense with tables to shrink 5 to 10 percent. Do not cut facts to reach a target.
+
+### 9.5 Field photos
+
+Nothing in Sections 2 or 3 places a photograph. What exists:
+
+- `Observation images/Photos/`: 26 photos of Yuktāhār's registers and kitchen (26 Sep 2026), indexed in `Observation images/Extracted Data/csv/00_Image_Index.csv`. Gitignored (D-59), so only on machines that were given the folder.
+- `deliverables/phase-2/assets/WhatsApp Image 2026-09-13 *.jpeg`: 4 CDS and CFS posters. In git.
+- `deliverables/phase-3/humanize/figs/`: 10 figures extracted from the team's Phase 3 PDF, some of them photos. In git.
+
+No Kadamba photo files were found in the repo or in `Observation images/` on 2026-10-06. If Kadamba photos exist, add them to `Observation images/Photos/` and index them before anyone plans a layout around them.
+
+A photo used in a deliverable must be copied into that deliverable's `assets/` folder (the gitignored folder cannot be referenced from a render another teammate will repeat), must show no student ID, face or name the team has not agreed to show, and follows the roles-only rule for staff (D-24, Section 5 Q9).
+
+### 9.6 Corrections to earlier sections
+
+- Section 3.1 hardcodes one machine's path. Run every command from your own clone's root instead.
+- Section 7.1 says "Docx: none yet, PDF: none yet" for Phase 3. True for 09 and 10; see 9.3 for the condensed report.
+- Decision IDs: the Bakul pass uses D-79 to D-84. The humanizing rule, first logged as D-79, is **D-85**.
+- The Phase 3 scenario model (`deliverables/phase-3/assets/scenario_model.py`) reads the raw `Observation images/april-data.xlsx`. It does not need re-running (Section 8), and cannot be re-run without that folder.
+

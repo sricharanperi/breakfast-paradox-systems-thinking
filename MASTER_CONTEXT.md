@@ -902,6 +902,49 @@ consolidated file by name instead of by section number.
 
 **Decisions this pass:** D-79 to D-84.
 
+### Session: 2026-09-29 — Humanized the Phase 3 PDF; new user-level `ai-humanizer` skill
+**By:** sricharanperi with Claude.
+
+**What the user asked for:** the team's Phase 3 PDF (`deliverables/phase-3/Invictus_Phase3_Activities_9_10_temp.pdf`, 39 pages, made in Apple Pages and received over WhatsApp) "looks like completely AI-generated text". Make it read as human-written, and a bit shorter, without removing any section or information. Also create a humanizer skill to use by default for every Word document or PDF.
+
+**Skill:** no humanizer skill existed. Claude wrote `~/.claude-work/skills/ai-humanizer/` (user-level, outside this repo). It has three parts:
+- `SKILL.md`: the document contract and a tell catalogue adapted from the MIT-licensed blader/humanizer skill, which is based on Wikipedia's "Signs of AI writing". The contract is: keep every section, table, figure, number, ID and confidence label; add nothing; shorten only AI-sounding passages.
+- `scripts/check_preservation.py`: compares section, ID and number inventories and counts tells.
+- `scripts/fix_ligatures.py`: repairs the fi/fl ligatures that PDF text extraction drops.
+A memory entry makes the skill the default for every .docx or PDF.
+
+**Process:**
+- No editable source existed, so the PDF was rebuilt as markdown in five section-aligned chunks, each checked against page images. The faithful rebuild is `deliverables/phase-3/humanize/Invictus_Phase3_Activities_9_10_original-rebuilt.md`; the chunks are in `humanize/chunks/`, and the figures, extracted from the PDF, in `humanize/figs/`.
+- Each chunk was humanized in two passes, and each pass was followed by an adversarial preservation review. The reviews restored several qualifiers the tightening pass had dropped.
+- The result is `deliverables/phase-3/Invictus_Phase3_Activities_9_10.md`: 17,039 to 15,901 words by the checker (-6.7%). The checker PASSES with no heading or ID lost and no number lost or invented. Its two flagged numbers ("17,", "373,") are punctuation variants.
+- One duplicated Figure 2 caption, present in the original PDF, was removed.
+
+**Output:**
+- `Invictus_Phase3_Activities_9_10_humanized.pdf`: 36 pages, zero dashes, tool metadata blanked (D-13). It was rendered by `deliverables/phase-3/assets/build_pdf.py` with a new `phase3-style.css` matching the original's look (Letter, Helvetica, teal headings, side-by-side photo pairs). Pandoc runs with `gfm-implicit_figures` so captions do not print twice.
+- `Invictus_Phase3_Activities_9_10_humanized.docx` for editing in Pages or Word.
+- The original PDF is untouched.
+
+**Relationship to 09/10:** this report is the team's own condensed rewrite of Activities 9 and 10. It names Bakul as the Vijayalakshmi Caterers mess, which the 09/10 markdown still treats as a candidate. It is now the submission-facing text; 09 and 10 remain the full working documents. The earlier local change to `09-...md` was checked and found to be whitespace-only table re-padding by an editor.
+
+**Decision D-85** (written as D-79 before the pass-3 merge; renumbered by decision date, D-23)**:** every Word document or PDF made for this user goes through the `ai-humanizer` skill before the final render. Documents dense with tables and figures typically shrink 5 to 10% without losing facts, and that limit is reported rather than cutting facts to hit a target.
+
+### Session: 2026-10-06 — Context rebuilt cold; pass-3 commit pulled and merged; rebuild status verified; README and plan Section 9 written
+**By:** sricharanperi with Claude.
+
+**What the user asked for.** Confirm full project context ahead of the final presentation; then pull the teammate's commit; then, before any rebuild, push everything with a root `README.md` that tells teammates exactly how to run the rebuild, and bring `deliverables/REBUILD_PLAN.md` up to date.
+
+**Rebuild status, verified.** The user recalled the rebuild as done and committed. It was not: no commit on any branch re-renders a Phase 1 or Phase 2 file, every such PDF, docx and diagram on disk is dated 6 to 14 September, both 28 September session entries say no render was run, and no second clone exists on this machine. The markdown revisions (three passes) and the Phase 3 diagrams and charts are what was done. The user accepted this.
+
+**Pull and merge.** `d5682c1` (Prathyusha, pass 3, Bakul) fast-forwarded. Two local uncommitted files overlapped it. The local change to `09-...md` was only table-divider padding from an editor (checked with a whitespace-insensitive word diff), so the pulled version was kept. The local 2026-09-29 session entry in this file was re-applied after the pass-3 entry. **Both sides had used D-79**; per D-23 the pass-3 decisions keep D-79 to D-84 (dated 2026-09-28) and the humanizing rule became **D-85** (dated 2026-09-29).
+
+**Written.** `README.md` at the repo root: status table, reading order, source-file table, prerequisites, a 14-step rebuild sequence keyed to the plan's sections, the facts every rebuilt file must carry, and the house rules. `deliverables/REBUILD_PLAN.md` Section 9: verified status, seven team decisions with suggested defaults (evidence freeze, Phase 3 submission form, LaTeX reports, humanizing pass, chart data in git, field photos, bundle contents), the Phase 3 condensed report and its renderer, the humanizing step's place in the order, a field-photo inventory, and corrections to earlier sections.
+
+**Found while checking, not resolved.** No Kadamba photo files exist in the repo or in `Observation images/` (26 Yuktāhār photos, 4 CDS posters and 10 figures extracted from the team's Phase 3 PDF do). The `ai-humanizer` skill lives outside the repo on one machine, so teammates cannot run that step themselves. `Observation images/` is gitignored, so the data-driven charts and the scenario model rebuild only on a machine that has it. The condensed Phase 3 report mentions the Hafizpet kitchen but has not been checked line by line against the pass-3 audits.
+
+**Not done:** no render, no diagram. The final presentation is deferred by the user until the rebuild is complete.
+
+**Decision D-86:** the repo-root `README.md` is the teammate-facing guide to the rebuild and must be kept in step with `deliverables/REBUILD_PLAN.md`; the plan stays the detailed work list.
+
 ---
 
 ## 5. TECHNICAL PLAYBOOK — the docx→PDF pipeline (reusable recipe)
@@ -1123,6 +1166,9 @@ The pandoc+tectonic LaTeX route (5.1-5.4) remains valid and is still how `.docx`
 | D-82 | **Payment basis (extends D-54):** Bakul reports payment on plates **served** (single-sourced, normalized wording), in tension with Kadamba's "paid for" registrations. Recorded as a flagged conflict, never generalized; **LP10, Concept F and DP4 stay held**, now released only by confirmation per operator. The Bakul operator's likely neutral-or-favourable position on LP2 is candidate / simulated and conditional on "served" | 2026-09-28 (pass 3) |
 | D-83 | **Design constraint "reduce waste without raising the chance of a shortage" is explicit** (08d; P4/P7; LP5's success test "waste falls, run-outs do not rise"; O3 per hall with a run-out indicator; every waste indicator paired with a shortage indicator in monitoring). Food quality measures include **holding time and texture** (P6, O6). Menu levers (LP8, Concept E) combine operator input with consumption records and resident validation, never operator authority over students | 2026-09-28 (pass 3) |
 | D-84 | **Pass-3 method:** audits named `2026-09-28-pass3_<id>-gap-audit.md`; Phase 1 → Phase 2 → Activity 9 → Activity 10, each wave fed by the previous wave's "downstream implications"; Activities 9 and 10 change only through an explicit trace (Evidence → upstream change → A9 → A10), with "no substantive change required because..." recorded for checked elements. Consolidated reports (00, 09c) updated last in their phase, faithful to their sources | 2026-09-28 (pass 3) |
+
+| D-85 | Every Word/PDF deliverable goes through the user-level `ai-humanizer` skill (human voice, somewhat shorter, no section or information removed, preservation check must PASS) before the final render; realistic shrink for dense reports is 5-10% | 2026-09-29 |
+| D-86 | The repo-root `README.md` is the teammate-facing guide to the rebuild, kept in step with `deliverables/REBUILD_PLAN.md` (which stays the detailed work list, now with a dated Section 9 status check) | 2026-10-06 |
 
 ---
 

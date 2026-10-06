@@ -1,0 +1,101 @@
+assurance that lower waste alone won’t lower its rate. The supervisor needs the blame-free
+rule and a named staff meal; CDS needs a skip that replaces cancellation work rather than
+adding to it; and Bakul, whose floor is entirely rational when a late call can’t land in time, needs
+a record of how often a smaller batch would actually have run short. The simulation makes the
+case for one joint reading rather than separate proposals, and against delaying the booking
+change behind the kitchen. If Bakul is paid on plates served, its likeliest objection is shortage
+risk, not a lower booking count (simulated, candidate).
+
+2.4 Test Interventions Against System Objectives (Deliverable 4:
+Evaluation Framework)
+The objectives come from the reframe, and belong to the system rather than any one
+stakeholder: notice its own cost, cut the first batch without trading waste for run-outs, make no
+one worse off, and be usable. Failing any of four gates makes a concept ineligible, whatever its
+score.
+G1, absorbers kept: resale, reuse, outside-diner and staff meals, walk-ins, late service and
+outside venues all survive, and only the over-cooked batch, reheating and the bin are targeted
+(P5). G2, safety kept: every food-safety step stays intact (P4). G3, aimed at structure: it
+neither asks students to behave better nor blames operators, and it isn’t gated on an unknown
+that could reverse it (P3; LP10 held). G4, quick fix paired: any kitchen lever comes with a
+route, default, goal or belief lever landing on a date independent of kitchen performance.
+Table 27. Criteria, scored 0 to 4 and weighted
+Criterion
+
+Result measure
+
+Weight
+
+O1: Booked against eaten
+
+Uneaten charges; share of registrations uneaten
+
+15
+
+O2: Cooked against eaten (only with
+O3)
+
+First-batch surplus a day
+
+15
+
+O3: Crest service, every hall
+
+Shortage after all batches per hall and line; a residue under 15
+about ten a day counts as protected
+
+O4: Fundamental capability
+
+Route built; L11 at Kadamba; goal indicators adopted
+
+15
+
+O5: Fairness
+
+Who bears any new cost
+
+10
+
+O6: Food quality
+
+Share from a fresh or late batch; holding time; grams per
+plate; taste and texture
+
+10
+
+O9: Desirability
+
+Simulated response; co-design tests once run
+
+10
+
+O7: Feasibility now
+
+Who must act
+
+5
+
+O8: Reversibility and learning
+
+Scope of a first pilot
+
+5
+
+fi
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+The weights are the team’s own judgement. Food quality rose from 5 to 10, because reheated
+surplus is a cost students actually eat, and the quickest way to cut surplus is worse portions;
+desirability entered at 10; feasibility and reversibility fell from 10 to 5, and cooked-againsteaten from 20 to 15, because weighting too heavily toward what a student team can do pulls
+every score toward the quick fix. Process checks are monitored, never scored. O2 is never
+read on its own, and O6 now counts holding time and texture too, after the Bakul manager
+reported that aloo paratha carried over from the Ha zpet kitchen loses its texture (single-
+

@@ -1,0 +1,221 @@
+Intervention
+
+Consequence
+
+Loop
+
+Mitigation
+
+B, C
+
+Food taken from outside diners
+and staff
+
+L9 (candidate)
+
+Named allowance, recorded as
+served
+
+B
+
+Crest run-outs on heavy days
+
+L14 reversed, L12
+
+Late batch, 1.5 cover, reserve,
+menu days noted
+
+B, C
+
+One loud shortage restores the
+hedge
+
+L14 ratchet
+
+Judge over months; every run-out
+recorded
+
+B, A
+
+Better kitchen hides the gap
+upstream
+
+L17 (candidate)
+
+Ledger carries the charge; kitchen
+labelled quick fix
+
+C
+
+Late batch lands in the busiest
+quarter-hour
+
+L12
+
+Live or steamed quick items; walkthrough first
+
+B
+
+Exams and events break the
+forecast
+
+L7
+
+Calendar note
+
+D
+
+Resale buyers lose Sunday slots
+
+L1
+
+Accepted; no market closed
+
+D
+
+Opt-in with a fixed ratio undercooks the crest
+
+L13, L14
+
+Skip keeping the default
+
+B, C
+
+Less reheating changes what
+students get
+
+L13 (open)
+
+Recorded on the sheet
+
+B, C at Bakul
+
+Kadamba rule trims a batch no
+top-up can replace
+
+L12 with delay
+
+No Kadamba rule applied; floor
+kept
+
+C at Bakul
+
+Bigger reserve softens held items
+(candidate)
+
+L13 holding (open)
+
+Reserve sized from own arrivals;
+texture under O6
+
+A
+
+CDS workload rises
+
+Governance
+
+Paper- first; tested time budget
+
+A, D
+
+Two people on record as head of
+CDS
+
+L10
+
+Send by role
+
+Likelihood
+
+Vendor raises its rate
+at renegotiation
+
+L8
+
+Medium on
+Rate proposals
+registered plates, low
+on served
+
+Ask plate basis first;
+show food-cost saving
+beside lost plates
+
+Skip, then eat on
+another’s scan
+
+L1
+
+Medium Sundays;
+higher daily
+
+Eaten per
+registration rising
+
+Walk-in ₹81 above ₹48
+(confirmed); daily step
+behind its rule
+
+Smaller portions,
+hidden leftovers,
+reheated stock
+
+L11 goal; L13
+
+Medium
+
+Grams per plate;
+“reuse” rising
+
+Never read alone (P7);
+store issues reconciled
+
+“Ate” gamed via
+hand-logged scans
+
+L10
+
+Low to medium
+
+Hand-logged share
+rising
+
+Own line; a rise triggers
+a scanner check, not a
+staff check
+
+Allowance quietly cut
+
+L9
+
+Medium, least visible
+
+Allowance below
+plan
+
+Missed meal is a stop
+condition
+
+fl
+
+Loop
+
+fi
+
+Adaptation
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+Table 30. Policy resistance (likelihood assumed)
+Early warning
+
+Mitigation
+

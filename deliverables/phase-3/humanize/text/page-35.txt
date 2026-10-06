@@ -1,0 +1,197 @@
+Cover
+
+Buffer
+
+Surplus
+
+Short
+
+Waiting
+
+8:45
+
+1.1
+
+10%
+
+77
+
+10.6
+
+20.0
+
+8:45
+
+1.5
+
+20%
+
+116
+
+4.9
+
+6.2
+
+9:00
+
+1.1
+
+10%
+
+67
+
+8.6
+
+17.7
+
+9:00
+
+1.3
+
+10%
+
+75
+
+6.5
+
+7.4
+
+9:00
+
+1.5
+
+10%
+
+91
+
+2.6
+
+3.4
+
+9:00
+
+1.5
+
+20%
+
+118
+
+0.8
+
+3.4
+
+The choice made is the least surplus that keeps waiting under five a day. Capping the day’s
+total at 1.5 times the forecast would save 21 more portions for 2.7 more short (projected), left
+as an option for the pilot to decide.
+
+2.7 Deliverable 5: Final System Design Recommendation
+The Recommended Intervention
+Route and read the gap together, open the Sunday exit on a fixed date, and calibrate the
+kitchen to buy time. The kitchen bundle runs alongside all of this as the quick fix, and is
+named as such wherever it’s reported.
+Table 33. The recommended sequence
+Stage
+
+Weeks
+
+Fundamental fix, on
+fixed dates
+
+Quick fix
+
+Leverage points
+(places)
+
+1: Routes and joint
+reading
+
+0 to 4
+
+Ledger with charge line;
+co-design tests; week 4
+joint reading; goal and
+indicators to CFS and
+CDS
+
+Cards and sheet drafted
+with the Kadamba
+supervisor
+
+LP1 (6), LP11 (2),
+LP12 (3)
+
+2: Exit proposed;
+Sunday veg pilot
+
+5 to 8
+
+Week 6: Sunday skip to
+the rule owner via
+student representatives,
+with the plate-basis
+question; shared
+readings
+
+Kadamba Sunday veg
+runs card, allowance,
+9:00 batch and sheet;
+Yuktāhār re-anchors;
+tasting line if agreed
+
+LP2 (5), LP11; LP5
+(6, 8), LP6 (6, 10),
+LP3 (3, 8), LP7 (8)
+
+3: Skip in force; rollout
+
+9 to 20
+
+Skip from week 10 if
+adopted; week 14
+decision; handover from
+week 16; exit at week 20
+
+Every day, both lines;
+forum on a cycle; menu
+notes
+
+LP2, LP4 (4), LP8 (6);
+LP5, LP6
+
+Held
+
+Until facts
+known
+
+Billing and payment
+basis; outcome owner
+
+None
+
+LP10 (5), LP9 (5)
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+Bakul is a later hall, sitting outside this pilot: a third regime with no records, and one the
+Kadamba model simply doesn’t transfer to. The recommendation extends there only once
+Bakul’s own scan export gives weekday turnout and arrivals, the call-to-counter lead time has
+been measured, an item-level record sits behind the weekly review, any Bakul kitchen lever
+reduces waste without raising shortage risk, and, for the Sunday exit specifically, its plate basis
+(reported as plates served, single-sourced) is con rmed.
+
+fi
+
+fi
+
+Start
+

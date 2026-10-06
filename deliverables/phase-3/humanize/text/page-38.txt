@@ -1,0 +1,96 @@
+Table 37. Monitoring after handover
+Archetype
+
+Indicator
+
+Signal of return
+
+Shifting the burden: reliance on
+quick fix
+
+Kitchen-led fall in surplus against fall in
+charges
+
+Surplus falling, charge at for three
+months
+
+Shifting the burden: fundamental
+progress
+
+Decision points on date; indicators
+cited; uptake
+
+A decision point missed twice
+
+Fixes that fail
+
+Effective ratio, weekly per line
+
+Drift toward 70 percent for four
+weeks
+
+Soft close (L15)
+
+Share after 9:30
+
+Above 9.2 percent for four weeks
+
+Accidental adversaries
+
+Completion; round numbers; handlogged share
+
+Completion under nine in ten for two
+weeks
+
+Every waste indicator is read alongside the run-out indicator for the same hall and line. Some
+results look better before they look worse (a bad crest can bring the hedge straight back
+months later), and others look worse before better (supervisor workload in Stage 2, the charge
+staying at until week 10), so each expected shape is written down on the ledger in advance.
+
+Who Must Act
+Of thirteen actions in total, the student team can complete two entirely on its own: building the
+ledger, cards and sheet, and running the co-design tests. It can convene or support four more
+that others have to decide: the joint and shared readings (CDS as convenor), taking Yuktāhār’s
+routine to Kadamba, the calibrated and 9:00 batches (Prism’s supervisor decides), and
+Yuktāhār’s re-anchoring. It can carry six forward as evidenced proposals: the tasting line
+(facility team, parent body unknown), a cost threshold (Student Council, Parliament, CDS
+Committee), the stated goal (CFS and CDS), the Sunday exit (rule owner, Mess Office or CDS,
+unconfirmed), the billing or payment basis (only once the plate-basis question is answered),
+and an owner of booked, cooked and eaten (CFS and CDS). And it must complete one thing
+outright: the handover, by week 20.
+
+Before and After
+Read as a range, first-batch surplus falls from about 254 to 471 portions a day down to about
+69 to 120, over roughly four months, and the weekly uneaten charge falls from about ₹2.47
+lakh to ₹2.27 to ₹2.37 lakh with the Sunday skip in place, and to ₹1.23 to ₹1.85 lakh if the
+every-day skip follows (all projected). The kitchen change is large and the student-side change
+stays small until the rule actually moves, which is really just the diagnosis restated as a system
+response. Kitchen levers reduce surplus and run-outs; only a rule moves the booking itself;
+and the design keeps both in view at once, so the first is never mistaken for the second.
+
+3 Key Findings
+1. The system is missing routes, not measurement. The enabling lever sits at place 6
+of 12: routing records that already exist to the kitchen and to the rule owners, and a
+student team can prototype it right now as a paper ledger.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fl
+
+fi
+
+fl
+
+fi
+
+fi
+
+2. The loops form a shifting-the-burden structure. The kitchen levers are the quick fix,
+and the booking, goal, belief and route levers are the fundamental fix, so the
+

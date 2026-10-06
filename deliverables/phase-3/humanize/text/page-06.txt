@@ -1,0 +1,79 @@
+LP7: A cost trigger for attention, carried on the oversight line. Loud menu fatigue got fixed
+through the Student Council, Parliament and CDS Committee (confirmed, L4); the much larger
+breakfast gap never entered that pathway at all. The facility team tastes every Kadamba meal
+alongside two Prism staff (confirmed, observed), but never checks quantity. The fix adds a
+standing threshold, say, cooked-against-eaten beyond a set level for several weeks running,
+that sends the case to the Committee alongside the existing complaint trigger. It is anchored to
+the stated goal, lunch turnout or Yuktāhār’s rate, never the hall’s own past, and it carries runouts alongside surplus. The cheapest way to carry it is one extra line item at the tasting.
+Because an inspector writing down quantity can look like an audit, a breach triggers a review,
+never a deduction, and the line adds no delay to safety.
+LP8: Operator voice in the menu. At Kadamba, uttapam, set dosa and upma waste the most
+while puri, bonda, vada and idli move well (single-sourced), yet it is students or the committee
+who choose the menu, not the kitchen. The Bakul manager wants menu input and already
+knows what sells, like pav bhaji, and which pairings he thinks work, like kachori with chole
+(single-sourced); that students would eat more of familiar pairings is his view, untested with
+residents. The fix is a standing operator slot at each two-week menu cycle, bringing item waste
+and run-outs to the table, which builds the missing route L16 as the quiet counterpart to L4.
+Input gets read alongside consumption records and checked against residents’ actual views; it
+is a voice, never authority, and no pairing view enters the record as student evidence on its
+own.
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+LP9: A named owner of booked, cooked and eaten (held). Decision rights are split at least
+five ways, across registration, billing, menu, cooked quantity and the academic calendar
+(confirmed). The actor who sets registration and billing rules bears none of the cost those rules
+produce, so a named owner, not a committee, would put the consequence where the decision
+actually gets made, and would inherit LP1. Yuktāhār already has a lighter version of this in its
+Wastage Register keeper. The lever stays held until the head of CDS is identified.
+
+fi
+
+fi
+
+LP6: Crest-aware top-up and a staged late batch. At Kadamba, 26.5 percent of April scans
+land between 9:15 and 9:30, rising to about nine a minute by 9:29, and 9.2 percent, about 37 a
+day, arrive at or after 9:30, the latest at 10:07 (confirmed). The operator’s own estimate of
+about 150 diners in the last ten minutes (single-sourced) overstates this, and is a candidate
+driver of why the hedge exists. Yuktāhār projects from the first half hour (single-sourced), when
+only 15.3 percent of Kadamba’s scans have even arrived (confirmed). The fix has three parts:
+a weekday arrival card telling the supervisor at 8:00 what share of the day has already shown
+up (place 6); a late batch started shortly after 9:00 based on it (place 10, since it changes
+when stock gets created); and a grace period after 9:30, always paired with the late batch.
+Place 9 isn’t claimed here. The share seen by 8:00 runs from 13.5 percent on Sundays up to
+22.5 on Wednesdays, and the share after 9:15 runs from about 32 percent (Tuesdays,
+Wednesdays) to about 46 (Sundays) (confirmed; used as factors, candidate), so a single at
+factor would misread Sunday and Wednesday by about a quarter. None of this transfers to
+Bakul. The manager places his rush at 8:00 to 8:30 and aims to have food ready for about 50
+diners at 9:20 (single-sourced), and a top-up there needs a phone call, cooking at the Ha zpet
+kitchen and a drive of about 8 km, roughly 20 minutes if called early and 40 otherwise, with the
+end-to-end lead time never actually measured. The Bakul version of this lever is really about
+the size of that held reserve and the latest call that can still land, set from measured data. The
+reserve is a hedge, not an absorber (candidate). LP6 is part of the quick fix.
+

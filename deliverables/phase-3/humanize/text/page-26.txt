@@ -1,0 +1,180 @@
+Scenario
+
+Charges
+
+Change
+
+Sunday opt-in, turnout 60 to 85
+percent
+
+₹9.05 to ₹9.35 lakh
+
+₹1.23 to ₹1.53 lakh less
+
+Every-day skip, 25 to 50 percent
+uptake
+
+₹5.29 to ₹7.94 lakh
+
+₹2.65 to ₹5.29 lakh less
+
+F (held)
+
+None
+
+₹10.58 lakh off students; bearer per
+plate basis
+
+Shorter lead, cap of five kept
+
+At most 26.5 percent of no-shows
+removable
+
+Bound only: 1,072 students × 5 against
+20,221
+
+A skip that returns nothing changes nothing, which is exactly why Skip Meal fails today. One
+that actually removes the charge is the smallest rule change that returns real money, and it
+scales cleanly from Sunday to every day. The lead-time bound shows that the cap limits any
+exit, no matter how it’s framed.
+Table 21. Skip effect a week, by uptake among no-shows (projected)
+Uptake
+
+Sunday: returned
+
+Every day:
+returned
+
+Sunday: fewer
+registered plates
+
+Every day: fewer
+registered plates
+
+10 percent
+
+₹4,010
+
+₹24,692
+
+78
+
+472
+
+25 percent
+
+₹10,025
+
+₹61,729
+
+194
+
+1,180
+
+50 percent
+
+₹20,050
+
+₹1.23 lakh
+
+389
+
+2,359
+
+75 percent
+
+₹30,075
+
+₹1.85 lakh
+
+583
+
+3,539
+
+Fewer registered plates only cost the vendor if it’s paid on them, which itself is uncon rmed.
+And if the kitchen keeps its ratio unchanged, opt-in starves the crest: 70 percent of a con rmed
+count leaves the two lines about 23 short each on Sundays at 72 percent opted-in turnout, and
+about 65 short at 85 percent, nearly all of it after 9:15, because the ratio silently assumes 30
+percent of bookings go uneaten. A skip is less exposed to this than opt-in.
+Table 22. Lowest uptake at which a kitchen keeping its ratio runs short (projected)
+Ratio
+
+Line
+
+Safe, Sundays
+
+Safe, every day
+
+Days short at 50 percent, every
+day (of 30)
+
+60 percent
+
+Veg
+
+72.5%
+
+47.2%
+
+1
+
+60 percent
+
+Non-veg
+
+49.0%
+
+3.6%
+
+25
+
+70 percent
+
+Veg
+
+82.3%
+
+66.1%
+
+0
+
+70 percent
+
+Non-veg
+
+67.2%
+
+38.0%
+
+7
+
+80 percent
+
+Veg
+
+89.7%
+
+80.2%
+
+0
+
+80 percent
+
+Non-veg
+
+80.9%
+
+63.8%
+
+0
+
+fi
+
+fi
+
+fi
+
+A Sunday skip is unlikely to cause a crest shortage below about two-thirds uptake on non-veg
+at 70 percent, or about half at 60 percent, even with a quarter of skippers still eating. An everyday skip at 50 percent uptake runs non-veg short on 7 of 30 days, about 1.4 a day, rising to 3.0
+if a tenth of skippers still eat, and 8.9 if a quarter do. So the Sunday skip can go on its own
+

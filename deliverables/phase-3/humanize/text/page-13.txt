@@ -1,0 +1,40 @@
+1.5 Deliverable 1: Leverage-Point / System Intervention Map
+The map draws the breakfast system as one chain, from the automatic default through the
+day-before plan, the first batch, service and the surplus, down to the bin, with records and
+money running above it and governance at the top. Markers are coloured by place. LP5 and
+LP6 each appear once per part, LP3 is marked by its deeper part, and a dashed ring marks a
+held lever. Dashed red lines are routes that don’t exist today and that a lever would need to
+build; the dashed green line is the learning link that runs at Yuktāhār and is absent at
+Kadamba. Grey tags carry the intervention points, with IP13 and IP14 sitting at the governance
+bodies the dashed routes would reach.
+
+Figure 2. Leverage-point and intervention map for the breakfast mess system
+Figure 2. Leverage-point and intervention map for the breakfast mess system
+Every solid ow runs along the chain or up into a record, and stops there. Every lever that
+builds a route, sets a goal, tests a belief or convenes operators (LP1, LP3, LP4, LP7, LP8,
+LP11, LP12) sits on a route or body that doesn’t yet do that work, and the rule levers (LP2,
+LP9, LP10) sit on the booking, the bill and the owner that the missing routes would reach. The
+only feedback loop actually working into the day-before plan is the learning link, confirmed at
+one hall out of three; Bakul’s weekly review is a candidate second instance, bounded by its
+floor, which the drawing doesn’t show yet.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fl
+
+Table 9. Map table
+
+fi
+
+fl
+
+a gure, so this slice stays specific to Kadamba’s veg line. Sunday is where LP2 (IP1 to IP3),
+LP5 (IP4) and LP6 (IP8, IP9) have their biggest effect, which makes it the natural first slice for
+Activity 10.
+

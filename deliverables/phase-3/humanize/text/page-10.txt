@@ -1,0 +1,131 @@
+Type
+
+Current state
+
+Candidate change
+
+Lever
+
+Rules
+
+Automatic registration; five
+cancellations per meal type per
+month, four days ahead (confirmed)
+
+Shorter lead; evening skip that
+lowers the count; Sunday opt-in;
+no hall-slot penalty
+
+LP2
+
+Rules
+
+Attention follows loud complaints
+(L4); billing at booking; back-door
+entry after 9:30 cannot be refused
+(single-sourced); no protection for
+recorders
+
+Standing cost threshold;
+consumption billing as already run;
+grace period with late batch; no
+deductions from recorded gures
+
+LP7, LP10, LP6,
+LP1
+
+Roles
+
+Facility team checks safety and taste;
+nobody convenes operators or owns
+the outcome; menu chosen without
+operator input
+
+Quantity line at tasting; CDSconvened forum; named owner;
+operator menu slot; CFS and CDS
+as goal carrier
+
+LP7, LP4, LP9,
+LP8, LP12
+
+Incentives
+
+A non-eater pays anyway; Skip Meal
+returns nothing (confirmed);
+recording read as being caught;
+shortage loud, surplus silent
+(candidate, L14)
+
+A later exit that removes the
+charge; surplus shown as cost;
+blame-free recording; late batch or
+sized reserve
+
+LP2, LP3, LP5, LP6
+
+Information flows
+
+Records reach no rule owner; two
+de nitions of “ate”; calendar by word
+of mouth; no kitchen-to-menu route
+(L16)
+
+The ledger; bill line after LP2;
+weekly calendar note; item waste
+into menu cycle
+
+LP1, LP8
+
+Processes
+
+Fixed 70 percent at Kadamba,
+weekly judgement with floor at Bakul,
+no record; whole hedge cooked at
+start
+
+Calibrated batch with daily record;
+arrival card; late batch after 9:00;
+safety steps unchanged
+
+LP5, LP6
+
+The widest rule change costs the kitchen the least, since the four-day lead only protects dry
+goods anyway. The key incentive nding here is conditional. Where payment is on registered
+plates, cutting surplus lowers cost while revenue holds. That route is open right now, though it
+closes if the rate gets renegotiated and turns harmful if it’s achieved through smaller portions.
+Where payment is on served plates, the gain is bigger, but so is the pressure to serve more,
+and if the Bakul manager’s account holds, Bakul is already absorbing the cost of uneaten
+portions and accepting it to avoid shortage (candidate). P7’s paired measures guard against
+both cases.
+
+The Natural Comparison
+Kadamba and Yuktāhār share registration, billing and, as far as is known, tendered plate
+payment. Yuktāhār plans from records, re-cooks by run-out time and weighs blame-free on
+paper (books con rmed, practice single-sourced); Kadamba cooks a fixed ratio instead. So a
+learning practice is clearly possible inside the current rules, but the comparison can’t prove the
+cause, because the two halls differ in five other ways.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+fl
+
+fi
+
+Table 6. Rival explanations
+

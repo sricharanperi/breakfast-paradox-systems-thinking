@@ -1,0 +1,75 @@
+The Breakfast Paradox: Leverage
+Points, Intervention Design and
+Recommendation
+Team Invictus
+This report covers Phases 3 and 4 of the Breakfast Paradox project: why IIIT Hyderabad
+students get billed for breakfasts most of them never eat, and what could change that. Activity
+9 works out where and how the system can be changed, producing the Leverage-Point /
+System Intervention Map and the Design Principles. Activity 10 takes it further. It designs and
+tests interventions against the system as a whole rather than any one stakeholder’s interest,
+and delivers the intervention concepts and prototypes, the scenario model and evaluation
+framework, and the recommended intervention.
+We start from the Phase 2 reframe. The Breakfast Paradox isn’t a broken system; it’s a stable
+equilibrium, and three structures hold it there. Registration is an automatic default with a
+narrow way out: five cancellations per meal type per month, each made at least four days
+ahead, with no way to undo the charge beyond that (confirmed). Billing fires at the moment of
+booking, not at the moment of eating (confirmed). And the gap between the two is measured
+but never routed anywhere. The CDS scan record and the operators’ own books both capture
+it, but neither reaches whoever sets the registration, billing or menu rules (confirmed).
+Underneath the kitchen side sits one intermediate mechanism: turning registrations into a
+cooked first batch. Kadamba cooks a fixed 70 percent of registrations per line (single-sourced).
+Bakul (Vijayalakshmi Caterers) cooks 70 to 80 percent by item, a gure its manager sets each
+week from his read of past attendance, never letting it drop below about 70 percent even on
+the quietest weekends (single-sourced). Yuktāhār plans from its own books. Every kitchen can
+top up a batch, but none will shrink one. Whatever the gap produces gets absorbed long
+before it becomes a signal anyone notices: through resale, top-ups, reuse, the meals of
+outside diners and staff, late service, holding and reheating, and nally the bin. Each actor is
+responding rationally to the incentives and information it has; the outcome nobody wants is
+what happens when those responses connect. The design opportunity, then, is to give the
+system a way to notice its own cost, by routing the records that already exist to the people who
+set the first batch and the rules, and by testing the beliefs that keep the working goal fixed on
+the registration count.
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+Claims here carry the project’s con dence vocabulary. Confirmed means read directly off a
+record (the Kadamba April 2026 breakfast scan export, the photographed Yuktāhār registers,
+posted rates) or seen on site. Single-sourced means it rests on one account: the Kadamba
+operator’s gures are first-hand, so the numbers themselves aren’t in doubt, but they remain
+his account of his own practice; the Bakul manager’s gures come from a team member’s
+synthesis of an interview with him. There are no Bakul records of any kind, so no Bakul effect
+is sized anywhere in this report. Candidate means an inference built by combining sources,
+and assumed means a judgement offered without direct evidence. Three more labels apply
+only to Activity 10. Projected marks every scenario-model output: arithmetic run on real records
+under stated assumptions, not an observed result. Simulated marks every stakeholder
+

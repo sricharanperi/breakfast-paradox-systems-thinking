@@ -1,0 +1,88 @@
+1 Activity 9: Define Design Principles and Intervention
+Opportunities
+Activity 9 works out where and how the breakfast mess system could change. It produces two
+deliverables, the Leverage-Point / System Intervention Map and the Design Principles, and
+moves through the activity’s four methods in order: identifying leverage points and reading
+them against archetypes and rank; exploring changes to rules, roles, incentives, information
+flows and processes; setting the design objective against the case for the status quo; and
+locating fourteen intervention points. The map and the seven principles close out the section.
+
+1.1 Identify Leverage Points
+Each leverage point sits on the twelve-point leverage scale, counted from the deepest, so
+place 1 is the power to transcend paradigms and place 12 is parameters. Place 5 (rules) is
+used only where a rule itself changes: the default and its exit, who decides, what a booking
+costs, or the standing rule that keeps another lever in place. Place 9 (delays) is reserved for
+flattening the closing crest, which no lever here attempts. Places 11 and 12 only appear as
+settings inside a deeper lever. Lowering Kadamba’s 70 percent ratio by decree would simply
+move the cost from surplus into run-outs at the crest, and the cancellation cap, raised from five
+to ten during a gas shortage and now back at five (single-sourced), only changes how many
+exits the default allows.
+A lever is ruled out if it works by removing a mechanism that protects someone: resale on
+Mess Cell, reuse of leftovers, the meals of 30 to 50 outside diners and about half of
+Kadamba’s own staff, the walk-in buffer, late and back-door service, outside venues, informal
+accommodation. The over-cooked first batch, repeated holding and reheating, and the bin
+protect no one, so they are fair targets. Feasibility is judged for a student team, which can
+propose, pilot and evidence a change but not enact a rule. High means a prototype or pilot with
+an actor already engaged; medium, an evidenced proposal to an existing forum; low, a
+proposal only, because either the holder can’t be reached or the lever depends on a fact
+nobody yet knows.
+
+LP1 Build the missing
+routes
+
+Place 6 of 12 (information
+flows)
+
+CDS (scans), operators
+(books); receiver unnamed
+
+High to prototype, medium
+to deliver
+
+LP2 Change the breakfast
+default and its exit
+
+Place 5 of 12 (rules)
+
+Registration rule owner
+(Mess Office or CDS,
+unconfirmed)
+
+Medium
+
+fi
+
+Feasibility
+
+fl
+
+Holder of the power
+
+fi
+
+Place
+
+fi
+
+Leverage point
+
+fi
+
+fi
+
+Table 1. The twelve leverage points
+
+fi
+
+fl
+
+fl
+
+fl
+
+response: a reasoned expectation, not feedback from the actor itself. Planned marks every codesign test, none of which has run yet. Loop and chain IDs (L1 to L17 and L3b) and their
+verdicts carry over from the Phase 2 causal loop analysis. Leverage depth is written as a
+position on a twelve-point scale, counted from the deepest: place 2 is mindset, place 3 the
+goals of the system, place 5 its rules, place 6 its information flows, and place 12 its
+parameters.
+

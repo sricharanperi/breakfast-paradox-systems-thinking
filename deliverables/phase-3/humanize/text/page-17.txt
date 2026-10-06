@@ -1,0 +1,128 @@
+2.1 Generate Alternative Interventions (Deliverable 3: Intervention
+Concepts)
+These concepts target the three con rmed structures holding the equilibrium in place
+(registration as a standing default with a narrow exit, billing at the booking, and a gap that’s
+measured but unrouted), plus the step where registrations turn into a first batch. Kadamba
+cooks a fixed 70 percent of registrations per line; Bakul (Vijayalakshmi Caterers) cooks 70 to
+80 percent by item, set weekly by its manager’s judgement and never below about 70 percent
+(both single-sourced); Yuktāhār plans from its own books. Every kitchen can top up a batch but
+none will shrink one. Concept G is a deliberate foil, carried through every test so that its failure
+gets shown rather than just asserted.
+Table 11. The eight intervention concepts
+Concept
+
+Leverage points (place)
+
+Intervention points
+
+Role
+
+A: The Breakfast
+Ledger
+
+LP1, LP7; LP9 later (6, 8; 5 for
+the threshold)
+
+IP13, IP6, IP12, IP4
+
+Fundamental: route
+
+B: The Kitchen
+Learning Kit
+
+LP3, LP4, LP5 (3 to 8)
+
+IP4, IP5, IP10, IP11, IP14
+
+Quick fix, carried by operator
+levers
+
+C: The Crest Plan
+
+LP6 (6, 10)
+
+IP7, IP8, IP9
+
+Quick fix
+
+D: The Sunday Exit
+
+LP2 (5)
+
+IP1, IP2, IP3
+
+Fundamental: default and
+exit
+
+E: The Operator Menu
+Slot
+
+LP8 (6)
+
+IP14
+
+Fundamental: route
+
+F: Billed at
+Consumption
+
+LP10 (5)
+
+Billing, outside the daily
+chain
+
+Fundamental, held
+
+G: Ratio Cut to 50
+Percent
+
+None (place 12 parameter)
+
+IP4, IP5 as a number
+
+Foil
+
+H: The Shared Reading
+
+LP11, LP12 (2, 3)
+
+IP13, IP14, IP4, IP1
+
+Fundamental: goal and
+belief
+
+A: The Breakfast Ledger. Each week, the CDS scan export and the operators’ books become
+one sheet per hall, by weekday and line, including the money charged for uneaten breakfasts.
+That charge line matters because it stops a falling surplus from being read as “problem
+solved”: kitchen levers shrink surplus while the charge stays at until a rule actually moves. A
+threshold on cooked-against-eaten, anchored outside the hall’s own past, alerts the escalation
+forum alongside the existing complaint trigger, and a weekly note of exams and events flows
+down to planning. A routes L10, adds a second trigger to L4, counters L17, and brings L7’s
+exam dips to the kitchen (P1, P2, P6, P7).
+
+fl
+
+fi
+
+fl
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+B: The Kitchen Learning Kit. Kadamba’s fixed ratio becomes a day-before plan card built
+from expected eaters, with a named allowance for the 30 to 50 outside diners and about half of
+Kadamba’s staff, plus a daily paper sheet read the next day. An operator forum, convened by
+CDS and hosted by Yuktāhār’s project managers, carries over the preconditions behind
+Yuktāhār’s Wastage Book: blame-free weighing, daily discussion, and surplus treated as cost.
+At Bakul, whose manager already adjusts weekly by item, the kit works more as a check than
+a new rule, with the floor kept in place until a record shows how often a smaller batch would
+

@@ -1,0 +1,150 @@
+50 against 28, though at Bakul the record itself has to come first, since there isn’t one yet.
+Effort goes to the actors already open to the data, with the holders of tested views made
+visible.
+LP12: Change the goal the system actually seeks. The CDS poster states the institution’s
+goal as minimising food wastage through advance meal planning (confirmed). But the goal the
+system actually seeks is the registration count: students are billed on it (confirmed), Kadamba
+cooks on it (single-sourced), and reading these together as the real working goal is a
+candidate reading. The measure of the stated goal is already being recorded and read by no
+one (confirmed). The fix makes booked-against-eaten and cooked-against-eaten, per hall and
+line, the real indicators, read alongside quality and run-outs, since a wastage goal read alone
+could just as easily be met by running short (candidate). CFS and CDS carry this by restating
+their own goal and asking for its indicators. LP12 is the move from the registration count to
+cooked-against-eaten; the other levers are what make that move possible.
+
+Identify System Archetypes
+Of six structures checked, only the first three read as actually present.
+Table 3. Archetype reading
+Archetype
+
+Loops and evidence
+
+Confidence
+
+Way out and levers
+
+Shifting the burden
+
+Quick fix L11, L12, L9, L1 (resale);
+fundamental fix withered (L10
+route, L13 upward link, L2,
+reverted L6); side effect L17.
+Resale replaces Skip Meal;
+attendance billing reverted
+(confirmed)
+
+Candidate; the link from
+kitchen competence to
+less pressure upstream is
+assumed
+
+Strengthen the
+fundamental fix (LP1, LP2,
+LP12, LP10); name the
+quick fix (LP5, LP6); P5
+
+Balancing process
+with delay
+
+L12, L14. Top-up of 10 to 15
+minutes against the crest; at Bakul
+a 20 to 40 minute drive and a held
+reserve
+
+L12 confirmed; delays
+single-sourced; overshoot
+candidate
+
+Be more responsive; do
+not over-correct (LP6)
+
+Fixes that fail
+
+December 2024 cap tightening; a
+candidate ratio ratchet on L14
+(premise only); reheating branch
+of L13. No back re observed
+
+Candidate
+
+Make the implicit target
+explicit (LP3, LP5, P2)
+
+Eroding goals
+
+Stated goal against the count; “this Not established; a risk
+cannot be helped”; 50 against 28.
+(assumed)
+No lowered target on record
+
+Anchor standards outside
+(LP3, LP7, LP12)
+
+Accidental
+adversaries
+
+Operators and rule owner (L10,
+L16). No antagonism found
+
+A risk if the ledger reads
+as audit
+
+Map the structure together
+(LP4, LP11, P2)
+
+Commons or success
+to the successful
+
+L3b (candidate); Kadamba full,
+Bakul under-registered; no Bakul
+or Palash records
+
+Low, outside scope
+
+None; LP2’s hall-slot
+condition guards L3b
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+The first archetype orders the whole set. LP5 and LP6 are the quick fix, worth doing because
+students eat the food that gets saved and it buys time, but it needs to be named as such in the
+ledger, since a better-run kitchen presented as the answer would stop anyone looking for the
+fundamental fix (the L17 risk). LP1, LP2, LP11 and LP12, with LP10 once released, make up
+the fundamental fix. The system is also chasing the wrong goal, the sharpest nding of the
+

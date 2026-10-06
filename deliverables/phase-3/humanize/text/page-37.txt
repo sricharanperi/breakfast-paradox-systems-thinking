@@ -1,0 +1,94 @@
+The bundle works on the place-3 goal, moving the working measure from the registration count
+to cooked-against-eaten. That’s the very aim the institution’s own poster already names.
+
+Interventions Across the Iceberg
+At the level of events, the daily sheet records batches, run-outs and leftovers, and marks runout days as censored, agged by run-out time per line. At the level of patterns, the monthly
+arrival card and the ledger’s behaviour-over-time lines are watched through weekly surplus,
+shortage and charge, the share after 9:30, and the effective ratio. At the level of structures, the
+ledger route, plan card, skip and stated goal are tracked through whether the ledger actually
+reaches the rule owner, skip uptake, and the two indicators. And at the level of mental models,
+“registration is demand,” “breakfast is about 50 percent,” “cooking to registrations is what we
+are paid for,” “we cannot nullify it,” “they are catching us,” shared readings address each holder
+directly, with Bakul’s beliefs held as open questions, and the indicators are shift signals such
+as the site head’s gure nally matching his own register.
+
+Pilot Design and Monitoring
+Table 36. Pilot design
+Element
+
+Specification
+
+Where and when
+
+Kadamba veg line, Sunday breakfast: four Sundays in Stage 2, continued in Stage 3,
+judged at week 16; Yuktāhār for re-anchoring
+
+Convening
+
+Joint reading at week 4 agrees the definition of “ate” and hears the Sunday proposal;
+repeated at week 12
+
+Runs and agrees
+
+Kadamba supervisor runs it; the team fills the ledger. Prism’s operations manager, ABC
+Hospitality Services, the facility team’s parent body and the rule owner agree
+
+Result measures
+
+Uneaten charges; surplus; run-outs and diners short; grams, taste and texture; holding
+time; fresh or late share; allowance meals
+
+Process checks
+
+Sheet nine days in ten; ledger weekly; late batch by 9:05; sessions on date (never
+reported as results)
+
+Comparison
+
+Sunday non-veg, Saturday veg and earlier Sundays
+
+Success
+
+Sunday veg surplus from about 370 to under 100 (model about 45); no Sunday over 10
+short; run-outs no more frequent than comparison days; every allowance meal served;
+grams and taste held; safety recorded; no sheet-based reprimand; charge line reported
+weekly
+
+Stop
+
+Shortage beyond one top-up two Sundays running; late batch failing twice; any
+allowance meal missed; grams below standard; any gure used against staff; consent
+withdrawn
+
+Would change the plan
+
+Base of the waste gure; whether Skip Meal lowers the count; plate basis; co-design
+results
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+fi
+
+The team must be careful not to become the intervenor the system quietly comes to depend
+on. The CDS of ce compiles the page by role, operators’ own data roles fill their sheets, and
+the escalation forum receives the threshold; a named outcome owner (LP9) takes over once
+the head of CDS is actually known. CDS compiles alongside the team from week 16 and alone
+from week 18; the team steps back at week 20, once two pages and one forum have run
+without it. Each archetype is checked monthly for at least six months after that.
+

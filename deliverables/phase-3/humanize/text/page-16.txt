@@ -1,0 +1,75 @@
+P4: Act on the first batch the day before, and on the morning only through the top-up.
+First-batch levers act at the day-before plan; morning levers act only through smaller, later topups or, where one can’t land in time, a sized reserve. None of this may cut waste by raising
+shortage risk, and scope stays per hall, weekday, line and, where records allow, item. At
+Kadamba the batch is fixed three and a half to four hours before the crest, and at Bakul
+cooking can start around 3 AM (single-sourced), while arrival curves and line turnouts (32.4
+against 48.5 percent) differ substantially. This rules out same-morning signals aimed at the first
+batch, shortening safety steps, a single ratio for everything, cutting waste through run-outs, or
+moving one hall’s rule onto another before it has its own records.
+P5: Feed the absorbers by plan, name them as symptomatic outlets, and target only the
+over-cooked batch, repeated reheating and the bin. Any concept that shrinks surplus has to
+name who eats it and budget their meals, and the ledger should record absorbers as outlets of
+the gap, never as solutions to it. Thirty to fifty outside diners and about half of Kadamba’s staff
+already eat from this same food (single-sourced), yet counting their meals as “not wasted”
+would just hide the gap again, the shifting-the-burden trap in miniature. This rules out
+restricting resale, closing the back door, cutting the batch without an allowance, or reporting
+absorbed surplus as a success.
+P6: Measure success as cooked against eaten, run-outs and food quality, not turnout.
+Success means the cooked-eaten gap, run-outs, food quality as actually eaten (holding time
+and texture, not just temperature and taste), and whether the cost reaches a rule owner at all;
+waste falling while run-outs rise is not success. Some skipping is entirely legitimate (confirmed
+across interviews), and Bakul’s food, held at about 60 to 72°C, keeps its temperature even as
+aloo paratha softens (single-sourced). This rules out turnout targets, attendance drives, waste
+cuts sized before Kadamba’s own 5 to 10 percent base is even known, and quality checks that
+read temperature alone.
+P7: Measures are diagnostic and plural, never a single target. Every measure serves
+learning, not reward or penalty, and cooked-against-eaten always has to be paired with grams
+served per plate, taste and quality, and run-outs. A kitchen held to just one gure can meet it
+by cutting portions or letting the crest run short, and a vendor rewarded on it can meet it
+through the rate; paired measures close off both of those routes, and the targets in LP3 and
+LP7 exist to serve review, not to be gamed. This rules out a single headline target, any bonus,
+deduction or ranking tied to one ledger gure, and waste gures reported alone.
+
+2 Activity 10: Design, Test and Evaluate Interventions
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+Activity 10 develops and assesses interventions that improve system-level outcomes rather
+than optimising for any one stakeholder’s interest. Its three deliverables are the intervention
+concepts and prototypes (Deliverable 3, the first two sections below), the scenario model and
+evaluation framework (Deliverable 4, from the scenario model through the unintended
+consequences), and the final system design recommendation (Deliverable 5, after the
+refinement). The shifting-the-burden reading from Activity 9 sets the order throughout. The
+kitchen levers (LP5 and LP6) are the quick fix: they save food and buy time without touching
+why too many plates get booked and cooked in the first place. The route, the default and its
+exit, the goal, and the beliefs (LP1, LP2, LP12 and LP11) are the fundamental fix, so the
+recommendation runs them on fixed dates regardless of what the kitchen pilot shows.
+

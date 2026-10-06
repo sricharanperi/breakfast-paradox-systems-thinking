@@ -1,0 +1,162 @@
+whole problem analysis, and that’s what LP12 answers. One past change already pushed the
+wrong way: the cap was tightened in December 2024 to ease Mess Office workload, narrowing
+the exit (single-sourced; effect on no-shows candidate). An earlier reading, that Bakul raised its
+ratio from 70 to 80 percent after run-outs, is withdrawn; the gures simply describe variation by
+item and day.
+
+Ranking: Depth and Feasibility
+Depth combines place with role, so a fundamental- fix lever outranks a quick fix sitting at the
+same place; feasibility is judged for a student team in the weeks remaining.
+Table 4. Ranking of leverage points
+Rank
+
+Lever (place)
+
+Role
+
+Depth / feasibility
+
+Gated on
+
+1
+
+LP1 (6)
+
+Fundamental, enabling
+
+High / high to prototype
+
+A named receiver
+
+2
+
+LP11 (2)
+
+Fundamental
+
+Very high / medium
+
+The ledger
+
+3
+
+LP2 (5)
+
+Fundamental
+
+High / medium
+
+Lowering the kitchen’s
+count
+
+4
+
+LP12 (3)
+
+Fundamental
+
+Very high / low to
+medium
+
+CFS and CDS
+
+5
+
+LP3 with LP4 (3, 8; 4)
+
+Links both
+
+High / low to medium
+
+Access to Prism
+management
+
+6
+
+LP5 with LP6 (6, 8; 6,
+10)
+
+Quick fix
+
+Medium / high to low by
+hall
+
+Waste base; Bakul
+records
+
+7
+
+LP7 (8)
+
+Fundamental
+
+Medium / medium
+
+Facility team’s parent
+body
+
+8
+
+LP8 (6)
+
+Fundamental
+
+Medium / medium
+
+Records and resident
+views
+
+Held
+
+LP9 (5)
+
+Fundamental
+
+High / low
+
+Head of CDS
+
+Held
+
+LP10 (5)
+
+Fundamental
+
+High / low
+
+The plate basis
+
+LP1 ranks first even though it’s shallower than LP11, LP12 and LP2, because every other lever
+needs its input to work. LP11 is the deepest lever but depends on the ledger existing first. LP2
+is the deepest rule lever that isn’t gated on the plate basis. LP12 comes fourth because
+nobody who could carry it has engaged yet, and a goal without indicators or an exit doesn’t do
+anything on its own. LP3 and LP4 are what carry the goal into the operator’s own routine:
+Kadamba isn’t missing information, it’s missing a reason and a routine. LP5 and LP6 are the
+fastest physical levers, but they are the quick fix, unsizeable until the waste conflict is settled,
+and at Kadamba they only land through LP3 and LP4. LP7 outranks LP8 because it gives
+governance an actual response to cost. LP9 and LP10 are held, not dropped.
+
+1.2 Explore Changes to Rules, Roles, Incentives, Information Flows
+and Processes
+Each change starts from the current state and implements a leverage point.
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+fi
+
+Table 5. Changes by type
+

@@ -1,0 +1,94 @@
+Projection
+
+Mean error
+
+Mean absolute error
+
+Range of error
+
+Flat, from the count at 8:00
+
+Under-reads by 26.9%
+
+34.8%
+
+−56% to +54%
+
+Weekday pro file, from the count at
+8:00
+
+Over-reads by 15.6%
+
+28.6%
+
+−35% to +113%
+
+Weekday pro file, from the count at
+9:00
+
+Over-reads by 2.6%
+
+13.4%
+
+−23% to +70%
+
+Aflat projection under-reads because only 13.5 to 22.5 percent of diners have actually arrived
+by 8:00, not the quarter it assumes. The weekday profile removes most of the bias but not the
+noise, since the early count is still small, and reading the count at 9:00 instead halves the error
+again. Hence the 9:00 trigger, with the card rebuilt monthly.
+Scenario 3. One Sunday on the veg line. Across three backtest Sundays, the baseline
+cooked about 563 for about 190 eaten, a surplus of about 373, or 2.5 to 3.4 times what was
+eaten across ratios of 60 to 80 percent. The re ned design would cook about 233, leaving
+about 45 surplus and about 2 short. Sunday veg is the week’s largest single surplus block, and
+the natural pilot slice.
+
+Figure 6. Kadamba veg line, Sunday 19 April 2026
+Figure 6. Kadamba veg line, Sunday 19 April 2026: recorded diners against the baseline batch
+and the refined first and late batches (projected)
+Scenario 4. The student side and the default. In April, Kadamba students were charged for
+20,221 breakfasts they didn’t eat (confirmed): about ₹7.4 lakh veg and ₹3.2 lakh non-veg,
+₹10.6 lakh in all (projected). Kitchen rules don’t touch this number at all.
+
+Baseline
+
+₹10.58 lakh
+
+None
+
+Skip returning nothing, any day
+
+₹10.58 lakh
+
+None; unused (L2)
+
+D: Sunday skip, 25 to 50 percent
+uptake
+
+₹9.78 to ₹10.18 lakh
+
+₹0.40 to ₹0.80 lakh less
+
+fi
+
+Change
+
+fi
+
+Charges
+
+fi
+
+Scenario
+
+fi
+
+fi
+
+fi
+
+fi
+
+fl
+
+Table 20. April charges for uneaten breakfasts (projected)
+

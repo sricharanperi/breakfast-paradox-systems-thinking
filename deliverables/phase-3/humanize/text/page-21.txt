@@ -1,0 +1,115 @@
+Table 14. Prototype C, the weekday arrival card, Kadamba, April 2026 (confirmed)
+Weekday
+
+In by 8:00
+
+By 9:00
+
+By 9:15
+
+After 9:15
+
+Scans a day, 9:15 to 9:30
+
+Monday
+
+17.7%
+
+50.7%
+
+64.6%
+
+35.4%
+
+117
+
+Tuesday
+
+17.0%
+
+55.2%
+
+68.5%
+
+31.5%
+
+110
+
+Wednesday
+
+22.5%
+
+54.6%
+
+68.7%
+
+31.3%
+
+93
+
+Thursday
+
+21.9%
+
+52.9%
+
+64.5%
+
+35.5%
+
+108
+
+Friday
+
+13.9%
+
+48.2%
+
+62.7%
+
+37.3%
+
+106
+
+Saturday
+
+15.8%
+
+49.4%
+
+62.2%
+
+37.8%
+
+106
+
+Sunday
+
+13.5%
+
+38.9%
+
+54.4%
+
+45.6%
+
+103
+
+The rule: divide diners so far by the day’s usual share by 9:00, add 10 percent, subtract the
+first batch, and start cooking that many portions. On 19 April, 62 veg diners by 9:00 divided by
+39.4 percent (the two earlier Sundays) projects about 157, a late batch of about 39. The grace
+period gets withdrawn if scans after 9:30 stay above April’s 9.2 percent (confirmed) for four
+weeks running.
+
+fi
+
+Prototype D: the Sunday exit on the portal. One control on the existing Skip Meal screen for
+Sunday breakfast, open until 8 pm on Saturday, offered in one of two forms.
+
+fi
+
+fi
+
+Prototype C: the arrival card and the 9:00 rule. The card is printed straight from the April
+records.
+
