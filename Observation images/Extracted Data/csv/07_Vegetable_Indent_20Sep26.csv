@@ -1,0 +1,45 @@
+﻿s_no,item_english,item_telugu,uom,required_qty,received_or_remark,extra_note,row_match_confidence
+1,BANANA(GREEN),అరటి కాయ,Kg,–,,,
+2,BAKALA,చిక్కుడు కాయ,Kg,–,,,
+3,BEANS,బీన్స్,Kg,2,2,,High
+4,BEETROOT,బీట్‌రూట్,Kg,–,,,
+5,BEERAKAYA,బీరకాయ,Kg,–,,Circled '(2)' with 'yesterday' written near rows 5-6,Low
+6,BRINJAL,వంకాయ,Kg,–,,,Medium
+7,CABBAGE,క్యాబేజి,Kg,10,9.780,,Medium
+8,CALIFLOWER,కాలిఫ్లవర్,Kg,–,,,
+9,CAPSICUM,క్యాప్సికమ్,Kg,–,,,
+10,CARROT,క్యారెట్,Kg,–,19.5,Circled '9.8 yesterday' written above it,Medium
+11,CHACHINDA(POTLAKAYA),పొట్లకాయ,Kg,–,,,
+12,CHILLY(GREEN),మిర్చి,Kg,10,9.88,,Medium
+13,CHILLY(MIRCHI BAJJI),బజ్జి మిర్చి,Kg,–,,,
+14,CLUSTER BEANS,గోరుచిక్కుడుకాయలు,Kg,–,,,
+15,CHAMAGADDA,చామగడ్డ,Kg,–,,,
+16,COCONUT,కొబ్బరికాయ,Nos,10,x (not received),,Medium
+17,CORIANDER,కొత్తిమీర,Katta,10,10,,Medium
+18,CUCUMBER,కీర,Kg,30,27,,Medium
+19,CURRY LEAVES,కర్వేపాకు,Kg,–,1,,Medium
+20,DONDA,దొండకాయ,Kg,–,,,
+21,DOSAKAYA,దోసకాయ,Kg,10,x (not received),Could be row 20 (Donda),Low
+22,DRUMSTICKS,మునక్కాయ,Kg,–,,,
+23,GARLIC,వెల్లుల్లి,Kg,–,,,
+24,GINGER,అల్లం,Kg,5,x (not received),,Medium
+25,GUNRU(GONGURA),గోంగూర,Katta,40,37,,Medium
+26,KADDU,సొరకాయ,Kg,14+14,28 pieces,"'6 pieces cut kiya, 3 kharab found' (6 cut, 3 spoiled)",Medium
+27,KHANDA,కంద,Kg,–,,,
+28,KARELY,కాకరకాయ,Kg,–,,,
+29,LADIES FINGER,బెండకాయ,Kg,20+20.5,39.5,,Medium
+30,LEEKS(ULLI PORAKA),ఉల్లిపొరక,Kg,–,,,
+31,LEMON,నిమ్మకాయ,Nos,3,3 (96 Nos),,Medium
+32,MATEKI BAJI(TOTAKURA),తోటకూర,Katta,–,,,
+33,MENTHI,మెంతికూర,Katta,–,12,'cut kiya 3 (?)',Medium
+34,MINT LEAVES,పుదీన,Katta,7,5,,Medium
+35,ONION,ఉల్లిగడ్డ,Kg,1 bag,52,,Medium
+36,PALAK,పాలకూర,Katta,–,,,
+37,PAPAYA,పాపయ,Kg,–,,,
+38,POTATO,ఆలుగడ్డ,Kg,1 bag,53.5,,Medium
+39,PUMPKIN,గుమ్మడికాయ,Kg,–,,,
+40,RADDISH(MULLANGI),ముల్లంగి,Kg,(scribbled out),,,Low
+41,TOMATO(NORMAL),టమాట,Kg,3 Box,26+20.7 = 46.7,Only 2 boxes received,High
+42,TOMATO(BENGULURU),టమాట (బెంగుళూరు),Kg,–,20.300,,High
+43,BRINJEL(big size),బడ్డా బెంగన్,Kg,1 Box,,,Medium
+44,SWEET CORN,స్వీట్ కార్న్,Kg,2 kg,3,,High

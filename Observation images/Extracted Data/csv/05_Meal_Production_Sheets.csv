@@ -1,0 +1,54 @@
+﻿sheet,date,day_meal,week,registration_written,actual_eaten_written,pct_eaten_written,dish,ingredient,raw_qty,stage,stage_qty,left_qty,recook_note,waste_pct_written,notes
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Kanchipuram idli,rawa,2,Semi-cooked,1 bag (5 kg),0,,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Kanchipuram idli,urad dal,1,,,,,,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Dalia upma,dalia,0.5,Cooked,2,0,Recook column empty,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Dalia upma,carrot,0.250,,,,,,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Dalia upma,beans,0.200,,,,,,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Dalia upma,corn,0.250,,,,,,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Sambar,toor daal,0.5,Cooked,,0,,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Sambar,vegetable,–,,,,,,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Groundnut chutney,ground nut,0.300 g,Cooked,4,0,Recook column empty,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Groundnut chutney,putana,0.100 g,,,,,,Quantity faint
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Groundnut chutney,coconut,1,,,,,,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Dalia,dalia,0.05,,0.5,,,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Sprout,green moong,0.5,Semi-cooked,0.5,0,,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Seed,–,,,,,,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Dry fruit,badam powder,0.200 g,,,0,,0%,Written 'left: 0'
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Fruit,watermelon,10 kg,Cut,,0,Recut column empty,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,Milk,milk,7,Total,0,,,0%,
+Sat BF wk1,2026-06-13,Saturday breakfast,1st week,32+5 (=37),20+2+6+5 = 33,89%,(summary),Student wastage,,,0.460 g,,,,Written 'Student wastage = 0.460 gr'
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Kanchipuram idli,rawa,2.5,Semi-cooked,6 kgs,0,,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Kanchipuram idli,urad dal,0.5,,,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Dalia upma,dalia,0.5,Cooked,4.5,0,Recook column empty,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Dalia upma,carrot,0.250,,,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Dalia upma,beans,0.200,,,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Dalia upma,corn,0.250,,,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Sambar,toor daal,0.5,Cooked,5,0,,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Sambar,tomato (vegetable),0.5,,,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Groundnut chutney,ground nut,0.4,Cooked,4,0,Recook column empty,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Groundnut chutney,putana,0.3,,,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Dalia,dalia,0.01,,1,,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Sprout,green moong,0.8,Semi-cooked,0.8,0,,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Seed,chia seed,0.03,,,0,,,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Dry fruit,badam,0.3,,0.2,,,,0.2 written in the Quantity column (possibly left over)
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Fruit,banana,3 dozen,Cut,,0,Recut column empty,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,Milk,milk,10,Total,3 (re-use),,,0%,
+Sat BF wk3,2026-06-2? (written 2?/6/26),Saturday breakfast,3rd week,29+5 (=34),18+3+6+4 = 31,91%,(summary),Student wastage,,,0.460 g,,,,Written 'Student wastage = 0.460 gr'
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Semia upma,semia,2,Cooked,5,0,"Re-cook at 9:00: 1 kg (cooked 2), left 0",0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Semia upma,beans / carrot / green batana,0.5,,,,,,Single quantity written against the vegetables
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Aloo paneer methi paratha,atta,8,Semi-cooked,25,0,,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Aloo paneer methi paratha,paneer,2.700 g,,,,,,Probably 2.7 kg
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Aloo paneer methi paratha,aloo,9,,,,,,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Aloo paneer methi paratha,kasturi methi,1/4 katta,,,,,,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Aloo paneer methi paratha,mirchi,0.200 g,,,,,,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Green chutney,coriander,0.5 katta,Cooked,1.0,0,Recooked column,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Green chutney,pudina,3 katta,,,,,,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Curd,curd,6 L,,,0,,0%,Written '6 L left'
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Almond,almond (raw),0.6,Soaked,,0,,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Milk,milk,10,,,0,,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Daliya,daliya (raw),0.1,Cooked,,0,,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Fruit,watermelon (raw),17.5,Cut,,0,Recut left 0,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Sprout,black chana,1.5,Soaked,,0,,0%,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,Sprout,pumpkin seed / chia seeds,0.07,Soaked,,,,,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,(summary),Kitchen wastage,,,0,,,,
+Thu BF wk1&3,2026-09-03,Thursday breakfast,wk 1 & 3,267+11 (=278),70+7+0 = 77,28%,(summary),Student wastage,,,24,,,,Unit not written

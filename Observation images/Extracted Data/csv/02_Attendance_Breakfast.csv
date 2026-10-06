@@ -1,0 +1,21 @@
+﻿meal,date,weekday,registered_regular,registered_jain,registered_total,ate_registered_regular,ate_registered_jain,ate_unregistered,ate_paid,ate_fs,ate_advance,ate_events,total_ate_written,attendance_pct_written,total_ate_computed,attendance_pct_computed,read_confidence,notes
+Breakfast,2026-09-01,Tue,316,9,325,93,6,1,1,1,0,0,102,31%,102,31.4,High,
+Breakfast,2026-09-02,Wed,296,8,304,70,5,0,0,0,0,0,,(hidden),75,24.7,Medium,Total and % covered by a hand in the photo
+Breakfast,2026-09-03,Thu,,,275,96,7,4,0,,,,110,40%,,40.0,Low,Regular/Jain counts and F/S hidden; 96 is uncertain
+Breakfast,2026-09-04,Fri,,,272,64,7,1,,,,,,,,,Low,Right-hand columns hidden by a hand
+Breakfast,2026-09-05,Sat,226,9,235,71,5,,,,,,,,,,Low,Right-hand columns hidden by a hand
+Breakfast,2026-09-06,Sun,257,10,267,45,4,0,0,1,0,0,50,18.7%,50,18.7,High,
+Breakfast,2026-09-07,Mon,252,11,263,53,5,0,0,0,0,0,58,22%,58,22.1,High,
+Breakfast,2026-09-08,Tue,267,15,282,77,6,2,9,1,0,0,95,33.6%,95,33.7,High,
+Breakfast,2026-09-09,Wed,264,12,276,88,7,0,9,0,0,0,,?7%,104,37.7,Medium,% partly hidden (computed 37.7%)
+Breakfast,2026-09-10,Thu,236,15,251,57,6,2,0,,,,66,illegible,,26.3,Medium,
+Breakfast,2026-09-11,Fri,283,14,297,119,6,1,,,,,,,,,Low,Right-hand columns hidden by a hand
+Breakfast,2026-09-12,Sat,235,14,249,62,4,,,,,,,,,,Low,Right-hand columns hidden by a hand
+Breakfast,2026-09-13,Sun,216,12,228,35,4,0,1,1,0,0,41,17.9%,41,18.0,High,
+Breakfast,2026-09-14,Mon,217,14,231,34,4,1,1,1,0,0,41,17.7%,41,17.7,High,
+Breakfast,2026-09-15,Tue,250,11,261,100,3,1,0,1,0,0,105,40%,105,40.2,High,
+Breakfast,2026-09-16,Wed,258,12,270,66,10,1,0,1,0,0,,28.8%,78,28.9,High,
+Breakfast,2026-09-17,Thu,389,15,404,124,11,0,,,,,,,,,Low,Right-hand columns hidden by a hand
+Breakfast,2026-09-18,Fri,264,14,278,,5,0,,,,,,,,,Low,Registered-eaten unclear (26 or 76); rest hidden. Grocery book for 18/9 says BF 265+14
+Breakfast,2026-09-19,Sat,252,14,266,62,5,,,,,,,,,,Low,Right-hand columns hidden by a hand
+Breakfast,2026-09-20,Sun,257,12,269,54,7,1,1,2,0,0,65,24.1%,65,24.2,High,

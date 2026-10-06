@@ -1,0 +1,12 @@
+[00:00-00:02] How many relationships are there?
+[00:02-00:04] There are many.
+[00:09-00:11] Who is the person in the picture?
+[00:11-00:12] Me.
+[00:12-00:14] There is a staff.
+[00:16-00:18] There is a voice.
+[00:18-00:20] Supervisor.
+[00:22-00:24] There is a manager.
+[00:28-00:30] I am going for an operation.
+[00:35-00:37] I am going to contact the doctor.
+[00:39-00:41] I am going to talk to the doctor.
+[00:42-00:43] I am going to talk to the director.

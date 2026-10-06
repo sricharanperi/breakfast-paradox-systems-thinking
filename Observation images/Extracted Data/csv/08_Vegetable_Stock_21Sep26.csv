@@ -1,0 +1,48 @@
+﻿s_no,item,opening_stock,received,total_stock,eaten_breakfast,eaten_lunch,eaten_snacks,eaten_dinner,total_col,balance_col,notes
+1,Banana G,,,,,,,,,,
+2,Beans,,2,2,,,,,2,2,
+3,Beet root,11,,11,,,,,,,
+4,Birakaya,,,,,,,,,,
+5,Brinjal,,,,,,,,,,
+6,Brinjal big,,,,,,,,,,
+7,Cabbage,4,9.7,13.7,,,,,13.7,13.7,
+8,Capsicum,,,,,,,,,,
+9,Carrot,,19.5,19.5,,4,,,15.5,15.5,
+10,Cauliflower,43,,43,,,,,43,43,
+11,Chamagadda,5.6,,5.6,,,,,5.6,5.6,
+12,Chau chau,,,,,,,,,,
+13,Chilly (Green),0.5,9.8,10.3,0.15,0.35,,1 (?),,,'1' written between rows 12 and 13 in the D column
+14,Chikur kaya,,,,,,,,,,
+15,Chuka kura,,,,,,,,,,
+16,Coconut,27,,,5,5,,,,,The two 5s are written between rows 15 and 16
+17,Coriander,,10,10,,,,3,7,7,
+18,Cucumber,5,27,32,,9,,,,,
+19,Curry leaves,0.12,1,1.12,0.03,0.04,,,,,
+20,Donda,19,,19,,,,,,19,
+21,Dosakaya,,,,,,,,,,
+22,Drumstick,1,,1,,,,,1,1,
+23,Flowers,,,,,,,,,,
+24,Gongura / gunru,22,37,59,,,,,59,59,
+25,Gour chikur,2,,2,,,,,2,2,
+26,Kaddu (Louki),27,28,55,,30 Nos,,,22,22,Margin note '3 No kharab' (3 spoiled): 55 - 30 - 3 = 22
+27,Karela,,,,,,,,,,
+28,Khanda,,,,,,,,,,
+29,Ladies Finger,,39.5,39.5,,,,20,19.5,19.5,
+30,Lemon,,3 kg / 96 Nos,96,,15,,,,81,
+31,Menthi,16,12,28,,28,,,0,0,
+32,Mint Leaves,5,5,10,,,,2,8,8,
+33,Onion,12,1 bag (52),64,,2.5,,,,,
+34,Palak,,,,,,,,,,
+35,Potato,29.7,53.5,83.2,,,,,32,51.2,Written 32 and 51.2; 83.2 - 32 = 51.2
+36,Potlakaya,,,,,,,,,,
+37,Pumpkin,,,,,,,,,,
+38,Raddish,,,,,,,,,,
+39,Soya kura,,,,,,,,,,
+40,Spring onion,,,,,,,,,,Margin note 'So 1.18+3' / '3.5'
+41,Sweet corn,2.5,3,5.5,,,,,,,
+42,Sweet potato,,,,,6,,,,,'6' may belong to row 43
+43,Tomato (Blore),9.72,20.3,30,,,,10.4,,,
+44,Tomato (Local),,46.7,46.7,,3,,,,,"Footnote: Local Tomato = 26 + 20.7 = 46.7, only 2 boxes"
+45,Tota kura,,,,,,,,,,
+46,White pumpkin,,,,,,,,,,
+note,Footnote,,,,,,,,,,'Mirchi = 3.50+' written at the bottom

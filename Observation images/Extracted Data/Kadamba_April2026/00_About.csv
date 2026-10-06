@@ -1,0 +1,9 @@
+﻿item,detail
+Source file,"april-data.xlsx, from the mess department / CDS team (Kadamba mess)"
+Raw structure,"One sheet 'in', 32,162 rows, 3 columns: meal_date, meal_mess (kadamba-veg / kadamba-nonveg), availed_at (scan timestamp, IST; blank if not availed)"
+Meaning of a row,"One student meal registration (booking) for that date. If availed_at is filled, the student scanned in and ate; if blank, a no-show"
+Which meal,"Breakfast only: all 11,941 scans fall between 06:38 and 10:07. The file has no meal-type column"
+Period,1-30 April 2026 (30 days)
+What is NOT in it,"No student ID, no roll number, no lunch/dinner, no quantities cooked or wasted, no menu. Individual behaviour (who repeatedly skips) cannot be tracked"
+Headline,"32,162 registered, 11,941 availed (37.1%), 20,221 no-shows (62.9%). Veg 32.4% availed, non-veg 48.5%"
+Data quality,"82 scans share an exact timestamp with another scan of the same mess (up to 2 per second, which is plausible at a busy counter; no bulk-marking pattern). meal_date always equals the scan date"

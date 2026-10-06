@@ -28,4 +28,5 @@ thinking in systems audible companion pdf*.pdf
 .DS_Store
 
 # Raw field data (large photos/audio + processed tables) kept out of git; summarised in research/primary-research/*evidence-brief.md
-Observation images/
+Observation images/*.mp3
+Observation images/*.m4a

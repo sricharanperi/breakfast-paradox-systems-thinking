@@ -1,0 +1,4 @@
+﻿note
+"Register page 63, 'ELECTRICAL READING', September 2026."
+"Units = next day's reading minus this day's reading. The progressive total is units × 12 in every row (e.g. 84 × 12 = 1008), so 12 is probably the meter multiplying factor."
+"Meter 1 units and totals stop after 14/9. Meter 2 units are blank for 11/9, 12/9 and 21/9."
