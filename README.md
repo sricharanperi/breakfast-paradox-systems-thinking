@@ -66,14 +66,14 @@ Files named `prathyusha_*.md`, everything under `revisions/`, `humanize/` and `0
 - `pandoc`, `tectonic` (only for the LaTeX reports), and poppler (`pdftotext`, `pdftoppm`, `pdfinfo`)
 - Python 3 with `pypdf` (`pip install pypdf`)
 - Google Chrome at `/Applications/Google Chrome.app`. The diagram scripts and both `build_pdf.py` files call it headless. On Windows or Linux, change the `CHROME` path at the top of those scripts
-- **The `Observation images/` folder**, for the data-driven charts only. It holds the raw field data (photos, recordings, the Kadamba April scan export, the extracted tables). It is 262 MB and is not in git. Ask Sricharan for a copy and put it in the repo root. Without it you can still rebuild every document and every diagram except the charts that read CSVs (`diagram8`, `d18`, `d19`, `d20`)
+- Nothing else. The field data the charts read is in the repo under `Observation images/`: the Kadamba April scan export, the extracted tables, the register photos and the translated transcripts. Only the audio recordings are left out, and the rebuild does not need them
 
 Check before you start:
 
 ```sh
 which pandoc pdftotext pdftoppm pdfinfo
 python3 -c "import pypdf; print(pypdf.__version__)"
-ls "/Applications/Google Chrome.app" && ls "Observation images/Extracted Data"
+ls "/Applications/Google Chrome.app"
 ```
 
 ## The rebuild, step by step
@@ -147,7 +147,7 @@ research/
 report/                    LaTeX reports and their figures
 tools/                     Vendored diagramming tools, for reference only
 .claude/skills/            systems-visual-design (diagram toolkit) and ai-humanizer (humanizing pass)
-Observation images/        Raw field data. Not in git; ask for a copy
+Observation images/        Field data: Photos/, april-data.xlsx, Extracted Data/ (tables, transcripts). Audio is not in git
 ```
 
 ## Team

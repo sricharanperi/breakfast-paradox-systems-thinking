@@ -27,6 +27,6 @@ thinking in systems audible companion pdf*.pdf
 # OS/editor cruft
 .DS_Store
 
-# Raw field data (large photos/audio + processed tables) kept out of git; summarised in research/primary-research/*evidence-brief.md
+# Field recordings stay out of git (one is over GitHub's 100 MB file limit). The rest of Observation images/ is tracked.
 Observation images/*.mp3
 Observation images/*.m4a

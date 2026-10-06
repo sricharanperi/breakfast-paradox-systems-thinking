@@ -533,7 +533,7 @@ These change how much work the rebuild is. Take them as a team and record the an
 | T2 | **Phase 3 submission form.** Render 09 and 10 as two PDFs plus `Invictus_Phase3.pdf` (Section 7), or keep the team's condensed report (9.3) as the submission | Keep the condensed report as the submission; treat 09 and 10 as working documents and skip P3-a to P3-c |
 | T3 | **LaTeX reports.** Are `report/main.pdf`, `report/phase2.pdf` and a new `report/phase3.pdf` actually submitted? | If not submitted, skip Section 4 and 7.4 entirely; they are the largest single item |
 | T4 | **Humanizing pass (9.4).** Run it on every Phase 1 and Phase 2 document before rendering? | Yes, per D-85, done by whoever has the skill installed |
-| T5 | **Chart data in git (Section 2.1).** Copy the aggregate CSVs (no student IDs) into `deliverables/phase-1/assets/data/` so charts rebuild from git | Yes; otherwise only a machine with `Observation images/` can rebuild diagram8, d18, d19, d20 |
+| T5 | ~~Chart data in git (Section 2.1)~~ | **Settled 2026-10-06:** `Observation images/` is tracked except the audio, so charts read their CSVs from `Observation images/Extracted Data/` on any clone. No copy into `assets/data/` is needed |
 | T6 | **Field photos (9.5).** Which photos go into which deliverable | Decide per deliverable; none are embedded today outside the Phase 3 report |
 | T7 | **Evidence and Validation Register in the Phase 2 bundle, and a Phase 1 cover page** (Section 3.4) | Keep the 14 Sep composition unless the team wants otherwise |
 
@@ -573,18 +573,19 @@ Standing rule since 2026-09-29: every Word or PDF deliverable is rewritten to re
 
 Nothing in Sections 2 or 3 places a photograph. What exists:
 
-- `Observation images/Photos/`: 26 photos of Yuktāhār's registers and kitchen (26 Sep 2026), indexed in `Observation images/Extracted Data/csv/00_Image_Index.csv`. Gitignored (D-59), so only on machines that were given the folder.
+- `Observation images/Photos/`: 26 photos of Yuktāhār's registers and kitchen (26 Sep 2026), indexed in `Observation images/Extracted Data/csv/00_Image_Index.csv`. In git since 2026-10-06.
 - `deliverables/phase-2/assets/WhatsApp Image 2026-09-13 *.jpeg`: 4 CDS and CFS posters. In git.
 - `deliverables/phase-3/humanize/figs/`: 10 figures extracted from the team's Phase 3 PDF, some of them photos. In git.
 
 No Kadamba photo files were found in the repo or in `Observation images/` on 2026-10-06. If Kadamba photos exist, add them to `Observation images/Photos/` and index them before anyone plans a layout around them.
 
-A photo used in a deliverable must be copied into that deliverable's `assets/` folder (the gitignored folder cannot be referenced from a render another teammate will repeat), must show no student ID, face or name the team has not agreed to show, and follows the roles-only rule for staff (D-24, Section 5 Q9).
+A photo used in a deliverable must be copied into that deliverable's `assets/` folder (the renderer resolves images relative to the markdown's own folder), must show no student ID, face or name the team has not agreed to show, and follows the roles-only rule for staff (D-24, Section 5 Q9).
 
 ### 9.6 Corrections to earlier sections
 
 - Section 3.1 hardcodes one machine's path. Run every command from your own clone's root instead.
 - Section 7.1 says "Docx: none yet, PDF: none yet" for Phase 3. True for 09 and 10; see 9.3 for the condensed report.
 - Decision IDs: the Bakul pass uses D-79 to D-84. The humanizing rule, first logged as D-79, is **D-85**.
-- The Phase 3 scenario model (`deliverables/phase-3/assets/scenario_model.py`) reads the raw `Observation images/april-data.xlsx`. It does not need re-running (Section 8), and cannot be re-run without that folder.
+- The Phase 3 scenario model (`deliverables/phase-3/assets/scenario_model.py`) reads the raw `Observation images/april-data.xlsx`. That file is in git since 2026-10-06 (three columns: date, mess line, scan time; no student identifiers). It does not need re-running (Section 8).
+- Section 2.1's "gitignored" note on the chart inputs is superseded: only `Observation images/*.mp3` and `*.m4a` are ignored now (D-87).
 

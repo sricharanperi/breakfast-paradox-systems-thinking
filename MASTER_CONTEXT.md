@@ -943,7 +943,7 @@ A memory entry makes the skill the default for every .docx or PDF.
 
 **Not done:** no render, no diagram. The final presentation is deferred by the user until the rebuild is complete.
 
-**Later the same session: the humanizing skill added to git.** The `ai-humanizer` skill was copied into the repo at `.claude/skills/ai-humanizer/` (SKILL.md plus its two scripts) so every teammate can run the humanizing pass (D-85); `README.md` and plan Section 9.4 point to it. The user also asked for `Observation images/` to be un-ignored and pushed. That was not done in this session: the repo is public, the folder holds recordings and photos of people outside the team, and one recording is over GitHub's 100 MB file limit. It is left for the user to decide and do; D-59 still stands.
+**Later the same session: the humanizing skill added to git.** The `ai-humanizer` skill was copied into the repo at `.claude/skills/ai-humanizer/` (SKILL.md plus its two scripts) so every teammate can run the humanizing pass (D-85); `README.md` and plan Section 9.4 point to it. The user also asked for `Observation images/` to be un-ignored and pushed. After being told the repo is public and what the folder holds, the user chose to publish everything except the audio and ran the commit and push personally (`fda6fae`, 66 files: `Photos/`, `april-data.xlsx`, `Extracted Data/`). The eight recordings stay local; `.gitignore` now ignores only `Observation images/*.mp3` and `*.m4a` (one recording is over GitHub's 100 MB file limit). This supersedes D-59 (D-87). README and plan Section 9 updated to match; T5 is settled.
 
 **Decision D-86:** the repo-root `README.md` is the teammate-facing guide to the rebuild and must be kept in step with `deliverables/REBUILD_PLAN.md`; the plan stays the detailed work list.
 
@@ -1170,6 +1170,7 @@ The pandoc+tectonic LaTeX route (5.1-5.4) remains valid and is still how `.docx`
 | D-84 | **Pass-3 method:** audits named `2026-09-28-pass3_<id>-gap-audit.md`; Phase 1 → Phase 2 → Activity 9 → Activity 10, each wave fed by the previous wave's "downstream implications"; Activities 9 and 10 change only through an explicit trace (Evidence → upstream change → A9 → A10), with "no substantive change required because..." recorded for checked elements. Consolidated reports (00, 09c) updated last in their phase, faithful to their sources | 2026-09-28 (pass 3) |
 
 | D-85 | Every Word/PDF deliverable goes through the user-level `ai-humanizer` skill (human voice, somewhat shorter, no section or information removed, preservation check must PASS) before the final render; realistic shrink for dense reports is 5-10% | 2026-09-29 |
+| D-87 | `Observation images/` is tracked in git except audio (`*.mp3`, `*.m4a`), by the user's decision; supersedes D-59. The `ai-humanizer` skill lives in the repo at `.claude/skills/ai-humanizer/` | 2026-10-06 |
 | D-86 | The repo-root `README.md` is the teammate-facing guide to the rebuild, kept in step with `deliverables/REBUILD_PLAN.md` (which stays the detailed work list, now with a dated Section 9 status check) | 2026-10-06 |
 
 ---
