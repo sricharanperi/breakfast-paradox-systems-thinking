@@ -1,0 +1,494 @@
+[
+ {
+  "key": "h:1",
+  "kind": "h",
+  "num": "1",
+  "title": "Background"
+ },
+ {
+  "key": "h:1.1",
+  "kind": "h",
+  "num": "1.1",
+  "title": "Context"
+ },
+ {
+  "key": "h:1.2",
+  "kind": "h",
+  "num": "1.2",
+  "title": "The brief"
+ },
+ {
+  "key": "h:1.3",
+  "kind": "h",
+  "num": "1.3",
+  "title": "Problem statement and aim"
+ },
+ {
+  "key": "h:1.4",
+  "kind": "h",
+  "num": "1.4",
+  "title": "Scope and boundary"
+ },
+ {
+  "key": "d:1",
+  "kind": "d",
+  "num": "1",
+  "title": "Study breakfast only, with lunch as the control"
+ },
+ {
+  "key": "h:2",
+  "kind": "h",
+  "num": "2",
+  "title": "Approach"
+ },
+ {
+  "key": "h:2.1",
+  "kind": "h",
+  "num": "2.1",
+  "title": "Framework and plan"
+ },
+ {
+  "key": "t:1",
+  "kind": "t",
+  "num": "1"
+ },
+ {
+  "key": "f:1",
+  "kind": "f",
+  "num": "1"
+ },
+ {
+  "key": "h:2.2",
+  "kind": "h",
+  "num": "2.2",
+  "title": "Research design and methods"
+ },
+ {
+  "key": "d:2",
+  "kind": "d",
+  "num": "2",
+  "title": "Interviews and records instead of a survey"
+ },
+ {
+  "key": "h:2.3",
+  "kind": "h",
+  "num": "2.3",
+  "title": "Evidence gathered"
+ },
+ {
+  "key": "t:2",
+  "kind": "t",
+  "num": "2"
+ },
+ {
+  "key": "f:2",
+  "kind": "f",
+  "num": "2"
+ },
+ {
+  "key": "h:2.4",
+  "kind": "h",
+  "num": "2.4",
+  "title": "Handling the evidence"
+ },
+ {
+  "key": "d:3",
+  "kind": "d",
+  "num": "3",
+  "title": "Trust records over recall, and say how sure each finding is"
+ },
+ {
+  "key": "h:3",
+  "kind": "h",
+  "num": "3",
+  "title": "Understanding the System"
+ },
+ {
+  "key": "h:3.1",
+  "kind": "h",
+  "num": "3.1",
+  "title": "System boundary and symptoms"
+ },
+ {
+  "key": "f:3",
+  "kind": "f",
+  "num": "3"
+ },
+ {
+  "key": "t:3",
+  "kind": "t",
+  "num": "3"
+ },
+ {
+  "key": "h:3.2",
+  "kind": "h",
+  "num": "3.2",
+  "title": "Stakeholders"
+ },
+ {
+  "key": "f:4",
+  "kind": "f",
+  "num": "4"
+ },
+ {
+  "key": "d:4",
+  "kind": "d",
+  "num": "4",
+  "title": "Governance bodies kept apart until confirmed"
+ },
+ {
+  "key": "h:3.3",
+  "kind": "h",
+  "num": "3.3",
+  "title": "Power, interest and leverage"
+ },
+ {
+  "key": "t:4",
+  "kind": "t",
+  "num": "4"
+ },
+ {
+  "key": "f:5",
+  "kind": "f",
+  "num": "5"
+ },
+ {
+  "key": "d:5",
+  "kind": "d",
+  "num": "5",
+  "title": "Judge power decision by decision, and keep it apart from leverage"
+ },
+ {
+  "key": "h:3.4",
+  "kind": "h",
+  "num": "3.4",
+  "title": "The existing process"
+ },
+ {
+  "key": "t:5",
+  "kind": "t",
+  "num": "5"
+ },
+ {
+  "key": "f:6",
+  "kind": "f",
+  "num": "6"
+ },
+ {
+  "key": "f:7",
+  "kind": "f",
+  "num": "7"
+ },
+ {
+  "key": "f:8",
+  "kind": "f",
+  "num": "8"
+ },
+ {
+  "key": "d:6",
+  "kind": "d",
+  "num": "6",
+  "title": "Trace each caterer as its own system"
+ },
+ {
+  "key": "h:3.5",
+  "kind": "h",
+  "num": "3.5",
+  "title": "Behaviour over time"
+ },
+ {
+  "key": "f:9",
+  "kind": "f",
+  "num": "9"
+ },
+ {
+  "key": "f:10",
+  "kind": "f",
+  "num": "10"
+ },
+ {
+  "key": "f:11",
+  "kind": "f",
+  "num": "11"
+ },
+ {
+  "key": "f:12",
+  "kind": "f",
+  "num": "12"
+ },
+ {
+  "key": "h:3.6",
+  "kind": "h",
+  "num": "3.6",
+  "title": "What changed when the records arrived"
+ },
+ {
+  "key": "t:6",
+  "kind": "t",
+  "num": "6"
+ },
+ {
+  "key": "h:4",
+  "kind": "h",
+  "num": "4",
+  "title": "Modelling the System"
+ },
+ {
+  "key": "h:4.1",
+  "kind": "h",
+  "num": "4.1",
+  "title": "System map and feedback loops"
+ },
+ {
+  "key": "f:13",
+  "kind": "f",
+  "num": "13"
+ },
+ {
+  "key": "d:7",
+  "kind": "d",
+  "num": "7",
+  "title": "Draw a loop only where the closing link has direct evidence"
+ },
+ {
+  "key": "h:4.2",
+  "kind": "h",
+  "num": "4.2",
+  "title": "Patterns and root causes"
+ },
+ {
+  "key": "f:14",
+  "kind": "f",
+  "num": "14"
+ },
+ {
+  "key": "f:15",
+  "kind": "f",
+  "num": "15"
+ },
+ {
+  "key": "h:4.3",
+  "kind": "h",
+  "num": "4.3",
+  "title": "Reframing the problem"
+ },
+ {
+  "key": "d:8",
+  "kind": "d",
+  "num": "8",
+  "title": "Reject the first reframing"
+ },
+ {
+  "key": "f:16",
+  "kind": "f",
+  "num": "16"
+ },
+ {
+  "key": "f:17",
+  "kind": "f",
+  "num": "17"
+ },
+ {
+  "key": "h:5",
+  "kind": "h",
+  "num": "5",
+  "title": "Finding Where to Intervene"
+ },
+ {
+  "key": "h:5.1",
+  "kind": "h",
+  "num": "5.1",
+  "title": "Leverage points"
+ },
+ {
+  "key": "f:18",
+  "kind": "f",
+  "num": "18"
+ },
+ {
+  "key": "t:7",
+  "kind": "t",
+  "num": "7"
+ },
+ {
+  "key": "d:9",
+  "kind": "d",
+  "num": "9",
+  "title": "Rank levers by depth and then feasibility, and hold those that depend on the payment basis"
+ },
+ {
+  "key": "f:19",
+  "kind": "f",
+  "num": "19"
+ },
+ {
+  "key": "h:5.2",
+  "kind": "h",
+  "num": "5.2",
+  "title": "Design principles"
+ },
+ {
+  "key": "h:5.3",
+  "kind": "h",
+  "num": "5.3",
+  "title": "Choosing a test slice"
+ },
+ {
+  "key": "h:6",
+  "kind": "h",
+  "num": "6",
+  "title": "Designing and Testing Interventions"
+ },
+ {
+  "key": "h:6.1",
+  "kind": "h",
+  "num": "6.1",
+  "title": "Concepts"
+ },
+ {
+  "key": "t:8",
+  "kind": "t",
+  "num": "8"
+ },
+ {
+  "key": "f:20",
+  "kind": "f",
+  "num": "20"
+ },
+ {
+  "key": "h:6.2",
+  "kind": "h",
+  "num": "6.2",
+  "title": "Scenario model and results"
+ },
+ {
+  "key": "t:9",
+  "kind": "t",
+  "num": "9"
+ },
+ {
+  "key": "f:21",
+  "kind": "f",
+  "num": "21"
+ },
+ {
+  "key": "d:10",
+  "kind": "d",
+  "num": "10",
+  "title": "Project the day at 9:00 and add a late batch"
+ },
+ {
+  "key": "f:22",
+  "kind": "f",
+  "num": "22"
+ },
+ {
+  "key": "h:6.3",
+  "kind": "h",
+  "num": "6.3",
+  "title": "Evaluation: gates and scores"
+ },
+ {
+  "key": "f:23",
+  "kind": "f",
+  "num": "23"
+ },
+ {
+  "key": "d:11",
+  "kind": "d",
+  "num": "11",
+  "title": "Keep a deliberately weak concept, and let gates overrule the score"
+ },
+ {
+  "key": "h:6.4",
+  "kind": "h",
+  "num": "6.4",
+  "title": "Recommendation and plan"
+ },
+ {
+  "key": "f:24",
+  "kind": "f",
+  "num": "24"
+ },
+ {
+  "key": "d:12",
+  "kind": "d",
+  "num": "12",
+  "title": "Fix the Sunday skip at week 6, independent of the kitchen pilot"
+ },
+ {
+  "key": "t:10",
+  "kind": "t",
+  "num": "10"
+ },
+ {
+  "key": "d:13",
+  "kind": "d",
+  "num": "13",
+  "title": "Plan the team's own exit at week 20"
+ },
+ {
+  "key": "f:25",
+  "kind": "f",
+  "num": "25"
+ },
+ {
+  "key": "h:7",
+  "kind": "h",
+  "num": "7",
+  "title": "What the Findings Mean for the Institution"
+ },
+ {
+  "key": "h:8",
+  "kind": "h",
+  "num": "8",
+  "title": "Limitations and Open Questions"
+ },
+ {
+  "key": "h:8.1",
+  "kind": "h",
+  "num": "8.1",
+  "title": "Limits of the evidence and the method"
+ },
+ {
+  "key": "h:8.2",
+  "kind": "h",
+  "num": "8.2",
+  "title": "Open questions"
+ },
+ {
+  "key": "t:11",
+  "kind": "t",
+  "num": "11"
+ },
+ {
+  "key": "h:9",
+  "kind": "h",
+  "num": "9",
+  "title": "Reflections"
+ },
+ {
+  "key": "h:9.1",
+  "kind": "h",
+  "num": "9.1",
+  "title": "What worked"
+ },
+ {
+  "key": "h:9.2",
+  "kind": "h",
+  "num": "9.2",
+  "title": "What the team would do differently"
+ },
+ {
+  "key": "h:9.3",
+  "kind": "h",
+  "num": "9.3",
+  "title": "Next steps"
+ },
+ {
+  "key": "h:10",
+  "kind": "h",
+  "num": "10",
+  "title": "Questions for Discussion"
+ }
+]

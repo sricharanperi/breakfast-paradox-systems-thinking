@@ -32,3 +32,6 @@ Observation images/*.mp3
 Observation images/*.m4a
 deliverables/submission/Build/node_modules/
 deliverables/submission/Build/work/
+deliverables/submission/CaseStudy/Build/work/
+deliverables/submission/CaseStudy/Deck/Build/node_modules/
+deliverables/submission/CaseStudy/Deck/Build/work/
