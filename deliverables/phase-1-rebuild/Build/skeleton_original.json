@@ -1,0 +1,338 @@
+{
+ "00-consolidated-phase1-report.md": [
+  [
+   1,
+   "Introduction"
+  ],
+  [
+   1,
+   "Task 1 — System Context Brief"
+  ],
+  [
+   1,
+   "Task 2 — Stakeholder Map"
+  ],
+  [
+   1,
+   "Task 3 — Stakeholder Power-Interest/Leverage Map and Power Analysis Brief"
+  ],
+  [
+   1,
+   "Task 4 — Current-State Process Map / Process Trace"
+  ],
+  [
+   1,
+   "Task 5 — System Timeline / Behaviour-Over-Time Map"
+  ],
+  [
+   1,
+   "Consolidated Findings Across All Five Deliverables"
+  ],
+  [
+   1,
+   "Outstanding Data Collection"
+  ],
+  [
+   1,
+   "Status Summary"
+  ]
+ ],
+ "01-system-context-brief.md": [
+  [
+   1,
+   "System Boundary and Context"
+  ],
+  [
+   2,
+   "System Boundary"
+  ],
+  [
+   2,
+   "Context"
+  ],
+  [
+   1,
+   "Purpose and Intended Outcomes"
+  ],
+  [
+   2,
+   "Purpose"
+  ],
+  [
+   2,
+   "Intended Outcomes"
+  ],
+  [
+   1,
+   "Visible Symptoms and Underlying Issues"
+  ],
+  [
+   1,
+   "Key Actors, Institutions, Processes, Resources and Constraints"
+  ],
+  [
+   2,
+   "Actors"
+  ],
+  [
+   2,
+   "Institutions"
+  ],
+  [
+   2,
+   "Processes"
+  ],
+  [
+   2,
+   "Resources"
+  ],
+  [
+   2,
+   "Constraints"
+  ],
+  [
+   1,
+   "Initial Problem Framing"
+  ]
+ ],
+ "02-stakeholder-map.md": [
+  [
+   1,
+   "Use Case"
+  ],
+  [
+   1,
+   "Stakeholders"
+  ],
+  [
+   2,
+   "Primary, Secondary, and Indirect Stakeholders"
+  ],
+  [
+   2,
+   "Stakeholder Interests, Needs, and Expectations"
+  ],
+  [
+   2,
+   "Formal and Informal Roles"
+  ],
+  [
+   1,
+   "Create the Map"
+  ],
+  [
+   2,
+   "Stakeholder Map"
+  ],
+  [
+   2,
+   "Relationship Network"
+  ],
+  [
+   2,
+   "Proximity to the Student’s Lived Experience"
+  ],
+  [
+   1,
+   "Relationships, Dependencies, and Conflicts"
+  ],
+  [
+   2,
+   "Relationship Matrix"
+  ],
+  [
+   2,
+   "Dependencies"
+  ],
+  [
+   2,
+   "Conflicts"
+  ],
+  [
+   1,
+   "Findings"
+  ]
+ ],
+ "03-power-interest-leverage-map.md": [
+  [
+   1,
+   "Executive Summary"
+  ],
+  [
+   1,
+   "Assess Decision-Making Authority"
+  ],
+  [
+   2,
+   "Formal governance structure"
+  ],
+  [
+   2,
+   "Authority at a glance"
+  ],
+  [
+   1,
+   "Identify Formal and Informal Power"
+  ],
+  [
+   1,
+   "Analyse Stakeholder Incentives and Motivations"
+  ],
+  [
+   2,
+   "Stated interest vs. what the system rewards vs. observed behaviour"
+  ],
+  [
+   2,
+   "Incentive chains"
+  ],
+  [
+   2,
+   "Bargaining power and dependency"
+  ],
+  [
+   2,
+   "Historical precedent"
+  ],
+  [
+   1,
+   "Identify Who Can Influence Decisions and Who Cannot"
+  ],
+  [
+   2,
+   "Power asymmetries"
+  ],
+  [
+   2,
+   "Consequence and control"
+  ],
+  [
+   2,
+   "Missing voices and missing relationships"
+  ],
+  [
+   2,
+   "Coalitions and conflicts"
+  ],
+  [
+   1,
+   "Examine Unequal Access to Resources or Opportunities"
+  ],
+  [
+   2,
+   "Resource control"
+  ],
+  [
+   2,
+   "Leverage analysis"
+  ],
+  [
+   2,
+   "Sleeping stakeholders"
+  ],
+  [
+   1,
+   "Stakeholder Power-Interest/Leverage Map"
+  ],
+  [
+   1,
+   "Implications for System Behaviour"
+  ],
+  [
+   1,
+   "Key Findings"
+  ],
+  [
+   1,
+   "Outstanding Data Collection"
+  ]
+ ],
+ "04-process-trace.md": [
+  [
+   1,
+   "Overview"
+  ],
+  [
+   1,
+   "Conduct Interviews and Observations"
+  ],
+  [
+   1,
+   "Trace Decisions and Interactions"
+  ],
+  [
+   2,
+   "Decision points, supported by evidence only"
+  ],
+  [
+   1,
+   "Document Formal and Informal Rules"
+  ],
+  [
+   2,
+   "Formal versus informal divergence"
+  ],
+  [
+   1,
+   "Identify Negotiation and Escalation Mechanisms"
+  ],
+  [
+   1,
+   "Track Exceptions, Workarounds and Dependencies"
+  ],
+  [
+   2,
+   "Dependencies"
+  ],
+  [
+   1,
+   "Key Findings"
+  ],
+  [
+   1,
+   "Outstanding Data Collection"
+  ]
+ ],
+ "05-system-timeline-bot-map.md": [
+  [
+   1,
+   "Overview"
+  ],
+  [
+   1,
+   "Collect Historical Versions, Records or Observations"
+  ],
+  [
+   1,
+   "Develop Timelines"
+  ],
+  [
+   2,
+   "Within-morning pattern, reconciled"
+  ],
+  [
+   2,
+   "Provisional system-level timeline"
+  ],
+  [
+   1,
+   "Identify Significant Changes and Their Triggers"
+  ],
+  [
+   1,
+   "Examine Feedback Loops and Recurring Patterns"
+  ],
+  [
+   1,
+   "Identify Unintended Consequences"
+  ],
+  [
+   1,
+   "Key Findings"
+  ],
+  [
+   1,
+   "Outstanding Data Collection"
+  ]
+ ]
+}

@@ -1,0 +1,26 @@
+# @Open Questions and Outstanding Evidence {#app-open}
+
+The questions below remained open when the evidence was frozen. They are grouped by who could answer them, and the activity that depends on each answer is given in the last column. Three of them, the plate basis of operator payment, whether Skip Meal reaches Kadamba's kitchen, and who heads the dining services body, are conflicts between sources that the project deliberately did not resolve.
+
+Table: Open questions, grouped by who could answer them. {#openq cols=20,62,18}
+| Who could answer | Question | Affects |
+|---|---|---|
+| The institution and its contracts | What a plate counts for in each operator's monthly payment (registered or served), the deductions, and Bakul's reported served-plate basis from a contract or the dining services body; no contract has been seen | [[sec:a3]], [[sec:a8]], [[sec:a9]], [[sec:a10]] |
+| The institution and its contracts | Who set the four-day close and the limit of five cancellations; when Skip Meal was introduced and why; whether breakfast hours ever differed from 7:30 to 9:30; vendor contract terms | [[sec:a3]], [[sec:a6]] |
+| The institution and its contracts | Which registration regime applied to Yuktāhār's June breakfasts; whether the relaxed, non-compulsory registration ever applied over holidays and fests | [[sec:a6]], [[sec:a10]] |
+| The dining services body | Who heads it (two different people are on record), whether it is the Mess Office, how the facilities department relates to the governance bodies, and who the tasting facility team is and which body it belongs to | [[sec:a2]], [[sec:a3]], [[sec:a9]] |
+| The dining services body | Whether a Skip Meal declaration lowers the count that Kadamba cooks from (the institution's account says it does, the operator says it cooks on registrations alone) | [[sec:a4]], [[sec:a10]] |
+| The dining services body | Whether any institutional actor has ever received an operator's books; whether the December 2024 pushback is the organised student effort heard of second hand; whether the back-door service after 9:30 is known to or sanctioned by the body | [[sec:a3]], [[sec:a5]] |
+| The operators | The base of Kadamba's stated 5 to 10 per cent waste figure, set against a 70 per cent first batch and about 37 per cent turnout; the real first batch per line and weekday; whether the supervisor already cooks in stages | [[sec:a7]], [[sec:a10]] |
+| The operators | Whether a late batch can be cooked at 9:00 and land by about 9:15 without delaying crest service; the call-to-counter lead time at Bakul and what happens when a top-up is not enough | [[sec:a10]] |
+| The operators | How outside diners are registered, who pays for their portions, and whether staff meals are a written entitlement; Kadamba's staff headcount | [[sec:a1]], [[sec:a10]] |
+| The operators | Whether anything in Bakul's weekly adjustment is written down; the basis of its reserve of about 50 at 9:20; which items and pairings waste; why residents skip; whether Palash is served by the same operator and kitchen as Bakul | [[sec:a4]], [[sec:a5]], [[sec:a10]] |
+| The operators | Whether Yuktāhār keeps any arrival timestamps; the waste target on its wastage board; why its production sheet and attendance register disagree for breakfast on 3 September (77 against 110) | [[sec:a5]] |
+| Records not yet obtained | Kadamba breakfast from May onward, lunch and dinner exports, and exports for Yuktāhār, Bakul and Palash, including any exam window; a Bakul breakfast scan export to test the manager's 8:00 to 8:30 rush and low weekends | [[sec:a5]], [[sec:a10]] |
+| Records not yet obtained | Records carrying student identity, to test individual trajectories; the Yuktāhār wastage book archive from June 2026 for a per-item history of waste and run-outs; dates for the tender, the gas-shortage response, the relaxed registration, the removal of a dinner item, the takeover year and the other operator-side changes. | [[sec:a5]] |
+| Records not yet obtained | Whether the Wednesday electricity rise at Yuktāhār and its Sunday pattern hold over more weeks; why Kadamba non-vegetarian registrations roughly doubled in the first week of April; why Monday is strong at Kadamba and weak at Yuktāhār | [[sec:a5]] |
+| Direct observation | Disposal after the close and where the garbage contractor takes the waste; live observation of mornings to confirm the shape of the crowd at halls without records | [[sec:a4]], [[sec:a5]] |
+| The students | How many would take a Sunday skip, which the project assumes to be 25 to 50 per cent of no-shows (tested from 10 to 75); whether Skip Meal use, even if rare, reduces item-level run-outs | [[sec:a10]] |
+| The team, once a pilot runs | Every co-design and user test, the pilot results and the effect of the Sunday skip, all of which are planned and none of which has run; actor feedback on the simulated responses; the interview with Prism's operations manager for the cost-per-line case | [[sec:a10]] |
+
+Not yet claimed, and so not open: a rising or falling attendance trend across the student population over a semester; that any one student's trajectory matches the aggregate; that the April profile holds for other months or halls without records; that Skip Meal has no effect on kitchen behaviour; and that reheated food at Kadamba causes students to skip.

@@ -1,0 +1,21 @@
+# Corrections recorded in Activities 9 and 10 (old claim -> current fact)
+
+- The cancellation cap moved from five to ten and back without changing the pattern -> the cap was raised from five to ten during a gas shortage and is back at five (single-sourced); it changes how many exits the default allows, and nothing is claimed about the pattern.
+- Leverage levels labelled "Meadows 6", "Level 9" (two numbering directions mixed) -> every lever is labelled "place n of 12", counted from the deepest (place 1) to the shallowest (place 12, parameters).
+- The off-site 70 to 80 per cent ratio (raised from 70) was a second change pushed the wrong way -> withdrawn after the Bakul account; the share varies by item and week with a floor near 70 per cent.
+- "70 to 80 per cent" raised from 70 appeared in four places of Activity 9 -> removed from all four.
+- Eroding goals judged a candidate archetype -> not established; carried as a risk (assumed). Conflict with the Phase 2 archetype check stated, not resolved.
+- Balancing process with delay called confirmed on structure -> L12 confirmed, delays single-sourced, overshoot candidate.
+- Yuktāhār comparison "proves" that learning is possible -> "shows (candidate)": five other differences (scale, lines, firm and layers, month, measurement) separate the halls.
+- "About 37 scans a day" after the close -> qualified as scans at or after 9:30.
+- Operator books "none at Kadamba" -> Yuktāhār has a book set; Kadamba has gram standards and no learning record.
+- Prototype C share of the day in by 9:00 -> 39.4 per cent (Sunday); Prototype B share before 9:15 -> 54.7 per cent (both lines pooled); refined design 173 cooked against 179 eaten.
+- Capping the late batch at 1.5 times the forecast (unmodelled claim) -> modelled: saves 21 portions a day for 2.7 more short (projected).
+- Bundle O1 (booked against eaten) scored 3 -> 2; bundle 84 -> 80 per cent (first draft), then 79 per cent after the reweighting.
+- First-draft scores A 74, B 65, G 58 -> A 68, B 58, G 48 after weights changed (food quality 5 to 10, feasibility and reversibility 10 to 5, cooked against eaten 20 to 15, desirability added at 10).
+- Sunday concept as an opt-in -> an evening-before skip that removes the charge and lowers the count; opt-in kept only as a later step (the opt-in with the ratio kept ran the crest 23 to 65 portions short each Sunday).
+- "A skip cannot cause crest shortage" -> "unlikely to, provided uptake stays below the threshold" (about two-thirds on non-veg Sundays).
+- Recommendation title "Route, calibrate and stage, then open the Sunday exit" -> "Route and read the gap together, open the Sunday exit on a fixed date, and calibrate the kitchen to buy time."
+- The Sunday skip waits until the kitchen reads eaters -> fixed date, week 6, independent of the kitchen pilot (gate G4).
+- Design principles P1 to P6 -> P1 to P7 (P7 measures are diagnostic and plural); P3 widened from "default and goal" to "default, goal and belief".
+- Leverage points LP1 to LP10 -> LP1 to LP12 (LP11 beliefs, LP12 goal).

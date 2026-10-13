@@ -1,0 +1,815 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\AtBeginDocument{\ifdefined\LTpre\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}\fi}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Phase 4: Design{,} Test and Evaluate Interventions (Activity 10)},
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Phase 4: Design, Test and Evaluate Interventions (Activity 10)}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{The Breakfast Paradox: IIIT Hyderabad Breakfast Mess System, Team Invictus}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\hypersetup{linkcolor=pslate}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.08}
+\section{2 Activity 10: Design, Test and Evaluate Interventions}\label{activity-10-design-test-and-evaluate-interventions}
+
+Activity 10 tests interventions against the whole system, not one actor\textquotesingle s interest. The concepts aim at the three confirmed structures that hold the paradox in place (the automatic default with a narrow exit, billing at the booking, and a gap that is measured and never routed) and at the step where registrations become a first batch. Every scenario output is labelled \emph{projected}: arithmetic on real records under stated assumptions, never an observed result. Stakeholder responses are \emph{simulated} and co-design tests are \emph{planned}; none has been run. All modelled figures are Kadamba\textquotesingle s, because Bakul has no records.
+
+\subsection{2.1 Generate Alternative Interventions (Deliverable 3: Intervention Concepts)}\label{generate-alternative-interventions-deliverable-3-intervention-concepts}
+
+Eight concepts were generated. Seven aim at a lever; G is a deliberate foil, kept in every test so that its failure shows in the numbers.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Eight concepts mapped to the twelve leverage points.}]{Assets/a10-concepts-levers.png}
+\caption{Eight concepts mapped to the twelve leverage points.}
+\end{figure}
+
+\textbf{A: The Breakfast Ledger.} Each week the scan export and the operators\textquotesingle{} books merge into one sheet per hall, by weekday and line, with the money charged for uneaten breakfasts. Kitchen levers shrink surplus but leave that charge flat until a rule moves, so a falling surplus cannot pass for "problem solved". A cooked-against-eaten threshold, anchored outside the hall\textquotesingle s own past, alerts the escalation forum next to the existing complaint trigger, and a weekly note of exams and events goes to planning. A builds the missing route (L10), adds a second trigger to L4, counters L17 and brings L7\textquotesingle s exam dips to the kitchen (P1, P2, P6, P7).
+
+\textbf{B: The Kitchen Learning Kit.} Kadamba\textquotesingle s fixed ratio becomes a day-before plan card built from expected eaters, with the 30 to 50 outside diners and about half of Kadamba\textquotesingle s staff allowed for by name, and a daily paper sheet read the next day. An operator forum, convened by CDS and hosted by Yuktāhār\textquotesingle s project managers, carries over what makes Yuktāhār\textquotesingle s Wastage Book work: blame-free weighing, daily discussion and surplus treated as cost. At Bakul, whose manager already adjusts weekly by item, the kit works as a check more than a rule, and the floor stays until a record shows how often a smaller batch would run short. B creates L11 at Kadamba, shortens L13\textquotesingle s kitchen half and reaches L8 through cost (P1 to P7).
+
+\textbf{C: The Crest Plan.} At 9:00 the supervisor projects the day from a weekday arrival card and starts a late batch that lands by about 9:15, so the first batch covers only the earlier diners. A grace period after 9:30 covers only late-batch food. All of it depends on Kadamba\textquotesingle s 10 to 15 minute on-site top-up. A Bakul top-up needs a phone call, cooking at Hafizpet and a 20 to 40 minute drive (single-sourced), so its hedge is the roughly 50 portions held at 9:20 (candidate), and C there means sizing that reserve and the latest call that can still land. C gives L12 sight of the crest, removes L14\textquotesingle s reason to hedge and bounds L15 (P4, P5, P6).
+
+\textbf{D: The Sunday Exit.} Sunday has the lowest turnout at both recorded halls. It is drafted first as opt-in, charged only if confirmed by 8 pm on Saturday, with a student who forgets paying the walk-in rate. A lighter variant keeps the default and adds a skip, open until the same hour, that removes the charge and lowers the kitchen\textquotesingle s count. Other days keep the four-day lead and the cap of five, and no skip may cost a hall place. D acts on the booking end of L13, on L2 (Skip Meal fails today because a skip returns nothing) and on L1 (P3, P4, P5).
+
+\textbf{E: The Operator Menu Slot.} At each fortnightly menu cycle operators bring the items that wasted most (uttapam, set dosa and upma at Kadamba, single-sourced) and those that ran out. The Bakul manager thinks pairings are the real problem (single-sourced), so operator input counts as a voice and never authority, read beside consumption data and residents\textquotesingle{} wishes. E supplies L16\textquotesingle s missing link (P1, P6).
+
+\textbf{F: Billed at Consumption (held).} Breakfast is charged on the scan, as it was during an LPG shortage and some fest periods (confirmed), acting on L1, L2, L6 and L8 (P3, P5, subject to a check on resale income). It is held until each operator\textquotesingle s payment basis is confirmed, since Bakul\textquotesingle s manager reports plates served while Kadamba\textquotesingle s operator says it cooks on, and is paid for, registrations (both single-sourced).
+
+\textbf{G: Ratio Cut to 50 Percent (foil).} Kadamba\textquotesingle s first batch drops from 70 to 50\% by instruction, with no record, late batch or allowance. It changes no loop and breaks P4 and P5.
+
+\textbf{H: The Shared Reading.} Joint sessions around the ledger ask each belief holder what produces their figure and what would change it: the Yuktāhār site head\textquotesingle s "about 50 percent" against his own register at about 28, the Kadamba supervisor\textquotesingle s crest prediction, and the registration side\textquotesingle s reasons for the automatic default. CFS and CDS are asked to adopt the CDS poster\textquotesingle s existing goal, minimising food wastage through advance planning, as two indicators, booked-against-eaten and cooked-against-eaten, read beside P7\textquotesingle s quality measures. The Bakul manager\textquotesingle s beliefs wait on a Bakul record. H acts on the mental models under every chain and on the working goal behind L10, L13 and L17 (P2, P3, P6, P7).
+
+\subsection{2.2 Develop Scenarios and Prototypes (Deliverables 3 and 4: Prototypes and Scenario Model)}\label{develop-scenarios-and-prototypes-deliverables-3-and-4-prototypes-and-scenario-model}
+
+The prototype is the re-sequenced bundle across one breakfast. The kitchen lane is the quick fix. The student, records and governance lanes carry the fundamental fix on fixed dates.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The re-sequenced bundle across one breakfast: quick fix and fundamental fix on separate lanes.}]{Assets/diagram-a10-intervention-prototype.png}
+\caption{The re-sequenced bundle across one breakfast: quick fix and fundamental fix on separate lanes.}
+\end{figure}
+
+\subsubsection{Prototypes}\label{prototypes}
+
+\textbf{Prototype A: the ledger sheet.} One A4 page per hall per week, filled from the scan export and the operator\textquotesingle s daily sheets, handwritten if need be and typed later, as Yuktāhār does with its books (single-sourced). Filled for Kadamba on Sunday 19 April 2026: veg line, 817 registered, 179 eaten, 638 charged and not eaten at ₹48, which is ₹30,624; non-veg line, 252 registered, 94 eaten, 158 at ₹66, which is ₹10,428. Registered and eaten are confirmed; the charge applies posted rates to April and is projected. Four rules sit at the foot of the page. "Ate" means a scan against a registration, with hand-logged scanner failures shown separately. On a run-out day eaten is a floor. The uneaten charge is printed beside the surplus. No figure on the page may ground a deduction.
+
+\textbf{Prototype B: the plan card and daily sheet.} The card is one line per dish per line, filled at the evening planning meeting from records available by Saturday evening. Grams follow the existing standard (four idlis a person from 120 grams of batter, 100 grams of sambar; single-sourced). The daily sheet logs each batch and top-up, the run-out time, and the leftovers and where they went. At Bakul the prototype is a per-item sheet only. Yuktāhār already runs its day-before step on paper.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The paper formats Prototype B borrows: Yuktāhār\textquotesingle s Grocery Book, vegetable indent and stock registers (confirmed, photographs).}]{Assets/plate-issue-stock.jpg}
+\caption{The paper formats Prototype B borrows: Yuktāhār\textquotesingle s Grocery Book, vegetable indent and stock registers (confirmed, photographs).}
+\end{figure}
+
+\textbf{Prototype C: the arrival card and the 9:00 rule.} The card is printed from the April records (confirmed). At 9:00 divide the diners so far by the day\textquotesingle s usual share by then, add 10\%, subtract the first batch and cook the difference. The grace period is withdrawn if scans after 9:30 stay above April\textquotesingle s 9.2\% for four weeks running.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1525}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1695}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1525}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1525}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1525}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2203}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Weekday
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries In by 8:00
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries By 9:00
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries By 9:15
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries After 9:15
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Scans a day, 9:15 to 9:30
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Monday & 17.7\% & 50.7\% & 64.6\% & 35.4\% & 117 \\
+Tuesday & 17.0\% & 55.2\% & 68.5\% & 31.5\% & 110 \\
+Wednesday & 22.5\% & 54.6\% & 68.7\% & 31.3\% & 93 \\
+Thursday & 21.9\% & 52.9\% & 64.5\% & 35.5\% & 108 \\
+Friday & 13.9\% & 48.2\% & 62.7\% & 37.3\% & 106 \\
+Saturday & 15.8\% & 49.4\% & 62.2\% & 37.8\% & 106 \\
+Sunday & 13.5\% & 38.9\% & 54.4\% & 45.6\% & 103 \\
+\end{longtable}
+}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Prototypes B and C on one morning: the plan card, the 9:00 rule, and portions cooked against portions eaten.}]{Assets/a10-plan-card.png}
+\caption{Prototypes B and C on one morning: the plan card, the 9:00 rule, and portions cooked against portions eaten.}
+\end{figure}
+
+\textbf{Prototype D: the Sunday exit on the portal.} One control on the existing Skip Meal screen for Sunday breakfast, open until 8 pm on Saturday, in two forms. The first-draft opt-in reads "Confirm Sunday breakfast: you will be charged only if you confirm" and the kitchen reads the confirmed count. The evening-before skip reads "Skip Sunday breakfast: you will not be charged, and the kitchen will cook less", removes the charge, and the kitchen reads registered minus skips. Whether Skip Meal already lowers the kitchen\textquotesingle s count is an open conflict, so the prototype requires that either form does.
+
+\textbf{Prototypes E and H.} The menu note is half a page per operator per cycle: the three items most left over, the three that ran out earliest, items above the gram standard, and residents\textquotesingle{} views beside any proposed pairing. In the hour-long shared reading each participant writes their own figure before the page is read together, and the session records, in their words, what would show the belief has shifted. Nothing said is attributed outside the room.
+
+\subsubsection{Co-design and User Testing (Planned)}\label{co-design-and-user-testing-planned}
+
+These tests are planned for Stage 1, before any pilot. They would catch a design nobody would use, which no model can do. The Bakul tests prepare a later extension and do not gate the Kadamba pilot.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1972}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1549}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2113}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4366}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Test (planned)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries With whom
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries What it checks
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Result that would change the design
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Sunday skip wording & 8 to 12 students: skippers, resellers, daily eaters & Understood at once; fear for slot or resale; preferred variant & Misreading: rewrite. Slot fear: guarantee on screen. Preference for confirming: opt-in later \\
+Plan card and 9:00 walk-through & Kadamba supervisor and cook & Card fits the evening step; 9:00 batch without delay; 15-minute items & Cannot land by 9:15: 8:45 trigger, higher cover. Too slow: three main veg items only \\
+Ledger review & Yuktāhār\textquotesingle s managers and register keeper & Audit or shared record; fit with paper routine; which "ate" & Audit reading: no per-person entries, monthly threshold. Mismatch: their columns as template \\
+Export effort & A CDS staff member & Time for the export and the page & Over an hour a week: monthly page \\
+Why Bakul residents skip & 8 to 12 Bakul residents & Their reasons against the manager\textquotesingle s; pairings; held items & Mostly sleep: menu is no attendance lever. Texture complaints: record holding time \\
+Bakul reserve walk-through & Bakul manager & Call-to-counter time; basis of the reserve; whether anything is written & Long lead: reserve kept, sized from arrivals. Nothing written: per-item sheet first \\
+\end{longtable}
+}
+
+\subsubsection{Scenario Model and Impact Evaluation}\label{scenario-model-and-impact-evaluation}
+
+The model explores how the system might respond and makes no predictions. It replays Kadamba\textquotesingle s April 2026 breakfast records (confirmed: 32,162 registration rows with scan times), setting what each rule would have cooked against what was eaten, arrival by arrival. Kitchen forecasts use only earlier records, so the backtest covers 23 out-of-sample days (8 to 30 April); student-side scenarios use the whole month. Money is the posted rate times counted uneaten registrations, and no food cost or waste weight is used. "Surplus" here means portions cooked beyond what registered students ate, which is not waste in the strict sense. Demand is censored, since on a run-out day "eaten" is a floor and an unadjusted forecast would drift down, and the ledger\textquotesingle s run-out rule corrects for that.
+
+The inputs: a 70\% first batch per line (tested 60 to 80, single-sourced); posted rates of ₹48 veg and ₹66 non-veg at Kadamba and ₹53 at Yuktāhār (confirmed as posted, use for April assumed); a forecast equal to the mean of earlier same weekdays; arrival profiles from earlier same weekdays, with the crest 5 points lighter to 10 heavier in stress runs; a 15-minute top-up (30 in a gas shortage); an allowance of about 30 outside diners plus 0 to 30 staff; skip uptake of 25 or 50\% of no-shows (tested 10 to 75, assumed); opt-in turnout of 60, 72 or 85\%; eaters held at records (±10\%, ±25\% for exams or a favourite item); and adoption on assumed dates. The records cover one hall, one meal and one month, and rest on the operator\textquotesingle s own ratio.
+
+Bakul\textquotesingle s account differs on every kitchen input: a rush at 8:00 to 8:30 with 10 to 15 arrivals in the last ten minutes, cooking about 8 km away from around 3 AM for some items, an unmeasured top-up lead time, and turnout at most about 60\% (candidate, possibly itself an upper bound). The arrival card, the 9:00 batch, the 1.5 cover and the Scenario 4 thresholds apply to Kadamba only.
+
+\textbf{Scenario 1. The kitchen rules, backtested.} The baseline cooks far ahead of demand, with the veg line at about 525 a day for 237 eaten. The ratio cut fails both ways: 138 of its 150 surplus portions are still veg, and non-veg, whose turnout reaches 59\% on busy days, runs short on 7 of 23 days, because one flat ratio cannot serve two lines 16 points apart. A calibrated single batch cuts surplus to 60 but moves the cost to the crest: 16.8 short a day, and on 26 April the veg line would have run out at 9:24, 45 short, L14 in reverse. Adding the late batch cooks 274 fewer portions than the baseline and leaves 91 surplus and 2.6 short, which the ordinary top-up covers. The effective ratio becomes an output, from 29\% (Sunday veg) to 67\% (Friday non-veg).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={Kitchen rules backtested on 23 April days, portions a day, both lines (projected).}]{Assets/chart-a10-kitchen-scenarios.png}
+\caption{Kitchen rules backtested on 23 April days, portions a day, both lines (projected).}
+\end{figure}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.5625}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1094}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1094}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1094}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1094}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Rule
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Cooked a day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Surplus a day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Short a day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Line-days short (of 46)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Baseline: 70\%, one batch & 759 & 362 & 0 & 0 \\
+G: ratio cut to 50\% & 542 & 150 & 4.5 & 7 \\
+B alone: forecast plus 10\%, one batch & 440 & 60 & 16.8 & 16 \\
+B with C: calibrated batch plus 9:00 late batch & 485 & 91 & 2.6 & 7 \\
+\end{longtable}
+}
+
+\textbf{Scenario 2. Projecting the day from the morning.} A flat projection from the count at 8:00 assumes a quarter of diners are in by then, when only 13.5 to 22.5\% are, and it under-reads by 26.9\% on average (mean absolute error 34.8\%, range −56\% to +54\%). A weekday profile at 8:00 removes most of the bias but not the noise of a small early count (over-reads by 15.6\%, absolute error 28.6\%). Reading at 9:00 halves the error again (over-reads by 2.6\%, absolute error 13.4\%, range −23\% to +70\%), hence the 9:00 trigger, with the card rebuilt monthly.
+
+\textbf{Scenario 3. One Sunday on the veg line.} Across three backtest Sundays the baseline cooked about 563 for about 190 eaten, a surplus of about 373, which is 2.5 to 3.4 times what was eaten across ratios of 60 to 80\%. The refined design would cook about 233, leaving about 45 surplus and about 2 short. As the week\textquotesingle s largest single surplus block, Sunday veg is the natural pilot slice.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={Kadamba veg line, Sunday 19 April 2026: recorded diners against the baseline batch and the refined first and late batches (projected).}]{Assets/chart-a10-sunday-veg-batches.png}
+\caption{Kadamba veg line, Sunday 19 April 2026: recorded diners against the baseline batch and the refined first and late batches (projected).}
+\end{figure}
+
+\textbf{Scenario 4. The student side and the default.} In April, Kadamba students were charged for 20,221 breakfasts they did not eat (confirmed): about ₹7.4 lakh veg and ₹3.2 lakh non-veg, ₹10.6 lakh in all (projected). Kitchen rules leave that unchanged. A skip that returns nothing changes nothing, which is why Skip Meal fails today. A skip that removes the charge is the smallest rule change that returns money, and it scales from Sunday to every day. A shorter lead with the cap of five kept can remove at most 26.5\% of no-shows (1,072 students times 5 against 20,221), which shows the cap limits any exit however it is framed.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4853}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2647}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Scenario (April charges for uneaten breakfasts)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Charges
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Change
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Baseline, or a skip that returns nothing & ₹10.58 lakh & None \\
+D: Sunday skip, 25 to 50\% uptake & ₹9.78 to ₹10.18 lakh & ₹0.40 to ₹0.80 lakh less \\
+Sunday opt-in, turnout 60 to 85\% & ₹9.05 to ₹9.35 lakh & ₹1.23 to ₹1.53 lakh less \\
+Every-day skip, 25 to 50\% uptake & ₹5.29 to ₹7.94 lakh & ₹2.65 to ₹5.29 lakh less \\
+F (held) & None & ₹10.58 lakh off students; the bearer depends on the plate basis \\
+\end{longtable}
+}
+
+A week of Sunday skips at 10, 25, 50 and 75\% uptake returns ₹4,010, ₹10,025, ₹20,050 and ₹30,075 and removes 78, 194, 389 and 583 registered plates; the every-day skip returns ₹24,692, ₹61,729, ₹1.23 lakh and ₹1.85 lakh and removes 472, 1,180, 2,359 and 3,539 plates. Fewer registered plates cost the vendor only if it is paid on them (unconfirmed). If the kitchen keeps its ratio, opt-in starves the crest, since the ratio assumes 30\% of bookings go uneaten: 70\% of a confirmed count leaves each line about 23 short on Sundays at 72\% opt-in turnout and about 65 short at 85\%, nearly all after 9:15. A skip is less exposed. A kitchen keeping a 70\% ratio stays safe on Sundays down to 82.3\% uptake on veg and 67.2\% on non-veg, and every day down to 66.1\% and 38.0\%. At 60\% the Sunday thresholds fall to 72.5\% and 49.0\%, and at 80\% they rise to 89.7\% and 80.9\%. A Sunday skip is therefore unlikely to short the crest below about two-thirds uptake on non-veg, even if a quarter of skippers still eat. An every-day skip at 50\% uptake runs non-veg short on 7 of 30 days, about 1.4 a day, rising to 3.0 if a tenth of skippers still eat and 8.9 if a quarter do. The Sunday skip can go on its own fixed date, and the every-day skip waits until the kitchen reads eaters on every line.
+
+\textbf{Scenario 5. Yuktāhār\textquotesingle s belief against its register.} Across nine legible September breakfasts Yuktāhār registered 228 to 325 and served 41 to 105 (confirmed). Planning on the site head\textquotesingle s "about 50 percent" would overcook by about 63 portions a day, with uneaten charges near ₹10,500 a day at ₹53 (both projected). The register removes the gap (Sundays 18 to 24\%, Tuesdays 31 to 40\%). Yuktāhār\textquotesingle s lever here is a change of belief and needs no new routine.
+
+\textbf{Scenario 6. Sensitivity and stress.} Each condition is an assumed shock to Kadamba\textquotesingle s recorded arrivals, unwarned unless stated. "Waiting" diners arrive after one batch runs out and before the next lands. The baseline surplus is 362 a day throughout, except in the exam and favourite-item rows.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+\cellcolor{pblue}\color{white}\bfseries Condition & \cellcolor{pblue}\color{white}\bfseries Eaten & \cellcolor{pblue}\color{white}\bfseries Refined surplus & \cellcolor{pblue}\color{white}\bfseries Short & \cellcolor{pblue}\color{white}\bfseries Waiting \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Normal (backtest) & 397 & 91 & 2.6 & 3.4 \\
+Crest 5 points lighter & 397 & 120 & 0.5 & 5.7 \\
+Crest 5 points heavier & 397 & 69 & 7.7 & 1.1 \\
+Crest 10 points heavier & 397 & 52 & 12.6 & 0.3 \\
+Exam week, 25\% fewer (baseline 462) & 297 & 123 & 0 & 0 \\
+The same, with calendar note & 297 & 67 & 2.1 & 2.5 \\
+Favourite item, 25\% more (baseline 264) & 496 & 89 & 9.1 & 14.2 \\
+Rule change, 10\% fewer (baseline 402) & 357 & 100 & 1.4 & 0.7 \\
+Rule change, 10\% more (baseline 323) & 436 & 89 & 5.6 & 6.5 \\
+Gas shortage, 30-minute batches & 397 & 91 & 2.6 & 25.3 \\
+Failed 9:00 late batch & 397 & 33 & 43.6 & 32.5 \\
+\end{longtable}
+}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={The refined kitchen design under assumed shocks on the 23 backtest days, beside the baseline surplus (projected).}]{Assets/chart-a10-stress-tests.png}
+\caption{The refined kitchen design under assumed shocks on the 23 backtest days, beside the baseline surplus (projected).}
+\end{figure}
+
+From the lightest to the heaviest crest, line-days short (of 46) run 2, 7, 13 and 15. The design fails safe toward fewer eaters and loud toward more. The late batch is load-bearing: if it fails, about 44 diners are short and 33 wait, so the raw reserve is mandatory and two failed Sundays running should stop the pilot. A gas shortage hurts mainly through waiting, and on such days the plan reverts to a larger first batch. A 10\% shift in eaters keeps surplus between 89 and 100, so the no-adaptation assumption is not decisive. The baseline surplus is almost pure ratio, 254 to 471 across 60 to 80\%.
+
+\textbf{Scenario 7. Behaviour over time for the recommended bundle.} Adoption pace and timing are assumed. The baseline holds at 362 portions a day (254 to 471) and ₹2.47 lakh a week throughout, and nothing physical moves in Stage 1.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0857}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3571}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2571}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Week
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Stage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Surplus a day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Uneaten charges a week
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 to 4 & 1: routes, tests, joint reading at week 4 & 362 (254 to 471) & ₹2.47 lakh \\
+6 & 2: Sunday veg pilot; skip proposed & 341 (236 to 446) & ₹2.47 lakh \\
+8 & 2 & 320 (219 to 421) & ₹2.47 lakh \\
+10 & 3: roll-out; Sunday skip in force & 262 (182 to 346) & ₹2.37 lakh (2.27 to 2.37) \\
+12 & 3 & 205 (144 to 271) & ₹2.37 lakh \\
+14 & 3; every-day skip decision & 148 (107 to 195) & ₹2.37 lakh \\
+16 to 20 & Full adoption & 91 (69 to 120) & ₹2.37 lakh; ₹1.23 to ₹1.85 lakh with the every-day skip \\
+\end{longtable}
+}
+
+Surplus falls over roughly three months, perhaps optimistically, since Yuktāhār\textquotesingle s own routine took about four (August to December, single-sourced). The charge moves only when a rule does. A kitchen improving under a flat charge line signals a quick fix standing in for the fundamental one.
+
+\textbf{Scenario 8. How each scenario moves every indicator.} Figures are projected; directions given without figures are reasoned (assumed).
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2239}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1642}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1642}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1791}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1045}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1642}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Indicator (today)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Quick fix only
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Bundle, Sunday skip
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries With every-day skip
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries G
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries F (held)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Uneaten charges a week (₹2.47 lakh) & Unchanged & ₹2.27 to 2.37 lakh & ₹1.23 to 1.85 lakh & Unchanged & None; moves per plate basis \\
+First-batch surplus a day (254 to 471) & 69 to 120 & 69 to 120 & 69 to 120 & 150 & Falls only if the kitchen reads eaters \\
+Diners short a day (0) & 0.5 to 7.7; 44 if the late batch fails & As quick fix & Non-veg short some days unless calibrated & 4.5, non-veg & Unchanged \\
+Vendor, if paid on registered plates & Food cost falls & 194 to 389 fewer plates a week & 1,180 to 2,359 fewer & Food cost falls & Follows served plates \\
+\end{longtable}
+}
+
+Every kitchen scenario except G names the staff allowance and reheats less. Supervisor workload rises at first, and the share arriving after 9:30 may creep up within its stop rule. The bundle adds a weekly page and a portal toggle for CDS and eases pressure on Mess Cell resale. G risks the allowance and trust. Only rule scenarios move the student cost and only kitchen scenarios move the surplus, so the bundle needs both.
+
+\subsection{2.3 Simulate Stakeholder Responses}\label{simulate-stakeholder-responses}
+
+All responses are simulated from each actor\textquotesingle s stated position and incentives, not from actor feedback. Each response is rational given the actor\textquotesingle s incentives, which can change.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Simulated responses of twelve stakeholders to four concepts.}]{Assets/a10-responses.png}
+\caption{Simulated responses of twelve stakeholders to four concepts.}
+\end{figure}
+
+Prism needs a food-cost saving it keeps, visible run-out protection and a contract assurance that lower waste alone will not lower its rate. The supervisor needs the blame-free rule and a named staff meal. CDS needs a skip that replaces cancellation work and adds none. Bakul\textquotesingle s floor is rational when a late call cannot land in time, so it needs a record of how often a smaller batch would have run short, and if Bakul is paid on plates served it would most likely object to shortage risk and not to a lower booking count (candidate). The simulation favours one joint reading over separate proposals, and favours not holding the booking change behind the kitchen.
+
+\subsection{2.4 Test Interventions Against System Objectives (Deliverable 4: Evaluation Framework)}\label{test-interventions-against-system-objectives-deliverable-4-evaluation-framework}
+
+The objectives belong to the system, not to any one stakeholder: notice its own cost, cut the first batch without trading waste for run-outs, leave no one worse off, and be usable. Four gates make a concept ineligible whatever its score. G1: absorbers kept, so resale, reuse, outside-diner and staff meals, walk-ins, late service and outside venues all survive and only the over-cooked batch, reheating and the bin are targeted (P5). G2: safety kept (P4). G3: aimed at structure, neither asking students to behave better nor blaming operators, and not gated on an unknown that could reverse it (P3; LP10 held). G4: any kitchen lever paired with a route, default, goal or belief lever landing on a date independent of kitchen performance.
+
+Concepts are then scored from 0 (worse) through 1 (no effect) to 4 (large gain in the model) against nine criteria, weighted out of 400: O1 booked against eaten, O2 cooked against eaten (never read alone), O3 crest service at every hall, O4 fundamental capability (15 each); O5 fairness, O6 food quality, O9 desirability (10 each); O7 feasibility now and O8 reversibility (5 each). The weights are the team\textquotesingle s judgement. Food quality rose from 5 to 10 because students eat reheated surplus and worse portions are the quickest way to cut surplus, and it now includes holding time and texture after the Bakul manager reported that carried aloo paratha loses its texture (single-sourced). Feasibility and reversibility fell from 10 to 5, and cooked-against-eaten from 20 to 15, since weighting toward what a student team can do pulls every score toward the quick fix. Process checks are monitored and never scored. On O3, 3 means a residue one top-up can cover.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Concepts scored against the gates and the nine weighted criteria.}]{Assets/a10-gates-scores.png}
+\caption{Concepts scored against the gates and the nine weighted criteria.}
+\end{figure}
+
+A leads because it builds the route every other lever needs, though alone it moves no food or money. H acts deepest, but discomfort at seeing one\textquotesingle s own figure caps its desirability. B alone has the largest physical effect (surplus from 362 to 60) and the worst crest result (16.8 short), falling from second place to seventh. The every-day and opt-in forms of D move ₹2.65 to ₹5.29 lakh and ₹1.23 to ₹1.53 lakh a month but fail the crest test. G fails the gates outright and still leaves 150 surplus portions. The two bundles have the same parts and the same score, since a weighted score cannot see sequencing and the gate can. The first-draft bundle made the Sunday skip wait for the kitchen to prove itself, a small case of shifting the burden. Scenario 4 shows the wait is unnecessary, so the re-sequenced bundle, which passes G4, is the one recommended.
+
+\subsection{2.5 Identify Unintended Consequences}\label{identify-unintended-consequences}
+
+Several second-order effects are the loops pushing back.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio,alt={The hedge ratchet: one loud shortage restores the cut batch, and what holds it down.}]{Assets/a10-hedge-loop.png}
+\caption{The hedge ratchet: one loud shortage restores the cut batch, and what holds it down.}
+\end{figure}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1538}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3462}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1154}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3846}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Intervention
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Consequence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Loop
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Mitigation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+B, C & Food taken from outside diners and staff & L9 (candidate) & Named allowance, recorded as served \\
+B & Crest run-outs on heavy days; one loud shortage restores the hedge & L14 reversed, L12; the ratchet & Late batch, 1.5 cover, reserve; judged over months; every run-out recorded \\
+B, A & A better kitchen hides the gap upstream & L17 (candidate) & The ledger carries the charge; the kitchen is labelled the quick fix \\
+C & Late batch lands in the busiest quarter hour & L12 & Live or steamed quick items; walk-through first \\
+B & Exams and events break the forecast & L7 & Calendar note \\
+D & Resale buyers lose Sunday slots; opt-in with a fixed ratio under-cooks the crest & L1; L13, L14 & Accepted, no market closed; the skip keeps the default \\
+B, C & Less reheating changes what students get & L13 (open) & Recorded on the sheet \\
+B, C at Bakul & A Kadamba rule trims a batch no top-up can replace; a bigger reserve softens held items (candidate) & L12 with delay; L13 holding (open) & No Kadamba rule applied; floor kept; reserve sized from Bakul\textquotesingle s own arrivals; texture under O6 \\
+A & CDS workload rises & Governance & Paper-first; tested time budget \\
+A, D & Two people on record as head of CDS & L10 & Send by role \\
+\end{longtable}
+}
+
+Adaptations that would push back, with likelihoods assumed:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0889}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2444}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Adaptation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Loop
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Likelihood
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Early warning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Mitigation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Vendor raises its rate at renegotiation & L8 & Medium on registered plates, low on served & Rate proposals & Ask the plate basis first; show food-cost saving beside lost plates \\
+Skip, then eat on another\textquotesingle s scan & L1 & Medium Sundays, higher daily & Eaten per registration rising & Walk-in ₹81 against ₹48 (confirmed); daily step behind its own rule \\
+Smaller portions, hidden leftovers, reheated stock & L11 goal; L13 & Medium & Grams per plate; "reuse" rising & Never read alone (P7); store issues reconciled \\
+"Ate" gamed through hand-logged scans & L10 & Low to medium & Hand-logged share rising & Own line; a rise triggers a scanner check, not a staff check \\
+Allowance quietly cut & L9 & Medium, least visible & Allowance below plan & A missed meal is a stop condition \\
+CDS re-tightens cancellations & December 2024 precedent & Low to medium & Proposals to cap skips & Skip replaces cancellation work; CDS in from week 4 \\
+Censoring spiral lowers forecasts & Candidate chain on L11 & Medium & Repeat weekday run-outs & Demand read as count at run-out divided by card share; two run-outs raise the forecast \\
+Ledger read as an audit & Accidental adversaries & Medium at Kadamba & Round numbers; "left over" always small & Blame-free rule; review, never deduction \\
+Hedge quietly restored & L14 ratchet & Medium to high & Effective ratio drifting to 70\% & Weekly ratio line \\
+Grace period softens the close & L15 (candidate) & Medium & Share after 9:30 above 9.2\% & Withdraw the grace after four weeks; the late batch stays \\
+\end{longtable}
+}
+
+\subsection{2.6 Refine the Intervention}\label{refine-the-intervention}
+
+Tests, stress runs, consequences and the Bakul evidence changed the first concepts in twelve ways.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2821}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3077}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4103}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries First concept
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries What changed it
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Refined version
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+B alone & 16.8 short a day; 45 short at 9:24 one Sunday & B with C: batch for diners before 9:15, late batch at 9:00 \\
+C projecting at 8:00 & Error 35\% flat, 29\% by profile at 8:00, 13\% at 9:00 & Projection at 9:00 \\
+10\% first-batch buffer & About 18 diners a day left waiting & 1.5 cover: 3 waiting, 2.6 short, 91 surplus \\
+One C for every hall & Bakul\textquotesingle s rush, phoned top-up and held reserve & C per hall; Bakul\textquotesingle s reserve once records exist \\
+Kitchen bundle as the whole design & Shifting the burden & Labelled the quick fix everywhere \\
+Sunday skip after the kitchen reads eaters & Scenario 4: safe below two-thirds uptake & Fixed date, week 6; every-day skip on its own rule \\
+Sunday opt-in & 23 to 65 short; ₹81 for the forgetful & Evening-before skip; opt-in later on the path \\
+Any skip & Returning nothing, it goes unused (L2) & Must remove the charge and lower the count \\
+A without the charge & Surplus read as solved & Weekly charge line \\
+B without allowance & G1 & Named allowance on every card \\
+A as a dashboard & Yuktāhār dropped a paid ERP system (single-sourced) & Paper-first A4 ledger \\
+Records alone & Records cannot show use & Planned co-design tests \\
+\end{longtable}
+}
+
+The late-batch design was chosen from a grid of start time, cover and buffer (projected). Starting at 8:45 with cover 1.1 and a 10\% buffer gives 77 surplus, 10.6 short and 20.0 waiting; 8:45 with cover 1.5 and 20\% gives 116, 4.9 and 6.2. Starting at 9:00 gives, for cover 1.1 and 10\%, 67 surplus, 8.6 short and 17.7 waiting; for 1.3 and 10\%, 75, 6.5 and 7.4; for 1.5 and 10\%, 91, 2.6 and 3.4; and for 1.5 and 20\%, 118, 0.8 and 3.4. The choice is the least surplus that keeps waiting under five a day, which is 9:00 with cover 1.5 and a 10\% buffer. A daily cap at 1.5 times the forecast would save 21 more portions for 2.7 more short, and the pilot can decide.
+
+\subsection{2.7 Deliverable 5: Final System Design Recommendation}\label{deliverable-5-final-system-design-recommendation}
+
+\subsubsection{The Recommended Intervention}\label{the-recommended-intervention}
+
+\textbf{Route and read the gap together, open the Sunday exit on a fixed date, and calibrate the kitchen to buy time.} The kitchen bundle runs alongside, labelled the quick fix wherever it is reported. Stage 1 (weeks 0 to 4) builds the ledger with its charge line, runs the co-design tests, holds the joint reading at week 4 and takes the goal and indicators to CFS and CDS, while the cards and sheet are drafted with the Kadamba supervisor. Stage 2 (weeks 5 to 8) proposes the Sunday skip to the rule owner at week 6, through student representatives and with the plate-basis question, while the Kadamba Sunday veg pilot runs the card, allowance, 9:00 batch and sheet and Yuktāhār re-anchors. Stage 3 (weeks 9 to 20) puts the skip in force from about week 10 if adopted, takes the every-day decision at week 14, hands over from week 16 and ends at week 20. Billing and payment basis (LP10) and an outcome owner (LP9) are held until their facts are known.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The recommended sequence, with decision points and handover.}]{Assets/a10-sequence.png}
+\caption{The recommended sequence, with decision points and handover.}
+\end{figure}
+
+Bakul, a later hall outside this pilot, is a third regime with no records, and the Kadamba model does not transfer. The recommendation extends there only once its scan export gives weekday turnout and arrivals, the call-to-counter lead time is measured, an item-level record backs the weekly review, any kitchen lever cuts waste without raising shortage risk, and, for the Sunday exit, its payment basis is confirmed.
+
+\subsubsection{The Architecture Path}\label{the-architecture-path}
+
+The path moves in reversible steps from a default that must be escaped toward a booking that matches intent.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2182}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1273}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3273}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3273}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Decision point
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries When
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Rule
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries If the evidence goes the other way
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+DP1: Sunday skip & Week 6, fixed; in force about week 10 & None; goes on this date & If declined, the Sunday charge line goes to the escalation forum \\
+DP2: Every-day skip & Week 14; from about week 16 & Sunday uptake at least 25\%; no Sunday over 10 short; eaten per remaining registration rising a few points; calibrated batch on both lines & Uptake under 10\%: retest the wording. Shortage: that line reads eaters first \\
+DP3: Default matched to intent & After a term of DP2 & Opt-in on the lowest-turnout days; no automatic registration off campus; skip used by over half of no-shows; never costs a hall slot & Low uptake and a stable charge: keep skip and default \\
+DP4: Billing and payment & Once the plate basis is known & Billing at consumption, or payment on served plates; basis known operator by operator; resale reliance checked & If registered plates and no rate agreement, billing stays and the skip carries students \\
+\end{longtable}
+}
+
+\subsubsection{Theory of Change}\label{theory-of-change}
+
+The bundle acts on the place-3 goal, shifting the working measure from registration count to cooked-against-eaten, an aim already on the institution\textquotesingle s own poster.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={From root cause to bundle change to expected response (projected or candidate).}]{Assets/a10-theory-of-change.png}
+\caption{From root cause to bundle change to expected response (projected or candidate).}
+\end{figure}
+
+\subsubsection{Interventions Across the Iceberg}\label{interventions-across-the-iceberg}
+
+The daily sheet records events (batches, run-outs, leftovers), marking run-out days as censored by run-out time per line. Patterns come from the monthly arrival card and the ledger\textquotesingle s behaviour-over-time lines: weekly surplus, shortage and charge, the share after 9:30 and the effective ratio. Structures (the ledger route, plan card, skip and stated goal) are tracked by whether the ledger reaches the rule owner, by skip uptake and by the two indicators. The mental models are "registration is demand," "breakfast is about 50 percent," "cooking to registrations is what we are paid for," "we cannot nullify it" and "they are catching us." The shared readings address each holder, and the Bakul manager\textquotesingle s beliefs stay open questions. A shift shows when the site head\textquotesingle s figure matches his own register.
+
+\subsubsection{Pilot Design and Monitoring}\label{pilot-design-and-monitoring}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.2838}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7162}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Element
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Specification
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Where and when & Kadamba veg line, Sunday breakfast: four Sundays in Stage 2, continued in Stage 3, judged at week 16; Yuktāhār for re-anchoring \\
+Convening & A joint reading at week 4 agrees the definition of "ate" and hears the Sunday proposal; repeated at week 12 \\
+Runs and agrees & The Kadamba supervisor runs it and the team fills the ledger; Prism\textquotesingle s operations manager, ABC Hospitality Services, the facility team\textquotesingle s parent body and the rule owner agree \\
+Result measures & Uneaten charges; surplus; run-outs and diners short; grams, taste and texture; holding time; share from a fresh or late batch; allowance meals \\
+Process checks & Sheet nine days in ten; ledger weekly; late batch by 9:05; sessions on date (never reported as results) \\
+Comparison & Sunday non-veg, Saturday veg and earlier Sundays \\
+Success & Sunday veg surplus from about 370 to under 100 (model about 45); no Sunday over 10 short; run-outs no more frequent than on comparison days; every allowance meal served; grams and taste held; safety recorded; no sheet-based reprimand; charge line reported weekly \\
+Stop & Shortage beyond one top-up two Sundays running; late batch failing twice; any allowance meal missed; grams below standard; any figure used against staff; consent withdrawn \\
+Would change the plan & The base of the waste figure; whether Skip Meal lowers the count; the plate basis; co-design results \\
+\end{longtable}
+}
+
+To keep the team from becoming the intervenor the system depends on, the CDS office compiles the page by role, operators\textquotesingle{} data roles fill their sheets, the escalation forum receives the threshold, and a named outcome owner (LP9) takes over once the head of CDS is known. CDS compiles with the team from week 16 and alone from week 18. The team steps back at week 20, once two pages and one forum have run without it, and each archetype is then checked monthly for at least six months.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2805}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3902}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3293}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Archetype
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Indicator after handover
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Signal of return
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Shifting the burden: reliance on the quick fix & Kitchen-led fall in surplus against fall in charges & Surplus falling, charge flat for three months \\
+Shifting the burden: fundamental progress & Decision points on date; indicators cited; uptake & A decision point missed twice \\
+Fixes that fail & Effective ratio, weekly per line & Drift toward 70\% for four weeks \\
+Soft close (L15) & Share after 9:30 & Above 9.2\% for four weeks \\
+Accidental adversaries & Completion; round numbers; hand-logged share & Completion under nine in ten for two weeks \\
+\end{longtable}
+}
+
+Each waste indicator is read beside the run-out indicator for the same hall and line. Some results improve before they worsen (a bad crest can bring the hedge back months later), and others worsen first (supervisor workload in Stage 2, the charge flat until week 10). Each expected shape is written on the ledger beforehand.
+
+\subsubsection{Who Must Act}\label{who-must-act}
+
+Of thirteen actions the student team can complete two alone: building the ledger, cards and sheet, and running the co-design tests. It can convene or support four that others decide: the joint and shared readings (CDS convenes), taking Yuktāhār\textquotesingle s routine to Kadamba, the calibrated and 9:00 batches (Prism\textquotesingle s supervisor decides) and Yuktāhār\textquotesingle s re-anchoring. It can carry six forward as evidenced proposals: the tasting line (facility team, parent body unknown), a cost threshold (Student Council, Parliament, CDS Committee), the stated goal (CFS and CDS), the Sunday exit (rule owner, Mess Office or CDS, unconfirmed), the billing or payment basis (only once the plate basis is answered) and an owner of booked, cooked and eaten (CFS and CDS). One it must complete outright: the handover, by week 20.
+
+\subsubsection{Before and After}\label{before-and-after}
+
+First-batch surplus falls from about 254 to 471 portions a day to about 69 to 120 over roughly four months. The weekly uneaten charge falls from about ₹2.47 lakh to ₹2.27 to ₹2.37 lakh with the Sunday skip, and to ₹1.23 to ₹1.85 lakh if the every-day skip follows (all projected). The kitchen change is large and the student-side change small until the rule moves, which matches the diagnosis. Kitchen levers cut surplus and run-outs, and only a rule moves the booking. The design keeps both in view so the first is never mistaken for the second.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={How Kadamba breakfast might respond over time under the bundle, against the baseline (projected).}]{Assets/chart-a10-bot-projection.png}
+\caption{How Kadamba breakfast might respond over time under the bundle, against the baseline (projected).}
+\end{figure}
+
+\section{3 Key Findings}\label{key-findings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The system has its measurements and no routes for them. The enabling lever (place 6 of 12) routes existing records to the kitchen and the rule owners, and a student team can prototype it now as a paper ledger.
+\item
+  The loops form a shifting-the-burden structure. Kitchen levers are the quick fix. Booking, goal, belief and route levers are the fundamental fix, which the recommendation runs on fixed dates whatever the kitchen pilot shows.
+\item
+  The deepest levers are the beliefs that let the registration count stand in for demand (place 2) and the system\textquotesingle s working goal (place 3). The deepest rule lever not gated on an unknown is the breakfast default and its exit (place 5), provided no skip ever costs a student a hall slot.
+\item
+  Cutting Kadamba\textquotesingle s ratio to 50\% fails on both counts, and a calibrated first batch alone moves the cost into the crest. Adding a 9:00 late batch brings surplus down with a residue the ordinary top-up covers (projected). The design fails loud when eaters exceed the forecast, so it depends on the raw reserve and the stop rules.
+\item
+  Kitchen levers leave the student cost untouched, and only a rule that returns something moves it. A Sunday skip is unlikely to run the crest short below about two-thirds uptake on non-veg, so it can start on a fixed date now. The every-day skip waits on its own decision rule.
+\item
+  Kadamba and Yuktāhār show that a learning practice is possible under the same rules. The halls differ in five other ways yet leave a similar breakfast gap, so the cause stays a candidate reading. Targets are anchored outside each hall\textquotesingle s past and paired with portion, quality and run-out measures, and no lever may cut waste by raising shortage risk.
+\item
+  Every modelled figure here is Kadamba\textquotesingle s. Bakul, the third regime, has no records and needs its own scans, a measured top-up lead time and an item-level record before any lever can be sized. Sunday breakfast on Kadamba\textquotesingle s veg line is the first test slice.
+\end{enumerate}
+
+\section{Outstanding Evidence}\label{outstanding-evidence}
+
+Still open: what a plate counts for in each operator\textquotesingle s monthly payment; whether Skip Meal lowers the count Kadamba cooks from; the base of Kadamba\textquotesingle s 5 to 10\% waste figure; who heads CDS; whether a late batch can be cooked at 9:00 without delaying crest service; the real first batch per line and weekday and whether the supervisor already cooks in stages; Sunday skip uptake (assumed 25 to 50\%); which registration regime applied to Yuktāhār\textquotesingle s June breakfasts; and Bakul\textquotesingle s scans, top-up lead time and any written record. Every co-design test is planned and none has yet run.
+
+\end{document}

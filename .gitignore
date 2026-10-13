@@ -30,3 +30,5 @@ thinking in systems audible companion pdf*.pdf
 # Field recordings stay out of git (one is over GitHub's 100 MB file limit). The rest of Observation images/ is tracked.
 Observation images/*.mp3
 Observation images/*.m4a
+deliverables/submission/Build/node_modules/
+deliverables/submission/Build/work/

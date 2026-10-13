@@ -1,0 +1,12 @@
+- Stakeholder register Type column folded into names; tier counts and entries unchanged.
+- Legend table a2-legend turned into one prose sentence (tab:a2-legend reference removed).
+- Matrix rows Staff, Non-student diners, Suppliers, Garbage contractor, Mess Cell merged into one "Others" row.
+- Conflicts "Convenience and waste" merged into flexibility row; supplier-quality and low-bid tender rows merged; fixed-cuisine row moved into finding 7.
+- Cut: Kadamba quality-check wording, "Yuktāhār cross-checkers paid less than person checked", farmhouse training and family-like culture.
+- Cut: fridge cleaning log signature, 18 September toor dal book agreement, hot-box softening restated in dependencies.
+- Cut: Yuktāhār rock salt, cold-pressed oil, oil-mill visits; Kadamba chef 5:30 start, 3 AM Hafizpet start.
+- Cut: Bakul manager's pav bhaji, muesli, Chocos, Raj Kachori pairing details; staff sampling of "none a known Bakul resident".
+- Cut: Yuktāhār ERP reason "staff not digitally inclined"; Bakul 20-minute versus 40-minute road detail kept, 10 to 15 arrivals last ten minutes removed from dependencies.
+- Cut: "two gaps stand out" paragraph (restated in findings 4 and 5); Ping/Mess Office hypothesis wording in matrix kept.
+- Cut: Kadamba's operator contract-chain sentence in governance names (kept in roles); kitchen team and Mess Committee faculty store visit detail.
+- Cut: three-sentence revision narrative in Decisions reduced to one; Decision callouts kept (five).

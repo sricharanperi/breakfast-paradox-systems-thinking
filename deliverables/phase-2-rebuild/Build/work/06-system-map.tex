@@ -1,0 +1,516 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\AtBeginDocument{\ifdefined\LTpre\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}\fi}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={System Map},
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{System Map}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{IIIT Hyderabad Breakfast Mess System}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\hypersetup{linkcolor=pslate}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.08}
+\section{Overview}\label{overview}
+
+This map shows who is in the breakfast mess system, how a registration becomes a plate of food, what shapes that process, and where it strains. It draws on an interview with the Campus Facilities Services Chair, a walkthrough of the Kadamba kitchen, four dining-service posters, six student interviews, interviews with the three caterers, Yuktāhār\textquotesingle s registers photographed page by page, a team member\textquotesingle s first-hand account of the Kadamba and Yuktāhār visits, and the institution\textquotesingle s scan record of every Kadamba breakfast in April 2026.
+
+Claims are labelled confirmed (read off a record, stated clearly by a named source, or seen on site), single-sourced (one account), candidate (a reasonable mechanism nobody has verified) or assumed (a judgement offered as such). Kadamba\textquotesingle s figures were heard first-hand, so the numbers are not in doubt, but they are the operator\textquotesingle s description of its own practice. Bakul\textquotesingle s come from a team member\textquotesingle s synthesis of its recordings, and no Bakul records exist.
+
+Two findings frame the rest. The institution has already run a version of the system in which billing follows who shows up, and it worked. And the gap between registration and turnout is measured twice, in the scan record and in the operators\textquotesingle{} own registers, and acted on inside the kitchens every day. What is missing is any route that carries that measurement to whoever sets the registration and billing rules. Yuktāhār is the most data-rich actor and one of the least powerful. Kadamba keeps gram standards and a live feel for the counter but no record that carries one meal into the next. Bakul\textquotesingle s manager adjusts his batch weekly from past attendance, and whether any of it is written down is unknown, so there the measurement may live in one head (candidate).
+
+\section{Actors, Process, Resources and Constraints}\label{actors-process-resources-and-constraints}
+
+Students are the registrant, the billed party and the eater. Campus Facilities Services (CFS) sits above Campus Dining Services (CDS), which has a faculty Committee with final say, a Student Council that drafts and first reviews proposals, and one admin per hall. Its head is open: the CFS Chair named one person as CDS Chair and the team\textquotesingle s field account names another as CDS head, and these may be two roles or one wrong name. Whether CDS and its bodies are the Mess Office, Mess Committee and Student Parliament of Phase 1, and whether the Warden\textquotesingle s vendor role belongs to CFS, is also unresolved. Operators call the institution\textquotesingle s side "the CDS team." Catering is outsourced by open tender, one operator per hall or pair of halls. Academic administration sets the class schedule and has no role in mess governance. Students run an informal resale market in a WhatsApp group, Mess Cell.
+
+Several actors sit on the boundary: suppliers of groceries, vegetables, milk and paneer; the garbage contractor who collects Kadamba\textquotesingle s waste; and the institution\textquotesingle s site team, which relays complaints into each operator\textquotesingle s WhatsApp group. A second demand stream eats the same food. Kadamba cooks about 30 extra portions for 30 to 50 people from outside the student registration, such as night-shift security, and about half its own staff also eat at the mess (both single-sourced). They are planned demand and an uncounted sink for surplus (candidate). At Yuktāhār faculty and staff diners number zero to two a breakfast (confirmed). Whether the campus dogs\textquotesingle{} feeders take some scraps is assumed, with no evidence.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The system at a glance: who decides, how a breakfast happens, what it runs on, and what constrains it.}]{Assets/s06-system-map.png}
+\caption{The system at a glance: who decides, how a breakfast happens, what it runs on, and what constrains it.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.84\linewidth,height=\textheight,keepaspectratio,alt={The institution\textquotesingle s own statement of the system: overview poster, student handbook, food-card guide and food-safety certificate.}]{Assets/plate-posters.jpg}
+\caption{The institution\textquotesingle s own statement of the system: overview poster, student handbook, food-card guide and food-safety certificate.}
+\end{figure}
+
+\subsection{The Operator Layer}\label{the-operator-layer}
+
+Three operators turn registrations into cooked food in three ways. Each reads the closed count from the portal ahead of service and applies its own discount.
+
+\textbf{Yuktāhār}, run by ABC Hospitality Services, serves vegetarian and Jain food. A planning meeting twice a day, with the storekeeper, coordinator and kitchen staff, fixes tomorrow\textquotesingle s breakfast and lunch, then snacks and dinner. Its inputs are portal registrations (regular, Jain and cash meals), the Wastage Book entry for the matching day of the two-week menu cycle, a weekday attendance register, the month\textquotesingle s pattern, and holidays or events, but only if someone raises them: "We don\textquotesingle t come to know... until we sit in the meeting." During service the first half hour is a sample for projecting the rest of the meal (single-sourced). Two project managers run it, with about three site staff sharing the work and 16 kitchen staff without a hierarchy. The stated goal is best quality, less waste, lower cost and higher profit, so waste is a cost lever. It tried a commercial ERP and dropped it, because paying lakhs for prediction made no sense with the data already in its books ("I want to remain close to the data") and its staff are not digitally inclined. Paper is a design choice. Weighing waste began last August, staff first read it as surveillance ("they are catching us"), the managers made it blame-free, and by December staff reported waste falling.
+
+\textbf{Kadamba} is run by Prism, a vendor that won the contract by tender and runs everything on site (single-sourced). It cooks a first batch of about 70\% of registrations, veg and non-veg planned separately, and keeps the rest of the raw material ready. Each dish has a gram standard (four idlis from about 120 g of batter, 100 g of sambar), but some items "float" above it: bonda, puri, vada and idli. A supervisor watches what is left of each item against the time and tells the chef how much more to cook, ready in 10 to 15 minutes. The manager says there is no forecasting method: "We don\textquotesingle t have that idea... it was wasted many times." The operator cooks on registrations because "it is a responsibility and they are getting paid for it." Biryani lunch is the contrast, cooked at 100\% (a lunch, single-sourced).
+
+\textbf{Bakul} is run by Vijayalakshmi Caterers, which cooks nothing on site (single-sourced). Its manager sets the first batch at 70 to 80\% of registrations by item, from past attendance reviewed weekly, and keeps food for about 70\% even on very low weekends. His rule is "there should not be a shortage of food, even if some wastage occurs." He checks stock about every 30 minutes and phones the Hafizpet kitchen for more, on a lead time nobody has stated. He estimates that at most about 60\% of registered students come, with no record to test it. Whether Palash shares the operator and kitchen is a candidate.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={First batch against turnout at each hall. Only Kadamba\textquotesingle s turnout and Yuktāhār\textquotesingle s register are records.}]{Assets/s06-batch-vs-turnout.png}
+\caption{First batch against turnout at each hall. Only Kadamba\textquotesingle s turnout and Yuktāhār\textquotesingle s register are records.}
+\end{figure}
+
+A 70\% batch at Kadamba is about 1.9 times the 37.1\% who eat, before any top-up, and about 2.6 times on a Sunday (candidate arithmetic: a stated rule applied to a month whose batches were not recorded). The operator puts waste at 5 to 10\% a day without saying of what (single-sourced). That fits a batch near twice turnout only if outside diners, staff and reheating absorb most of the difference, or top-ups run smaller than the batch implies, or the base differs. The evidence does not say which. On Bakul\textquotesingle s own numbers its batch and weekend floor both exceed the highest turnout its manager expects, and if Bakul resembles the two recorded halls, 60\% is an upper bound (candidate). Yuktāhār\textquotesingle s site head believes breakfast runs at about 50\% where his register averages about 28\%, so even the operator with the fullest records misjudges its own level.
+
+\subsection{Registration, Procurement and Service}\label{registration-procurement-and-service}
+
+Registration is an automatic default with a narrow exit. Students are registered for every meal whether or not they are on campus, holidays included, and the only way out is five cancellations per meal type per month, each at least four days ahead. Beyond that, in a student\textquotesingle s words, "we don\textquotesingle t have any opportunity to nullify it." A student who never registers is still assigned a vegetarian meal (confirmed, from the poster and student experience). Kadamba\textquotesingle s operator describes counts reaching it in weekly blocks, so whether that and the students\textquotesingle{} automatic monthly booking are one mechanism is unconfirmed. Billing is monthly and follows registrations. A walk-in pays 70 to 90\% more (₹81 against ₹48 for a veg breakfast), which nudges students to register.
+
+Registration therefore behaves as a standing booking. Kadamba\textquotesingle s breakfast registrations held near 1,070 a day on every day of April 2026, Sunday included (range 928 to 1,123), while turnout ran from 42.1\% on Tuesdays to 27.3\% on Sundays. Of 32,162 registered breakfasts, 11,941 were eaten: 37.1\% turnout and 20,221 billed breakfasts nobody ate (confirmed, scan records). Yuktāhār\textquotesingle s September breakfast averaged about 28\% (17.7 to 40.2\%, Sundays among the lowest) while lunch on the same days ran at 56 to 89\% (confirmed, register). The gap belongs to breakfast: about 63\% unused at Kadamba and about 72\% at Yuktāhār, where an earlier working figure of 30\% fits only lunch. The CFS Chair\textquotesingle s 35 to 40\% is now confirmed for Kadamba.
+
+The four-day lock applies to registration, not to buying. Yuktāhār\textquotesingle s vegetables arrive two to three times a week and milk daily (confirmed). Its stock register shows groceries bought fortnightly while the operator describes buying the week before use, and the two are not reconciled. Kadamba buys in three tiers: dry goods a week ahead, some vegetables two to three days ahead, and perishables the day before (single-sourced). Its team challenged the four-day cut-off directly, and only dry goods, which keep, are committed before it closes (candidate). What binds waste is the cooked first batch, sized as a ratio of registrations. Raw stock is recoverable, cooked food lasts three to four hours, and a batch can be topped up but never shrunk. At Bakul it leaves Hafizpet before any sign of the morning\textquotesingle s turnout and a top-up only adds food, slowly. At Kadamba the team judged that the rest of a batch is held, reheated and moved between vessels, so some of the cost of surplus arrives as poorer food (candidate).
+
+The institution\textquotesingle s account, backed by a second source, is that Skip Meal declarations reach the kitchen and change how much is cooked. The toggle does not remove the charge. No operator names it as a planning input, and Kadamba\textquotesingle s says flatly that it cooks on registrations (single-sourced). The conflict stays open. One reading that fits both is that a declaration lowers the count before the operator reads it, and the operator treats whatever count it gets as the obligation (candidate).
+
+Beyond that: exemptions exist for internships, PhD students and long-term medical need, though the monthly infrastructure fee still applies. When the scanner fails, Kadamba\textquotesingle s staff write the ID and name by hand (single-sourced). The portal is named dining.iiit.ac.in on three posters and mess.iiit.ac.in on the fourth. Kadamba\textquotesingle s toaster and grill are broken (single-sourced). Yuktāhār has a store function but no storekeeper-only role, and its daily gas, electricity and water logs show for example that Wednesday\textquotesingle s electricity peak comes from grinding idli batter (confirmed).
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1220}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0732}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1707}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3415}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2927}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Hall
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Capacity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Cuisine
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Kitchen
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Operator
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Kadamba & 1,200 & South Indian, mixed & On site, automated & Prism \\
+Bakul & 750 & North Indian, mixed & Off site, Hafizpet, about 8 km & Vijayalakshmi Caterers (single-sourced) \\
+Palash & 450 & North Indian, veg & Off site; hall under construction & Same kitchen as Bakul (candidate) \\
+Yuktāhār & 350 & Satvik and Jain, veg & On site, manual & ABC Hospitality Services \\
+\end{longtable}
+}
+
+Bakul and Palash share one approved off-site kitchen until a new shared kitchen opens, expected around December 2026, so this is a system mid-transition. Kadamba\textquotesingle s two capacity numbers, 1,200 on the poster and "420 seats against 1,200 turnout" in an interview, read best as registration capacity and physical seats: April registrations ran near 1,070 a day while about 398 breakfasts were eaten.
+
+\section{Three Kitchens, Not One}\label{three-kitchens-not-one}
+
+Kadamba cooks batch items such as sambar and upma from 5:30 and live items such as dosa in front of diners from 7:00 (single-sourced). Yuktāhār cooks by hand from 5:30 for a 7:30 finish, mostly in one batch with poha in two, with handmade oil-free rotis and a second roti counter at peak (confirmed). By the team\textquotesingle s judgement Kadamba\textquotesingle s main quality problem is food cooked ahead, reheated and moved between vessels (candidate, the team\textquotesingle s assessment and not the operator\textquotesingle s).
+
+Bakul runs on a supply chain the other two do not have (all single-sourced). Labour-heavy items such as aloo paratha start at Hafizpet from about 3 AM to reach Bakul around 7. Food travels about 8 km, 20 minutes early and 40 later, in insulated boxes holding about 60 to 72 °C, then stands in a hot-water setup at the hall. The chain protects heat and not texture: hot parathas steam in the closed box and soften. The food kept back for late arrivals is held longest, so late diners probably get the softest paratha (candidate). Other items are untested. A finding about turnout, waste or quality at one hall should not be assumed for the others.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.82\linewidth,height=\textheight,keepaspectratio,alt={Bakul\textquotesingle s breakfast loop, from the weekly review to the reserve held at 9:20 (manager\textquotesingle s account; no records).}]{Assets/d24-bakul-offsite-loop.png}
+\caption{Bakul\textquotesingle s breakfast loop, from the weekly review to the reserve held at 9:20 (manager\textquotesingle s account; no records).}
+\end{figure}
+
+Kitchens adapt to supply problems in documented ways. Yuktāhār cleans and sorts grain, weighs the stones removed and reports them to the supplier (confirmed). An expected grams-of-waste norm per item triggers a complaint or a change of supplier, and the operator visits the mills that make its oil (single-sourced). Bakul switched paneer brands after complaints. During the cooking-gas shortage Kadamba cut quantities and bought food outside. Yuktāhār reuses leftovers across meals: idli into idli upma or poha for lunch, batter back to the fridge, surplus milk set as curd, paneer made in house. Bakul returns some leftovers to its kitchen and throws the rest.
+
+Each operator won its hall by tender and is paid monthly as a lump sum on plates, with deductions (single-sourced). Whether "plates" means registered or served decides who bears a no-show. Bakul\textquotesingle s operator says served, in one word of a normalised account, and Kadamba says it is "getting paid for it" on registrations. The contracts may differ, "served" may mean billed, or Kadamba\textquotesingle s remark may describe a duty and not a formula. The basis is unconfirmed for all three and nothing is carried across. If Bakul is paid on served plates it bears the cost of cooking above turnout and accepts it, which would mean it judges shortage costlier than waste (candidate). If plates follow registrations, billing that ignores attendance protects revenue and students partly pay for a batch above turnout (assumed). Kadamba\textquotesingle s automation probably means lower labour and higher equipment cost than Yuktāhār\textquotesingle s manual kitchen, which would favour steady volume (assumed).
+
+\subsection{Two Operator Subsystems Side by Side}\label{two-operator-subsystems-side-by-side}
+
+Kadamba and Yuktāhār share a campus, registration and billing rules and a portal count, yet turn it into food differently, which makes them the cleanest comparison in the project. Bakul is a third column.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1282}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2821}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2821}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3077}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries 
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Kadamba (Prism)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Yuktāhār (ABC)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Bakul (Vijayalakshmi)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Structure & Layered: operations manager, manager, supervisor, staff & Flat; peers cross-check & Manager at the mess, kitchen off site, a managing director above \\
+First batch & 70\% of registrations, veg and non-veg apart & Matching-week lookup, weekday register, month pattern, events & 70 to 80\% by item, adjusted weekly by judgement, floor about 70\% \\
+In-service & Supervisor reads what is left & First-half-hour projection; checks every 30 minutes & Check every 30 minutes; phoned top-up, 20 to 40 minutes plus cooking; reserve of about 50 at 9:20 \\
+Record forward & Gram standards only & Wastage Book, read again two weeks later & Weekly review; written down unknown \\
+Waste & 5 to 10\% a day, base unstated & Weighed per dish and meal, blame-free & Not stated; no record \\
+Stance & Cooks to registrations as a paid obligation & Waste is a cost and profit lever & Shortage is the failure to avoid; waste the accepted cost \\
+Surplus to & Outside diners and staff; reheated (candidate); the bin & Lunch dishes, batter, curd & Some back to the kitchen, the rest thrown \\
+\end{longtable}
+}
+
+The difference is in the learning, not the data. Both on-site kitchens know on the day how many are eating. Only Yuktāhār writes the outcome down in a form that returns to the next decision about the same meal, and only Yuktāhār treats a smaller leftover as money saved. Bakul corrects against surplus too, by one person\textquotesingle s judgement and only down to a floor held against shortage. Yuktāhār\textquotesingle s projection has its own limit, since a first-half-hour sample under-reads a crowd that crests at the close (candidate for Yuktāhār, which keeps no arrival times).
+
+\subsection{The Yuktāhār Book System}\label{the-yuktux101hux101r-book-system}
+
+Yuktāhār runs on paper books that feed each other. Every book was photographed (confirmed), and how they connect is the operator\textquotesingle s account (single-sourced). The day\textquotesingle s registrations go into the header of the Grocery Book. At the planning meeting the matching-week Wastage Book entry, the weekday register and the month\textquotesingle s pattern become a per-dish list in kilograms from the store\textquotesingle s ingredient book. That list is the issue in the Grocery Book, which the stock register balances against receipts and which drives purchasing. The vegetable book and indent track stock and spoilage ("3 spoiled"), a further register covers milk, fruit, gas, electricity and water, and each fridge has a temperature log and cleaning checklist. After each meal the outcome goes into the Wastage Book: raw issued, cooked, left, percentage, run-out time, re-cook, and plate waste plus leftover as the day\textquotesingle s wastage. Its figures go on a wastage board, where the coordinator\textquotesingle s target is to keep pushing the waste share down, and the page is read again when the menu day returns two weeks later. It works as a rule: an item that runs out at 1:30 is re-cooked, one that runs out at 2:20 is not.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={How Yuktāhār\textquotesingle s books feed each other, and where the chain stops.}]{Assets/s06-book-network.png}
+\caption{How Yuktāhār\textquotesingle s books feed each other, and where the chain stops.}
+\end{figure}
+
+Two rules hold the books together. What the store book says was issued must match what the physical book says was cooked, and a mismatch goes to the daily meeting (they agreed on the day checked: 4.5 kg of toor dal issued, 49.45 kg balance). And every book is kept by one person and cross-checked by another, "not to find fault." The books reconcile materials and not diners. The Wastage Book and the attendance register have different keepers, and for 3 September they record 77 and 110 breakfasts (confirmed).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.86\linewidth,height=\textheight,keepaspectratio,alt={The books on the table: Grocery Book, vegetable indent and stock register pages.}]{Assets/plate-issue-stock.jpg}
+\caption{The books on the table: Grocery Book, vegetable indent and stock register pages.}
+\end{figure}
+
+\section{Waste, Environment, and the Dogs}\label{waste-environment-and-the-dogs}
+
+Kadamba\textquotesingle s waste goes into a dustbin emptied by a garbage contractor, with no composting (single-sourced, but plain and repeated). The CFS Chair had described waste going to an outside compost facility. The accounts are unreconciled, the operator\textquotesingle s is first-hand and more recent, and the contractor\textquotesingle s onward route is unverified. Yuktāhār\textquotesingle s route was not stated. Suspected contamination still goes to a laboratory, and Kadamba holds an external five-star Eat Right Campus rating.
+
+Waste is measured, at least by Yuktāhār, which weighs it per item and meal and uses the record to set the next matching day\textquotesingle s issue (confirmed). Kadamba\textquotesingle s figure is a quoted percentage with no record seen. What does not exist is any route from those measurements to the registration rules, the billing rules or the menu owner, and nothing suggests the institution knows operators hold the data. Waste feeds the kitchen\textquotesingle s next decision and stops there.
+
+Surplus is absorbed before anyone who sets rules sees it: reuse at Yuktāhār; at Kadamba the outside diners and half the staff, and reheating (candidate); the walk-in buffer; latecomers served after the nominal close; and finally the bin. Each does real good for real people, which is why the problem persists without anyone ignoring it, and why no fix should work by removing one: cutting Kadamba\textquotesingle s first batch would take food from the outside diners and staff unless it planned for them. A contractor\textquotesingle s bin is even less visible than a compost stream, and it has the shape of the resale market on the demand side, a sensible local mechanism that quietly removes the evidence of the gap.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.84\linewidth,height=\textheight,keepaspectratio,alt={Yuktāhār\textquotesingle s kitchen on the day of the visit: the registers laid out, the cold room, and staff sorting vegetables.}]{Assets/plate-kitchen.jpg}
+\caption{Yuktāhār\textquotesingle s kitchen on the day of the visit: the registers laid out, the cold room, and staff sorting vegetables.}
+\end{figure}
+
+Two smaller notes. Bakul has been described as untidy, with insects near food, which has nothing to do with registration and might lead someone to avoid that mess whatever the menu. At Kadamba plates are washed on a staff-run conveyor and the same plates serve all three meals, so some students distrust them despite a strong safety rating, a trust problem and not a hygiene one. Food sent to general garbage also carries a larger landfill and methane cost than a compost stream, and nobody has measured the cost of the 20,221 Kadamba breakfasts registered and never eaten in April. The campus dogs\textquotesingle{} feeders are a student body; nothing in the interviews says any scraps reach them.
+
+\section{The Service Timeline}\label{the-service-timeline}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.94\linewidth,height=\textheight,keepaspectratio,alt={At Kadamba 26.5\% of April scans fall between 9:15 and 9:30, and the rate is still rising at 9:29.}]{Assets/diagram8-crowd-curve.png}
+\caption{At Kadamba 26.5\% of April scans fall between 9:15 and 9:30, and the rate is still rising at 9:29.}
+\end{figure}
+
+The Kadamba crowd is measured. Scanning starts at about 7:28, half of the breakfasts are scanned by about 9:00, 13.5\% of scans fall between 9:00 and 9:15 and 26.5\% between 9:15 and 9:30, climbing to about nine a minute at 9:29. About 9\% come after 9:30, service closes between 9:35 and 9:45, and the latest scan was at 10:07 (confirmed). It is one continuous build to a crest just before close. The operator\textquotesingle s rule of thumb has the same shape, about 100 early, 100 through the middle and 150 in the last ten minutes. The records show 19.8\% of scans, about 79 a day, in the last ten minutes against about 43\% in his example, so the loudest minutes loom largest in the kitchen\textquotesingle s memory (candidate). Yuktāhār\textquotesingle s site head describes the same closing rush. Bakul\textquotesingle s manager places his main rush at about 8:00 to 8:30, with 10 to 15 people in the last ten minutes, and keeps food for about 50 at 9:20 (single-sourced). Arrival curves may differ by hall (candidate).
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Service blueprint: what the student sees above the line, what the kitchen does below it, and the one signal that crosses it.}]{Assets/s06-blueprint.png}
+\caption{Service blueprint: what the student sees above the line, what the kitchen does below it, and the one signal that crosses it.}
+\end{figure}
+
+Behind the scenes the kitchen reacts to the counter continuously within a meal. At Kadamba the supervisor reads what is left of each item beside the scan count, tells the chef how much more to cook, and the counter asks diners to wait five minutes. Yuktāhār projects from its first half hour, checks every 30 minutes from about 45 minutes before close and opens a second counter in surges (checks and counter confirmed, projection single-sourced). Bakul\textquotesingle s manager checks and phones Hafizpet. Kadamba reopens its front door for five to ten minutes for latecomers (25 students came after close on one biryani day), and after 9:30 latecomers come in by the back door and the mess cannot refuse them (confirmed, from a team member\textquotesingle s experience as a diner and the operator\textquotesingle s account).
+
+That response runs in one direction. It adds food, counters and minutes and cannot take back a cooked batch. What does not cross the line of visibility is the signal across meals: nothing tells the student, or whoever sets the rules, what was left over. One artefact does cross it every meal, a wrapped display plate at the entrance showing the full menu (confirmed), and it carries the menu and never quantity. Otherwise the student crosses only by entering a cancellation or Skip Meal on the portal or leaving a rating. Every decision that matters to them happens on the visible side.
+
+\section{Conflicts and Dependencies}\label{conflicts-and-dependencies}
+
+Students depend on the operator for food, and no operator depends on any one student. Operators receive no forecast. They receive a count into which students are placed by default, which they know to be inflated, and each converts it privately into a first batch. CDS depends on students registering accurately though nothing in billing requires it, so the side with less to lose controls an input the other cannot replace. Operators depend on the institution for the menu, the rules and the exam and event calendar, and get the calendar only informally. Bakul also depends on the road from Hafizpet. The institution depends on operators for the only item-level record of what is eaten and wasted, and has no channel to receive it.
+
+The tensions are these. Billing certainty runs against attendance uncertainty, a normal part of student life. The flexibility students want runs against the Mess Office\textquotesingle s workload, the stated reason for its one policy tightening (candidate, from secondhand reports). The class start and the breakfast window are two systems each solving its own problem. Registration closes four days out while perishables are ordered one day out. The operator controls quantity and not the rules or the menu. The three operators work under one billing basis with three stances: Kadamba cooks to registrations as an obligation, Yuktāhār treats waste as lost profit, and Bakul puts no-shortage first. Bakul\textquotesingle s reserve of about 50 at 9:20 sits against the 10 to 15 late arrivals it describes and reads as insurance against a shortage a late top-up could not fix (candidate). Menu formation pulls three ways, as described under Formal and Informal Structure. Off-site holding trades temperature against texture, and holding and reheating surplus avoids discarding it at a cost in quality (candidate). The safety sequence commits the first batch before service, against any response to that morning\textquotesingle s turnout (candidate). And cutting Kadamba\textquotesingle s surplus runs against feeding the people who eat it.
+
+\subsection{Food-Safety Checkpoints}\label{food-safety-checkpoints}
+
+Assurance is routine and runs before any laboratory step. At Kadamba every meal passes the same sequence. The kitchen checks the cooking temperature and keeps a sample for 72 hours, so the food can be tested if anyone falls ill, including to tell whether the illness came from food eaten elsewhere. It sets a wrapped display plate at the entrance, measures the serving temperature of each item, and the facility team tastes the food with two Prism staff before corrections and service. The plate and tasting are confirmed by the team\textquotesingle s observation and the rest is single-sourced. A quality-control inspection comes weekly, and cooking and drinking water is read daily for dissolved solids, a failure triggering a full check. Whether faculty visitors to the store are the weekly inspection is unknown, as is who the facility team is. Yuktāhār has a tasting team and logs fridge temperatures three times a day, all within 1.4 to 3.5 °C in September (confirmed).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.94\linewidth,height=\textheight,keepaspectratio,alt={The Kadamba food-safety sequence that fixes the first batch before 7:30.}]{Assets/d17-food-safety-sequence.png}
+\caption{The Kadamba food-safety sequence that fixes the first batch before 7:30.}
+\end{figure}
+
+All of this covers safety and taste, never quantity. The batch has to be cooked, sampled, displayed and tasted before service opens at 7:30, from cooking that starts at 5:30, so its size is committed before a diner arrives (candidate). Nothing seen during service can shrink it.
+
+\section{Formal and Informal Structure}\label{formal-and-informal-structure}
+
+CDS sits under CFS. Low-intensity feedback goes straight to the CFS Head, and high-intensity feedback escalates through the Student Council to the Committee. Below CDS is a contract relation that governance diagrams usually leave out: CDS tenders each hall to an outsourced vendor, which runs the kitchen.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={CDS, CFS and the vendors: the complaint route that works for incidents, the escalation route that produced the menu rotation, and the rule-change route that does not exist.}]{Assets/s06-governance.png}
+\caption{CDS, CFS and the vendors: the complaint route that works for incidents, the escalation route that produced the menu rotation, and the rule-change route that does not exist.}
+\end{figure}
+
+Each operator has a structure of its own. Kadamba\textquotesingle s is a layered chain from CFS through CDS and Prism to an operations manager, a manager, a supervisor and the service staff (single-sourced, heard first-hand), with a facility team tasting beside it. Complaints reach operators by their own routes. At Kadamba an email to the director passes to the manager and into a WhatsApp group the site team also reports into. At Bakul the route runs from the CDS team to the manager, the kitchen and the managing director.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.74\linewidth,height=\textheight,keepaspectratio,alt={Kadamba\textquotesingle s chain, with the facility team\textquotesingle s side channel, and Yuktāhār\textquotesingle s flat contrast.}]{Assets/d23-kadamba-command-chain.png}
+\caption{Kadamba\textquotesingle s chain, with the facility team\textquotesingle s side channel, and Yuktāhār\textquotesingle s flat contrast.}
+\end{figure}
+
+Yuktāhār has no hierarchy, and everyone does every job (confirmed). Its informal structure makes the books work. There is no leave policy: anyone who needs leave raises it at the daily meeting and colleagues absorb the load. One project manager took the staff to his farmhouse for training on what good quality looks like, and staff describe a family-like culture (single-sourced). The mess in-charge named in the team account and the "Adit Amma" in the recording are probably the same person, since \emph{amma} is a Telugu honorific, but that is unconfirmed.
+
+The escalation route has produced one real result. A long-standing complaint about a single fixed menu for the semester went through the Student Council to the Committee and came out as a menu that rotates every two weeks, and the operators confirm the cycle from their side. It is the clearest working feedback loop in the project, and it makes Yuktāhār\textquotesingle s matching-day lookup possible, so a governance loop enables a kitchen loop. The menu is chosen by students and the committee (single-sourced). Operators see which items waste every time they appear (uttapam, set dosa and upma at Kadamba, while puri, bonda, vada and idli are eaten) and have no route to the menu owner. Kadamba dropped dinner sambar and a student complained it was removed while charges rose, and Bakul\textquotesingle s manager asked the interviewers for menu input.
+
+Bakul\textquotesingle s manager makes this a question of how a menu is formed (his view only, with the students\textquotesingle{} side unheard). In his account students choose the combinations and his objection is to pairings, not dishes: kachori belongs with chole, and Raj Kachori is listed with chana where he would serve aloo curry. He describes students reasoning from balanced diet, protein and preference, and himself from traditional and regional combinations, taste and what is eaten, with about 20 years in North Indian food. He mentioned a protein target of 30 to 40 g a meal, set by someone unknown. He also sees consumption the menu owner does not: pav bhaji brings more students and muesli and Chocos "go easily." Whether residents share his view is untested. The menu owner lacks two kinds of knowledge the operator holds, what is eaten and what goes together, and neither has a route to it (candidate).
+
+Outside the formal structure, Mess Cell is a resale market, Ping is the student publication with no confirmed power to act, and at least one unofficial tool manages registration outside the portal. Yuktāhār\textquotesingle s books are formal inside the kitchen and invisible to the formal governance of the mess.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Where information and power sit: operators hold the most information and authority only over quantity; the records have no outbound route.}]{Assets/d14-power-flow-network.png}
+\caption{Where information and power sit: operators hold the most information and authority only over quantity; the records have no outbound route.}
+\end{figure}
+
+Academic administration has no formal or informal relationship to any part of mess governance, a confirmed absence and not a research gap.
+
+\section{The Class Schedule, and Who Else Needs Breakfast}\label{the-class-schedule-and-who-else-needs-breakfast}
+
+The project has treated 8:30 classes as an obstacle, which is probably unfair to the academic side. The timing may put harder lectures when students are freshest, let a faculty member teach once and keep the day free, or fit every programme\textquotesingle s hours into five days on shared halls. This map does not recommend moving class time. It would treat the academic system as if its only job were to ease breakfast. The 8:30 start is a fixed condition the mess works around, not a lever. The exam and event calendar is different. It reaches a kitchen only if someone raises it in the planning meeting, which is an absent information flow and not a scheduling clash.
+
+Faculty and staff demand is small and counted at Yuktāhār and larger at Kadamba, where the outside diners and half the staff eat the same food and so are part of how surplus is absorbed. Whether that is a written entitlement or a norm, and whether anyone counts or bills it, is unknown, as is whether grounds and housekeeping staff who start before seven eat at any mess in volume.
+
+Mess Cell shows that students can organise around a shared problem, and there is a past case of an organised email effort producing a change. Today that energy goes into reselling registrations, not into pushing for a fix to registration or billing. Kadamba\textquotesingle s manager independently describes students who register "even if you are in the village" while a friend eats in their place (single-sourced). Whether Mess Cell ever raised billing with the Committee or CDS is unconfirmed.
+
+\section{The System Already Solved This Once}\label{the-system-already-solved-this-once}
+
+During a cooking-gas shortage the mess cut to one item at the same price and the cancellation limit rose from five to ten a month. During holidays and long weekends such as Felicity, registration stopped being required, students could walk in and scan or register a day or two ahead at any of the four messes, and someone who neither registered nor came was not charged (single-sourced; the holiday part is disputed, since the team\textquotesingle s own account is that students stay registered through holidays).
+
+If it holds, the institution has already run a different way of matching food to demand, aimed at this project\textquotesingle s exact gap, more than once, and has not kept it. That turns "nobody has worked this out" into "this was worked out and switched off," and it sharpens the point that responsibility is scattered across offices.
+
+The usual reason for switching it off, protecting the vendor\textquotesingle s four-day lead time, is weakened. The kitchens already absorb daily unpredictability by cooking a fraction of registrations and topping up, and Kadamba orders perishables one day ahead. The likelier reason is commercial. If operators are paid on registered plates, a walk-in model moves the cost of a no-show from student to operator (candidate, pending the plate basis). The exception also worked partly because it was rare and short, and partly because the live top-up was already doing most of the work (candidate).
+
+\section{Bottlenecks, Tensions, and What Actually Closes the Loop}\label{bottlenecks-tensions-and-what-actually-closes-the-loop}
+
+The bottleneck is the cooked first batch, sized as a ratio of a count that is itself a standing booking, which can be topped up but never shrunk, against a crowd that at Kadamba crests in the last fifteen minutes. At Bakul the arm is longer: the batch leaves Hafizpet before any turnout signal exists, and late in the window only food already held can meet late arrivals. At Kadamba the safety sequence fixes the batch before 7:30, so the constraint costs quality as well as food. The 9:30 close is a precisely timed cut-off against a crowd that peaks right before it, and in practice runs to 9:35 or 9:45. No formal channel joins Academic administration to mess governance or carries the calendar to operators. Waste is measured in detail by one operator and is a signal for nothing outside that kitchen, not because anyone ignores it but because no route exists. Bakul\textquotesingle s manager adds that a shortage is visible and routes a complaint to the managing director while a surplus is silent, so his floor reads as the kitchen-level form of a system that reacts only to what is loud (candidate).
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The bottleneck chain from the booking to the same-morning shortage and surplus, with what keeps each link in place.}]{Assets/s06-bottlenecks.png}
+\caption{The bottleneck chain from the booking to the same-morning shortage and surplus, with what keeps each link in place.}
+\end{figure}
+
+Eighteen mechanisms were tested for whether they close into loops, numbered L1 to L17 plus L3b and tested in full in the Causal Loop and Feedback Analysis. Three close with every link evidenced, all balancing: L4, the menu-rotation governance loop; L11, Yuktāhār\textquotesingle s Wastage Book learning, with a delay of one to two weeks, confirmed at one hall, Bakul\textquotesingle s weekly review a candidate second instance bounded by its floor, and absent at Kadamba; and L12, counter top-up within a meal, which corrects only upward, with delays of 10 to 15 minutes at Kadamba and 20 to 40 plus cooking at Bakul. L12 protects against shortage and cannot reduce surplus, which is why the 9:20 reserve exists. Five are candidate loops with an assumed closing link: resale (L1), Kadamba demand lock-in (L3b), waste absorption (L9), the soft close (L15) and kitchen competence shifting the burden (L17). Six are open chains. The core one is L13: an automatic booking exited only four days ahead keeps the count flat, all three kitchens start from that count, turnout falls on some days and not others, so over-preparation is worst where turnout is lowest, and nothing runs from the surplus back to the booking or the rule. The others are Skip Meal (L2), menu transparency (L5), shock relaxation (L6), late nights to skipping (L7) and the closing rush to a just-in-case batch (L14). Capacity redistribution (L3) is contraindicated, since scarcity at Kadamba locks people in harder. Vendor discipline (L8) is unresolved until the plate basis is known. Operator waste reaching the menu (L16) is absent. The measured-but-unrouted gap (L10) is a stable stuck state, with a second missing inbound link from the institute calendar to the planning meeting.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.86\linewidth,height=\textheight,keepaspectratio,alt={The kitchen loops that do close, each with its own delay (B1), and Skip Meal\textquotesingle s unresolved link to Kadamba\textquotesingle s kitchen.}]{Assets/d11-loop-b1.png}
+\caption{The kitchen loops that do close, each with its own delay (B1), and Skip Meal\textquotesingle s unresolved link to Kadamba\textquotesingle s kitchen.}
+\end{figure}
+
+\section{Culture, Health, and What Isn\textquotesingle t a Problem}\label{culture-health-and-what-isnt-a-problem}
+
+Breakfast menus lean toward nutrient-focused items such as dal, sprouts and plain rotis, and not the food people crave, a plausible separate reason turnout is lower than at lunch, alongside the billing incentive. Yuktāhār now confirms that breakfast runs far below lunch on the same days under the same rules, so both explanations can hold. Bakul\textquotesingle s manager offers an operator\textquotesingle s version: students may dislike the taste or menu, or may not wake up or want to come (his view). The second agrees with what interviewed students say most often, late sleep. The first is his hypothesis, since the six student interviews do not support food quality as a primary reason and none of those students is known to live at Bakul.
+
+A recent outbreak of hand, foot and mouth disease reportedly spread across both hostels, cause unconfirmed. Skipped breakfast did not cause it, since the disease spreads by contact. Irregular eating plus shared spaces such as mess halls and washrooms would make an outbreak worse once started.
+
+Some students have reasons for skipping that have nothing to do with the system: intermittent fasting, a belief that they are healthy enough, family or regional habits with no formal breakfast, dietary or religious practice, or discomfort eating certain foods such as egg somewhere visible and shared. None of that is dysfunction, and a meaningful share of low turnout is how a diverse group eats. It does not weaken the billing and governance findings, but it means no fix should be judged by bringing turnout near 100\%. The measure that matters is whether what is cooked tracks what is eaten.
+
+\section{What Stands Out Most}\label{what-stands-out-most}
+
+The institution has already built and run a working fix for the core problem, and it is not the standing default. The reason now looks less like the kitchens needing four days\textquotesingle{} notice, which they do not, and more like who pays for a no-show. The gap between registration and turnout is measured and acted on inside the kitchen every day, and no route carries it to the people who set the rules. Yuktāhār is the most data-rich actor and one of the least powerful. The three halls run three planning rules, so a finding from one should not be assumed for the others, and the two on-site kitchens under identical rules are the clearest comparison available. Breakfast is the problem meal. At Kadamba and, by description, Yuktāhār, arrivals crest in the last fifteen minutes, which is why shortage and waste share a morning, while Bakul\textquotesingle s manager describes an earlier rush. Reuse, the outside diners and staff, the bin and the resale market all absorb a cost quietly enough that nobody is forced to fix its cause, and each does real good while doing it. The class schedule probably has good reasons of its own. And a real share of the paradox is legitimate variation in how people eat.
+
+\section{What\textquotesingle s Still Missing}\label{whats-still-missing}
+
+The operators have now been interviewed, and the kitchens\textquotesingle{} planning, the crowd curve and the scope of the CFS Chair\textquotesingle s breakfast figure are answered by their accounts and by records. Still open:
+
+\begin{itemize}
+\tightlist
+\item
+  The contract\textquotesingle s plate basis for each operator. It decides who bears a no-show, whether L8 could close, and whether any lasting walk-in model is commercially possible.
+\item
+  Composting against the bin, since the institution and Kadamba\textquotesingle s operator disagree and Yuktāhār\textquotesingle s route was not stated. Disposal has not been observed directly.
+\item
+  Whether Palash shares Bakul\textquotesingle s operator and kitchen.
+\item
+  At Bakul: whether the weekly adjustment is written down, the true top-up lead time, whether the reserve of about 50 rests on data and how much is left at close, why its own residents skip, and which menu decisions students control.
+\item
+  Whether Skip Meal lowers the count before Kadamba\textquotesingle s kitchen reads it, and whether any operator has ever changed a standing ratio, which tests L14.
+\item
+  Whether the 9\% of Kadamba scans after 9:30 are door reopenings, back-door entrants or a later real close, and whether back-door entrants are scanned at all.
+\item
+  Scan records for lunch and dinner and for Bakul, Palash and Yuktāhār, and Yuktāhār arrival times to test its projection against a closing crest.
+\item
+  The base of Kadamba\textquotesingle s 5 to 10\% waste figure, and whether holding and reheating really happens, which needs direct observation.
+\item
+  Whether the 30 extra portions for outside diners and the 30 to 40 portion walk-in buffer are one allocation, and whether their meals are an entitlement, counted or billed.
+\item
+  Which Yuktāhār record drives planning when two disagree, whether its groceries are bought fortnightly or the week before use, and whether registration is in weekly blocks, monthly, or both.
+\item
+  Who the facility team is, whether faculty visits are the weekly inspection, whether one person runs Kadamba\textquotesingle s inventory, and which portal address is correct.
+\item
+  Who heads CDS, with a conversation with that person and with the mess committee still pending.
+\end{itemize}
+
+\end{document}

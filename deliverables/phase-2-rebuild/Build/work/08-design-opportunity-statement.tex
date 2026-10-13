@@ -1,0 +1,375 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\AtBeginDocument{\ifdefined\LTpre\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}\fi}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Design Opportunity Statement},
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Design Opportunity Statement}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{IIIT Hyderabad Breakfast Mess System}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\hypersetup{linkcolor=pslate}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.08}
+\section{Overview}\label{overview}
+
+This is the second deliverable of Activity 8. The Reframed Systemic Problem Statement diagnoses the problem. This document turns the diagnosis into a design opportunity: where a change would do something, what any intervention has to respect, and what should not be attempted. It stops before designing interventions, which is Activity 9\textquotesingle s job. What it hands over is a shortlist already filtered against the evidence, with the reasons obvious-looking directions are ruled out, so Phase 3 does not rediscover them.
+
+The evidence is operator interviews at three messes, Yuktāhār\textquotesingle s photographed books and registers, the institution\textquotesingle s scan record of every Kadamba breakfast in April 2026, and a team member\textquotesingle s first-hand account of two visits. Bakul (Vijayalakshmi Caterers) is known only through its manager\textquotesingle s account, and no Bakul record of any kind exists, so every Bakul figure here is the operator\textquotesingle s own statement. The Bakul account added three secondary opportunity areas: the quality of food as eaten after hot holding, demand by item, and the menu\textquotesingle s pairings.
+
+\section{1. Where the Leverage Is, and Isn\textquotesingle t}\label{where-the-leverage-is-and-isnt}
+
+The reframe put the problem at the structure and mental-model layers of the iceberg, which says where effort pays.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Where intervening pays: five layers of the iceberg, read against what the evidence shows.}]{Assets/s08d-leverage-ladder.png}
+\caption{Where intervening pays: five layers of the iceberg, read against what the evidence shows.}
+\end{figure}
+
+\textbf{Not at the event layer.} Persuading students to attend with reminders, nudges or campaigns targets the most visible layer and the least movable one. Some non-attendance is legitimate and the rest is rational given the incentives.
+
+\textbf{Not at the parameter layer, though that is where the institution acts.} The cancellation cap has moved from five to ten and back (confirmed), which changes where pressure escapes and leaves the default alone. The kitchen side has the same trap. The first-batch ratio does the most physical damage, but lowering it by decree moves the cost from surplus into run-outs at close. Kadamba cooks biryani lunch at 100\% of registrations (single-sourced), so the ratio is a per-meal choice, and what makes it wrong at breakfast is the missing feedback that would set it. At Bakul some feedback already reaches the ratio weekly and a floor still holds it up, because the operator puts avoiding a shortage ahead of avoiding waste (single-sourced).
+
+\textbf{At the structural layer: what a registration is and what triggers a bill.} Every student is registered automatically, on campus or not, and the only exit is five cancellations per meal type per month, each at least four days ahead, after which the charge stands (confirmed). Billing fires at the booking. Kadamba\textquotesingle s registrations held at about 1,070 a day on every day of the week in April while turnout ran from 42\% on Tuesdays to 27\% on Sundays (confirmed). A default fixed that far ahead cannot carry the morning\textquotesingle s demand. Yuktāhār\textquotesingle s breakfast registrations are not flat (228 to 404 a day in September, confirmed), so the flat pattern is established for Kadamba only.
+
+\textbf{At the information-flow layer: a gap that is measured and goes nowhere.} The scan system records every breakfast eaten against its registration, and Yuktāhār records turnout by weekday and cooked, eaten and wasted quantities per item. Kadamba keeps a gram standard per dish but no outcome record, and Bakul\textquotesingle s manager reviews past attendance weekly, with no known written record. None of this reaches whoever owns the registration, billing or menu rules. Routing what already exists is the highest-yield change available.
+
+\textbf{At the mental-model layer.} The institution holds that a registration count stands in for demand, and that certainty days ahead is worth more than a same-week signal. That second belief is not about procurement: the four-day lock applies to registration only, while Kadamba buys dry goods a week ahead, most perishables the day before and some vegetables two to three days ahead (single-sourced), and Yuktāhār takes vegetables two or three times a week and milk daily (confirmed). The binding physical constraint is the cooked first batch, since raw surplus is largely recoverable and cooked surplus is not (candidate). Each operator also carries a private picture of turnout that nothing corrects: Yuktāhār\textquotesingle s site head says at most 50\% against a register average of about 28\% (confirmed), and Bakul\textquotesingle s manager says at most about 60\% (single-sourced). These layers are the hardest to change and the most durable, but the institution has already suspended both of its beliefs during a gas shortage and in fest periods, so neither is as fixed as it looks.
+
+\section{2. The Design Opportunity Statement}\label{the-design-opportunity-statement}
+
+\begin{quote}
+\textbf{The opportunity is to give this system a way to notice its own cost.}
+
+The Breakfast Paradox persists not because the fix is unknown, since it has been run twice, and not because the gap goes unmeasured. The gap is measured daily, in scan records and in the operators\textquotesingle{} own books, and none of those measurements reaches anyone with the authority to change the rules that produce it. Every consequence is absorbed before it becomes visible. The resale market takes the financial loss. The operators\textquotesingle{} discount, top-ups and reuse take the day-to-day mismatch. Outside diners, Kadamba\textquotesingle s staff, the walk-in buffer, late service, reheated food and finally the bin take the physical surplus. Outside venues take the dissatisfaction and informal workarounds take the cultural mismatch. The institution\textquotesingle s attention triggers on complaint intensity, and this problem is quiet.
+
+The opportunity is therefore to build the missing routes: from the records that exist to the kitchen decision that fixes how much is cooked, and from the same records upward to a decision about registration and billing. Four intervention points follow. One sits in the kitchen, where a registration becomes a cooked quantity. Three sit in governance, in decreasing depth: the registration and billing rules, the ownership gap, and the attention mechanism. The last is the cheapest and the most overlooked, and it would have surfaced the CFS Chair\textquotesingle s own figures years ago.
+\end{quote}
+
+\section{3. Validate the Reframing with Evidence: What the Opportunity Rests On}\label{validate-the-reframing-with-evidence-what-the-opportunity-rests-on}
+
+The opportunity rests on three claims, each checked against records.
+
+\textbf{The gap is large, specific to breakfast and not a fault of the platform.} Kadamba\textquotesingle s April 2026 breakfast turnout was 37.1\%, a no-show rate of 62.9\% across 32,162 registrations. Yuktāhār\textquotesingle s September breakfast averaged about 28\% while lunch on the same days ran at 56 to 89\% (both confirmed from records). One platform and one operator give very different turnout at the two meals.
+
+\textbf{A private conversion step turns an inflated count into physical surplus.} Each operator converts the portal\textquotesingle s count into a cooked quantity by its own rule. Kadamba cooks about 70\% of registrations first, by line, to a gram standard per dish, and its manager says of forecasting, "We don\textquotesingle t have that idea... it was wasted many times" (single-sourced). Against recorded turnout that batch is roughly 1.9 times what is eaten, about 750 portions against about 400 (candidate). Bakul\textquotesingle s manager sets 70 to 80\% by item each week and never goes below about 70\%. On his own figures his batch and floor sit above the highest turnout he expects, so it exceeds turnout by design (candidate). Yuktāhār plans from its books and projects the rest of each meal from the first half hour (books confirmed, projection single-sourced). Once cooked, a batch can be topped up and never shrunk, and cooked food lasts three to four hours (single-sourced).
+
+Kadamba\textquotesingle s operator puts its waste at 5 to 10\% a day with no stated base (single-sourced). Against a first batch near twice turnout, that fits only if outside diners and staff eat most of the surplus, or it is held and reheated, or top-ups are smaller than the ratio implies, or the percentage uses a different base. Which is true is unknown. To the extent diners and reheating absorb the surplus, its cost is paid in food quality and in other people\textquotesingle s meals, not in bin weight.
+
+\textbf{The measurement exists and is stranded.} The scan export holds one row per registration with a timestamp (confirmed). Yuktāhār\textquotesingle s books record per item what was issued, cooked, left and wasted, with run-out time and re-cook quantity, and the issued book must match the cooked book or the mismatch goes to the daily meeting (one item cross-checked across two books held, confirmed). Operators take only the registration count from the portal, and exams and events reach Yuktāhār\textquotesingle s kitchen only if someone raises them: "Until we sit in the meeting, until we discuss that, we will never come to know" (confirmed). So four holders have the figures, none has a route to another, and none has a route to a rule owner.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Yuktāhār\textquotesingle s grocery and stock books: the records exist, on paper, inside the kitchen.}]{Assets/plate-issue-stock.jpg}
+\caption{Yuktāhār\textquotesingle s grocery and stock books: the records exist, on paper, inside the kitchen.}
+\end{figure}
+
+\subsection{Compare Stakeholder Perspectives: the Operator\textquotesingle s View}\label{compare-stakeholder-perspectives-the-operators-view}
+
+Operators feel the gap every morning, as food cooked for students who do not come, as a crush at closing that forces re-cooking, and as guesswork about the first batch. They hold the most outcome data and the least rule authority: they decide how much to cook but not how registration works, how it is billed or what is on the menu. The items they see wasted repeatedly, uttapam, set dosa and upma at Kadamba, have no route back to the menu.
+
+The three read the gap differently under the same rules. Yuktāhār states quality, less waste, lower cost and higher profit as goals, so the gap is a cost it already acts on. Kadamba says it cooks on registrations because that is its responsibility and it is paid for it, so the gap is the institution\textquotesingle s concern. Bakul holds that a shortage is the failure to avoid and waste its accepted price (all single-sourced). That the difference follows management culture and incentive is a candidate. For Yuktāhār the opportunity reads as a voice and a better input. For Kadamba a better input alone may not be wanted. For Bakul it is a check on a judgement it already makes, acceptable only if it does not raise the chance of a run-out.
+
+\section{4. The Four Intervention Points}\label{the-four-intervention-points}
+
+These are stated as opportunities. Activity 9 works out what each would look like. The first acts closest to the physical waste and the other three act on the governance that sets its conditions. Three secondary areas rank below the four without changing their order.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The four intervention points on the chain from booking to bin.}]{Assets/s08d-four-points.png}
+\caption{The four intervention points on the chain from booking to bin.}
+\end{figure}
+
+\subsection{4.1 On process: how a registration becomes a cooked quantity}\label{on-process-how-a-registration-becomes-a-cooked-quantity}
+
+The first batch is the point of no return. Kadamba sets it by a fixed ratio not calibrated to turnout, Bakul by weekly judgement above a floor, and Yuktāhār from its books, anchored on a belief well above its records. The data that could calibrate it already exists, and Yuktāhār shows the loop can run in-house under the current rules. Waste tracking started there in August of last year, staff first resisted ("they are catching us"), the managers made the weighing blame-free and discussed it daily, and by December staff themselves reported that waste had fallen (single-sourced).
+
+The opportunity is to feed recorded turnout by hall, weekday and line into the decision that sets the first batch, the evening before or at the planning meeting, and to keep each kitchen\textquotesingle s top-up path. At Kadamba this can build on the gram standard, multiplied by expected turnout per line instead of 70\% of registrations, with an allowance for items diners take more of. April turnout differs by line, 32.4\% vegetarian against 48.5\% non-vegetarian (confirmed), so one factor would not serve both. A projection from the first half hour is useful but will understate a breakfast that crests at close (candidate). At Bakul the opportunity is narrower: item-level records could let the weekly adjustment be checked against outcomes, provided the chance of a shortage does not rise.
+
+Two secondary opportunities sit here. \textbf{Food quality as eaten:} Bakul\textquotesingle s labour-heavy items such as aloo paratha start around 3 AM for a 7 AM arrival and are held at about 60 to 72 °C in insulated boxes, where paratha softens in its own steam (single-sourced). The reserve kept for late diners is the food held longest, so they likely get the softest (candidate). Holding time and texture should count alongside temperature and taste, and any change that holds more food for longer trades against quality as well as waste. Whether softer food changes what students eat has no student evidence. \textbf{Demand by item:} every kitchen already plans by item in some form (gram standards at Kadamba, per-item pages at Yuktāhār, a ratio that moves by item at Bakul, where pav bhaji draws students and muesli and Chocos go easily, single-sourced). Item-level consumption should reach the first-batch and menu decisions in a form someone can check. Whether it forecasts better than one ratio is a hypothesis.
+
+\subsection{4.2 On the rule: what a registration is and what triggers a bill}\label{on-the-rule-what-a-registration-is-and-what-triggers-a-bill}
+
+The institution has run attendance-tracked billing during the gas shortage and in holiday and fest periods such as Felicity. Registration is otherwise automatic, including over ordinary holidays (confirmed), so which holiday periods ran without compulsory registration is open and the precedent may cover only shocks and fests. Either way the opportunity is a standing, partial version of a model already run. The institution already records consumption at the level such a rule needs, one scan per registration with a hand-written ID fallback when the scanner fails (single-sourced). Whether scans are retained per student is a candidate, since the export carries no student ID.
+
+The rule has three parts. What a registration is: a default applied to every student, not a choice. How a student leaves it: the capped cancellations and a Skip Meal toggle that tells the kitchen not to prepare and removes no charge (confirmed). What it costs: a charge fixed at the booking, not at eating. Changing the default or widening its exit makes registration carry more of the morning\textquotesingle s demand. Changing the billing trigger alone changes who bears a no-show and does nothing for the count.
+
+Breakfast is the natural scope because it has the worst recorded turnout of any meal while lunch shows the same platform working. The case is not that little is at stake, since Kadamba alone registers about 1,070 breakfasts a day of which about 670 go uneaten (confirmed). It is that the problem and any trial can be confined to the meal where it lives. This opportunity is gated on how each operator\textquotesingle s contract counts a plate (Section 7).
+
+\subsection{4.3 On decision rights: who owns the outcome}\label{on-decision-rights-who-owns-the-outcome}
+
+Decision rights over the outcome are split at least five ways. The Mess Office sets registration and cancellation rules (operators say "CDS team", and whether that is the same body is unconfirmed). The institution sets billing. Students and the Mess Committee choose the menu. Each operator decides privately how much to cook. The academic administration sets a calendar that reaches the kitchens by word of mouth. No actor holds both the knowledge and the authority, and the operator is the sharpest case, which is the confirmed reason a proven fix was never picked up again.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.76\linewidth,height=\textheight,keepaspectratio,alt={Kadamba\textquotesingle s command chain, with the facility team\textquotesingle s side channel and Yuktāhār\textquotesingle s flat contrast.}]{Assets/d23-kadamba-command-chain.png}
+\caption{Kadamba\textquotesingle s command chain, with the facility team\textquotesingle s side channel and Yuktāhār\textquotesingle s flat contrast.}
+\end{figure}
+
+At Kadamba the chain runs from CFS to CDS to Prism and down to a supervisor who decides within a meal how much more to cook (single-sourced). Who heads CDS is unresolved: the project has two names for the role, and whether these are two roles or one wrong name is unknown. The only standing oversight in the kitchen, the facility team\textquotesingle s tasting, weekly inspection and daily water testing, covers safety and taste and has no remit over quantity. Yuktāhār has no such hierarchy, only two project managers, staff who share every job and peer cross-checking.
+
+The opportunity is one named owner accountable for the booked, cooked and eaten outcome end to end, with a standing route by which the operators\textquotesingle{} data reaches that owner. It is not a new committee, since the system already has escalation structures that work when something reaches them. What is missing is an actor for whom this gap is their problem. A third secondary area belongs here: \textbf{the menu\textquotesingle s pairings.} Bakul\textquotesingle s manager says the breakfast menu\textquotesingle s problem is pairings, not dishes. Kachori belongs with chole, and Raj Kachori with aloo curry rather than chana. He sees students choosing for nutrition and preference and himself for traditional combinations, taste and what is eaten, from about 20 years with North Indian food (single-sourced). That the combinations reduce consumption is his view, untested with residents. What operators see eaten and left, item by item, should reach the forum that sets the menu and be checked there against what residents want. It is a voice, not authority over students\textquotesingle{} choices.
+
+\subsection{4.4 On information flow: what gets noticed}\label{on-information-flow-what-gets-noticed}
+
+High-intensity feedback goes to a committee and low-intensity feedback to the CFS Head. Both respond to how loudly a problem is felt and neither to what it costs. The opportunity is an escalation trigger that fires on measured cost alongside the existing complaint trigger. It is the cheapest of the four by a wide margin and has the broadest reach, since it would also catch the next quiet but large problem.
+
+The unlocking step is routing and a shared definition, not new measurement. Yuktāhār\textquotesingle s two registers disagree for the breakfast of 3 September 2026: 77 eaten in the Wastage Book against 110 in the attendance register (confirmed), so a cost trigger needs one agreed meaning of "ate". Yuktāhār already reconciles issued against cooked, so an agreed definition of eaten extends a practice it already runs. Records exist for two halls only.
+
+\section{5. What Any Intervention Must Respect}\label{what-any-intervention-must-respect}
+
+These are constraints the evidence imposes.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Guardrails: what to keep, what to target, and what to leave alone.}]{Assets/s08d-guardrails.png}
+\caption{Guardrails: what to keep, what to target, and what to leave alone.}
+\end{figure}
+
+\textbf{Do not remove an absorption mechanism to manufacture a signal.} Making resale harder or ending anyone\textquotesingle s access to leftovers makes the problem visible by making real people worse off. The evidenced routes are Yuktāhār\textquotesingle s reuse of leftovers (idli into idli upma or poha, batter refrigerated, surplus milk set as curd, confirmed); the 30 to 50 outside diners, such as night security who do not want to leave their post, and about half of Kadamba\textquotesingle s staff, who eat the same food; top-ups; walk-in and paying portions, which may be the same allocation as the outside diners\textquotesingle{} (candidate); service to late arrivals; and the bin. Kadamba says its surplus goes to a dustbin collected by a garbage contractor, with no composting (single-sourced), which conflicts with the institution\textquotesingle s account and is not reconciled. An intervention that shrinks the first batch takes food from those diners unless it provides for them by name. Two routes are not worth protecting. The bin benefits no one, and holding and reheating surplus, which the team judged to be Kadamba\textquotesingle s main quality problem (candidate), absorbs surplus at the cost of what students eat. Any proposal that raises someone\textquotesingle s pain to create visibility is the wrong kind of fix, because the signal can be read from records already held.
+
+\textbf{Act before the first batch is cooked.} Cooking starts at 5:30 at Kadamba and Yuktāhār, and Bakul\textquotesingle s labour-heavy items can start around 3 AM at Hafizpet. At Kadamba the batch then passes a safety sequence before any diner arrives: cooking temperature, a 72-hour sample, a wrapped display plate at the entrance (confirmed, observed), serving temperature and a tasting. No same-morning signal can reach that batch, so any change that cuts surplus has to act the evening before or at the planning meeting, and must not trade a safety step for speed. It must also keep a top-up path, and the lag differs by hall: 10 to 15 minutes on site at Kadamba, and at Bakul a call, cooking and a 20 to 40 minute drive of unmeasured total. No single ratio fits every hall.
+
+\textbf{Reduce waste without raising the chance of a shortage.} Students need food to be there when they come. The run-outs they describe, idli, puri and bhatura gone by 9:20 with promised restocks that never arrive, are the failure they feel directly. One operator states the rule outright: "There should not be a shortage of food, even if some wastage occurs." A cut that raises shortage risk fails students, and an operator holding that rule is unlikely to adopt it (candidate). The risk concentrates differently by hall. At Kadamba 26.5\% of April scans fell between 9:15 and 9:30 and the rate peaked at about nine scans a minute at 9:29 (confirmed), the operator\textquotesingle s rule of thumb is about 150 diners in the last ten minutes, and Yuktāhār\textquotesingle s head describes the same closing rush. Bakul\textquotesingle s manager puts his main rush at 8:00 to 8:30 and keeps food for about 50 at 9:20, a reserve that stands in for a top-up that cannot arrive late from 8 km away (candidate). After 9:30 latecomers enter Kadamba by the back door and cannot be refused. The crest is the one place where surplus and shortage occur on the same morning, and where a first-half-hour projection is weakest (candidate). Any cut to the first batch has to protect late service in the form each hall needs, or it moves the cost onto the students who arrive last.
+
+\textbf{Do not treat turnout as the success metric.} Part of the gap is students eating the way they live: intermittent fasting, regional patterns, religious observance. The right measure is the gap between cooked and eaten, read with run-outs, which Yuktāhār already logs per item, and with the quality of food as eaten, and whether the cost becomes visible and answerable. Waste falling while run-outs rise is not success.
+
+\textbf{Do not treat the 8:30 class start as the lever.} The timetable solves real problems of its own and is a fixed boundary the mess works around. Nearly 60\% of Kadamba\textquotesingle s April scans fall at or after 8:45, after classes have begun, so class timing is not the only driver of late arrival. The window\textquotesingle s end and the timing of batches sit inside the mess system.
+
+\textbf{Do not aim the fix at students or at operators.} Students hold the least power and the most defensible behaviour in the system, and "students should register more accurately" asks them to solve a structure they did not build, through an exit capped at five a month. Kadamba\textquotesingle s manager mirrors the blame from the other side when he says students register "even if you are in the village" and let a friend eat in their place (single-sourced). Operators over-prepare, and they also run the system\textquotesingle s only same-day balancing loop. Two reasons are plausible: a shortage at close is complained about while a surplus produces nothing, which Bakul\textquotesingle s manager states as his own rule (what makes a shortage costly to it, a complaint, a deduction or a contract risk, is unknown), and Kadamba\textquotesingle s framing that the count is what it is paid to cook for (a candidate cause). Treating operators as the source of waste would discard the actors who hold the data.
+
+\textbf{Keep measurement blame-free, and work with the records operators already keep.} Yuktāhār\textquotesingle s weighing worked only after it was made blame-free. Any route that carries waste figures to a rule owner or a cost trigger must not become grounds for deductions on the staff who record them, or the records will be defended instead of kept. Yuktāhār also tried a commercial enterprise system for groceries and rush prediction and dropped it, because the data was already in its books, the cost was not justified and its staff are not digitally inclined (single-sourced). Any route has to start from paper books and the daily meeting, and at Bakul from the manager\textquotesingle s own weekly review.
+
+\textbf{Preserve what already works.} The Student Council to Committee pathway produced the menu rotation, and the two-week cycle it created (weeks one and three identical, weeks two and four identical) is what makes Yuktāhār\textquotesingle s matching-week lookup possible (confirmed from records). Yuktāhār\textquotesingle s book routine is a working in-house calibration loop. Each operator\textquotesingle s top-up is the only same-day balancing loop, and Bakul\textquotesingle s weekly adjustment is a second calibration, bounded by its floor. Whether Skip Meal declarations reach kitchen forecasting is unresolved: the CFS side says they do, and Kadamba\textquotesingle s operator says it cooks on registrations whether or not people want to eat (single-sourced), while no operator named Skip Meal as a planning input. Both can hold if Skip Meal lowers the count the operator reads and the operator then treats that count as its obligation (candidate). None of this needs replacing. The escalation pathway needs a second trigger, Skip Meal needs to be worth a student\textquotesingle s time, and the kitchen loops need better inputs.
+
+\subsection{Identify Contradictions and Tensions: What the Opportunity Must Hold}\label{identify-contradictions-and-tensions-what-the-opportunity-must-hold}
+
+The intervention points have to be designed with several tensions in view. Kadamba\textquotesingle s stated waste does not square with its first batch, and surplus that looks like waste is also the meal of outside diners and staff. The same billing rules produce an operator that cuts waste for profit, one that cooks to the count as an obligation and one that accepts waste to avoid a shortage. The kitchen that forecasts best projects from the first half hour, while Kadamba\textquotesingle s heaviest demand arrives in the last fifteen minutes. A reserve for late diners protects them from a run-out and is also the food held longest, so one hedge trades shortage against waste and texture (candidate). The safety sequence that protects diners fixes the first batch before any turnout signal exists. A menu chosen for nutrition may not be the menu that gets eaten, in Bakul\textquotesingle s manager\textquotesingle s view, untested with residents. Two accounts of Skip Meal, and two of whether holidays were ever non-compulsory, are unreconciled. Section 7 carries each as open.
+
+\section{6. How the Four Interact}\label{how-the-four-interact}
+
+They are not alternatives, and the order matters.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The sequence: cheap and enabling first, deep and gated last.}]{Assets/s08d-interaction.png}
+\caption{The sequence: cheap and enabling first, deep and gated last.}
+\end{figure}
+
+The information-flow change (4.4) enables the rest. Without a routed, agreed measure of cost there is nothing for an owner to act on and no evidence for a rule change, and it needs no new data. The process change (4.1) shows a physical effect fastest and can move without governance where the operator has a reason to, as Yuktāhār\textquotesingle s loop already does. At Kadamba, whose operator treats the count as its paid obligation, the kitchen may not move alone, so 4.1 there is partly coupled to the plate-basis question. On its own it reduces surplus inside a registration system that still over-books. The ownership change (4.3) turns a visible number into a decision, since a signal with no addressee produces nothing, which is the current state. The rule change (4.2) is the deepest and the one that closes the gap, and it is gated on an external constraint, so it is best seen as what the first three make possible. The sequence runs bottom-up in cost and top-down in impact: route the measurements already taken, calibrate the first batch to them, assign an owner, then change what a registration is, how a student leaves it and what it costs, scoped to breakfast and evaluated.
+
+\section{7. The Questions That Gate All of This}\label{the-questions-that-gate-all-of-this}
+
+Two questions decide the shape of the deepest intervention point.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The two gating questions and what each answer would change.}]{Assets/s08d-gates.png}
+\caption{The two gating questions and what each answer would change.}
+\end{figure}
+
+\textbf{What counts as a plate for payment.} Bakul\textquotesingle s operator won a tender and is paid monthly as a lump sum on plates, with deductions, and its manager says the plates counted are plates served (single-sourced). Kadamba\textquotesingle s operator says it cooks to registrations because it is paid for them, which points to registered plates, but no contract term has been seen. The statements pull apart: contracts may differ, "served" may be a normalised word for billed plates, or Kadamba\textquotesingle s remark may be about duty and not the formula. One word from one operator does not change the gate. On registered plates, the no-show cost sits with students and the institution, and 4.2 is an adoption problem if the contract can absorb a consumption basis and a renegotiation if it cannot. On served plates, part of the no-show cost already sits with the operator and the incentive behind over-preparation changes. For Bakul that would mean it already bears the cost of what it over-cooks and accepts it to avoid a shortage, and a change to the breakfast default would not cut its revenue (both candidate).
+
+\textbf{Who set the four-day lead and the five-cancellation cap, and what depends on them.} The kitchens buy perishables one to three days ahead, and Kadamba\textquotesingle s team has challenged the four-day close. If nothing operational depends on four days, the lead is held by habit or billing convenience, and moving it or widening the exit is the nearest-term version of 4.2. A shorter lead is not free for operators, though, since Kadamba also finds last-minute registrations a pain (single-sourced). Either way the other three points stand, which is part of why they come first.
+
+Other questions carried forward:
+
+\begin{itemize}
+\tightlist
+\item
+  Is the count Kadamba cooks against already net of Skip Meal declarations and cancellations? Who heads CDS, and does anyone with policy authority look at the scan records, retained per student or not?
+\item
+  Which holiday periods ran without compulsory registration? This bears on June 2026 at Yuktāhār, where two Saturday breakfasts show 37 and 34 registered. The sheets write 89 and 91\% eaten, but those totals include unregistered and paying diners, and registered students alone were 22 and 21, about 60\% (confirmed from records). If registration was non-compulsory then, a smaller booking closer to intent roughly doubles turnout, though still below lunch. Automatic registration over holidays makes that less likely, so it stays a candidate.
+\item
+  What is the base of Kadamba\textquotesingle s 5 to 10\% waste figure, how much surplus is held and reheated, and does lost quality feed skipping? That last link is an open chain, not an evidenced loop.
+\item
+  Are outside-diner portions the same allocation as walk-in portions, and is feeding them and Kadamba\textquotesingle s staff a written entitlement or a norm? Which account of disposal is current, and where does Yuktāhār\textquotesingle s residual waste go?
+\item
+  Is over-preparation driven by an asymmetric penalty or by the count as a paid obligation? Which definition of "ate" should a trigger use, and which body does the facility team belong to?
+\item
+  How accurate is Yuktāhār\textquotesingle s first-half-hour projection on breakfasts that crest at close? Which items other than aloo paratha lose quality in hot holding?
+\item
+  What do turnout and waste look like at Bakul and Palash? At Bakul: is anything in the weekly adjustment written down, how long does a top-up take end to end, is the reserve of about 50 set from data or judgement, which menu decisions can the manager override, and why do its own residents skip breakfast, asked of them and not inferred from the manager?
+\end{itemize}
+
+\section{8. What Phase 3 Inherits}\label{what-phase-3-inherits}
+
+Activity 9 asks for leverage points and design principles. This document hands it four intervention points, one in the kitchen and three in governance, ranked by depth and not by ease. It hands over constraints that rule out whole categories of intervention before they are designed: acting after the first batch is cooked, removing food from outside diners and staff, cutting waste in a way that raises shortage risk, penalising the people who record waste, depending on a new digital system, and aiming the fix at students or operators. It hands over three secondary areas (food quality as eaten, demand by item, the menu\textquotesingle s pairings), a sequencing logic and two gating questions.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.96\linewidth,height=\textheight,keepaspectratio,alt={When each decision is fixed, from the month before to the 72-hour sample: the timeline any intervention works inside.}]{Assets/d22-planning-horizon-ladder.png}
+\caption{When each decision is fixed, from the month before to the 72-hour sample: the timeline any intervention works inside.}
+\end{figure}
+
+The evidence limits travel with it. Record-level turnout exists for Kadamba breakfast in April 2026, Yuktāhār in September 2026 and two Yuktāhār Wastage Book sheets from June 2026 only. The Kadamba ratio and gram standards are the operator\textquotesingle s own statements, heard directly, and carry self-presentation bias. Bakul\textquotesingle s rule, floor, timings and payment statement come from a team member\textquotesingle s synthesis of its manager\textquotesingle s account, with no Bakul records. Kadamba\textquotesingle s only waste figure is a share with no stated base. None of these should become a headline number, and each hall was visited once.
+
+The most useful thing carried forward is the negative result. The system has not fixed itself because it has no route for what it already knows, and nobody lacks capability, willingness or information. The gap is measured every morning and absorbed every morning, and nothing carries that known cost to the kitchen decision that sets the first batch or to the actors who set the rules. Designing those routes is the work.
+
+\end{document}

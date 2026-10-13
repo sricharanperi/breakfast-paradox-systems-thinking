@@ -1,0 +1,172 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\AtBeginDocument{\ifdefined\LTpre\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}\fi}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\setstretch{1.08}
+\thispagestyle{empty}
+\vspace*{1.3in}
+\begin{center}
+{\color{pblue2}\fontsize{14}{16}\selectfont\bfseries TEAM INVICTUS\par}
+\vspace{16pt}
+{\color{pblue}\fontsize{32}{38}\selectfont\bfseries Systems Thinking \& Design\par Phase 3 and Phase 4 Submission\par}
+\vspace{14pt}
+{\color{pslate}\Large The Breakfast Paradox\par}
+{\color{pslate}\normalsize IIIT Hyderabad Breakfast Mess System\par}
+\vspace{18pt}
+{\color{prule}\rule{2.6in}{1.4pt}}
+\end{center}
+\vspace{22pt}
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\footnotesize
+\begin{tabular}{@{}p{1.0in}p{3.7in}rr@{}}
+\textbf{\color{pblue}Activity} & \textbf{\color{pblue}Document} & \textbf{\color{pblue}Starts on page} & \textbf{\color{pblue}Pages}\\
+\hline
+Activity 9 & Leverage Points and Design Principles & 2 & 13 \\
+Activity 10 & Design, Test and Evaluate Interventions & 15 & 18 \\
+\end{tabular}
+\end{center}
+
+\end{document}

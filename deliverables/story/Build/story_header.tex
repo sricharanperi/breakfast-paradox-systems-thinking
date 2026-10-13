@@ -1,0 +1,97 @@
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\usepackage{etoolbox}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\definecolor{ink}{HTML}{22262B}
+\definecolor{soft}{HTML}{6B7480}
+\definecolor{paper}{HTML}{FFFFFF}
+\definecolor{cPuzzle}{HTML}{E65100}
+\definecolor{cContext}{HTML}{1565C0}
+\definecolor{cPeople}{HTML}{6A1B9A}
+\definecolor{cProcess}{HTML}{00838F}
+\definecolor{cSystem}{HTML}{00695C}
+\definecolor{cCause}{HTML}{AD1457}
+\definecolor{cDesign}{HTML}{283593}
+\definecolor{cTest}{HTML}{EF6C00}
+\definecolor{cLook}{HTML}{455A64}
+\definecolor{cWrong}{HTML}{C62828}
+\definecolor{cOpen}{HTML}{E08600}
+\definecolor{cOk}{HTML}{2E7D32}
+\AtBeginDocument{\color{ink}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6.5pt plus 1pt}
+\renewcommand{\tightlist}{\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+\captionsetup{font={small,it},labelformat=empty,skip=4pt,justification=raggedright,singlelinecheck=false,labelfont={color=soft}}
+\floatplacement{figure}{!htbp}
+\renewcommand{\topfraction}{.9}\renewcommand{\bottomfraction}{.9}\renewcommand{\textfraction}{.1}\renewcommand{\floatpagefraction}{.7}
+\setcounter{topnumber}{2}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{4}
+\titleformat{\section}{\color{ink}\Large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+\titleformat{\subsection}{\color{soft}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{soft}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{soft}\thepage}}
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.2}}
+\setlength{\tabcolsep}{4pt}
+
+% ---- devices
+\tcbset{boxrule=0pt,arc=3pt,left=9pt,right=9pt,top=7pt,bottom=7pt,before skip=9pt,after skip=9pt,fonttitle=\bfseries\small}
+\newtcolorbox{expcard}{colback=cLook!6,colframe=cLook,toprule=3pt,title={EXPERIMENT},coltitle=cLook,colbacktitle=cLook!6,attach boxed title to top left={yshift=-2pt},boxed title style={colback=cLook!6,boxrule=0pt},enhanced}
+\newtcolorbox{turning}{colback=cOpen!12,colframe=cOpen,leftrule=5pt,toprule=0pt,rightrule=0pt,bottomrule=0pt,title={TURNING POINT},coltitle=cOpen!85!black,colbacktitle=cOpen!12,boxed title style={colback=cOpen!12},attach boxed title to top left={yshift=-2pt},enhanced}
+\newtcolorbox{wrongbox}{colback=cWrong!6,colframe=cWrong,leftrule=4pt,toprule=0pt,rightrule=0pt,bottomrule=0pt,title={WE WERE WRONG ABOUT},coltitle=cWrong,colbacktitle=cWrong!6,boxed title style={colback=cWrong!6},attach boxed title to top left={yshift=-2pt},enhanced}
+\newtcolorbox{tradeoff}{colback=cDesign!5,colframe=cDesign,leftrule=4pt,toprule=0pt,rightrule=0pt,bottomrule=0pt,title={THE TRADE-OFF},coltitle=cDesign,colbacktitle=cDesign!5,boxed title style={colback=cDesign!5},attach boxed title to top left={yshift=-2pt},enhanced}
+\newtcolorbox{plainwords}{colback=cOk!6,colframe=cOk,toprule=2pt,leftrule=0pt,rightrule=0pt,bottomrule=0pt,title={IN PLAIN WORDS},coltitle=cOk,colbacktitle=cOk!6,boxed title style={colback=cOk!6},attach boxed title to top left={yshift=-2pt},enhanced}
+\newtcolorbox{decisionbox}{colback=ink!5,colframe=ink,leftrule=4pt,toprule=0pt,rightrule=0pt,bottomrule=0pt,title={DECISION},coltitle=ink,colbacktitle=ink!5,boxed title style={colback=ink!5},attach boxed title to top left={yshift=-2pt},enhanced}
+\newcommand{\pullquote}[1]{\begin{center}\begin{minipage}{0.88\linewidth}\raggedright\color{ink}\fontsize{17}{22}\selectfont\bfseries #1\end{minipage}\end{center}\vspace{4pt}}
+\newcommand{\evtag}[2]{\textcolor{#1}{\scriptsize\textbf{\MakeUppercase{#2}}}}
+\newcommand{\chapterpage}[5]{%
+  \clearpage\noindent
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[#2] (current page.north west) rectangle ([yshift=-2.45in]current page.north east);
+    \node[anchor=north west,text=white,inner sep=0pt] at ([xshift=0.8in,yshift=-0.3in]current page.north west) {\fontsize{84}{84}\selectfont\bfseries #1};
+    \node[anchor=south east,text=white,inner sep=0pt] at ([xshift=-0.8in,yshift=-2.25in]current page.north east) {\fontsize{10}{12}\selectfont\bfseries #4};
+  \end{tikzpicture}\par
+  \vspace*{1.85in}
+  {\noindent\color{#2}\bfseries\fontsize{26}{30}\selectfont\spaceskip=0.28em plus 0.1em minus 0.05em #3\par}
+  \vspace{8pt}
+  {\noindent\fontsize{13}{18}\selectfont\color{ink} #5\par}
+  \vspace{10pt}}
+\newcommand{\decisionstrip}[2]{\par\vspace{4pt}\noindent{\color{soft}\rule{\linewidth}{0.4pt}}\par\noindent{\scriptsize\color{soft}\textbf{DECISION #1} \quad #2}\par\vspace{6pt}}
+
+% ---- cover and contents
+\usepackage{tocloft}
+\setlength{\cftbeforesecskip}{1.5pt}
+\renewcommand{\cftsecfont}{\small}\renewcommand{\cftsecpagefont}{\small}
+\renewcommand{\cfttoctitlefont}{\Large\bfseries\color{ink}}
+\renewcommand{\maketitle}{%
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[cLook!92!black] (current page.north west) rectangle (current page.south east);
+    \foreach \i in {0,...,99} {
+      \pgfmathtruncatemacro{\r}{int(\i/10)}\pgfmathtruncatemacro{\c}{mod(\i,10)}
+      \ifnum\i<37 \fill[cPuzzle] ([xshift=1.0in+\c*0.2in,yshift=-0.9in-\r*0.2in]current page.north west) circle (0.065in);
+      \else \draw[white!60!cLook,line width=0.6pt] ([xshift=1.0in+\c*0.2in,yshift=-0.9in-\r*0.2in]current page.north west) circle (0.065in);
+      \fi}
+    \node[anchor=north west,text=white,inner sep=0pt,text width=6.3in] at ([xshift=1.0in,yshift=-3.55in]current page.north west) {\bfseries\fontsize{40}{44}\selectfont\spaceskip=0.28em plus 0.1em minus 0.05em The Breakfast Paradox};
+    \node[anchor=north west,text=white,inner sep=0pt,text width=5.6in] at ([xshift=1.0in,yshift=-5.05in]current page.north west) {\fontsize{15}{21}\selectfont\spaceskip=0.28em plus 0.1em Why a hostel books breakfast it does not eat, and what we would change};
+    \node[anchor=south west,text=white,inner sep=0pt,align=left] at ([xshift=1.0in,yshift=0.8in]current page.south west) {\fontsize{11}{15}\selectfont\bfseries Team Invictus\\[2pt]\fontsize{10}{13}\selectfont\mdseries Systems Thinking and Design, IIIT Hyderabad};
+    \node[anchor=south east,text=white!75!cLook,inner sep=0pt,align=right] at ([xshift=-1.0in,yshift=0.8in]current page.south east) {\fontsize{9}{12}\selectfont A book of experiments};
+  \end{tikzpicture}
+  \clearpage}

@@ -1,0 +1,17 @@
+Operators drawn as one box, kitchen receives a four-day forecast -> three operators each apply their own ratio to the closed registration count; no forecast exists
+Registration is a monthly or weekly standing booking -> automatic default, five cancellations per meal type per month, at least four days ahead
+Four-day ordering lock is the bottleneck / procurement lock -> lock applies to registration only; kitchens buy on their own cadences; bottleneck is the cooked first batch
+Kadamba waste routed to outside compost -> garbage contractor, no composting (operator's account)
+20 to 30 staff eat leftovers at Kadamba -> about 30 extra portions for 30 to 50 outside diners plus about half of Kadamba's staff
+Kadamba waste in kg (16, 23) -> withdrawn; operator says 5 to 10% daily, base unstated
+Yuktahar five-person project team -> two project managers plus about three site staff sharing the work
+Prism is a floor team -> Prism is the vendor that holds the tender and runs all Kadamba operations
+Bakul kitchen near the airport, 40 min, ratio raised from 70 to 80% -> Hafizpet, about 8 km, 20 to 40 min; 70 to 80% by item and day, adjusted weekly, floor about 70%
+Bakul grouped with Kadamba as a fixed ratio -> third regime between Kadamba and Yuktahar
+All three operators describe a closing rush; Bakul peak 8:30 to 9:00 -> crest recorded at Kadamba, described at Yuktahar; Bakul manager says 8:00 to 8:30
+Nothing behind the scenes reacts in real time -> supervisor, first-half-hour projection and phoned top-ups react continuously, upward only
+No one tracks waste -> Yuktahar weighs it per item and meal; no route carries it to a rule owner
+L6 drawn as a balancing loop -> condition-triggered chain (calendar switch)
+Old loop names R1, B1 to B4 -> L1 to L17 plus L3b
+Wastage Book keeper named Adit Amma -> mess in-charge named in the team account (identity unconfirmed)
+One person runs Kadamba inventory with no backup -> downgraded to single-sourced and unverified

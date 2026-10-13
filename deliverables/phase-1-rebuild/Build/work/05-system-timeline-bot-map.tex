@@ -1,0 +1,716 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={System Timeline / Behaviour-Over-Time Map},
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{System Timeline / Behaviour-Over-Time Map}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{IIIT Hyderabad Breakfast Mess System}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\hypersetup{linkcolor=pslate}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.08}
+\section{Overview}\label{overview}
+
+This map asks what pattern emerges when the process repeats, across people and across time. It rests on four kinds of evidence. The first is six student respondents describing their own breakfast habits. The second is two sets of records: thirty days of Kadamba breakfast registrations and timestamped scans from April 2026, and twenty days of Yuktāhār breakfast and lunch attendance registers from September 2026, photographed on site with the rest of Yuktāhār\textquotesingle s daily books. The third is interviews with the operators of three messes (Yuktāhār, Kadamba, and Bakul, run by Vijayalakshmi Caterers). The fourth is a first-hand account by a team member present at both the Kadamba and Yuktāhār operator conversations. Numbers read off records are confirmed, and so is practice the team saw on site. Kadamba operator numbers, heard directly, are the operator\textquotesingle s single-sourced statements about his practice. Bakul numbers come from a team member\textquotesingle s structured synthesis of the recordings and are the manager\textquotesingle s own statements and estimates, since no Bakul records of any kind exist. No Bakul figure, and not Kadamba\textquotesingle s waste percentage, whose base is unstated, is used as a headline figure.
+
+The timescales the evidence supports are these.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Within one morning:} measured. Every April scan at Kadamba carries a timestamp, the operator\textquotesingle s rule of thumb has the same shape as the records, and both kitchens described their morning from the 5:30 start to the close.
+\item
+  \textbf{Across a week:} measured. Kadamba registrations and turnout are recorded for every weekday and the Yuktāhār register covers nearly three weeks. Kadamba\textquotesingle s weekly quality inspection and one-week dry-goods purchasing run on the same cycle, and the Bakul manager reviews attendance weekly to set the next first batch (both single-sourced).
+\item
+  \textbf{Across a fortnight:} confirmed. The menu repeats on a two-week cycle and Yuktāhār\textquotesingle s waste records are organised around it.
+\item
+  \textbf{Across a month:} measured for Kadamba breakfast in April. Students are registered automatically and can cancel only five meals per meal type per month (confirmed). Yuktāhār reads the month\textquotesingle s turnout pattern when it forecasts (single-sourced).
+\item
+  \textbf{Across a semester:} recall only. Six respondents each give a semester-level trend for themselves, and no multi-month records exist yet.
+\item
+  \textbf{Across an operator year:} single-sourced for Yuktāhār in outline. The current operator took over the previous year, began per-item waste weighing in August on deliberately blame-free terms, and by December heard staff report lower waste. The switch to rock salt and cold-pressed oil dates from about six months before the visit, and software was tried and dropped at an unknown date.
+\end{itemize}
+
+No student records span multiple semesters, and no trend at that scale is claimed.
+
+\section{Collect Historical Versions, Records or Observations}\label{collect-historical-versions-records-or-observations}
+
+\subsection{Student respondents}\label{student-respondents}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1646}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1646}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1646}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2278}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2785}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Respondent
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Behaviour
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Frequency
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Trigger
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Time horizon
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Original respondent (2026-09-03) & Habitual skipper & Most mornings & Intermittent fasting, poor hostel mess quality historically, late sleep & Longstanding habit \\
+Daily eater 1 & Near-daily attender & 5 to 6 of 7 mornings & Habit; late-night work causes the rare skip & More regular this semester than before \\
+Daily eater 2 & Most-days attender & Most days & 8:30 class plus late sleep causes skips; class-attendance policy is put ahead of breakfast & No explicit before and after comparison \\
+Skip-1 & Light eater & About once a week & Appetite-driven, menu-checked & Changed since just before classes started this semester; direction implied \\
+Skip-2 & Non-eater & Zero this semester & Not hungry that early; eats after 10 to 10:30 & Zero for the whole semester \\
+Skip-3 & Declining attender & Rare, once more regular & Late sleep leading to no hunger & Declining over the last three to six weeks \\
+\end{longtable}
+}
+
+The six do not agree on a direction. One reports attendance rising this semester, one a decline over three to six weeks, one zero all semester, and the rest no clear trend. Six people are moving in different directions at once, and the records show what those movements add up to.
+
+\subsection{Records and operator sources}\label{records-and-operator-sources}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1818}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1136}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3182}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2955}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Mess
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Period
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries What it measures
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries What it cannot show
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Registration and scan export & Kadamba & Breakfast, 1 to 30 April 2026 & 32,162 registrations and 11,941 timestamped scans, split veg and non-veg & Student identity, lunch or dinner, quantities cooked, waste \\
+Attendance register (photographed) & Yuktāhār & Breakfast and lunch, 1 to 20 September 2026 & Registered (regular and Jain) and who ate, by category, with a daily percentage, grouped by weekday & Seven of twenty breakfast rows are partly hidden; the percentage is legible on thirteen days \\
+Wastage Book pages (photographed) & Yuktāhār & June 2026 and 3 September 2026 & Per item: raw issued, cooked, left, percentage wasted, run-out time, re-cook quantity; plate waste plus leftover gives the day\textquotesingle s wastage & Only a few pages photographed; the archive runs back at least to June \\
+Grocery Book and stock register (photographed) & Yuktāhār & 18 September 2026 & Issue list and running balance; the two agree, and a mismatch goes to the daily meeting & A single day \\
+Daily registers (photographed) & Yuktāhār & September 2026 & Vegetable book and indent with spoilage remarks; milk, curd and paneer; fruit; gas; two electricity meters; water; fridge temperature three times a day; daily cleaning checklist & One to three weeks each; one meter stops after 14 September \\
+Operator interviews & Yuktāhār, Kadamba, Bakul & September 2026 visits & Quantity rules and their adjustment, planning routine, arrival pattern as the operator sees it, extra diners, procurement tiers, waste disposal, changes & Self-reported. Kadamba\textquotesingle s numbers were heard first-hand and the Bakul account is a synthesis, not a transcript; no Bakul records \\
+Team field account (first-hand) & Kadamba and Yuktāhār & September 2026 visits & Command chain, morning timings, pre-service food-safety sequence, procurement tiers, change history, staff organisation & A team member\textquotesingle s synthesis, not a verbatim record \\
+\end{longtable}
+}
+
+The two record sets come from different messes and months and cannot be joined. Direct observation of a live service was not needed for the arrival curve, since the Kadamba scans measure it. The team observed pre-service handling at Kadamba, the wrapped display plate and the tasting (confirmed). The team member judges that Kadamba food is cooked ahead, reheated and moved between vessels repeatedly, which degrades it, an observer\textquotesingle s assessment and not a measurement (candidate). What happens to leftover food after service has still not been observed.
+
+\section{Develop Timelines}\label{develop-timelines}
+
+\subsection{Daily service timeline: two kitchens}\label{daily-service-timeline-two-kitchens}
+
+The students\textquotesingle{} morning and the kitchens\textquotesingle{} morning are different timelines. The kitchens start two hours before the first student arrives.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={The two kitchens\textquotesingle{} mornings side by side, from 5:30 to the next day\textquotesingle s meeting.}]{Assets/d21-two-kitchen-daily-timeline.png}
+\caption{The two kitchens\textquotesingle{} mornings side by side, from 5:30 to the next day\textquotesingle s meeting.}
+\end{figure}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1194}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4328}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4478}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Clock time
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Kadamba
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Yuktāhār
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+5:30 & Chef arrives and cooks batch items such as sambar and upma, a first batch at 70\% of registrations, veg and non-veg planned separately and portioned by a gram standard per dish (single-sourced) & Breakfast cooking starts, mostly in one batch, poha in two (single-sourced) \\
+Before service & Cooking temperature checked, a sample kept 72 hours, a wrapped display plate at the entrance, serving temperature per item, then tasting by the facility team with two vendor staff and corrections (display plate and tasting confirmed; rest single-sourced) & Food ready by 7:30 (single-sourced) \\
+7:00 & Live items such as dosa cooked in front of diners; about eleven scans a day already come before 7:30 (confirmed) & \\
+7:30 to 8:00 & Service opens; the supervisor watches how much of each dish is left & The first half hour is used as a sample to project the rest of the meal, which drives top-up cooking (single-sourced) \\
+During service & Supervisor orders top-ups, ready in ten to fifteen minutes (single-sourced) & Handmade oil-free rotis, a second roti counter at peak (confirmed; meal not specified); items re-cooked or not by the run-out-time rule (confirmed) \\
+From about 8:45 & Arrivals climb toward the closing crest (confirmed) & Counter checked every thirty minutes from about forty-five minutes before close (single-sourced) \\
+9:30 & Front door closes; latecomers still enter by the back door and are served (single-sourced) & Fridge cleaning (confirmed, records) \\
+After service & Outside diners and about half the staff eat from the same food; waste goes to a dustbin collected by a garbage contractor (single-sourced) & Wastage Book entry with run-out time and re-cook quantity (confirmed); leftover idli turned into idli upma or poha for lunch, batter back to the fridge (single-sourced) \\
+Same day & Water TDS read daily for cooking and drinking water (single-sourced) & A planning meeting fixes the next day\textquotesingle s breakfast and lunch issue (confirmed) \\
+\end{longtable}
+}
+
+Bakul runs a longer morning, because its breakfast is cooked at Hafizpet, about 8 km away, and driven in. Every step is the manager\textquotesingle s description (single-sourced), and no Bakul record exists to time any of it. Labour-heavy items such as aloo paratha start about 3 AM and are dispatched in insulated boxes at about 60 to 72 °C, in about 20 minutes early in the morning (40 normally). They arrive about 7 AM and wait in a hot-water setup. Service peaks at about 8:00 to 8:30. About every 30 minutes the manager compares food left with registrations and expected demand and, if short, phones Hafizpet, which cooks and sends more (cooking plus 20 to 40 minutes on the road; lead time not stated). Around 9:20 he keeps food for about 50 people, with about 10 to 15 arriving in the last ten minutes. For labour-heavy items the timeline starts about four hours before the food reaches Bakul, and a top-up crosses the same road as the first batch. Hot parathas steam in the box and soften, so the food keeps its temperature and loses texture over the hours it is held (single-sourced; other items unknown).
+
+\subsection{Within-morning pattern, reconciled}\label{within-morning-pattern-reconciled}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Measured arrival curve, Kadamba breakfast, April 2026: share of scans per fifteen minutes, with kitchen markers.}]{Assets/diagram8-crowd-curve.png}
+\caption{Measured arrival curve, Kadamba breakfast, April 2026: share of scans per fifteen minutes, with kitchen markers.}
+\end{figure}
+
+The crowd curve was first drawn from student recall. Two apparently competing peak claims, one respondent naming 8:00 to 9:00 and two naming 9:00 to 9:30, were reconciled into one continuously building crowd that crests just before the 9:30 close, on the reasoning that the respondent naming the earlier window arrives early to avoid the crowd. The Kadamba scan records now confirm that reading, which is no longer a working hypothesis.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2941}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2353}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2353}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2353}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Arrival slot (Kadamba, April)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Scans per day, average
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Share of all scans
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Cumulative share
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Before 7:30 & 11 & 2.7\% & 2.7\% \\
+7:30 to 7:44 & 38 & 9.6\% & 12.3\% \\
+7:45 to 7:59 & 23 & 5.7\% & 18.0\% \\
+8:00 to 8:14 & 29 & 7.3\% & 25.3\% \\
+8:15 to 8:29 & 33 & 8.3\% & 33.6\% \\
+8:30 to 8:44 & 33 & 8.2\% & 41.9\% \\
+8:45 to 8:59 & 36 & 8.9\% & 50.8\% \\
+9:00 to 9:14 & 54 & 13.5\% & 64.3\% \\
+9:15 to 9:29 & 105 & 26.5\% & 90.8\% \\
+9:30 and after & 37 & 9.2\% & 100\% \\
+\end{longtable}
+}
+
+The records add two features recall lacked. The curve opens with a burst: the first fifteen minutes after 7:30 carry more diners than any later slot until 9:00. It then runs as a flat plateau from 7:45 to 9:00 before climbing steeply, to about nine scans a minute in the final minute before 9:30. And roughly one scan in eleven falls after the nominal close, 1,100 across the month, most before 9:35, the latest at 10:07. The operator says latecomers come in by the back door once the front door closes and the mess cannot refuse them (single-sourced), which the records match. The effective close is 9:35 to 9:45, set informally at the door. No bulk marking appears: never more than two scans share a second.
+
+Kadamba\textquotesingle s rule of thumb is about 100 diners in the opening phase, about 100 through the middle and about 150 in the last ten minutes, "for any meal the highest flow is in the last 10 minutes" (single-sourced). That has the shape of the records. The records put the last ten minutes before 9:30 at about 79 scans a day, about 115 counting the minutes just after close, of about 398 a day in total. The rule slightly overstates the final surge and understates the total. The records remain the measurement.
+
+The closing crest is recorded at Kadamba and described at Yuktāhār, where the site head says the rush always comes at closing and staff check the counter every thirty minutes from about forty-five minutes before (single-sourced). It is not described at every hall. Bakul\textquotesingle s manager puts the main breakfast rush at about 8:00 to 8:30, with a small late tail of about 10 to 15 in the last ten minutes, and keeps food for about 50 around 9:20 to cover it (single-sourced; his description, not a measured curve). (Revised: a noisy-audio reading placed the Bakul peak at 8:30 to 9:00 and later, arriving in waves, and that is withdrawn, as is the earlier claim that the closing crest is not particular to Kadamba.) Arrival curves differ by hall, and the Kadamba profile cannot be carried to another hall without that hall\textquotesingle s own scans (candidate).
+
+The two timelines meet badly at one point. Yuktāhār projects the rest of the meal from its first half hour. On the Kadamba curve, the first half hour carries about 15\% of the morning\textquotesingle s diners and the last half hour about 40\% (confirmed for Kadamba). If Yuktāhār\textquotesingle s curve has the same shape, a straight projection from the first half hour reads low and pushes top-ups late, toward the crest (candidate; Yuktāhār keeps no arrival timestamps).
+
+\subsection{Daily and weekday pattern: measured}\label{daily-and-weekday-pattern-measured}
+
+The central behaviour-over-time pair is registrations against actual diners, day by day.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Kadamba, April 2026: registered and scanned breakfasts each day. Registrations are flat; turnout is not.}]{Assets/d18-kadamba-daily-registered-vs-eaten.png}
+\caption{Kadamba, April 2026: registered and scanned breakfasts each day. Registrations are flat; turnout is not.}
+\end{figure}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2941}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2353}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2353}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2353}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Kadamba breakfast, April 2026
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Registered per day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Ate per day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Share who ate
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Whole month & 928 to 1,123 & 270 to 517 & 37.1\% (11,941 of 32,162) \\
+Monday & 1,095 & 450 & 41.1\% \\
+Tuesday & 1,065 & 448 & 42.1\% \\
+Wednesday & 1,064 & 394 & 37.0\% \\
+Thursday & 1,076 & 425 & 39.5\% \\
+Friday & 1,066 & 400 & 37.5\% \\
+Saturday & 1,070 & 373 & 34.8\% \\
+Sunday & 1,069 & 292 & 27.3\% \\
+\end{longtable}
+}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.82\linewidth,height=\textheight,keepaspectratio,alt={Share who ate, by weekday, against flat registrations.}]{Assets/d19-weekday-turnout.png}
+\caption{Share who ate, by weekday, against flat registrations.}
+\end{figure}
+
+Registrations are flat. From 6 April they sit between 1,039 and 1,123 every day, Sunday included, while the number who eat swings with the weekday. The three lowest days of the month were all Sundays (25.3\%, 25.4\% and 25.5\%), the fourth Sunday came in at 32.7\%, and Sunday is also the latest-arriving day, its median scan at 9:08 to 9:15 against 8:36 to 9:03 on most weekdays. Weekdays together run at 39.3\% and weekends at 31.1\%. Non-vegetarian registrants turn up far more often than vegetarian ones (48.5\% against 32.4\%). Registration does not follow the daily decision to eat. It is set once and left standing (confirmed).
+
+Kadamba plans its first batch separately for veg and non-veg (single-sourced), but the two turn up at very different rates. If the same 70\% applies to both, veg is prepared at about 2.2 times what veg registrants eat and non-veg at about 1.4 times (candidate; the operator did not say whether the ratio differs by type). The operator\textquotesingle s worked example of 400 non-veg and 300 veg registrations does not match April\textquotesingle s mix of roughly 750 veg and 320 non-veg a day, and reads as illustrative or a lunch figure (candidate). The first week of April shows registrations rising from 928 to about 1,070, almost entirely because non-veg registrations climb from 137 on 1 April to about 300 by 6 April. The cause is unknown and it is not read as a trend.
+
+The Yuktāhār register shows the same shape at a second mess, and a comparison with lunch on the same days.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Yuktāhār, 1 to 20 September 2026: breakfast against lunch attendance each day.}]{Assets/d20-yuktahaar-breakfast-vs-lunch.png}
+\caption{Yuktāhār, 1 to 20 September 2026: breakfast against lunch attendance each day.}
+\end{figure}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3485}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3485}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3030}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Yuktāhār, 1 to 20 September 2026
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Share who ate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Registered per day
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Breakfast (thirteen legible days) & 17.7\% to 40.2\%, averaging about 28\% & 228 to 404 \\
+Breakfast, Sundays & 18.0\% to 24.2\% & 228 to 269 \\
+Lunch (all twenty days) & 56\% to 89\%, at least 70\% on fifteen days & 161 to 376 \\
+\end{longtable}
+}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.32\linewidth,height=\textheight,keepaspectratio,alt={The attendance register, with the breakfast page on the left and lunch on the right; the hand covers part of the breakfast rows.}]{Assets/plate-register-breakfast.jpg}
+\caption{The attendance register, with the breakfast page on the left and lunch on the right; the hand covers part of the breakfast rows.}
+\end{figure}
+
+Breakfast is the structurally worst meal. On the same days in the same mess about seven in ten lunch registrants eat and fewer than three in ten breakfast registrants do (confirmed). The register also shows a pattern the Kadamba export cannot. On Sundays lunch registrations fall (165, 161 and 232 against 237 to 376 on other days) while Sunday breakfast registrations do not (267, 228 and 269). Students adjust their Sunday lunch booking and leave the breakfast booking in place, then do not come. That breakfast registration behaves as a standing default in a way lunch does not is a candidate pattern on three Sundays of evidence. The two messes differ on Mondays, among Kadamba\textquotesingle s best breakfast days in April and Yuktāhār\textquotesingle s worst in September (22.1\% and 17.7\%), which different months and populations could each explain and which is unresolved.
+
+The kitchens keep a weekly rhythm of their own. Kadamba buys dry goods a week ahead and inspects weekly (single-sourced). Yuktāhār\textquotesingle s operator attributes a Wednesday rise in electricity use to grinding idli batter and sets machine run times by it. The meter only partly supports this: Wednesday 2 September (134.4 units) and Wednesday 9 September (118.4) were high, but Saturday 12 September (136.2) was higher, so the pattern is a candidate.
+
+\subsection{Aggregate stability despite individual divergence}\label{aggregate-stability-despite-individual-divergence}
+
+The aggregate does not move the way individuals do. Each seven-day block of Kadamba\textquotesingle s April sits between 35\% and 39\% with no drift across the month, and the Sunday trough recurs week after week. Individual respondents are rising, falling or at zero, and the records cannot see individuals because they carry no student identity. Both hold together: heterogeneous individual trajectories sum to a stable aggregate with a strong weekly rhythm (confirmed at the aggregate). The three-to-six-week decline one respondent reports cannot be tested against April data from another month with no identities, and April itself shows no within-month decline.
+
+\subsection{Planning-horizon timeline: when each decision is fixed}\label{planning-horizon-timeline-when-each-decision-is-fixed}
+
+The gap between registered and actual diners is produced partly by when each quantity is fixed relative to the meal.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={When each decision is fixed, from the month before to the 72-hour sample.}]{Assets/d22-planning-horizon-ladder.png}
+\caption{When each decision is fixed, from the month before to the 72-hour sample.}
+\end{figure}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1714}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5286}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries When
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries What is fixed
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Where it is described
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+About two weeks ahead & The Wastage Book records waste and run-out times for each item on the matching day of the two-week menu cycle, and that page becomes the reference for sizing the same day two weeks later. Groceries are bought fortnightly and vegetables arrive two to three times a week; the operator also describes raw materials bought the week before from many local shops, in mild tension with the fortnightly register & Yuktāhār, confirmed (weekly description single-sourced) \\
+About one week ahead & Dry goods (rice, groundnut, masala, ghee, podi) are bought at Kadamba. Bakul\textquotesingle s manager reviews historical attendance by day and adjusts the share each item is cooked for in the coming week (his example: a Monday that historically sees about 70\% attendance is cooked at about 80\%); whether the history is written down is unknown & Kadamba and Bakul, single-sourced \\
+About four days ahead & The last point at which a student can cancel. Students are registered automatically and may cancel five meals per meal type per month, each at least four days ahead; beyond that the charge cannot be removed. The automatic booking, less early cancellations, becomes the number every kitchen plans from & Published rule and student experience, confirmed \\
+Two to three days ahead & Some vegetables are bought & Kadamba, single-sourced \\
+One day ahead & A planning meeting fixes the next day\textquotesingle s issue from registrations (regular, Jain and cash), the matching Wastage Book page, the weekday register, the month\textquotesingle s pattern and any holidays or events; grain with debris above a grams-per-item norm leads to a complaint or new supplier. Kadamba buys perishables (milk, fruit, meat, eggs, most vegetables) & Yuktāhār confirmed for meeting and books, inputs and norm single-sourced; Kadamba single-sourced \\
+Before service & A first batch is cooked at 70\% of registrations at Kadamba, veg and non-veg separately, by gram standard (idli four per person, sambar 100 g), then passes the safety checks and tasting. At Bakul the first batch is 70 to 80\%, varying by item and day, with food for about 70\% kept on low weekends, cooked at Hafizpet (from about 3 AM for items such as aloo paratha) to reach Bakul about 7 AM & Single-sourced \\
+During service & More is made as the counters empty: ten to fifteen minutes at Kadamba on the supervisor\textquotesingle s call; at Bakul by phone to Hafizpet after a check about every thirty minutes; at Yuktāhār by projection from the first half hour plus the run-out-time rule. An earlier noisy-audio reading put the Bakul top-up at about thirty minutes, but the drive alone takes 20 to 40 minutes and cooking time is unstated, so the lead time is open & Kadamba and Bakul single-sourced; Yuktāhār rule confirmed, projection single-sourced \\
+Three to four hours after cooking & Cooked food is no longer usable. At Kadamba, surplus is held, reheated and moved between vessels until then, degrading quickly (the team member\textquotesingle s judgement) & Operator single-sourced; reheating candidate \\
+Up to 72 hours after the meal & A sample of each item is kept for testing if anyone falls ill & Kadamba, single-sourced \\
+\end{longtable}
+}
+
+Kadamba\textquotesingle s biryani lunch is the contrast case: cooked at 100\% of registrations, two pieces of 150 to 200 g each with unlimited rice, with later diners running short when some take three (single-sourced).
+
+The real-time demand signals, the scan and the counter staff\textquotesingle s view of each dish, arrive after the first batch is cooked. Yuktāhār alone turns the first half hour into a forecast. The student\textquotesingle s decision to eat is made on the morning itself, against a booking made automatically and removable only through five early cancellations a month. Raw stock bought ahead is largely recoverable and cooked food is not, so the binding time constraint on waste is the ratio at which cooked food is prepared against registrations (fixed at Kadamba, adjusted weekly by judgement at Bakul), not the procurement lead time. At Bakul it is tighter still: the first batch leaves Hafizpet before any turnout signal exists, and a top-up needs a call, cooking and a drive (single-sourced).
+
+\subsection{Provisional system-level timeline}\label{provisional-system-level-timeline}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Provisional system timeline: governance history above, operator history below, undated items in a separate gutter.}]{Assets/diagram9-provisional-timeline.png}
+\caption{Provisional system timeline: governance history above, operator history below, undated items in a separate gutter.}
+\end{figure}
+
+This timeline shows institutional and governance history drawn from precedent research, much of it secondhand. No student respondent mentions a recent rule change, and no change to registration or billing rules has been confirmed for the current semester. The operator side, however, has changed repeatedly over 2025 and 2026, as set out below.
+
+\section{Identify Significant Changes and Their Triggers}\label{identify-significant-changes-and-their-triggers}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2162}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4324}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3514}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Date or period
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Change
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Trigger
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Date unknown & Bakul created & Kadamba\textquotesingle s non-vegetarian capacity ceiling was reached \\
+Date unknown & Prism, an outsourced vendor, wins the Kadamba tender and runs all operations, reporting through operations manager, manager and supervisor to the service staff, under CDS and CFS (single-sourced) & Tender \\
+November 2024 & "Let Them Eat Frogs": Kadamba non-veg meals reportedly cancelled unilaterally (secondhand; candidate) & A frog reportedly found in Kadamba\textquotesingle s chicken biryani \\
+December 2024 & Cancellation rules reportedly tightened, weekly caps, portal migration (secondhand; candidate) & Reported Mess Office workload concerns, compounded by a Kadamba renovation \\
+December 2024, same window & Ping student opinion survey; two Parliament and Mess Office meetings, reportedly (candidate) & Organised pushback against the tightening \\
+January 2025 & "Cleaning up the Mess?": policy defended by the incoming Committee chair; portal migration issues reported (secondhand; candidate) & Continuation of the December episode \\
+The previous year (candidate: 2025) & ABC Hospitality Services takes over Yuktāhār and grinds whole spices in-house (single-sourced) & Tender (not stated) \\
+August, the same year & Yuktāhār begins per-item waste weighing: issued, cooked, left, percentage wasted, run-out time, re-cook quantity (confirmed) & Operator initiative tied to an explicit goal of lower cost and higher profit alongside quality. Staff first resisted ("they are catching us"); managers made the weighing blame-free and discussed it daily (single-sourced) \\
+About December, the same year & Kitchen staff themselves report wastage has fallen (single-sourced) & About four months of blame-free weighing and daily discussion \\
+Date unknown & A project manager takes all staff to his farmhouse for training in what good quality looks like and what responsibilities to take (single-sourced) & Team building; the operator links it to making weighing work \\
+About March 2026 (six months before the visit; candidate date) & Yuktāhār replaces white salt with rock salt and moves to cold-pressed oils; the manager visits the mills (single-sourced). Later than the takeover, which revises the first dating & The operator\textquotesingle s quality policy, adopted despite the higher cost \\
+Date unknown & Zoho software tried for grocery planning and rush prediction, then dropped (single-sourced) & Paying "lakhs of rupees" for prediction made no sense with the data already in its books, and staff are not digitally inclined \\
+Date unknown & During an LPG shortage, registration made non-compulsory and the cancellation cap raised from five to ten; the same was reported for holidays and fests (single-sourced). The holiday part is disputed: the team\textquotesingle s account says students stay automatically registered over holidays, and Kadamba\textquotesingle s manager said holidays follow registration as usual & LPG supply shock; holidays and fests disputed \\
+Date unknown & Kadamba cuts quantities and buys some items outside during an LPG shortage (single-sourced), the first operator account of the shortage, which had rested on one student\textquotesingle s statement & LPG shortage \\
+2026 & Bakul switches paneer supplier twice, Amul to Heritage to Milky Mist (single-sourced) & Supply and quality problems \\
+About August 2026 & A new manager takes over Bakul, about a month in the role at the visit (single-sourced) & Staff turnover \\
+August or September 2026 & Kadamba stops serving daily sambar at dinner (single-sourced) & Not stated; a student links it to rising charges, and the operator says the committee sets the menu \\
+Date unknown & Kadamba\textquotesingle s toaster is broken and not yet replaced (single-sourced) & Equipment damage \\
+Since at least June 2026 & Yuktāhār\textquotesingle s Wastage Book is kept by the two-week menu cycle, sizing each day from the matching day two weeks earlier (confirmed) & Menu rotation \\
+2026-09, current semester & No confirmed change to standing registration or billing rules; several operator-side changes in quantity rules, suppliers, menu items, inputs and staff & None identified \\
+\end{longtable}
+}
+
+(Revised: the first version read the system as not in the middle of changing.) The standing rules students face have been stable since early 2025, but the kitchens behind them have not. The only documented change to the registration model since then is temporary: non-compulsory registration and a raised cap during the LPG shortage, after which the standing model returned. Whether the relaxation ever applied over holidays and fests is open, because the team\textquotesingle s own account is that students stay registered through holidays. Every other recent change sits on the operator side, and none has touched how registration works or how students are billed. An earlier reading of the Bakul recordings listed a dated change in Bakul\textquotesingle s first-batch rule from 70\% to 80\%. That entry is withdrawn: the clearer account describes a share of 70 to 80\% that varies by item and day and is adjusted weekly, which the noisy reading had taken for a change over time (single-sourced). Whether any standing Bakul ratio was ever changed is open.
+
+\section{Examine Feedback Loops and Recurring Patterns}\label{examine-feedback-loops-and-recurring-patterns}
+
+\textbf{R1: "Shifting the Burden" via Mess Cell} (open chain, held as a candidate reinforcing loop that sustains the dysfunction rather than growing it). Its central mechanism is confirmed. Zero of six respondents who addressed Skip Meal have used it, and the respondent who explained why did so in exactly the terms the incentive analysis predicts: it does not return the money. Four of six have used Mess Cell in some form.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.72\linewidth,height=\textheight,keepaspectratio,alt={R1: Mess Cell as a shifting-the-burden loop. Dashed links are inferences no respondent stated.}]{Assets/d10-loop-r1.png}
+\caption{R1: Mess Cell as a shifting-the-burden loop. Dashed links are inferences no respondent stated.}
+\end{figure}
+
+The informal resale market is a symptomatic relief valve. It makes the underlying problem, billing that does not track attendance, tolerable enough that nobody is forced to fix the cause. Every link is directly evidenced except the last, that relief reduces pressure to fix billing, which is an inference no respondent stated. Until it is evidenced, R1 is an open chain with a loop-shaped hypothesis.
+
+\textbf{B1: Kitchen waste control} (balancing; revised). The first reading was that because no respondent uses Skip Meal, the kitchen-side balancing loop might not close at all. Kitchen waste is balanced by the operator, not by Skip Meal, and each mess runs its own balancing loop with a different delay.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Yuktāhār} runs two balancing channels. The first sizes each item from registrations, the Wastage Book page for the matching day two weeks earlier, the weekday register and the month\textquotesingle s turnout, in a meeting held twice a day. Having seen 18.7\% breakfast attendance on Sunday 6 September, the site head said the quantity would be cut "not next month, next week" (confirmed). Its delay is two weeks and it acts on surplus as well as shortage. The second works within the meal: the first half hour projects the rest (single-sourced), and items are re-cooked or not by a written run-out-time rule (confirmed). Its delay is minutes and it acts upward only.
+\item
+  \textbf{Kadamba} cooks 70\% of registrations, veg and non-veg separately, by gram standard. The supervisor watches the counters and orders top-ups in ten to fifteen minutes (single-sourced). The delay is minutes, and nothing recorded shrinks the next first batch.
+\item
+  \textbf{Bakul} also runs two channels. The manager\textquotesingle s weekly review of attendance history sets 70 to 80\% by item and day, but on his account not below about 70\%, which he keeps even on low weekends under his rule that "there should not be a shortage of food, even if some wastage occurs" (single-sourced). Its delay is about a week and it acts on surplus only down to that floor. The second channel is the 30-minute check and phone top-up, upward only, with cooking plus a 20 to 40 minute drive in its delay and the lead time unstated.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.72\linewidth,height=\textheight,keepaspectratio,alt={B1: balancing channels in the kitchen. Skip Meal\textquotesingle s link to the kitchen is unresolved (dashed amber).}]{Assets/d11-loop-b1.png}
+\caption{B1: balancing channels in the kitchen. Skip Meal\textquotesingle s link to the kitchen is unresolved (dashed amber).}
+\end{figure}
+
+Kadamba\textquotesingle s loop closes against shortage only. It adds food when the counter runs low and has no route that shrinks the first batch when it proves too large. Yuktāhār\textquotesingle s first channel closes against surplus through the Wastage Book and weekday register, with a two-week delay. Bakul\textquotesingle s weekly review also closes against surplus, by one person\textquotesingle s judgement with no known record, and only down to its floor, so it sits between Kadamba\textquotesingle s fixed ratio and Yuktāhār\textquotesingle s books (revised from a first reading of Bakul as a fixed ratio). None of the three is calibrated to actual breakfast turnout. Kadamba\textquotesingle s ratio sits well above it, the Yuktāhār site head\textquotesingle s working figure for breakfast is about 50\% against about 28\% in his register, and at Bakul the first batch and weekend floor sit above even the highest turnout the manager expects, about 60\% (candidate; no Bakul records). Late in the window a Hafizpet top-up is unlikely to arrive before close, so Bakul\textquotesingle s only hedge against late arrivals is food already held, and its reserve of about 50 at 9:20 is several times the 10 to 15 late arrivals (candidate reading). Skip Meal\textquotesingle s zero student-side use is a separate fact.
+
+Whether Skip Meal reaches Kadamba\textquotesingle s kitchen at all is now an open conflict. The earlier finding was that Skip Meal declarations reach the kitchen for same-week preparation. The operator\textquotesingle s account is that the kitchen cooks for the number registered, "because it is a responsibility and they are getting paid for it" (single-sourced). The two fit together only if Skip Meal lowers the registration count the kitchen sees, which is unconfirmed.
+
+\textbf{B2: Capacity redistribution} (weak or broken). One respondent registers for the whole month specifically because "Kadamba is hard to get and it gets full," direct evidence of scarcity-driven demand concentration on the popular mess, not organic redistribution to Bakul or Palash.
+
+\textbf{Same meal, two failures} (open chain; revised). The first candidate was that preparation might be calibrated to the low attendance number, leaving real attendees under-served. That does not hold. At the aggregate, preparation runs well above turnout: Kadamba\textquotesingle s first batch is 70\% of registrations, about 750 portions a day in April, while 37.1\% of registrants ate, about 398 a day, so the first batch alone is roughly double what is eaten before any top-up (the 70\% is single-sourced and the doubling a candidate inference against the confirmed 37.1\%). Yuktāhār\textquotesingle s head believes about 50\% where his register averages about 28\%. What survives is that real attendees do meet run-outs, driven by timing, not volume. A quarter of Kadamba\textquotesingle s diners arrive in the last fifteen minutes, Yuktāhār cooks mostly in one batch, specific items draw longer queues, and the kitchen responds by re-cooking or serving latecomers at the back door. At Bakul the first batch exceeds turnout by design on the manager\textquotesingle s own numbers, and the gap is larger if Bakul resembles the two recorded halls (candidate).
+
+Kadamba\textquotesingle s operator puts waste at about 5 to 10\% a day, without saying whether per meal or per day, by weight, or plate waste or kitchen leftover (single-sourced). That sits in tension with a first batch about twice what is eaten. Either the surplus is absorbed before it is counted, by 30 to 50 outside diners, about half the staff, reheating into later service and smaller top-ups, or the percentage uses a different base. The tension is recorded, not resolved. Over-preparation in total and shortage at the crest both come from fixed-ratio batch cooking against a curve that crests at close. No evidence links run-outs back to how students register, and none links reheated food to students skipping, so this is an open chain, not a loop.
+
+\textbf{Recurring pattern: the weekly rhythm.} Turnout falls every Sunday at both messes with records (Kadamba 25 to 33\%, Yuktāhār 18 to 24\%) while registrations stay put. The system cycles weekly and registration does not cycle with it (confirmed). Bakul\textquotesingle s manager describes weekend breakfast as very low too, a third hall showing the pattern on his description alone, and he still keeps food for about 70\% of registrations on those days (single-sourced).
+
+\textbf{Recurring pattern: three kitchens, three forecasting regimes} (revised from two). Kadamba prepares a fixed ratio and reacts at the counter, with no record carrying one morning\textquotesingle s surplus into the next first batch. Yuktāhār learns from its books across a two-week cycle and projects within the meal from its first half hour. Facing the same automatic registration, they state opposite stances: Kadamba cooks for registrations because that is what it is paid for, and Yuktāhār names lower cost and higher profit as goals alongside quality (candidate reading of the difference). Both are exposed to the closing crest, Kadamba through top-ups under time pressure and Yuktāhār through a projection window that sees only about 15\% of a morning\textquotesingle s diners on the measured curve. Bakul sits between them: its manager adjusts the share cooked, by item and day, from weekly attendance history, a calibration by judgement with no known record and a floor of about 70\% (single-sourced). Its stance is a third, stated outright: a shortage is the failure to avoid and some waste its price. He also says payment is on plates served, in tension with Kadamba\textquotesingle s remark about being paid to cook for registrations. Contracts may differ, and the basis is flagged here, not resolved. Bakul\textquotesingle s manager describes an earlier rush rather than a closing crest, so its late exposure is carried by the held reserve, not by top-ups (candidate).
+
+\textbf{Recurring pattern: operator beliefs drift from operator records.} (Revised: Kadamba\textquotesingle s "300 to 400 by 8:30" came from a noisy recording and is superseded by his rule of about 100, 100 and 150 in the last ten minutes, which has the records\textquotesingle{} shape.) At Kadamba the belief about timing is close to the records, and the gap is in the level of turnout. Yuktāhār\textquotesingle s site head believes breakfast turnout is at most about 50\% beside his own register\textquotesingle s 18 to 40\%. The Bakul operator says Kadamba sees 90 to 95\% (single-sourced) against 37\% in Kadamba\textquotesingle s April records. Bakul\textquotesingle s manager estimates his own turnout at most about 60\% (single-sourced), and if Bakul resembles the two recorded halls at 28 to 37\%, that is an upper bound and a further instance of the pattern (candidate). The numbers are confirmed from records. The narrower pattern, that operators misjudge the level of breakfast turnout more than its timing, is a candidate.
+
+\section{Identify Unintended Consequences}\label{identify-unintended-consequences}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1647}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2706}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3647}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Rule or action
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Intended function
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Observed response
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Unintended consequence
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cancellation cap & Limit uncancelled no-shows & Students use cancellation inconsistently; one forgets. Registration is automatic, so the booking is a default (confirmed) & The cap constrains a behaviour some students do not reliably perform for reasons unrelated to the cap \\
+Walk-in markup & Discourage same-day uncertainty & Monthly advance registration, universal across all six respondents & Registration counts inflate independent of intent. Kadamba registrations stay flat at about 1,070 a day while turnout swings 27 to 42\% by weekday, and 62.9\% of April breakfast registrations were no-shows (confirmed) \\
+Skip Meal, no refund & Reduce kitchen waste & Zero real usage across six respondents & Kitchen waste is managed by the operators\textquotesingle{} own rules instead, so the student-side tool carries almost none of its intended load. Whether a declaration changes what Kadamba cooks is disputed \\
+Cancellation deadline four days ahead & Give the kitchen lead time & Kadamba buys dry goods a week ahead, some vegetables two to three days ahead and perishables the day before (single-sourced); registration becomes a standing booking (confirmed) & The lead protects dry goods bought a week ahead anyway, not the perishables bought the day before, and registration loses its value as a daily demand signal \\
+First batch set at a share of registrations (70\% at Kadamba; 70 to 80\% at Bakul, adjusted weekly, about 70\% on low weekends) & Avoid run-outs (at Bakul: no shortage, even if some wastage occurs) & Kadamba turnout is 27 to 42\% by weekday; Bakul\textquotesingle s manager estimates at most about 60\% (no records) & Cooked breakfast is prepared at roughly double what is eaten at Kadamba and above the manager\textquotesingle s own highest estimate at Bakul (both candidate); cooked surplus is unusable after three to four hours. Held and reheated surplus is a candidate route to quality complaints, and the link to skipping is not evidenced \\
+Bakul\textquotesingle s reserve for about 50 at 9:20 & Serve latecomers when a top-up could not arrive (candidate reading) & About 10 to 15 arrive in the last ten minutes (single-sourced) & A shortage-insurance premium paid in food, several times the late arrivals, and the food held longest (candidate; whether it rests on data and how much is left at close is unknown) \\
+Insulated hot-box transport from Hafizpet & Keep food at about 60 to 72 °C over 8 km & Temperature is kept; hot parathas steam and soften (single-sourced) & Food arrives hot but less pleasant, and the longer it is held the more texture it loses, so late diners at Bakul get the softest food (candidate; effect on turnout untested) \\
+Nominal 9:30 close & Bound the service window & About 9\% of scans come after 9:30; latecomers use the back door and the mess cannot refuse them (single-sourced) & The real close drifts to 9:35 to 9:45, enforced by nobody, and serving latecomers from top-ups keeps the late crest workable for students \\
+Kadamba waste to a dustbin and a garbage contractor; outside diners and staff eat from the same food & Hygienic disposal & About 30 extra portions for 30 to 50 outside diners such as night security, and about half the staff eat at the mess (single-sourced); the rest leaves in the bin & The cost of over-preparation is absorbed out of sight by diners who are uncounted, so cutting the first batch would take food from them unless planned for. There is no composting at Kadamba (revised from the first assumption that composting absorbs surplus); whether the contractor composts off site is unverified \\
+Per-item waste weighing at Yuktāhār & Reduce waste & Staff feared blame; managers made it blame-free and discussed it daily, and staff reported lower waste about four months later (single-sourced) & A positive side effect: staff took ownership of the numbers. The data never leaves the mess, so it informs cooking and never registration or billing \\
+Buying raw material from many local shops & Keep input cost down & Debris is expected, cleaned out in the store and checked against a grams-per-item norm (single-sourced) & Cleaning labour in the store, and supplier changes when the norm is exceeded \\
+Menu chosen by students or the committee & Give students a voice & Operators see per-item waste (uttapam, set dosa, upma) but have little say; daily dinner sambar was dropped at Kadamba; Bakul\textquotesingle s manager says students choose pairings he considers wrong, such as kachori without chole (single-sourced; untested with Bakul residents) & The people who hold per-item waste data and the people who decide the menu are different groups with a weak link between them \\
+\end{longtable}
+}
+
+\section{Key Findings}\label{key-findings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{No single trend exists across individuals.} Respondents move in different directions at once. At the aggregate, Kadamba breakfast turnout was stable at 35 to 39\% in every week of April, with a Sunday trough that recurs weekly. Any claim that the paradox is getting worse or better needs multi-month records, not recall.
+\item
+  \textbf{The within-morning crowd is measured, not inferred.} It opens with a burst at 7:30, runs flat until 9:00, then climbs steeply: 40\% of diners arrive in the last half hour, a quarter in the last fifteen minutes, and about 9\% after the nominal close, many by the back door. Kadamba\textquotesingle s rule of thumb has the same shape. The curve is Kadamba\textquotesingle s: Yuktāhār\textquotesingle s head describes the same closing rush, but Bakul\textquotesingle s manager describes a main rush at about 8:00 to 8:30 with a small late tail (single-sourced; no Bakul records), so arrival curves differ by hall.
+\item
+  \textbf{Skip Meal\textquotesingle s student-side use is zero, but kitchen waste is balanced anyway,} by operator rules with delays from minutes to two weeks. Yuktāhār runs a two-week lookup against its books, which acts on surplus as well as shortage, and a within-meal projection that acts upward only and sees about 15\% of a morning\textquotesingle s diners if its curve matches Kadamba\textquotesingle s (candidate). Kadamba acts within minutes against shortage only. Bakul adjusts weekly by judgement, acting on surplus only down to about 70\%, and tops up by phone upward only (single-sourced). None is calibrated to actual breakfast turnout.
+\item
+  \textbf{The same breakfast fails in two directions at once:} too much food in total (candidate, from the single-sourced first-batch ratio against the confirmed 37.1\%) and item-level run-outs at the closing crest. Both come from a fixed first batch meeting a curve that crests at close. Part of the surplus is eaten by 30 to 50 outside diners and about half the staff, and the operator\textquotesingle s 5 to 10\% waste figure has no stated base and sits in unresolved tension with a batch about twice what is eaten. The earlier candidate, that preparation is calibrated to the low attendance number and under-serves real diners, does not hold at the aggregate.
+\item
+  \textbf{Registration does not track the daily decision to eat.} Kadamba registrations are flat at about 1,070 a day every weekday, Sunday included, while turnout swings from 27 to 42\%. Sunday is the lowest and latest-arriving day at both messes with records, and Bakul\textquotesingle s manager describes weekend breakfast as very low (no records). Registration is automatic, with five early cancellations per meal type per month as the only way out.
+\item
+  \textbf{Breakfast is the structurally worst meal.} At Yuktāhār about 28\% of breakfast registrants eat against 56 to 89\% at lunch on the same days, and at Kadamba 62.9\% of April breakfast registrations were no-shows. The "about 30\%" gap students cited is a lunch-sized figure, and the breakfast gap is 63 to 72\%.
+\item
+  \textbf{Every recent change sits on the operator side,} apart from the temporary non-compulsory registration during the LPG shortage (whether it also covered holidays is disputed), and none has touched registration or billing. The one reported waste reduction (Yuktāhār, August to December, reported by staff themselves) came from a paper routine made blame-free and discussed daily over about four months, alongside team training at a project manager\textquotesingle s farmhouse. Software was tried and dropped because it cost more than the data it would add, and staff are not digitally inclined. The switch to rock salt and cold-pressed oil came about six months before the visit, later than the takeover.
+\item
+  \textbf{The two best-evidenced kitchens run opposite forecasting philosophies:} a fixed ratio plus reactive top-up at Kadamba, and learning from its own books plus a within-meal projection at Yuktāhār. Both are exposed to the closing crest, one through top-ups under time pressure, the other through a projection window that sees about a seventh of the morning\textquotesingle s diners on the measured curve (candidate transfer to Yuktāhār). Bakul sits between, with a weekly judgement bounded by a shortage floor, and an operator who states outright that shortage is worse than waste (single-sourced).
+\end{enumerate}
+
+\section{Outstanding Data Collection}\label{outstanding-data-collection}
+
+The new records, operator interviews and first-hand account answered several earlier items: the shape and timing of the crowd peak (measured for Kadamba); whether the gap sits near 30\% (not for breakfast: about 63\% at Kadamba, about 72\% at Yuktāhār); how stock and registration numbers become per-item quantities (answered for all three messes); whether any records-based time series exists (two now do); the wording of Kadamba\textquotesingle s 70\% batch (heard first-hand, still the operator\textquotesingle s own claim); the cancellation limit (five per meal type per month, at least four days ahead, confirmed); whether service after 9:30 is a formal extension (informal, by the back door); and which hall Vijayalakshmi Caterers serves (Bakul, single-sourced; whether Palash shares the kitchen remains a candidate). The earlier kilogram figures for Kadamba waste are withdrawn. Still open:
+
+\begin{itemize}
+\tightlist
+\item
+  Multi-month records: Kadamba breakfast from May onward, any lunch and dinner exports, and exports for Yuktāhār, Bakul and Palash, so semester-level and exam-period patterns can be tested. Yuktāhār\textquotesingle s site head expects exams to push attendance down, but no record covers an exam window.
+\item
+  A Bakul breakfast scan export, to test the manager\textquotesingle s 8:00 to 8:30 rush, at most 60\% turnout and very low weekends; whether anything in Bakul\textquotesingle s weekly adjustment is written down; the Hafizpet top-up lead time; and whether the reserve for about 50 at 9:20 rests on data or judgement and how much is left at close.
+\item
+  Records carrying student identity, to test individual trajectories such as the reported three-to-six-week decline, and the Yuktāhār Wastage Book archive from June 2026, which would give a per-item history of waste and run-out times.
+\item
+  The base of Kadamba\textquotesingle s 5 to 10\% waste figure and how it reconciles with a 70\% batch against 37\% turnout; whether a Skip Meal declaration lowers the count Kadamba cooks against; and whether the first-batch ratio differs between veg and non-veg.
+\item
+  Whether the non-compulsory registration relaxation ever applied over holidays and fests; whether the CDS head named in the team\textquotesingle s account and the CDS Chair named earlier are one person or two roles; and whether the back-door service after 9:30 is known to or sanctioned by CDS.
+\item
+  Kadamba\textquotesingle s internal staff headcount, to size "about half the staff eat at the mess", and whether outside diners are counted anywhere; and whether breakfast service formally opens at 7:00 or 7:30, given the live counter from 7:00 and about eleven scans a day before 7:30.
+\item
+  Whether Yuktāhār keeps any arrival timestamps, so its first-half-hour projection can be tested against its own closing crest, and what waste target its wastage board shows, which was not captured clearly.
+\item
+  Dates for the Prism tender, the Kadamba LPG response, the non-compulsory registration precedent, the Kadamba dinner-sambar removal, any change to a standing Bakul ratio, each paneer switch, the Yuktāhār takeover year, the salt and oil switch and the farm training trip.
+\item
+  Whether the Wednesday electricity rise at Yuktāhār holds over more weeks; why Kadamba non-veg registrations roughly doubled in the first week of April; whether Yuktāhār\textquotesingle s Sunday pattern (lunch registrations fall, breakfast do not) holds across more weeks; and why Monday is a strong breakfast day at Kadamba and a weak one at Yuktāhār.
+\item
+  Why the Yuktāhār production sheet and attendance register disagree for breakfast on 3 September (77 against 110), and whether Skip Meal use, even if rare in a larger sample, reduces item-level run-outs.
+\item
+  When Skip Meal was introduced and why, why the cancellation cap is five, and whether breakfast hours have ever differed from 7:30 to 9:30. These are governance questions for CDS, whose head or Chair has not been interviewed, along with the vendor contract terms.
+\end{itemize}
+
+Not yet claimed: that breakfast attendance is declining or rising across the student population over a semester; that any one student\textquotesingle s trajectory matches the aggregate; that the Kadamba April profile holds for other months or messes without records; that Skip Meal has no effect on kitchen behaviour, as opposed to near-zero observed student use (now also disputed from the kitchen side at Kadamba); and that reheated food at Kadamba causes students to skip.
+
+\end{document}

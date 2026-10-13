@@ -1,0 +1,2248 @@
+{
+ "toc": [
+  {
+   "key": "h:1",
+   "level": 1,
+   "num": "1",
+   "title": "Introduction",
+   "appendix": false
+  },
+  {
+   "key": "h:1.1",
+   "level": 2,
+   "num": "1.1",
+   "title": "Background and Motivation"
+  },
+  {
+   "key": "h:1.2",
+   "level": 2,
+   "num": "1.2",
+   "title": "Problem Statement"
+  },
+  {
+   "key": "h:1.3",
+   "level": 2,
+   "num": "1.3",
+   "title": "Aim and Objectives"
+  },
+  {
+   "key": "h:1.4",
+   "level": 2,
+   "num": "1.4",
+   "title": "Scope and Boundary"
+  },
+  {
+   "key": "h:1.5",
+   "level": 2,
+   "num": "1.5",
+   "title": "Team and Timeline"
+  },
+  {
+   "key": "h:1.6",
+   "level": 2,
+   "num": "1.6",
+   "title": "Structure of the Document"
+  },
+  {
+   "key": "h:2",
+   "level": 1,
+   "num": "2",
+   "title": "Project Framework and Approach",
+   "appendix": false
+  },
+  {
+   "key": "h:2.1",
+   "level": 2,
+   "num": "2.1",
+   "title": "The Course Assignment"
+  },
+  {
+   "key": "h:2.2",
+   "level": 2,
+   "num": "2.2",
+   "title": "The Course Framework"
+  },
+  {
+   "key": "h:2.3",
+   "level": 2,
+   "num": "2.3",
+   "title": "The Team and Its Roles"
+  },
+  {
+   "key": "h:2.4",
+   "level": 2,
+   "num": "2.4",
+   "title": "Project Plan and Timeline by Activity"
+  },
+  {
+   "key": "h:2.5",
+   "level": 2,
+   "num": "2.5",
+   "title": "The Working Method"
+  },
+  {
+   "key": "h:2.6",
+   "level": 2,
+   "num": "2.6",
+   "title": "Documentation Conventions"
+  },
+  {
+   "key": "h:2.7",
+   "level": 2,
+   "num": "2.7",
+   "title": "From One Phase to the Next"
+  },
+  {
+   "key": "h:3",
+   "level": 1,
+   "num": "3",
+   "title": "Literature Review and Conceptual Framework",
+   "appendix": false
+  },
+  {
+   "key": "h:3.1",
+   "level": 2,
+   "num": "3.1",
+   "title": "Systems, Structure and Mental Models"
+  },
+  {
+   "key": "h:3.2",
+   "level": 2,
+   "num": "3.2",
+   "title": "Feedback, Delay and Behaviour over Time"
+  },
+  {
+   "key": "h:3.3",
+   "level": 2,
+   "num": "3.3",
+   "title": "The Iceberg and Multi-Level Reading"
+  },
+  {
+   "key": "h:3.4",
+   "level": 2,
+   "num": "3.4",
+   "title": "System Archetypes and Traps"
+  },
+  {
+   "key": "h:3.5",
+   "level": 2,
+   "num": "3.5",
+   "title": "Stakeholders, Power and Leverage"
+  },
+  {
+   "key": "h:3.6",
+   "level": 2,
+   "num": "3.6",
+   "title": "Leverage Points and Depth"
+  },
+  {
+   "key": "h:3.7",
+   "level": 2,
+   "num": "3.7",
+   "title": "Process Tracing, Blueprints and System Maps"
+  },
+  {
+   "key": "h:3.8",
+   "level": 2,
+   "num": "3.8",
+   "title": "Reframing, Design Thinking and Design Principles"
+  },
+  {
+   "key": "h:3.9",
+   "level": 2,
+   "num": "3.9",
+   "title": "Testing Interventions without a Pilot"
+  },
+  {
+   "key": "h:3.10",
+   "level": 2,
+   "num": "3.10",
+   "title": "Interviews, Observation and Question Design"
+  },
+  {
+   "key": "h:3.11",
+   "level": 2,
+   "num": "3.11",
+   "title": "Key Gaps and the Project's Response"
+  },
+  {
+   "key": "h:4",
+   "level": 1,
+   "num": "4",
+   "title": "Research Methodology and Instruments",
+   "appendix": false
+  },
+  {
+   "key": "h:4.1",
+   "level": 2,
+   "num": "4.1",
+   "title": "Research Design"
+  },
+  {
+   "key": "h:4.2",
+   "level": 2,
+   "num": "4.2",
+   "title": "Research Objectives and Questions"
+  },
+  {
+   "key": "h:4.3",
+   "level": 2,
+   "num": "4.3",
+   "title": "Participants, Sampling and Access"
+  },
+  {
+   "key": "h:4.4",
+   "level": 2,
+   "num": "4.4",
+   "title": "Standards Applied to the Instruments"
+  },
+  {
+   "key": "h:4.5",
+   "level": 2,
+   "num": "4.5",
+   "title": "The Interview Instruments"
+  },
+  {
+   "key": "h:4.5.1",
+   "level": 3,
+   "num": "4.5.1",
+   "title": "First questionnaire: five roles"
+  },
+  {
+   "key": "h:4.5.2",
+   "level": 3,
+   "num": "4.5.2",
+   "title": "Guide 1: students"
+  },
+  {
+   "key": "h:4.5.3",
+   "level": 3,
+   "num": "4.5.3",
+   "title": "The short written list"
+  },
+  {
+   "key": "h:4.5.4",
+   "level": 3,
+   "num": "4.5.4",
+   "title": "Guide 2: mess staff and operators"
+  },
+  {
+   "key": "h:4.5.5",
+   "level": 3,
+   "num": "4.5.5",
+   "title": "Guide 3: governance"
+  },
+  {
+   "key": "h:4.5.6",
+   "level": 3,
+   "num": "4.5.6",
+   "title": "How the guides were developed"
+  },
+  {
+   "key": "h:4.5.7",
+   "level": 3,
+   "num": "4.5.7",
+   "title": "From hypotheses to questions"
+  },
+  {
+   "key": "h:4.6",
+   "level": 2,
+   "num": "4.6",
+   "title": "Conduct of Interviews and Fieldwork"
+  },
+  {
+   "key": "h:4.6.1",
+   "level": 3,
+   "num": "4.6.1",
+   "title": "Student interviews"
+  },
+  {
+   "key": "h:4.6.2",
+   "level": 3,
+   "num": "4.6.2",
+   "title": "Governance interview and kitchen walkthrough"
+  },
+  {
+   "key": "h:4.6.3",
+   "level": 3,
+   "num": "4.6.3",
+   "title": "Operator visits and recordings"
+  },
+  {
+   "key": "h:4.6.4",
+   "level": 3,
+   "num": "4.6.4",
+   "title": "Observation, photography and posters"
+  },
+  {
+   "key": "h:4.6.5",
+   "level": 3,
+   "num": "4.6.5",
+   "title": "Transcription, translation and reconciliation"
+  },
+  {
+   "key": "h:4.7",
+   "level": 2,
+   "num": "4.7",
+   "title": "Records and Data Extraction"
+  },
+  {
+   "key": "h:4.7.1",
+   "level": 3,
+   "num": "4.7.1",
+   "title": "The Kadamba export"
+  },
+  {
+   "key": "h:4.7.2",
+   "level": 3,
+   "num": "4.7.2",
+   "title": "The Yuktāhār registers"
+  },
+  {
+   "key": "h:4.7.3",
+   "level": 3,
+   "num": "4.7.3",
+   "title": "The portal screens"
+  },
+  {
+   "key": "h:4.8",
+   "level": 2,
+   "num": "4.8",
+   "title": "Analysis Methods"
+  },
+  {
+   "key": "h:4.9",
+   "level": 2,
+   "num": "4.9",
+   "title": "Evidence Labels and Source Precedence"
+  },
+  {
+   "key": "h:4.10",
+   "level": 2,
+   "num": "4.10",
+   "title": "Revision Protocol"
+  },
+  {
+   "key": "h:4.11",
+   "level": 2,
+   "num": "4.11",
+   "title": "Ethics and Data Handling"
+  },
+  {
+   "key": "h:4.12",
+   "level": 2,
+   "num": "4.12",
+   "title": "Limits of the Method"
+  },
+  {
+   "key": "h:5",
+   "level": 1,
+   "num": "5",
+   "title": "Phase 1: Understanding the System",
+   "appendix": false
+  },
+  {
+   "key": "h:5.1",
+   "level": 2,
+   "num": "5.1",
+   "title": "Activity 1: Understanding the System Context"
+  },
+  {
+   "key": "h:5.1.1",
+   "level": 3,
+   "num": "5.1.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:5.1.2",
+   "level": 3,
+   "num": "5.1.2",
+   "title": "System Boundary and Context"
+  },
+  {
+   "key": "h:5.1.3",
+   "level": 3,
+   "num": "5.1.3",
+   "title": "Purpose and Intended Outcomes"
+  },
+  {
+   "key": "h:5.1.4",
+   "level": 3,
+   "num": "5.1.4",
+   "title": "Visible Symptoms and Underlying Issues"
+  },
+  {
+   "key": "h:5.1.5",
+   "level": 3,
+   "num": "5.1.5",
+   "title": "Key Actors, Institutions, Processes, Resources and Constraints"
+  },
+  {
+   "key": "h:5.1.6",
+   "level": 3,
+   "num": "5.1.6",
+   "title": "Initial Problem Framing"
+  },
+  {
+   "key": "h:5.1.7",
+   "level": 3,
+   "num": "5.1.7",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:5.2",
+   "level": 2,
+   "num": "5.2",
+   "title": "Activity 2: Identifying and Mapping Stakeholders"
+  },
+  {
+   "key": "h:5.2.1",
+   "level": 3,
+   "num": "5.2.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:5.2.2",
+   "level": 3,
+   "num": "5.2.2",
+   "title": "Use Case"
+  },
+  {
+   "key": "h:5.2.3",
+   "level": 3,
+   "num": "5.2.3",
+   "title": "Stakeholders"
+  },
+  {
+   "key": "h:5.2.4",
+   "level": 3,
+   "num": "5.2.4",
+   "title": "Stakeholder Interests, Needs and Expectations"
+  },
+  {
+   "key": "h:5.2.5",
+   "level": 3,
+   "num": "5.2.5",
+   "title": "Formal and Informal Roles"
+  },
+  {
+   "key": "h:5.2.6",
+   "level": 3,
+   "num": "5.2.6",
+   "title": "Create the Map"
+  },
+  {
+   "key": "h:5.2.7",
+   "level": 3,
+   "num": "5.2.7",
+   "title": "Relationships, Dependencies and Conflicts"
+  },
+  {
+   "key": "h:5.2.8",
+   "level": 3,
+   "num": "5.2.8",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:5.3",
+   "level": 2,
+   "num": "5.3",
+   "title": "Activity 3: Analysing Power, Interests and Leverage"
+  },
+  {
+   "key": "h:5.3.1",
+   "level": 3,
+   "num": "5.3.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:5.3.2",
+   "level": 3,
+   "num": "5.3.2",
+   "title": "Decision-Making Authority"
+  },
+  {
+   "key": "h:5.3.3",
+   "level": 3,
+   "num": "5.3.3",
+   "title": "Formal and Informal Power"
+  },
+  {
+   "key": "h:5.3.4",
+   "level": 3,
+   "num": "5.3.4",
+   "title": "Incentives and Motivations"
+  },
+  {
+   "key": "h:5.3.5",
+   "level": 3,
+   "num": "5.3.5",
+   "title": "Who Can and Cannot Influence Decisions"
+  },
+  {
+   "key": "h:5.3.6",
+   "level": 3,
+   "num": "5.3.6",
+   "title": "Unequal Access to Resources or Opportunities"
+  },
+  {
+   "key": "h:5.3.7",
+   "level": 3,
+   "num": "5.3.7",
+   "title": "The Power-Interest and Leverage Maps"
+  },
+  {
+   "key": "h:5.3.8",
+   "level": 3,
+   "num": "5.3.8",
+   "title": "Implications for System Behaviour"
+  },
+  {
+   "key": "h:5.3.9",
+   "level": 3,
+   "num": "5.3.9",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:5.4",
+   "level": 2,
+   "num": "5.4",
+   "title": "Activity 4: Tracing the Existing Process"
+  },
+  {
+   "key": "h:5.4.1",
+   "level": 3,
+   "num": "5.4.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:5.4.2",
+   "level": 3,
+   "num": "5.4.2",
+   "title": "Interviews and Observations"
+  },
+  {
+   "key": "h:5.4.3",
+   "level": 3,
+   "num": "5.4.3",
+   "title": "Decisions and Interactions"
+  },
+  {
+   "key": "h:5.4.4",
+   "level": 3,
+   "num": "5.4.4",
+   "title": "Formal and Informal Rules"
+  },
+  {
+   "key": "h:5.4.5",
+   "level": 3,
+   "num": "5.4.5",
+   "title": "Negotiation and Escalation Mechanisms"
+  },
+  {
+   "key": "h:5.4.6",
+   "level": 3,
+   "num": "5.4.6",
+   "title": "Exceptions, Workarounds and Dependencies"
+  },
+  {
+   "key": "h:5.4.7",
+   "level": 3,
+   "num": "5.4.7",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:5.5",
+   "level": 2,
+   "num": "5.5",
+   "title": "Activity 5: Analysing System Behaviour over Time"
+  },
+  {
+   "key": "h:5.5.1",
+   "level": 3,
+   "num": "5.5.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:5.5.2",
+   "level": 3,
+   "num": "5.5.2",
+   "title": "Collect Historical Versions, Records or Observations"
+  },
+  {
+   "key": "h:5.5.3",
+   "level": 3,
+   "num": "5.5.3",
+   "title": "Develop Timelines"
+  },
+  {
+   "key": "h:5.5.4",
+   "level": 3,
+   "num": "5.5.4",
+   "title": "Identify Significant Changes and Their Triggers"
+  },
+  {
+   "key": "h:5.5.5",
+   "level": 3,
+   "num": "5.5.5",
+   "title": "Examine Feedback Loops and Recurring Patterns"
+  },
+  {
+   "key": "h:5.5.6",
+   "level": 3,
+   "num": "5.5.6",
+   "title": "Identify Unintended Consequences"
+  },
+  {
+   "key": "h:5.5.7",
+   "level": 3,
+   "num": "5.5.7",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:5.6",
+   "level": 2,
+   "num": "5.6",
+   "title": "Synthesis of Phase 1"
+  },
+  {
+   "key": "h:6",
+   "level": 1,
+   "num": "6",
+   "title": "Phase 2: Modelling the System",
+   "appendix": false
+  },
+  {
+   "key": "h:6.1",
+   "level": 2,
+   "num": "6.1",
+   "title": "Activity 6: Developing the System Map and Causal Loop Analysis"
+  },
+  {
+   "key": "h:6.1.1",
+   "level": 3,
+   "num": "6.1.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:6.1.2",
+   "level": 3,
+   "num": "6.1.2",
+   "title": "Actors, Process, Resources and Constraints"
+  },
+  {
+   "key": "h:6.1.3",
+   "level": 3,
+   "num": "6.1.3",
+   "title": "Waste, Environment and the Routes of Surplus"
+  },
+  {
+   "key": "h:6.1.4",
+   "level": 3,
+   "num": "6.1.4",
+   "title": "The Service Timeline and Blueprint"
+  },
+  {
+   "key": "h:6.1.5",
+   "level": 3,
+   "num": "6.1.5",
+   "title": "Conflicts and Dependencies"
+  },
+  {
+   "key": "h:6.1.6",
+   "level": 3,
+   "num": "6.1.6",
+   "title": "Formal and Informal Structure"
+  },
+  {
+   "key": "h:6.1.7",
+   "level": 3,
+   "num": "6.1.7",
+   "title": "The Class Schedule and Who Else Needs Breakfast"
+  },
+  {
+   "key": "h:6.1.8",
+   "level": 3,
+   "num": "6.1.8",
+   "title": "The System Already Solved This Once"
+  },
+  {
+   "key": "h:6.1.9",
+   "level": 3,
+   "num": "6.1.9",
+   "title": "Bottlenecks and What Actually Closes the Loop"
+  },
+  {
+   "key": "h:6.1.10",
+   "level": 3,
+   "num": "6.1.10",
+   "title": "Culture, Health and What Is Not a Problem"
+  },
+  {
+   "key": "h:6.1.11",
+   "level": 3,
+   "num": "6.1.11",
+   "title": "The Closure Test and the Loop Dashboard"
+  },
+  {
+   "key": "h:6.1.12",
+   "level": 3,
+   "num": "6.1.12",
+   "title": "Loops That Close"
+  },
+  {
+   "key": "h:6.1.13",
+   "level": 3,
+   "num": "6.1.13",
+   "title": "Candidate Loops"
+  },
+  {
+   "key": "h:6.1.14",
+   "level": 3,
+   "num": "6.1.14",
+   "title": "Chains That Do Not Close"
+  },
+  {
+   "key": "h:6.1.15",
+   "level": 3,
+   "num": "6.1.15",
+   "title": "Absent, Disconfirmed and Static Mechanisms"
+  },
+  {
+   "key": "h:6.1.16",
+   "level": 3,
+   "num": "6.1.16",
+   "title": "Unintended Consequences"
+  },
+  {
+   "key": "h:6.1.17",
+   "level": 3,
+   "num": "6.1.17",
+   "title": "Structural Causes and the Loop Picture"
+  },
+  {
+   "key": "h:6.1.18",
+   "level": 3,
+   "num": "6.1.18",
+   "title": "What This Means for the Reframe"
+  },
+  {
+   "key": "h:6.1.19",
+   "level": 3,
+   "num": "6.1.19",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:6.2",
+   "level": 2,
+   "num": "6.2",
+   "title": "Activity 7: Identifying Systemic Patterns and Root Causes"
+  },
+  {
+   "key": "h:6.2.1",
+   "level": 3,
+   "num": "6.2.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:6.2.2",
+   "level": 3,
+   "num": "6.2.2",
+   "title": "Reading the System through the Iceberg"
+  },
+  {
+   "key": "h:6.2.3",
+   "level": 3,
+   "num": "6.2.3",
+   "title": "Chain 1: Students Register and Do Not Show Up"
+  },
+  {
+   "key": "h:6.2.4",
+   "level": 3,
+   "num": "6.2.4",
+   "title": "Chain 2: Food Runs Out before the Mess Closes"
+  },
+  {
+   "key": "h:6.2.5",
+   "level": 3,
+   "num": "6.2.5",
+   "title": "Chain 3: Complaints Are Ignored until Something Forces a Response"
+  },
+  {
+   "key": "h:6.2.6",
+   "level": 3,
+   "num": "6.2.6",
+   "title": "Chain 4: A Working Fix Exists and Is Switched Off"
+  },
+  {
+   "key": "h:6.2.7",
+   "level": 3,
+   "num": "6.2.7",
+   "title": "Chain 5: A Real Fix, and the Shadow It Cast"
+  },
+  {
+   "key": "h:6.2.8",
+   "level": 3,
+   "num": "6.2.8",
+   "title": "Chain 6: A Meaningful Slice Is Not a Problem at All"
+  },
+  {
+   "key": "h:6.2.9",
+   "level": 3,
+   "num": "6.2.9",
+   "title": "Chain 7: The Kitchen Cooks to a Guess and Absorbs the Difference"
+  },
+  {
+   "key": "h:6.2.10",
+   "level": 3,
+   "num": "6.2.10",
+   "title": "Structural Causes and the Mechanism beneath Them"
+  },
+  {
+   "key": "h:6.2.11",
+   "level": 3,
+   "num": "6.2.11",
+   "title": "Feedback Loops Bearing on the Chains"
+  },
+  {
+   "key": "h:6.2.12",
+   "level": 3,
+   "num": "6.2.12",
+   "title": "System Archetypes"
+  },
+  {
+   "key": "h:6.2.13",
+   "level": 3,
+   "num": "6.2.13",
+   "title": "Unintended Consequences"
+  },
+  {
+   "key": "h:6.2.14",
+   "level": 3,
+   "num": "6.2.14",
+   "title": "Systemic Tensions"
+  },
+  {
+   "key": "h:6.2.15",
+   "level": 3,
+   "num": "6.2.15",
+   "title": "Power Asymmetries"
+  },
+  {
+   "key": "h:6.2.16",
+   "level": 3,
+   "num": "6.2.16",
+   "title": "Workarounds"
+  },
+  {
+   "key": "h:6.2.17",
+   "level": 3,
+   "num": "6.2.17",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:6.3",
+   "level": 2,
+   "num": "6.3",
+   "title": "Activity 8: Reframing the Problem"
+  },
+  {
+   "key": "h:6.3.1",
+   "level": 3,
+   "num": "6.3.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:6.3.2",
+   "level": 3,
+   "num": "6.3.2",
+   "title": "The Reframed Problem Statement"
+  },
+  {
+   "key": "h:6.3.3",
+   "level": 3,
+   "num": "6.3.3",
+   "title": "Challenging Initial Assumptions"
+  },
+  {
+   "key": "h:6.3.4",
+   "level": 3,
+   "num": "6.3.4",
+   "title": "Comparing Stakeholder Perspectives"
+  },
+  {
+   "key": "h:6.3.5",
+   "level": 3,
+   "num": "6.3.5",
+   "title": "Identifying Contradictions and Tensions"
+  },
+  {
+   "key": "h:6.3.6",
+   "level": 3,
+   "num": "6.3.6",
+   "title": "Reading the Paradox through the Iceberg"
+  },
+  {
+   "key": "h:6.3.7",
+   "level": 3,
+   "num": "6.3.7",
+   "title": "Why the System Holds Steady"
+  },
+  {
+   "key": "h:6.3.8",
+   "level": 3,
+   "num": "6.3.8",
+   "title": "Alternative Problem Framings"
+  },
+  {
+   "key": "h:6.3.9",
+   "level": 3,
+   "num": "6.3.9",
+   "title": "Validating the Reframing with Evidence"
+  },
+  {
+   "key": "h:6.3.10",
+   "level": 3,
+   "num": "6.3.10",
+   "title": "What Remained Missing"
+  },
+  {
+   "key": "h:6.3.11",
+   "level": 3,
+   "num": "6.3.11",
+   "title": "Design Opportunity: Where the Leverage Is and Is Not"
+  },
+  {
+   "key": "h:6.3.12",
+   "level": 3,
+   "num": "6.3.12",
+   "title": "The Design Opportunity Statement"
+  },
+  {
+   "key": "h:6.3.13",
+   "level": 3,
+   "num": "6.3.13",
+   "title": "Validating the Opportunity against Evidence"
+  },
+  {
+   "key": "h:6.3.14",
+   "level": 3,
+   "num": "6.3.14",
+   "title": "The Four Intervention Points"
+  },
+  {
+   "key": "h:6.3.15",
+   "level": 3,
+   "num": "6.3.15",
+   "title": "What Any Intervention Must Respect"
+  },
+  {
+   "key": "h:6.3.16",
+   "level": 3,
+   "num": "6.3.16",
+   "title": "How the Four Interact"
+  },
+  {
+   "key": "h:6.3.17",
+   "level": 3,
+   "num": "6.3.17",
+   "title": "The Questions That Gate the Design"
+  },
+  {
+   "key": "h:6.3.18",
+   "level": 3,
+   "num": "6.3.18",
+   "title": "What Phase 3 Inherits"
+  },
+  {
+   "key": "h:6.3.19",
+   "level": 3,
+   "num": "6.3.19",
+   "title": "Decisions, Trade-offs and Revisions"
+  },
+  {
+   "key": "h:7",
+   "level": 1,
+   "num": "7",
+   "title": "Phase 3: Identifying Leverage Points and Design Principles",
+   "appendix": false
+  },
+  {
+   "key": "h:7.1",
+   "level": 2,
+   "num": "7.1",
+   "title": "Activity 9: Defining Design Principles and Intervention Opportunities"
+  },
+  {
+   "key": "h:7.1.1",
+   "level": 3,
+   "num": "7.1.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:7.1.2",
+   "level": 3,
+   "num": "7.1.2",
+   "title": "Identifying Leverage Points"
+  },
+  {
+   "key": "h:7.1.3",
+   "level": 3,
+   "num": "7.1.3",
+   "title": "Exploring Changes to Rules, Roles, Incentives, Information Flows and Processes"
+  },
+  {
+   "key": "h:7.1.4",
+   "level": 3,
+   "num": "7.1.4",
+   "title": "Developing Design Principles"
+  },
+  {
+   "key": "h:7.1.5",
+   "level": 3,
+   "num": "7.1.5",
+   "title": "Identifying Potential Intervention Points"
+  },
+  {
+   "key": "h:7.1.6",
+   "level": 3,
+   "num": "7.1.6",
+   "title": "Deliverable 1: The Leverage-Point and System Intervention Map"
+  },
+  {
+   "key": "h:8",
+   "level": 1,
+   "num": "8",
+   "title": "Phase 4: Designing, Testing and Evaluating Interventions",
+   "appendix": false
+  },
+  {
+   "key": "h:8.1",
+   "level": 2,
+   "num": "8.1",
+   "title": "Activity 10: Designing, Testing and Evaluating Interventions"
+  },
+  {
+   "key": "h:8.1.1",
+   "level": 3,
+   "num": "8.1.1",
+   "title": "Purpose, Approach and Timeline"
+  },
+  {
+   "key": "h:8.1.2",
+   "level": 3,
+   "num": "8.1.2",
+   "title": "Generating Alternative Interventions"
+  },
+  {
+   "key": "h:8.1.3",
+   "level": 3,
+   "num": "8.1.3",
+   "title": "Developing Scenarios and Prototypes"
+  },
+  {
+   "key": "h:8.1.4",
+   "level": 3,
+   "num": "8.1.4",
+   "title": "Simulating Stakeholder Responses"
+  },
+  {
+   "key": "h:8.1.5",
+   "level": 3,
+   "num": "8.1.5",
+   "title": "Testing Interventions against System Objectives"
+  },
+  {
+   "key": "h:8.1.6",
+   "level": 3,
+   "num": "8.1.6",
+   "title": "Identifying Unintended Consequences"
+  },
+  {
+   "key": "h:8.1.7",
+   "level": 3,
+   "num": "8.1.7",
+   "title": "Refining the Intervention"
+  },
+  {
+   "key": "h:8.1.8",
+   "level": 3,
+   "num": "8.1.8",
+   "title": "Deliverable 5: The Final System Design Recommendation"
+  },
+  {
+   "key": "h:8.1.9",
+   "level": 3,
+   "num": "8.1.9",
+   "title": "Outstanding Evidence"
+  },
+  {
+   "key": "h:9",
+   "level": 1,
+   "num": "9",
+   "title": "Synthesis of Findings",
+   "appendix": false
+  },
+  {
+   "key": "h:9.1",
+   "level": 2,
+   "num": "9.1",
+   "title": "Findings by Objective"
+  },
+  {
+   "key": "h:9.2",
+   "level": 2,
+   "num": "9.2",
+   "title": "How the Beliefs Changed"
+  },
+  {
+   "key": "h:9.3",
+   "level": 2,
+   "num": "9.3",
+   "title": "Decisions across the Project"
+  },
+  {
+   "key": "h:10",
+   "level": 1,
+   "num": "10",
+   "title": "Discussion",
+   "appendix": false
+  },
+  {
+   "key": "h:10.1",
+   "level": 2,
+   "num": "10.1",
+   "title": "Interpretation of the Main Findings"
+  },
+  {
+   "key": "h:10.2",
+   "level": 2,
+   "num": "10.2",
+   "title": "Key Design Decisions and Trade-offs"
+  },
+  {
+   "key": "h:10.3",
+   "level": 2,
+   "num": "10.3",
+   "title": "Implications for the Institution"
+  },
+  {
+   "key": "h:10.4",
+   "level": 2,
+   "num": "10.4",
+   "title": "Reflection on the Process"
+  },
+  {
+   "key": "h:11",
+   "level": 1,
+   "num": "11",
+   "title": "Limitations and Ethical Considerations",
+   "appendix": false
+  },
+  {
+   "key": "h:11.1",
+   "level": 2,
+   "num": "11.1",
+   "title": "Limitations of the Evidence"
+  },
+  {
+   "key": "h:11.2",
+   "level": 2,
+   "num": "11.2",
+   "title": "Limitations of the Method"
+  },
+  {
+   "key": "h:11.3",
+   "level": 2,
+   "num": "11.3",
+   "title": "Open Questions"
+  },
+  {
+   "key": "h:11.4",
+   "level": 2,
+   "num": "11.4",
+   "title": "Ethical Considerations"
+  },
+  {
+   "key": "h:12",
+   "level": 1,
+   "num": "12",
+   "title": "Conclusion and Future Work",
+   "appendix": false
+  },
+  {
+   "key": "h:12.1",
+   "level": 2,
+   "num": "12.1",
+   "title": "Conclusion"
+  },
+  {
+   "key": "h:12.2",
+   "level": 2,
+   "num": "12.2",
+   "title": "Future Work"
+  },
+  {
+   "key": "h:References",
+   "level": 1,
+   "num": "",
+   "title": "References",
+   "appendix": false,
+   "unnum": true
+  },
+  {
+   "key": "h:Appendix A",
+   "level": 1,
+   "num": "Appendix A",
+   "title": "Glossary and Code Keys",
+   "appendix": true
+  },
+  {
+   "key": "h:A.1",
+   "level": 2,
+   "num": "A.1",
+   "title": "Glossary"
+  },
+  {
+   "key": "h:A.2",
+   "level": 2,
+   "num": "A.2",
+   "title": "Code Keys"
+  },
+  {
+   "key": "h:Appendix B",
+   "level": 1,
+   "num": "Appendix B",
+   "title": "Decision Register",
+   "appendix": true
+  },
+  {
+   "key": "h:B.1",
+   "level": 2,
+   "num": "B.1",
+   "title": "Scope, method and evidence discipline, 3 to 6 September 2026 (Phase 1)"
+  },
+  {
+   "key": "h:B.2",
+   "level": 2,
+   "num": "B.2",
+   "title": "Modelling and reframing, 12 to 14 September 2026 (Phase 2)"
+  },
+  {
+   "key": "h:B.3",
+   "level": 2,
+   "num": "B.3",
+   "title": "Field evidence and the revision passes, 26 to 28 September 2026"
+  },
+  {
+   "key": "h:B.4",
+   "level": 2,
+   "num": "B.4",
+   "title": "Design decisions, 27 to 28 September 2026 (Phases 3 and 4)"
+  },
+  {
+   "key": "h:B.5",
+   "level": 2,
+   "num": "B.5",
+   "title": "The Bakul evidence and the close, 28 September to October 2026"
+  },
+  {
+   "key": "h:Appendix C",
+   "level": 1,
+   "num": "Appendix C",
+   "title": "Register of Deliverables",
+   "appendix": true
+  },
+  {
+   "key": "h:Appendix D",
+   "level": 1,
+   "num": "Appendix D",
+   "title": "Open Questions and Outstanding Evidence",
+   "appendix": true
+  },
+  {
+   "key": "h:Appendix E",
+   "level": 1,
+   "num": "Appendix E",
+   "title": "Corrections to the First Submissions",
+   "appendix": true
+  },
+  {
+   "key": "h:E.1",
+   "level": 2,
+   "num": "E.1",
+   "title": "Phase 1"
+  },
+  {
+   "key": "h:E.2",
+   "level": 2,
+   "num": "E.2",
+   "title": "Phase 2"
+  },
+  {
+   "key": "h:E.3",
+   "level": 2,
+   "num": "E.3",
+   "title": "Phases 3 and 4"
+  }
+ ],
+ "lof": [
+  {
+   "key": "f:1.1",
+   "num": "1.1",
+   "title": "Project timeline, September to October 2026."
+  },
+  {
+   "key": "f:4.1",
+   "num": "4.1",
+   "title": "Two of the portal screens used as evidence: the registration dialog with the capacities by hall (left) and its rates tab (right), for breakfast on 9 September 2026."
+  },
+  {
+   "key": "f:5.1",
+   "num": "5.1",
+   "title": "System boundary: three layers inside, boundary actors on the ring, class schedule and alternatives outside."
+  },
+  {
+   "key": "f:5.2",
+   "num": "5.2",
+   "title": "Context map: who administers, cooks, eats and absorbs surplus around the registration count."
+  },
+  {
+   "key": "f:5.3",
+   "num": "5.3",
+   "title": "What the dining halls post: the main overview poster, the student handbook, the food-card guide and the food-safety certificate."
+  },
+  {
+   "key": "f:5.4",
+   "num": "5.4",
+   "title": "Yuktāhār's kitchen on the day of the visit: the registers laid out, the cold room, and staff sorting vegetables at the weighing station."
+  },
+  {
+   "key": "f:5.5",
+   "num": "5.5",
+   "title": "Staff at Yuktāhār's weighing station and the vegetable store, the people behind the books."
+  },
+  {
+   "key": "f:5.6",
+   "num": "5.6",
+   "title": "Stakeholder map in four rings: customer, internal, external and public."
+  },
+  {
+   "key": "f:5.7",
+   "num": "5.7",
+   "title": "Relationship network: five clusters, with the flows of authority, money, food, information and complaints."
+  },
+  {
+   "key": "f:5.8",
+   "num": "5.8",
+   "title": "Proximity map: how close each stakeholder is to a student's actual morning."
+  },
+  {
+   "key": "f:5.9",
+   "num": "5.9",
+   "title": "Kadamba's command chain, with the facility team's side channel and Yuktāhār's flat contrast."
+  },
+  {
+   "key": "f:5.10",
+   "num": "5.10",
+   "title": "The operator's register: Yuktāhār's September attendance book, lunch on the right and the edge of the breakfast page on the left."
+  },
+  {
+   "key": "f:5.11",
+   "num": "5.11",
+   "title": "Power against interest. Placement is ordinal."
+  },
+  {
+   "key": "f:5.12",
+   "num": "5.12",
+   "title": "Power against leverage. Placement is ordinal."
+  },
+  {
+   "key": "f:5.13",
+   "num": "5.13",
+   "title": "Power and information flow: where channels exist and where they stop."
+  },
+  {
+   "key": "f:5.14",
+   "num": "5.14",
+   "title": "The monthly registration cycle, from the automatic default to the bill."
+  },
+  {
+   "key": "f:5.15",
+   "num": "5.15",
+   "title": "The daily attendance-decision cycle on the student side."
+  },
+  {
+   "key": "f:5.16",
+   "num": "5.16",
+   "title": "Bakul's breakfast loop from the weekly review to the late reserve."
+  },
+  {
+   "key": "f:5.17",
+   "num": "5.17",
+   "title": "Yuktāhār's production and waste sheets for breakfast (a Saturday in June, a Thursday in September): raw issued, cooked, left, run-out time, re-cook and plate waste."
+  },
+  {
+   "key": "f:5.18",
+   "num": "5.18",
+   "title": "The issue and stock books: Grocery Book page 1, the vegetable indent, and two stock register pages."
+  },
+  {
+   "key": "f:5.19",
+   "num": "5.19",
+   "title": "The daily logs: vegetable stock, the milk and curd register, the fruit and gas register, and the Fridge 3 temperature record."
+  },
+  {
+   "key": "f:5.20",
+   "num": "5.20",
+   "title": "Yuktāhār's operator swimlane: from the daily meeting to the Wastage Book and back, with the two-week delay marked."
+  },
+  {
+   "key": "f:5.21",
+   "num": "5.21",
+   "title": "Kadamba's operator swimlane: from registrations to the 9:30 close, the outside diners and the bin."
+  },
+  {
+   "key": "f:5.22",
+   "num": "5.22",
+   "title": "The Kadamba food-safety sequence before 7:30."
+  },
+  {
+   "key": "f:5.23",
+   "num": "5.23",
+   "title": "Exception and workaround paths, student side and operator side."
+  },
+  {
+   "key": "f:5.24",
+   "num": "5.24",
+   "title": "Yuktāhār attendance register, September: breakfast above, lunch below."
+  },
+  {
+   "key": "f:5.25",
+   "num": "5.25",
+   "title": "The mornings of the three kitchens side by side; Bakul rows are the manager's account, with no records."
+  },
+  {
+   "key": "f:5.26",
+   "num": "5.26",
+   "title": "Measured arrival curve, Kadamba breakfast, April 2026, with per-minute detail from 9:00 to 9:45."
+  },
+  {
+   "key": "f:5.27",
+   "num": "5.27",
+   "title": "Kadamba, April 2026: registered and scanned breakfasts each day."
+  },
+  {
+   "key": "f:5.28",
+   "num": "5.28",
+   "title": "Share of Kadamba registrations eaten, by weekday."
+  },
+  {
+   "key": "f:5.29",
+   "num": "5.29",
+   "title": "Yuktāhār, 1 to 20 September 2026: breakfast against lunch attendance; the dashed line is the site head's belief about breakfast."
+  },
+  {
+   "key": "f:5.30",
+   "num": "5.30",
+   "title": "When each decision is fixed, from the month before the meal to the 72-hour sample."
+  },
+  {
+   "key": "f:5.31",
+   "num": "5.31",
+   "title": "Provisional system timeline: governance history above, operator history below."
+  },
+  {
+   "key": "f:5.32",
+   "num": "5.32",
+   "title": "R1: Mess Cell as a shifting-the-burden loop; dashed links are unstated inferences."
+  },
+  {
+   "key": "f:5.33",
+   "num": "5.33",
+   "title": "B1: balancing channels in the kitchen; the Skip Meal link is unresolved (dashed amber)."
+  },
+  {
+   "key": "f:6.1",
+   "num": "6.1",
+   "title": "The system at a glance: who decides, how a breakfast happens, what it runs on, and what holds it in place."
+  },
+  {
+   "key": "f:6.2",
+   "num": "6.2",
+   "title": "First batch against turnout at each hall. Only Kadamba's turnout and Yuktāhār's register are records."
+  },
+  {
+   "key": "f:6.3",
+   "num": "6.3",
+   "title": "How Yuktāhār's books feed each other, and where the chain stops."
+  },
+  {
+   "key": "f:6.4",
+   "num": "6.4",
+   "title": "Service blueprint: what the student sees above the line, what the kitchen does below it, and the one signal that crosses it."
+  },
+  {
+   "key": "f:6.5",
+   "num": "6.5",
+   "title": "CDS, CFS and the vendors: the complaint route that works for incidents, the escalation route that produced the menu rotation, and the rule-change route that does not exist."
+  },
+  {
+   "key": "f:6.6",
+   "num": "6.6",
+   "title": "The bottleneck chain from the booking to the same-morning shortage and surplus, with what keeps each link in place."
+  },
+  {
+   "key": "f:6.7",
+   "num": "6.7",
+   "title": "The eighteen mechanisms by status."
+  },
+  {
+   "key": "f:6.8",
+   "num": "6.8",
+   "title": "L11: Yuktāhār's Wastage Book loop, its two delays, and the preconditions that keep the record honest."
+  },
+  {
+   "key": "f:6.9",
+   "num": "6.9",
+   "title": "L12: top-up at three halls, and the delay that decides how well each works."
+  },
+  {
+   "key": "f:6.10",
+   "num": "6.10",
+   "title": "L4: the menu-rotation loop, closed end to end by a loud complaint with a route."
+  },
+  {
+   "key": "f:6.11",
+   "num": "6.11",
+   "title": "L17: kitchen competence relieves the symptom each morning, so the fundamental fix never gets pressure."
+  },
+  {
+   "key": "f:6.12",
+   "num": "6.12",
+   "title": "L13: the core chain. A flat booking meets a fixed ratio; the quality branch is dashed because its closing link is not evidenced."
+  },
+  {
+   "key": "f:6.13",
+   "num": "6.13",
+   "title": "L14: shortage is loud and surplus is silent, so the ratio can ratchet upward. The dashed link is a candidate."
+  },
+  {
+   "key": "f:6.14",
+   "num": "6.14",
+   "title": "L2: Skip Meal. The student link is confirmed and near zero; the kitchen link is in open conflict."
+  },
+  {
+   "key": "f:6.15",
+   "num": "6.15",
+   "title": "The seven chains at a glance: a visible event in each chain traced down to the belief that holds it in place."
+  },
+  {
+   "key": "f:6.16",
+   "num": "6.16",
+   "title": "The same breakfast under the standing default and under the relaxed shock model."
+  },
+  {
+   "key": "f:6.17",
+   "num": "6.17",
+   "title": "Three structural causes, the two conditions that keep them unaddressed, and the conversion ratio beneath them."
+  },
+  {
+   "key": "f:6.18",
+   "num": "6.18",
+   "title": "The three regimes that turn a registration into a first batch."
+  },
+  {
+   "key": "f:6.19",
+   "num": "6.19",
+   "title": "Two archetypes at work: shifting the burden, and fixes that fail."
+  },
+  {
+   "key": "f:6.20",
+   "num": "6.20",
+   "title": "Eleven tensions: each pull is reasonable, and both operate at once."
+  },
+  {
+   "key": "f:6.21",
+   "num": "6.21",
+   "title": "Where the system leaves a gap and what people have built to absorb it."
+  },
+  {
+   "key": "f:6.22",
+   "num": "6.22",
+   "title": "What each stakeholder experiences and what stays invisible to them."
+  },
+  {
+   "key": "f:6.23",
+   "num": "6.23",
+   "title": "Ten tensions in which each pair is rational on both sides."
+  },
+  {
+   "key": "f:6.24",
+   "num": "6.24",
+   "title": "The paradox read at four depths."
+  },
+  {
+   "key": "f:6.25",
+   "num": "6.25",
+   "title": "Why the gap holds steady: three forces create it, eight absorbers take up its cost, and only a loud signal reaches the rule setters."
+  },
+  {
+   "key": "f:6.26",
+   "num": "6.26",
+   "title": "Six alternative framings against four tests; only the reframing passes all four."
+  },
+  {
+   "key": "f:6.27",
+   "num": "6.27",
+   "title": "Assumptions tested against evidence: what held, what changed and what is open."
+  },
+  {
+   "key": "f:6.28",
+   "num": "6.28",
+   "title": "Where intervening pays: five layers of the iceberg read against what the evidence shows."
+  },
+  {
+   "key": "f:6.29",
+   "num": "6.29",
+   "title": "The four intervention points on the chain from booking to bin."
+  },
+  {
+   "key": "f:6.30",
+   "num": "6.30",
+   "title": "Guardrails: what to keep, what to target and what to leave alone."
+  },
+  {
+   "key": "f:6.31",
+   "num": "6.31",
+   "title": "How the four intervention points fit together: cheap and enabling first, deep and gated last."
+  },
+  {
+   "key": "f:6.32",
+   "num": "6.32",
+   "title": "The two gating questions and what each answer would change."
+  },
+  {
+   "key": "f:7.1",
+   "num": "7.1",
+   "title": "The twelve places to intervene, and where each lever sits. Held levers are ringed with a dashed line."
+  },
+  {
+   "key": "f:7.2",
+   "num": "7.2",
+   "title": "Shifting the burden: the structure that orders the levers."
+  },
+  {
+   "key": "f:7.3",
+   "num": "7.3",
+   "title": "The three halls side by side: scale, menu lines, firm and layers, records, planning rule and measured gap."
+  },
+  {
+   "key": "f:7.4",
+   "num": "7.4",
+   "title": "The seven principles, with what each rules out."
+  },
+  {
+   "key": "f:7.5",
+   "num": "7.5",
+   "title": "Fourteen intervention points along one breakfast, with the levers that act at each."
+  },
+  {
+   "key": "f:7.6",
+   "num": "7.6",
+   "title": "Where the three levers meet on a Sunday."
+  },
+  {
+   "key": "f:7.7",
+   "num": "7.7",
+   "title": "Leverage-point and intervention map for the breakfast mess system."
+  },
+  {
+   "key": "f:8.1",
+   "num": "8.1",
+   "title": "The eight concepts mapped to the twelve leverage points. G, the foil, pulls on none."
+  },
+  {
+   "key": "f:8.2",
+   "num": "8.2",
+   "title": "The re-sequenced bundle across one breakfast: quick fix and fundamental fix on separate lanes."
+  },
+  {
+   "key": "f:8.3",
+   "num": "8.3",
+   "title": "Prototypes B and C on one morning: the plan card, the 9:00 rule, and portions cooked against portions eaten."
+  },
+  {
+   "key": "f:8.4",
+   "num": "8.4",
+   "title": "Kitchen rules backtested on 23 April days, portions a day, both lines."
+  },
+  {
+   "key": "f:8.5",
+   "num": "8.5",
+   "title": "Kadamba veg line, Sunday 19 April 2026: recorded diners against the baseline batch and the refined first and late batches."
+  },
+  {
+   "key": "f:8.6",
+   "num": "8.6",
+   "title": "The refined kitchen design under assumed shocks on the 23 backtest days, beside the baseline surplus."
+  },
+  {
+   "key": "f:8.7",
+   "num": "8.7",
+   "title": "Simulated responses of twelve stakeholders to four concepts."
+  },
+  {
+   "key": "f:8.8",
+   "num": "8.8",
+   "title": "Concepts scored against the gates and the nine weighted criteria. Scores are percentages of 400."
+  },
+  {
+   "key": "f:8.9",
+   "num": "8.9",
+   "title": "The hedge ratchet: one loud shortage restores the cut batch, and what holds it down."
+  },
+  {
+   "key": "f:8.10",
+   "num": "8.10",
+   "title": "The recommended sequence, with decision points and handover."
+  },
+  {
+   "key": "f:8.11",
+   "num": "8.11",
+   "title": "From root cause to bundle change to expected response (projected or candidate)."
+  },
+  {
+   "key": "f:8.12",
+   "num": "8.12",
+   "title": "How Kadamba breakfast might respond over time under the bundle, against the baseline."
+  }
+ ],
+ "lot": [
+  {
+   "key": "t:2.1",
+   "num": "2.1",
+   "title": "Timeline of the ten activities, with the evidence available and the revision passes."
+  },
+  {
+   "key": "t:3.1",
+   "num": "3.1",
+   "title": "Concepts and methods used in the project, their origin and where they are applied."
+  },
+  {
+   "key": "t:3.2",
+   "num": "3.2",
+   "title": "Archetypes and traps examined, and the project's reading of them."
+  },
+  {
+   "key": "t:3.3",
+   "num": "3.3",
+   "title": "Gaps in the available literature and the project's response."
+  },
+  {
+   "key": "t:4.1",
+   "num": "4.1",
+   "title": "Research objectives, questions and the activities that answer them."
+  },
+  {
+   "key": "t:4.2",
+   "num": "4.2",
+   "title": "Sources of evidence, in order of arrival."
+  },
+  {
+   "key": "t:4.3",
+   "num": "4.3",
+   "title": "The first questionnaire, by role."
+  },
+  {
+   "key": "t:4.4",
+   "num": "4.4",
+   "title": "Guide 1, students (about 30 minutes)."
+  },
+  {
+   "key": "t:4.5",
+   "num": "4.5",
+   "title": "Guide 2, mess staff and operators (20 to 25 minutes)."
+  },
+  {
+   "key": "t:4.6",
+   "num": "4.6",
+   "title": "Guide 3, governance."
+  },
+  {
+   "key": "t:4.7",
+   "num": "4.7",
+   "title": "Versions of the interview guides."
+  },
+  {
+   "key": "t:4.8",
+   "num": "4.8",
+   "title": "Working hypotheses and the instruments that tested them."
+  },
+  {
+   "key": "t:4.9",
+   "num": "4.9",
+   "title": "Audio recorded on the operator visits."
+  },
+  {
+   "key": "t:4.10",
+   "num": "4.10",
+   "title": "Evidence labels and what each requires."
+  },
+  {
+   "key": "t:4.11",
+   "num": "4.11",
+   "title": "Passes of work and what triggered each."
+  },
+  {
+   "key": "t:5.1",
+   "num": "5.1",
+   "title": "Key activities of Activity 1, the method used for each and where each is reported."
+  },
+  {
+   "key": "t:5.2",
+   "num": "5.2",
+   "title": "The four halls, their kitchens and the portal's breakfast capacities on one September day."
+  },
+  {
+   "key": "t:5.3",
+   "num": "5.3",
+   "title": "Intended outcomes of the breakfast system and their status against the evidence."
+  },
+  {
+   "key": "t:5.4",
+   "num": "5.4",
+   "title": "Visible symptoms of the breakfast system and the underlying issue behind each."
+  },
+  {
+   "key": "t:5.5",
+   "num": "5.5",
+   "title": "Actors of the breakfast system."
+  },
+  {
+   "key": "t:5.6",
+   "num": "5.6",
+   "title": "Processes of the breakfast system as inventoried in the context brief."
+  },
+  {
+   "key": "t:5.7",
+   "num": "5.7",
+   "title": "Constraints on the breakfast system."
+  },
+  {
+   "key": "t:5.8",
+   "num": "5.8",
+   "title": "Key activities of Activity 2, the method used for each and where each is reported."
+  },
+  {
+   "key": "t:5.9",
+   "num": "5.9",
+   "title": "Register of the twenty-four stakeholders, by tier."
+  },
+  {
+   "key": "t:5.10",
+   "num": "5.10",
+   "title": "Interests, needs and expectations of the stakeholders."
+  },
+  {
+   "key": "t:5.11",
+   "num": "5.11",
+   "title": "Relationships between the main stakeholder groups (filled cells of the matrix)."
+  },
+  {
+   "key": "t:5.12",
+   "num": "5.12",
+   "title": "Conflicts between stakeholders."
+  },
+  {
+   "key": "t:5.13",
+   "num": "5.13",
+   "title": "Key activities of Activity 3, the method used for each and where it is reported."
+  },
+  {
+   "key": "t:5.14",
+   "num": "5.14",
+   "title": "Authority by domain."
+  },
+  {
+   "key": "t:5.15",
+   "num": "5.15",
+   "title": "Stated interest, reward and observed behaviour by stakeholder."
+  },
+  {
+   "key": "t:5.16",
+   "num": "5.16",
+   "title": "Missing voices and missing relationships."
+  },
+  {
+   "key": "t:5.17",
+   "num": "5.17",
+   "title": "Control of resources and the advantage it creates."
+  },
+  {
+   "key": "t:5.18",
+   "num": "5.18",
+   "title": "Key activities of Activity 4, the method used and where each is reported."
+  },
+  {
+   "key": "t:5.19",
+   "num": "5.19",
+   "title": "Sources of the process trace."
+  },
+  {
+   "key": "t:5.20",
+   "num": "5.20",
+   "title": "Student decision points."
+  },
+  {
+   "key": "t:5.21",
+   "num": "5.21",
+   "title": "The three kitchen regimes in operation."
+  },
+  {
+   "key": "t:5.22",
+   "num": "5.22",
+   "title": "The books of Yuktāhār and the decisions they feed."
+  },
+  {
+   "key": "t:5.23",
+   "num": "5.23",
+   "title": "The operator side of the breakfast day."
+  },
+  {
+   "key": "t:5.24",
+   "num": "5.24",
+   "title": "Rules on the operator side."
+  },
+  {
+   "key": "t:5.25",
+   "num": "5.25",
+   "title": "Divergence between formal design and actual behaviour."
+  },
+  {
+   "key": "t:5.26",
+   "num": "5.26",
+   "title": "Escalation and complaint routes."
+  },
+  {
+   "key": "t:5.27",
+   "num": "5.27",
+   "title": "Key activities of Activity 5, the methods used and where each is reported."
+  },
+  {
+   "key": "t:5.28",
+   "num": "5.28",
+   "title": "The six student respondents and their breakfast behaviour."
+  },
+  {
+   "key": "t:5.29",
+   "num": "5.29",
+   "title": "Records and operator sources used in this activity."
+  },
+  {
+   "key": "t:5.30",
+   "num": "5.30",
+   "title": "Clock times of the two on-site kitchens."
+  },
+  {
+   "key": "t:5.31",
+   "num": "5.31",
+   "title": "Arrival of Kadamba diners by fifteen-minute slot, April 2026 (confirmed)."
+  },
+  {
+   "key": "t:5.32",
+   "num": "5.32",
+   "title": "Kadamba breakfast by weekday, April 2026 (confirmed). The shares are charted in [[fig:a5-weekday-chart]]."
+  },
+  {
+   "key": "t:5.33",
+   "num": "5.33",
+   "title": "Yuktāhār attendance, 1 to 20 September 2026 (confirmed)."
+  },
+  {
+   "key": "t:5.34",
+   "num": "5.34",
+   "title": "What is fixed at each point before and after the meal."
+  },
+  {
+   "key": "t:5.35",
+   "num": "5.35",
+   "title": "Significant changes and their triggers."
+  },
+  {
+   "key": "t:5.36",
+   "num": "5.36",
+   "title": "Rules and actions, their intended function and their unintended consequences."
+  },
+  {
+   "key": "t:6.1",
+   "num": "6.1",
+   "title": "Key activities of Activity 6 and the methods applied."
+  },
+  {
+   "key": "t:6.2",
+   "num": "6.2",
+   "title": "Tensions found while mapping conflicts and dependencies."
+  },
+  {
+   "key": "t:6.3",
+   "num": "6.3",
+   "title": "The eighteen mechanisms tested: verdict and delay."
+  },
+  {
+   "key": "t:6.4",
+   "num": "6.4",
+   "title": "Framework key activities of Activity 7, the method used and where each is reported."
+  },
+  {
+   "key": "t:6.5",
+   "num": "6.5",
+   "title": "Chain 1, registered but not eating."
+  },
+  {
+   "key": "t:6.6",
+   "num": "6.6",
+   "title": "Chain 2, run-outs at the close."
+  },
+  {
+   "key": "t:6.7",
+   "num": "6.7",
+   "title": "Chain 3, complaints and the response to them."
+  },
+  {
+   "key": "t:6.8",
+   "num": "6.8",
+   "title": "Chain 4, the shock exception."
+  },
+  {
+   "key": "t:6.9",
+   "num": "6.9",
+   "title": "Chain 5, the menu rotation."
+  },
+  {
+   "key": "t:6.10",
+   "num": "6.10",
+   "title": "Chain 6, legitimate non-attendance."
+  },
+  {
+   "key": "t:6.11",
+   "num": "6.11",
+   "title": "Chain 7, cooking to a guess."
+  },
+  {
+   "key": "t:6.12",
+   "num": "6.12",
+   "title": "Framework key activities of Activity 8, the method used and where each is reported."
+  },
+  {
+   "key": "t:6.13",
+   "num": "6.13",
+   "title": "The paradox at four depths."
+  },
+  {
+   "key": "t:6.14",
+   "num": "6.14",
+   "title": "Hypotheses carried from the Bakul manager's account, with the evidence that would settle each."
+  },
+  {
+   "key": "t:7.1",
+   "num": "7.1",
+   "title": "Activity 9: key activities, methods and where reported."
+  },
+  {
+   "key": "t:7.2",
+   "num": "7.2",
+   "title": "The twelve leverage points: place, holder, feasibility, rank, role and gate."
+  },
+  {
+   "key": "t:7.3",
+   "num": "7.3",
+   "title": "Governing beliefs, the record against each and the sign of a shift."
+  },
+  {
+   "key": "t:7.4",
+   "num": "7.4",
+   "title": "The six archetypes checked against the loops and the evidence."
+  },
+  {
+   "key": "t:7.5",
+   "num": "7.5",
+   "title": "Candidate changes by type, with the lever that carries each."
+  },
+  {
+   "key": "t:7.6",
+   "num": "7.6",
+   "title": "The case for the status quo: what each actor gains and what change would cost."
+  },
+  {
+   "key": "t:7.7",
+   "num": "7.7",
+   "title": "The design principles P1 to P7: statement, basis and what each rules out."
+  },
+  {
+   "key": "t:7.8",
+   "num": "7.8",
+   "title": "The map in table form: intervention points, levers, holders of the power and the absorber check."
+  },
+  {
+   "key": "t:7.9",
+   "num": "7.9",
+   "title": "Stakeholder impact check: gains, burdens and levers."
+  },
+  {
+   "key": "t:8.1",
+   "num": "8.1",
+   "title": "Activity 10: key activities, methods used and where they are reported."
+  },
+  {
+   "key": "t:8.2",
+   "num": "8.2",
+   "title": "The eight intervention concepts, the levers they pull and the role each plays."
+  },
+  {
+   "key": "t:8.3",
+   "num": "8.3",
+   "title": "The weekday arrival card, from Kadamba's April 2026 scan records (confirmed)."
+  },
+  {
+   "key": "t:8.4",
+   "num": "8.4",
+   "title": "Co-design and user tests (planned; none has run)."
+  },
+  {
+   "key": "t:8.5",
+   "num": "8.5",
+   "title": "Kitchen rules backtested on 23 April days (projected)."
+  },
+  {
+   "key": "t:8.6",
+   "num": "8.6",
+   "title": "April charges for uneaten Kadamba breakfasts under each student-side scenario (projected)."
+  },
+  {
+   "key": "t:8.7",
+   "num": "8.7",
+   "title": "The refined kitchen design under assumed shocks, portions a day (projected)."
+  },
+  {
+   "key": "t:8.8",
+   "num": "8.8",
+   "title": "Projected behaviour of the recommended bundle over twenty weeks (assumed adoption)."
+  },
+  {
+   "key": "t:8.9",
+   "num": "8.9",
+   "title": "Each actor's rational position today and what would change it (simulated)."
+  },
+  {
+   "key": "t:8.10",
+   "num": "8.10",
+   "title": "The four gates."
+  },
+  {
+   "key": "t:8.11",
+   "num": "8.11",
+   "title": "The nine criteria and their weights."
+  },
+  {
+   "key": "t:8.12",
+   "num": "8.12",
+   "title": "Concepts by gate result and score, with the main reason."
+  },
+  {
+   "key": "t:8.13",
+   "num": "8.13",
+   "title": "Unintended consequences of each intervention, the loop involved and the mitigation."
+  },
+  {
+   "key": "t:8.14",
+   "num": "8.14",
+   "title": "Adaptations that would push back: likelihood, early warning and mitigation (likelihoods assumed)."
+  },
+  {
+   "key": "t:8.15",
+   "num": "8.15",
+   "title": "The twelve refinements, each traced to what changed it."
+  },
+  {
+   "key": "t:8.16",
+   "num": "8.16",
+   "title": "The architecture path: decision points, rules and fallbacks (thresholds are the team's judgement)."
+  },
+  {
+   "key": "t:8.17",
+   "num": "8.17",
+   "title": "Interventions and indicators at each level of the iceberg."
+  },
+  {
+   "key": "t:8.18",
+   "num": "8.18",
+   "title": "Pilot design: Kadamba veg line, Sunday breakfast (planned)."
+  },
+  {
+   "key": "t:8.19",
+   "num": "8.19",
+   "title": "Indicators after handover, one for each archetype."
+  },
+  {
+   "key": "t:8.20",
+   "num": "8.20",
+   "title": "The thirteen actions, who holds the power over each, and what the student team can do."
+  },
+  {
+   "key": "t:A.1",
+   "num": "A.1",
+   "title": "Terms used in this document."
+  },
+  {
+   "key": "t:B.1",
+   "num": "B.1",
+   "title": "Decisions of this period."
+  },
+  {
+   "key": "t:B.2",
+   "num": "B.2",
+   "title": "Decisions of this period."
+  },
+  {
+   "key": "t:B.3",
+   "num": "B.3",
+   "title": "Decisions of this period."
+  },
+  {
+   "key": "t:B.4",
+   "num": "B.4",
+   "title": "Decisions of this period."
+  },
+  {
+   "key": "t:B.5",
+   "num": "B.5",
+   "title": "Decisions of this period."
+  },
+  {
+   "key": "t:C.1",
+   "num": "C.1",
+   "title": "Register of the fifteen deliverables."
+  },
+  {
+   "key": "t:D.1",
+   "num": "D.1",
+   "title": "Open questions, grouped by who could answer them."
+  },
+  {
+   "key": "t:E.1",
+   "num": "E.1",
+   "title": "Corrections to Phase 1 (Activities 1 to 5)."
+  },
+  {
+   "key": "t:E.2",
+   "num": "E.2",
+   "title": "Corrections to Phase 2 (Activities 6 to 8)."
+  },
+  {
+   "key": "t:E.3",
+   "num": "E.3",
+   "title": "Corrections recorded in Activities 9 and 10."
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+- Approach: detailed evidence list, day-by-day first-draft revision narrative (self-audit, naming mix-up story)
+- Formal governance: Parliament voting system and one-per-50 ratio; CDS complaint routing at Bakul and Kadamba (kept in table)
+- Formal governance: staff reporting chain account not tied to one mess; fig pointer wording
+- Operator-side: Yuktahar leave-sharing and proposal-and-review quote; Bakul top-up manager sentence; broken equipment replacement unknown
+- Authority table: merged reuse/supplier row into quantity row; shortened evidence cells
+- Informal power: AI-agent tool existence wording, Ping year detail condensed
+- Incentives: earlier-version "vendors produce to forecast" correction; Mess Committee cell wording
+- Chain 6: Yuktahar and Kadamba both gain from cooking less (per registered plate) sentence; Bakul accepts held-food cost sentence
+- Bargaining: Students depend on operators; Bakul manager 60 per cent below floor (kept in information flows); Mess Cell absorbs waste
+- Precedent: Frogs "unilateral opaque" label; email-effort wording; Water Mess shape-recurs sentence; ERP quote shortened
+- Consequence: Registration automatic off campus/holiday wording; Bakul reserve several times late tail; diners-bear-quality detail shortened
+- Voices table: Yuktahar books full input list (grocery, stock, milk, gas, electricity, water); store-book match rule
+- Information flows: Skip Meal "may adjust count" speculation; Bakul manager students-not-waking untested comparison to interviews
+- Leverage: cutting first batch takes food from outside diners; operator culture as separate lever sentence (kept in incentives)
+- Sleeping stakeholders: wording on students ambiguous narrowed question condensed
+- Maps: Yuktahar/Prism/Bakul placement differences; Vindhya-juice canteen interest-in-lost-demand wording; serving staff at Yuktahar share planning
+- Implications: Bakul "no shortage" quote repeat, 70 per cent low weekends repeat, Kadamba absorber explanation repeat
+- Findings: shortened to one line each; decisions: Decision text condensed; revision narrative cut to two sentences

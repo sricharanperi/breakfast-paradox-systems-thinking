@@ -1,0 +1,13 @@
+Registration described as weekly blocks -> automatic default with five cancellations per meal type per month, four days ahead
+Orders to the vendor lock four days ahead -> the four-day close is on registration; kitchens set quantities the day before
+Composting absorbs the surplus -> Kadamba does not compost; waste goes to a garbage contractor
+20 to 30 Kadamba staff eat leftovers -> about 30 extra portions for 30 to 50 outside diners plus about half the operator's staff
+Kadamba waste weights in kilograms -> withdrawn; operator reports 5 to 10% daily on an unstated base
+Every operator uses a private ratio / Bakul is a fixed ratio like Kadamba -> three regimes: fixed at Kadamba, weekly judgement above a floor at Bakul, book lookup at Yuktāhār
+Bakul raised its ratio from 70 to 80% -> withdrawn; the share varies by item and day
+Every operator describes a closing rush -> recorded at Kadamba, described at Yuktāhār, earlier peak at Bakul
+Kadamba 51 to 79% and Bakul 11 to 31% "served" -> registrations as a share of capacity from one portal snapshot, not attendance
+Vendor's four-day lead time as the reason the fix was shelved -> kitchens plan one day ahead
+Restock promises are empty -> top-up is real and arrives after the crest
+L6 closes as a loop -> a condition-triggered calendar switch
+Six closed loops -> three close (L4, L11, L12), five candidates

@@ -1,0 +1,377 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Phase 1 Consolidated Report},
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Phase 1 Consolidated Report}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{The Breakfast Paradox: IIIT Hyderabad Breakfast Mess System}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\hypersetup{linkcolor=pslate}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.08}
+\section{Introduction}\label{introduction}
+
+Phase 1 of the Systems Thinking and Design capstone asks for five deliverables, one per activity: the System Context Brief, the Stakeholder Map, the Stakeholder Power-Interest/Leverage Map and Power Analysis Brief, the Current-State Process Map / Process Trace, and the System Timeline / Behaviour-Over-Time Map. This report condenses the findings of all five.
+
+Students at IIIT Hyderabad are registered for breakfast far more often than they eat it. The evidence covers both halves of the system. On the student side, six respondents, the published rules and a governance review describe how registration works and why mornings are skipped. On the kitchen side, interviews with the operators of three messes, the photographed books of Yuktāhār, a month of timestamped Kadamba scans and a team member\textquotesingle s first-hand account of two visits show how registrations become cooked food and where it goes. Several first-version findings were overturned by this operations evidence and are listed in the corrections table below.
+
+\section{Task 1: System Context Brief}\label{task-1-system-context-brief}
+
+\textbf{System boundary.} Breakfast as it is registered, billed, cooked and served in four halls (Kadamba, Palash, Bakul, Yuktāhār), in three layers: the registration and billing platform with the QR scan; the kitchen layer, each operator\textquotesingle s planning, cooking, food-safety checks, top-up, reuse and disposal (Prism at Kadamba, ABC Hospitality Services at Yuktāhār, Vijayalakshmi Caterers at Bakul, cooking at Hafizpet); and the governance layer that sets menu, rules and contracts. Suppliers, the garbage contractor, the institution\textquotesingle s site and facility teams and the tender sit on the boundary. So do non-student diners: at Kadamba, 30 to 50 outsiders such as night-shift security, and about half the operator\textquotesingle s staff (single-sourced). Lunch and dinner are out of scope and serve as the comparison. At Yuktāhār in September 2026 lunch turnout ran 56 to 89\% against 18 to 40\% for breakfast on the same days (confirmed, records).
+
+\textbf{Purpose and actual mechanism.} The institution\textquotesingle s method is "minimizing food wastage through advance meal planning." In practice registration is a default. Every student is registered automatically, and the only exit is five cancellations per meal type per month, at least four days ahead (confirmed). Kadamba\textquotesingle s count stayed near 1,070 a day in April while turnout ran from 42.1\% on Tuesdays to 27.3\% on Sundays (confirmed, records). No kitchen cooks to the count. Yuktāhār plans from its Wastage Book for the matching week, a weekday register, the month\textquotesingle s pattern and events, then re-projects from the first half hour of service. Kadamba cooks 70\% of registrations to a gram standard and a supervisor calls top-ups. Bakul cooks 70 to 80\% by item, revised weekly by its manager, and under his rule of "no shortage, even if some wastage" keeps food for about 70\% even on low weekends (single-sourced; no records). Only Yuktāhār learns from recorded outcomes, and its head still believes breakfast turnout is about 50\% where its register shows about 28\%. The on-site operators also read the count with opposite aims: Kadamba as an obligation it is paid for, Yuktāhār as a cost to cut.
+
+\textbf{Context.} Registered breakfast costs ₹48 (vegetarian) or ₹66 (non-vegetarian), ₹53 at Yuktāhār, and walk-in access about 70\% more. Governance splits across the Mess Committee, the Mess Office and the Warden, and the Kadamba operator describes a line from CFS to CDS to Prism. How these map onto each other, and who heads CDS, is unconfirmed. Operators are paid monthly on plates, with deductions. Bakul\textquotesingle s operator says payment is on plates served and Kadamba\textquotesingle s remark points to registrations, so the basis stays unconfirmed for every operator.
+
+\textbf{Symptoms and underlying issues.} About two thirds of breakfast registrations go unused: 62.9\% at Kadamba in April and about 72\% at Yuktāhār in September (confirmed). Arrivals pile up at the close, with 26.5\% of Kadamba scans between 9:15 and 9:30, so shortage and waste share a morning. Billing follows registration, Skip Meal returns nothing and the Mess Cell resale market recovers value the formal tools do not. Items that always waste are seen only by the operator, with no route to the menu.
+
+\textbf{Initial problem framing.} Breakfast registration does not reflect who will eat, by roughly two thirds, while the same system works at Yuktāhār lunch. Why not, and why must each kitchen guess its own conversion when the data to calibrate it is already recorded?
+
+\begin{figure}
+\centering
+\includegraphics[width=0.72\linewidth,height=\textheight,keepaspectratio,alt={The registration count at the centre of the context map.}]{Assets/diagram2-context-map.png}
+\caption{The registration count at the centre of the context map.}
+\end{figure}
+
+\section{Task 2: Stakeholder Map}\label{task-2-stakeholder-map}
+
+Thirty-two candidate stakeholders narrowed to twenty-four: seven primary (students, the three operators, operator site management, serving staff, kitchen staff), five secondary (Mess Committee, Mess Office, CDS site team, Warden, the Parliament\textquotesingle s mess seats) and twelve indirect. The new stakeholder is the non-student diners at Kadamba.
+
+The two on-site operators are organised as opposites. Kadamba is a ladder from the institution through Prism to a supervisor who decides each top-up. Yuktāhār has no hierarchy, two project managers, rotating roles, peer cross-checking and paper books reconciled daily. Bakul splits across two sites, with one manager deciding at the mess and a kitchen 8 km away.
+
+Four findings matter most. Academic administration holds the lever in conflict with breakfast, the 8:30 class start, and has no relationship to mess governance. The Mess Office owns the four-day rule but does not place food orders. The gap between registration and turnout is measured twice, in the scan records and the operators\textquotesingle{} registers, and neither measurement reaches whoever sets the rules. And the outside diners and staff who eat Kadamba\textquotesingle s surplus would lose food if the first batch were cut without planning for them.
+
+\section{Task 3: Stakeholder Power-Interest/Leverage Map and Power Analysis Brief}\label{task-3-stakeholder-power-interestleverage-map-and-power-analysis-brief}
+
+Power is split across governance bodies whose relations are only partly established, and part of it is exercised by actors with no standing: friends, Mess Cell, Ping, unofficial tools and the operators\textquotesingle{} own accommodations. Two absences define it. No relationship links Academic administration to any mess-governance actor, through inattention rather than refusal. And no route carries the kitchens\textquotesingle{} records of the gap to anyone who sets the rules that produce it.
+
+The operator is the data-rich, authority-poor actor. It sets the parameter with the largest effect on waste, the share of each registration cooked, and has no authority over the cut-off, cancellation, billing or menu. The institution is in the Kadamba kitchen every meal through temperature checks, a 72-hour sample, a display plate and a tasting, and every check covers safety and taste, never quantity. Students are locked in four days ahead while operators adjust within minutes. Precedent shows how rules change: a reported December 2024 tightening of cancellation rules over organised pushback, a temporary relaxation during an LPG shortage, and the one deliberate waste reduction on record, which stayed inside Yuktāhār\textquotesingle s kitchen.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.72\linewidth,height=\textheight,keepaspectratio,alt={Power against interest. Placement is ordinal.}]{Assets/d13-power-interest-v2.png}
+\caption{Power against interest. Placement is ordinal.}
+\end{figure}
+
+\section{Task 4: Current-State Process Map / Process Trace}\label{task-4-current-state-process-map-process-trace}
+
+Three timescales are kept apart. Registration closes four days ahead and works as a standing default. Cooked quantity is set the day before, as a fixed share at Kadamba, a weekly-revised share at Bakul and from the mess\textquotesingle s own books at Yuktāhār. The decision to eat is made each morning, driven by wake time, the 8:30 class and whether the wanted item is still there.
+
+The kitchen half is now traced. The four-day lock applies to registration, not to buying. The binding constraint on waste is the cooked first batch, since cooked food lasts three to four hours while raw stock returns to the store. At Bakul that batch is fixed even earlier, when it leaves Hafizpet, and a top-up needs a call, cooking and a 20 to 40 minute drive. Yuktāhār runs two corrections, a matching-week lookup with a two-week delay and a first-half-hour projection that samples the calmest part of the morning. Total food runs well above turnout, so the shortages students meet are a timing and item-mix failure at the closing crest. Peer influence is disconfirmed as a deciding factor. An operational complaint path works for same-incident fixes, and no path for changing rules or timing works for students or operators. Surplus leaves through reuse at Yuktāhār, the outside diners and staff, held and reheated food at Kadamba (candidate), latecomers served at the back door, and the bin, with no composting at Kadamba.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={The daily attendance-decision cycle on the student side.}]{Assets/diagram7-daily-cycle.png}
+\caption{The daily attendance-decision cycle on the student side.}
+\end{figure}
+
+\section{Task 5: System Timeline / Behaviour-Over-Time Map}\label{task-5-system-timeline-behaviour-over-time-map}
+
+The within-morning crowd is measured. A burst at 7:30 and a flat plateau until 9:00 give way to a steep climb, with 40\% of Kadamba diners in the last half hour and about 9\% after the nominal close, many by the back door (confirmed, records). The curve is Kadamba\textquotesingle s. Yuktāhār\textquotesingle s head describes the same closing rush, while Bakul\textquotesingle s manager places his rush at 8:00 to 8:30, so curves differ by hall. Across the week, registrations stay flat while turnout falls every Sunday at both recorded messes (Kadamba 25 to 33\%, Yuktāhār 18 to 24\%), and each April week at Kadamba sits between 35 and 39\% with no drift. Standing registration and billing rules have been stable since early 2025, while the kitchens behind them have changed repeatedly.
+
+R1, Shifting the Burden via Mess Cell, is an open chain: its last link, that resale reduces pressure to fix billing, is not evidenced. B1, kitchen waste control, is balanced by operators, not by Skip Meal. Kadamba closes against shortage only, within minutes. Bakul\textquotesingle s weekly review closes against surplus only down to its floor. Yuktāhār\textquotesingle s matching-week channel closes against surplus with a two-week delay. None is calibrated to breakfast turnout. The same-meal-two-failures chain, a fixed first batch meeting a curve that crests at close, gives surplus in total and run-outs at the crest.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={Measured arrival curve, Kadamba breakfast, April 2026.}]{Assets/diagram8-crowd-curve.png}
+\caption{Measured arrival curve, Kadamba breakfast, April 2026.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.56\linewidth,height=\textheight,keepaspectratio,alt={R1: Mess Cell as a shifting-the-burden loop.}]{Assets/d10-loop-r1.png}
+\caption{R1: Mess Cell as a shifting-the-burden loop.}
+\end{figure}
+
+\section{Consolidated Findings Across All Five Deliverables}\label{consolidated-findings-across-all-five-deliverables}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Registration is a default, not a demand signal.} Automatic registration, five early cancellations as the only exit, billing on registration, a Skip Meal that refunds nothing and a walk-in premium of about 70\% together reward staying booked and ignore attendance. About two thirds of breakfast registrations go unused, while lunch at the same mess mostly works.
+\item
+  \textbf{Every kitchen guesses its own conversion, and every guess is too high.} Kadamba cooks 70\% and Bakul 70 to 80\% (single-sourced), Yuktāhār\textquotesingle s head believes at most about 50\%, and recorded turnout is 37.1\% at Kadamba and about 28\% at Yuktāhār. Bakul\textquotesingle s manager estimates at most about 60\% (no records).
+\item
+  \textbf{The gap is measured and goes nowhere.} The scan records and the operators\textquotesingle{} books both measure it, and neither reaches the owner of registration or billing rules or each other.
+\item
+  \textbf{The binding constraint is the cooked first batch, not procurement.} Nothing shrinks a batch once it is cooked and approved.
+\item
+  \textbf{Shortage and waste happen on the same morning.} At Kadamba a late crest meets a fixed first batch.
+\item
+  \textbf{Academic administration is the clearest sleeping stakeholder.} It holds total authority over class start time, has no relationship to mess governance, and the calendar reaches the kitchen only by word of mouth.
+\item
+  \textbf{Oversight and feedback change kitchens, not rules.} Institutional checks cover safety and taste, never quantity, and no confirmed instance exists of student input changing registration, billing or hours. The one reported feedback-driven policy change is the fortnightly menu rotation.
+\item
+  \textbf{Surplus is absorbed out of sight.} Resale absorbs the student\textquotesingle s loss, and reuse, outside diners and staff, reheating and the bin absorb the food. Kadamba\textquotesingle s reported 5 to 10\% waste, on an unstated base, sits in unresolved tension with a first batch near twice turnout. Each absorber is locally useful and some feed real people, so any cut to the first batch must plan for them.
+\item
+  \textbf{Respondent-proposed changes.} Extending the 9:30 close was the most requested fix, and a pay-as-you-go alternative to fixed registration was proposed as a structural option.
+\end{enumerate}
+
+\section{Corrections Since the First Submission}\label{corrections-since-the-first-submission}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3788}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.6212}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries First version said
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Now
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+The registration gap is about 30\% & 62.9\% at Kadamba (April) and about 72\% at Yuktāhār (September); 30\% fits lunch \\
+Weekly blocks of registration; the Mess Office places food orders four days ahead & Registration is automatic, with five cancellations per meal type per month at least four days ahead; operators buy their own stock and set quantities the day before \\
+Vendors cook to a forecast and are passive & No operator cooks the full count; each applies its own ratio and tops up \\
+Bakul cooks 70\%, raised to 80\%, and its food is cooked at Palash or near the airport & 70 to 80\% by item, adjusted weekly with a floor near 70\%; Vijayalakshmi Caterers cooks at Hafizpet, about 8 km away \\
+Composting absorbs the surplus & Kadamba has no composting; surplus goes to outside diners, staff, reheating and the bin \\
+20 to 30 staff eat leftovers & About 30 portions for 30 to 50 outside diners, plus about half of Kadamba\textquotesingle s staff \\
+Kadamba waste of 16 to 23 kg & Withdrawn; the operator reports 5 to 10\% daily on an unstated base \\
+Yuktāhār has a five-person project team and a cross-checker called "Adit Amma" & Two project managers; the mess in-charge keeps the Wastage Book (the "Adit Amma" identity is unconfirmed) \\
+Every operator distrusts registration & Only Yuktāhār does; Kadamba treats it as an obligation and Bakul adjusts by judgement \\
+Cuisine is the stronger explanation of low uptake & Within Kadamba, veg registrants attend at 32.4\% against 48.5\% for non-veg; cuisine is one factor \\
+All three operators describe a closing rush & Recorded at Kadamba and described at Yuktāhār; Bakul\textquotesingle s manager places his rush at 8:00 to 8:30 \\
+Skip Meal declarations reach the kitchen & Conflicting: Kadamba says it cooks on registrations alone \\
+\end{longtable}
+}
+
+\section{Outstanding Data Collection}\label{outstanding-data-collection}
+
+The operator visits, the first-hand account and the Kadamba records answered what the kitchens prepare against, Kadamba\textquotesingle s first-batch rule and the cancellation limit, whether the "about 30\%" figure was real (it is a lunch-sized figure), why items run out, where unclaimed food goes, who runs Kadamba, which hall Vijayalakshmi Caterers serves and the shape of the crowd. What remains open \textbf{will be collected and submitted later}.
+
+\begin{itemize}
+\tightlist
+\item
+  Whether each operator is paid per registered or per served plate, and the deductions, confirming Bakul\textquotesingle s reported served-plate basis from the contract or CDS.
+\item
+  The base of Kadamba\textquotesingle s 5 to 10\% waste figure, and how it squares with a 70\% first batch against 37\% turnout.
+\item
+  Whether a Skip Meal declaration lowers the count Kadamba cooks from.
+\item
+  Who heads CDS, given two differing names; whether CDS is the Mess Office; how CFS relates to the governance bodies; and who the facility team that tastes Kadamba\textquotesingle s food is.
+\item
+  How the outside diners are registered, who pays for their portions, and whether staff meals are a written entitlement.
+\item
+  Whether Palash is served by the same operator and kitchen as Bakul.
+\item
+  A Bakul breakfast scan export; whether anything behind Bakul\textquotesingle s weekly adjustment is written down; and the Hafizpet top-up lead time.
+\item
+  Where the garbage contractor takes the waste, and direct observation of disposal after close.
+\item
+  Multi-month records for all four halls and all meals, including an exam window, and any Yuktāhār arrival timestamps.
+\item
+  Whether any institutional actor has ever received an operator\textquotesingle s books, and whether the December 2024 pushback is the "organised" student effort heard of secondhand.
+\end{itemize}
+
+\section{Status Summary}\label{status-summary}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0395}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3684}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5921}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries \#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Deliverable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & System Context Brief & Complete; revised on the operations evidence and the first-hand account \\
+2 & Stakeholder Map & Complete; twenty-four stakeholders, non-student diners added \\
+3 & Stakeholder Power-Interest/Leverage Map and Power Analysis Brief & Complete; payment basis, CDS leadership and facility-team identity open \\
+4 & Current-State Process Map / Process Trace & Complete for the student and kitchen halves; disposal after close unobserved \\
+5 & System Timeline / Behaviour-Over-Time Map & Complete; measured within the morning, week and month; semester trends unmeasured \\
+\end{longtable}
+}
+
+\end{document}

@@ -1,0 +1,12 @@
+- Timescale table (a5-scales) turned into one prose paragraph; all timescales and statuses kept.
+- Student table "Behaviour" column merged into respondent cell.
+- Records table: Grocery Book and daily registers merged; interviews and field account merged.
+- Day table: Kadamba and Yuktāhār rows trimmed (batch items, TDS water check, tasting wording, 7:30 wording).
+- Closing-crest second paragraph and "no bulk marking" sentence (never more than two scans a second) removed.
+- Duplicate statement of Yuktāhār 50 versus 28 per cent kept once; Bakul 60 per cent beyond one mention trimmed.
+- Kadamba weekly dry-goods and inspection sentence (duplicate of planning-horizon table) removed.
+- Planning-horizon rows merged (two to three days with one day; three to four hours with 72-hour sample).
+- Change table: December 2024 survey and meetings merged into one row; LPG rows merged; farmhouse and Zoho triggers shortened.
+- Story of revisions cut to a short paragraph; first-reading remarks on B1 and same meal shortened.
+- Key Findings and synthesis items shortened; B1 intro sentence and record-observation wording shortened.
+- Quotation lengths and hedging trimmed; figure captions shortened to one clause plus source.

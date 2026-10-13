@@ -1,0 +1,657 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+  table]{article}
+\usepackage{xcolor}
+\usepackage[letterpaper,left=0.7in,right=0.7in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Phase 2 look, rendered through LaTeX (XeTeX via tectonic)
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\setsansfont{Helvetica Neue}[Ligatures=TeX,BoldFont={Helvetica Neue Bold},ItalicFont={Helvetica Neue Italic},BoldItalicFont={Helvetica Neue Bold Italic}]
+\newfontfamily\fallbackfont{Arial Unicode MS}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{Rs.\,}
+\newunicodechar{→}{{\fallbackfont →}}
+\newunicodechar{≈}{{\fallbackfont ≈}}
+\newunicodechar{≥}{{\fallbackfont ≥}}
+\newunicodechar{≤}{{\fallbackfont ≤}}
+\newunicodechar{×}{{\fallbackfont ×}}
+\newunicodechar{✓}{{\fallbackfont ✓}}
+
+\definecolor{pblue}{HTML}{0D47A1}
+\definecolor{pblue2}{HTML}{1565C0}
+\definecolor{pslate}{HTML}{37474F}
+\definecolor{prule}{HTML}{C8D8F0}
+\definecolor{pzebra}{HTML}{F4F7FB}
+\definecolor{pline}{HTML}{DDE3EA}
+\definecolor{ptext}{HTML}{232323}
+
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{\color{ptext}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\setlist{itemsep=1.5pt,topsep=2pt,parsep=0pt,leftmargin=*}
+\renewcommand{\tightlist}{\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}}
+
+\titleformat{\section}{\color{pblue}\Large\bfseries}{}{0pt}{}[{\vspace{-1pt}\color{prule}\titlerule[1.3pt]}]
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titleformat{\subsection}{\color{pblue2}\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\titleformat{\paragraph}[runin]{\color{pslate}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{6pt}
+
+\titlecontents{section}[0pt]{\addvspace{5pt}\bfseries\color{pblue}}{}{}{\hfill\contentspage}
+\titlecontents{subsection}[1.2em]{\small}{}{}{\titlerule*[3pt]{.}\contentspage}
+
+\captionsetup{font={small,it},labelfont={bf,color=pblue2},labelsep=period,skip=4pt,justification=raggedright,singlelinecheck=false}
+\floatplacement{figure}{H}
+\setcounter{secnumdepth}{0}
+
+% tables: header row blue, zebra body, small type
+\AtBeginEnvironment{longtable}{\footnotesize\renewcommand{\arraystretch}{1.18}\rowcolors{2}{white}{pzebra}}
+\setlength{\LTpre}{6pt}\setlength{\LTpost}{8pt}
+\setlength{\tabcolsep}{4.2pt}
+\providecommand{\tblhead}[1]{\cellcolor{pblue}\textcolor{white}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{pslate}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\footnotesize\color{pslate}\thepage}}
+
+% title block, as in the Phase 2 documents
+\gdef\psubtitle{}
+\providecommand{\subtitle}[1]{}
+\renewcommand{\subtitle}[1]{\gdef\psubtitle{#1}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup\raggedright
+  {\color{pblue}\fontsize{24}{27}\selectfont\bfseries \@title\par}
+  \vspace{3pt}{\color{pblue}\rule{\linewidth}{2.4pt}}\par\vspace{5pt}
+  {\color{pslate}\large \psubtitle\par}
+  \vspace{4pt}
+  \endgroup}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Stakeholder Power-Interest/Leverage Map and Power Analysis Brief},
+  colorlinks=true,
+  linkcolor={pblue2},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={pblue2},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Stakeholder Power-Interest/Leverage Map and Power Analysis Brief}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{IIIT Hyderabad Breakfast Mess System}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Contents}
+{
+\hypersetup{linkcolor=pslate}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.08}
+\section{Executive Summary}\label{executive-summary}
+
+Power in this system is split across several governance bodies whose relationship to one another is only partly established, and some of it is exercised by actors with no official standing. Its two most consequential features are absences. Nothing connects the one actor who controls the class schedule to the actors who control everything else about breakfast, and nothing carries the kitchens\textquotesingle{} own records of the gap to anyone who sets the rules that produce it.
+
+The first central finding is that students control an input nothing requires to be accurate. Registration is an automatic default, not a daily decision to eat. At Kadamba in April 2026, 32,162 breakfast registrations produced 11,941 meals eaten, a turnout of 37.1\%. Registrations stayed near 1,070 a day on every weekday while turnout ran from 42.1\% on Tuesdays to 27.3\% on Sundays (confirmed, scan records). The operators, the only actors who plan food against this input, each correct it privately and in different spirits. Yuktāhār distrusts the count and replaces it with its own records. Kadamba treats it as a paid obligation, cooks a fixed 70\% and tops up from the counter (single-sourced). Bakul (Vijayalakshmi Caterers) sits between: its manager cooks 70 to 80\% by item, adjusts the share weekly from past attendance, and keeps food for about 70\% of registrations even on very low weekends (single-sourced). The institution\textquotesingle s scan records measure the inaccuracy, but nothing routes that measurement into a rule, and the institution never sees any operator\textquotesingle s correction. (Revised: the first version said every operator distrusts registration. That holds for Yuktāhār only.)
+
+The second central finding is that the operator is the data-rich, authority-poor actor. It sets the parameter with the largest effect on breakfast waste, how much of each registration is cooked. Yuktāhār keeps the system\textquotesingle s only per-item, per-weekday record of registered, eaten and wasted food, in books it reconciles every day (confirmed). Kadamba holds per-dish gram standards and live counter knowledge but no per-item waste record was seen. Bakul\textquotesingle s weekly adjustment rests on its manager\textquotesingle s reading of past attendance, and whether any of it is written down is unknown. None of the three operators has authority over the registration cut-off, the cancellation rules, billing or the menu, or a route by which its records reach someone who does.
+
+Several first-version findings were revised on the September 2026 operations evidence. Vendors were described as passive producers working to a forecast fixed four days ahead. No operator cooks the full registration count for breakfast, and the four-day lead is the students\textquotesingle{} registration cut-off, not a procurement lock. The Mess Office was presumed to hold the system\textquotesingle s evidence base, but that sits with the operators and, separately, with the CDS team\textquotesingle s scan records. Students were said to have no channel to vendors, yet a weak one runs through menu selection and the counter. A first-hand account of Kadamba and Yuktāhār then added the Kadamba command chain from the institution to the service staff, the opposite stances of the two operators under one billing basis, and the finding that institutional oversight of the kitchen covers safety and taste, never quantity.
+
+The most consequential open question is whether operators are paid per registered or per served plate, because that decides whether the registration gap costs an operator money or earns it money. Kadamba\textquotesingle s remark that it cooks on registrations because "they are getting paid for it" leans to the registered-plate reading without being contract evidence. Bakul\textquotesingle s manager says payment is on plates served (single-sourced). The two sit in tension and stay unresolved for every operator.
+
+Power is treated as issue-specific. An actor may hold high authority over one decision and none over the next, so each claim names its domain and separates formal authority from observed influence.
+
+\section{Assess Decision-Making Authority}\label{assess-decision-making-authority}
+
+\subsection{Formal governance structure}\label{formal-governance-structure}
+
+Three institutional actors hold mess governance. The first drafts collapsed "who decides" and "who executes" into one.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Mess Committee.} A policy body that sets the menu about a month ahead with student input. That it is separate from the Mess Office is confirmed. That a faculty member chairs it rests on a secondhand press summary we could not read in full (candidate). Its authority beyond menu content is unconfirmed.
+\item
+  \textbf{Mess Office.} The operational arm. It runs the registration platform, which closes about four days before service, and issues operational policy. The one policy action on record, a December 2024 tightening of cancellation rules, was reported as issued by this office alone and motivated by staff workload, again from a secondhand press summary (candidate). The current cap, five cancellations per meal type per month at least four days ahead, is confirmed from the published rule and from students\textquotesingle{} experience. (Revised: the first version said the Mess Office places food orders on a four-day lead. Operators buy their own food, on cycles far shorter than four days.)
+\item
+  \textbf{Warden.} Holds vendor management and structural change. No source describes the Warden taking a specific action, so the authority is stated, not observed.
+\end{itemize}
+
+\textbf{Academic administration} sets the class schedule, including the 8:30 AM start that overlaps the breakfast window, with total authority in that domain and no formal relationship to any mess-governance actor. Nobody has raised the overlap with it, and in the one direct account on the point, nobody has tried. The evidence favours inattention over refusal: the bridge has never been attempted, not tried and blocked. The same gap reaches the kitchen. Exams, events and holidays reach Yuktāhār only if someone raises them in the planning meeting, "we don\textquotesingle t come to know until we sit in the meeting" (confirmed), and no formal calendar feed reaches any operator.
+
+\textbf{The Student Parliament\textquotesingle s mess roles} are a further actor. The Parliament, elected by single transferable vote at roughly one representative per 50 students, maintains a Mess Secretary and a Mess Deputy Secretary for each mess, known for Yuktāhār, Kadamba and Palash from its published records (single-sourced). Student representation therefore sits in the Parliament, not in a seat the Committee appoints. Parliament representatives also hold a standing meeting with a Mess Warden, a title not yet confirmed as the same as the Warden above.
+
+\textbf{The CDS team} is the institutional counterpart operators actually name. At Bakul, complaints arrive from the CDS team and pass from the manager to the kitchen and on to the operator\textquotesingle s managing director. At Kadamba they arrive by email from a director and the manager relays them into a WhatsApp group that a site or facility team also reports into (both single-sourced). The April 2026 Kadamba scan records came from the CDS team (confirmed). Whether CDS is the Mess Office is unconfirmed, and the two are kept separate. Oversight at Kadamba is routine but narrow. Every meal passes a fixed sequence: cooking temperature checked, a sample kept 72 hours, a wrapped display plate at the entrance, serving temperature per item, then a facility team tastes with two of the operator\textquotesingle s staff before corrections and service. The display plate and joint tasting are confirmed by observation, the rest single-sourced. Quality control inspects weekly, including the store, and water TDS is read daily. Whether QC visits can penalise or only inspect, and whether the facility team is the CDS site team, is unknown.
+
+\textbf{The Kadamba command chain} runs from CFS to CDS, then the contractor Prism, then inside Prism from an operations manager to a manager, a supervisor and the service staff (single-sourced). Prism is an outsourced vendor that wins by tender and runs all of Kadamba\textquotesingle s operations. The head of CDS is named in the team\textquotesingle s site account, while an earlier interview names a different CDS Chair. Whether these are two roles or one misnamed is open and they are not merged. A separate staff account of an operator\textquotesingle s reporting chain (staff, supervisor, manager, operations manager, director) matches the lower part, but which mess it describes is unconfirmed, so reading it as Prism\textquotesingle s is candidate.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.88\linewidth,height=\textheight,keepaspectratio,alt={Kadamba\textquotesingle s command chain, with the facility team\textquotesingle s side channel and Yuktāhār\textquotesingle s flat contrast.}]{Assets/d23-kadamba-command-chain.png}
+\caption{Kadamba\textquotesingle s command chain, with the facility team\textquotesingle s side channel and Yuktāhār\textquotesingle s flat contrast.}
+\end{figure}
+
+A separately named "Mess Council," raised earlier as the recipient of a public complaint email, is most likely a naming artefact: a Mess Monitoring Council exists at a different institute, and IIIT Hyderabad\textquotesingle s own site never mentions one. A sharper ambiguity replaces it. Secondhand sources describe what may be two bodies both called "Mess Committee," a Parliament-internal committee of elected representatives that negotiates with the administration, and the institute-level, faculty-led policy body above. Operators add a third name: the Kadamba and Bakul operators both say a "student committee" chooses the menu from options they supply (single-sourced). Whether that is either Committee or the CDS Committee is unconfirmed, and none is assumed to be another.
+
+For several decisions, including breakfast timing, the registration cut-off and contract terms beyond the tender, no source says who proposes, approves or can veto a change. That absence, across every source, is itself a finding.
+
+\subsection{Operator-side authority}\label{operator-side-authority}
+
+"Vendors" was one box in the first version. The operators\textquotesingle{} accounts show a layered actor whose internal structure decides who holds which power.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Contract and price terms} sit with the operator\textquotesingle s owners or managing director. Kadamba\textquotesingle s manager does not know the plate rate: "our owners are directly dealing with them" (single-sourced).
+\item
+  \textbf{Quantity rules} sit with the operator, and no institutional approval of them is evidenced. At Kadamba the standing rule is Prism\textquotesingle s: a first batch of 70\% of registrations, veg and non-veg planned separately, a gram standard per dish (four idlis or 100 g of sambar a head, with separate standards for poha, pulao and the rest) and the remaining raw material ready to cook in 10 to 15 minutes. Biryani lunch is the exception, cooked at 100\% at two pieces of 150 to 200 g with unlimited rice, with a head chef brought in. At Bakul the manager sets 70 to 80\% by item from attendance history reviewed weekly, and keeps about 70\% even on very low weekends. It is a judgement-based weekly calibration with a floor, not a fixed ratio like Kadamba\textquotesingle s (all single-sourced).
+\item
+  \textbf{The in-service top-up decision} sits with a different person in each mess. At Kadamba the supervisor watches the counters and tells the kitchen how much more to cook, staff watch each dish\textquotesingle s level against its gram standard, and items such as bonda, puri, vada and idli "float" above the standard. At Yuktāhār the decision is collective: a twice-daily team meeting discounts portal registrations using the matching week\textquotesingle s Wastage Book, the weekday register, the month\textquotesingle s turnout and any events (confirmed), and the first half hour of service is sampled to project the rest (single-sourced). At Bakul the manager alone compares food left against registrations and expected demand about every 30 minutes and phones the Hafizpet kitchen, which cooks and drives the extra over. The drive is about 20 minutes early and 40 normally, the total lead time is unstated, and the earlier "within 30 minutes" came from noisy audio (single-sourced).
+\item
+  \textbf{Re-cook, portioning, reuse and supplier choice} also sit with the operator. Yuktāhār\textquotesingle s Wastage Book works as a rule ("if it runs out at 1:30 we re-cook; if at 2:20 we don\textquotesingle t"), and leftover idli, dosa batter and milk are reused (confirmed). It holds an impurity norm for each raw item, changes supplier when it is exceeded, and visits the mills that supply its oil. Bakul\textquotesingle s operator switched paneer brands twice after complaints. Kadamba\textquotesingle s operator cut quantities and bought items outside during an LPG shortage on its own initiative (single-sourced). Who may replace broken equipment is unknown: Kadamba\textquotesingle s toaster was broken with no replacement.
+\item
+  \textbf{Menu content} is the one kitchen domain where knowledge exceeds authority. The Bakul manager says students select the combinations and some do not work as pairings: kachori belongs with chole, and Raj Kachori, listed with chana, would go better with aloo curry. He reasons from traditional and regional combinations, taste and what people eat, with about 20 years in North Indian food, and describes students as reasoning from balanced diet, protein, carbohydrate and preference. He mentioned a protein target of about 30 to 40 g a meal, origin unknown. He sees which items move: pav bhaji draws students, and muesli and Chocos go readily. He holds consumption knowledge the menu process does not use and no formal power over it. Whether his view matches what Bakul residents prefer is untested, so it is not evidence of what students want (single-sourced).
+\item
+  \textbf{Internal structure} is the sharpest contrast. Yuktāhār is flat: two project managers, no hierarchy, no storekeeper-only role, peers checking one another\textquotesingle s records. The mess in-charge keeps the accounts and Wastage Register while a colleague cross-verifies the grocery register (the cross-verifier\textquotesingle s signature on a photographed fridge log is confirmed). Leave is shared by agreement in the daily meeting. The site head describes a proposal-and-review practice: "you follow this; if you find any problems come back to me" (confirmed). Kadamba runs the layered chain, where the supervisor decides and no staff voice was described. Bakul\textquotesingle s structure is known only through its complaint route and a manager who decides both first batch and every top-up for a kitchen 8 km away.
+\end{itemize}
+
+The operator therefore holds high local authority over the quantity, timing and reuse of food, and none over the rules that shape how many students register.
+
+\subsection{Authority at a glance}\label{authority-at-a-glance}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2619}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2619}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Domain
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Proposes
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Approves
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Confirmed?
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Breakfast timing & Unknown; no evidence anyone has proposed a change & Unknown & No. Service is meant to close at 9:30, yet late diners come in by the back door and the operator says it cannot refuse them (single-sourced); 1,100 of 11,941 April scans (9.2\%, about 37 a day) fall at or after 9:30 (confirmed, records) \\
+Class timing & Academic administration & Academic administration & Confirmed in its own domain, disconnected from mess governance \\
+Registration cut-off and cancellation rules & Mess Office & Unclear whether Committee sign-off is required & One case on record (December 2024, candidate). Registration is automatic, applied even off campus; the only exit is five cancellations per meal type per month at least four days ahead, and beyond that the charge cannot be removed (confirmed) \\
+Menu & Operator supplies options (single-sourced) & A student committee selects (single-sourced, identity unconfirmed); formal Committee approval is reported & Student selection confirmed in outline, the body\textquotesingle s identity not. The Bakul manager disputes some pairings but has no approval power \\
+Quantity and first-batch ratio & Yuktāhār\textquotesingle s daily meeting; Prism\textquotesingle s standing ratio and gram standards with the supervisor deciding top-ups; Bakul\textquotesingle s manager\textquotesingle s weekly adjustment with a floor and phoned top-ups & Operator; no institutional approval evidenced & Confirmed at Yuktāhār; single-sourced at Kadamba and Bakul \\
+Leftover reuse and supplier choice & Operator & Operator & Confirmed at Yuktāhār; single-sourced elsewhere \\
+Vendor contracts & The institute publishes a tender; operators bid; Prism holds Kadamba this way (single-sourced) & The closest or lowest bid; the Warden per the Stakeholder Map & Tender route single-sourced; the award authority unconfirmed \\
+Complaint routing & CDS team or a director\textquotesingle s email, to the manager, to the kitchen & Operator\textquotesingle s manager acts locally & Single-sourced \\
+Food safety and quality inspection & Per meal, a facility team tastes with two Prism staff after temperature checks and a 72-hour sample; QC weekly; water TDS daily & Corrections before service; whether QC can penalise is unknown & Display plate and tasting confirmed by observation, the rest single-sourced. No check covers quantity cooked or wasted \\
+Portal and scan data & CDS team can export registration-level scan records & Formal owner unconfirmed & Export capability confirmed \\
+Mess Cell resale & Students, self-organised & Not applicable & The market\textquotesingle s existence is the only "approval" \\
+Waste handling & Operator & Operator; who pays the garbage contractor is unknown & At Kadamba waste goes to a dustbin collected by a contractor with no composting (single-sourced); whether it reaches an outside compost facility, as the CFS Chair described, is unverified. Yuktāhār\textquotesingle s route was not stated \\
+\end{longtable}
+}
+
+Several domains now have a nameable proposer and approver: the menu, the one operational policy change on record, and every quantity and reuse decision inside the kitchen. The domains that still have none, breakfast timing and the registration cut-off above all, are the ones that set how many students register in the first place.
+
+\section{Identify Formal and Informal Power}\label{identify-formal-and-informal-power}
+
+Formal power sits with the governance actors and Academic administration, as above. Four informal actors exercise real influence with no formal standing.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Roommates and friends.} Social prompting changes individual attendance in a minor way, a secondary effect that six student respondents support. Friends also eat in place of registrants who do not come, which Kadamba\textquotesingle s manager describes as routine and which corroborates informal redistribution of registrations (single-sourced).
+\item
+  \textbf{The Mess Cell community.} A self-organised resale market showing real peer-to-peer coordination, mostly applied to individual trades, with one exception below.
+\item
+  \textbf{Ping.} The student publication has covered mess issues at least four times, according to a secondhand search summary: a November 2024 piece on a unilateral non-veg cancellation, a December 2024 opinion survey, a January 2025 follow-up, and a 2023 piece on an unrelated water-quality issue (candidate). It gives problems public visibility, and no source shows that visibility alone producing a policy response.
+\item
+  \textbf{Unofficial registration tools.} At least one public open-source tool lets a student manage registration through an AI agent, described in its documentation as built "for students of IIIT Hyderabad." Its existence is confirmed, its adoption and effect not.
+\end{itemize}
+
+Late diners hold a small, routine informal power over the operator. Kadamba closes at 9:30, but when the front door closes students come in by the back door and demand food, and the operator says it cannot refuse (single-sourced; 25 came after close on one biryani day). The records show this is not occasional: 9.2\% of April scans, about 37 a day, fall at or after 9:30 (confirmed). (Revised: the first version had the operator reopening the door at its own discretion.)
+
+The operator also exercises informal power beyond its remit. Kadamba cooks about 30 portions for 30 to 50 people outside the student registration, such as night-shift security, and about half its own staff eat from the same food (single-sourced). Nobody grants or forbids these accommodations. Each absorbs part of the gap between registration and turnout without being reported, and the people fed have no voice in how much is cooked. (Revised from 20 to 30 staff eating leftovers.)
+
+\section{Analyse Stakeholder Incentives and Motivations}\label{analyse-stakeholder-incentives-and-motivations}
+
+\subsection{Stated interest vs. what the system rewards vs. observed behaviour}\label{stated-interest-vs.-what-the-system-rewards-vs.-observed-behaviour}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1622}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2297}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2297}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2432}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1351}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Stakeholder
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Stated interest
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries What the system rewards
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Observed behaviour
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Gap
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Students & Convenient, affordable, timely food & Nothing rewards registering accurately; billing is identical either way & Register as a standing booking and attend far less: 37.1\% at Kadamba (April), about 28\% at Yuktāhār (September), against 56 to 89\% for Yuktāhār lunch (confirmed, records) & Large, and breakfast-specific \\
+Mess Office & Not stated by any source & Reduced operational workload, its reported motive for its one policy change (candidate) & Tightened cancellation rules & Small; an unusually clean alignment \\
+Mess Committee & Balance student satisfaction against feasibility & Unclear & No independent action distinct from the Office\textquotesingle s observed & The least-evidenced pairing here \\
+Kadamba operator (Prism) & Meet the registration as an obligation, "a responsibility and they are getting paid for it" (the operator\textquotesingle s attitude, not contract text) & A contract won by tender; the manager does not know the plate rate; whether pay follows registered or served plates is unconfirmed & Cook a fixed 70\%, veg and non-veg separately, then top up on the supervisor\textquotesingle s call; 100\% on biryani days & Cannot be resolved until the payment basis is confirmed \\
+Yuktāhār operator (ABC) & Best quality, less waste, optimised workflow, lower cost, higher profit, an explicit management goal & A plate-rate structure assumed to match Kadamba\textquotesingle s; waste reduction is a cost lever & Discount registration with its own books, re-estimate from the first half hour, reuse leftovers, weigh waste daily & Small; goal and practice match \\
+Bakul operator (Vijayalakshmi) & "There should not be a shortage of food, even if some wastage occurs"; more say over pairings & A tendered plate rate paid monthly as a lump sum with deductions; the manager says payment is on plates served (figures unverified, in tension with Kadamba\textquotesingle s remark) & Cook 70 to 80\% by item, adjust weekly, keep about 70\% on low weekends, top up by phone, hold food for about 50 at 9:20 & Small between goal and practice; whether the waste it accepts costs the operator depends on the payment basis \\
+Academic administration & Its own scheduling goals & No incentive tied to mess outcomes & Total non-engagement & None, which is why the actor is dormant \\
+Mess Cell participants & Recoup the cost of an unused registration & Direct, immediate financial return & An active, working market & None; the cleanest match in the system \\
+\end{longtable}
+}
+
+(Revised: the first version said vendors "continue producing to the forecast." None of the three cooks the full breakfast count, and all three watch live counts and top up. Kadamba cooks 100\% only for biryani lunch.) The two operators with the fullest accounts are assumed to share one billing structure yet take opposite stances. Yuktāhār pursues lower cost by learning from its records, and Kadamba applies a fixed ratio as an obligation. The difference tracks management culture rather than the payment rule, which makes operator culture a candidate lever. Bakul adds a third stance, shortage as the failure to avoid and waste as its price. If its manager\textquotesingle s report of payment on plates served is confirmed, the operators do not share one billing structure and this comparison would need restating.
+
+\subsection{Incentive chains}\label{incentive-chains}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Billing follows registration, not attendance.} That removes any reason for a student to register only when intending to attend. The cause is structural, not a personal failing. Registrations at Kadamba stay flat across the week, Sunday included, while turnout falls to 27.3\% on Sundays, and veg registrants attend at 32.4\% against 48.5\% for non-veg (confirmed, records).
+\item
+  \textbf{Skip Meal returns nothing, and resale returns value.} A student with advance notice has a rational reason to prefer resale over the system\textquotesingle s own tool. Six respondents: none used Skip Meal for a return of value, and four used Mess Cell in some form (confirmed).
+\item
+  \textbf{Walk-in pricing about 70\% above the registered rate} (₹81 against ₹48 for vegetarian) gives a standing reason to register under uncertainty, inflating counts independent of any no-show. All six respondents register in advance, none day by day. Walk-in demand is real but small: Yuktāhār\textquotesingle s breakfast register shows none to twelve unregistered, paying, faculty and staff diners a day, usually four or fewer, twelve on the peak day with nine paying (confirmed).
+\item
+  \textbf{The Mess Office\textquotesingle s workload incentive produced tighter cancellation rules,} which cut student flexibility and plausibly strengthened the pattern they targeted. A candidate case of a fix that fails, unconfirmed by any governance-side account of its effect.
+\item
+  \textbf{Academic administration feels none of the consequences of the overlap,} so the issue never reaches its agenda and persists with no actor able to resolve it alone (confirmed).
+\item
+  \textbf{The payment basis decides which side of the gap an operator sits on.} If operators are paid per registered plate, they are paid for the whole registration and cook only part of it (70\% at Kadamba, 70 to 80\% at Bakul), so the gap is margin and accurate registration has no financial appeal. If paid per served plate, the operator bears every portion cooked and not eaten and wants accuracy. No operator has stated a position on the cut-off. Kadamba\textquotesingle s remark leans to the first reading. The Bakul manager says payment is on plates served (single-sourced, from a team member\textquotesingle s normalised summary, not a transcript). The statements pull apart and are left unresolved: contracts may differ, "served" may mean plates billed, or Kadamba\textquotesingle s remark may describe a duty. If Bakul pays for plates eaten, it bears the cost of food held against a shortage and accepts it, which would mean it judges shortage costlier than waste, and a change letting students leave the booking would not cut its revenue (candidate). Under per-registered-plate billing, Yuktāhār\textquotesingle s profit goal and Kadamba\textquotesingle s fixed ratio both gain from cooking less than is registered, and differ only in pursuing the saving through records or through a rule. Both readings stay candidate, and this is the most important unresolved incentive question in the analysis.
+\end{enumerate}
+
+\subsection{Bargaining power and dependency}\label{bargaining-power-and-dependency}
+
+Students depend on operators for food. Operators depend on no individual student, a strongly asymmetric relationship consistent with a walk-in price that needs no negotiation. Operators depend on registration only as a ceiling. Their real planning input is their own books at Yuktāhār, a fixed ratio at Kadamba, and at Bakul a weekly-adjusted ratio kept at about 70\% or more. (Revised: the first version treated Bakul\textquotesingle s ratio as fixed.) Neither Kadamba\textquotesingle s ratio nor Bakul\textquotesingle s floor is calibrated to recorded breakfast turnout. Bakul\textquotesingle s manager expects at most about 60\% at breakfast, below both his first batch and his floor, so on his own numbers the batch exceeds turnout by design (candidate; no Bakul records).
+
+At Kadamba a 70\% first batch against 37.1\% turnout implies about 1.9 times over-preparation before any top-up (candidate, combining records with a single-sourced ratio). Because the ratio applies to veg and non-veg separately, the gap differs by stream: 70\% of about 757 daily veg registrations against about 245 eaten is about 2.2 times, and 70\% of about 315 non-veg registrations against about 153 eaten is about 1.4 times (candidate). The operator reports only 5 to 10\% daily waste on an unstated base (single-sourced). That fits only if outside diners and staff eat most of the surplus, reheating carries it into later service, top-ups are smaller than the batch implies, or the base differs. Whichever absorber takes the surplus has a stake in the ratio staying where it is.
+
+(Revised: vendors do not depend on the Mess Office for a four-day forecast. Operators procure on their own cycles and adjust cooking on the day.) The Mess Office depends on students to register accurately, yet nothing in billing requires it. Academic administration and the mess depend on nothing in each other, which is a total absence of mutual dependency, not an imbalance. The Mess Cell market and the formal system are similarly independent, though the market may quietly absorb part of the formal system\textquotesingle s waste problem without either side acknowledging it.
+
+Operators show clear bargaining power over suppliers: Bakul switched paneer brands after complaints, and Yuktāhār changes supplier when its impurity norm is exceeded and has used rock salt and cold-pressed oil for about six months (single-sourced). No instance of an operator bargaining with the institution is evidenced, no operator has objected to the four-day cut-off, and none is recorded raising it with a rule owner.
+
+\subsection{Historical precedent}\label{historical-precedent}
+
+The precedents are thin, and several are secondhand.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bakul\textquotesingle s creation,} triggered by Kadamba\textquotesingle s non-veg capacity reaching its ceiling, is a confirmed structural response to a limit. Who raised it and how is unknown.
+\item
+  \textbf{"Let Them Eat Frogs" (November 2024).} A frog was reportedly found in Kadamba\textquotesingle s chicken biryani and the Mess Office cancelled non-veg meals at Kadamba without stating the real reason, prompting debate across mail threads. This is secondhand and not verified in full text (candidate), but a clear example of unilateral, opaque decision-making.
+\item
+  \textbf{The December 2024 cancellation tightening,} reportedly triggered by Mess Office workload and a Kadamba renovation, came with no evidenced Committee involvement or student consultation. Pushback reportedly occurred: Ping ran a student opinion form that returned majority disappointment, and Parliament\textquotesingle s mess representatives reportedly met the Mess Office twice before the policy took effect and then told Ping they were pushing back. The policy went ahead, a partial answer to whether organised student action worked (candidate). Whether it is the "organised email effort" the project has otherwise only heard about is unconfirmed.
+\item
+  \textbf{Non-compulsory registration during shortages and holidays (date unknown).} During an LPG shortage, and during holidays and fests, registration was made non-compulsory and the cancellation cap raised from five to ten, then returned (single-sourced). It is the one evidenced loosening of the rules, and it shows the rule owner can change them quickly when a supply shock or predictable low attendance forces it.
+\item
+  \textbf{The Yuktāhār waste-tracking change (August to December of the operator\textquotesingle s first year)} is the one evidenced case of an actor deliberately changing its own practice to cut waste. Management introduced per-item recording, staff first resisted for fear of blame ("they are catching us"), and by December staff themselves reported waste falling (confirmed). The project managers made the weighing blame-free and discussed it daily in the team meeting (single-sourced), which is the condition under which measurement changed behaviour. The operator also tried and dropped a commercial ERP: "prediction will be based on our data only; I want to remain close to the data" (confirmed), because paying lakhs of rupees for prediction made no sense with the data already in its books and its staff are not digitally inclined (single-sourced). The change stayed inside the kitchen and nothing shows it reaching any rule owner.
+\item
+  \textbf{"Water Mess" (2023).} In a different domain at the same institution, complaints about drinking-water quality went unaddressed for months, reportedly until 38 or more typhoid cases forced a reactive response (secondhand; candidate). The complaint, ignore, crisis, reactive-fix shape recurs across two domains.
+\end{itemize}
+
+For breakfast timing and class-timing coordination no precedent was found. That is recorded as unknown, not zero.
+
+\section{Identify Who Can Influence Decisions and Who Cannot}\label{identify-who-can-influence-decisions-and-who-cannot}
+
+\subsection{Power asymmetries}\label{power-asymmetries}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The Mess Office over students on registration and cancellation rules.} It holds unilateral operational authority and students hold none, so rules can be tightened without a confirmed consultation step.
+\item
+  \textbf{Operators over students on food quality and quantity on a given morning.} Operators decide how much is cooked, when to re-cook and what to reuse. Students reach them only through a weak informal channel: menu selection through a student committee, and complaints at the counter.
+\item
+  \textbf{Operators adjust on the day; students are locked in four days ahead.} Kadamba keeps raw material ready to cook in 10 to 15 minutes, Bakul phones a kitchen 20 to 40 minutes away with an unmeasured lead time, and Kadamba orders perishables a day ahead and dry goods a week ahead (single-sourced). The flexibility runs against the party who knows least about the morning. (Revised: the first version said the four-day lead capped every actor\textquotesingle s responsiveness equally.)
+\item
+  \textbf{Academic administration over every mess-governance actor combined on class start time,} the variable most likely to resolve the core overlap, because it holds total, independent authority and mess-side actors have no channel to it.
+\item
+  \textbf{Students over every formal actor on the accuracy of registration data,} because they are its only source and nothing requires it to be accurate. Yuktāhār replaces it with its records, Kadamba discounts it by a fixed ratio and Bakul by a weekly ratio with a floor. The correction stays private, so the inaccuracy shows up in the kitchen and nowhere else.
+\item
+  \textbf{The institution over the kitchen, every meal, but only on safety and taste.} Temperature checks, the 72-hour sample, the display plate, the tasting, weekly QC and daily water readings all ask whether food is safe and good, and nothing asks how much is cooked or wasted. Formal power is present in the kitchen daily and pointed at a different variable from the one producing the gap.
+\end{itemize}
+
+\subsection{Consequence and control}\label{consequence-and-control}
+
+\textbf{High consequence, low power.} Students bear the most visible cost of the central problem (wasted food, lost money, energy crashes) while holding no confirmed authority over billing structure, cancellation rules or class timing. Registration is mandatory and automatic, even off campus or on holiday, and beyond five cancellations a month made four days ahead the charge cannot be switched off (confirmed). Skip Meal tells the kitchen but does not remove the charge, so the booking is a default the student cannot opt out of. Their influence over the menu is real but runs through a committee of unconfirmed identity.
+
+\textbf{Consequence absorbed downstream, no power.} Operators absorb over-preparation and closing-rush shortages. Kadamba\textquotesingle s scan records show one continuously building crowd, with 26.5\% of scans between 9:15 and 9:30 and the rate still rising at 9:29, and the Kadamba and Yuktāhār operators describe the closing rush as the moment they re-cook or hold reserve (confirmed, records). Kadamba\textquotesingle s rule of thumb, about 150 diners in the last ten minutes of any meal, matches the crest, and the records put 78.8 scans a day, 19.8\% of the total, between 9:20 and 9:29. The Bakul manager places his main rush earlier, 8:00 to 8:30, with 10 to 15 arriving in the last ten minutes, yet aims to have food for about 50 at 9:20 (single-sourced; no Bakul scans). (Revised: the first version said all three operators describe a closing rush.) A top-up from Hafizpet could not arrive before close late in the window, so held food is Bakul\textquotesingle s only hedge, and the reserve is several times the late tail he describes (candidate).
+
+Whether over-preparation costs the operator depends on the unconfirmed payment basis. At Kadamba, 30 to 50 outside diners and about half the staff eat from the same food, an uncounted absorber with no voice in how much is cooked, and the garbage contractor removes the rest with no voice at all. Cooked food lasts only three to four hours, so cooked surplus cannot move to another day, while Yuktāhār reuses what it can as a new dish, curd or batter (confirmed). Within a meal, Kadamba\textquotesingle s surplus is not simply discarded. In the team\textquotesingle s own observation, food is cooked ahead, reheated and moved between vessels and degrades fast, so diners bear part of the cost of over-preparation as lower quality (candidate; no link to skipping is evidenced). Bakul\textquotesingle s diners bear a different cost. Labour-heavy items such as aloo paratha may start around 3 AM at Hafizpet for a 7 AM arrival, and insulated boxes holding about 60 to 72 °C keep food hot but, in the manager\textquotesingle s account, let steam soften the parathas. The food held longest for late diners is likely the softest (single-sourced; candidate).
+
+\textbf{Low consequence, high power.} Academic administration holds total authority over the variable most likely to resolve the overlap and experiences none of the consequences of leaving it, and nothing in its mandate connects it to the mess. That is the structural reason the overlap can persist indefinitely.
+
+\subsection{Missing voices and missing relationships}\label{missing-voices-and-missing-relationships}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3143}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.6857}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Question
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Answer
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Affected but not represented & Students, on the registration cut-off, cancellation rules and billing \\
+Consulted but cannot decide & Students, on cut-off, cancellation and billing: a named structure exists (Mess Secretary and per-mess Deputy Secretaries) but whether it carries a vote on these rules is unconfirmed. Operators, on the menu: they supply options and follow the selection \\
+Decides but does not experience consequences & Academic administration, on class timing \\
+Oversees the kitchen but not the quantity & The facility team and QC, whose tasting and weekly inspection cover safety and taste only \\
+Has the best data but no authority & The operator, most fully Yuktāhār. Its books record registered, eaten and wasted food per item, meal and weekday, with run-out times, re-cook quantities, plate waste and leftovers, alongside grocery, stock, vegetable, milk, gas, electricity and water; the store book must match what was cooked and mismatches go to the daily meeting (confirmed). Kadamba holds gram standards and reports 5 to 10\% daily waste on an unstated base; no per-item waste record was seen. Bakul\textquotesingle s manager adjusts weekly from attendance history and knows which items move, but whether any of it is written down is unknown (single-sourced). (Revised: the first version named the Mess Office here, and a later one said Kadamba records waste by weight, a claim whose figures were withdrawn) \\
+Has authority but no data & The student committee and the Mess Committee on the menu, which decide without the operator\textquotesingle s per-item waste record: uttapam, set dosa and upma consistently waste while puri, bonda, vada and idli move at Kadamba (single-sourced), non-veg registrants attended at 1.5 times the veg rate in April (confirmed), and at Bakul pav bhaji draws students and muesli and Chocos go readily. Also whoever owns the four-day cut-off and cancellation cap \\
+Observes waste but cannot change the menu & The operator. Yuktāhār\textquotesingle s site head says waste and attendance records are not used to set the menu (confirmed); Bakul\textquotesingle s manager asks for more menu input and disputes the pairings chosen (single-sourced; untested with residents) \\
+Holds information the kitchen needs, with no channel & Academic administration and the institute calendar: exams, events and holidays reach the kitchen only if mentioned in a planning meeting (confirmed) \\
+Implements decisions it did not help design & Operators, on the cut-off and cancellation rules that shape the numbers they plan against \\
+Absorbs consequences created upstream & The 30 to 50 outside diners and about half Kadamba\textquotesingle s staff (single-sourced); diners who receive held and reheated food (candidate); the garbage contractor \\
+No formal escalation channel & Any cross-authority issue, specifically the class and mess overlap and the mismatch between the four-day cut-off and one-day perishable ordering \\
+\end{longtable}
+}
+
+Between operators and students the relationship is thin, not absent. (Revised: the first version said students have no direct channel to vendors.) Students reach operators through menu selection, since operators say they hand a student committee a menu and follow its choice, and at the counter. During the Kadamba visit a student complained directly that dinner sambar had been dropped "while they are taking more money from us," and the operator pointed back to the students\textquotesingle{} own menu choice (single-sourced). No channel carries the operator\textquotesingle s waste records back to students or to the committee that picks the menu. No source describes a relationship between the portal owner and the Mess Committee, although the Committee depends on that system to enforce its decisions.
+
+\subsection{Coalitions and conflicts}\label{coalitions-and-conflicts}
+
+Students and operators may share an interest in a shorter registration cut-off. At Kadamba, registration closes four days ahead while perishables are ordered the day before and dry goods a week ahead (single-sourced). The perishable tier falls after the cut-off and the dry-goods tier before it, so the four-day lock serves no evidenced procurement need, while students, for whom it is the source of most unwanted registrations, stand to gain from a shorter one. No operator has stated a position and neither side has a channel to the rule owner, so this is a potential coalition (candidate). If operators are paid per registered plate their interest in accurate registration may be weak, a counter-reading that is also candidate. Bakul may be the exception: if it is paid on plates eaten, fewer unwanted registrations would not cut its revenue and its view on a shorter cut-off would likely be neutral or favourable (candidate, resting on the unresolved payment basis).
+
+A second conflict runs over menu criteria. In the Bakul manager\textquotesingle s account students choose for balanced diet, protein and preference, while he would choose for traditional pairing, regional familiarity and what is eaten. Only his side has been heard, and whether Bakul residents share his view is untested. It is recorded as a conflict between the holder of formal selection power and the holder of consumption knowledge, not as evidence of what students prefer.
+
+Convenience (students) against reduced workload (the Mess Office\textquotesingle s reported incentive) is not a symmetric negotiation: the Office has shown unilateral authority to settle it in its own favour. Billing certainty against attendance uncertainty is structurally misaligned, not negotiable. No rule change removes the underlying uncertainty, only shifts who bears its cost.
+
+\section{Examine Unequal Access to Resources or Opportunities}\label{examine-unequal-access-to-resources-or-opportunities}
+
+\subsection{Resource control}\label{resource-control}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2603}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3014}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4384}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Resource
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Controls it
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\cellcolor{pblue}\color{white}\bfseries Advantage created
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Money (billing) & Mess Office & Sets terms students cannot individually negotiate \\
+Food and kitchen infrastructure & Operators, per mess & Controls what every other actor ultimately needs \\
+Waste and consumption records & Operators: Yuktāhār\textquotesingle s book system (confirmed); Kadamba\textquotesingle s gram standards and waste estimate (single-sourced); Bakul\textquotesingle s weekly reading of attendance history, held by its manager, no written record known (single-sourced) & The only per-item, per-weekday record of the gap. It never leaves the kitchen, and no route upward is evidenced \\
+Food-safety oversight & The facility team with the operator\textquotesingle s staff, per meal; QC weekly & A daily institutional presence in the kitchen, pointed at safety and taste, not quantity \\
+Registration and scan records & CDS team and the portal side (confirmed by the April 2026 export); formal owner unconfirmed & Exportable per registration, with no evidence it is reviewed against billing or the cut-off \\
+Complaint data & Received by the CDS team or a director, relayed to the operator\textquotesingle s manager and a WhatsApp group (single-sourced) & Reaches the operator for local fixes; no visibility beyond that \\
+Formal complaint channels (in-app rating, email) & Institute side, as recipient & One-directional; no visibility into what follows submission \\
+Informal escalation (Ping, Mess Cell) & Students and Ping, collectively & Two tiers of access, depending on whether a student knows these channels exist \\
+The four-day registration cut-off & Mess Office or portal owner (unconfirmed) & Locks students in about four days ahead while operators adjust on the day, itself a power finding. (Revised: the first version called it a procurement lead time binding every actor equally) \\
+Institutional legitimacy & The Mess Committee & Not acquirable by students individually, only collectively and only if organised \\
+\end{longtable}
+}
+
+Students experience the consequences of every resource here and control direct access to none. The evidence that would show the pattern exists in two disconnected places, the operators\textquotesingle{} hand-kept records and the CDS team\textquotesingle s scan records, and neither reaches the actors who set the rules.
+
+\subsection{Information flows: who holds what, and where it stops}\label{information-flows-who-holds-what-and-where-it-stops}
+
+Information breaks in four places, and each sits at the operator.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Upward, from kitchen to policy.} Yuktāhār keeps the richest record set in the system, and every book terminates inside the kitchen. No source describes a route from these books to CDS, the Mess Office, any Committee, CFS or billing. The institution\textquotesingle s one routine channel into the kitchen, its safety checks, carries nothing about quantity back out. The CFS Chair\textquotesingle s own awareness of low breakfast turnout never reached a registration or billing discussion either (confirmed).
+\item
+  \textbf{Downward, from institute to kitchen.} Exams, events and holidays reach Yuktāhār only when someone raises them in the meeting (confirmed), and no calendar feed exists.
+\item
+  \textbf{From student to kitchen.} Whether a Skip Meal declaration changes the number Kadamba cooks from is in conflict. Earlier findings say declarations reach the kitchen, while Kadamba\textquotesingle s operator says it cooks on registrations only (single-sourced). Skip Meal may adjust the count the operator sees while the operator treats whatever count it sees as the obligation, but this is not established.
+\item
+  \textbf{Laterally, between operators.} Operators do not share figures. The Bakul operator believes Kadamba sees 90 to 95\% of registrants (single-sourced, unclear in the recording, possibly about lunch or dinner), while the April scans show 37.1\% for Kadamba breakfast (confirmed).
+\end{itemize}
+
+Holding the data is also not the same as seeing it at breakfast level. Yuktāhār\textquotesingle s site head believes breakfast turnout is about 50\% (confirmed as his belief), while his September register shows 17.7 to 40.2\%, a mean of about 28\% (confirmed, records). His lunch figure, above 70\% on most days, matches the register. The Bakul manager estimates at most about 60\% (single-sourced; no records), and if Bakul resembles the recorded halls at 28 to 37\%, that is an upper bound. He explains the shortfall partly by taste and menu and partly by students not waking or being reluctant, a view untested with Bakul residents, of which only the second matches what interviewed students most often say.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.32\linewidth,height=\textheight,keepaspectratio,alt={The operator\textquotesingle s register: Yuktāhār\textquotesingle s September attendance book, lunch on the right and the edge of the breakfast page on the left.}]{Assets/plate-registers-power.jpg}
+\caption{The operator\textquotesingle s register: Yuktāhār\textquotesingle s September attendance book, lunch on the right and the edge of the breakfast page on the left.}
+\end{figure}
+
+\subsection{Leverage analysis}\label{leverage-analysis}
+
+Power is the capacity to influence a decision. Leverage is the capacity for a small action to produce a large system effect. They are separate.
+
+(Revised: the first version said the Mess Office holds both.) The Mess Office holds power and leverage over student flexibility rules, shown by a small operational change producing a system-wide behavioural effect in December 2024 (candidate), but that is a different lever from waste. The operator holds high leverage and high local power over waste and no rule-making power, and two kinds of leverage need keeping apart. Parameter leverage, the first-batch ratio, the top-up threshold and the batching of each item, belongs to the operator. At Kadamba the ratio is a standing Prism rule and the fastest lever, the in-service top-up, belongs to the supervisor; at Yuktāhār both sit with the daily meeting; at Bakul both sit with the manager, bounded below by his no-shortage floor. This leverage is fast, local and needs no rule change. But tightening it alone makes the gap even less visible upstream, and cutting the first batch would take food from the outside diners and staff who eat from it. Information-flow leverage, routing the operator\textquotesingle s records and the CDS scan records to whoever owns the cut-off, cancellation rules and billing, belongs to nobody. The data exists and the flow does not. The institution\textquotesingle s per-meal tasting and weekly QC already put it in the kitchen every day, on a route that carries safety and taste only. Operator culture is a further candidate lever: under one billing structure a management that ties waste to profit built a record system and a blame-free measurement habit, and one that treats registration as an obligation did not.
+
+Academic administration holds power without leverage over this problem. Students individually hold neither, but the Mess Cell market shows that students collectively have real organising capacity, which has been aimed at governance at least once. That is better described as exercised-but-unmeasured leverage than as sleeping leverage.
+
+\subsection{Sleeping stakeholders}\label{sleeping-stakeholders}
+
+\textbf{Academic administration} remains the clearest case: total authority over class timing, no relationship to any mess-governance actor, and no incentive pulling it toward engagement.
+
+\textbf{The Mess Committee\textquotesingle s chair,} if the report of a faculty chair holds, is subtler: a person with plausible informal access to academic-side actors that no student channel has, and no evidence the access has been used to raise the overlap.
+
+\textbf{The operators\textquotesingle{} records} are a sleeping resource, not a sleeping stakeholder. At Yuktāhār they are kept per day and per item and reconciled book against book, though the books do not always agree (the Wastage Book showed 77 breakfast diners and the attendance register 110 on 3 September), and nobody outside the kitchen has asked for them.
+
+\textbf{Students, collectively,} are ambiguous. Mess Cell proves peer-level organising capacity, and an organised effort has been aimed at governance at least once. What it targeted and whether it changed anything are unknown, so the open question has narrowed from whether this capacity has ever been aimed at governance to what happened the one time it was.
+
+\section{Stakeholder Power-Interest/Leverage Map}\label{stakeholder-power-interestleverage-map}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.86\linewidth,height=\textheight,keepaspectratio,alt={Power against interest. Placement is ordinal.}]{Assets/d13-power-interest-v2.png}
+\caption{Power against interest. Placement is ordinal.}
+\end{figure}
+
+Coordinates on these charts are ordinal placements, not measured values. The relative position of each actor across quadrants is the finding. The \textbf{Mess Committee} has high power over menu approval and unconfirmed power beyond it. The \textbf{Mess Office} is the highest-confidence high-power placement over rules, with one reported instance of exercising it. \textbf{Academic administration} has high power over class timing and essentially none over, or interest in, mess outcomes. \textbf{Mess operators} have high interest, shown through waste tracking and requests for menu input, high local power over quantity, re-cooking and reuse, and no rule-making power. (This revises the first placement of vendors at moderate power and low interest.) The three differ sharply under that shared placement. Yuktāhār (ABC) is a flat team with the fullest records and an explicit cost-and-waste goal. Kadamba\textquotesingle s Prism holds the contract and runs a layered chain in which the supervisor sets each top-up. Bakul\textquotesingle s manager, at the Hafizpet-supplied hall, calibrates the batch weekly by judgement above a no-shortage floor, and on the menu he sits at high interest and real expertise with low formal power. The \textbf{CDS team} is the visible institutional counterpart for complaints and scan data, placed provisionally while its relation to the Mess Office is unconfirmed. \textbf{Students} have very high interest and very low formal power, the textbook mismanaged "Keep Informed" quadrant. \textbf{Mess Cell and Ping} have low formal power by design and moderate interest, with real influence running through informal channels.
+
+Several stakeholders from the Stakeholder Map are placed here in text. \textbf{Event and exam organisers} have no power over the mess and little interest in it, yet move breakfast turnout, and their calendar reaches the kitchen only if mentioned. \textbf{Suppliers} have power over the quality of raw stock only, which operators answer by weighing, returning and switching. \textbf{The garbage contractor} has no power and no stake beyond collection, and is the single point where Kadamba\textquotesingle s waste leaves. \textbf{The Facilities and Estate team} has power over repairs such as the broken toaster, with its identity unconfirmed. \textbf{The Portal and IT owner} has high latent power over what the platform records and permits and is named by no source. \textbf{The Student Parliament\textquotesingle s mess seats} have high interest and power unconfirmed beyond one reported negotiation in December 2024. \textbf{CFS} is at the top of Kadamba\textquotesingle s chain with high formal power and no observed action on quantity, as is \textbf{the CDS head}, whose identity is open between two names. \textbf{The facility team and QC} have high power over safety and taste every meal and none exercised over quantity. \textbf{Outside diners and Kadamba\textquotesingle s own eating staff} have no power or voice yet absorb part of the first-batch surplus. \textbf{Serving and kitchen staff} have little power over rules but carry out every top-up and re-cook, and at Yuktāhār hold part of the planning through the daily meeting and peer checks. \textbf{Vindhya, the juice canteens and delivery platforms} have no power in the mess and an interest only in the demand it loses.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.86\linewidth,height=\textheight,keepaspectratio,alt={Power against leverage. Placement is ordinal.}]{Assets/d12-leverage-quadrant.png}
+\caption{Power against leverage. Placement is ordinal.}
+\end{figure}
+
+Operators sit at high leverage over waste with local, not rule-making, power. Within Kadamba that leverage is exercised live by the supervisor, and at Bakul by the manager. The Mess Office\textquotesingle s leverage is over student flexibility rules, not waste.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio,alt={Power and information flow: where channels exist, and where they stop.}]{Assets/d14-power-flow-network.png}
+\caption{Power and information flow: where channels exist, and where they stop.}
+\end{figure}
+
+Dotted lines mark informal or unconfirmed channels, and a red "no channel" marks a confirmed absence of any relationship, most consequentially between Academic administration and every mess-governance actor. The same absence runs from the operators\textquotesingle{} waste and attendance records to every actor that sets registration, cancellation or billing rules, and from the institute calendar to the kitchen. Kadamba\textquotesingle s formal chain runs from CFS through CDS and Prism to the supervisor, and the facility team\textquotesingle s per-meal channel into the kitchen carries safety and taste, never quantity.
+
+\section{Implications for System Behaviour}\label{implications-for-system-behaviour}
+
+This distribution of power plausibly produces and sustains the Breakfast Paradox. Billing without an attendance incentive removes pressure on the one actor, the student, whose behaviour most directly decides the outcome. The one governance action on record served an internal operational goal, not the paradox, and may have tightened the underlying pattern (candidate). The actor best placed to resolve the second driver, the schedule overlap, is disconnected from every governance actor who might raise it.
+
+The most concrete stabiliser sits in the kitchen. Each operator runs its own balancing loop: cook a fraction of registrations, watch the counter, top up when it runs low. It is confirmed at Yuktāhār and single-sourced at Kadamba and Bakul. It keeps the counter from running empty and keeps the gap from surfacing as a crisis. The Bakul manager states its goal outright, "there should not be a shortage of food, even if some wastage occurs," and keeps food for about 70\% of registrations even on very low weekends. A run-out is visible and routes a complaint from the CDS team through the manager towards the managing director, while a surplus is silent. The floor therefore reads as the kitchen\textquotesingle s answer to a system that reacts only to what is loud (candidate). At Kadamba the surplus is further absorbed by outside diners, staff and reheating within service, which may explain why the waste the operator reports is small, though that is not established. Because its records never travel upward, the rule-setters receive no signal that anything needs changing. The system holds itself in place not because nobody measures the gap but because the one actor who measures it daily cannot change the rules that create it, and no route carries the measurement to those who can.
+
+The channel that could generate collective pressure, the students, has been aimed at governance at least once, in an effort whose subject and outcome remain to be confirmed. The paradox may be sustained less by missing channels than by channels whose effectiveness nobody has measured, alongside one channel, from kitchen records to policy, that does not exist.
+
+\section{Key Findings}\label{key-findings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Registration without an attendance incentive.} Billing follows registration, so nothing pushes students to register only when they mean to attend. This is the best-evidenced structure here, now sized from records: 37.1\% breakfast turnout at Kadamba in April 2026, with registrations flat across every weekday.
+\item
+  \textbf{Unilateral operational authority in the Mess Office.} It made a real policy change in December 2024 with no evidenced Committee or student involvement beforehand (candidate; press-derived). Whether this is a standing pattern needs governance-source confirmation.
+\item
+  \textbf{Total independence of Academic administration from mess governance.} No mandate connects the two in either direction, through inattention rather than refusal. The gap reaches the kitchen, which learns of exams and holidays by word of mouth.
+\item
+  \textbf{An input nothing requires to be accurate.} Students control registration and bear no cost for its inaccuracy. Operators correct it privately: Yuktāhār with its own records, Kadamba with a fixed 70\% as an obligation, and Bakul with a weekly 70 to 80\% share and a floor near 70\% on low weekends (single-sourced). Scan records measure the inaccuracy, no rule responds, and the institution never sees the corrections.
+\item
+  \textbf{Skip Meal as a dominated strategy.} It returns nothing while resale returns partial or full value, so resale wins whenever there is advance notice (confirmed, interviews).
+\item
+  \textbf{Exercised-but-unmeasured collective leverage.} Mess Cell shows real self-organising capacity, and an organised effort has been aimed at governance at least once. The December 2024 Ping-survey-and-Parliament episode is a strong but unconfirmed candidate match.
+\item
+  \textbf{A confirmed feedback input with an unconfirmed output.} Three student channels (in-app rating, email, Ping) carry input, and complaints demonstrably reach the operator\textquotesingle s manager. None has a confirmed instance of producing a rule change.
+\item
+  \textbf{A data-rich, authority-poor operator.} Yuktāhār measures the gap daily, per item and weekday, in books it reconciles, and cannot change the cut-off, cancellation, billing or menu rules that create it. No route carries its measurement to those who can.
+\item
+  \textbf{A flexibility asymmetry against the student.} The cut-off binds students four days out while operators top up within the meal, and beyond five cancellations a month the booking cannot be released at all (confirmed).
+\item
+  \textbf{Oversight pointed at the wrong variable.} The institution is in the Kadamba kitchen every meal through temperature checks, a retained sample, the display plate and tasting, and weekly through QC, and every check covers safety and taste. None covers how much is cooked or wasted.
+\item
+  \textbf{Two operators, one billing rule, opposite stances.} Yuktāhār, with a profit and waste goal, a flat team and blame-free measurement, learns from its books. Kadamba, run by Prism through a layered chain, cooks a fixed ratio because it is paid for registrations. That the difference follows culture rather than payment rule is candidate, and it makes operator culture a candidate lever. Bakul adds shortage first with waste accepted, and its manager reports payment on plates served, in tension with Kadamba\textquotesingle s remark. If confirmed, the operators do not share one billing rule (unresolved).
+\item
+  \textbf{Menu expertise without menu authority.} The Bakul manager holds consumption knowledge by item and about 20 years in North Indian food, disputes the pairings students choose and has no formal say (single-sourced). His view of what residents would eat is untested. The finding is the mismatch between who knows what is eaten and who decides what is served.
+\end{enumerate}
+
+\section{Outstanding Data Collection}\label{outstanding-data-collection}
+
+The September 2026 operator interviews and the Kadamba scan records answered most of what this section first listed. Kadamba\textquotesingle s operator is Prism, which holds the contract by tender and runs all operations. The command chain from CFS to service staff is known. The cancellation cap is confirmed. The mechanism by which each kitchen decides quantities is known and the gap is measured from records. Vendor compensation is partly answered: Bakul\textquotesingle s operator, Vijayalakshmi Caterers, won a tender and is paid monthly as a lump sum with deductions, on what its manager calls plates served (single-sourced), and it runs Bakul. Operators bargain with their own suppliers, but no bargaining with the institution is evidenced. The following remain open and \textbf{will be collected and submitted later}.
+
+\begin{itemize}
+\tightlist
+\item
+  Whether operator pay is per registered or per served plate, operator by operator, and the deductions. This decides whether the gap costs or earns the operator and is the most consequential open item for any later intervention. Bakul\textquotesingle s "served" needs confirming from the contract or CDS, including whether it means plates eaten, and whether Kadamba\textquotesingle s basis differs. The reported plate rate of about ₹80, with bids near ₹60, comes from noisy audio and needs checking against the tender.
+\item
+  Whether the December 2024 Ping-survey-and-Parliament episode is the "organised email effort" otherwise heard only secondhand, and whether "opposition registered, policy implemented anyway" is the full account. This is the highest-priority open governance question.
+\item
+  Whether any institutional actor receives or asks for an operator\textquotesingle s Wastage Book or attendance register, and whether operators know the institution lacks them.
+\item
+  Who owns the four-day cut-off, whether an operator has ever asked to shorten it, and why the cap was set at five.
+\item
+  The identity of the "student committee" that operators say selects the menu (Parliament-internal committee, institute-level Mess Committee or CDS Committee), and whether Committee approval is formally needed for a Mess Office change; whether "CDS" is the Mess Office; whether the CDS head named in the site account and the CDS Chair named earlier are two roles or one person; and who sees and acts on per-meal ratings once submitted.
+\item
+  Whether QC visits can penalise or only inspect, and whether the facility team that tastes with Prism is the CDS site or facility team.
+\item
+  Whether a Skip Meal declaration changes the count Kadamba cooks from.
+\item
+  The base of Kadamba\textquotesingle s 5 to 10\% daily waste and how it squares with a 70\% batch against 37\% turnout; whether meals for the 30 to 50 outside diners and for Kadamba\textquotesingle s staff are a written entitlement or a norm; and who pays the garbage contractor, whether waste carries any cost to the operator or institution, and whether the contractor composts Kadamba\textquotesingle s waste off site.
+\item
+  Who the Yuktāhār site head is relative to the mess in-charge and the two project managers.
+\item
+  Whether Palash is served by the same operator and kitchen as Bakul (candidate).
+\item
+  Whether anything in Bakul\textquotesingle s weekly adjustment is written down, how long a Hafizpet top-up takes to arrive, whether the 9:20 reserve of about 50 rests on data or judgement, and which menu decisions students control and the manager can change.
+\end{itemize}
+
+\end{document}
